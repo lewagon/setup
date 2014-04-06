@@ -7,6 +7,12 @@ The following instructions will help you to get ready for [Premiere Classe](http
 - Setup Git and Github
 - Install Ruby
 
+## GitHub account
+
+Have you signed up to GitHub? If not, [do it](https://github.com/join) right away, it's free.
+
+**[Upload a picture](https://github.com/settings/profile)** and setup your name correctly on your Github account.
+
 ## Mac Users, install command line tools
 
 If you are running Ubuntu, skip this step. If you are running Mac OS and you already have XCode installed, skip this step.
