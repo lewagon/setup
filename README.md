@@ -7,11 +7,19 @@ The following instructions will help you to get ready for [Premiere Classe](http
 - Setup Git and Github
 - Install Ruby
 
-## Mac Users, install XCode
+## Mac Users, install command line tools
 
-If you are running Ubuntu, skip this step.
+If you are running Ubuntu, skip this step. If you are running Mac OS and you already have XCode installed, skip this step.
 
-Mac users need to install XCode so that you have some command line tools which are not available by default when buying a Mac. Click on the  at the top left of your toolbar and open the App Store. Search for `XCode`, download it. It is pretty big, so don't do it while tethering...
+Open the terminal and type:
+
+```bash
+$ xcode-select --install
+```
+
+It will open a window asking you if you want to install some software. Accept and wait.
+
+If this does not succeed, install XCode so that you have some command line tools which are not available by default when buying a Mac. Click on the  at the top left of your toolbar and open the App Store. Search for `XCode`, download it.
 
 ## Sublime Text 2 - Your text editor
 
@@ -46,17 +54,6 @@ The convention we are enforcing with this configuration is that we use 2 spaces
 for indentation (no tabs). So each time you will hit the `tab` key,
 Sublime Text will insert 2 spaces.
 
-
-## Oh-my-zsh - Fancy your terminal
-
-We will use the shell named `zsh` instead of `bash`, the default one. Open your terminal and run:
-
-```bash
-$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-```
-
-On Mac, open Terminal -> Preferences and set the "Pro" theme as default. Quit and relaunch the terminal.
-
 ## Homebrew, Mac's missing Package Manager
 
 If you are running Ubuntu, just run the following, and go to next step:
@@ -74,8 +71,18 @@ $ ruby <(curl -fsS https://raw.github.com/Homebrew/homebrew/go/install)
 Then install some useful software:
 
 ```bash
-$ brew install vim git node
+$ brew install vim git
 ```
+
+## Oh-my-zsh - Fancy your terminal
+
+We will use the shell named `zsh` instead of `bash`, the default one. Open your terminal and run:
+
+```bash
+$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+```
+
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Réglages`. Quit and relaunch the terminal.
 
 ## Git
 
