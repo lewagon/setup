@@ -1,5 +1,12 @@
 # Setup instructions
 
+The following instructions will help you to get ready for [Premiere Classe](http://www.lewagon.org/premiere):
+
+- Grab a text editor, where you'll spend your day and nights
+- Pimp your terminal
+- Setup Git and Github
+- Install Ruby
+
 ## Mac Users, install XCode
 
 If you are running Ubuntu, skip this step.
@@ -16,7 +23,7 @@ We will install the package manager right away to install addons. Launch Sublime
 
 ### Preferences
 
-Go to `Preferences > Settings - Users`, it will open a file. Copy paste the following configuration and save. Restart Sublime Text 2.
+Go to `Preferences > Settings - Users`, it will open a file. Copy paste the following configuration and save this file. Restart Sublime Text 2.
 
 ```json
 {
@@ -35,7 +42,9 @@ Go to `Preferences > Settings - Users`, it will open a file. Copy paste the foll
 }
 ```
 
-The convention we are enforcing with this configuration is that we use 2 spaces for indentation (no tabs). So each time you will hit the `tab` key, Sublime Text will insert 2 spaces.
+The convention we are enforcing with this configuration is that we use 2 spaces
+for indentation (no tabs). So each time you will hit the `tab` key,
+Sublime Text will insert 2 spaces.
 
 
 ## Oh-my-zsh - Fancy your terminal
@@ -50,10 +59,10 @@ On Mac, open Terminal -> Preferences and set the "Pro" theme as default. Quit an
 
 ## Homebrew, Mac's missing Package Manager
 
-If you are running Ubuntu, just run the followin, and go to next step:
+If you are running Ubuntu, just run the following, and go to next step:
 
 ```bash
-$ apt-get install git
+$ sudo apt-get install git
 ```
 
 On Mac, you need to install [Homebrew](http://brew.sh/). To do so, open your terminal and run:
@@ -82,15 +91,13 @@ will be able to impersonate your GitHub account (and get his hand on your privat
 
 ## Your Configuration
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on Github.
-
-As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on Github. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
 Go to [this page](https://github.com/lewagon/dotfiles/fork) and fork the repository.
 Forking means that it will create a new repo in your Github account, identical to
 the original one.
 
-Then open your terminal, and set your github username in a variable
+Open your terminal, and set your github username in a variable
 (don't just copy paste!):
 
 ```bash
@@ -168,7 +175,3 @@ $ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 ```
 
 You can have a look at [this](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) and run whichever command you see fit.
-
-## I am ready!
-
-Are you ready? Then sign in on [Kitt](http://kitt.lewagon.org/)!
