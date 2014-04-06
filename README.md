@@ -42,7 +42,7 @@ The convention we are enforcing with this configuration is that we use 2 spaces 
 
 We will use the shell named `zsh` instead of `bash`, the default one. Open your terminal and run:
 
-```shell
+```bash
 $ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 ```
 
@@ -52,19 +52,19 @@ On Mac, open Terminal -> Preferences and set the "Pro" theme as default. Quit an
 
 If you are running Ubuntu, just run the followin, and go to next step:
 
-```shell
+```bash
 $ apt-get install git
 ```
 
 On Mac, you need to install [Homebrew](http://brew.sh/). To do so, open your terminal and run:
 
-```shell
+```bash
 $ ruby <(curl -fsS https://raw.github.com/Homebrew/homebrew/go/install)
 ```
 
 Then install some useful software:
 
-```shell
+```bash
 $ brew install vim git node
 ```
 
@@ -93,13 +93,13 @@ the original one.
 Then open your terminal, and set your github username in a variable
 (don't just copy paste!):
 
-```shell
+```bash
 $ GITHUB_USERNAME=your_github_username
 ```
 
 Then run the three commands to clone the repository you just forked to your computer.
 
-```shell
+```bash
 $ mkdir -p ~/code/${GITHUB_USERNAME} && cd $_
 $ git clone git@github.com:${GITHUB_USERNAME}/dotfiles.git
 $ cd dotfiles
@@ -108,7 +108,7 @@ $ cd dotfiles
 We now need to configure the `gitconfig` with your own identity.
 Open it in Sublime Text, and update line 2 and 3 with your own identity:
 
-```shell
+```bash
 [user]
   name =  "COMPLETE THIS (no accented characters)"
   email = "COMPLETE THIS"
@@ -116,7 +116,7 @@ Open it in Sublime Text, and update line 2 and 3 with your own identity:
 
 You should commit this change:
 
-```shell
+```bash
 $ git add gitconfig
 $ git commit --message "Added my identity to the gitconfig"
 $ git push origin master
@@ -124,7 +124,7 @@ $ git push origin master
 
 Time to install this default configuration, just run:
 
-```shell
+```bash
 $ ./install.sh
 ```
 
@@ -136,19 +136,19 @@ You may already have installed ruby, but we are going to do it again using `rben
 
 Open a terminal, and run:
 
-```shell
+```bash
 $ curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 ```
 
 If you are using Ubuntu, run this, if on Mac, skip this step:
 
-```shell
+```bash
 $ rbenv bootstrap-ubuntu-12-04
 ```
 
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
-```shell
+```bash
 $ rbenv install 2.1.1
 $ rbenv global 2.1.1
 $ ruby -v
@@ -162,7 +162,7 @@ If you are running Ubuntu, you can skip this step.
 
 You want a fast keyboard, so run this in your terminal:
 
-```shell
+```bash
 $ defaults write NSGlobalDomain KeyRepeat -int 2
 $ defaults write NSGlobalDomain InitialKeyRepeat -int 15
 ```
