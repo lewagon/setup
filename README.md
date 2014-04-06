@@ -165,10 +165,11 @@ Now, you are ready to install the latest ruby version, and set it as the default
 ```bash
 $ rbenv install 2.1.1
 $ rbenv global 2.1.1
+$ source ~/.zshrc
 $ ruby -v
 ```
 
-You should see something starting with `ruby 2.1.1p`
+You should see something starting with `ruby 2.1.1p`. If not, try to restart your terminal
 
 ## Bonus: OSX For Hackers
 
