@@ -141,18 +141,18 @@ Open it in Sublime Text, and update line 2 and 3 with your own identity:
   email = "COMPLETE THIS"
 ```
 
+Time to install this default configuration, just run:
+
+```bash
+$ ./install.sh
+```
+
 You should commit this change:
 
 ```bash
 $ git add gitconfig
 $ git commit --message "Added my identity to the gitconfig"
 $ git push origin master
-```
-
-Time to install this default configuration, just run:
-
-```bash
-$ ./install.sh
 ```
 
 Quit and relaunch your terminal. You should be all set!
