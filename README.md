@@ -3,6 +3,7 @@
 The following instructions will help you to get ready for [Premiere Classe](http://www.lewagon.org/premiere):
 
 - Grab a text editor, where you'll spend your day and nights
+- Install a package manager
 - Pimp your terminal
 - Setup Git and Github
 - Install Ruby
