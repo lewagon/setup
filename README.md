@@ -164,6 +164,7 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a terminal, and run:
 
 ```bash
+$ source ~/.zshrc
 $ curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 ```
 
