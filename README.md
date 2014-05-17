@@ -165,7 +165,7 @@ Open a terminal, and run:
 
 ```bash
 $ source ~/.zshrc
-$ curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+$ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 ```
 
 If you are using Ubuntu, run this, if on Mac, skip this step:
