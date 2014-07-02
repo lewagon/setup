@@ -92,7 +92,7 @@ $ brew install vim git
 We will use the shell named `zsh` instead of `bash`, the default one. Open your terminal and run:
 
 ```bash
-$ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+$ curl -L http://install.ohmyz.sh | sh
 ```
 
 On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Réglages`. Quit and relaunch the terminal.
