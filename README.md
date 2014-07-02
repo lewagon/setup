@@ -125,6 +125,7 @@ $ GITHUB_USERNAME=your_github_username
 ```
 
 Then run the three commands to clone the repository you just forked to your computer.
+You just have to copy them, do not try to edit anything.
 
 ```bash
 $ mkdir -p ~/code/${GITHUB_USERNAME} && cd $_
@@ -132,7 +133,7 @@ $ git clone git@github.com:${GITHUB_USERNAME}/dotfiles.git
 $ cd dotfiles
 ```
 
-We now need to configure the `gitconfig` with your own identity.
+We now need to configure the `gitconfig` file with your own identity.
 Open it in Sublime Text, and update line 2 and 3 with your own identity:
 
 ```bash
@@ -177,8 +178,8 @@ $ rbenv bootstrap-ubuntu-12-04
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
 ```bash
-$ rbenv install 2.1.1
-$ rbenv global 2.1.1
+$ rbenv install 2.1.2
+$ rbenv global 2.1.2
 $ source ~/.zshrc
 $ ruby -v
 ```
@@ -186,14 +187,5 @@ $ ruby -v
 You should see something starting with `ruby 2.1.1p`. If not, try to restart your terminal
 
 ## Bonus: OSX For Hackers
-
-If you are running Ubuntu, you can skip this step.
-
-You want a fast keyboard, so run this in your terminal:
-
-```bash
-$ defaults write NSGlobalDomain KeyRepeat -int 2
-$ defaults write NSGlobalDomain InitialKeyRepeat -int 15
-```
 
 You can have a look at [this](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) and run whichever command you see fit.
