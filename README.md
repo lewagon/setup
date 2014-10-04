@@ -83,7 +83,15 @@ $ brew install vim git
 
 ## Oh-my-zsh - Fancy your terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one. Open your terminal and run:
+We will use the shell named `zsh` instead of `bash`, the default one.
+
+On Ubuntu, run the following command:
+
+```bash
+$ sudo apt-get install zsh
+```
+
+Open your terminal and run:
 
 ```bash
 $ curl -L http://install.ohmyz.sh | sh
