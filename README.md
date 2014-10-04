@@ -180,6 +180,14 @@ $ ruby -v
 
 You should see something starting with `ruby 2.1.2p`. If not, try to restart your terminal
 
+## Installing some useful gems
+
+Make sure you are on ruby 2.1.2, then run
+
+```bash
+$ gem install bundler rspec
+```
+
 ## Mac Users, password-protect your computer
 
 It is mandataory that you protect your session behind a password. If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
