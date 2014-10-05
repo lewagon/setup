@@ -193,7 +193,7 @@ You should see something starting with `ruby 2.1.2p`. If not, try to restart you
 Make sure you are on ruby 2.1.2, then run
 
 ```bash
-$ gem install bundler rspec
+$ gem install bundler rspec rubocop
 ```
 
 ## Mac Users, password-protect your computer
