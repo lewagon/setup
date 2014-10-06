@@ -72,7 +72,7 @@ $ sudo apt-get install git
 On Mac, you need to install [Homebrew](http://brew.sh/). To do so, open your terminal and run:
 
 ```bash
-$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Then install some useful software:
