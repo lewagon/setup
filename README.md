@@ -39,6 +39,14 @@ A text editor is one of the most important tool of a developer. Go to [this page
 On Mac OS X, to install software you just have to drag & drop it in the "Applications" folder.
 Please make sure that Sublime Text is there, not in the disk image you downloaded. To make sure it's correct, once Sublime Text is installed, unmount the "Sublime Text 2" disk in the left panel of Finder. If Finder complains, that's because you did something wrong. Ask a teacher.
 
+### Ubuntu
+
+If you are on Ubuntu, open your terminal and run:
+
+```bash
+$ sudo ln -s /opt/sublime/sublime_text /usr/bin/subl
+```
+
 ### Package control
 
 We will install the package manager right away to install addons. Launch Sublime Text, then open the console via the `View > Show Console` menu. It will open at the bottom of Sublime Text a prompt where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` to quit on Mac).
