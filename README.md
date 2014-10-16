@@ -150,50 +150,12 @@ will be able to impersonate your GitHub account (and get his hand on your privat
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on Github. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
-Go to [this page](https://github.com/lewagon/dotfiles/fork) and fork the repository.
+Go to [this page](https://github.com/lewagon/dotfiles/fork) and fork the repository to your account.
 Forking means that it will create a new repo in your Github account, identical to
 the original one.
 
-Open your terminal, and set your github username in a variable
-(don't just copy paste!):
-
-```bash
-$ GITHUB_USERNAME=your_github_username
-```
-
-Then run the three commands to clone the repository you just forked to your computer.
-You just have to copy them, do not try to edit anything.
-
-```bash
-$ mkdir -p ~/code/${GITHUB_USERNAME} && cd $_
-$ git clone git@github.com:${GITHUB_USERNAME}/dotfiles.git
-$ cd dotfiles
-```
-
-We now need to configure the `gitconfig` file with your own identity.
-Open it in Sublime Text, and update line 2 and 3 with your own identity:
-
-```bash
-[user]
-  name =  "COMPLETE THIS (no accented characters)"
-  email = "COMPLETE THIS"
-```
-
-Time to install this default configuration, just run:
-
-```bash
-$ ./install.sh
-```
-
-You should commit this change:
-
-```bash
-$ git add gitconfig
-$ git commit --message "Added my identity to the gitconfig"
-$ git push origin master
-```
-
-Quit and relaunch your terminal. You should be all set!
+Then follow the instructions in the readme of the repo you've just forked. Once done,
+come back to this tutorial.
 
 ## Installing Ruby
 
