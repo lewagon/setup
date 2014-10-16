@@ -25,6 +25,21 @@ Open the terminal
 Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the terminal.
 
 ```bash
+$ sudo xcodebuild -license
+```
+
+It will ask for your password (because it needs to
+perform some operation as root, i.e. administrator). This is your laptop session password,
+the one you type when you boot your computer. Something to be aware of is that when you
+type your password in the terminal, nothing print out. No asterixes like you are used to, this
+is perfectly normal. Type your password and hit `Enter`.
+
+Then it will display the XCode license, just press the `q` key. Then it will
+ask you if you agree, type `agree` then hit `Enter`. Awesome!
+
+Then type in the terminal:
+
+```bash
 $ xcode-select --install
 ```
 
@@ -98,11 +113,7 @@ On Mac, you need to install [Homebrew](http://brew.sh/). To do so, open your ter
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-This will ask for your confirmation (hit `Enter`) and your password (because it needs to
-perform some operation as root, i.e. administrator). This is your laptop session password,
-the one you type when you boot your computer. Something to be aware of is that when you
-type your password in the terminal, nothing print out. No asterixes like you are used to, this
-is perfectly normal. Type your password and hit `Enter`.
+This will ask for your confirmation (hit `Enter`) and your laptop session password.
 
 Then install some useful software:
 
