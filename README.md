@@ -28,11 +28,9 @@ Type what is after the dollar sign `$`. The dollar sign means that you need to t
 $ xcode-select --install
 ```
 
-It will open a window asking you if you want to install some software. Accept and wait.
+It will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
 
 ![](images/xcode-select-install.png)
-
-If this does not succeed, install XCode so that you have some command line tools which are not available by default when buying a Mac. Click on the  at the top left of your toolbar and open the App Store. Search for `XCode`, download it.
 
 ## Sublime Text 2 - Your text editor
 
