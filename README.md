@@ -112,6 +112,8 @@ We will use the shell named `zsh` instead of `bash`, the default one.
 $ sudo apt-get install zsh
 ```
 
+You may need to change the terminal settings to execute `/usr/bin/zsh` at startup, see [this](http://askubuntu.com/a/342342).
+
 ## OS X
 
 ```bash
@@ -126,9 +128,11 @@ You should see something like this:
 
 If not, **stop right away** and call a teacher.
 
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Réglages`. Quit and relaunch the terminal. It should now have a nice black background, more easy on the eyes.
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Réglages`.
 
 ![](images/terminal-pro.png)
+
+Quit and relaunch the terminal. It should now have a nice black background, more easy on the eyes.
 
 ## Git
 
