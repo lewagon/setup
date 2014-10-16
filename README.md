@@ -34,15 +34,20 @@ It will open a window asking you if you want to install some software. Accept an
 
 ## Sublime Text 2 - Your text editor
 
-A text editor is one of the two most important tool of a developer (the other one being the command line). Go to [this page](http://www.sublimetext.com/2) and download Sublime Text 2. Install it. It is free without any time limit but a popup will appear to remind there is a license to buy. Just hit `Esc` when this happens, but feel free to buy it if you really like this one (there are alternatives).
+A text editor is one of the most important tool of a developer. Go to [this page](http://www.sublimetext.com/2) and download Sublime Text 2 for your OS. Install it. It is free without any time limit but a popup will appear to remind there is a license to buy. Just hit `Esc` when this happens, but feel free to buy it if you really like this one (there are alternatives).
+
+On Mac OS X, to install software you just have to drag & drop it in the "Applications" folder.
+Please make sure that Sublime Text is there, not in the disk image you downloaded. To make sure it's correct, once Sublime Text is installed, unmount the "Sublime Text 2" disk in the left panel of Finder. If Finder complains, that's because you did something wrong. Ask a teacher.
 
 ### Package control
 
-We will install the package manager right away to install addons. Launch Sublime Text, then open the console via the `View > Show Console` menu. Then you need to [copy paste some code](https://sublime.wbond.net/installation#st2) in the console. If you have trouble with this step, ask a teacher.
+We will install the package manager right away to install addons. Launch Sublime Text, then open the console via the `View > Show Console` menu. It will open at the bottom of Sublime Text a prompt where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` to quit on Mac).
+
+If you have trouble with this step, ask a teacher. That would be the only thing we'll type in this prompt. All other commands will be in the terminal.
 
 ### Preferences
 
-Go to `Preferences > Settings - Users`, it will open a file. Copy paste the following configuration and save this file. Restart Sublime Text 2.
+In Sublime Text menu, go to `Preferences > Settings - Users`, that will open a file. Erase all the content of that file, then copy paste the code below in it. Save this file.
 
 ```json
 {
@@ -65,7 +70,11 @@ The convention we are enforcing with this configuration is that we use 2 spaces
 for indentation (no tabs). So each time you will hit the `tab` key,
 Sublime Text will insert 2 spaces.
 
-## Homebrew, Mac's missing Package Manager
+You can now quit Sublime Text.
+
+## Package Manager
+
+## Ubuntu - Aptitude
 
 If you are running Ubuntu, just run the following, and go to next step:
 
@@ -73,11 +82,19 @@ If you are running Ubuntu, just run the following, and go to next step:
 $ sudo apt-get install git
 ```
 
+## Mac - Homebrew
+
 On Mac, you need to install [Homebrew](http://brew.sh/). To do so, open your terminal and run:
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+This will ask for your confirmation (hit `Enter`) and your password (because it needs to
+perform some operation as root, i.e. administrator). This is your laptop session password,
+the one you type when you boot your computer. Something to be aware of is that when you
+type your password in the terminal, nothing print out. No asterixes like you are used to, this
+is perfectly normal. Type your password and hit `Enter`.
 
 Then install some useful software:
 
@@ -89,19 +106,29 @@ $ brew install vim git
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
-On Ubuntu, run the following command:
+### Ubuntu
 
 ```bash
 $ sudo apt-get install zsh
 ```
 
-Open your terminal and run:
+## OS X
 
 ```bash
 $ curl -L http://install.ohmyz.sh | sh
 ```
 
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Réglages`. Quit and relaunch the terminal.
+Be extremely careful, at the end of this script, it will prompt for your laptop password again.
+You have to write it correctly and hit `Enter`. Now quit the terminal (`⌘` + `Q`), and restart it.
+You should see something like this:
+
+![](images/on-my-zsh.png)
+
+If not, **stop right away** and call a teacher.
+
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Réglages`. Quit and relaunch the terminal. It should now have a nice black background, more easy on the eyes.
+
+![](images/terminal-pro.png)
 
 ## Git
 
