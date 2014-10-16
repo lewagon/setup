@@ -1,6 +1,6 @@
 # Setup instructions
 
-The following instructions will help you to get ready for [Premiere Classe](http://www.lewagon.org/premiere):
+The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
@@ -10,21 +10,27 @@ The following instructions will help you to get ready for [Premiere Classe](http
 
 ## GitHub account
 
-Have you signed up to GitHub? If not, [do it](https://github.com/join) right away, it's free.
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-**[Upload a picture](https://github.com/settings/profile)** and setup your name correctly on your Github account.
+**[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your Github account. This is important as we'll use an internal dashboard with your avatars.
 
 ## Mac Users, install command line tools
 
-If you are running Ubuntu, skip this step. If you are running Mac OS and you already have XCode installed, skip this step.
+If you are running Ubuntu, **skip** this step.
 
-Open the terminal and type:
+Open the terminal
+
+![](images/open-terminal.png)
+
+Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the terminal.
 
 ```bash
 $ xcode-select --install
 ```
 
 It will open a window asking you if you want to install some software. Accept and wait.
+
+![](images/xcode-select-install.png)
 
 If this does not succeed, install XCode so that you have some command line tools which are not available by default when buying a Mac. Click on the  at the top left of your toolbar and open the App Store. Search for `XCode`, download it.
 
