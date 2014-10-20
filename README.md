@@ -69,6 +69,11 @@ We will install the package manager right away to install addons. Launch Sublime
 
 If you have trouble with this step, ask a teacher. That would be the only thing we'll type in this prompt. All other commands will be in the terminal.
 
+To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Ubuntu), and type `installp`. If you see something like below, you're good to go!
+
+![](images/sublime-install-package.png)
+
+
 ### Preferences
 
 In Sublime Text menu, go to `Preferences > Settings - Users`, that will open a file. Erase all the content of that file, then copy paste the code below in it. Save this file.
@@ -119,7 +124,7 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 Then install some useful software:
 
 ```bash
-$ brew install vim git
+$ brew install git
 ```
 
 ## Oh-my-zsh - Fancy your terminal
@@ -160,7 +165,7 @@ We need to configure Git with SSH keys, this way you won't have to put your pass
 time you want to `git push` some modifications.
 
 It is a tricky concept and a tricky setup, fortunately GitHub wrote a great article.
-Just [go to this article](https://help.github.com/articles/generating-ssh-keys/#step-1-check-for-ssh-keys), and select your environment at the top (Mac or Linux). If you need help, ask a teacher. *Do not* download GitHub for Mac, follow the part with SSH Keys.
+Just [go to this article](https://help.github.com/articles/generating-ssh-keys/#step-2-generate-a-new-ssh-key), and select your environment at the top (Mac or Linux). If you need help, ask a teacher. *Do not* download GitHub for Mac, follow the part with SSH Keys.
 
 **NB:** when asked for a passphrase, don't put your laptop password or your github password. It is
 important to protect your keys with a password, otherwise anyone having access to these files
