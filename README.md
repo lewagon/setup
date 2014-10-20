@@ -14,7 +14,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your Github account. This is important as we'll use an internal dashboard with your avatars.
 
-## Mac Users, install command line tools
+## OS X users, install command line tools
 
 If you are running Ubuntu, **skip** this step.
 
@@ -27,7 +27,6 @@ Type what is after the dollar sign `$`. The dollar sign means that you need to t
 ```bash
 $ xcode-select --install
 ```
-
 
 It will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
 
@@ -108,12 +107,13 @@ You can now quit Sublime Text.
 If you are running Ubuntu, just run the following, and go to next step:
 
 ```bash
-$ sudo apt-get install git
+$ sudo apt-get install curl git
 ```
 
 ## Mac - Homebrew
 
 On Mac, you need to install [Homebrew](http://brew.sh/). To do so, open your terminal and run:
+
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -131,22 +131,23 @@ $ brew install git
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
-### Ubuntu
+If you are on Ubuntu, run this before. If you are on OS X, skip this line:
 
 ```bash
 $ sudo apt-get install zsh
 ```
 
-You may need to change the terminal settings to execute `/usr/bin/zsh` at startup, see [this](http://askubuntu.com/a/342342).
-
-## OS X
+Then, all (Ubuntu & OS X), run this:
 
 ```bash
 $ curl -L http://install.ohmyz.sh | sh
 ```
 
 Be extremely careful, at the end of this script, it will prompt for your laptop password again.
-You have to write it correctly and hit `Enter`. Now quit the terminal (`⌘` + `Q`), and restart it.
+You have to write it correctly and hit `Enter`.
+
+Now quit the terminal (`⌘` + `Q`), and restart it.
+
 You should see something like this:
 
 ![](images/on-my-zsh.png)
@@ -175,7 +176,7 @@ will be able to impersonate your GitHub account (and get his hand on your privat
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on Github. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
-Go to [this page](https://github.com/lewagon/dotfiles/fork) and fork the repository to your account.
+[Go to this page](https://github.com/lewagon/dotfiles/fork) and fork the repository to your account.
 Forking means that it will create a new repo in your Github account, identical to
 the original one.
 
@@ -184,12 +185,12 @@ come back to this tutorial.
 
 ## Installing Ruby
 
-You may already have installed ruby, but we are going to do it again using `rbenv`, a manager for installing different Ruby versions on your computer.
+You may already have installed ruby, but we are going to do it again using `rbenv`, a manager for installing different Ruby versions on your computer. If you installed `rvm` before, run `rvm implode`
+to remove it beforehand.
 
 Open a terminal, and run:
 
 ```bash
-$ source ~/.zshrc
 $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 ```
 
@@ -223,7 +224,3 @@ $ gem install bundler rspec rubocop
 It is mandataory that you protect your session behind a password. If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
 You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your mac will be locked and will ask for a password to get back on the session.
-
-## Mac Users, this is a hacker bonus
-
-You can have a look at [this](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) and run whichever command you see fit.
