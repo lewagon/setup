@@ -25,6 +25,17 @@ Open the terminal
 Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the terminal.
 
 ```bash
+$ xcode-select --install
+```
+
+
+It will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
+
+![](images/xcode-select-install.png)
+
+Then in your terminal, accept the XCode license typing this:
+
+```bash
 $ sudo xcodebuild -license
 ```
 
@@ -36,16 +47,6 @@ is perfectly normal. Type your password and hit `Enter`.
 
 Then it will display the XCode license, just press the `q` key. Then it will
 ask you if you agree, type `agree` then hit `Enter`. Awesome!
-
-Then type in the terminal:
-
-```bash
-$ xcode-select --install
-```
-
-It will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
-
-![](images/xcode-select-install.png)
 
 ## Sublime Text 2 - Your text editor
 
