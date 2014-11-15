@@ -124,18 +124,24 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 Then install some useful software:
 
 ```bash
-$ brew install git
+$ brew install git hub
 ```
 
 ## Oh-my-zsh - Fancy your terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
-If you are on Ubuntu, run this before. If you are on OS X, skip this line:
+### Ubuntu
+
+First, install the shell:
 
 ```bash
 $ sudo apt-get install zsh
 ```
+
+Restart your terminal.
+
+### Ubuntu & OS X
 
 Then, all (Ubuntu & OS X), run this:
 
@@ -217,6 +223,7 @@ Make sure you are on ruby 2.1.2, then run
 
 ```bash
 $ gem install bundler rspec rubocop
+$ which hub > /dev/null || gem install hub
 ```
 
 ## Mac Users, password-protect your computer
