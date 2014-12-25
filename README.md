@@ -209,17 +209,17 @@ $ rbenv bootstrap-ubuntu-12-04
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
 ```bash
-$ rbenv install 2.1.2
-$ rbenv global 2.1.2
+$ rbenv install 2.2.0
+$ rbenv global 2.2.0
 $ source ~/.zshrc
 $ ruby -v
 ```
 
-You should see something starting with `ruby 2.1.2p`. If not, try to restart your terminal
+You should see something starting with `ruby 2.2.0p`. If not, try to restart your terminal
 
 ## Installing some useful gems
 
-Make sure you are on ruby 2.1.2, then run
+Make sure you are on ruby 2.2.0, then run
 
 ```bash
 $ gem install bundler rspec rubocop
