@@ -1,6 +1,4 @@
-## OS X users, install command line tools
-
-If you are running Ubuntu, **skip** this step.
+## Command Line Tools
 
 Open the terminal
 
