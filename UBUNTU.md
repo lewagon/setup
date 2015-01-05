@@ -191,6 +191,8 @@ $ rbenv global 2.2.0
 $ zsh ~/.zshrc
 ```
 
+Then restart your terminal (close it and reopen it).
+
 ```bash
 $ ruby -v
 ```
