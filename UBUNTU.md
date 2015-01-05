@@ -172,6 +172,7 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a terminal, and run:
 
 ```bash
+$ sudo apt-get install libffi-dev
 $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 ```
 
