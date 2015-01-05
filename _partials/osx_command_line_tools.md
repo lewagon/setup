@@ -10,7 +10,13 @@ Type what is after the dollar sign `$`. The dollar sign means that you need to t
 $ xcode-select --install
 ```
 
-It will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
+If you have get the following message, you can just skip this step.
+
+```
+# command line tools are already installed, use "Software Update" to install updates
+```
+
+Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
 
 ![](images/xcode-select-install.png)
 
