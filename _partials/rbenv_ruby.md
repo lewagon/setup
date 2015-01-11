@@ -17,6 +17,5 @@ You should see something starting with `ruby 2.2.0p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-$ gem install bundler rspec rubocop
-$ which hub > /dev/null || gem install hub
+$ gem install bundler rspec rubocop pry pry-byebug hub
 ```
