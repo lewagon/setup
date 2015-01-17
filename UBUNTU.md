@@ -65,6 +65,17 @@ To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ct
 
 ![](images/sublime-install-package.png)
 
+### Useful Packages
+
+Here is a list of packages you should install to harness the power of Sublime Text with Ruby, Rails and Middleman:
+Launch Package Control as explained above, hit `Enter` to view the package list, find and install (hitting `Enter` again):
+
+- BracketHighlighter
+- Emmet
+- Git
+- GitGutter
+- Syntax Highlighting for Sass
+
 ### Preferences
 
 We need to set some default on Sublime Text. Sharing defaults within your
