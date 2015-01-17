@@ -39,7 +39,7 @@ of getting help or helping other.
   "rulers": [ 80 ],
   "wordWrap": false,
 
-  "folder_exclude_patterns": [ "tmp", "log", ".git", "_site", ".bundle", ".sass-cache" ]
+  "folder_exclude_patterns": [ "tmp", "log", ".git", "_site", ".bundle", ".sass-cache", "build" ]
 }
 ```
 
