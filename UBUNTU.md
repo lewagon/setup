@@ -61,7 +61,7 @@ We will install the package manager right away to install addons. Launch Sublime
 
 If you have trouble with this step, ask a teacher. That would be the only thing we'll type in this prompt. All other commands will be in the terminal.
 
-To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Ubuntu), and type `installp`. If you see something like below, you're good to go!
+To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Windows or Ubuntu), and type `installp`. If you see something like below, you're good to go!
 
 ![](images/sublime-install-package.png)
 
