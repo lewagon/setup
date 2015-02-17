@@ -19,4 +19,3 @@ If you have get following message, you can just skip this step and go to Sublime
 Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
 
 ![](images/xcode-select-install.png)
-```
