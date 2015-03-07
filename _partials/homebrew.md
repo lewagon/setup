@@ -13,5 +13,5 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 Then install some useful software:
 
 ```bash
-$ brew install git
+$ brew install git vim
 ```
