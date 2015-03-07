@@ -38,6 +38,7 @@ Otherwise, it will open a window asking you if you want to install some software
 
 ![](images/xcode-select-install.png)
 
+While it's downloading, you can go on with the Sublime Text configuration (next session), but **stop** before Homebrew. You'll need the command line tools installed for that step.
 
 ## Sublime Text 2 - Your text editor
 
