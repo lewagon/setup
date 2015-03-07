@@ -87,20 +87,14 @@ of getting help or helping other.
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
   "detect_indentation": false,
-
   "trim_trailing_white_space_on_save": true,
   "draw_white_space": true,
   "use_tab_stops": true,
   "hot_exit": false,
   "remember_open_files": false,
-
   "highlight_modified_tabs": true,
-  "show_minimap": false,
-
-  "show_minimap": false,
   "rulers": [ 80 ],
   "wordWrap": false,
-
   "folder_exclude_patterns": [ "tmp", "log", ".git", "_site", ".bundle", ".sass-cache", "build" ]
 }
 ```
