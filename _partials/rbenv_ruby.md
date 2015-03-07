@@ -3,7 +3,6 @@ Now, you are ready to install the latest ruby version, and set it as the default
 ```bash
 $ rbenv install 2.2.0
 $ rbenv global 2.2.0
-$ zsh ~/.zshrc
 ```
 
 Then restart your terminal (close it and reopen it).
@@ -19,3 +18,6 @@ You should see something starting with `ruby 2.2.0p`. If not, ask a teacher.
 ```bash
 $ gem install bundler rspec rubocop pry pry-byebug hub
 ```
+
+Never install a gem with `sudo gem install`! Even if you stumble upon Stackoverflow answer
+telling you to do so.
