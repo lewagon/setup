@@ -184,7 +184,7 @@ $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rb
 Now, run:
 
 ```bash
-$ sudo apt-get install libffi-dev
+$ sudo apt-get install libffi-dev libssl-dev
 $ rbenv bootstrap-ubuntu-12-04
 ```
 
