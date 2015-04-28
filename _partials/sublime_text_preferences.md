@@ -36,6 +36,8 @@ of getting help or helping other.
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
   "detect_indentation": false,
+  "ensure_newline_at_eof_on_save": true,
+  "trim_automatic_white_space": true,
   "trim_trailing_white_space_on_save": true,
   "draw_white_space": true,
   "use_tab_stops": true,
