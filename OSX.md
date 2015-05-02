@@ -18,11 +18,11 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ## Command Line Tools
 
-Open the terminal
+Open the Terminal (click the loupe icon in the top right corner):
 
 ![](images/open-terminal.png)
 
-Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the terminal.
+Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the Terminal.
 
 ```bash
 $ xcode-select --install
@@ -52,7 +52,7 @@ Again, make sure that Sublime Text is there, not in the disk image you downloade
 
 We will install the package manager right away, you'll need this to install addons. Launch Sublime Text, and open the console via the `View > Show Console` menu. This will show a promt at the bottom of Sublime Text window where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` is a handy shortcut to quit an application on OS X, the red dot in the top left corner of the window does **not** quit an application).
 
-If you have trouble with this step, ask a teacher. This was the only time we'll the prompt. All other commands will be in the terminal.
+If you have trouble with this step, ask a teacher. This was the only time we'll the prompt. All other commands will be in the Terminal.
 
 To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P`, and type `installp`. If you see something like below, you're good to go!
 
@@ -111,7 +111,8 @@ You can now quit Sublime Text.
 
 On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
 It will be used as soon as we need to install some software.
-To do so, open your terminal and run:
+
+To do so, open your Terminal and run:
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -145,7 +146,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
                         /____/                       ....is now installed!
 ````
 
-Now quit the terminal (`⌘` + `Q`), and restart it.
+Now quit the Terminal (`⌘` + `Q`), and reopen it.
 
 You should see something like this:
 
@@ -188,7 +189,7 @@ come back to this tutorial.
 
 You may already have installed ruby, but we are going to do it again using `rbenv`, a manager for installing different Ruby versions on your computer. If you installed `rvm` before, run `rvm implode` to remove it beforehand.
 
-Open a terminal, and run:
+Open a Terminal, and run:
 
 ```bash
 $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
