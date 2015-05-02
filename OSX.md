@@ -42,7 +42,7 @@ While it's downloading, you can go on with the Sublime Text configuration (next 
 
 ## Sublime Text 2 - Your text editor
 
-A text editor is one of the most important tool of a developer. Go to [this page](http://www.sublimetext.com/2) and download Sublime Text 2 for your OSX (should be the first link). Install it (meaning you have to drag & drop the app **into** the `Applications` folder, don't skip it!).
+A text editor is one of the most important tools of a developer. Go to [this page](http://www.sublimetext.com/2) and download Sublime Text 2 for your OSX (should be the first link). Install it (meaning you have to drag & drop the app **into** the `Applications` folder, don't skip it!).
 
 It is free without any time limitation but a popup will appear every ten save to remind there is a license to buy.
 Just hit `Esc` when this happens, but feel free to buy it if you really like this one (there are alternatives).
