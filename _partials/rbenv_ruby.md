@@ -5,7 +5,7 @@ $ rbenv install 2.2.2
 $ rbenv global 2.2.2
 ```
 
-Then restart your terminal (close it and reopen it).
+Then restart your Terminal (close it and reopen it).
 
 ```bash
 $ ruby -v

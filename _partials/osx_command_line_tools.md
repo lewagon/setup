@@ -1,10 +1,10 @@
 ## Command Line Tools
 
-Open the terminal
+Open the Terminal (click the loupe icon in the top right corner):
 
 ![](images/open-terminal.png)
 
-Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the terminal.
+Type what is after the dollar sign `$`. The dollar sign means that you need to type what's after into the Terminal.
 
 ```bash
 $ xcode-select --install
@@ -16,7 +16,7 @@ If you have get following message, you can just skip this step and go to Sublime
 # command line tools are already installed, use "Software Update" to install updates
 ```
 
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple server are overloaded.
+Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple servers are overloaded.
 
 ![](images/xcode-select-install.png)
 
