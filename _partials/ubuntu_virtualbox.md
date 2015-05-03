@@ -10,7 +10,7 @@ You have to download 2 softwares:
 Ask a teacher for help to setup a VirtualBox machine (with at least 1G of RAM) and boot
 the Ubuntu iso into it. Once Ubuntu is installed, follow the rest of this tutorial.
 
-Open a terminal and run these commands.
+Open a Terminal and run these commands.
 
 ```bash
 $ sudo apt-get install virtualbox-guest-dkms

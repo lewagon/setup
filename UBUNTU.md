@@ -4,7 +4,7 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
-- Pimp your terminal
+- Pimp your Terminal
 - Setup Git and Github
 - Install Ruby
 
@@ -21,7 +21,7 @@ You have to download 2 softwares:
 Ask a teacher for help to setup a VirtualBox machine (with at least 1G of RAM) and boot
 the Ubuntu iso into it. Once Ubuntu is installed, follow the rest of this tutorial.
 
-Open a terminal and run these commands.
+Open a Terminal and run these commands.
 
 ```bash
 $ sudo apt-get install virtualbox-guest-dkms
@@ -37,6 +37,7 @@ $ sudo shutdown -r 0
 
 If you have poor performance with your Virtual Machine, [try this](http://askubuntu.com/a/289758).
 
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
@@ -47,7 +48,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ## Sublime Text 2 - Your text editor
 
 A text editor is one of the most important tool of a developer.
-Follow these instructions in the terminal:
+Follow these instructions in the Terminal:
 
 ```bash
 $ sudo add-apt-repository ppa:webupd8team/sublime-text-2
@@ -55,13 +56,16 @@ $ sudo apt-get update
 $ sudo apt-get install sublime-text
 ```
 
+Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
+
+
 ### Package control
 
-We will install the package manager right away to install addons. Launch Sublime Text, then open the console via the `View > Show Console` menu. It will open at the bottom of Sublime Text a prompt where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` to quit on Mac).
+We will install the package manager right away, you'll need this to install addons. Launch Sublime Text, and open the console via the `View > Show Console` menu. This will show a prompt at the bottom of Sublime Text window where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` is a handy shortcut to quit an application on OS X, the red dot in the top left corner of the window does **not** quit an application).
 
-If you have trouble with this step, ask a teacher. That would be the only thing we'll type in this prompt. All other commands will be in the terminal.
+If you have trouble with this step, ask a teacher. This was the only time we use the sublime text prompt. All other commands will be in the Terminal.
 
-To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Windows or Ubuntu), and type `installp`. If you see something like below, you're good to go!
+To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Ubuntu), and type `installp`. If you see something like below, you're good to go!
 
 ![](images/sublime-install-package.png)
 
@@ -124,7 +128,7 @@ sudo apt-get update
 sudo apt-get install git
 ```
 
-## Oh-my-zsh - Fancy your terminal
+## Oh-my-zsh - Fancy your Terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
@@ -147,6 +151,7 @@ To make this change stick, restart your virtual machine:
 ```bash
 $ sudo shutdown -r 0
 ```
+
 
 ## GitHub
 
@@ -176,7 +181,7 @@ come back to this tutorial.
 
 You may already have installed ruby, but we are going to do it again using `rbenv`, a manager for installing different Ruby versions on your computer. If you installed `rvm` before, run `rvm implode` to remove it beforehand.
 
-Open a terminal, and run:
+Open a Terminal, and run:
 
 ```bash
 $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
@@ -198,7 +203,7 @@ $ rbenv install 2.2.2
 $ rbenv global 2.2.2
 ```
 
-Then restart your terminal (close it and reopen it).
+Then restart your Terminal (close it and reopen it).
 
 ```bash
 $ ruby -v
@@ -214,4 +219,5 @@ $ gem install bundler rspec rubocop pry pry-byebug hub
 
 Never install a gem with `sudo gem install`! Even if you stumble upon Stackoverflow answer
 telling you to do so.
+
 

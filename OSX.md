@@ -4,7 +4,7 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
-- Pimp your terminal
+- Pimp your Terminal
 - Setup Git and Github
 - Install Ruby
 
@@ -40,6 +40,7 @@ Otherwise, it will open a window asking you if you want to install some software
 
 While it's downloading, you can go on with the Sublime Text configuration (next session), but **stop** before Homebrew. You'll need the command line tools installed for that step.
 
+
 ## Sublime Text 2 - Your text editor
 
 A text editor is one of the most important tools of a developer. Go to [this page](http://www.sublimetext.com/2) and download Sublime Text 2 for OS X. Install it (double click the downloaded file and drag & drop the app **into** the `Applications` folder, **don't skip this**).
@@ -48,13 +49,15 @@ Sublime Text is free without any time limitation but a popup will appear every t
 
 Again, make sure that Sublime Text is there, not in the disk image you downloaded. To make sure it's correct, once Sublime Text is installed, unmount the "Sublime Text 2" disk in the left panel of Finder. Finder will complain if something went wrong. Ask a teacher.
 
+
+
 ### Package control
 
-We will install the package manager right away, you'll need this to install addons. Launch Sublime Text, and open the console via the `View > Show Console` menu. This will show a promt at the bottom of Sublime Text window where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` is a handy shortcut to quit an application on OS X, the red dot in the top left corner of the window does **not** quit an application).
+We will install the package manager right away, you'll need this to install addons. Launch Sublime Text, and open the console via the `View > Show Console` menu. This will show a prompt at the bottom of Sublime Text window where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`⌘` + `Q` is a handy shortcut to quit an application on OS X, the red dot in the top left corner of the window does **not** quit an application).
 
-If you have trouble with this step, ask a teacher. This was the only time we'll the prompt. All other commands will be in the Terminal.
+If you have trouble with this step, ask a teacher. This was the only time we use the sublime text prompt. All other commands will be in the Terminal.
 
-To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P`, and type `installp`. If you see something like below, you're good to go!
+To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Ubuntu), and type `installp`. If you see something like below, you're good to go!
 
 ![](images/sublime-install-package.png)
 
@@ -111,7 +114,6 @@ You can now quit Sublime Text.
 
 On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
 It will be used as soon as we need to install some software.
-
 To do so, open your Terminal and run:
 
 ```bash
@@ -127,7 +129,7 @@ $ brew install git vim tree
 ```
 
 
-## Oh-my-zsh - Fancy your terminal
+## Oh-my-zsh - Fancy your Terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
@@ -138,15 +140,15 @@ $ curl -L http://install.ohmyz.sh | sh
 Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:
 
 ```bash
-         __                                     __   
-  ____  / /_     ____ ___  __  __   ____  _____/ /_  
- / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \ 
-/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / / 
-\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/  
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
                         /____/                       ....is now installed!
 ````
 
-Now quit the Terminal (`⌘` + `Q`), and reopen it.
+Now quit the Terminal (`⌘` + `Q`), and restart it.
 
 You should see something like this:
 
@@ -154,11 +156,11 @@ You should see something like this:
 
 If not, **stop right away** and call a teacher.
 
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles`.
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
 
 ![](images/terminal-pro.png)
 
-Quit and relaunch the terminal. It should now have a nice black background, more easy on the eyes.
+Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
 
 
 ## GitHub
@@ -203,7 +205,7 @@ $ rbenv install 2.2.2
 $ rbenv global 2.2.2
 ```
 
-Then restart your terminal (close it and reopen it).
+Then restart your Terminal (close it and reopen it).
 
 ```bash
 $ ruby -v
@@ -219,6 +221,7 @@ $ gem install bundler rspec rubocop pry pry-byebug hub
 
 Never install a gem with `sudo gem install`! Even if you stumble upon Stackoverflow answer
 telling you to do so.
+
 
 ## Security
 
