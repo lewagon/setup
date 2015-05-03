@@ -5,7 +5,7 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
 - Pimp your Terminal
-- Setup Git and GitHub
+- Setup git and GitHub
 - Install Ruby
 
 
