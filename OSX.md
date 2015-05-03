@@ -5,7 +5,7 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
 - Pimp your Terminal
-- Setup Git and Github
+- Setup git and GitHub
 - Install Ruby
 
 
@@ -13,7 +13,7 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-**[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your Github account. This is important as we'll use an internal dashboard with your avatars.
+**[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars.
 
 
 ## Command Line Tools
@@ -171,17 +171,17 @@ time you want to `git push` some modifications.
 It is a tricky concept and a tricky setup, fortunately GitHub wrote a great article.
 Just [go to this article](https://help.github.com/articles/generating-ssh-keys/#step-2-generate-a-new-ssh-key), and select your environment at the top (Mac or Linux). If you need help, ask a teacher. *Do not* download GitHub for Mac, follow the part with SSH Keys.
 
-**NB:** when asked for a passphrase, don't put your laptop password or your github password. It is
+**NB:** when asked for a passphrase, don't put your laptop password or your GitHub password. It is
 important to protect your keys with a password, otherwise anyone having access to these files
 will be able to impersonate your GitHub account (and get access to your private code for instance).
 
 
 ## Your Configuration
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on Github. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
 :arrow_right: [Go to this page](https://github.com/lewagon/dotfiles/fork) and **fork** the repository to your account.
-Forking means that it will create a new repo in your Github account, identical to the original one.
+Forking means that it will create a new repo in your GitHub account, identical to the original one.
 
 Then follow the instructions in the readme of the repo you've just forked. Once done,
 come back to this tutorial.
