@@ -44,7 +44,7 @@ def check_all
     if groups && (nickname = groups["nickname"])
       avatar_url = JSON.parse(open("https://api.github.com/users/#{nickname}").read)["avatar_url"]
       content_length = `curl -s -I #{avatar_url} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
-      if content_length >= 10000 # 10 kb
+      if content_length >= 5000 # 10 kb
         [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
       else
         [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set."]
