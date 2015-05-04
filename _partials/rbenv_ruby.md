@@ -1,11 +1,18 @@
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
+Run this command, it will **take a while (5-10 minutes)**
 ```bash
 $ rbenv install 2.2.2
+```
+
+Once the ruby installtion is done, run this command tell the system
+to use the 2.2.2 version by default.
+
+```bash
 $ rbenv global 2.2.2
 ```
 
-Then restart your Terminal (close it and reopen it).
+Then **restart** your Terminal (close it and reopen it).
 
 ```bash
 $ ruby -v
