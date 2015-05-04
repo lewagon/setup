@@ -171,7 +171,7 @@ time you want to `git push` some modifications.
 It is a tricky concept and a tricky setup, fortunately GitHub wrote a great article.
 Just [go to this article](https://help.github.com/articles/generating-ssh-keys/#step-2-generate-a-new-ssh-key), and select your environment at the top (Mac or Linux). If you need help, ask a teacher. *Do not* download GitHub for Mac, follow the part with SSH Keys.
 
-**NB:** when asked for a passphrase, don't put your laptop password or your GitHub password. It is
+**NB:** when asked for a passphrase, don't put your laptop password or your github password. It is
 important to protect your keys with a password, otherwise anyone having access to these files
 will be able to impersonate your GitHub account (and get access to your private code for instance).
 
@@ -216,11 +216,11 @@ You should see something starting with `ruby 2.2.2p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-$ gem install bundler rspec rubocop pry pry-byebug hub
+$ gem install bundler rspec rubocop pry pry-byebug hub colored
 ```
 
-Never install a gem with `sudo gem install`! Even if you stumble upon Stackoverflow answer
-telling you to do so.
+**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
+(or the Terminal) telling you to do so.
 
 
 ## Security
@@ -228,4 +228,17 @@ telling you to do so.
 It is mandataory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
 You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
+
+## Check-up
+
+Let's check if you successfully installed everything.
+
+Quit all opened Terminal, open a new one and run the following commands:
+
+```bash
+$ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
+```
+
+It should tell you if your workstation is ready :)
+
 

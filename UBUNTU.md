@@ -214,10 +214,23 @@ You should see something starting with `ruby 2.2.2p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-$ gem install bundler rspec rubocop pry pry-byebug hub
+$ gem install bundler rspec rubocop pry pry-byebug hub colored
 ```
 
-Never install a gem with `sudo gem install`! Even if you stumble upon Stackoverflow answer
-telling you to do so.
+**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
+(or the Terminal) telling you to do so.
+
+
+## Check-up
+
+Let's check if you successfully installed everything.
+
+Quit all opened Terminal, open a new one and run the following commands:
+
+```bash
+$ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
+```
+
+It should tell you if your workstation is ready :)
 
 
