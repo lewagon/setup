@@ -53,12 +53,19 @@ def check_all
       [ false, "Could not authenticate against GitHub. Check your SSH keys configuration."]
     end
   end
-  check("git setup") do
+  check("git email setup") do
     email = `git config --global user.email`.strip
     if email && email.match(VALID_EMAIL_REGEX)
       [ true, "Please manually check that `#{email}` is set at https://github.com/settings/emails - Did you confirm it?" ]
     else
       [ false, "Could not find an email in your git setup. Check your dotfiles"]
+    end
+  end
+  check("git editor setup") do
+    if `git config --global core.editor`.downcase.match(/subl/)
+      [ true, "Sublime Text is your default git editor"]
+    else
+      [ false, "Ask a teacher to check your ~/.gitconfig editor setup. You can use `which subl` to figure it out."]
     end
   end
   check("ruby gems") do
