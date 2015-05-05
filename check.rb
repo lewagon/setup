@@ -42,12 +42,16 @@ def check_all
   check("GitHub setup") do
     groups = `ssh -T git@github.com 2>&1`.match(/Hi (?<nickname>.*)! You've successfully authenticated/)
     if groups && (nickname = groups["nickname"])
-      avatar_url = JSON.parse(open("https://api.github.com/users/#{nickname}").read)["avatar_url"]
-      content_length = `curl -s -I #{avatar_url} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
-      if content_length >= 5000 # 10 kb
-        [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
+      github_user = JSON.parse(open("https://api.github.com/users/#{nickname}").read)
+      if github_user["name"] != nickname && !github_user["name"].nil? || github_user["name"] != ""
+        content_length = `curl -s -I #{github_user["avatar_url"]} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
+        if content_length >= 5000 # 10 kb
+          [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
+        else
+          [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set."]
+        end
       else
-        [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set."]
+        [ false, "Please specify your first and last name on your GitHub account -> https://github.com/settings/profile"]
       end
     else
       [ false, "Could not authenticate against GitHub. Check your SSH keys configuration."]
