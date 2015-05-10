@@ -1,11 +1,46 @@
 ## GitHub
 
-We need to configure Git with SSH keys, this way you won't have to put your password each
-time you want to `git push` some modifications.
+We need to generate SSH keys which are going to be used by GitHub and Heroku
+to authenticate you. Think of it as a way to log in, but different from the
+well known username/password couple. If you already generated keys
+that you already use with other services, you can skip this step.
 
-It is a tricky concept and a tricky setup, fortunately GitHub wrote a great article.
-Just [go to this article](https://help.github.com/articles/generating-ssh-keys/#step-2-generate-a-new-ssh-key), and select your environment at the top (Mac or Linux). If you need help, ask a teacher. *Do not* download GitHub for Mac, follow the part with SSH Keys.
+Open a terminal and type this, replacing the email with **yours** (the
+same one you used to create your GitHub account). It will prompt
+for information. Just press enter until it asks for a **passphrase**.
 
-**NB:** when asked for a passphrase, don't put your laptop password or your github password. It is
-important to protect your keys with a password, otherwise anyone having access to these files
-will be able to impersonate your GitHub account (and get access to your private code for instance).
+**NB:** when asked for a passphrase, put something you want (and that you'll remember),
+it's a password to protect your private key stored on your hard drive. You'll type,
+nothing will show up on the screen, **that's normal**. Just type the passphrase,
+and when you're done, press Enter.
+
+```bash
+$ ssh-keychen -t rsa -C "your_email@example.com"
+```
+
+Then you need to give your **public** key to GitHub. Run:
+
+```bash
+$ cat ~/.ssh/id_rsa.pub
+```
+
+It will prompt on the screen the content of the `id_rsa.pub` file. Copy that text,
+then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
+**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
+Finish by clicking on the **Add key** green button.
+
+To check that this step is completed, in the terminal run this. You will be
+prompted a warning, type `yes` then `Enter`.
+
+```bash
+$ ssh -T git@github.com
+```
+
+If you see something like this, you're done!
+
+```bash
+# Hi --------! You've successfully authenticated, but GitHub does not provide shell access
+```
+
+Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
+understanding of what those keys are used for.
