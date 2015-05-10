@@ -214,6 +214,8 @@ own github usernickname
 $ export GITHUB_USERNAME=my_github_username
 ```
 
+Now copy/paste this very long link to your terminal. Do **not** change this one.
+
 ```
 $ mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 ```
@@ -223,6 +225,11 @@ Run the `dotfiles` installer. It will **prompt** you for your name and your emai
 ```bash
 $ zsh install.sh
 ```
+
+That's it, your terminal has a standard configuration, which will help you to collaborate
+with the other students.
+
+Please now **quit** all your opened terminal windows.
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv), not rvm)
