@@ -180,7 +180,7 @@ nothing will show up on the screen, **that's normal**. Just type the passphrase,
 and when you're done, press Enter.
 
 ```bash
-$ ssh-keychen -t rsa -C "your_email@example.com"
+$ ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 Then you need to give your **public** key to GitHub. Run:
