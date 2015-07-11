@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -wU
 
-OSX = %w(intro github osx_command_line_tools osx_sublime_text sublime_text_preferences homebrew  osx_oh_my_zsh github_rsa dotfiles rbenv rbenv_ruby osx_security checkup)
+OSX = %w(intro github osx_command_line_tools osx_sublime_text sublime_text_preferences homebrew  osx_oh_my_zsh github_rsa dotfiles rbenv rbenv_ruby osx_security checkup osx_slack)
 UBUNTU = %w(intro ubuntu_virtualbox github ubuntu_sublime_text sublime_text_preferences ubuntu_git ubuntu_oh_my_zsh github_rsa dotfiles rbenv rbenv_ubuntu rbenv_ruby checkup)
 
 { 'OSX.md': OSX, 'UBUNTU.md': UBUNTU }.each do |filename, partials|
