@@ -12,5 +12,10 @@ Setup guides made for [Le Wagon](http://www.lewagon.org/en). Please choose your 
         <img src="images/linux.png" alt="Ubuntu" />
       </a>
     </td>
+    <td>
+      <a href="WINDOWS.md">
+        <img src="images/windows.png" alt="Windows">
+      </a>
+    </td>
   </tr>
 </table>
