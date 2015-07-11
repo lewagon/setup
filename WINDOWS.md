@@ -21,4 +21,8 @@ If you are running Windows 8+, you need to disable Fast Startup :
 
 ## Install Ubuntu
 
-When it's done, boot on Ubuntu and follow [this guide](UBUNTU.md)
+Plug-in the USB stick, and restart your computer. If it does not boot on Linux, you need to ask a teacher to help you with accessing the BIOS and changing the boot order so that it reads from the usb stick first before the hard drive.
+
+When it's done, check you can still boot on Windows.
+
+Then restart the computer, boot on ubuntu, and follow [this guide](UBUNTU.md)
