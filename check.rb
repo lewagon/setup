@@ -2,7 +2,7 @@ require "colored"
 require "json"
 require "open-uri"
 
-REQUIRED_RUBY_VERSION = "2.2.2"
+REQUIRED_RUBY_VERSION = "2.2.3"
 REQUIRED_GIT_VERSION = "2.0"
 VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 
@@ -24,8 +24,8 @@ def check_all
     end
   end
   check("ruby version") do
-    if RUBY_VERSION == "2.2.2"
-      [ true, "Your default ruby version is 2.2.2" ]
+    if RUBY_VERSION == "2.2.3"
+      [ true, "Your default ruby version is 2.2.3" ]
     else
       [ false, "Your default ruby version is #{RUBY_VERSION}, but should #{REQUIRED_RUBY_VERSION}. Did you run `rbenv global #{REQUIRED_RUBY_VERSION}`" ]
     end
