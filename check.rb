@@ -5,6 +5,7 @@ require "open-uri"
 REQUIRED_RUBY_VERSION = "2.2.2"
 REQUIRED_GIT_VERSION = "2.0"
 VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+MINIMUM_AVATAR_SIZE = 2 * 1024
 
 $all_good = true
 
@@ -45,7 +46,7 @@ def check_all
       github_user = JSON.parse(open("https://api.github.com/users/#{nickname}").read)
       if github_user["name"] != nickname && !github_user["name"].nil? || github_user["name"] != ""
         content_length = `curl -s -I #{github_user["avatar_url"]} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
-        if content_length >= 5000 # 10 kb
+        if content_length >= MINIMUM_AVATAR_SIZE
           [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
         else
           [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set."]
