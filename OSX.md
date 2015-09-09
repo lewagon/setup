@@ -57,9 +57,10 @@ We will install the package manager right away, you'll need this to install addo
 
 If you have trouble with this step, ask a teacher. This was the only time we use the sublime text prompt. All other commands will be in the Terminal.
 
-To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P` (`Ctrl`+`⇧`+`P` on Ubuntu), and type `installp`. If you see something like below, you're good to go!
+To check that the Package Control is installed, you can hit `⌘`+`⇧`+`P`, and type `installp`. If you see something like below, you're good to go!
 
 ![](images/sublime-install-package.png)
+
 
 ### Useful Packages
 
