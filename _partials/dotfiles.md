@@ -4,7 +4,7 @@ Hackers love to refine and polish their shell and tools. We'll start with a grea
 
 :arrow_right: [Fork](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account. Forking means that it will create a new repo in your GitHub account, identical to the original one.
 
-Then open your terminal. Don't blindly copy paste this line, type it and put *your*
+Then open your terminal. Don't blindly copy paste this line, replace `my_github_username` with *your*
 own github usernickname
 
 ```
