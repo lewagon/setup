@@ -1,3 +1,5 @@
+## New alumni
+
 Setup guides made for [Le Wagon](http://www.lewagon.org/en). Please choose your operating system (OS):
 
 <table>
@@ -19,3 +21,7 @@ Setup guides made for [Le Wagon](http://www.lewagon.org/en). Please choose your 
     </td>
   </tr>
 </table>
+
+## Already done the FullStack program?
+
+Then jump to [this guide](second-setup/OSX.md).
