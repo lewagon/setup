@@ -72,7 +72,7 @@ Copy-paste the public SSH key which we outputed with the last command and [add i
 ## Dotfiles
 
 ```bash
-$ export GITHUB_USERNAME=my_github_username
+$ export GITHUB_USERNAME=your_github_nickname
 $ mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 $ zsh install.sh
 ```
@@ -105,5 +105,4 @@ $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
 
 Maybe install `redis` as well?
-
 
