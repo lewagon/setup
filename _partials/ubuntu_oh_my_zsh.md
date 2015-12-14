@@ -3,7 +3,7 @@
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-$ sudo apt-get install zsh curl vim
+$ sudo apt-get install zsh curl vim nodejs imagemagick
 $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh > install.sh
 $ bash install.sh
 $ rm install.sh
