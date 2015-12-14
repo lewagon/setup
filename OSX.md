@@ -301,7 +301,7 @@ two options, you can use tab to circle between them.
 [Read this script](https://gist.github.com/brandonb927/3195465) and cherry-pick some stuff you think will suit you.
 For instance, you can type in the terminal this one:
 
-```
+```bash
 # Expanding the save panel by default
 $ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 $ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
