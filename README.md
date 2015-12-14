@@ -1,6 +1,6 @@
 ## New alumni
 
-Setup guides made for [Le Wagon](http://www.lewagon.org/en). Please choose your operating system (OS):
+Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your operating system (OS):
 
 <table>
   <tr>

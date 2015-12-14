@@ -45,78 +45,18 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars.
 
 
-## Sublime Text 2 - Your text editor
+## Sublime Text 3 - Your text editor
 
 A text editor is one of the most important tool of a developer.
 Follow these instructions in the Terminal:
 
 ```bash
-$ sudo add-apt-repository ppa:webupd8team/sublime-text-2
+$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 $ sudo apt-get update
-$ sudo apt-get install sublime-text
+$ sudo apt-get install sublime-text-installer
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
-
-
-### Package control
-
-We will install the package manager right away, you'll need this to install addons. Launch Sublime Text, and open the console via the `View > Show Console` menu. This will show a prompt at the bottom of Sublime Text window where you can type stuff. You need to [copy some code](https://sublime.wbond.net/installation#st2) and paste it in that Sublime Text console. Then hit `Enter`. Restart Sublime Text (`Ctrl` + `q` is a handy shortcut to quit the application since the close button in top corner of the window will only close the current window and **not** quit Sublime Text).
-
-If you have trouble with this step, ask a teacher. This was the only time we use the sublime text prompt. All other commands will be in the Terminal.
-
-To check that the Package Control is installed, you can hit `Ctrl`+`⇧`+`P`, and type `installp`. If you see something like below, you're good to go!
-
-![](images/sublime-install-package.png)
-
-
-### Useful Packages
-
-Here is a list of packages you should install to harness the power of Sublime Text with Ruby, Rails and Middleman:
-Launch Package Control as explained above, hit `Enter` to view the package list, find and install (hitting `Enter` again):
-
-- BracketHighlighter
-- Emmet
-- Git
-- GitGutter
-- Syntax Highlighting for Sass
-
-### Preferences
-
-We need to set some default on Sublime Text. Sharing defaults within your
-colleagues, fellow students and teachers is important: it eases the process
-of getting help or helping other.
-
-1. Open Sublime Text
-1. Go to `Preferences > Settings - Users`
-1. Erase all the content of the file which got opened.
-1. Copy paste the code below.
-1. Save the file
-
-```json
-{
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "detect_indentation": false,
-  "ensure_newline_at_eof_on_save": true,
-  "trim_automatic_white_space": true,
-  "trim_trailing_white_space_on_save": true,
-  "draw_white_space": true,
-  "use_tab_stops": true,
-  "hot_exit": false,
-  "remember_open_files": false,
-  "highlight_modified_tabs": true,
-  "rulers": [ 80 ],
-  "wordWrap": false,
-  "folder_exclude_patterns": [ "tmp", "log", ".git", "_site", ".bundle", ".sass-cache", "build" ]
-}
-```
-
-The convention we are enforcing with this configuration is that we use 2 spaces
-for indentation (no tabs). So each time you will hit the `tab` key,
-Sublime Text will insert 2 spaces.
-
-You can now quit Sublime Text.
 
 
 ## Git
@@ -134,7 +74,7 @@ sudo apt-get install git
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-$ sudo apt-get install zsh curl vim
+$ sudo apt-get install zsh curl vim nodejs imagemagick
 $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh > install.sh
 $ bash install.sh
 $ rm install.sh
@@ -206,31 +146,52 @@ understanding of what those keys are used for.
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
-:arrow_right: [Fork](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account. Forking means that it will create a new repo in your GitHub account, identical to the original one.
+:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account. Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
-Then open your terminal. Don't blindly copy paste this line, replace `my_github_username` with *your*
-own github usernickname
+Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
+own github usernickname.
 
-```
-$ export GITHUB_USERNAME=my_github_username
+```bash
+$ export GITHUB_USERNAME=replace_this_with_your_github_username
+# Example:
+#   export GITHUB_USERNAME=ssaunier
 ```
 
 Now copy/paste this very long link to your terminal. Do **not** change this one.
 
-```
+```bash
 $ mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 ```
 
-Run the `dotfiles` installer. It will **prompt** you for your name and your email.
+Run the `dotfiles` installer.
 
 ```bash
 $ zsh install.sh
 ```
 
-That's it, your terminal has a standard configuration, which will help you to collaborate
-with the other students.
+Then run the git installer. It will **prompt** you for your name and your email.
+
+```bash
+$ zsh git_setup.sh
+```
 
 Please now **quit** all your opened terminal windows.
+
+### Sublime Text auto-configuration
+
+In the terminal, type this:
+
+```bash
+$ stt
+```
+
+It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
+ **Wait a bit** for additional packages to be automatically installed (New tabs with text will automatically open, containing
+ documentation for each new package installed). To check if plugins are installed,
+ open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should
+ see a couple of packages installed (like [Emmet](http://emmet.io/)). If you are not sure, ask a teacher.
+
+
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv), not rvm)
@@ -247,8 +208,8 @@ $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rb
 Now, run:
 
 ```bash
-$ sudo apt-get install libffi-dev libssl-dev
-$ rbenv bootstrap-ubuntu-12-04
+$ sudo apt-get install build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev
+$ sudo apt-get clean
 ```
 
 
@@ -282,6 +243,19 @@ $ gem install bundler rspec rubocop pry pry-byebug hub colored
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
+
+
+## Postgresql
+
+In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+an open-source robust and production-ready database. Let's install it now.
+
+```
+$ sudo apt-get install postgresql postgresql-contrib libpq-dev build-essential
+$ sudo su - postgres
+$ psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+$ exit
+```
 
 
 ## Check-up

@@ -6,48 +6,15 @@ You are here because you already did Le Wagon FullStack and purchased a new comp
 $ xcode-select --install
 ```
 
-## Sublime Text 2
+## Sublime Text 3
 
-1. [Download](http://www.sublimetext.com/2) and install it
-1. Install the [Package Manager](https://sublime.wbond.net/installation#st2)
-1. Reinstall your favorite packages like:
-  - BracketHighlighter
-  - Emmet
-  - Git
-  - GitGutter
-  - Syntax Highlighting for Sass
-  - All Autocomplete
-1. Setup your Preferences
-  1. Open Sublime Text
-  1. Go to `Preferences > Settings - Users`
-  1. Erase all the content of the file which got opened.
-  1. Copy paste the code below.
-  1. Save the file
-
-```json
-{
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "detect_indentation": false,
-  "ensure_newline_at_eof_on_save": true,
-  "trim_automatic_white_space": true,
-  "trim_trailing_white_space_on_save": true,
-  "draw_white_space": true,
-  "use_tab_stops": true,
-  "hot_exit": false,
-  "remember_open_files": false,
-  "highlight_modified_tabs": true,
-  "rulers": [ 80 ],
-  "wordWrap": false,
-  "folder_exclude_patterns": [ "tmp", "log", ".git", "_site", ".bundle", ".sass-cache", "build" ]
-}
-```
+[Download](http://www.sublimetext.com/3) and install it. Package Control / Config is now automatic at step "Dotfiles" below.
 
 ## Homebrew
 
 ```bash
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew install git openssl wget node
+$ brew install git openssl wget node imagemagick heroku
 ```
 
 ## Oh-my-zsh
@@ -104,5 +71,11 @@ $ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 $ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
 
-Maybe install `redis` as well?
+## Redis
+
+```bash
+$ brew install redis
+$ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+```
 
