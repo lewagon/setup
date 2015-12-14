@@ -92,7 +92,7 @@ $ rbenv global 2.2.3
 ## Gems
 
 ```ruby
-$ gem install bundler rspec rubocop pry pry-byebug hub colored
+$ gem install bundler rspec rubocop pry pry-byebug hub colored rails
 ```
 
 ## Postgresql
