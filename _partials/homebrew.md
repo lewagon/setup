@@ -13,5 +13,6 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 Then install some useful software:
 
 ```bash
-$ brew install git openssl wget imagemagick node
+$ brew install git wget imagemagick node
+$ brew install openssl && brew link openssl --force
 ```
