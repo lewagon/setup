@@ -50,8 +50,8 @@ $ zsh install.sh
 
 ```bash
 $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
-$ rbenv install 2.2.3
-$ rbenv global 2.2.3
+$ rbenv install 2.3.0
+$ rbenv global 2.3.0
 ```
 
 (`⌘` + `Q`) your terminal and restart it.
