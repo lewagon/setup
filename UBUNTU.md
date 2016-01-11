@@ -287,3 +287,25 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 - One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
 
 
+## Slack
+
+[Download](https://slack.com/downloads) the Slack native app from the Slack page. In **Linux (Beta)** section, choose **Ubuntu 64-bit** and download it.
+
+Then install it:
+
+```bash
+$ cd ~/Downloads
+$ sudo dpkg -i slack-desktop-1.2.6-amd64.deb
+```
+
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you upload a picture there.
+
+You can also sign in to Slack on your iPhone or Android device!
+
+The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+
+Enjoy your ride with Le Wagon :)
+
+
