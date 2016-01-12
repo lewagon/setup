@@ -64,10 +64,11 @@ Sublime Text is free without any time limitation but a popup will appear every t
 Download `git`, the versionning program we'll use everyday to archive our code:
 
 ```
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
+$ sudo add-apt-repository ppa:git-core/ppa
+$ sudo apt-get update
+$ sudo apt-get install git
 ```
+
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -284,5 +285,27 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 - One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
 - One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
+
+
+## Slack
+
+[Download](https://slack.com/downloads) the Slack native app from the Slack page. In **Linux (Beta)** section, choose **Ubuntu 64-bit** and download it.
+
+Then install it:
+
+```bash
+$ cd ~/Downloads
+$ sudo dpkg -i slack-desktop-*.deb
+```
+
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you upload a picture there.
+
+You can also sign in to Slack on your iPhone or Android device!
+
+The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+
+Enjoy your ride with Le Wagon :)
 
 
