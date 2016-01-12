@@ -6,7 +6,7 @@ Then install it:
 
 ```bash
 $ cd ~/Downloads
-$ sudo dpkg -i slack-desktop-1.2.6-amd64.deb
+$ sudo dpkg -i slack-desktop-*.deb
 ```
 
 Launch the app and sign in to `lewagon-alumni` organization.
