@@ -281,7 +281,7 @@ To quit it, type `\q` then `Enter`.
 
 ## Keyboard
 
-As you become a programer, you'll understand than leaving the keyboard taks a lot of time,
+As you become a programer, you'll understand that leaving the keyboard takes a lot of time,
 so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on OSX
 to help you do that:
 
