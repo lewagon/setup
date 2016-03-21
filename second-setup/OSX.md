@@ -50,7 +50,7 @@ $ zsh install.sh
 ## Ruby
 
 ```bash
-$ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+$ brew install rbenv ruby-build
 $ rbenv install 2.3.0
 $ rbenv global 2.3.0
 ```

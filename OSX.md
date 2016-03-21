@@ -212,13 +212,14 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a Terminal, and run:
 
 ```bash
-$ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+$ brew install rbenv ruby-build
 ```
 
 
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
+
 ```bash
 $ rbenv install 2.3.0
 ```

@@ -1,6 +1,7 @@
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
+
 ```bash
 $ rbenv install 2.3.0
 ```
