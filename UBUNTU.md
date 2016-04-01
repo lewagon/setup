@@ -24,9 +24,9 @@ the Ubuntu iso into it. Once Ubuntu is installed, follow the rest of this tutori
 Open a Terminal and run these commands.
 
 ```bash
-$ sudo apt-get install virtualbox-guest-dkms
-$ sudo apt-get install virtualbox-guest-utils
-$ sudo apt-get install virtualbox-guest-x11
+$ sudo apt-get install -y virtualbox-guest-dkms
+$ sudo apt-get install -y virtualbox-guest-utils
+$ sudo apt-get install -y virtualbox-guest-x11
 ```
 
 Then restart your virtual machine.
@@ -53,7 +53,7 @@ Follow these instructions in the Terminal:
 ```bash
 $ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 $ sudo apt-get update
-$ sudo apt-get install sublime-text-installer
+$ sudo apt-get install -y sublime-text-installer
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
@@ -66,7 +66,7 @@ Download `git`, the versionning program we'll use everyday to archive our code:
 ```
 $ sudo add-apt-repository ppa:git-core/ppa
 $ sudo apt-get update
-$ sudo apt-get install git
+$ sudo apt-get install -y git
 ```
 
 
@@ -75,7 +75,7 @@ $ sudo apt-get install git
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-$ sudo apt-get install zsh curl vim nodejs imagemagick
+$ sudo apt-get install -y zsh curl vim nodejs imagemagick
 $ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh > install.sh
 $ bash install.sh
 $ rm install.sh
@@ -208,7 +208,7 @@ $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rb
 Now, run:
 
 ```bash
-$ sudo apt-get install build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+$ sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
 $ sudo apt-get clean
 ```
 
@@ -252,7 +252,7 @@ In a few weeks, we'll talk about SQL and Databases and you'll need something cal
 an open-source robust and production-ready database. Let's install it now.
 
 ```
-$ sudo apt-get install postgresql postgresql-contrib libpq-dev build-essential
+$ sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
 $ sudo su - postgres
 $ psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 $ exit

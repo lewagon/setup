@@ -11,6 +11,6 @@ $ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rb
 Now, run:
 
 ```bash
-$ sudo apt-get install build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+$ sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
 $ sudo apt-get clean
 ```
