@@ -139,6 +139,12 @@ If you see something like this, you're done!
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
+If it does not work, try running this before trying again the `ssh -T` command:
+
+```bash
+$ ssh-add ~/.ssh/id_rsa
+```
+
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
@@ -253,9 +259,11 @@ an open-source robust and production-ready database. Let's install it now.
 
 ```
 $ sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
+$ echo `whoami` > /tmp/caller
 $ sudo su - postgres
-$ psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+$ psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
 $ exit
+$ rm /tmp/caller
 ```
 
 

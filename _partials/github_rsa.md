@@ -42,5 +42,11 @@ If you see something like this, you're done!
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
+If it does not work, try running this before trying again the `ssh -T` command:
+
+```bash
+$ ssh-add ~/.ssh/id_rsa
+```
+
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
