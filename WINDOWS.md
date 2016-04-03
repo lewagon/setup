@@ -2,7 +2,7 @@ First you need to install Ubuntu on your computer, as a dual boot.
 
 ## USB stick
 
-The teacher should give you a bootable USB stick with **Ubuntu 14.04.2 LTS 64 bits**. If not, you can create one yourself from [OSX](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) or from [Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows).
+The teacher should give you a bootable USB stick with **Ubuntu 14.04. LTS 64 bits**. If not, you can create one yourself from [OSX](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) or from [Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows).
 
 ## Backup your data
 
