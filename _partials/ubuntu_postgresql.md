@@ -9,5 +9,5 @@ $ echo `whoami` > /tmp/caller
 $ sudo su - postgres
 $ psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
 $ exit
-$ rm /tmp/caller
+$ rm -f /tmp/caller
 ```
