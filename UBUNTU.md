@@ -207,14 +207,12 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a Terminal, and run:
 
 ```bash
-curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
-```
-
-Now, run:
-
-```bash
-sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
 sudo apt-get clean
+sudo mkdir -p /usr/local/opt && sudo chown `whoami`:`whoami` $_
+git clone https://github.com/rbenv/rbenv.git /usr/local/opt/rbenv
+git clone https://github.com/rbenv/ruby-build.git /usr/local/opt/rbenv/plugins/ruby-build
+source ~/.zshrc
 ```
 
 
