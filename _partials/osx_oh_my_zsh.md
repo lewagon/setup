@@ -3,7 +3,7 @@
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-$ curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | sh
 ```
 
 Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:

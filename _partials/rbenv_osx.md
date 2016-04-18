@@ -5,5 +5,5 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a Terminal, and run:
 
 ```bash
-$ brew install rbenv ruby-build
+brew install rbenv ruby-build
 ```

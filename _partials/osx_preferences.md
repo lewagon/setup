@@ -23,9 +23,9 @@ For instance, you can type in the terminal this one:
 
 ```bash
 # Expanding the save panel by default
-$ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-$ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-$ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Disable system-wide resume
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false

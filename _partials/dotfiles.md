@@ -8,7 +8,7 @@ Open your terminal. **Don't blindly copy paste this line**, replace `replace_thi
 own github usernickname.
 
 ```bash
-$ export GITHUB_USERNAME=replace_this_with_your_github_username
+export GITHUB_USERNAME=replace_this_with_your_github_username
 # Example:
 #   export GITHUB_USERNAME=ssaunier
 ```
@@ -16,19 +16,19 @@ $ export GITHUB_USERNAME=replace_this_with_your_github_username
 Now copy/paste this very long link to your terminal. Do **not** change this one.
 
 ```bash
-$ mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-$ zsh install.sh
+zsh install.sh
 ```
 
 Then run the git installer. It will **prompt** you for your name and your email.
 
 ```bash
-$ zsh git_setup.sh
+zsh git_setup.sh
 ```
 
 Please now **quit** all your opened terminal windows.
@@ -38,7 +38,7 @@ Please now **quit** all your opened terminal windows.
 In the terminal, type this:
 
 ```bash
-$ stt
+stt
 ```
 
 It will **open Sublime Text in the context of your current folder**. That's how we'll use it.

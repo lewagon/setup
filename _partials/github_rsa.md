@@ -15,13 +15,13 @@ nothing will show up on the screen, **that's normal**. Just type the passphrase,
 and when you're done, press Enter.
 
 ```bash
-$ mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
+mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 Then you need to give your **public** key to GitHub. Run:
 
 ```bash
-$ cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 
 It will prompt on the screen the content of the `id_rsa.pub` file. Copy that text,
@@ -33,7 +33,7 @@ To check that this step is completed, in the terminal run this. You will be
 prompted a warning, type `yes` then `Enter`.
 
 ```bash
-$ ssh -T git@github.com
+ssh -T git@github.com
 ```
 
 If you see something like this, you're done!
@@ -45,7 +45,7 @@ If you see something like this, you're done!
 If it does not work, try running this before trying again the `ssh -T` command:
 
 ```bash
-$ ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
 ```
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better

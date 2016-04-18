@@ -15,10 +15,10 @@ Open the Terminal (click the magnifying glass icon in the top right corner of yo
 
 ![](images/open-terminal.png)
 
-Copy-paste the following command, i.e. what is after the dollar sign `$`. **The dollar sign is a common convention to indicate this is something you need to type in the terminal**.
+Copy-paste the following command in the terminal and hit Enter.
 
 ```bash
-$ xcode-select --install
+xcode-select --install
 ```
 
 If you have get following message, you can just skip this step and go to next step.
@@ -48,7 +48,7 @@ It will be used as soon as we need to install some software.
 To do so, open your Terminal and run:
 
 ```bash
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 This will ask for your confirmation (hit `Enter`) and your laptop session password.
@@ -56,8 +56,8 @@ This will ask for your confirmation (hit `Enter`) and your laptop session passwo
 Then install some useful software:
 
 ```bash
-$ brew install git wget imagemagick node
-$ brew install openssl && brew link openssl --force
+brew install git wget imagemagick node
+brew install openssl && brew link openssl --force
 ```
 
 
@@ -76,7 +76,7 @@ Again, make sure that Sublime Text is there, not in the disk image you downloade
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-$ curl -L http://install.ohmyz.sh | sh
+curl -L http://install.ohmyz.sh | sh
 ```
 
 Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:
@@ -122,13 +122,13 @@ nothing will show up on the screen, **that's normal**. Just type the passphrase,
 and when you're done, press Enter.
 
 ```bash
-$ mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
+mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 Then you need to give your **public** key to GitHub. Run:
 
 ```bash
-$ cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 
 It will prompt on the screen the content of the `id_rsa.pub` file. Copy that text,
@@ -140,7 +140,7 @@ To check that this step is completed, in the terminal run this. You will be
 prompted a warning, type `yes` then `Enter`.
 
 ```bash
-$ ssh -T git@github.com
+ssh -T git@github.com
 ```
 
 If you see something like this, you're done!
@@ -152,7 +152,7 @@ If you see something like this, you're done!
 If it does not work, try running this before trying again the `ssh -T` command:
 
 ```bash
-$ ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
 ```
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
@@ -169,7 +169,7 @@ Open your terminal. **Don't blindly copy paste this line**, replace `replace_thi
 own github usernickname.
 
 ```bash
-$ export GITHUB_USERNAME=replace_this_with_your_github_username
+export GITHUB_USERNAME=replace_this_with_your_github_username
 # Example:
 #   export GITHUB_USERNAME=ssaunier
 ```
@@ -177,19 +177,19 @@ $ export GITHUB_USERNAME=replace_this_with_your_github_username
 Now copy/paste this very long link to your terminal. Do **not** change this one.
 
 ```bash
-$ mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-$ zsh install.sh
+zsh install.sh
 ```
 
 Then run the git installer. It will **prompt** you for your name and your email.
 
 ```bash
-$ zsh git_setup.sh
+zsh git_setup.sh
 ```
 
 Please now **quit** all your opened terminal windows.
@@ -199,7 +199,7 @@ Please now **quit** all your opened terminal windows.
 In the terminal, type this:
 
 ```bash
-$ stt
+stt
 ```
 
 It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
@@ -218,7 +218,7 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a Terminal, and run:
 
 ```bash
-$ brew install rbenv ruby-build
+brew install rbenv ruby-build
 ```
 
 
@@ -227,20 +227,20 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-$ rbenv install 2.3.0
+rbenv install 2.3.0
 ```
 
 Once the ruby installtion is done, run this command tell the system
 to use the 2.3.0 version by default.
 
 ```bash
-$ rbenv global 2.3.0
+rbenv global 2.3.0
 ```
 
 Then **restart** your Terminal (close it and reopen it).
 
 ```bash
-$ ruby -v
+ruby -v
 ```
 
 You should see something starting with `ruby 2.3.0p`. If not, ask a teacher.
@@ -248,7 +248,7 @@ You should see something starting with `ruby 2.3.0p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-$ gem install bundler rspec rubocop pry pry-byebug hub colored
+gem install bundler rspec rubocop pry pry-byebug hub colored
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
@@ -261,17 +261,17 @@ In a few weeks, we'll talk about SQL and Databases and you'll need something cal
 an open-source robust and production-ready database. Let's install it now.
 
 ```bash
-$ brew update
-$ brew install postgresql
-$ mkdir -p ~/Library/LaunchAgents
-$ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+brew update
+brew install postgresql
+mkdir -p ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 ```
 
 Once you've done that, let's check if it worked:
 
 ```bash
-$ psql -d postgres
+psql -d postgres
 ```
 
 If you enter a new prompt like this one, you're good!
@@ -311,9 +311,9 @@ For instance, you can type in the terminal this one:
 
 ```bash
 # Expanding the save panel by default
-$ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-$ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-$ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
 # Disable system-wide resume
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
@@ -335,7 +335,7 @@ Let's check if you successfully installed everything.
 Quit all opened Terminal, open a new one and run the following commands:
 
 ```bash
-$ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
+curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
 ```
 
 It should tell you if your workstation is ready :) If not, ask a teacher.

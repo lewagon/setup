@@ -24,15 +24,15 @@ the Ubuntu iso into it. Once Ubuntu is installed, follow the rest of this tutori
 Open a Terminal and run these commands.
 
 ```bash
-$ sudo apt-get install -y virtualbox-guest-dkms
-$ sudo apt-get install -y virtualbox-guest-utils
-$ sudo apt-get install -y virtualbox-guest-x11
+sudo apt-get install -y virtualbox-guest-dkms
+sudo apt-get install -y virtualbox-guest-utils
+sudo apt-get install -y virtualbox-guest-x11
 ```
 
 Then restart your virtual machine.
 
 ```bash
-$ sudo shutdown -r 0
+sudo shutdown -r 0
 ```
 
 If you have poor performance with your Virtual Machine, [try this](http://askubuntu.com/a/289758).
@@ -51,9 +51,9 @@ A text editor is one of the most important tool of a developer.
 Follow these instructions in the Terminal:
 
 ```bash
-$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
-$ sudo apt-get update
-$ sudo apt-get install -y sublime-text-installer
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo apt-get update
+sudo apt-get install -y sublime-text-installer
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
@@ -64,9 +64,9 @@ Sublime Text is free without any time limitation but a popup will appear every t
 Download `git`, the versionning program we'll use everyday to archive our code:
 
 ```
-$ sudo add-apt-repository ppa:git-core/ppa
-$ sudo apt-get update
-$ sudo apt-get install -y git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install -y git
 ```
 
 
@@ -75,10 +75,9 @@ $ sudo apt-get install -y git
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-$ sudo apt-get install -y zsh curl vim nodejs imagemagick
-$ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh > install.sh
-$ bash install.sh
-$ rm install.sh
+sudo apt-get install -y zsh curl vim nodejs imagemagick
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh > install.sh && bash install.sh && rm install.sh
+# it will ask for your session password
 ```
 
 Be careful, those commands will ask you to type your password twice. At the end
@@ -91,7 +90,7 @@ If it doesn't, **ask a teacher**.
 To make this change stick, restart your virtual machine:
 
 ```bash
-$ sudo shutdown -r 0
+sudo shutdown -r 0
 ```
 
 
@@ -112,13 +111,13 @@ nothing will show up on the screen, **that's normal**. Just type the passphrase,
 and when you're done, press Enter.
 
 ```bash
-$ mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
+mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 Then you need to give your **public** key to GitHub. Run:
 
 ```bash
-$ cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 
 It will prompt on the screen the content of the `id_rsa.pub` file. Copy that text,
@@ -130,7 +129,7 @@ To check that this step is completed, in the terminal run this. You will be
 prompted a warning, type `yes` then `Enter`.
 
 ```bash
-$ ssh -T git@github.com
+ssh -T git@github.com
 ```
 
 If you see something like this, you're done!
@@ -142,7 +141,7 @@ If you see something like this, you're done!
 If it does not work, try running this before trying again the `ssh -T` command:
 
 ```bash
-$ ssh-add ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
 ```
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
@@ -159,7 +158,7 @@ Open your terminal. **Don't blindly copy paste this line**, replace `replace_thi
 own github usernickname.
 
 ```bash
-$ export GITHUB_USERNAME=replace_this_with_your_github_username
+export GITHUB_USERNAME=replace_this_with_your_github_username
 # Example:
 #   export GITHUB_USERNAME=ssaunier
 ```
@@ -167,19 +166,19 @@ $ export GITHUB_USERNAME=replace_this_with_your_github_username
 Now copy/paste this very long link to your terminal. Do **not** change this one.
 
 ```bash
-$ mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-$ zsh install.sh
+zsh install.sh
 ```
 
 Then run the git installer. It will **prompt** you for your name and your email.
 
 ```bash
-$ zsh git_setup.sh
+zsh git_setup.sh
 ```
 
 Please now **quit** all your opened terminal windows.
@@ -189,7 +188,7 @@ Please now **quit** all your opened terminal windows.
 In the terminal, type this:
 
 ```bash
-$ stt
+stt
 ```
 
 It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
@@ -208,14 +207,14 @@ You may already have installed ruby, but we are going to do it again using `rben
 Open a Terminal, and run:
 
 ```bash
-$ curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
 ```
 
 Now, run:
 
 ```bash
-$ sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-$ sudo apt-get clean
+sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+sudo apt-get clean
 ```
 
 
@@ -224,20 +223,20 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-$ rbenv install 2.3.0
+rbenv install 2.3.0
 ```
 
 Once the ruby installtion is done, run this command tell the system
 to use the 2.3.0 version by default.
 
 ```bash
-$ rbenv global 2.3.0
+rbenv global 2.3.0
 ```
 
 Then **restart** your Terminal (close it and reopen it).
 
 ```bash
-$ ruby -v
+ruby -v
 ```
 
 You should see something starting with `ruby 2.3.0p`. If not, ask a teacher.
@@ -245,7 +244,7 @@ You should see something starting with `ruby 2.3.0p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-$ gem install bundler rspec rubocop pry pry-byebug hub colored
+gem install bundler rspec rubocop pry pry-byebug hub colored
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
@@ -258,12 +257,12 @@ In a few weeks, we'll talk about SQL and Databases and you'll need something cal
 an open-source robust and production-ready database. Let's install it now.
 
 ```
-$ sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
-$ echo `whoami` > /tmp/caller
-$ sudo su - postgres
-$ psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
-$ exit
-$ rm -f /tmp/caller
+sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
+echo `whoami` > /tmp/caller
+sudo su - postgres
+psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
+exit
+rm -f /tmp/caller
 ```
 
 
@@ -274,7 +273,7 @@ Let's check if you successfully installed everything.
 Quit all opened Terminal, open a new one and run the following commands:
 
 ```bash
-$ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
+curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
 ```
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
@@ -302,8 +301,8 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 Then install it:
 
 ```bash
-$ cd ~/Downloads
-$ sudo dpkg -i slack-desktop-*.deb
+cd ~/Downloads
+sudo dpkg -i slack-desktop-*.deb
 ```
 
 Launch the app and sign in to `lewagon-alumni` organization.

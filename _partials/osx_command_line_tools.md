@@ -4,10 +4,10 @@ Open the Terminal (click the magnifying glass icon in the top right corner of yo
 
 ![](images/open-terminal.png)
 
-Copy-paste the following command, i.e. what is after the dollar sign `$`. **The dollar sign is a common convention to indicate this is something you need to type in the terminal**.
+Copy-paste the following command in the terminal and hit Enter.
 
 ```bash
-$ xcode-select --install
+xcode-select --install
 ```
 
 If you have get following message, you can just skip this step and go to next step.
