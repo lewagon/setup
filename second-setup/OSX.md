@@ -51,8 +51,8 @@ zsh install.sh
 
 ```bash
 brew install rbenv ruby-build
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.3.1
+rbenv global 2.3.1
 ```
 
 (`⌘` + `Q`) your terminal and restart it.
