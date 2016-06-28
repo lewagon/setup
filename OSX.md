@@ -218,7 +218,7 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 
 
-## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv)
+## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
 First we need to clean up any previous Ruby installation you might have:
 
