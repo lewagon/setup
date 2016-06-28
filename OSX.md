@@ -177,21 +177,23 @@ export GITHUB_USERNAME=replace_this_with_your_github_username
 #   export GITHUB_USERNAME=ssaunier
 ```
 
-Now copy/paste this very long link to your terminal. Do **not** change this one.
+Now copy/paste this very long line in your terminal. Do **not** change this one.
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
 
 Then run the git installer. It will **prompt** you for your name and your email.
 
 ```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh git_setup.sh
 ```
 
@@ -199,17 +201,19 @@ Please now **quit** all your opened terminal windows.
 
 ### Sublime Text auto-configuration
 
-In the terminal, type this:
+Open a new terminal and type this:
 
 ```bash
 stt
 ```
 
 It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
- **Wait a bit** for additional packages to be automatically installed (New tabs with text will automatically open, containing
- documentation for each new package installed). To check if plugins are installed,
- open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should
- see a couple of packages installed (like [Emmet](http://emmet.io/)). If you are not sure, ask a teacher.
+
+**Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed).
+
+To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
+
+If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
 
 
 
