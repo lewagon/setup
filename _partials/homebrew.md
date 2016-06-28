@@ -10,9 +10,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 This will ask for your confirmation (hit `Enter`) and your laptop session password.
 
+If you already have Homebrew, it will tell you so, that's fine, go on.
+
 Then install some useful software:
 
 ```bash
+brew upgrade
 brew install git wget imagemagick node
 brew install openssl && brew link openssl --force
 ```

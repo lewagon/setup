@@ -53,9 +53,12 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 This will ask for your confirmation (hit `Enter`) and your laptop session password.
 
+If you already have Homebrew, it will tell you so, that's fine, go on.
+
 Then install some useful software:
 
 ```bash
+brew upgrade
 brew install git wget imagemagick node
 brew install openssl && brew link openssl --force
 ```
@@ -211,14 +214,22 @@ It will **open Sublime Text in the context of your current folder**. That's how 
 
 
 
-## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv), not rvm)
+## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv)
 
-You may already have installed ruby, but we are going to do it again using `rbenv`, a manager for installing different Ruby versions on your computer. If you installed `rvm` before, run `rvm implode` to remove it beforehand.
+First we need to clean up any previous Ruby installation you might have:
 
 Open a Terminal, and run:
 
 ```bash
-brew install rbenv ruby-build
+if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
+if [ -d ~/.rbenv ]; then sudo rm -rf ~/.rbenv; fi
+```
+
+Now let's get `rbenv` and `ruby-build` packages from Homebrew, they'll be useful.
+
+```bash
+brew install rbenv || brew upgrade rbenv
+brew install ruby-build || brew upgrade ruby-build
 ```
 
 
