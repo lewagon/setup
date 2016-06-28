@@ -9,6 +9,7 @@ own github usernickname.
 
 ```bash
 export GITHUB_USERNAME=replace_this_with_your_github_username
+
 # Example:
 #   export GITHUB_USERNAME=ssaunier
 ```
@@ -27,6 +28,8 @@ zsh install.sh
 ```
 
 Then run the git installer. It will **prompt** you for your name and your email.
+
+Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles

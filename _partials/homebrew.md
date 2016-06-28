@@ -16,6 +16,6 @@ Then install some useful software:
 
 ```bash
 brew upgrade
-brew install git wget imagemagick node
+brew install git wget imagemagick node jq
 brew install openssl && brew link openssl --force
 ```
