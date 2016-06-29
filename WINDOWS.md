@@ -27,7 +27,7 @@ Go to **Energy Settings** -> **Power Button** -> **More** -> **Disable FastBoot*
 
 1. Plug-in the USB stick, and restart your computer: **Modify Reboot Option** -> **Advanced Boot**.
 2. Choose **Removable Device**. If it does not boot on Linux, you need to ask a teacher to help you with accessing the BIOS and changing the boot order so that it reads from the usb stick first before the hard drive ([help](UBUNTU_ISSUES.md)).
-3. Install Ubuntu in **english**, choose **Third-Party** install and alongside with Windows.
+3. Install Ubuntu in **english** and alongside with Windows. **Do not** tick **Third-Party** and **do not** tick **Update ...**.
 4. Continue despite the alert message.
 5. **Keyboard** settings: press <kbd>@</kbd> <kbd>#</kbd> <kbd>/</kbd> <kbd>\</kbd> to check they are enabled.
 6. Fill in **User Information**.
