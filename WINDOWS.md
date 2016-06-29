@@ -10,7 +10,7 @@ It's **very** important that all your data are backed-up before going further. N
 
 ## Create an empty partition for Linux
 
-We will take off 40GB from your hard drive to give it to Linux. You need to access [Disk Management](http://pcsupport.about.com/od/windows-8/a/disk-management-windows-8.htm). Then, right click on the biggest partition and select **Shrink Volume**.
+We will take off 20GB from your hard drive to give it to Linux. You need to access [Disk Management](http://pcsupport.about.com/od/windows-8/a/disk-management-windows-8.htm). Then, right click on the biggest partition and select **Shrink Volume**.
 
 ## Turn off Fast Startup
 
@@ -19,9 +19,19 @@ If you are running Windows 8+, you need to disable Fast Startup :
 1. Right click -> Download this: [turn_off_fast_startup.bat](https://raw.githubusercontent.com/lewagon/setup/master/utils/turn_off_fast_startup.bat).
 1. Right click on the downloaded file and click **Run as administrator**
 
+**OR**
+
+Go to **Energy Settings** -> **Power Button** -> **More** -> **Disable FastBoot**
+
 ## Install Ubuntu
 
-Plug-in the USB stick, and restart your computer. If it does not boot on Linux, you need to ask a teacher to help you with accessing the BIOS and changing the boot order so that it reads from the usb stick first before the hard drive.
+1. Plug-in the USB stick, and restart your computer: **Modify Reboot Option** -> **Advanced Boot**.
+2. Choose **Removable Device**. If it does not boot on Linux, you need to ask a teacher to help you with accessing the BIOS and changing the boot order so that it reads from the usb stick first before the hard drive ([help](UBUNTU_ISSUES.md)).
+3. Install Ubuntu in **english** and alongside with Windows. **Do not** tick **Third-Party** and **do not** tick **Update ...**.
+4. Continue despite the alert message.
+5. **Keyboard** settings: press <kbd>@</kbd> <kbd>#</kbd> <kbd>/</kbd> <kbd>\</kbd> to check they are enabled.
+6. Fill in **User Information**.
+7. Restart your machine and unplug the USB stick.
 
 When it's done, check you can still boot on Windows.
 
