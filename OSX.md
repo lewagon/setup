@@ -131,12 +131,11 @@ mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
 Then you need to give your **public** key to GitHub. Run:
 
 ```bash
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
-It will prompt on the screen the content of the `id_rsa.pub` file. Copy that text,
-then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
-**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
+Now go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
+**Add SSH key**, fill in the Title with your computer name, and paste (CMD-V) the **Key**.
 Finish by clicking on the **Add key** green button.
 
 To check that this step is completed, in the terminal run this. You will be
