@@ -75,7 +75,7 @@ sudo apt-get install -y git
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt-get install -y zsh curl vim nodejs imagemagick
+sudo apt-get install -y zsh curl vim nodejs imagemagick jq
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh > install.sh && bash install.sh && rm install.sh
 # it will ask for your session password
 ```
