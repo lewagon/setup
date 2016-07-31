@@ -64,7 +64,7 @@ install_or_upgrade "git"
 install_or_upgrade "wget"
 install_or_upgrade "imagemagick"
 install_or_upgrade "jq"
-brew install openssl && brew link openssl --force
+install_or_upgrade "openssl"
 ```
 
 
