@@ -15,7 +15,11 @@ If you already have Homebrew, it will tell you so, that's fine, go on.
 Then install some useful software:
 
 ```bash
-brew upgrade
-brew install git wget imagemagick node jq
+brew update
+function install_or_upgrade { brew ls | grep $1 > /dev/null; if (($? == 0)); then brew upgrade $1; else brew install $1; fi }
+install_or_upgrade "git"
+install_or_upgrade "wget"
+install_or_upgrade "imagemagick"
+install_or_upgrade "jq"
 brew install openssl && brew link openssl --force
 ```

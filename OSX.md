@@ -58,8 +58,12 @@ If you already have Homebrew, it will tell you so, that's fine, go on.
 Then install some useful software:
 
 ```bash
-brew upgrade
-brew install git wget imagemagick node jq
+brew update
+function install_or_upgrade { brew ls | grep $1 > /dev/null; if (($? == 0)); then brew upgrade $1; else brew install $1; fi }
+install_or_upgrade "git"
+install_or_upgrade "wget"
+install_or_upgrade "imagemagick"
+install_or_upgrade "jq"
 brew install openssl && brew link openssl --force
 ```
 
@@ -225,18 +229,19 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 First we need to clean up any previous Ruby installation you might have:
 
-Open a Terminal, and run:
+Open a Terminal, and run the following. It will ask for your password again.
 
 ```bash
 if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
-if [ -d ~/.rbenv ]; then sudo rm -rf ~/.rbenv; fi
+sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 
 Now let's get `rbenv` and `ruby-build` packages from Homebrew, they'll be useful.
 
 ```bash
-brew install rbenv || brew upgrade rbenv
-brew install ruby-build || brew upgrade ruby-build
+brew uninstall --force rbenv ruby-build
+unset RBENV_ROOT && source ~/.zshrc
+brew install rbenv ruby-build && source ~/.zshrc
 ```
 
 
@@ -279,11 +284,8 @@ In a few weeks, we'll talk about SQL and Databases and you'll need something cal
 an open-source robust and production-ready database. Let's install it now.
 
 ```bash
-brew update
 brew install postgresql
-mkdir -p ~/Library/LaunchAgents
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+brew services start postgresql
 ```
 
 Once you've done that, let's check if it worked:
@@ -295,7 +297,7 @@ psql -d postgres
 If you enter a new prompt like this one, you're good!
 
 ```bash
-psql (9.4.4)
+psql (9.5.3)
 Type "help" for help.
 
 postgres=#
