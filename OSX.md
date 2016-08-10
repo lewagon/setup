@@ -59,6 +59,18 @@ Then install some useful software:
 
 ```bash
 brew update
+```
+
+If you get a `/usr/local must be writable` error, just run this:
+
+```bash
+sudo chown -R $USER:admin /usr/local
+brew update
+```
+
+Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
+
+```bash
 function install_or_upgrade { brew ls | grep $1 > /dev/null; if (($? == 0)); then brew upgrade $1; else brew install $1; fi }
 install_or_upgrade "git"
 install_or_upgrade "wget"
