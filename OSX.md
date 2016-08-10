@@ -79,6 +79,17 @@ install_or_upgrade "jq"
 install_or_upgrade "openssl"
 ```
 
+After ```brew update``` command, if you get this error below:
+
+```
+Error: /usr/local must be writable!
+```
+
+Just give permission to your user to write on that folder doing:
+
+```
+sudo chown YOUR_USER_NAME:admin /usr/local
+```
 
 ## Sublime Text 3 - Your text editor
 
@@ -396,5 +407,3 @@ You can also sign in to Slack on your iPhone or Android device!
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 Enjoy your ride with Le Wagon :)
-
-
