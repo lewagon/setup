@@ -37,7 +37,7 @@ curl -L http://install.ohmyz.sh | sh
 You have a new computer, let's generate a new SSH key:
 
 ```bash
-mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com"
+mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com" # Change this email!
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -46,7 +46,7 @@ Copy-paste the public SSH key which we outputed with the last command and [add i
 ## Dotfiles
 
 ```bash
-export GITHUB_USERNAME=your_github_nickname # Change this!
+export GITHUB_USERNAME="your_github_nickname" # Change this nickname!
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 zsh install.sh
 ```
