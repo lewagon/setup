@@ -14,8 +14,14 @@ xcode-select --install
 
 ```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git openssl wget node imagemagick heroku
-brew link openssl --force
+sudo chown -R $USER:admin /usr/local
+brew update
+function install_or_upgrade { brew ls | grep $1 > /dev/null; if (($? == 0)); then brew upgrade $1; else brew install $1; fi }
+install_or_upgrade "git"
+install_or_upgrade "wget"
+install_or_upgrade "imagemagick"
+install_or_upgrade "jq"
+install_or_upgrade "openssl"
 ```
 
 ## Oh-my-zsh
@@ -40,7 +46,7 @@ Copy-paste the public SSH key which we outputed with the last command and [add i
 ## Dotfiles
 
 ```bash
-export GITHUB_USERNAME=your_github_nickname
+export GITHUB_USERNAME=your_github_nickname # Change this!
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
 zsh install.sh
 ```
@@ -50,33 +56,46 @@ zsh install.sh
 ## Ruby
 
 ```bash
-brew install rbenv ruby-build
+if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
+sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
+brew uninstall --force rbenv ruby-build
+unset RBENV_ROOT && source ~/.zshrc
+brew install rbenv ruby-build && source ~/.zshrc
 rbenv install 2.3.1
 rbenv global 2.3.1
 ```
 
-(`⌘` + `Q`) your terminal and restart it.
+(`⌘` + `Q`) your terminal and restart it. Check your ruby version with:
+
+```bash
+ruby -v
+```
 
 ## Gems
 
 ```ruby
-gem install bundler rspec rubocop pry pry-byebug hub colored rails
+gem install bundler rails
+```
+
+Check our rails version with:
+
+```bash
+rails -v
 ```
 
 ## Postgresql
 
 ```bash
 brew install postgresql
-mkdir -p ~/Library/LaunchAgents
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+brew services start postgresql
 ```
 
 ## Redis
 
+(Only if you use Sidekiq)
+
 ```bash
 brew install redis
-ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+brew services start redis
 ```
 
