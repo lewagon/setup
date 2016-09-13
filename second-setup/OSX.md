@@ -13,6 +13,7 @@ xcode-select --install
 ## Homebrew
 
 ```bash
+sudo rm -rf /usr/local/Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo chown -R $USER:admin /usr/local
 brew update
@@ -47,7 +48,8 @@ Copy-paste the public SSH key which we outputed with the last command and [add i
 
 ```bash
 export GITHUB_USERNAME="your_github_nickname" # Change this nickname!
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd dotfiles
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
 
