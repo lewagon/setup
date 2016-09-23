@@ -8,17 +8,15 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Setup git and GitHub
 - Install Ruby
 
-
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars.
 
-
 ## Sublime Text 3 - Your text editor
 
-A text editor is one of the most important tool of a developer.
+A text editor is one of the most important tools of a developer.
 Follow these instructions in the Terminal:
 
 ```bash
@@ -29,17 +27,15 @@ sudo apt-get install -y sublime-text-installer
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
 
-
 ## Git
 
-Download `git`, the versionning program we'll use everyday to archive our code:
+Download `git`, the versioning program we'll use every day to archive our code:
 
 ```
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install -y git
 ```
-
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -58,12 +54,11 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, restart your virtual machine:
+To make this change stick, restart your laptop or virtual machine:
 
 ```bash
 sudo shutdown -r 0
 ```
-
 
 ## GitHub
 
@@ -118,7 +113,6 @@ ssh-add ~/.ssh/id_rsa
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
-
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
@@ -159,7 +153,7 @@ zsh git_setup.sh
 
 Please now **quit** all your opened terminal windows.
 
-### Sublime Text auto-configuration
+## Sublime Text auto-configuration
 
 Open a new terminal and type this:
 
@@ -174,9 +168,6 @@ It will **open Sublime Text in the context of your current folder**. That's how 
 To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
 
 If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
-
-
-
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
@@ -202,7 +193,6 @@ source ~/.zshrc
 
 You should get a warning in the prompt, just **ignore** it from now (Ruby is not installed yet).
 
-
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
@@ -211,7 +201,7 @@ Run this command, it will **take a while (5-10 minutes)**
 rbenv install 2.3.1
 ```
 
-Once the ruby installtion is done, run this command tell the system
+Once the ruby installation is done, run this command tell the system
 to use the 2.3.1 version by default.
 
 ```bash
@@ -235,7 +225,6 @@ gem install bundler rspec rubocop pry pry-byebug hub colored
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
 
-
 ## Postgresql
 
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
@@ -250,7 +239,6 @@ exit
 rm -f /tmp/caller
 ```
 
-
 ## Check-up
 
 Let's check if you successfully installed everything.
@@ -263,7 +251,6 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
 
-
 ## Alumni
 
 Register as a Wagon alumni by going to [alumni.lewagon.org/onboarding](http://alumni.lewagon.org/onboarding). Select your batch, sign in with GitHub and enter all your information.
@@ -274,7 +261,6 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 - One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
 - One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
-
 
 ## Slack
 
@@ -296,5 +282,3 @@ You can also sign in to Slack on your iPhone or Android device!
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 Enjoy your ride with Le Wagon :)
-
-
