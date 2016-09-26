@@ -32,7 +32,7 @@ def check_all
     end
   end
   check("git version") do
-    version_tokens = `git --version`.match(/(?<version>(\d\.){2}\d)/)["version"].split(".").map(&:to_i)
+    version_tokens = `git --version`.gsub("git version", "").strip.split(".").map(&:to_i)
     required_version_tokens = REQUIRED_GIT_VERSION.split(".").map(&:to_i)
     if version_tokens.first == required_version_tokens.first && version_tokens[1] >= required_version_tokens[1]
       [ true, "Your default git version is #{version_tokens.join(".")}"]
@@ -70,7 +70,7 @@ def check_all
     if `git config --global core.editor`.downcase.match(/subl/)
       [ true, "Sublime Text is your default git editor"]
     else
-      [ false, "Ask a teacher to check your ~/.gitconfig editor setup. You can use `which subl` to figure it out."]
+      [ false, "Ask a teacher to check your ~/.gitconfig editor setup."]
     end
   end
   check("ruby gems") do
