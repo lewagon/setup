@@ -184,10 +184,11 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 First we need to clean up any previous Ruby installation you might have:
 
-Open a Terminal, and run:
-
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
+# If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
+# on your computer, that's what we want!
+
 rm -rf ~/.rbenv
 ```
 
