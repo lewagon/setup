@@ -18,7 +18,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ## Sublime Text 3 - Your text editor
 
-A text editor is one of the most important tool of a developer.
+A text editor is one of the most important tools of a developer.
 Follow these instructions in the Terminal:
 
 ```bash
@@ -32,7 +32,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 
 ## Git
 
-Download `git`, the versionning program we'll use everyday to archive our code:
+Download `git`, the versioning program we'll use everyday to archive our code:
 
 ```
 sudo add-apt-repository ppa:git-core/ppa
@@ -58,7 +58,7 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, restart your virtual machine:
+To make this change stick, restart your laptopt (or virtual machine):
 
 ```bash
 sudo shutdown -r 0
@@ -213,7 +213,7 @@ Run this command, it will **take a while (5-10 minutes)**
 rbenv install 2.3.1
 ```
 
-Once the ruby installtion is done, run this command tell the system
+Once the ruby installation is done, run this command tell the system
 to use the 2.3.1 version by default.
 
 ```bash

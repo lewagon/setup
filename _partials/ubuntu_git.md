@@ -1,6 +1,6 @@
 ## Git
 
-Download `git`, the versionning program we'll use everyday to archive our code:
+Download `git`, the versioning program we'll use everyday to archive our code:
 
 ```
 sudo add-apt-repository ppa:git-core/ppa

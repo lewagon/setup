@@ -267,7 +267,7 @@ Run this command, it will **take a while (5-10 minutes)**
 rbenv install 2.3.1
 ```
 
-Once the ruby installtion is done, run this command tell the system
+Once the ruby installation is done, run this command tell the system
 to use the 2.3.1 version by default.
 
 ```bash

@@ -1,6 +1,6 @@
 ## Sublime Text 3 - Your text editor
 
-A text editor is one of the most important tool of a developer.
+A text editor is one of the most important tools of a developer.
 Follow these instructions in the Terminal:
 
 ```bash
