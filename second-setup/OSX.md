@@ -58,7 +58,7 @@ zsh install.sh
 ## Ruby
 
 ```bash
-if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
+rvm implode && sudo rm -rf ~/.rvm
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 brew uninstall --force rbenv ruby-build
 unset RBENV_ROOT && source ~/.zshrc

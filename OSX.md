@@ -207,14 +207,16 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
 
-Then run the git installer. It will **prompt** you for your name and your email.
-
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+Then run the git installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh git_setup.sh
 ```
+
+☝ This will **prompt** you for your name (`Firstname Lastname`) and your email.
+
+Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
 Please now **quit** all your opened terminal windows.
 
@@ -244,7 +246,7 @@ First we need to clean up any previous Ruby installation you might have:
 Open a Terminal, and run the following. It will ask for your password again.
 
 ```bash
-if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
+rvm implode && sudo rm -rf ~/.rvm
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 
@@ -283,7 +285,7 @@ You should see something starting with `ruby 2.3.1p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-gem install bundler rspec rubocop pry pry-byebug hub colored
+gem install bundler rspec rubocop pry pry-byebug hub colored gist
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
@@ -362,7 +364,10 @@ You can also go to ` > System Preferences > Mission Control`, and click on th
 
 ## Check-up
 
-Let's check if you successfully installed everything.
+Let's check if you successfully installed everything. First go to your
+[GitHub Profile](https://github.com/settings/admin) and set your public email to
+the one you configurred at the `dotfiles` step. That should not say `Don't show my email address`.
+Don't forget to click on the green `Update Profile` button.
 
 Quit all opened Terminal, open a new one and run the following commands:
 
@@ -370,7 +375,8 @@ Quit all opened Terminal, open a new one and run the following commands:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
 ```
 
-It should tell you if your workstation is ready :) If not, ask a teacher.
+It should tell you if your workstation is ready :) If not, ask a teacher. If you don't want
+your email to appear on your GitHub profile, you can now revert the `Public email` setting.
 
 
 ## Alumni

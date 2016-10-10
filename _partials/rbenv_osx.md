@@ -5,7 +5,7 @@ First we need to clean up any previous Ruby installation you might have:
 Open a Terminal, and run the following. It will ask for your password again.
 
 ```bash
-if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
+rvm implode && sudo rm -rf ~/.rvm
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 

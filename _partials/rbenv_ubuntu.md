@@ -5,8 +5,8 @@ First we need to clean up any previous Ruby installation you might have:
 Open a Terminal, and run:
 
 ```bash
-if [ -x "$(command -v rvm)" ]; then rvm implode && sudo rm -rf ~/.rvm; fi
-if [ -d ~/.rbenv ]; then sudo rm -rf ~/.rbenv; fi
+rvm implode && sudo rm -rf ~/.rvm
+rm -rf ~/.rbenv
 ```
 
 Then in the terminal, run:

@@ -27,14 +27,16 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
 
-Then run the git installer. It will **prompt** you for your name and your email.
-
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+Then run the git installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh git_setup.sh
 ```
+
+☝ This will **prompt** you for your name (`Firstname Lastname`) and your email.
+
+Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
 Please now **quit** all your opened terminal windows.
 

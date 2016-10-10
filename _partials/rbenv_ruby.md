@@ -24,7 +24,7 @@ You should see something starting with `ruby 2.3.1p`. If not, ask a teacher.
 ## Installing some gems
 
 ```bash
-gem install bundler rspec rubocop pry pry-byebug hub colored
+gem install bundler rspec rubocop pry pry-byebug hub colored gist
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
