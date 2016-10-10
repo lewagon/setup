@@ -1,9 +1,6 @@
 ## Check-up
 
-Let's check if you successfully installed everything. First go to your
-[GitHub Profile](https://github.com/settings/admin) and set your public email to
-the one you configurred at the `dotfiles` step. That should not say `Don't show my email address`.
-Don't forget to click on the green `Update Profile` button.
+Let's check if you successfully installed everything.
 
 Quit all opened Terminal, open a new one and run the following commands:
 
