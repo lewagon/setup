@@ -260,6 +260,15 @@ rm -f /tmp/caller
 ```
 
 
+## Extra
+
+On our pedagogical platform (Kitt, you'll soon discover it!), we have some videos. By default Firefox on Linux cannot play them as they use an unsupported codec (H264). To get those videos working for you, you need to run this:
+
+```bash
+sudo apt-get install ubuntu-restricted-extras -y
+```
+
+
 ## Check-up
 
 Let's check if you successfully installed everything.
