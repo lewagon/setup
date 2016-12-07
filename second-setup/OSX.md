@@ -50,6 +50,8 @@ Copy-paste the public SSH key which we outputed with the last command and [add i
 export GITHUB_USERNAME="your_github_nickname" # Change this nickname!
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
 cd ~/code/$GITHUB_USERNAME/dotfiles
+git remote add upstream git@github.com:lewagon/dotfiles.git
+git pull upstream master
 zsh install.sh
 ```
 
@@ -58,7 +60,6 @@ zsh install.sh
 ## Ruby
 
 ```bash
-rvm implode && sudo rm -rf ~/.rvm
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 brew uninstall --force rbenv ruby-build
 unset RBENV_ROOT && source ~/.zshrc
