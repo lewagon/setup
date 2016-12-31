@@ -3,14 +3,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.3.1
+rbenv install 2.3.3
 ```
 
 Once the ruby installation is done, run this command tell the system
-to use the 2.3.1 version by default.
+to use the 2.3.3 version by default.
 
 ```bash
-rbenv global 2.3.1
+rbenv global 2.3.3
 ```
 
 Then **restart** your Terminal (close it and reopen it).
@@ -19,7 +19,7 @@ Then **restart** your Terminal (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.3.1p`. If not, ask a teacher.
+You should see something starting with `ruby 2.3.3p`. If not, ask a teacher.
 
 ## Installing some gems
 
