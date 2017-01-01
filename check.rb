@@ -1,4 +1,10 @@
-require "colored"
+begin
+  require "colored"
+rescue LoadError
+  puts "Could not find colored gem. Did you run the `gem install [...]` command from the setup after Ruby install?"
+  exit
+end
+
 require "json"
 require "open-uri"
 
@@ -25,10 +31,11 @@ def check_all
     end
   end
   check("ruby version") do
-    if RUBY_VERSION == "2.3.3"
-      [ true, "Your default ruby version is 2.3.3" ]
+    if RUBY_VERSION == REQUIRED_RUBY_VERSION
+      [ true, "Your default ruby version is #{RUBY_VERSION}" ]
     else
-      [ false, "Your default ruby version is #{RUBY_VERSION}, but should #{REQUIRED_RUBY_VERSION}. Did you run `rbenv global #{REQUIRED_RUBY_VERSION}`" ]
+      details = `type -a ruby`
+      [ false, "Your default ruby version is #{RUBY_VERSION}, but should be #{REQUIRED_RUBY_VERSION}. Did you run `rbenv global #{REQUIRED_RUBY_VERSION}`\n#{details}---" ]
     end
   end
   check("git version") do
