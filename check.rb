@@ -1,7 +1,8 @@
 begin
   require "colored"
+  require "gist"
 rescue LoadError
-  puts "Could not find colored gem. Did you run the `gem install [...]` command from the setup after Ruby install?"
+  puts "Could not find all needed gems. Did you run the `gem install [...]` command from the setup after Ruby install?"
   exit
 end
 
@@ -35,7 +36,7 @@ def check_all
       [ true, "Your default ruby version is #{RUBY_VERSION}" ]
     else
       details = `type -a ruby`
-      [ false, "Your default ruby version is #{RUBY_VERSION}, but should be #{REQUIRED_RUBY_VERSION}. Did you run `rbenv global #{REQUIRED_RUBY_VERSION}`\n#{details}---" ]
+      [ false, "Your default ruby version is #{RUBY_VERSION}, but should be #{REQUIRED_RUBY_VERSION}. Did you run `rbenv global #{REQUIRED_RUBY_VERSION}`?\n#{details}---" ]
     end
   end
   check("git version") do
@@ -61,7 +62,7 @@ def check_all
             if content_length >= MINIMUM_AVATAR_SIZE
               [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
             else
-              [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set."]
+              [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture right now."]
             end
           else
             [ false, "Your GitHub email is '#{github_user["email"]}' whereas your git email is '#{git_email}'. Please run\n\n  git config --global user.email #{github_user["email"]}"]
@@ -76,19 +77,20 @@ def check_all
       [ false, "Did you install the `gist` gem and run `gist --login`?"]
     end
   end
-  check("git email setup") do
-    email = `git config --global user.email`.strip
-    if email && email.match(VALID_EMAIL_REGEX)
-      [ true, "Please manually check that `#{email}` is set at https://github.com/settings/emails - Did you confirm it?" ]
-    else
-      [ false, "Could not find an email in your git setup. Check your dotfiles"]
-    end
-  end
+  # check("git email setup") do
+  #   email = `git config --global user.email`.strip
+  #   if email && email.match(VALID_EMAIL_REGEX)
+  #     [ true, "Please manually check that `#{email}` is set at https://github.com/settings/emails - Did you confirm it?" ]
+  #   else
+  #     [ false, "Could not find an email in your git setup. Check your dotfiles"]
+  #   end
+  # end
   check("git editor setup") do
-    if `git config --global core.editor`.downcase.match(/subl/)
+    editor = `git config --global core.editor`
+    if editor.match(/subl/i)
       [ true, "Sublime Text is your default git editor"]
     else
-      [ false, "Ask a teacher to check your ~/.gitconfig editor setup."]
+      [ false, "Ask a teacher to check your ~/.gitconfig editor setup. Right now, it's `#{editor.chomp}`"]
     end
   end
   check("ruby gems") do
@@ -103,11 +105,11 @@ end
 def outro
   if $all_good
     puts ""
-    puts "Awesome! Your laptop is now ready for 9 weeks of hard work :)".green
-    puts "Now it's time to onboard on the Alumni platform."
+    puts "🚀  Awesome! Your laptop is now ready for 9 weeks of hard work :)".green
+    puts "Now it's time to onboard on the Alumni platform 👉  alumni.lewagon.org/onboarding"
   else
     puts ""
-    puts "Bummer! Something's wrong, if you're stack, ask a teacher.".red
+    puts "😥  Bummer! Something's wrong, if you're stack, ask a teacher.".red
   end
 end
 
