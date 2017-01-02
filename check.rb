@@ -109,7 +109,7 @@ def outro
     puts "Now it's time to onboard on the Alumni platform 👉  alumni.lewagon.org/onboarding"
   else
     puts ""
-    puts "😥  Bummer! Something's wrong, if you're stack, ask a teacher.".red
+    puts "😥  Bummer! Something's wrong, if you're stuck, ask a teacher.".red
   end
 end
 
