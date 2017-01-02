@@ -34,7 +34,7 @@ One of the teacher or TA should give you a bootable USB stick with **Ubuntu 16.0
 Ubuntu should boot in live mode. Time to install it!
 
 1. Install Ubuntu in **english** and alongside with Windows. **Do not** tick **Third-Party** and **do not** tick **Update ...**.
-1. **Keyboard** settings: press <kbd>@</kbd> <kbd>#</kbd> <kbd>/</kbd> <kbd>\</kbd> to check they are enabled.
+1. **Keyboard** settings: press <kbd>@</kbd> <kbd>#</kbd> <kbd>/</kbd> to check they are working correctly.
 1. Fill in **User Information**.
 1. Restart your machine and unplug the USB stick.
 
