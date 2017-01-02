@@ -1,38 +1,43 @@
 First you need to install Ubuntu on your computer, as a dual boot.
 
-## USB stick
-
-The teacher should give you a bootable USB stick with **Ubuntu 16.04. LTS 64 bits**. If not, you can create one yourself from [OSX](http://web.archive.org/web/20151222000109/http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) or from [Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows).
-
 ## Backup your data
 
 It's **very** important that all your data are backed-up before going further. Normally, things go well, but as we'll handle partitions on the hard drive, we might have difficulties. Better safe than sorry.
 
-## Create an empty partition for Linux
+## Shrink Volume to prepare some space for Linux
 
-We will take off 20GB from your hard drive to give it to Linux. You need to access [Disk Management](http://pcsupport.about.com/od/windows-8/a/disk-management-windows-8.htm). Then, right click on the biggest partition and select **Shrink Volume**.
+We will take off 20GB from your hard drive to give it to Linux. You need to access [Disk Management](http://pcsupport.about.com/od/windows-8/a/disk-management-windows-8.htm). Then, right click on the **biggest** partition and select **Shrink Volume**. You want to get `20000` MB of space.
+
+For this step, there is a [full tutorial](http://www.everydaylinuxuser.com/2015/11/how-to-shrink-windows-10-to-make-space.html) you can follow.
 
 ## Turn off Fast Startup
 
-If you are running Windows 8+, you need to disable Fast Startup :
+If you are running Windows 8+, you need to disable Fast Startup:
 
 1. Right click -> Download this: [turn_off_fast_startup.bat](https://raw.githubusercontent.com/lewagon/setup/master/utils/turn_off_fast_startup.bat).
 1. Right click on the downloaded file and click **Run as administrator**
 
 **OR**
 
-Go to **Energy Settings** -> **Power Button** -> **More** -> **Disable FastBoot**
+Go to **Energy Settings** -> **Power Button**. Click on "Change settings that are currently unavailable** if needed then you should be able to **disable FastBoot** or untick the **Turn on fast startup (recommended)** option (depends on the Windows version).
+
+## USB stick
+
+One of the teacher or TA should give you a bootable USB stick with **Ubuntu 16.04. LTS 64 bits**. If not, you can create one yourself from [OSX](http://web.archive.org/web/20151222000109/http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) or from [Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows).
 
 ## Install Ubuntu
 
-1. Plug-in the USB stick, and restart your computer: **Modify Reboot Option** -> **Advanced Boot**.
-2. Choose **Removable Device**. If it does not boot on Linux, you need to ask a teacher to help you with accessing the BIOS and changing the boot order so that it reads from the usb stick first before the hard drive ([help](UBUNTU_ISSUES.md)).
-3. Install Ubuntu in **english** and alongside with Windows. **Do not** tick **Third-Party** and **do not** tick **Update ...**.
-4. Continue despite the alert message.
-5. **Keyboard** settings: press <kbd>@</kbd> <kbd>#</kbd> <kbd>/</kbd> <kbd>\</kbd> to check they are enabled.
-6. Fill in **User Information**.
-7. Restart your machine and unplug the USB stick.
+1. Plug-in the USB stick, and restart your computer **holding the shift key**. A blue screen wil appear. If this does not work, follow [this procedure](https://support.microsoft.com/en-us/instantanswers/f40a95aa-1e34-4907-98ba-a308fd10a786/get-to-safe-mode-and-other-startup-settings-in-windows-10) to get to the "Other startup" setting.
+1. Once the computer has restarted, you need to select the startup mode. Choose **Other options**
+1. Choose **Use a Device**. You should see the USB stick in the list (EFI USB Device). Select it, this way, Windows will restart using the Linux key.
 
-When it's done, check you can still boot on Windows.
+Ubuntu should boot in live mode. Time to install it!
 
-Then restart the computer, boot on ubuntu, and follow [this guide](UBUNTU.md)
+1. Install Ubuntu in **english** and alongside with Windows. **Do not** tick **Third-Party** and **do not** tick **Update ...**.
+1. **Keyboard** settings: press <kbd>@</kbd> <kbd>#</kbd> <kbd>/</kbd> <kbd>\</kbd> to check they are enabled.
+1. Fill in **User Information**.
+1. Restart your machine and unplug the USB stick.
+
+When it's done, **check you can still boot on Windows**. The idea is that every time you boot your computer, you now have a menu to choose if you want to boot Windows **or** Linux.
+
+Once again, restart the computer, boot on ubuntu, and follow [the UBUNTU setup guide](UBUNTU.md) to install Ruby & all the software we need!

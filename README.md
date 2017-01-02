@@ -15,7 +15,7 @@ Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your op
       </a>
     </td>
     <td>
-      <a href="http://www.everydaylinuxuser.com/2015/11/how-to-install-ubuntu-linux-alongside.html">
+      <a href="WINDOWS.md">
         <img src="images/windows.png" alt="Windows">
       </a>
     </td>
