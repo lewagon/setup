@@ -1,5 +1,11 @@
 ## New alumni
 
+### In China?
+
+Before starting the setup :point_down: you will get VPN codes for Astrill from your city manager.
+
+### Worldwide
+
 Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your operating system (OS):
 
 <table>

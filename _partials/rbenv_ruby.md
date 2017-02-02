@@ -23,6 +23,24 @@ You should see something starting with `ruby 2.3.3p`. If not, ask a teacher.
 
 ## Installing some gems
 
+---
+
+:warning: If you are in **China** :cn:, you should upadte the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+
+```bash
+gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+gem sources -l
+# *** CURRENT SOURCES ***
+
+# https://ruby.taobao.org
+# Ensure it only has ruby.taobao.org
+```
+
+---
+
+All, please run the following line:
+
 ```bash
 gem install bundler rspec rubocop pry pry-byebug hub colored gist
 ```
