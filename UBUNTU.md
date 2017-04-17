@@ -63,7 +63,7 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, restart your laptopt (or virtual machine):
+To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
 sudo shutdown -r 0
