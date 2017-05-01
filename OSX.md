@@ -292,7 +292,7 @@ You should see something starting with `ruby 2.3.3p`. If not, ask a teacher.
 
 ---
 
-:warning: If you are in **China** :cn:, you should upadte the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
 
 ```bash
 gem sources --remove https://rubygems.org/
