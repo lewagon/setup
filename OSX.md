@@ -425,5 +425,3 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # etc..
 ```
-
-
