@@ -62,8 +62,8 @@ zsh install.sh
 ```bash
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 brew uninstall --force rbenv ruby-build
-unset RBENV_ROOT && source ~/.zshrc
-brew install rbenv ruby-build && source ~/.zshrc
+unset RBENV_ROOT && exec zsh
+brew install rbenv ruby-build && exec zsh
 rbenv install 2.3.3
 rbenv global 2.3.3
 ```
