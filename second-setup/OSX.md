@@ -28,7 +28,7 @@ install_or_upgrade "openssl"
 ## Oh-my-zsh
 
 ```bash
-curl -L http://install.ohmyz.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 (`⌘` + `Q`) your terminal and restart it.
