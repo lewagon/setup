@@ -246,7 +246,7 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 ### SSH Passphrase
 
-In order not to re-type your SSH passphrase at every `git commit`, you can add these lines to the `~/.ssh/config` file:
+In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
 
 ```bash
 touch ~/.ssh/config  # Creates the file if it does not exist
