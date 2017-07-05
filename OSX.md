@@ -279,6 +279,11 @@ Now let's get `rbenv` and `ruby-build` packages from Homebrew, they'll be useful
 ```bash
 brew uninstall --force rbenv ruby-build
 unset RBENV_ROOT && exec zsh
+```
+
+Then
+ 
+```bash
 brew install rbenv ruby-build && exec zsh
 ```
 
