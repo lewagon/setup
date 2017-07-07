@@ -17,3 +17,8 @@ brew uninstall --force rbenv ruby-build
 unset RBENV_ROOT && exec zsh
 brew install rbenv ruby-build && exec zsh
 ```
+If you got an error with `Pygments`, install `Pygments` with the following command:
+
+```bash
+sudo easy_install Pygments
+```
