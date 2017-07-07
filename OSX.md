@@ -100,7 +100,7 @@ Again, make sure that Sublime Text is there, not in the disk image you downloade
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-curl -L http://install.ohmyz.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:
@@ -246,7 +246,7 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 ### SSH Passphrase
 
-In order not to re-type your SSH passphrase at every `git commit`, you can add these lines to the `~/.ssh/config` file:
+In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
 
 ```bash
 touch ~/.ssh/config  # Creates the file if it does not exist
