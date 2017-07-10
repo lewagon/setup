@@ -11,7 +11,7 @@ require "open-uri"
 
 REQUIRED_RUBY_VERSION = "2.3.4"
 REQUIRED_GIT_VERSION = "2.0"
-VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+#VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 MINIMUM_AVATAR_SIZE = 2 * 1024
 
 $all_good = true
