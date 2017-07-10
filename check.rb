@@ -11,7 +11,7 @@ require "open-uri"
 
 REQUIRED_RUBY_VERSION = "2.3.4"
 REQUIRED_GIT_VERSION = "2.0"
-VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
+#VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 MINIMUM_AVATAR_SIZE = 2 * 1024
 
 $all_good = true
@@ -52,20 +52,15 @@ def check_all
     begin
       token = File.read("#{ENV['HOME']}/.gist")
       groups = `ssh -T git@github.com 2>&1`.match(/Hi (?<nickname>.*)! You've successfully authenticated/)
-      git_email = (`git config --global user.email`).chomp
 
       if groups && (nickname = groups["nickname"])
         github_user = JSON.parse(open("https://api.github.com/users/#{nickname}?access_token=#{token}").read)
         if github_user["name"] != nickname && !github_user["name"].nil? || github_user["name"] != ""
-          if github_user["email"] == git_email
-            content_length = `curl -s -I #{github_user["avatar_url"]} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
-            if content_length >= MINIMUM_AVATAR_SIZE
-              [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
-            else
-              [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture right now."]
-            end
+          content_length = `curl -s -I #{github_user["avatar_url"]} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
+          if content_length >= MINIMUM_AVATAR_SIZE
+            [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
           else
-            [ false, "Your GitHub email is '#{github_user["email"]}' whereas your git email is '#{git_email}'. Please run\n\n  git config --global user.email #{github_user["email"]}"]
+            [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture right now."]
           end
         else
           [ false, "Please specify your first and last name on your GitHub account -> https://github.com/settings/profile"]
