@@ -42,7 +42,8 @@ gem sources -l
 All, please run the following line:
 
 ```bash
-gem install bundler rspec rubocop pry pry-byebug hub colored gist
+gem install bundler
+bundle install # Will install all the gems listed in the `Gemfile` file.
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer

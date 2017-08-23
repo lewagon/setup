@@ -15,11 +15,6 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 👉 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
-👉 Then go to your [GitHub Profile](https://github.com/settings/admin) and publicize your email address.
-That should not say `Don't show my email address`. Don't forget to click on the green `Update Profile` button.
-
-![](images/github_public_email.gif)
-
 
 ## Sublime Text 3 - Your text editor
 
@@ -255,7 +250,8 @@ gem sources -l
 All, please run the following line:
 
 ```bash
-gem install bundler rspec rubocop pry pry-byebug hub colored gist
+gem install bundler
+bundle install # Will install all the gems listed in the `Gemfile` file.
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
@@ -293,9 +289,6 @@ Let's check if you successfully installed everything.
 Quit all opened Terminal, open a new one and run the following commands:
 
 ```bash
-gist --login
-# This will ask for you GitHub nickname and password. You can type them.
-
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb | ruby
 ```
 

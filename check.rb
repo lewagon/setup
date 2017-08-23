@@ -1,8 +1,9 @@
+require 'io/console'
 begin
   require "colored"
-  require "gist"
+  require "octokit"
 rescue LoadError
-  puts "Could not find all needed gems. Did you run the `gem install [...]` command from the setup after Ruby install?"
+  puts "Could not find all needed gems. Please run `bundle install` and retry"
   exit
 end
 
@@ -11,8 +12,8 @@ require "open-uri"
 
 REQUIRED_RUBY_VERSION = "2.3.4"
 REQUIRED_GIT_VERSION = "2.0"
-VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 MINIMUM_AVATAR_SIZE = 2 * 1024
+GITHUB_AUTHORIZATION_NOTE = 'Le Wagon setup check'.freeze
 
 $all_good = true
 
@@ -50,41 +51,46 @@ def check_all
   end
   check("GitHub setup") do
     begin
-      token = File.read("#{ENV['HOME']}/.gist")
       groups = `ssh -T git@github.com 2>&1`.match(/Hi (?<nickname>.*)! You've successfully authenticated/)
       git_email = (`git config --global user.email`).chomp
+      nickname = groups["nickname"]
 
-      if groups && (nickname = groups["nickname"])
-        github_user = JSON.parse(open("https://api.github.com/users/#{nickname}?access_token=#{token}").read)
-        if github_user["name"] != nickname && !github_user["name"].nil? || github_user["name"] != ""
-          if github_user["email"] == git_email
-            content_length = `curl -s -I #{github_user["avatar_url"]} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
-            if content_length >= MINIMUM_AVATAR_SIZE
-              [ true, "Seems ok. Your GitHub username is #{nickname} and you have a profile picture"]
-            else
-              [ false, "Your GitHub username appears to be #{nickname} (correct?), but you don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture right now."]
-            end
-          else
-            [ false, "Your GitHub email is '#{github_user["email"]}' whereas your git email is '#{git_email}'. Please run\n\n  git config --global user.email #{github_user["email"]}"]
-          end
+      client = Octokit::Client.new
+      client.login = nickname
+      puts "Please type in your GitHub password (login: '#{nickname}'):"
+      print "> "
+      client.password = STDIN.noecho { |stdin| stdin.gets.chomp }
+      puts "\nThanks. Asking some infos to GitHub..."
+      # TODO(ssaunier): https://github.com/octokit/octokit.rb#two-factor-authentication
+
+      authorization =
+        client.authorizations.find { |a| a[:note] == GITHUB_AUTHORIZATION_NOTE } ||
+        client.create_authorization(
+          scopes: ['user:email'],
+          note: GITHUB_AUTHORIZATION_NOTE)
+      client.access_token = authorization["token"]
+
+      avatar_url = client.user[:avatar_url]
+      emails = client.emails.map { |email| email[:email] }
+      client.delete_authorization(authorization[:id])
+
+      if emails.include?(git_email)
+        content_length = `curl -s -I #{avatar_url} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
+        if content_length >= MINIMUM_AVATAR_SIZE
+          [ true, "GitHub email config is OK. And you have a profile picture 📸"]
         else
-          [ false, "Please specify your first and last name on your GitHub account -> https://github.com/settings/profile"]
+          [ false, "You don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture right now."]
         end
       else
-        [ false, "Could not authenticate against GitHub. Check your SSH keys configuration."]
+        [ false,
+          "Your git email is '#{git_email}' and is not listed in https://github.com/settings/emails\n" +
+          "Run `git config --global user.email george@abitbol.com` to set your git email address. With your own!"]
       end
-    rescue Errno::ENOENT
-      [ false, "Did you install the `gist` gem and run `gist --login`?"]
+    rescue Octokit::Unauthorized => e
+      puts "Wrong GitHub password, please try again 🙏     Details: #{e.message}"
+      exit 1
     end
   end
-  # check("git email setup") do
-  #   email = `git config --global user.email`.strip
-  #   if email && email.match(VALID_EMAIL_REGEX)
-  #     [ true, "Please manually check that `#{email}` is set at https://github.com/settings/emails - Did you confirm it?" ]
-  #   else
-  #     [ false, "Could not find an email in your git setup. Check your dotfiles"]
-  #   end
-  # end
   check("git editor setup") do
     editor = `git config --global core.editor`
     if editor.match(/subl/i)
