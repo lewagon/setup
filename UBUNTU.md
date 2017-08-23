@@ -251,7 +251,7 @@ All, please run the following line:
 
 ```bash
 gem install bundler
-bundle install # Will install all the gems listed in the `Gemfile` file.
+gem install rspec rubocop pry pry-byebug hub colored octokit
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
