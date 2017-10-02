@@ -269,7 +269,7 @@ rvm implode && sudo rm -rf ~/.rvm
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 
-Now let's get `rbenv` and `ruby-build` packages from Homebrew, they'll be useful.
+Now let's get [`rbenv`](https://github.com/rbenv/rbenv) and [`ruby-build`](https://github.com/rbenv/ruby-build) packages from Homebrew, they'll be useful.
 
 ```bash
 brew uninstall --force rbenv ruby-build
@@ -278,7 +278,7 @@ brew uninstall --force rbenv ruby-build
 Then quit **all your opened terminal windows** (Cmd + Q) and restart one. Then run:
 
 ```bash
-brew install rbenv ruby-build
+brew install rbenv
 ```
 
 Again, quit all your terminal windows and restart.
