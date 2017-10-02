@@ -14,6 +14,12 @@ Now let's get `rbenv` and `ruby-build` packages from Homebrew, they'll be useful
 
 ```bash
 brew uninstall --force rbenv ruby-build
-unset RBENV_ROOT && exec zsh
-brew install rbenv ruby-build && exec zsh
 ```
+
+Then quit **all your opened terminal windows** (Cmd + Q) and restart one. Then run:
+
+```bash
+brew install rbenv ruby-build
+```
+
+Again, quit all your terminal windows and restart.
