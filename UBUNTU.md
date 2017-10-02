@@ -204,9 +204,8 @@ Then in the terminal, run:
 ```bash
 sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
 sudo apt-get clean
-sudo mkdir -p /usr/local/opt && sudo chown `whoami`:`whoami` $_
-git clone https://github.com/rbenv/rbenv.git /usr/local/opt/rbenv
-git clone https://github.com/rbenv/ruby-build.git /usr/local/opt/rbenv/plugins/ruby-build
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
 **Restart your terminal** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
