@@ -15,6 +15,13 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 👉 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
+## git
+
+To install `git`, type
+
+```bash
+sudo apt-get install git
+```
 
 ## Sublime Text 3 - Your text editor
 
@@ -300,6 +307,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 Then install it:
 
 ```bash
+sudo apt-get install libappindicator1
 cd ~/Downloads
 sudo dpkg -i slack-desktop-*.deb
 ```
