@@ -18,5 +18,5 @@ If it doesn't, **ask a teacher**.
 To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
-sudo shutdown -r 0
+sudo reboot
 ```

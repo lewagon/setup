@@ -1,9 +1,11 @@
 ## Git
 
-Download `git`, the versioning program we'll use everyday to archive our code:
+To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
 
+Then copy this line with `Ctrl` + `C`:
+
+```bash
+sudo apt-get install git
 ```
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install -y git
-```
+
+:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.

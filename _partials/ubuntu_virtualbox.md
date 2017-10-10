@@ -21,7 +21,7 @@ sudo apt-get install -y virtualbox-guest-x11
 Then restart your virtual machine.
 
 ```bash
-sudo shutdown -r 0
+sudo reboot
 ```
 
 If you have poor performance with your Virtual Machine, [try this](http://askubuntu.com/a/289758).

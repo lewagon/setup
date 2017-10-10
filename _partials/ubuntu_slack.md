@@ -6,6 +6,7 @@ Then install it:
 
 ```bash
 cd ~/Downloads
+sudo apt-get install libappindicator1
 sudo dpkg -i slack-desktop-*.deb
 ```
 

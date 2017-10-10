@@ -16,6 +16,19 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 👉 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
+## Git
+
+To install `git`, first open a terminal. To open a terminal, you can click on the top left Ubuntu button in the sidebar and type `Terminal`. Then click on the terminal icon.
+
+Then copy this line with `Ctrl` + `C`:
+
+```bash
+sudo apt-get install git
+```
+
+:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
+
+
 ## Sublime Text 3 - Your text editor
 
 A text editor is one of the most important tools of a developer.
@@ -35,17 +48,6 @@ sudo apt-get install sublime-text
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
-
-
-## Git
-
-Download `git`, the versioning program we'll use everyday to archive our code:
-
-```
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install -y git
-```
 
 
 ## Oh-my-zsh - Fancy your Terminal
@@ -68,7 +70,7 @@ If it doesn't, **ask a teacher**.
 To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
-sudo shutdown -r 0
+sudo reboot
 ```
 
 
@@ -208,7 +210,7 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
-**Restart your terminal** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
 Now, you are ready to install the latest ruby version, and set it as the default version.
@@ -219,14 +221,14 @@ Run this command, it will **take a while (5-10 minutes)**
 rbenv install 2.3.5
 ```
 
-Once the ruby installation is done, run this command tell the system
+Once the ruby installation is done, run this command to tell the system
 to use the 2.3.5 version by default.
 
 ```bash
 rbenv global 2.3.5
 ```
 
-Then **restart** your Terminal (close it and reopen it).
+Then **restart** your Terminal again (close it and reopen it).
 
 ```bash
 ruby -v
@@ -241,6 +243,7 @@ You should see something starting with `ruby 2.3.5p`. If not, ask a teacher.
 :warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
 
 ```bash
+# China only!
 gem sources --remove https://rubygems.org/
 gem sources -a https://ruby.taobao.org/
 gem sources -l
@@ -278,15 +281,6 @@ rm -f /tmp/caller
 ```
 
 
-## Extra
-
-On our pedagogical platform (Kitt, you'll soon discover it!), we have some videos. By default Firefox on Linux cannot play them as they use an unsupported codec (H264). To get those videos working for you, you need to run this:
-
-```bash
-sudo apt-get install ubuntu-restricted-extras -y
-```
-
-
 ## Check-up
 
 Let's check if you successfully installed everything.
@@ -320,6 +314,7 @@ Then install it:
 
 ```bash
 cd ~/Downloads
+sudo apt-get install libappindicator1
 sudo dpkg -i slack-desktop-*.deb
 ```
 

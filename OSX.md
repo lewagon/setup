@@ -292,14 +292,14 @@ Run this command, it will **take a while (5-10 minutes)**
 rbenv install 2.3.5
 ```
 
-Once the ruby installation is done, run this command tell the system
+Once the ruby installation is done, run this command to tell the system
 to use the 2.3.5 version by default.
 
 ```bash
 rbenv global 2.3.5
 ```
 
-Then **restart** your Terminal (close it and reopen it).
+Then **restart** your Terminal again (close it and reopen it).
 
 ```bash
 ruby -v
@@ -314,6 +314,7 @@ You should see something starting with `ruby 2.3.5p`. If not, ask a teacher.
 :warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
 
 ```bash
+# China only!
 gem sources --remove https://rubygems.org/
 gem sources -a https://ruby.taobao.org/
 gem sources -l

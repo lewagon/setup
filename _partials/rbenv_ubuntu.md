@@ -19,4 +19,4 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
-**Restart your terminal** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
