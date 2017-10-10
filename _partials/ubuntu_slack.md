@@ -1,14 +1,6 @@
 ## Slack
 
-[Download](https://slack.com/downloads) the Slack native app from the Slack page. In **Linux (Beta)** section, choose **Ubuntu 64-bit** and download it.
-
-Then install it:
-
-```bash
-cd ~/Downloads
-sudo apt-get install libappindicator1
-sudo dpkg -i slack-desktop-*.deb
-```
+[Install Slack for Linux (beta)](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-).
 
 Launch the app and sign in to `lewagon-alumni` organization.
 

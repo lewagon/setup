@@ -13,17 +13,17 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-👉 **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
 ## Git
 
-To install `git`, first open a terminal. To open a terminal, you can click on the top left Ubuntu button in the sidebar and type `Terminal`. Then click on the terminal icon.
+To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
 
 Then copy this line with `Ctrl` + `C`:
 
 ```bash
-sudo apt-get install git
+sudo apt-get install -y git
 ```
 
 :bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
@@ -41,10 +41,10 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 :point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmy type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
 
 ```bash
-sudo apt-get install apt-transport-https
+sudo apt-get install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-get install -y sublime-text
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
@@ -86,7 +86,7 @@ same one you used to create your GitHub account). It will prompt
 for information. Just press enter until it asks for a **passphrase**.
 
 ```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -C "TYPE_YOUR_EMAIL@HERE.com"
+mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
 **NB:** when asked for a passphrase, put something you want (and that you'll remember),
@@ -164,7 +164,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh git_setup.sh
 ```
 
-☝ This will **prompt** you for your name (`Firstname Lastname`) and your email.
+:point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
@@ -180,13 +180,19 @@ stt
 
 It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
 
-**Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed).
+**Close Sublime text** and open it again:
+
+```bash
+stt
+```
+
+**Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
 
 To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
 
 If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
 
-
+When it's done, you can close Sublime Text.
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
@@ -308,15 +314,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Download](https://slack.com/downloads) the Slack native app from the Slack page. In **Linux (Beta)** section, choose **Ubuntu 64-bit** and download it.
-
-Then install it:
-
-```bash
-cd ~/Downloads
-sudo apt-get install libappindicator1
-sudo dpkg -i slack-desktop-*.deb
-```
+[Install Slack for Linux (beta)](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-).
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
