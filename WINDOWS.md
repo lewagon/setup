@@ -23,7 +23,7 @@ Go to **Energy Settings** -> **Power Button**. Click on "Change settings that ar
 
 ## USB stick
 
-One of the teacher or TA should give you a bootable USB stick with **Ubuntu 16.04. LTS 64 bits**. If not, you can create one yourself from [OSX](http://web.archive.org/web/20151222000109/http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx) or from [Windows](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows).
+**One of the teacher or TA** should give you a bootable USB stick with [**Ubuntu 17.10 64 bits**](http://cdimage.ubuntu.com/daily-live/current/artful-desktop-amd64.iso). If not, you can create one yourself with [Etcher](https://etcher.io/).
 
 ## Install Ubuntu
 
