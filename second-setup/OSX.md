@@ -38,7 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 You have a new computer, let's generate a new SSH key:
 
 ```bash
-mkdir -p ~/.ssh && ssh-keygen -t rsa -C "your_email@example.com" # Change this email!
+mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 cat ~/.ssh/id_rsa.pub
 ```
 
