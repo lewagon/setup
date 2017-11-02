@@ -227,6 +227,12 @@ Run this command, it will **take a while (5-10 minutes)**
 rbenv install 2.3.5
 ```
 
+:warning: On Debian 9, you can get an error for some versions of ruby (ex: 2.3.4), if so, just type
+
+```bash
+sudo apt-get install libssl1.0-dev
+```
+
 Once the ruby installation is done, run this command to tell the system
 to use the 2.3.5 version by default.
 
