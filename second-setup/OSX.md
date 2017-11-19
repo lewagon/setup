@@ -15,7 +15,7 @@ xcode-select --install
 ```bash
 sudo rm -rf /usr/local/Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-sudo chown -R $USER:admin /usr/local
+sudo chown -R $(whoami) $(brew --prefix)/*
 brew update
 function install_or_upgrade { brew ls | grep $1 > /dev/null; if (($? == 0)); then brew upgrade $1; else brew install $1; fi }
 install_or_upgrade "git"
@@ -39,7 +39,7 @@ You have a new computer, let's generate a new SSH key:
 
 ```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
-cat ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_ed25519.pub
 ```
 
 Copy-paste the public SSH key which we outputed with the last command and [add it to GitHub](https://github.com/settings/ssh).
