@@ -392,7 +392,7 @@ It should tell you if your workstation is ready :) If not, ask a teacher.
 
 ## Alumni
 
-Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](https://kitt.lewagon.org/onboarding). Select your batch, sign in with GitHub and enter all your information.
+Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](https://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
 
 Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
 
