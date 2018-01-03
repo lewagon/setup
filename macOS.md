@@ -433,19 +433,18 @@ pane, click the radio button `All controls`. This way when you get a dialog with
 you'll be able to type `Enter` to confirm, or `Space` to choose the cancel option. If you have more than
 two options, you can use tab to circle between them.
 
-### OSX For hackers
+### macOS For hackers
 
-[Read this script](https://gist.github.com/brandonb927/3195465) and cherry-pick some stuff you think will suit you.
+[Read this script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and cherry-pick some stuff you think will suit you.
 For instance, you can type in the terminal this one:
 
 ```bash
-# Expanding the save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-# Disable system-wide resume
-defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Save screenshots to the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 # etc..
 ```
