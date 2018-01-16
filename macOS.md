@@ -443,8 +443,8 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
-# Disable system-wide resume
-defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+# Save screenshots to the Desktop (or elsewhere)
+defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 
 # etc..
 ```
