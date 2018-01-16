@@ -11,8 +11,8 @@ Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your op
 <table>
   <tr>
     <td>
-      <a href="OSX.md">
-        <img src="images/apple.png" alt="OSX" />
+      <a href="macOS.md">
+        <img src="images/apple.png" alt="macOS" />
       </a>
     </td>
     <td>
