@@ -2,6 +2,7 @@
 
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
+- Activate Developer Mode on Windows
 - Install a Terminal to run shell commands and scripts
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
@@ -10,11 +11,22 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Install Ruby
 - (optional) Create keyboard shortcuts
 
-## Hyper
+## DEVELOPER MODE
 
-Download Hyper from https://hyper.is/ 
-This is going to be your terminal! Every time you see a command line, you can copy and paste it in there to run it.
+We are going to make your Windows machine run shell commands.
 
+In your start menu, type `For developers settings` and change `Sideload apps` setting to `Developer mode`.
+
+Next find `Optional Features` in your start menu and add Windows Subsystem for Linux (Beta). If you are given several options, choose Ubuntu. 
+
+After rebooting, find `Command Prompt` in your start menu. Run `bash`. The download and installation of Linux Subsystem will start automatically
+
+
+## Terminal
+
+Command Prompt is lame. Hyper is going to be your terminal! Every time you see a command line, you can copy and paste it in there to run it.
+
+Download Hyper from https://hyper.is/ and install it.
 
 
 ## GitHub account
