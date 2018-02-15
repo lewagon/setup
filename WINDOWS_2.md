@@ -2,11 +2,19 @@
 
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
+- Install a Terminal to run shell commands and scripts
 - Grab a text editor, where you'll spend your day and nights
 - Install a package manager
 - Pimp your Terminal
 - Setup git and GitHub
 - Install Ruby
+- (optional) Create keyboard shortcuts
+
+## Hyper
+
+Download Hyper from https://hyper.is/ 
+This is going to be your terminal! Every time you see a command line, you can copy and paste it in there to run it.
+
 
 
 ## GitHub account
@@ -32,6 +40,11 @@ sudo apt-get install -y git
 ## Sublime Text 3 - Your text editor
 
 A text editor is one of the most important tools of a developer.
+
+We are going to download Sublime from https://www.sublimetext.com/3
+Install the Windows version.
+
+
 Follow these instructions in the Terminal:
 
 ```bash
@@ -167,6 +180,11 @@ zsh git_setup.sh
 :point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+
+Finally override the default alias for Sublime
+```bash
+alias stt='"/mnt/c/Program Files/Sublime Text 3/subl.exe" .'
+```
 
 Please now **quit** all your opened terminal windows.
 
@@ -325,4 +343,36 @@ The idea is that you'll have Slack open all day, so that you can share useful li
 
 Enjoy your ride with Le Wagon :)
 
+## (optional)
+If you like to go fast and use keyboard shortcuts, you can download AutohotKey from https://www.autohotkey.com/
 
+We are going to set up some shortcuts and hotkeys 
+
+^B::Run C:\Users\ben\AppData\Local\hyper\Hyper.exe
+#b::Run explorer.exe C:\Users\ben\AppData\Local\lxss\home\ben
+^+J::Run explorer.exe C:\users\ben\Downloads
+#e::Run explorer.exe D:\360\Dropbox
+#n::Run C:\Program Files\Sublime Text 3\sublime_text.exe
+#g::Run chrome.exe
+#c::Run chrome.exe
+PrintScreen::Send +{F10}
+^Up::Send {Home}
+^+Up::Send +{Home}
+^Down::Send {End}
+^+Down::Send +{End}
+
+What these lines do:
+Ctrl+B now launches Hyper (b = bash, the name of the shell you will be using every time you type a command line)
+Win + B now opens your Linux user folder
+Ctrl+Shift+J now opens your downloads folder (Ctrl+J = shortcut for downloads in Chrome)
+Win+E opens your Dropbox (e = explorer)
+Win+N opens Sublime (n = notepad)
+Win+G and Win+C opens Chrome (g = google, c = chrome)
+The Print Screen key becomes a right-click
+Ctrl + Up becomes Home
+Ctrl + Down becomes End
+
+Feel free to adapt these to your preferred configuration.
+
+
+Paste the following lines in your script file
