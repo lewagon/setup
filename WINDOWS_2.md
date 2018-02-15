@@ -348,6 +348,7 @@ If you like to go fast and use keyboard shortcuts, you can download AutohotKey f
 
 We are going to set up some shortcuts and hotkeys 
 
+```
 ^B::Run C:\Users\ben\AppData\Local\hyper\Hyper.exe
 #b::Run explorer.exe C:\Users\ben\AppData\Local\lxss\home\ben
 ^+J::Run explorer.exe C:\users\ben\Downloads
@@ -361,16 +362,27 @@ PrintScreen::Send +{F10}
 ^Down::Send {End}
 ^+Down::Send +{End}
 
+```
 What these lines do:
+
 Ctrl+B now launches Hyper (b = bash, the name of the shell you will be using every time you type a command line)
+
 Win + B now opens your Linux user folder
+
 Ctrl+Shift+J now opens your downloads folder (Ctrl+J = shortcut for downloads in Chrome)
+
 Win+E opens your Dropbox (e = explorer)
+
 Win+N opens Sublime (n = notepad)
+
 Win+G and Win+C opens Chrome (g = google, c = chrome)
+
 The Print Screen key becomes a right-click
+
 Ctrl + Up becomes Home
+
 Ctrl + Down becomes End
+
 
 Feel free to adapt these to your preferred configuration.
 
