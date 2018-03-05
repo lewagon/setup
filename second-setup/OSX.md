@@ -77,7 +77,7 @@ ruby -v
 ## Gems
 
 ```ruby
-gem install bundler rails
+gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 ```
 
 Check our rails version with:
