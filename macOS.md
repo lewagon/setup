@@ -21,7 +21,7 @@ Copy-paste the following command in the terminal and hit Enter.
 xcode-select --install
 ```
 
-If you have get following message, you can just skip this step and go to next step.
+If you'll receive the following message, you can just skip this step and go to next step.
 
 ```
 # command line tools are already installed, use "Software Update" to install updates
