@@ -24,7 +24,7 @@ You're now ready to use your Linux environment 👏.
 
 :bulb: to quickly open a terminal, press `Windows key` then `U` then `Enter`
 
-### Menlo fo Powerline font
+### Menlo for Powerline font
 
 Menlo for Powerline is a fancy font for your terminal. Download it from [abertsch/Menlo-for-Powerline repository](https://github.com/abertsch/Menlo-for-Powerline/raw/master/Menlo%20for%20Powerline.ttf) on GitHub. Once download has completed, double-click on the `Menlo for Powerline.ttf` file and install it on windows.
 
