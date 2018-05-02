@@ -1,5 +1,6 @@
 _DISCLAIMER We heavily recommend a minimal hardware configuration to consider this Windows Linux Subsystem setup: A SSD drive and at least 8Go RAM are mandatory_
 
+
 # Setup instructions
 
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
@@ -9,6 +10,7 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Pimp your Terminal
 - Setup git and GitHub
 - Install Ruby
+
 
 ## Prerequisites
 
@@ -28,7 +30,6 @@ Menlo for Powerline is a fancy font for your terminal. Download it from [abertsc
 
 Then open a terminal and right-click on the Ubuntu logo then choose `>Settings>Fonts>Menlo for Powerline` and save.
 
-
 ### Unzip
 
 Unzip is an unarchiver tool, you will need it in the next weeks.
@@ -46,19 +47,27 @@ sudo apt-get install unzip
 You need a X server to run your text editor through your Linux console in the context of your working directory.
 Go to https://sourceforge.net/projects/xming/ and download Xming. Once download has completed, just launch it. You will see a Xming icon in the taskbar.
 
+
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
+
 ## Git
 
-To install `git`, first open a terminal and run:
+To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
+
+Then copy this line with `Ctrl` + `C`:
 
 ```bash
 sudo apt-get install -y git
 ```
+
+:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
+
 
 ## Sublime Text 3 - Your text editor
 
@@ -80,6 +89,7 @@ sudo apt-get install -y sublime-text
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
+
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -103,6 +113,7 @@ To make this change stick, restart your laptop (or virtual machine):
 ```bash
 sudo reboot
 ```
+
 
 ## GitHub
 
@@ -157,6 +168,7 @@ ssh-add ~/.ssh/id_ed25519
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
+
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
@@ -202,9 +214,6 @@ Then run this as you can open Sublime text on Xming:
 ```bash
 sudo sed -i -e "s/alias stt='st .'/alias stt='DISPLAY=:0 st .'/g'" ~/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh
 ```
-
-
-
 Please now **quit** all your opened terminal windows.
 
 :bulb: You can quit a terminal window with `Ctrl` + `D`
@@ -328,6 +337,7 @@ gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
 
+
 ## Postgresql
 
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
@@ -341,6 +351,8 @@ psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
 exit
 rm -f /tmp/caller
 ```
+
+
 ## Check-up
 
 Let's check if you successfully installed everything.
@@ -379,3 +391,5 @@ You can also sign in to Slack on your iPhone or Android device!
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 Enjoy your ride with Le Wagon :)
+
+
