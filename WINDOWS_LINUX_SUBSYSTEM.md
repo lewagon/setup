@@ -22,7 +22,18 @@ Download [Ubuntu on Windows](https://www.microsoft.com/fr-fr/store/p/ubuntu/9nbl
 
 You're now ready to use your Linux environment 👏.
 
-:bulb: to quickly open a terminal, press `Windows key` then `U` then `Enter`
+To open a terminal, press `Windows key`, then type `Ubuntu` (it might show up earlier, though), then `Enter`
+
+You will have to copy-paste a lot of commands in this guide. While copying to the clipboard works as everywhere else by selecting the text, and pressing `Ctrl` + `C`, pasting into the terminal is done by right-clicking anywhere within the terminal window.
+
+Start with this command that installs a few useful utilities that will be needed later:
+
+```bash
+sudo apt install -y apt-transport-https unzip gnome-terminal
+```
+
+:point_up: This command will ask for your password with: `[sudo] password for <username>:`. The Linux terminal will not give you any feedback, like `\*`, as you might be used to. So you just have to type it, and then press `Enter`. But don't be scared! If you type it wrong, you will be asked again. And if you typed in correctly once, the terminal will remember it until it is closed.
+
 
 ### Menlo for Powerline font
 
@@ -30,23 +41,20 @@ Menlo for Powerline is a fancy font for your terminal. Download it from [abertsc
 
 Then open a terminal and right-click on the Ubuntu logo then choose `>Settings>Fonts>Menlo for Powerline` and save.
 
-### Unzip
-
-Unzip is an unarchiver tool, you will need it in the next weeks.
-
-Open a terminal and copy this line with `Ctrl` + `C`:
-
-```bash
-sudo apt-get install unzip
-```
-
-:bulb: To **paste it in the terminal**, you need to use `Right-click`.
 
 ### Xming X Server for Windows
 
 You need a X server to run your text editor through your Linux console in the context of your working directory.
 Go to https://sourceforge.net/projects/xming/ and download Xming. Once download has completed, just launch it. You will see a Xming icon in the taskbar.
 
+You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
+
+```bash
+echo "export DISPLAY=:0" >> ~/.bashrc
+echo "export DISPLAY=:0" >> ~/.zshrc
+```
+
+Xming does not autostart by default. To autostart it when you log into Windows, press `Windows key` + `R`, type `shell:startup`, and press `Enter`. Now drag an Xming icon (e.g. from your Desktop) into the window that just opened.
 
 
 ## GitHub account
@@ -56,18 +64,6 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
-## Git
-
-To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
-
-Then copy this line with `Ctrl` + `C`:
-
-```bash
-sudo apt-get install -y git
-```
-
-:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
-
 
 ## Sublime Text 3 - Your text editor
 
@@ -76,16 +72,9 @@ Follow these instructions in the Terminal:
 
 ```bash
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-```
-
-:point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmy type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
-
-```bash
-sudo apt-get install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install libgtk2.0-0
-sudo apt-get install -y sublime-text
+sudo apt update
+sudo apt install -y sublime-text
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
@@ -108,11 +97,9 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, restart your laptop (or virtual machine):
+To make sure all changes are persistent, close the terminal, and open it again.
 
-```bash
-sudo reboot
-```
+:bulb: You can quit a terminal window with `Ctrl` + `D`
 
 
 ## GitHub
@@ -133,7 +120,7 @@ mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE
 **NB:** when asked for a passphrase, put something you want (and that you'll remember),
 it's a password to protect your private key stored on your hard drive. You'll type,
 nothing will show up on the screen, **that's normal**. Just type the passphrase,
-and when you're done, press Enter.
+and when you're done, press `Enter`.
 
 Then you need to give your **public** key to GitHub. Run:
 
@@ -209,14 +196,6 @@ zsh git_setup.sh
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
-Then run this as you can open Sublime text on Xming:
-
-```bash
-sudo sed -i -e "s/alias stt='st .'/alias stt='DISPLAY=:0 st .'/g'" ~/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh
-```
-Please now **quit** all your opened terminal windows.
-
-:bulb: You can quit a terminal window with `Ctrl` + `D`
 
 ### Sublime Text auto-configuration
 
@@ -238,28 +217,11 @@ stt
 
 **Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
 
-To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
+To check if plugins are installed, open the Command Palette with `Ctrl` + `⇧` + `P`, type in `Packlist` and `Enter`, and you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
 
 If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
 
 When it's done, you can close Sublime Text.
-
-### Auto-start `ssh-agent`
-
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`.
-First open `.zshrc` file:
-
-```bash
-stt ~/.zshrc
-```
-
-Then add `ssh-agent` to the plugins list in the `.zshrc` file:
-
-```
-plugins=(... ssh-agent)
-```
-
-Save the `.zshrc` file with `Ctrl` + `S` and you can close Sublime Text.
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
@@ -268,23 +230,21 @@ First we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
-# If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
-# on your computer, that's what we want!
-
 rm -rf ~/.rbenv
 ```
 
-Then in the terminal, run:
+This might give you an error like `zsh: command not found: rvm`, but that's ok in this case!
+
+
+Then, continue with:
 
 ```bash
-sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-sudo apt-get clean
+sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
 **Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
-
 
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
@@ -308,6 +268,7 @@ ruby -v
 ```
 
 You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
+
 
 ## Installing some gems
 
@@ -334,7 +295,7 @@ All, please run the following line:
 gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 ```
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
+**Never** install a gem with `sudo`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
 
 
@@ -343,14 +304,32 @@ gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
 an open-source robust and production-ready database. Let's install it now.
 
-```
+```bash
 sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
+sudo /etc/init.d/postgresql start
 echo `whoami` > /tmp/caller
 sudo su - postgres
 psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
 exit
 rm -f /tmp/caller
 ```
+
+The Linux subsystem is missing some parts that start services automatically when the system boots up. To configure this, you need to add those start-up lines manually to the file `/etc/rc.local`.
+
+Open it via
+
+```bash
+sudo nano /etc/rc.local
+```
+
+Use your arrow keys to navigate down to the line above `exit 0`.
+Paste the following line:
+
+```bash
+sudo /etc/init.d/postgresql start
+```
+
+Press `Ctrl` + `X` for exit, and confirm to save the file with `Y`, and `Enter`. Depending on your localization `Y` might be `J`, or something else. If you are unsure, follow the on-screen instructions!
 
 
 ## Check-up
@@ -380,7 +359,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Install Slack for Linux (beta)](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-).
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
