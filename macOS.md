@@ -142,7 +142,7 @@ mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE
 **NB:** when asked for a passphrase, put something you want (and that you'll remember),
 it's a password to protect your private key stored on your hard drive. You'll type,
 nothing will show up on the screen, **that's normal**. Just type the passphrase,
-and when you're done, press Enter.
+and when you're done, press `Enter`.
 
 Then you need to give your **public** key to GitHub. Run:
 
