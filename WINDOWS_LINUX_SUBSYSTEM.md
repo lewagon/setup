@@ -32,7 +32,7 @@ sudo apt-get update
 sudo apt install -y apt-transport-https unzip gnome-terminal
 ```
 
-:point_up: This command will ask for your password with: `[sudo] password for <username>:`. The Linux terminal will not give you any feedback, like `\*`, as you might be used to. So you just have to type it, and then press `Enter`. But don't be scared! If you type it wrong, you will be asked again. And if you typed in correctly once, the terminal will remember it until it is closed.
+:point_up: This command will ask for your password with: `[sudo] password for <username>:`. The Linux terminal won't give you any feedback, like `\*`, as you might be used to. You just have to type it correctly, and then press `Enter`. If you type it wrong, you will be asked again otherwise the terminal will remember it until it is closed.
 
 ### Menlo for Powerline font
 
