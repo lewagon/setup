@@ -285,6 +285,13 @@ exit
 rm -f /tmp/caller
 ```
 
+## Tracked directories
+
+Ubuntu system only tracks a certain number of directories. This limit is very low by default. To raise this limit, run the following line in your terminal:
+
+```bash
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
 
 ## Check-up
 
