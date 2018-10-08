@@ -106,6 +106,12 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
+Then run:
+
+```bash
+chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+
 To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
