@@ -309,12 +309,11 @@ You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
 ```bash
 # China only!
 gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 # *** CURRENT SOURCES ***
-
-# https://ruby.taobao.org
-# Ensure it only has ruby.taobao.org
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
 ```
 
 ---
