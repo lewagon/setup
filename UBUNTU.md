@@ -251,12 +251,11 @@ You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
 ```bash
 # China only!
 gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 # *** CURRENT SOURCES ***
-
-# https://ruby.taobao.org
-# Ensure it only has ruby.taobao.org
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
 ```
 
 ---
@@ -285,13 +284,6 @@ exit
 rm -f /tmp/caller
 ```
 
-## Tracked directories
-
-Ubuntu system only tracks a certain number of directories. This limit is very low by default. To raise this limit, run the following line in your terminal:
-
-```bash
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
 
 ## Check-up
 
