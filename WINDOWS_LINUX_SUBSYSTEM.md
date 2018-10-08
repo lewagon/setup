@@ -48,7 +48,6 @@ Go to https://sourceforge.net/projects/xming/ and download Xming. Once download 
 You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
 ```bash
 echo "export DISPLAY=:0" >> ~/.bashrc
-echo "export DISPLAY=:0" >> ~/.zshrc
 ```
 
 Xming does not autostart by default. To autostart it when you log into Windows, press `Windows key` + `R`, type `shell:startup`, and press `Enter`. Now drag an Xming icon (e.g. from your Desktop) into the window that just opened.
@@ -83,6 +82,7 @@ Follow these instructions in the Terminal:
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
+sudo apt-get install libgtk2.0
 sudo apt install -y sublime-text
 ```
 
@@ -110,6 +110,12 @@ To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
 sudo reboot
+```
+
+Add this line to make sure the Xming X Server also work with Zsh
+
+```bash
+echo "export DISPLAY=:0" >> ~/.zshrc
 ```
 
 
