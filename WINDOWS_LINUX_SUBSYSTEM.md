@@ -112,7 +112,7 @@ To make this change stick, restart your laptop (or virtual machine):
 sudo reboot
 ```
 
-Add this line to make sure the Xming X Server also work with Zsh
+Add this line to make sure the Xming X Server also works with Zsh
 
 ```bash
 echo "export DISPLAY=:0" >> ~/.zshrc
