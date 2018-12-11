@@ -21,8 +21,4 @@ Then run:
 chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
-To make this change stick, restart your laptop (or virtual machine):
-
-```bash
-sudo reboot
-```
+To make this change stick, quit your virtual machine with `CTRL` + `D` and restart it.
