@@ -142,7 +142,7 @@ mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE
 **NB:** when asked for a passphrase, put something you want (and that you'll remember),
 it's a password to protect your private key stored on your hard drive. You'll type,
 nothing will show up on the screen, **that's normal**. Just type the passphrase,
-and when you're done, press Enter.
+and when you're done, press `Enter`.
 
 Then you need to give your **public** key to GitHub. Run:
 
@@ -330,12 +330,11 @@ You should see something starting with `ruby 2.5.3p`. If not, ask a teacher.
 ```bash
 # China only!
 gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 # *** CURRENT SOURCES ***
-
-# https://ruby.taobao.org
-# Ensure it only has ruby.taobao.org
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
 ```
 
 ---

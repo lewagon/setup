@@ -38,15 +38,6 @@ zsh git_setup.sh
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
-Then run this as you can open Sublime text on Xming:
-
-```bash
-sudo sed -i -e "s/alias stt='st .'/alias stt='DISPLAY=:0 st .'/g'" ~/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh
-```
-Please now **quit** all your opened terminal windows.
-
-:bulb: You can quit a terminal window with `Ctrl` + `D`
-
 ### Sublime Text auto-configuration
 
 :warning: Be sure you have a Xming server running or launch it.
@@ -58,6 +49,8 @@ stt
 ```
 
 It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
+
+_NB: You can ignore this warning message "st_run: nice(5) failed: operation not permitted"_
 
 **Close Sublime text** and open it again:
 
@@ -82,10 +75,10 @@ First open `.zshrc` file:
 stt ~/.zshrc
 ```
 
-Then add `ssh-agent` to the plugins list in the `.zshrc` file:
+Spot the line starting with `plugins=` Then add `ssh-agent` to the plugins list. The list should look like:
 
 ```
-plugins=(... ssh-agent)
+plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
 
 Save the `.zshrc` file with `Ctrl` + `S` and you can close Sublime Text.
