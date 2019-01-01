@@ -10,7 +10,7 @@ end
 require "json"
 require "open-uri"
 
-REQUIRED_RUBY_VERSION = "2.4.4"
+REQUIRED_RUBY_VERSION = "2.5.3"
 REQUIRED_GIT_VERSION = "2.0"
 MINIMUM_AVATAR_SIZE = 2 * 1024
 GITHUB_AUTHORIZATION_NOTE = 'Le Wagon setup check'.freeze
