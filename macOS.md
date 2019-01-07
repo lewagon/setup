@@ -67,6 +67,11 @@ If you get a `/usr/local must be writable` error, just run this:
 sudo chown -R $USER:admin /usr/local
 brew update
 ```
+** If you are on High Sierra +** use this command:
+
+```bash
+sudo chown -R $(whoami) $(brew --prefix)/*
+```
 
 Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
