@@ -5,4 +5,5 @@ workflow "Build" {
 
 action "Run" {
   uses = "Run"
+  args = "ruby build.rb"
 }
