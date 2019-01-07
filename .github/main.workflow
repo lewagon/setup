@@ -6,5 +6,4 @@ workflow "Build" {
 action "Run" {
   uses = "docker://ruby:2.5"
   args = "ruby build.rb"
-  runs = "ruby"
 }
