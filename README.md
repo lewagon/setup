@@ -31,3 +31,12 @@ Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your op
 ## Already done the FullStack program?
 
 Then jump to [this guide](second-setup/OSX.md).
+
+### Code Visualization:
+
+Here is a cool visualization of the code evolution
+
+ [![Watch the video](https://img.youtube.com/vi/A0JU8nwdqdk/0.jpg)](https://www.youtube.com/watch?v=A0JU8nwdqdk)
+
+ [https://www.youtube.com/watch?v=A0JU8nwdqdk](https://www.youtube.com/watch?v=A0JU8nwdqdk)
+
