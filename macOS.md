@@ -383,6 +383,7 @@ It is mandatory that you protect your session behind a password.If it is not alr
 
 You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
 
+
 ## Check-up
 
 Let's check if you successfully installed everything.
