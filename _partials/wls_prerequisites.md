@@ -14,7 +14,7 @@ You will have to copy-paste a lot of commands in this guide. While copying to th
 
 Start with this command that installs a few useful utilities that will be needed later:
 ```bash
-sudo apt-get update
+sudo apt update
 sudo apt install -y apt-transport-https unzip gnome-terminal
 ```
 
