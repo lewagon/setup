@@ -83,6 +83,7 @@ Follow these instructions in the Terminal:
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
+sudo apt install libgtk2.0-0
 sudo apt install -y sublime-text
 ```
 
@@ -113,6 +114,12 @@ chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 To make this change stick, quit your virtual machine with `CTRL` + `D` and restart it.
+
+After the reboot: run this line in your terminal to make sure the Xming X Server also works with Zsh
+
+```bash
+echo "export DISPLAY=:0" >> ~/.zshrc
+```
 
 
 ## GitHub
