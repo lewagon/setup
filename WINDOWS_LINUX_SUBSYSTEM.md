@@ -28,7 +28,7 @@ You will have to copy-paste a lot of commands in this guide. While copying to th
 
 Start with this command that installs a few useful utilities that will be needed later:
 ```bash
-sudo apt-get update
+sudo apt update
 sudo apt install -y apt-transport-https unzip gnome-terminal
 ```
 
@@ -68,7 +68,7 @@ To install `git`, first open a terminal. To open a terminal, you can click on th
 Then copy this line with `Ctrl` + `C`:
 
 ```bash
-sudo apt-get install -y git
+sudo apt install -y git
 ```
 
 :bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
@@ -94,7 +94,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt-get install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim nodejs imagemagick jq
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
 ```
@@ -270,8 +270,8 @@ rm -rf ~/.rbenv
 Then in the terminal, run:
 
 ```bash
-sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-sudo apt-get clean
+sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+sudo apt clean
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
