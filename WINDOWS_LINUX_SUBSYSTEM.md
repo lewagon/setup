@@ -90,6 +90,7 @@ We will use the shell named `zsh` instead of `bash`, the default one.
 ```bash
 sudo apt install -y zsh curl vim imagemagick jq
 ```
+
 We need to install the latest version of nodejs:
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -197,6 +198,7 @@ Run the `dotfiles` installer.
 cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
+
 Then run the git installer:
 
 ```bash
@@ -218,7 +220,7 @@ We also need to install a graphical library:
 ```bash
 sudo apt install libgtk2.0-0
 ```
-Reboot your terminal.
+Restart your terminal.
 
 ### Sublime Text auto-configuration
 
