@@ -77,6 +77,7 @@ Follow these instructions in the Terminal:
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
+sudo apt install libgtk2.0-0
 sudo apt install -y sublime-text
 ```
 
@@ -297,14 +298,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.4.4
+rbenv install 2.5.3
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.4.4 version by default.
+to use the 2.5.3 version by default.
 
 ```bash
-rbenv global 2.4.4
+rbenv global 2.5.3
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -313,7 +314,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
+You should see something starting with `ruby 2.5.3p`. If not, ask a teacher.
 
 ## Installing some gems
 
@@ -324,12 +325,11 @@ You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
 ```bash
 # China only!
 gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 # *** CURRENT SOURCES ***
-
-# https://ruby.taobao.org
-# Ensure it only has ruby.taobao.org
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
 ```
 
 ---
@@ -349,32 +349,21 @@ gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
 an open-source robust and production-ready database. Let's install it now.
 
+
 ```bash
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 sudo /etc/init.d/postgresql start
-echo `whoami` > /tmp/caller
-sudo su - postgres
-psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
-exit
-rm -f /tmp/caller
+sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
 
-The Linux subsystem is missing some parts that start services automatically when the system boots up. To configure this, you need to add those start-up lines manually to the file `/etc/rc.local`.
-
-Open it via:
+You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
 
 ```bash
-sudo nano /etc/rc.local
+sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
+sudo chmod 440 /etc/sudoers.d/postgresql
+echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```
 
-Use your arrow keys to navigate down to the line above `exit 0`.
-Paste the following line:
-
-```
-sudo /etc/init.d/postgresql start
-```
-
-Press `Ctrl` + `X` for exit, and confirm to save the file with `Y`, and `Enter`. Depending on your localization `Y` might be `J`, or something else. If you are unsure, follow the on-screen instructions!
 
 
 ## Check-up

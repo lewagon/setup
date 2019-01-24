@@ -303,14 +303,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.4.4
+rbenv install 2.5.3
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.4.4 version by default.
+to use the 2.5.3 version by default.
 
 ```bash
-rbenv global 2.4.4
+rbenv global 2.5.3
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -319,7 +319,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
+You should see something starting with `ruby 2.5.3p`. If not, ask a teacher.
 
 ## Installing some gems
 
@@ -330,12 +330,11 @@ You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
 ```bash
 # China only!
 gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 # *** CURRENT SOURCES ***
-
-# https://ruby.taobao.org
-# Ensure it only has ruby.taobao.org
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
 ```
 
 ---
@@ -380,9 +379,10 @@ To quit it, type `\q` then `Enter`.
 
 ## Security
 
-It is mandataory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
+It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
 You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
+
 
 ## Check-up
 
@@ -424,7 +424,7 @@ Enjoy your ride with Le Wagon :)
 
 ## Keyboard
 
-As you become a programer, you'll understand that leaving the keyboard takes a lot of time,
+As you become a programmer, you'll understand that leaving the keyboard takes a lot of time,
 so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on OSX
 to help you do that:
 

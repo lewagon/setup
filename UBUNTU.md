@@ -41,10 +41,10 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 :point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmy type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
 
 ```bash
-sudo apt-get install -y apt-transport-https
+sudo apt install -y apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install -y sublime-text
+sudo apt update
+sudo apt install -y sublime-text
 ```
 
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
@@ -55,7 +55,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt-get install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim nodejs imagemagick jq
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
 ```
@@ -224,14 +224,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.4.4
+rbenv install 2.5.3
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.4.4 version by default.
+to use the 2.5.3 version by default.
 
 ```bash
-rbenv global 2.4.4
+rbenv global 2.5.3
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -240,7 +240,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
+You should see something starting with `ruby 2.5.3p`. If not, ask a teacher.
 
 ## Installing some gems
 
@@ -251,12 +251,11 @@ You should see something starting with `ruby 2.4.4p`. If not, ask a teacher.
 ```bash
 # China only!
 gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
+gem sources -a https://gems.ruby-china.com/
 gem sources -l
 # *** CURRENT SOURCES ***
-
-# https://ruby.taobao.org
-# Ensure it only has ruby.taobao.org
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
 ```
 
 ---
@@ -277,12 +276,8 @@ In a few weeks, we'll talk about SQL and Databases and you'll need something cal
 an open-source robust and production-ready database. Let's install it now.
 
 ```
-sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
-echo `whoami` > /tmp/caller
-sudo su - postgres
-psql --command "CREATE ROLE `cat /tmp/caller` LOGIN createdb;"
-exit
-rm -f /tmp/caller
+sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
+sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
 
 

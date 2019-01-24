@@ -15,8 +15,16 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, restart your laptop (or virtual machine):
+Then run:
 
 ```bash
-sudo reboot
+chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+
+To make this change stick, quit your virtual machine with `CTRL` + `D` and restart it.
+
+After the reboot: run this line in your terminal to make sure the Xming X Server also works with Zsh
+
+```bash
+echo "export DISPLAY=:0" >> ~/.zshrc
 ```

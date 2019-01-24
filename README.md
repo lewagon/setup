@@ -2,7 +2,7 @@
 
 ### In China?
 
-Before starting the setup :point_down: you will get VPN codes for Astrill from your city manager.
+Before starting the setup :point_down: you want to turn on your VPN, or get VPN codes from your city manager right away.
 
 ### Worldwide
 
