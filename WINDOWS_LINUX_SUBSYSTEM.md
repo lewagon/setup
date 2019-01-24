@@ -28,7 +28,7 @@ You will have to copy-paste a lot of commands in this guide. While copying to th
 
 Start with this command that installs a few useful utilities that will be needed later:
 ```bash
-sudo apt-get update
+sudo apt update
 sudo apt install -y apt-transport-https unzip gnome-terminal
 ```
 
@@ -44,12 +44,6 @@ Then open a terminal and right-click on the Ubuntu logo then choose `>Settings>F
 
 You need a X server to run your text editor through your Linux console in the context of your working directory.
 Go to https://sourceforge.net/projects/xming/ and download Xming. Once download has completed, just launch it. You will see a Xming icon in the taskbar.
-
-You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
-```bash
-echo "export DISPLAY=:0" >> ~/.bashrc
-echo "export DISPLAY=:0" >> ~/.zshrc
-```
 
 Xming does not autostart by default. To autostart it when you log into Windows, press `Windows key` + `R`, type `shell:startup`, and press `Enter`. Now drag an Xming icon (e.g. from your Desktop) into the window that just opened.
 
@@ -68,7 +62,7 @@ To install `git`, first open a terminal. To open a terminal, you can click on th
 Then copy this line with `Ctrl` + `C`:
 
 ```bash
-sudo apt-get install -y git
+sudo apt install -y git
 ```
 
 :bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
@@ -94,7 +88,15 @@ Sublime Text is free without any time limitation but a popup will appear every t
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt-get install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim imagemagick jq
+```
+We need to install the latest version of nodejs:
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install -y nodejs
+```
+
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
 ```
@@ -195,7 +197,6 @@ Run the `dotfiles` installer.
 cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
-
 Then run the git installer:
 
 ```bash
@@ -206,6 +207,18 @@ zsh git_setup.sh
 :point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+
+You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
+```bash
+echo "export DISPLAY=:0" >> ~/.bashrc
+echo "export DISPLAY=:0" >> ~/.zshrc
+```
+
+We also need to install a graphical library:
+```bash
+sudo apt install libgtk2.0-0
+```
+Reboot your terminal.
 
 ### Sublime Text auto-configuration
 
@@ -268,8 +281,8 @@ rm -rf ~/.rbenv
 Then in the terminal, run:
 
 ```bash
-sudo apt-get install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-sudo apt-get clean
+sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+sudo apt clean
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
@@ -334,8 +347,8 @@ gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
 an open-source robust and production-ready database. Let's install it now.
 
-```
-sudo apt-get install -y postgresql postgresql-contrib libpq-dev build-essential
+```bash
+sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 sudo /etc/init.d/postgresql start
 echo `whoami` > /tmp/caller
 sudo su - postgres
