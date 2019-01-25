@@ -38,6 +38,18 @@ zsh git_setup.sh
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
+You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
+```bash
+echo "export DISPLAY=:0" >> ~/.bashrc
+echo "export DISPLAY=:0" >> ~/.zshrc
+```
+
+We also need to install a graphical library:
+```bash
+sudo apt install libgtk2.0-0
+```
+Restart your terminal.
+
 ### Sublime Text auto-configuration
 
 :warning: Be sure you have a Xming server running or launch it.

@@ -3,7 +3,8 @@
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
 an open-source robust and production-ready database. Let's install it now.
 
-```
+
+```bash
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 sudo /etc/init.d/postgresql start
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"

@@ -45,12 +45,6 @@ Then open a terminal and right-click on the Ubuntu logo then choose `>Settings>F
 You need a X server to run your text editor through your Linux console in the context of your working directory.
 Go to https://sourceforge.net/projects/xming/ and download Xming. Once download has completed, just launch it. You will see a Xming icon in the taskbar.
 
-You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
-```bash
-echo "export DISPLAY=:0" >> ~/.bashrc
-echo "export DISPLAY=:0" >> ~/.zshrc
-```
-
 Xming does not autostart by default. To autostart it when you log into Windows, press `Windows key` + `R`, type `shell:startup`, and press `Enter`. Now drag an Xming icon (e.g. from your Desktop) into the window that just opened.
 
 
@@ -95,7 +89,16 @@ Sublime Text is free without any time limitation but a popup will appear every t
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim imagemagick jq
+```
+
+We need to install the latest version of nodejs:
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install -y nodejs
+```
+
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
 ```
@@ -107,18 +110,10 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-Then run:
+To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
-chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-```
-
-To make this change stick, quit your virtual machine with `CTRL` + `D` and restart it.
-
-After the reboot: run this line in your terminal to make sure the Xming X Server also works with Zsh
-
-```bash
-echo "export DISPLAY=:0" >> ~/.zshrc
+sudo reboot
 ```
 
 
@@ -215,6 +210,18 @@ zsh git_setup.sh
 :point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+
+You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
+```bash
+echo "export DISPLAY=:0" >> ~/.bashrc
+echo "export DISPLAY=:0" >> ~/.zshrc
+```
+
+We also need to install a graphical library:
+```bash
+sudo apt install libgtk2.0-0
+```
+Restart your terminal.
 
 ### Sublime Text auto-configuration
 
@@ -342,7 +349,8 @@ gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
 an open-source robust and production-ready database. Let's install it now.
 
-```
+
+```bash
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 sudo /etc/init.d/postgresql start
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
