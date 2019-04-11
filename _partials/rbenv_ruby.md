@@ -42,7 +42,7 @@ gem sources -l
 All, please run the following line:
 
 ```bash
-gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
