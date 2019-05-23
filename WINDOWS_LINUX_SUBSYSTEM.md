@@ -18,6 +18,13 @@ First you need to check your machine runs on Windows 10 build 1615 or later. Fol
 
 ### Ubuntu on Windows
 
+Press `Windows key`, then type `powershell`. Right click on `Windows PowerShell (x86)` then click on `Run as administrator`
+A blue window will open, run the following command in it:
+```bash
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+The terminal will offer you to restart your computer, type `y` and press `Enter`.
+
 Download [Ubuntu on Windows](https://www.microsoft.com/fr-fr/store/p/ubuntu/9nblggh4msv6?rtc=1) from the Windows Store. Once download has completed, select _Launch_. This will open a console window. Wait for installation to complete then you will be prompted to create your LINUX user account. Create your LINUX username and password. This user account has no relationship to your Windows username and password and hence can be different.
 
 You're now ready to use your Linux environment 👏.
@@ -65,9 +72,6 @@ Then copy this line with `Ctrl` + `C`:
 sudo apt install -y git
 ```
 
-:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
-
-
 ## Sublime Text 3 - Your text editor
 
 A text editor is one of the most important tools of a developer.
@@ -77,7 +81,6 @@ Follow these instructions in the Terminal:
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update
-sudo apt install libgtk2.0-0
 sudo apt install -y sublime-text
 ```
 
@@ -110,12 +113,7 @@ your prompt should look like this:
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, restart your laptop (or virtual machine):
-
-```bash
-sudo reboot
-```
-
+To make this change stick, close your terminal and open it again.
 
 ## GitHub
 
@@ -342,6 +340,21 @@ gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub co
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
+
+
+To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal:
+Run the appropriate command in your terminal:
+
+If you're using Google Chrome.
+```bash
+echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe" >> ~/.zshrc
+```
+If you're using Mozilla Firefox.
+```bash
+echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe" >> ~/.zshrc
+```
+
+Restart your terminal.
 
 
 ## Postgresql
