@@ -4,6 +4,13 @@ First you need to check your machine runs on Windows 10 build 1615 or later. Fol
 
 ### Ubuntu on Windows
 
+Press `Windows key`, then type `powershell`. Right click on `Windows PowerShell (x86)` then click on `Run as administrator`
+A blue window will open, run the following command in it:
+```bash
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+The terminal will offer you to restart your computer, type `y` and press `Enter`.
+
 Download [Ubuntu on Windows](https://www.microsoft.com/fr-fr/store/p/ubuntu/9nblggh4msv6?rtc=1) from the Windows Store. Once download has completed, select _Launch_. This will open a console window. Wait for installation to complete then you will be prompted to create your LINUX user account. Create your LINUX username and password. This user account has no relationship to your Windows username and password and hence can be different.
 
 You're now ready to use your Linux environment 👏.
