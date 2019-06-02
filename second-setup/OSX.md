@@ -59,6 +59,23 @@ zsh install.sh
 
 ## Ruby
 
+Remove RVM if installed, otherwise continue to **'Using RBENV to install Ruby'** (run *`rvm -v`* to check if it's installed)
+
+```bash
+rvm implode
+gem uninstall rvm  # just in case there was rmv gem installed
+```
+
+Before continuing, make sure there is no RVM files remaining in your root drive.
+
+```bash
+cd && ls -la
+rm -rf .rvm    # if the file exists
+rm -rf .rvmrc  # ditto
+```
+
+#### Using RBENV to install Ruby
+
 ```bash
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 brew uninstall --force rbenv ruby-build
