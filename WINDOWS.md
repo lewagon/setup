@@ -8,7 +8,7 @@ It's **very** important that all your data are backed-up before going further. N
 
 We will take off 30GB from your hard drive to give it to Linux. You need to access [Disk Management](http://pcsupport.about.com/od/windows-8/a/disk-management-windows-8.htm). Then, right click on the **biggest** partition and select **Shrink Volume**. You want to get `30000` MB of space. If your disk is small, you can reduce this value, but try to set it to `20000` at the bare minimum.
 
-For this step, there is a [full tutorial](http://www.everydaylinuxuser.com/2015/11/how-to-shrink-windows-10-to-make-space.html) you can follow.
+For this step, there is a [full tutorial](https://www.easeus.com/partition-master/shrink-windows-10-partition.html) you can follow.
 
 ## Turn off Fast Startup
 
