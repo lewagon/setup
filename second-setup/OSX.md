@@ -13,7 +13,6 @@ xcode-select --install
 ## Homebrew
 
 ```bash
-sudo rm -rf /usr/local/Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 sudo chown -R $(whoami) $(brew --prefix)/*
 brew update
