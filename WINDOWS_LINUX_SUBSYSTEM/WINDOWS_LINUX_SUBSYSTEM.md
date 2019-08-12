@@ -1,7 +1,6 @@
-_DISCLAIMER We heavily recommend a minimal hardware configuration to consider this Windows Linux Subsystem setup: A SSD drive and at least 8Go RAM are mandatory_
+_DISCLAIMER We heavily recommend a minimal hardware configuration to consider this Windows Linux Subsystem setup: A SSD drive and at least 8GB RAM are mandatory_
 
-
-# Setup instructions
+#Setup instructions
 
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
@@ -11,49 +10,63 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Setup git and GitHub
 - Install Ruby
 
-
-## Prerequisites
+##Prerequisites
 
 First you need to check your machine runs on Windows 10 build 1615 or later. Follow theses steps to [check your build](https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#check-your-build-number). For earlier versions of Windows 10, follow [Le Wagon Windows setup](WINDOWS.md).
 
-### Ubuntu on Windows
+## Ubuntu on Windows
 
-Press `Windows key`, then type `powershell`. Right click on `Windows PowerShell (x86)` then click on `Run as administrator`
-A blue window will open, run the following command in it:
-```bash
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
-The terminal will offer you to restart your computer, type `y` and press `Enter`.
-
-Download [Ubuntu on Windows](https://www.microsoft.com/fr-fr/store/p/ubuntu/9nblggh4msv6?rtc=1) from the Windows Store. Once download has completed, select _Launch_. This will open a console window. Wait for installation to complete then you will be prompted to create your LINUX user account. Create your LINUX username and password. This user account has no relationship to your Windows username and password and hence can be different.
+Download [Ubuntu on Windows](https://www.microsoft.com/en-us/store/p/ubuntu/9nblggh4msv6?rtc=1) from the Windows Store. Once download has completed, select _Launch_. This will open a console window. Wait for installation to complete then you will be prompted to create your LINUX user account. Create your LINUX username and password. This user account has no relationship to your Windows username and password and hence can be different.
 
 You're now ready to use your Linux environment 👏.
 
-To open a terminal, press `Windows key`, then type `Ubuntu` (it might show up earlier, though), then `Enter`
+First we’re going to download a better terminal application. Download Hyper from https://hyper.is/ and install it.
 
-You will have to copy-paste a lot of commands in this guide. While copying to the clipboard works as everywhere else by selecting the text, and pressing `Ctrl` + `C`, pasting into the terminal is done by right-clicking anywhere within the terminal window.
+Once Hyper has installed, run the application, then hit “ctrl + ,” to open the configuration file. 
+
+Find the line: 
+
+```bash
+shell: ‘’,
+```
+
+
+
+Change it to: 
+
+```bash
+shell: ‘C:\\Windows\\System32\\cmd.exe’,
+```
+
+
+
+Now find ```shellArgs``` just below it, and set it to 
+
+``` bash
+shellArgs: ["--login", "-i", "/c wsl.exe"],
+```
+
+
+
+Restart Hyper
+
+Hyper is where you will interact with your system through Ubuntu. You will have to copy-paste a lot of commands in this guide. While copying to the clipboard works as everywhere else by selecting the text, and pressing `Ctrl` + `C`, pasting into the terminal is done by right-clicking anywhere within the terminal window.
 
 Start with this command that installs a few useful utilities that will be needed later:
+
 ```bash
 sudo apt update
+
 sudo apt install -y apt-transport-https unzip gnome-terminal
 ```
 
 :point_up: This command will ask for your password with: `[sudo] password for <username>:`. The Linux terminal won't give you any feedback, like `\*`, as you might be used to. You just have to type it correctly, and then press `Enter`. If you type it wrong, you will be asked again otherwise the terminal will remember it until it is closed.
 
-### Menlo for Powerline font
+## Menlo for Powerline font
 
 Menlo for Powerline is a fancy font for your terminal. Download it from [abertsch/Menlo-for-Powerline repository](https://github.com/abertsch/Menlo-for-Powerline/raw/master/Menlo%20for%20Powerline.ttf) on GitHub. Once download has completed, double-click on the `Menlo for Powerline.ttf` file and install it on windows.
 
-Then open a terminal and right-click on the Ubuntu logo then choose `>Settings>Fonts>Menlo for Powerline` and save.
-
-### Xming X Server for Windows
-
-You need a X server to run your text editor through your Linux console in the context of your working directory.
-Go to https://sourceforge.net/projects/xming/ and download Xming. Once download has completed, just launch it. You will see a Xming icon in the taskbar.
-
-Xming does not autostart by default. To autostart it when you log into Windows, press `Windows key` + `R`, type `shell:startup`, and press `Enter`. Now drag an Xming icon (e.g. from your Desktop) into the window that just opened.
-
+Then open preferences in Hyper (ctrl + ,), and add ‘Menlo for Powerline’ to the beginning of the font family line
 
 ## GitHub account
 
@@ -61,113 +74,154 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
-
 ## Git
 
-To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
+To install `git`, first open up Hyper.
 
 Then copy this line with `Ctrl` + `C`:
 
 ```bash
+
 sudo apt install -y git
+
 ```
 
-## Sublime Text 3 - Your text editor
+:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V` OR right click.
+
+## Visual Studio Code - Your text editor
 
 A text editor is one of the most important tools of a developer.
-Follow these instructions in the Terminal:
+
+Download Visual Studio Code from [here](https://code.visualstudio.com/) and install it in Windows. 
+
+Restart Hyper
+
+Now let’s install some useful plugins!
+
+Copy and paste these commands one by one.
 
 ```bash
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install -y sublime-text
+code --install-extension patbenatar.advanced-new-file 
+code --install-extension Atishay-Jain.All-Autocomplete 
+code --install-extension mgmcdermott.vscode-language-babel 
+code --install-extension ZneuRay.erb-vscode-snippets 
+code --install-extension misogi.ruby-rubocop
+
 ```
-
-Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
-
 
 ## Oh-my-zsh - Fancy your Terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
+
 sudo apt install -y zsh curl vim imagemagick jq
+
 ```
 
 We need to install the latest version of nodejs:
+
 ```bash
+
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
 sudo apt install -y nodejs
+
 ```
 
 ```bash
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # it will ask for your session password
+
 ```
 
 Be careful, those commands will ask you to type your password twice. At the end
+
 your prompt should look like this:
 
 ![](images/ubuntu_oh_my_zsh.png)
 
 If it doesn't, **ask a teacher**.
 
-To make this change stick, close your terminal and open it again.
+To make this change stick, restart your laptop
 
 ## GitHub
 
 We need to generate SSH keys which are going to be used by GitHub and Heroku
+
 to authenticate you. Think of it as a way to log in, but different from the
+
 well known username/password couple. If you already generated keys
+
 that you already use with other services, you can skip this step.
 
 Open a terminal and type this, replacing the email with **yours** (the
+
 same one you used to create your GitHub account). It will prompt
+
 for information. Just press enter until it asks for a **passphrase**.
 
 ```bash
+
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
+
 ```
 
 **NB:** when asked for a passphrase, put something you want (and that you'll remember),
+
 it's a password to protect your private key stored on your hard drive. You'll type,
+
 nothing will show up on the screen, **that's normal**. Just type the passphrase,
+
 and when you're done, press `Enter`.
 
 Then you need to give your **public** key to GitHub. Run:
 
 ```bash
+
 cat ~/.ssh/id_ed25519.pub
+
 ```
 
 It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
+
 then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
+
 **Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
+
 Finish by clicking on the **Add key** green button.
 
 To check that this step is completed, in the terminal run this. You will be
+
 prompted a warning, type `yes` then `Enter`.
 
 ```bash
+
 ssh -T git@github.com
+
 ```
 
 If you see something like this, you're done!
 
 ```bash
+
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
+
 ```
 
 If it does not work, try running this before trying again the `ssh -T` command:
 
 ```bash
+
 ssh-add ~/.ssh/id_ed25519
+
 ```
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
-understanding of what those keys are used for.
 
+understanding of what those keys are used for.
 
 ## Dotfiles (Standard configuration)
 
@@ -176,140 +230,137 @@ Hackers love to refine and polish their shell and tools. We'll start with a grea
 :arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account. Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
 Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
+
 own github usernickname.
 
 ```bash
+
 export GITHUB_USERNAME=replace_this_with_your_github_username
 
-# Example:
+# Eample:
+
 #   export GITHUB_USERNAME=ssaunier
+
 ```
 
 Now copy/paste this very long line in your terminal. Do **not** change this one.
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+
+export WIN_DIR=`pwd` && cd ~ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git && cd $WIN_DIR && mkdir -p code/$GITHUB_USERNAME && cd ~/dotfiles
+
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
+
+cd ~/dotfiles
+
 zsh install.sh
+
 ```
 
 Then run the git installer:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
+
+cd ~/dotfiles
+
 zsh git_setup.sh
+
 ```
 
 :point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
 
 Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
-You need to prepend commands that start applications in a graphical interface outside the command line with `DISPLAY=:0 `, e.g. `DISPLAY=:0 subl`, or set this variable by adding it to `~/.bashrc`, i.e.
-```bash
-echo "export DISPLAY=:0" >> ~/.bashrc
-echo "export DISPLAY=:0" >> ~/.zshrc
-```
-
-We also need to install a graphical library:
-```bash
-sudo apt install libgtk2.0-0
-```
-Restart your terminal.
-
-### Sublime Text auto-configuration
-
-:warning: Be sure you have a Xming server running or launch it.
-
-Open a new terminal and type this:
-
-```bash
-stt
-```
-
-It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
-
-_NB: You can ignore this warning message "st_run: nice(5) failed: operation not permitted"_
-
-**Close Sublime text** and open it again:
-
-```bash
-stt
-```
-
-**Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
-
-To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
-
-If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
-
-When it's done, you can close Sublime Text.
-
-### Auto-start `ssh-agent`
+## Auto-start `ssh-agent`
 
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`.
+
 First open `.zshrc` file:
 
 ```bash
-stt ~/.zshrc
+
+nano ~/.zshrc
+
 ```
 
 Spot the line starting with `plugins=` Then add `ssh-agent` to the plugins list. The list should look like:
 
 ```
+
 plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
+
 ```
 
-Save the `.zshrc` file with `Ctrl` + `S` and you can close Sublime Text.
-
+Save the `.zshrc` file with `Ctrl` + `x`, `y`, `enter` 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
 First we need to clean up any previous Ruby installation you might have:
 
 ```bash
+
 rvm implode && sudo rm -rf ~/.rvm
+
 # If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
+
 # on your computer, that's what we want!
 
 rm -rf ~/.rbenv
+
 ```
 
 Then in the terminal, run:
 
 ```bash
-sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-sudo apt clean
+
+sudo apt-get update
+
+sudo apt-get install -y zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
+
 ```
 
 **Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
-
 
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
+
 rbenv install 2.6.3
+
 ```
 
 Once the ruby installation is done, run this command to tell the system
+
 to use the 2.6.3 version by default.
 
 ```bash
+
 rbenv global 2.6.3
+
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
 
 ```bash
+
 ruby -v
+
 ```
 
 You should see something starting with `ruby 2.6.3p`. If not, ask a teacher.
@@ -321,13 +372,21 @@ You should see something starting with `ruby 2.6.3p`. If not, ask a teacher.
 :warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
 
 ```bash
+
 # China only!
+
 gem sources --remove https://rubygems.org/
+
 gem sources -a https://gems.ruby-china.com/
+
 gem sources -l
+
 # *** CURRENT SOURCES ***
+
 # https://gems.ruby-china.com/
+
 # Ruby-china.com must be in the list now
+
 ```
 
 ---
@@ -335,49 +394,40 @@ gem sources -l
 All, please run the following line:
 
 ```bash
+
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
+
 ```
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
+
 (or the Terminal) telling you to do so.
-
-
-To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal:
-Run the appropriate command in your terminal:
-
-If you're using Google Chrome.
-```bash
-echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe" >> ~/.zshrc
-```
-If you're using Mozilla Firefox.
-```bash
-echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe" >> ~/.zshrc
-```
-
-Restart your terminal.
-
 
 ## Postgresql
 
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+
 an open-source robust and production-ready database. Let's install it now.
 
+Download Postgres for Windows from here: https://www.postgresql.org/download/windows/
 
-```bash
-sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
-sudo /etc/init.d/postgresql start
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+Click through the installer, but on the last page be sure not to run ```Stack Builder```!!!
+
+Now in your terminal, we need to install a couple dependencies so that your ubuntu can talk to Postgres on Windows.
+
+```Bash
+
+sudo apt-get install postgresql-contrib libpq-dev
+
+sudo -u postgres psql -p 5432 -h localhost --command "CREATE ROLE `whoami` LOGIN createdb;"
+
 ```
 
-You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
+Now, in your windows file explorer, go to C:/Program Files/Postgres/11/data
 
-```bash
-sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
-sudo chmod 440 /etc/sudoers.d/postgresql
-echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
-```
+Find and open the file named pg_hba.conf
 
-
+Change all values from from ```md5``` to ```trust```
 
 ## Check-up
 
@@ -386,11 +436,12 @@ Let's check if you successfully installed everything.
 Quit all opened Terminal, open a new one and run the following commands:
 
 ```bash
+
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb || rm _.rb
+
 ```
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
-
 
 ## Alumni
 
@@ -401,8 +452,8 @@ Your teacher will then validate that you are indeed part of the batch. You can a
 Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
 
 - One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
-- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
 
+- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
 
 ## Slack
 
@@ -417,5 +468,3 @@ You can also sign in to Slack on your iPhone or Android device!
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
 Enjoy your ride with Le Wagon :)
-
-
