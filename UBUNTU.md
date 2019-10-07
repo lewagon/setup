@@ -138,9 +138,6 @@ You should arrive on a page that looks like this. Make sure to **select your Git
 
 ![](images/fork.png)
 
-After you click on yout GitHub account you should see a page like this and then be redirected to your new repository. At this point you've successfully forked the dotfiles repository.
-
-![](images/fork2.png)
 
 Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
