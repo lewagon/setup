@@ -138,7 +138,6 @@ You should arrive on a page that looks like this. Make sure to **select your Git
 
 ![](images/fork.png)
 
-
 Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
 Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
