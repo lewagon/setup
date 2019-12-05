@@ -79,7 +79,7 @@ ruby -v
 gem install rake bundler rspec rubocop pry pry-byebug hub colored octokit rails
 ```
 
-(`⌘` + `Q`) your terminal and restart it. Check our rails version with:
+(`⌘` + `Q`) your terminal and restart it. Check your rails version with:
 
 ```bash
 rails -v
