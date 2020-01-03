@@ -63,8 +63,8 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 brew uninstall --force rbenv ruby-build
 unset RBENV_ROOT && exec zsh
 brew install rbenv ruby-build && exec zsh
-rbenv install 2.6.3
-rbenv global 2.6.3
+rbenv install 2.6.5
+rbenv global 2.6.5
 ```
 
 (`⌘` + `Q`) your terminal and restart it. Check your ruby version with:

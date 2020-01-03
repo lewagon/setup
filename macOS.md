@@ -244,7 +244,7 @@ stt
 
 **Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
 
-To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P`), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
+To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
 
 If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
 
@@ -309,14 +309,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.6.3
+rbenv install 2.6.5
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.6.3 version by default.
+to use the 2.6.5 version by default.
 
 ```bash
-rbenv global 2.6.3
+rbenv global 2.6.5
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -325,7 +325,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.3p`. If not, ask a teacher.
+You should see something starting with `ruby 2.6.5p`. If not, ask a teacher.
 
 ## Installing some gems
 
