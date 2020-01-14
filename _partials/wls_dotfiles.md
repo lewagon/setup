@@ -57,7 +57,7 @@ sudo apt install libgtk2.0-0
 
 Copy the following command in your terminal to open the `~/.zshrc` profile file in Sublime Text:
 ```bash
-st ~/.zshrc
+stt ~/.zshrc
 ```
 Locate the line `# Actually load Oh-My-Zsh` and **above it** write the following line:
 ```bash
