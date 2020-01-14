@@ -54,6 +54,18 @@ We also need to install a graphical library:
 ```bash
 sudo apt install libgtk2.0-0
 ```
+
+Copy the following command in your terminal to open the `~/.zshrc` profile file in Sublime Text:
+```bash
+st ~/.zshrc
+```
+Locate the line `# Actually load Oh-My-Zsh` and **above it** write the following line:
+```bash
+ZSH_DISABLE_COMPFIX=true
+```
+Save the file and close Sublime Text.
+
+
 Restart your terminal.
 
 ### Sublime Text auto-configuration
