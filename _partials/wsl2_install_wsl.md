@@ -44,7 +44,7 @@ You can close the terminal now that WSL is installed on your machine.
 By default WSL is in its first version, **1**.
 Let's upgrade it to its **version 2**.
 For this, we need to update its kernel, follow this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
-![update_kernel](images/update_kernel.jpg)
+![update_wsl](images/update_wsl.jpg)
 
 Click on **next** then **finish**.
 
