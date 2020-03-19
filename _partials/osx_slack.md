@@ -8,4 +8,4 @@ You can also sign in to Slack on your iPhone or Android device!
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-Enjoy your ride with Le Wagon :)
+In case of remote tickets, you will use Slack call to ask a TA for help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls) using Slack call test. If your browser is asking your permission to access your microphone and camera, click on yes. You should have green "All clear" messages at least for your microphone and camera. If not, ask a TA for help.
