@@ -176,3 +176,30 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
+## Alumni
+
+Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
+
+Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
+
+Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
+
+- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
+- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
+
+
+## Slack
+
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
+
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you upload a picture there.
+
+You can also sign in to Slack on your iPhone or Android device!
+
+The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+
+Enjoy your ride with Le Wagon :)
+
+
