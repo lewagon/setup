@@ -68,4 +68,4 @@ If we take my example (sorry it is in French) :
 
 So I googled "*mpg x570 plus enable virtualization*" and the first video in the results taught me how to do it. It is part of a developer life to search for information and apply them this way :nerd_face:.
 
-Follow the instructions you found to enable virtualization and come back here, we will be waiting :smile:.
+Follow the instructions you found to enable virtualization and come back here, we will be waiting :smile:.  
