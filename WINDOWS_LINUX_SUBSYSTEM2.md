@@ -327,3 +327,155 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
 
 
+## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
+
+First we need to clean up any previous Ruby installation you might have:
+
+```bash
+rvm implode && sudo rm -rf ~/.rvm
+# If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
+# on your computer, that's what we want!
+
+rm -rf ~/.rbenv
+```
+
+Then in the terminal, run:
+
+```bash
+sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+sudo apt clean
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+```
+
+**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+
+
+Now, you are ready to install the latest ruby version, and set it as the default version.
+
+Run this command, it will **take a while (5-10 minutes)**
+
+```bash
+rbenv install 2.6.5
+```
+
+Once the ruby installation is done, run this command to tell the system
+to use the 2.6.5 version by default.
+
+```bash
+rbenv global 2.6.5
+```
+
+Then **restart** your Terminal again (close it and reopen it).
+
+```bash
+ruby -v
+```
+
+You should see something starting with `ruby 2.6.5p`. If not, ask a teacher.
+
+## Installing some gems
+
+---
+
+:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+
+```bash
+# China only!
+gem sources --remove https://rubygems.org/
+gem sources -a https://gems.ruby-china.com/
+gem sources -l
+# *** CURRENT SOURCES ***
+# https://gems.ruby-china.com/
+# Ruby-china.com must be in the list now
+```
+
+---
+
+All, please run the following line:
+
+```bash
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
+```
+
+**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
+(or the Terminal) telling you to do so.
+
+
+To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal:
+Run the appropriate command in your terminal:
+
+If you're using Google Chrome.
+```bash
+echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe" >> ~/.zshrc
+```
+If you're using Mozilla Firefox.
+```bash
+echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe" >> ~/.zshrc
+```
+
+Restart your terminal.
+
+
+## Postgresql
+
+In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+an open-source robust and production-ready database. Let's install it now.
+
+
+```bash
+sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
+sudo /etc/init.d/postgresql start
+sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+```
+
+You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
+
+```bash
+sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
+sudo chmod 440 /etc/sudoers.d/postgresql
+echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
+```
+
+
+
+## Check-up
+
+Let's check if you successfully installed everything.
+
+Quit all opened Terminal, open a new one and run the following commands:
+
+```bash
+curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb || rm _.rb
+```
+
+It should tell you if your workstation is ready :) If not, ask a teacher.
+
+
+## Alumni
+
+Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
+
+Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
+
+Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
+
+- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
+- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
+
+
+## Slack
+
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
+
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you upload a picture there.
+
+You can also sign in to Slack on your iPhone or Android device!
+
+The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+
+Enjoy your ride with Le Wagon :)
+
+
