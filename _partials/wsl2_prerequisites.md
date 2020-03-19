@@ -45,7 +45,7 @@ Start the updates and go grab a coffee :coffee: or tea :tea:.
 
 After your computer has restarted, go to **Start>Settings>System>About**, this time check the *Version*, if it says at least 2004, you are good to go :sunglasses:.  
 
-### Enable virtuallization
+### Enable virtualization
 
 Last requirement and the rest will be a breeze, we promise :crossed_fingers:. We need to enable the virtualization tool in the BIOS of your computer. 
 
