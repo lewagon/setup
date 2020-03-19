@@ -34,9 +34,9 @@ This also applies to Windows, so we are going to sign up to their beta program, 
 
 Go to **Start>Settings>Updates & Security>Insider Program**
 
-Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be prompted (code-speak for being asked) to choose your insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are prompted to do so.
+Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be asked to choose your insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are prompted to do so.
 
-After your computer has restarted you can double-check that you are now part of the insider program by clicking on **Start>Settings>Updates & Security>Insider Program**, you should then be prompted with the insider parameter that you chose earlier (**fast**).
+After your computer has restarted you can double-check that you are now part of the insider program by clicking on **Start>Settings>Updates & Security>Insider Program**, you should then be asked with the insider parameter that you chose earlier (**fast**).
 
 By joining the insider program you have unlocked more content and updates - which we also want to install. Go to **Start>Settings>Updates & Security>Windows Update**, you should see new updates available.
 :warning: These updates can be very long (more than 30 minutes) so make sure your computer has battery and that you won't have to close it during the installation :warning:
@@ -112,25 +112,29 @@ WSL is the development environment you are going to use, you can learn more abou
 
 Click on **Start** and type **powershell**. Right click on **Windows Powershell (x86)** then click on **Run as administrator**. A blue box will appear, copy and paste the following command into that blue box:
 
-```powershellEnable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux```
+(You will be asked to restart your computer, type **n** and **enter** to prevent your computer to restart).
+```powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
 
-
-
-Press **enter** to run the command. You will be prompted to restart your computer, type **n** and **enter** to prevent your computer to restart.
 
 Run the following command:
 
-```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart ```
+```powershell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
 
 Then this one:
 
-```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
 
 You can now restart your computer.
 
 Once your computer has restarted, click on **Start** and type **Microsoft Store**. Launch it. In the search bar, type **Ubuntu**. Click on the first result **Ubuntu**, not **Ubuntu 18.04 LTS**. Click on **Install**.
 
-:warning: There is no progress bar for this installation, when it is done you will be prompted, in the bottom right corner, to launch it.
+:warning: There is no progress bar for this installation, when it is done you will be asked, in the bottom right corner, to launch it.
 
 The first time you open WSL - it should ask you to choose a username :warning: Your username should be **one word**, **downcased** with no **special characters** :warning:
 Example: 'lewagon'
@@ -155,7 +159,7 @@ Open a file explorer, in the sidebar click on *This computer* >*Windows (C:)* > 
 
 Locate the **LocalState** folder and **right click** on it > **Properties** > **Advanced**
 
-Make sure than the option **Compress content** is not checked. Click on **ok** to validate your choice. You will be prompted to know if you want to apply only to this folder or also the subfolders. Please choose only this folder. 
+Make sure than the option **Compress content** is not checked. Click on **ok** to validate your choice. You will be asked to know if you want to apply only to this folder or also the subfolders. Please choose only this folder. 
 
 Click on **Start**, in the search bar type *cmd*, open the **Command Prompt**
 You will see all the WSL updates installed on your machine with the command

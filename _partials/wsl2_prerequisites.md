@@ -34,9 +34,9 @@ This also applies to Windows, so we are going to sign up to their beta program, 
 
 Go to **Start>Settings>Updates & Security>Insider Program**
 
-Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be prompted (code-speak for being asked) to choose your insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are prompted to do so.
+Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be asked to choose your insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are prompted to do so.
 
-After your computer has restarted you can double-check that you are now part of the insider program by clicking on **Start>Settings>Updates & Security>Insider Program**, you should then be prompted with the insider parameter that you chose earlier (**fast**).
+After your computer has restarted you can double-check that you are now part of the insider program by clicking on **Start>Settings>Updates & Security>Insider Program**, you should then be asked with the insider parameter that you chose earlier (**fast**).
 
 By joining the insider program you have unlocked more content and updates - which we also want to install. Go to **Start>Settings>Updates & Security>Windows Update**, you should see new updates available.
 :warning: These updates can be very long (more than 30 minutes) so make sure your computer has battery and that you won't have to close it during the installation :warning:
