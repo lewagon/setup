@@ -262,6 +262,29 @@ Click on **Install Locally**, then click on **Reload Required**
 
 Your code editor is ready :muscle:
 
+## Oh-my-zsh - Fancy your Terminal
+
+We will use the shell named `zsh` instead of `bash`, the default one.
+
+```bash
+sudo apt install -y zsh curl vim nodejs imagemagick jq
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# it will ask for your session password
+```
+
+your prompt should look like this:
+
+![zsh](images/wsl2_zsh.jpg)
+
+If it doesn't, **ask a teacher**.
+
+Then run:
+
+```bash
+chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
+
+
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
