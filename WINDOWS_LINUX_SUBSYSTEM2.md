@@ -45,3 +45,29 @@ Start the updates and go grab a coffee :coffee: or tea :tea:.
 
 After your computer has restarted, go to **Start>Settings>System>About**, this time check the *Version*, if it says at least 2004, you are good to go :sunglasses:.
 
+Last requirement and the rest will be a breeze, we promise :crossed_fingers:. We need to enable the virtualization tool in the BIOS of your computer. 
+
+You can go [here](https://en.wikipedia.org/wiki/BIOS) to get more information about it, in short it is the program that is run by the motherboard in your computer when you start it. One issue is that the way to access that BIOS is different depending on the motherboard manufacturer. And because it would be too easy, each manufacturer calls the virtualization tool a different way as well :sweat_smile:.
+
+**Step 1** 
+
+Let's retrieve your motherboard model :muscle:
+
+Click on **Start** and type **System Information** and open it.
+
+Locate the *System Model* line, the value on the right is your motherboard model.
+
+Now because everything is dependant of your motherboard, we will have to do a google search on how to enable virtualization with this model. 
+
+:warning: We invite you to contact a teacher to do that operation together as it might be a bit scary :warning:
+
+**Step 2**  
+
+If we take my example (sorry it is in French) :
+
+![motherboard.png](images/wsl2_motherboard.jpg)
+
+So I googled "*mpg x570 plus enable virtualization*" and the first video in the results taught me how to do it. It is part of a developer life to search for information and apply them this way :nerd_face:.
+
+Follow the information you found to enable virtualization and come back here, we will be waiting :smile:.
+
