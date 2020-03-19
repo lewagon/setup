@@ -20,4 +20,6 @@ For the most extreme bugs, a teacher might have to take control over your machin
 
 You can close Teamviewer now :wink:.
 
-:warning: We will not and cannot take control over your computer without your permission. Your teamviewer paswword changes everytime you restart the application :thumbsup: We will only use this tool in last resort if a teacher needs hands on your machine. :warning:
+:warning: We will not and cannot take control over your computer without your permission. Your teamviewer password changes every time you restart the application :thumbsup: We will only use this tool in last resort if a teacher needs hands on your machine. :warning:
+
+To facilitate your video calls, please read this [article](https://martinfowler.com/articles/effective-video-calls.html) :camera: :microphone:  ​
