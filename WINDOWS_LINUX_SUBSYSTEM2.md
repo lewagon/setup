@@ -60,7 +60,7 @@ Locate the *System Model* line, the value on the right is your motherboard model
 
 Now because everything is dependant of your motherboard, we will have to do a google search on how to enable virtualization with this model. 
 
-:warning: We invite you to contact a teacher to do that operation together as it might be a bit scary :warning:
+:warning: We invite you to contact a teacher to do that operation together as it might be a bit scary. that way you can have a WhatsApp call / Facetime (choose the tool of your choice so the teacher can see your screen :man_mechanic:​) :warning:
 
 If we take my example (sorry it is in French) :
 
