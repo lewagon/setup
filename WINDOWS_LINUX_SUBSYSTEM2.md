@@ -200,6 +200,18 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
+## Git
+
+To install `git`, first open a terminal. To open a terminal, hit **Start** and type **windows terminal** and click on **Windows Terminal (Preview)**.
+
+Then copy this line with `Ctrl` + `C`:
+
+```bash
+sudo apt install -y git
+```
+
+You can paste by doing a right click in the terminal. Press *Enter*
+
 ## Alumni
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
