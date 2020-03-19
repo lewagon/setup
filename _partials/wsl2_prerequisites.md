@@ -64,7 +64,7 @@ Now because everything is dependant of your motherboard, we will have to do a go
 
 If we take my example (sorry it is in French) :
 
-![motherboard.png](images/wsl2_motherboard.jpg)
+![motherboard.jpg](images/wsl2_motherboard.jpg)
 
 So I googled "*mpg x570 plus enable virtualization*" and the first video in the results taught me how to do it. It is part of a developer life to search for information and apply them this way :nerd_face:.
 
