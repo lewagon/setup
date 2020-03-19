@@ -71,6 +71,17 @@ So I googled "*mpg x570 plus enable virtualization*" and the first video in the 
 Follow the instructions you found to enable virtualization and come back here, we will be waiting :smile:.  
 
 
+# Setup instructions
+
+The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
+
+- Grab a text editor, where you'll spend your day and nights
+- Install a package manager
+- Pimp your Terminal
+- Setup git and GitHub
+- Install Ruby
+
+
 ## Windows Subsystem for Linux
 
 WSL is the development environment you are going to use, you can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
@@ -139,4 +150,11 @@ A message will appear telling you that the conversion is in progress and that it
 When you get the message *The conversion is complete*, paste the following command in the command prompt:
 
 ```wsl -l -v``` and double-check that the version is now the version 2.
+
+## GitHub account
+
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
+
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
+
 
