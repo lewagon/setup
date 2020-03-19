@@ -12,7 +12,7 @@ Ready? Let's go :sunglasses:
 
 
 
-## Latest version of Windows
+### Latest version of Windows
 
 For this setup, you need to be running on the latest version of Windows.
 
@@ -26,7 +26,7 @@ Once you are sure that you're running Windows 10, you will need to check that yo
 
 
 
-## The insider program
+### The insider program
 
 As a soon-to-be-developer, you always want to get the beta version of everything :nerd_face:.
 
@@ -43,13 +43,14 @@ By joining the insider program you have unlocked more content and updates - whic
 
 Start the updates and go grab a coffee :coffee: or tea :tea:.
 
-After your computer has restarted, go to **Start>Settings>System>About**, this time check the *Version*, if it says at least 2004, you are good to go :sunglasses:.
+After your computer has restarted, go to **Start>Settings>System>About**, this time check the *Version*, if it says at least 2004, you are good to go :sunglasses:.  
+
+### Enable virtuallization
 
 Last requirement and the rest will be a breeze, we promise :crossed_fingers:. We need to enable the virtualization tool in the BIOS of your computer. 
 
 You can go [here](https://en.wikipedia.org/wiki/BIOS) to get more information about it, in short it is the program that is run by the motherboard in your computer when you start it. One issue is that the way to access that BIOS is different depending on the motherboard manufacturer. And because it would be too easy, each manufacturer calls the virtualization tool a different way as well :sweat_smile:.
 
-**Step 1** 
 
 Let's retrieve your motherboard model :muscle:
 
@@ -61,17 +62,15 @@ Now because everything is dependant of your motherboard, we will have to do a go
 
 :warning: We invite you to contact a teacher to do that operation together as it might be a bit scary :warning:
 
-**Step 2**  
-
 If we take my example (sorry it is in French) :
 
 ![motherboard.png](images/wsl2_motherboard.jpg)
 
 So I googled "*mpg x570 plus enable virtualization*" and the first video in the results taught me how to do it. It is part of a developer life to search for information and apply them this way :nerd_face:.
 
-Follow the information you found to enable virtualization and come back here, we will be waiting :smile:.
+Follow the instructions you found to enable virtualization and come back here, we will be waiting :smile:.
 
-### Windows Subsystem for Linux
+## Windows Subsystem for Linux
 
 WSL is the development environment you are going to use, you can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 

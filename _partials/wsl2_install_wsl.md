@@ -1,4 +1,4 @@
-### Windows Subsystem for Linux
+## Windows Subsystem for Linux
 
 WSL is the development environment you are going to use, you can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
