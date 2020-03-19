@@ -153,7 +153,9 @@ You can close the terminal now that WSL is installed on your machine.
 
 By default WSL is in its first version, **1**.
 Let's upgrade it to its **version 2**.
-For this, we need to update its kernel, follow this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program. Click on **next** then **finish**.
+For this, we need to update its kernel, follow this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
+![update_kernel](images/update_kernel.jpg)
+Click on **next** then **finish**.
 
 We also need to make sur the its files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**; in the search bar type *folder* open the folder options. Click in the second tab **View** then under *Hidden files and folders* select **Show hidden files, folders, and drives**, click on **Apply** then **Ok** to close this window.
 
