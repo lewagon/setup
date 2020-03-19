@@ -272,7 +272,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # it will ask for your session password
 ```
 
-your prompt should look like this:
+At then end; your terminal should look like this:
 
 ![zsh](images/wsl2_zsh.jpg)
 
@@ -284,6 +284,15 @@ Then run:
 chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
 
+
+## Nodejs
+
+Not for the beginning of the course, but let's get a headstart and install Nodejs, used for Javascript 
+
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install -y nodejs
+```
 
 ## Dotfiles (Standard configuration)
 
