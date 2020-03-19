@@ -71,6 +71,13 @@ So I googled "*mpg x570 plus enable virtualization*" and the first video in the 
 Follow the instructions you found to enable virtualization and come back here, we will be waiting :smile:.  
 
 
+## GitHub account
+
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
+
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
+
+
 ## Slack
 
 Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
@@ -232,13 +239,6 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Pimp your Terminal
 - Setup git and GitHub
 - Install Ruby
-
-
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
 ## Git
