@@ -71,15 +71,34 @@ So I googled "*mpg x570 plus enable virtualization*" and the first video in the 
 Follow the instructions you found to enable virtualization and come back here, we will be waiting :smile:.  
 
 
-# Setup instructions
+## Slack
 
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
 
-- Grab a text editor, where you'll spend your day and nights
-- Install a package manager
-- Pimp your Terminal
-- Setup git and GitHub
-- Install Ruby
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you upload a picture there.
+
+You can also sign in to Slack on your iPhone or Android device!
+
+The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+
+In case of remote tickets, you will use Slack audio or video call to get helped. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+
+After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
+![](images/slack_mic_cam_all_green.png)
+
+
+## Alumni
+
+Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
+
+Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
+
+Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
+
+- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
+- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
 
 
 ## Remote tools
@@ -204,6 +223,17 @@ This terminal allows you to open multiple terminal tools, including *Powershelll
 
 Voilà, you are in your **Ubuntu Terminal** :confetti_ball: From now on every time we will refer to the terminal/console it will be this one.
 
+# Setup instructions
+
+The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
+
+- Grab a text editor, where you'll spend your day and nights
+- Install a package manager
+- Pimp your Terminal
+- Setup git and GitHub
+- Install Ruby
+
+
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
@@ -224,36 +254,6 @@ sudo apt install -y git
 ```
 
 You can paste by doing a right click in the terminal. Press *Enter*
-
-
-## Alumni
-
-Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
-
-Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
-
-Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
-
-- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
-- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
-
-
-## Slack
-
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
-
-Launch the app and sign in to `lewagon-alumni` organization.
-
-Make sure you upload a picture there.
-
-You can also sign in to Slack on your iPhone or Android device!
-
-The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
-
-In case of remote tickets, you will use Slack audio or video call to get helped. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
-
-After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
 
 
 ## Visual Studio Code
