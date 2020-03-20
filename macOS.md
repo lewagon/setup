@@ -21,7 +21,7 @@ Zoom is a video conferencing tool, go to [Zoom page](https://zoom.us/download) a
 
 Once connected, you should see:
 
-![remote_zoom.png](images/remote_zoom.png)
+![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
 
 You can close Zoom now :wink:
 
