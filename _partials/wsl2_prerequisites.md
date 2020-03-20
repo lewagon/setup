@@ -10,6 +10,7 @@ Before we start, it is important you meet the following prerequisites to ensure 
 Take your time to read through everything and do not hesitate to ask for help if you feel stuck.
 Ready? Let's go :sunglasses:
 
+If you already applied all the instructions that we sent you by email, please go directly to the [Virtualization](#Virtualization).
 
 
 ### Latest version of Windows
@@ -45,7 +46,7 @@ Start the update and go grab a coffee :coffee: or tea :tea:.
 
 After your computer has restarted, go to **Start>Settings>System>About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
 
-### Enable virtualization
+### Virtualization
 
 Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer. 
 
