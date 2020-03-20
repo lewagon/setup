@@ -80,7 +80,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ## Slack
 
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
@@ -114,35 +114,33 @@ To be able to interact when you are not on site, we will be using two tools.
 
 ### Zoom
 
-Zoom is a video conferencing, go to [zoom page](https://zoom.us/download) and under *Zoom Client for Meetings* hit the **Download** button. open the executable you have just downloaded, a progress bar will appear then zoom will start. Click on **Connexion** and create an account. Once connected, zoom should look like this:
+Zoom is a video conferencing tool, go to [Zoom page](https://zoom.us/download) and under **Zoom Client for Meetings** hit the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connexion** and create an account. Once connected, Zoom should look like this:
 
-![zoom.jpg](images/zoom.jpg)
+![remote_zoom.png](images/remote_zoom.png)
 
-You can close zoom now :wink:.
+You can close Zoom now :wink:.
 
 ### Teamviewer
 
-
-
-For the most extreme bugs, a teacher might have to take control over your machine. to be able to do that we will need the Teamviewer tool. Go to the [teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your exploitation system, if it doesn't don't hesitate to chose it from the list at the top of the page. Click on **Download Teamviewer**. Open the executable you just have downloaded, leave default settings and click on **Accept**. Progress bar will appear then Teamviewer will start when the installation is over. it should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. if it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**. Open the file you just have downloaded. Leave the default settings and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
 You can close Teamviewer now :wink:.
 
-:warning: We will not and cannot take control over your computer without your permission. Your teamviewer password changes every time you restart the application :thumbsup: We will only use this tool in last resort if a teacher needs hands on your machine. :warning:
+:warning: We will not, and cannot take control of your computer without your permission. Your Teamviewer password changes every time you restart the application :thumbsup:. We will only use this tool as a last resort. :warning:
 
 To facilitate your video calls, please read this [article](https://martinfowler.com/articles/effective-video-calls.html) :camera: :microphone:
-You can close teamviewer now :wink:.
+You can close Teamviewer now :wink:.
 
 
 ## Windows Subsystem for Linux
 
-WSL is the development environment you are going to use, you can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
+WSL is the development environment you are going to use. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-Click on **Start** and type **powershell**. Right click on **Windows Powershell (x86)** then click on **Run as administrator**. A blue box will appear, copy and paste the following command into that blue box:
+Click on **Start** and type **powershell**. Right click on **Windows Powershell (x86)**, then click on **Run as administrator**. A blue box will appear. Copy and paste the following command into the blue box:
 
-(You will be asked to restart your computer, type **n** and **enter** to prevent your computer to restart).
+(You will be asked to restart your computer. Type **n** and **enter** to prevent your computer from restarting).
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
@@ -164,73 +162,77 @@ You can now restart your computer.
 
 Once your computer has restarted, click on **Start** and type **Microsoft Store**. Launch it. In the search bar, type **Ubuntu**. Click on the first result **Ubuntu**, not **Ubuntu 18.04 LTS**. Click on **Install**.
 
-:warning: There is no progress bar for this installation, when it is done you will be asked, in the bottom right corner, to launch it.
+:warning: There is no progress bar for this installation. When it is done you will be asked, in the bottom right corner, to launch it.
 
-The first time you open WSL - it should ask you to choose a username :warning: Your username should be **one word**, **downcased** with no **special characters** :warning:
+The first time you open WSL - you will be asked to choose a username :warning:. Your username should be **one word**, **lowercase** with no **special characters** :warning:.
 Example: 'lewagon'
 
-It will then ask you for a new password: when you type your password, :warning: it will not appear on the screen :warning: - and there will be no familiar typing indicator even though your keystrokes are being registered.  This is a security feature to mask not only your password as a whole but also its length!
+It will then ask you for a new password. When you type your password, :warning: it will not appear on the screen :warning: - and there will be no familiar typing indicator even though your keystrokes are being registered.  This is a security feature to mask not only your password as a whole but also its length!
 
 You will have to retype your password then the installation will be successful.
 
-You can close the terminal now that WSL is installed on your machine.
-
+You can close the terminal now that WSL is installed on your computer.
 
 
 ### Upgrade to WSL 2
 
-By default WSL is in its first version, **1**.
-Let's upgrade it to its **version 2**.
-For this, we need to update its kernel, follow this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
+By default WSL is in it's first version, **1**.
+Let's upgrade it to **version 2**.
+For this, we need to update the program. Click on this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
 ![update_wsl](images/update_wsl.jpg)
 
-Click on **next** then **finish**.
+Click on **Next** then **Finish**.
 
-We also need to make sur the its files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**; in the search bar type *folder* open the folder options. Click in the second tab **View** then under *Hidden files and folders* select **Show hidden files, folders, and drives**, click on **Apply** then **Ok** to close this window.
+We also need to make sure that the program files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**. In the search bar type **folder**, open the folder options. Click on the second tab **View**, then under **Hidden files and folders**, select **Show hidden files, folders, and drives**. Click on **Apply**, then **Ok** to close this window.
 
-Open a file explorer, in the sidebar click on *This computer* >*Windows (C:)* > *Users* > *your username account* > *AppData* > *Local* > *Packages*. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
+Open a file explorer. In the sidebar click on **This computer** >**Windows (C:)** > **Users** > **your username account** > **AppData** > **Local** > **Packages**. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
 
-Locate the **LocalState** folder and **right click** on it > **Properties** > **Advanced**
+Locate the **LocalState** folder and **right click** on it > **Properties** > **Advanced**.
 
-Make sure than the option **Compress content** is not checked. Click on **ok** to validate your choice. You will be asked to know if you want to apply only to this folder or also the subfolders. Please choose only this folder. 
+Make sure than the option **Compress content** is not ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
 
-Click on **Start**, in the search bar type *cmd*, open the **Command Prompt**
-You will see all the WSL updates installed on your machine with the command
+Click on **Start**. In the search bar type **cmd**, open the **Command Prompt**.
+You will see all the WSL updates installed on your machine with the command:
 
-```wsl -l -v```
+```bash
+wsl -l -v
+```
 (translates to wsl list version)
 
 You should see the Ubuntu version that you installed before.
 
-Let's upgrade it to the version 2, by running the following command
+Let's upgrade it to the version 2, by running the following command:
 
-```wsl --set-version Ubuntu 2```
+```bash
+wsl --set-version Ubuntu 2
+```
 
 A message will appear telling you that the conversion is in progress and that it will take a few minutes.
 
-When you get the message *The conversion is complete*, paste the following command in the command prompt:
+When you get the message **The conversion is complete**, paste the following command into the command prompt:
 
-```wsl -l -v``` and double-check that the version is now the version 2.
+```bash
+wsl -l -v
+```
+and double-check that the version is now the version 2.
 
 
 
 ## Windows Terminal
 
-
-
 Let's install the latest terminal from Microsoft.
 
-Click on **Start** and type **store** and open the **Microsoft Store**.
+Click on **Start** and type **Store**. Open the **Microsoft Store**.
 
-In the search bar, type **terminal**, in the result click on **Windows Terminal (Preview)**
+In the search bar, type **terminal**. In the result click on **Windows Terminal (Preview)**.
 
 Install it.
 
-Click on **Start** and type **terminal**, open **Windows Terminal (Preview)**
+Click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
 
-This terminal allows you to open multiple terminal tools, including *Powershelll*, *Command Prompt* and *Ubuntu* that you have installed above :point_up_2: This terminal has tabs, locate the **down arrow** and click on it, it will show you all the terminal you can open from here, click on **Ubuntu**
+This terminal allows you to open multiple terminal tools, including **Powershelll**, **Command Prompt** and **Ubuntu** that you have installed above :point_up_2: This terminal has tabs. Locate the **down arrow** and click on it. It will show you all the terminals you can open from here. click on **Ubuntu**.
 
-Voilà, you are in your **Ubuntu Terminal** :confetti_ball: From now on every time we will refer to the terminal/console it will be this one.
+Voilà, you are in your **Ubuntu Terminal** :confetti_ball: From now on, every time we will refer to the terminal/console it will be this one.
 
 # Setup instructions
 
@@ -247,7 +249,8 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 
 To install `git`, first open a terminal. To open a terminal, hit **Start** and type **windows terminal** and click on **Windows Terminal (Preview)**.
 
-Then copy **line by line** (this will help you identify which line fails if needed :thumbsup:) this line with `Ctrl` + `C`:
+Then copy **line by line** (this will help you identify which line fails if needed :thumbsup:):
+You can paste by doing a right click in the terminal.
 
 ```bash
 sudo apt update
@@ -255,24 +258,24 @@ sudo apt install -y apt-transport-https unzip gnome-terminal
 sudo apt install -y git
 ```
 
-You can paste by doing a right click in the terminal. Press *Enter*
+
 
 
 ## Visual Studio Code
 
-Let's install the text editor in which you will write your code :nerd_face:
+Let's install the text editor in which you will write your code :nerd_face:.
 
-We will be using Visual Code Studio because of it's extensive compatibility with your terminal
+We will be using Visual Code Studio because of it's extensive compatibility with your terminal.
 
-Go the [visual studio code page](https://code.visualstudio.com/download) and click on Windows. The download of the tool should start automatically. Then open the executable and install it leaving all the default functionalities.
+Go the [Visual Studio Code page](https://code.visualstudio.com/download) and click on Windows. The tool should start to download automatically. Open the file you have just downloaded. Install it leaving all the default functionalities.
 
-Let's add an extension to VS Code **Remote Development** to help VS Code interact with your terminal. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) and click on **Install**. This will prompt you that VS Code is required to install this extension, click on **Continue**. You will get an alert asking you to open Visual Studio Code. The editor will open to the extension page
+Let's add an extension to VS Code **Remote Development** to help VS Code interact with your terminal. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) and click on **Install**. This will tell you that VS Code is required to install this extension. Click on **Continue**. You will get an alert asking you to open Visual Studio Code. The editor will open to the extension page.
 
-![](images/remote_development.jpg)
+![remote_development](images/remote_development.jpg)
 
 Click on **Install Locally**, then click on **Reload Required** 
 
-Your code editor is ready :muscle:
+Your code editor is ready :muscle:.
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -284,7 +287,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # it will ask for your session password
 ```
 
-At then end; your terminal should look like this:
+At then end, your terminal should look like this:
 
 ![zsh](images/wsl2_zsh.jpg)
 
@@ -299,9 +302,9 @@ chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 ## Nodejs
 
-Not for the beginning of the course, but let's get a head start and install 
-nodejs, used for Javascript.
+This is not used at the beginning of the course, but let's get a head start and install nodejs, used for Javascript :thumbsup:.
 
+Copy paste the following commands:
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs

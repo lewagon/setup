@@ -1,6 +1,6 @@
 ## Slack
 
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows), and install it.
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
 
 Launch the app and sign in to `lewagon-alumni` organization.
 

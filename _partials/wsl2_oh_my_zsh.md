@@ -8,7 +8,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # it will ask for your session password
 ```
 
-At then end; your terminal should look like this:
+At then end, your terminal should look like this:
 
 ![zsh](images/wsl2_zsh.jpg)
 
