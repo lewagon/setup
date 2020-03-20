@@ -49,9 +49,6 @@ After your computer has restarted, go to **Start>Settings>System>About**. This t
 
 Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer. 
 
-You can click [here](https://en.wikipedia.org/wiki/BIOS) for more information about BIOS. In short, it is a program that is run by the main component in your computer (motherboard) when you switch it on. One issue is the way to access the BIOS is different depending on the motherboard manufacturer. And because it would be too easy, each manufacturer has a different name for the Virtualization tool as well :sweat_smile:.
-
-
 Let's retrieve your motherboard model :muscle:
 
 Click on **Start** and type **System Information** and open it.
@@ -90,7 +87,7 @@ You can also sign in to Slack on your iPhone or Android device!
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-In case of remote tickets, you will use Slack audio or video call to get helped. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
@@ -126,12 +123,12 @@ For the most complicated problems, a teacher might have to take control of your 
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
+This will only be used as last resort when debugging becomes too tricky orally. Nobody will ever be able to take control of your screen without you knowing it 👌. 
+
 You can close Teamviewer now :wink:.
 
-:warning: We will not, and cannot take control of your computer without your permission. Your Teamviewer password changes every time you restart the application :thumbsup:. We will only use this tool as a last resort. :warning:
+If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) article full of good practices :camera: :microphone:
 
-To facilitate your video calls, please read this [article](https://martinfowler.com/articles/effective-video-calls.html) :camera: :microphone:
-You can close Teamviewer now :wink:.
 
 
 ## Windows Subsystem for Linux
@@ -176,7 +173,7 @@ You can close the terminal now that WSL is installed on your computer.
 
 ### Upgrade to WSL 2
 
-By default WSL is in it's first version, **1**.
+By default WSL is in its first version, **1**.
 Let's upgrade it to **version 2**.
 For this, we need to update the program. Click on this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
 ![update_wsl](images/update_wsl.jpg)
@@ -189,7 +186,7 @@ Open a file explorer. In the sidebar click on **This computer** >**Windows (C:)*
 
 Locate the **LocalState** folder and **right click** on it > **Properties** > **Advanced**.
 
-Make sure than the option **Compress content** is not ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
+Make sure that the option **Compress content** is not ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
 
 Click on **Start**. In the search bar type **cmd**, open the **Command Prompt**.
 You will see all the WSL updates installed on your machine with the command:

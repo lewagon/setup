@@ -40,7 +40,7 @@ You can close the terminal now that WSL is installed on your computer.
 
 ### Upgrade to WSL 2
 
-By default WSL is in it's first version, **1**.
+By default WSL is in its first version, **1**.
 Let's upgrade it to **version 2**.
 For this, we need to update the program. Click on this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
 ![update_wsl](images/update_wsl.jpg)
@@ -53,7 +53,7 @@ Open a file explorer. In the sidebar click on **This computer** >**Windows (C:)*
 
 Locate the **LocalState** folder and **right click** on it > **Properties** > **Advanced**.
 
-Make sure than the option **Compress content** is not ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
+Make sure that the option **Compress content** is not ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
 
 Click on **Start**. In the search bar type **cmd**, open the **Command Prompt**.
 You will see all the WSL updates installed on your machine with the command:

@@ -49,9 +49,6 @@ After your computer has restarted, go to **Start>Settings>System>About**. This t
 
 Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer. 
 
-You can click [here](https://en.wikipedia.org/wiki/BIOS) for more information about BIOS. In short, it is a program that is run by the main component in your computer (motherboard) when you switch it on. One issue is the way to access the BIOS is different depending on the motherboard manufacturer. And because it would be too easy, each manufacturer has a different name for the Virtualization tool as well :sweat_smile:.
-
-
 Let's retrieve your motherboard model :muscle:
 
 Click on **Start** and type **System Information** and open it.
