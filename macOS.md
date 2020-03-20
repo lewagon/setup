@@ -9,6 +9,32 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Install Ruby
 
 
+## Remote tools
+
+To be able to interact when you are not on site, we will be using two tools.
+
+### Zoom
+
+Zoom is a video conferencing tool, go to [Zoom page](https://zoom.us/download) and under **Zoom Client for Meetings** hit the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connexion** and create an account. Once connected, Zoom should look like this:
+
+![remote_zoom.png](images/remote_zoom.png)
+
+You can close Zoom now :wink:.
+
+### Teamviewer
+
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. if it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**. Open the file you just have downloaded. Leave the default settings and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+
+![teamviewer.jpg](images/teamviewer.jpg)
+
+This will only be used as last resort when debugging becomes too tricky orally. Nobody will ever be able to take control of your screen without you knowing it 👌. 
+
+You can close Teamviewer now :wink:.
+
+If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) article full of good practices :camera: :microphone:
+
+
+
 ## Command Line Tools
 
 Open the Terminal (click the magnifying glass icon in the top right corner of your screen and type `Terminal`):
@@ -425,7 +451,7 @@ You can also sign in to Slack on your iPhone or Android device!
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-In case of remote tickets, you will use Slack audio or video call to get helped. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
