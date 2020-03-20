@@ -6,7 +6,7 @@ WINDOWS_LINUX_SUBSYSTEM2 = %w[wsl2_prerequisites github wls_slack alumni_platfor
 filenames = {
   'macOS.md' => MAC_OS,
   'UBUNTU.md' => UBUNTU,
-  'WINDOWS_LINUX_SUBSYSTEM2.md' => WINDOWS_LINUX_SUBSYSTEM2
+  'WINDOWS.md' => WINDOWS_LINUX_SUBSYSTEM2
 }
 
 filenames.each do |filename, partials|

@@ -21,7 +21,7 @@ Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your op
       </a>
     </td>
     <td>
-      <a href="WINDOWS_LINUX_SUBSYSTEM2.md">
+      <a href="WINDOWS.md">
         <img src="images/windows.png" alt="Windows">
       </a>
     </td>
