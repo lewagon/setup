@@ -76,36 +76,6 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
 
 
-## Slack
-
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
-
-Launch the app and sign in to `lewagon-alumni` organization.
-
-Make sure you upload a picture there.
-
-You can also sign in to Slack on your iPhone or Android device!
-
-The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
-
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
-
-After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
-
-
-## Alumni
-
-Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
-
-Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
-
-Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
-
-- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
-- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
-
-
 ## Remote tools
 
 To be able to interact when you are not on site, we will be using two tools.
@@ -296,6 +266,60 @@ Then run:
 ```bash
 chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
+
+
+## GitHub
+
+We need to generate SSH keys which are going to be used by GitHub and Heroku
+to authenticate you. Think of it as a way to log in, but different from the
+well known username/password couple. If you already generated keys
+that you already use with other services, you can skip this step.
+
+Open a terminal and type this, replacing the email with **yours** (the
+same one you used to create your GitHub account). It will prompt
+for information. Just press enter until it asks for a **passphrase**.
+
+```bash
+mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
+```
+
+**NB:** when asked for a passphrase, put something you want (and that you'll remember),
+it's a password to protect your private key stored on your hard drive. You'll type,
+nothing will show up on the screen, **that's normal**. Just type the passphrase,
+and when you're done, press `Enter`.
+
+Then you need to give your **public** key to GitHub. Run:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
+then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
+**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
+Finish by clicking on the **Add key** green button.
+
+To check that this step is completed, in the terminal run this. You will be
+prompted a warning, type `yes` then `Enter`.
+
+```bash
+ssh -T git@github.com
+```
+
+If you see something like this, you're done!
+
+```bash
+# Hi --------! You've successfully authenticated, but GitHub does not provide shell access
+```
+
+If it does not work, try running this before trying again the `ssh -T` command:
+
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+
+Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
+understanding of what those keys are used for.
 
 
 ## Nodejs
@@ -496,5 +520,35 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 ```
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
+
+
+## Alumni
+
+Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
+
+Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
+
+Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
+
+- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
+- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
+
+
+## Slack
+
+Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
+
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you upload a picture there.
+
+You can also sign in to Slack on your iPhone or Android device!
+
+The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+
+In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+
+After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
+![](images/slack_mic_cam_all_green.png)
 
 
