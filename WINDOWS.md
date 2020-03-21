@@ -82,11 +82,15 @@ To be able to interact when you are not on site, we will be using two tools.
 
 ### Zoom
 
-Zoom is a video conferencing tool, go to [Zoom page](https://zoom.us/download) and under **Zoom Client for Meetings** hit the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connexion** and create an account. Once connected, Zoom should look like this:
+Zoom is a video conferencing tool, go to [Zoom page](https://zoom.us/download) and under **Zoom Client for Meetings** hit the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connexion** and create an account with the **Sign Up Free** option:
 
-![remote_zoom.png](images/remote_zoom.png)
+![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
 
-You can close Zoom now :wink:.
+Once connected, you should see:
+
+![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
+
+You can close Zoom now :wink:
 
 ### Teamviewer
 
@@ -94,9 +98,9 @@ For the most complicated problems, a teacher might have to take control of your 
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
-This will only be used as last resort when debugging becomes too tricky orally. Nobody will ever be able to take control of your screen without you knowing it 👌. 
+This will only be used as last resort when debugging becomes too tricky orally. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
 
-You can close Teamviewer now :wink:.
+You can close Teamviewer now :wink:
 
 If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) article full of good practices :camera: :microphone:
 
