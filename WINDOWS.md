@@ -233,7 +233,7 @@ sudo apt install -y git
 
 
 
-  ## Visual Studio Code
+## Visual Studio Code
 
 Let's install the text editor in which you will write your code :nerd_face:.
 
