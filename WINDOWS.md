@@ -233,7 +233,7 @@ sudo apt install -y git
 
 
 
-## Visual Studio Code
+  ## Visual Studio Code
 
 Let's install the text editor in which you will write your code :nerd_face:.
 
@@ -247,9 +247,10 @@ Let's add an extension to VS Code **Remote Development** to help VS Code interac
 
 ![remote_development](images/remote_development.jpg)
 
-Click on **Install Locally**, then click on **Reload Required** 
+Click on **Install Locally**, then click on **Reload Required**
 
 Your code editor is ready :muscle:.
+
 
 ## Oh-my-zsh - Fancy your Terminal
 
