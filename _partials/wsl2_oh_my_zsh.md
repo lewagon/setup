@@ -13,9 +13,3 @@ At then end, your terminal should look like this:
 ![zsh](images/wsl2_zsh.jpg)
 
 If it doesn't, **ask a teacher**.
-
-Then run:
-
-```bash
-chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-```

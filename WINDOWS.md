@@ -268,12 +268,6 @@ At then end, your terminal should look like this:
 
 If it doesn't, **ask a teacher**.
 
-Then run:
-
-```bash
-chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-```
-
 
 ## GitHub
 
@@ -403,6 +397,11 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 ```
 Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
 
+In your terminal, run:
+
+```bash
+chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
