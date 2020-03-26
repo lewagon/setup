@@ -8,7 +8,7 @@ In the search bar, type **terminal**. In the result click on **Windows Terminal 
 
 Install it.
 
-Don't forget to **Reboot** your computer :computer:​.
+Don't forget to **reboot** your computer :computer:​.
 
 Click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
 
