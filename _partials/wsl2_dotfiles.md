@@ -61,3 +61,9 @@ Spot the line starting with `plugins=` Then add `ssh-agent` to the plugins list.
 plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
 Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
+
+In your terminal, run:
+
+```bash
+chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
