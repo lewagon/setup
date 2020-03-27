@@ -12,6 +12,8 @@ Let's add an extension to VS Code **Remote Development** to help VS Code interac
 
 ![remote_development](images/remote_development.jpg)
 
-Click on **Install Locally**, then click on **Reload Required**
+Click on **Install Locally**.
+Click on **File>Preferences>Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
+Click on **Install Locally**. Click on **Reload Required**
 
 Your code editor is ready :muscle:.
