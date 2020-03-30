@@ -253,6 +253,8 @@ Click on **Install Locally**.
 Click on **File>Preferences>Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
 Click on **Install Locally**. Click on **Reload Required**
 
+Let's gain time now and add the Ruby on Rails support for your code editor. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets) and follow the same steps as the Remote Development one.
+
 Your code editor is ready :muscle:.
 
 
