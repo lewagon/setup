@@ -27,7 +27,3 @@ Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your op
     </td>
   </tr>
 </table>
-
-## Already done the FullStack program?
-
-Then jump to [this guide](second-setup/OSX.md).
