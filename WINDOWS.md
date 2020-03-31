@@ -438,14 +438,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.6.5
+rbenv install 2.6.6
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.6.5 version by default.
+to use the 2.6.6 version by default.
 
 ```bash
-rbenv global 2.6.5
+rbenv global 2.6.6
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -454,7 +454,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.5p`. If not, ask a teacher.
+You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ## Installing some gems
 
