@@ -48,9 +48,21 @@ After your computer has restarted, go to **Start>Settings>System>About**. This t
 
 ### Virtualization
 
-Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer. 
+Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer.
 
-Let's retrieve your motherboard model :muscle:
+Sometimes, it's already enabled, let's check:
+
+- Press the following keys `CTRL + Alt + Del`.
+- Select **Task Manager**.
+- Click on the **Performance** tab.
+- Click on **CPU**.
+- The status will be listed under the graph and will say "Virtualization: Enabled" if this tool is enabled.
+
+![task_manager.jpg](images/task_manager.jpg)
+
+If **Virtualization** is already enabled, go directly to [Github account](https://github.com/lewagon/setup/blob/master/WINDOWS.md#github-account).
+
+Otherwise, let's retrieve your motherboard model :muscle:
 
 Click on **Start** and type **System Information** and open it.
 
