@@ -48,9 +48,21 @@ After your computer has restarted, go to **Start>Settings>System>About**. This t
 
 ### Virtualization
 
-Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer. 
+Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer.
 
-Let's retrieve your motherboard model :muscle:
+Sometimes, it's already enabled, let's check:
+
+- Press the following keys `CTRL + Alt + Del`.
+- Select **Task Manager**.
+- Click on the **Performance** tab.
+- Click on **CPU**.
+- The status will be listed under the graph and will say "Virtualization: Enabled" if this tool is enabled.
+
+![task_manager.jpg](images/task_manager.jpg)
+
+If **Virtualization** is already enabled, go directly to [Github account](https://github.com/lewagon/setup/blob/master/WINDOWS.md#github-account).
+
+Otherwise, let's retrieve your motherboard model :muscle:
 
 Click on **Start** and type **System Information** and open it.
 
@@ -200,6 +212,8 @@ In the search bar, type **terminal**. In the result click on **Windows Terminal 
 
 Install it.
 
+Don't forget to **reboot** your computer :computer:​.
+
 Click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
 
 This terminal allows you to open multiple terminal tools, including **Powershelll**, **Command Prompt** and **Ubuntu** that you have installed above :point_up_2: This terminal has tabs. Locate the **down arrow** and click on it. It will show you all the terminals you can open from here. click on **Ubuntu**.
@@ -247,7 +261,11 @@ Let's add an extension to VS Code **Remote Development** to help VS Code interac
 
 ![remote_development](images/remote_development.jpg)
 
-Click on **Install Locally**, then click on **Reload Required**
+Click on **Install Locally**.
+Click on **File>Preferences>Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
+Click on **Install Locally**. Click on **Reload Required**
+
+Let's gain time now and add the Ruby on Rails support for your code editor. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets) and follow the same steps as the Remote Development one.
 
 Your code editor is ready :muscle:.
 
@@ -267,12 +285,6 @@ At then end, your terminal should look like this:
 ![zsh](images/wsl2_zsh.jpg)
 
 If it doesn't, **ask a teacher**.
-
-Then run:
-
-```bash
-chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-```
 
 
 ## GitHub
@@ -403,6 +415,11 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 ```
 Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
 
+In your terminal, run:
+
+```bash
+chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
@@ -433,14 +450,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.6.5
+rbenv install 2.6.6
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.6.5 version by default.
+to use the 2.6.6 version by default.
 
 ```bash
-rbenv global 2.6.5
+rbenv global 2.6.6
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -449,7 +466,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.5p`. If not, ask a teacher.
+You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ## Installing some gems
 
