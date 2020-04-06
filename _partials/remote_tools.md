@@ -24,5 +24,5 @@ This will only be used as last resort when debugging becomes too tricky orally. 
 
 You can close Teamviewer now :wink:
 
-If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) article full of good practices :camera: :microphone:
+If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
 
