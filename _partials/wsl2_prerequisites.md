@@ -29,30 +29,28 @@ Once you're sure that you're using Windows 10, you will need to check that your 
 
 ### The Insider program
 
-As a soon-to-be-developer, you always want to get the beta version (pre-release version of a software) of everything :nerd_face:.
+For the best development tools we need to be part of the **Windows Insider** program which gives access to pre-release versions of various tools.
 
-This also applies to Windows, so we are going to sign up to their beta program, the **Insider program** .
-
-Go to **Start>Settings>Updates & Security>Insider Program**
+Go to **Start → Settings → Updates & Security → Insider Program**
 
 Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be asked to choose your Insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are asked to do so.
 
-After your computer has restarted you can double-check that you are now part of the Insider program by clicking on **Start>Settings>Updates & Security>Insider Program**. You should then be prompted with the Insider parameter that you chose earlier (**fast**).
+After your computer has restarted you can double-check that you are now part of the Insider program by clicking on **Start → Settings → Updates & Security → Insider Program**. You should then be prompted with the Insider parameter that you chose earlier, i.e. **fast**.
 
-By joining the Insider program you have unlocked more content and updates - which we also want to install. Go to **Start>Settings>Updates & Security>Windows Update**, you should see new updates available.
-:warning: These updates can be very long (more than 30 minutes) so make sure your computer has battery and that you won't have to close it during the installation :warning:
+By joining the Insider program you have unlocked more content and updates — which we also need to install. Go to **Start → Settings → Updates & Security → Windows Update**, you should see new updates available.
+:warning: These updates can take a rather long time of more than 30 minutes, so make sure your computer has enough battery left, and that you won't have to close it during the installation :warning:
 
 Start the update and go grab a coffee :coffee: or tea :tea:.
 
-After your computer has restarted, go to **Start>Settings>System>About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
+After your computer has restarted, go to **Start → Settings → System → About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
 
 ### Virtualization
 
-Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer.
+We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 
-Sometimes, it's already enabled, let's check:
+For many computers, this is already the case. Let's check:
 
-- Press the following keys `CTRL + Alt + Del`.
+- Press `Ctrl + Alt + Del`.
 - Select **Task Manager**.
 - Click on the **Performance** tab.
 - Click on **CPU**.
@@ -62,13 +60,15 @@ Sometimes, it's already enabled, let's check:
 
 If **Virtualization** is already enabled, go directly to [Github account](https://github.com/lewagon/setup/blob/master/WINDOWS.md#github-account).
 
-Otherwise, let's retrieve your motherboard model :muscle:
+If not, we need to enable it, which is a process that is different for each model of computer, so we can only offer vague guidelines in this guide. Please ask a teacher as soon as you get stuck!
+
+Let's retrieve your motherboard model :muscle:
 
 Click on **Start** and type **System Information** and open it.
 
 Locate the **System Model** line, the value on the right is your motherboard model.
 
-Now because everything is dependant on your motherboard model, we will have to do a Google search on how to enable the Virtualization tool with this model. 
+Now because everything is dependant on your motherboard model, we will have to do a Google search on how to enable the Virtualization option with this model. 
 
 :warning: We invite you to contact a teacher so you can complete this part of the setup together, as it might be a bit scary to not have clear guidelines. Choose the communication tool of your choice so the teacher can see your screen (your computer will have to be turned off during the setup so please use your phone, WhatsApp, Facetime etc..) :man_mechanic:​ :warning:
 
