@@ -8,7 +8,6 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Setup git and GitHub
 - Install Ruby
 
-
 ## Remote tools
 
 To be able to interact when you are not on site, we will be using two tools.
@@ -37,10 +36,11 @@ You can close Teamviewer now :wink:
 
 If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
 
+## A note about quitting apps on a Mac
 
-## A note about quitting apps on a Mac 
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to APP_NAME -> Quit in the menu bar
 
-Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to APP_NAME -> Quit in the menu bar.
+![quit.png](images/quit.png)
 
 During this setup you will be asked to quit and re-open applications multiple times, please make sure you do it properly :pray:
 
@@ -68,13 +68,11 @@ Otherwise, it will open a window asking you if you want to install some software
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
 
-
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
-
 
 ## Homebrew
 
@@ -114,7 +112,6 @@ install_or_upgrade "jq"
 install_or_upgrade "openssl"
 ```
 
-
 ## Sublime Text 3 - Your text editor
 
 A text editor is one of the most important tools of a developer. Go to [this page](http://www.sublimetext.com/3) and download **Sublime Text 3** for OS X. Install it (double click the downloaded file and drag & drop the app **into** the `Applications` folder, **don't skip this**). If you had Sublime Text 2 installed before, please uninstall it (by dragging/dropping it to the Trash).
@@ -122,8 +119,6 @@ A text editor is one of the most important tools of a developer. Go to [this pag
 Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
 
 Again, make sure that Sublime Text is there, not in the disk image you downloaded. To make sure it's correct, once Sublime Text is installed, unmount the "Sublime Text 3" disk in the left panel of Finder. Finder will complain if something went wrong. Ask a teacher.
-
-
 
 ## Oh-my-zsh - Fancy your Terminal
 
@@ -142,7 +137,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
 / /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
 \____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
                         /____/                       ....is now installed!
-````
+```
 
 Now quit the Terminal (`⌘` + `Q`), and restart it.
 
@@ -152,12 +147,11 @@ You should see something like this:
 
 If not, **stop right away** and call a teacher.
 
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (_`Réglages`_ in French).
 
 ![](images/terminal-pro.png)
 
 Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
-
 
 ## GitHub
 
@@ -212,7 +206,6 @@ ssh-add ~/.ssh/id_ed25519
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
-
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
@@ -225,7 +218,7 @@ You should arrive on a page that looks like this. Make sure to **select your Git
 
 Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
+Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with _your_
 own github usernickname.
 
 ```bash
@@ -285,7 +278,6 @@ If you don't, please install all of them manually. The list is referenced [here]
 
 When it's done, you can close Sublime Text.
 
-
 ### SSH Passphrase
 
 In a terminal window, launch this command:
@@ -310,7 +302,6 @@ Host *
   AddKeysToAgent yes
   UseKeychain yes
 ```
-
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
@@ -337,7 +328,6 @@ brew install rbenv
 ```
 
 Again, quit all your terminal windows and restart.
-
 
 Now, you are ready to install the latest ruby version, and set it as the default version.
 
@@ -389,7 +379,6 @@ gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub co
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
 
-
 ## Postgresql
 
 In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
@@ -417,13 +406,11 @@ postgres=#
 
 To quit it, type `\q` then `Enter`.
 
-
 ## Security
 
 It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
 You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
-
 
 ## Check-up
 
@@ -437,7 +424,6 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
 
-
 ## Alumni
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
@@ -448,7 +434,6 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 - One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
 - One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
-
 
 ## Slack
 
@@ -464,7 +449,6 @@ In case of remote tickets, you will use Slack audio or video call to get help. T
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
-
 
 ## Keyboard
 
@@ -500,5 +484,3 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 
 # etc..
 ```
-
-
