@@ -254,8 +254,8 @@ Click on **Install**. Click on **Reload Required**
 
 Let's gain time now and add the Ruby on Rails support for your code editor. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets) and follow the same steps as the Remote Development one.
 
-Press **Ctrl+,** on your keyboard to open the settings. In the searchbar, type **emmet**. Click on **Edit in settings.json**
-Paste the following just before the last **}**
+Press `Ctrl` + `,` on your keyboard to open the settings. In the search bar, type **emmet**. Click on **Edit in settings.json**
+Paste the following just before the last **`}`**
 ```bash
 "emmet.triggerExpansionOnTab": true,
 "emmet.includeLanguages": {
