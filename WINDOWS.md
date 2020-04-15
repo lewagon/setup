@@ -1,6 +1,13 @@
 # Setup your machine!
 
-Welcome to this setup where we are going to install the tools required to make your machine a true developer environment :muscle:
+Welcome to this setup where we are going to install the tools required to make your machine a true developer environment :muscle:.
+The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
+
+- Install a code editor, where you will spend your days and nights
+- Install a package manager
+- Pimp your Terminal
+- Setup git and GitHub
+- Install Ruby
 
 
 
@@ -209,17 +216,6 @@ After the restart, click on **Start** and type **terminal**. Open **Windows Term
 This terminal allows you to open multiple terminal tools, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier :point_up_2: This terminal has tabs. Locate the **down arrow** / v-shape next to the open tab, and click on it. It will show you all the terminals you can open from here, but for the rest of this guide, we will only need **Ubuntu**.
 
 Voilà, you are in your **Ubuntu Terminal** :confetti_ball: From now on, every time we will refer to the terminal/console it will be this one.
-
-
-# Setup instructions
-
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
-
-- Grab a text editor, where you'll spend your day and nights
-- Install a package manager
-- Pimp your Terminal
-- Setup git and GitHub
-- Install Ruby
 
 
 ## Git
