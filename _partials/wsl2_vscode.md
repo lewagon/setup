@@ -26,6 +26,7 @@ Paste the following just before the last **`}`**
 ```
 
 It should look like this:
+
 ![vscode_emmet](images/vscode_emmet.jpg)
 
 Now, your code editor is ready :muscle:.
