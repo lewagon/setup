@@ -1,6 +1,6 @@
 # Setup your machine!
 
-Welcome to this setup where we are going to install the tools required to make your machine a true developer environment :muscle:
+Welcome to this setup where we are going to install the tools required to make your machine a true developer environment :muscle:.
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
 - Install a code editor, where you will spend your days and nights
