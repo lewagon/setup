@@ -7,8 +7,6 @@ You can paste by doing a right click in the terminal.
 
 ```bash
 sudo apt update
-sudo apt install -y apt-transport-https unzip gnome-terminal
-sudo apt install -y git
+sudo apt install -y git apt-transport-https unzip gnome-terminal
 ```
-
 
