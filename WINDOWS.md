@@ -218,17 +218,6 @@ This terminal allows you to open multiple terminal tools, including **Powershell
 Voilà, you are in your **Ubuntu Terminal** :confetti_ball: From now on, every time we will refer to the terminal/console it will be this one.
 
 
-# Setup instructions
-
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
-
-- Grab a text editor, where you'll spend your day and nights
-- Install a package manager
-- Pimp your Terminal
-- Setup git and GitHub
-- Install Ruby
-
-
 ## Git
 
 To install `git`, first open a terminal. To open a terminal, hit **Start** and type **windows terminal** and click on **Windows Terminal (Preview)**.
