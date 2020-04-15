@@ -29,30 +29,28 @@ Once you're sure that you're using Windows 10, you will need to check that your 
 
 ### The Insider program
 
-As a soon-to-be-developer, you always want to get the beta version (pre-release version of a software) of everything :nerd_face:.
+For the best development tools we need to be part of the **Windows Insider** program which gives access to pre-release versions of various tools.
 
-This also applies to Windows, so we are going to sign up to their beta program, the **Insider program** .
-
-Go to **Start>Settings>Updates & Security>Insider Program**
+Go to **Start → Settings → Updates & Security → Insider Program**
 
 Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be asked to choose your Insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are asked to do so.
 
-After your computer has restarted you can double-check that you are now part of the Insider program by clicking on **Start>Settings>Updates & Security>Insider Program**. You should then be prompted with the Insider parameter that you chose earlier (**fast**).
+After your computer has restarted you can double-check that you are now part of the Insider program by clicking on **Start → Settings → Updates & Security → Insider Program**. You should then be prompted with the Insider parameter that you chose earlier, i.e. **fast**.
 
-By joining the Insider program you have unlocked more content and updates - which we also want to install. Go to **Start>Settings>Updates & Security>Windows Update**, you should see new updates available.
-:warning: These updates can be very long (more than 30 minutes) so make sure your computer has battery and that you won't have to close it during the installation :warning:
+By joining the Insider program you have unlocked more content and updates — which we also need to install. Go to **Start → Settings → Updates & Security → Windows Update**, you should see new updates available.
+:warning: These updates can take a rather long time of more than 30 minutes, so make sure your computer has enough battery left, and that you won't have to close it during the installation :warning:
 
 Start the update and go grab a coffee :coffee: or tea :tea:.
 
-After your computer has restarted, go to **Start>Settings>System>About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
+After your computer has restarted, go to **Start → Settings → System → About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
 
 ### Virtualization
 
-Last requirement and the rest will be a breeze, we promise :v:. We need to enable the Virtualization tool in the BIOS of your computer.
+We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 
-Sometimes, it's already enabled, let's check:
+For many computers, this is already the case. Let's check:
 
-- Press the following keys `CTRL + Alt + Del`.
+- Press `Ctrl + Alt + Del`.
 - Select **Task Manager**.
 - Click on the **Performance** tab.
 - Click on **CPU**.
@@ -62,13 +60,15 @@ Sometimes, it's already enabled, let's check:
 
 If **Virtualization** is already enabled, go directly to [Github account](https://github.com/lewagon/setup/blob/master/WINDOWS.md#github-account).
 
-Otherwise, let's retrieve your motherboard model :muscle:
+If not, we need to enable it, which is a process that is different for each model of computer, so we can only offer vague guidelines in this guide. Please ask a teacher as soon as you get stuck!
+
+Let's retrieve your motherboard model :muscle:
 
 Click on **Start** and type **System Information** and open it.
 
 Locate the **System Model** line, the value on the right is your motherboard model.
 
-Now because everything is dependant on your motherboard model, we will have to do a Google search on how to enable the Virtualization tool with this model. 
+Now because everything is dependant on your motherboard model, we will have to do a Google search on how to enable the Virtualization option with this model. 
 
 :warning: We invite you to contact a teacher so you can complete this part of the setup together, as it might be a bit scary to not have clear guidelines. Choose the communication tool of your choice so the teacher can see your screen (your computer will have to be turned off during the setup so please use your phone, WhatsApp, Facetime etc..) :man_mechanic:​ :warning:
 
@@ -85,16 +85,16 @@ Follow the instructions you found to enable Virtualization and come back here, w
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
 
 ## Remote tools
 
-To be able to interact when you are not on site, we will be using two tools.
+To be able to interact when we are not in the same physical room, we will be using two tools:
 
 ### Zoom
 
-Zoom is a video conferencing tool, go to [Zoom page](https://zoom.us/download) and under **Zoom Client for Meetings** hit the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connexion** and create an account with the **Sign Up Free** option:
+Zoom is a video conferencing tool. To create an account and install the app, go to [https://zoom.us/download](https://zoom.us/download) and under **Zoom Client for Meetings** click the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connection** and create an account with the **Sign Up Free** option:
 
 ![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
 
@@ -102,17 +102,17 @@ Once connected, you should see:
 
 ![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
 
-You can close Zoom now :wink:
+You can close Zoom now.
 
 ### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. if it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**. Open the file you just have downloaded. Leave the default settings and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
-This will only be used as last resort when debugging becomes too tricky orally. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
+This will only be used as last resort when debugging becomes too tricky through spoken word. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
 
-You can close Teamviewer now :wink:
+You can close Teamviewer now.
 
 If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
 
@@ -120,60 +120,53 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 ## Windows Subsystem for Linux
 
-WSL is the development environment you are going to use. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
+WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-Click on **Start** and type **powershell**. Right click on **Windows Powershell (x86)**, then click on **Run as administrator**. A blue box will appear. Copy and paste the following command into the blue box:
+Click on **Start** and type **powershell**. Right click on **Windows Powershell**, then on **Run as administrator**. A blue terminal window will appear. Copy the following commands, paste them into the terminal windows by right-clicking into it, and run them by pressing Enter:
 
-(You will be asked to restart your computer. Type **n** and **enter** to prevent your computer from restarting).
+(If you are asked to restart your computer, type **n** and **enter** to prevent your computer from restarting at that moment).
+
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
-
-
-Run the following command:
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-Then this one:
-
 ```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-You can now restart your computer.
+When all three commands ran without any errors, restart your computer.
 
-Once your computer has restarted, click on **Start** and type **Microsoft Store**. Launch it. In the search bar, type **Ubuntu**. Click on the first result **Ubuntu**, not **Ubuntu 18.04 LTS**. Click on **Install**.
+Once your computer has restarted, click on **Start** and type **Microsoft Store**. Launch it. In the search bar, type **Ubuntu**. Click on the result that says **Ubuntu** plainly, not **Ubuntu 18.04 LTS**. Then, click on **Install**.
 
 :warning: There is no progress bar for this installation. When it is done you will be asked, in the bottom right corner, to launch it.
 
-The first time you open WSL - you will be asked to choose a username :warning:. Your username should be **one word**, **lowercase** with no **special characters** :warning:.
-Example: 'lewagon'
+The first time you open WSL - you will be asked to choose a username :warning:. Your username should be **one word**, **lowercase** with no **special characters** :warning:, for example: `lewagon`.
 
-It will then ask you for a new password. When you type your password, :warning: it will not appear on the screen :warning: - and there will be no familiar typing indicator even though your keystrokes are being registered.  This is a security feature to mask not only your password as a whole but also its length!
+It will then ask you for a new password. When you type your password, :warning: it will not appear on the screen :warning: – and there will be no familiar typing indicator even though your keystrokes are being registered. This is a security feature to mask not only your password as a whole but also its length!
 
-You will have to retype your password then the installation will be successful.
+You will have to retype your password, and then the installation should be complete.
 
 You can close the terminal now that WSL is installed on your computer.
 
 
 ### Upgrade to WSL 2
 
-By default WSL is in its first version, **1**.
-Let's upgrade it to **version 2**.
-For this, we need to update the program. Click on this [link](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package. Once it has downloaded, open the program.
+First, we need to download the [WSL2 installer](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package and once it is downloaded, open the program.
 ![update_wsl](images/update_wsl.jpg)
 
-Click on **Next** then **Finish**.
+Click on **Next**, then **Finish**.
 
 We also need to make sure that the program files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**. In the search bar type **folder**, open the folder options. Click on the second tab **View**, then under **Hidden files and folders**, select **Show hidden files, folders, and drives**. Click on **Apply**, then **Ok** to close this window.
 
-Open a file explorer. In the sidebar click on **This computer** >**Windows (C:)** > **Users** > **your username account** > **AppData** > **Local** > **Packages**. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
+Open a file explorer. In the sidebar click on **This computer** → **Windows (C:)** → **Users** → **your username account** → **AppData** → **Local** → **Packages**. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
 
-Locate the **LocalState** folder and **right click** on it > **Properties** > **Advanced**.
+Locate the **LocalState** folder and **right click** on it, then click on **Properties** → **Advanced**.
 
-Make sure that the option **Compress content** is not ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
+Make sure that the option **Compress content** is **not** ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
 
 Click on **Start**. In the search bar type **cmd**, open the **Command Prompt**.
 You will see all the WSL updates installed on your machine with the command:
@@ -181,7 +174,7 @@ You will see all the WSL updates installed on your machine with the command:
 ```bash
 wsl -l -v
 ```
-(translates to wsl list version)
+(translates to "wsl list version")
 
 You should see the Ubuntu version that you installed before.
 
@@ -193,32 +186,30 @@ wsl --set-version Ubuntu 2
 
 A message will appear telling you that the conversion is in progress and that it will take a few minutes.
 
-When you get the message **The conversion is complete**, paste the following command into the command prompt:
+When you get the message **The conversion is complete**, paste the first command into the command prompt again:
 
 ```bash
 wsl -l -v
 ```
-and double-check that the version is now the version 2.
+
+and double-check that the version is now **2**.
 
 
 
 ## Windows Terminal
 
-Let's install the latest terminal from Microsoft.
+As with Ubuntu, click on **Start**, type **Microsoft Store**, and launch it.
 
-Click on **Start** and type **Store**. Open the **Microsoft Store**.
+In the search bar, type **terminal**, then in the list of results, click on **Windows Terminal (Preview)**.
 
-In the search bar, type **terminal**. In the result click on **Windows Terminal (Preview)**.
+Install it, and afterwards **reboot** your computer.
 
-Install it.
+After the restart, click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
 
-Don't forget to **reboot** your computer :computer:​.
-
-Click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
-
-This terminal allows you to open multiple terminal tools, including **Powershelll**, **Command Prompt** and **Ubuntu** that you have installed above :point_up_2: This terminal has tabs. Locate the **down arrow** and click on it. It will show you all the terminals you can open from here. click on **Ubuntu**.
+This terminal allows you to open multiple terminal tools, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier :point_up_2: This terminal has tabs. Locate the **down arrow** / v-shape next to the open tab, and click on it. It will show you all the terminals you can open from here, but for the rest of this guide, we will only need **Ubuntu**.
 
 Voilà, you are in your **Ubuntu Terminal** :confetti_ball: From now on, every time we will refer to the terminal/console it will be this one.
+
 
 # Setup instructions
 
@@ -240,34 +231,30 @@ You can paste by doing a right click in the terminal.
 
 ```bash
 sudo apt update
-sudo apt install -y apt-transport-https unzip gnome-terminal
-sudo apt install -y git
+sudo apt install -y git apt-transport-https unzip gnome-terminal
 ```
-
 
 
 
 ## Visual Studio Code
 
-Let's install the text editor in which you will write your code :nerd_face:.
+We use Visual Code Studio for writing code on Windows, because it integrates nicely with the Ubuntu terminal.
 
-We will be using Visual Code Studio because of it's extensive compatibility with your terminal.
+For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
 
-> Please, **do not use any other code editor** (ex: SublimeText ...) as only Visual Studio Code is fully compatible with WSL for the moment.
+Go the [Visual Studio Code page](https://code.visualstudio.com/download) and click on Windows. The tool should start to download automatically. Open the file you have just downloaded. Install it leaving all the default options as they are.
 
-Go the [Visual Studio Code page](https://code.visualstudio.com/download) and click on Windows. The tool should start to download automatically. Open the file you have just downloaded. Install it leaving all the default functionalities.
-
-Let's add an extension to VS Code **Remote Development** to help VS Code interact with your terminal. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) and click on **Install**. This will tell you that VS Code is required to install this extension. Click on **Continue**. You will get an alert asking you to open Visual Studio Code. The editor will open to the extension page.
+To help VS Code interact with your terminal, we need to add the extension **Remote Development**. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) and click on **Install**. This will tell you that VS Code is required to install this extension. Click on **Continue**. You will get an alert asking you to open Visual Studio Code. The editor will open to the extension page.
 
 ![remote_development](images/remote_development.jpg)
 
-Click on **Install Locally**.
-Click on **File>Preferences>Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
-Click on **Install Locally**. Click on **Reload Required**
+Click on **Install**.
+Click on **File → Preferences → Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
+Click on **Install**. Click on **Reload Required**
 
 Let's gain time now and add the Ruby on Rails support for your code editor. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets) and follow the same steps as the Remote Development one.
 
-Your code editor is ready :muscle:.
+Now, your code editor is ready :muscle:.
 
 
 ## Oh-my-zsh - Fancy your Terminal
