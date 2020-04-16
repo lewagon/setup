@@ -36,6 +36,7 @@ You can close the terminal now that WSL is installed on your computer.
 ### Upgrade to WSL 2
 
 First, we need to download the [WSL2 installer](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package and once it is downloaded, open the program.
+
 ![update_wsl](images/update_wsl.jpg)
 
 Click on **Next**, then **Finish**.
