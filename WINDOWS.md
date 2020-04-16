@@ -163,6 +163,7 @@ You can close the terminal now that WSL is installed on your computer.
 ### Upgrade to WSL 2
 
 First, we need to download the [WSL2 installer](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package and once it is downloaded, open the program.
+
 ![update_wsl](images/update_wsl.jpg)
 
 Click on **Next**, then **Finish**.
@@ -227,9 +228,10 @@ You can paste by doing a right click in the terminal.
 
 ```bash
 sudo apt update
+```
+```bash
 sudo apt install -y git apt-transport-https unzip gnome-terminal
 ```
-
 
 
 ## Visual Studio Code
@@ -271,9 +273,11 @@ Now, your code editor is ready :muscle:.
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt install -y zsh curl vim nodejs imagemagick jq
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
+sudo apt install -y zsh curl vim nodejs imagemagick jq
+```
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 At then end, your terminal should look like this:
@@ -344,6 +348,8 @@ This is not used at the beginning of the course, but let's get a head start and 
 Copy paste the following commands:
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+```
+```bash
 sudo apt install -y nodejs
 ```
 
@@ -379,6 +385,8 @@ Run the `dotfiles` installer.
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
+```
+```bash
 zsh install.sh
 ```
 
@@ -386,6 +394,8 @@ Then run the git installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
+```
+```bash
 zsh git_setup.sh
 ```
 
@@ -410,12 +420,6 @@ Spot the line starting with `plugins=` Then add `ssh-agent` to the plugins list.
 plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
 Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
-
-In your terminal, run:
-
-```bash
-chmod 0770 ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-```
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
@@ -515,7 +519,11 @@ an open-source robust and production-ready database. Let's install it now.
 
 ```bash
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
+```
+```bash
 sudo /etc/init.d/postgresql start
+```
+```bash
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
 
@@ -523,11 +531,13 @@ You can configure PostgreSQL to autostart, so you don't have to execute `sudo /e
 
 ```bash
 sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
+```
+```bash
 sudo chmod 440 /etc/sudoers.d/postgresql
+```
+```bash
 echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```
-
-
 
 ## Check-up
 

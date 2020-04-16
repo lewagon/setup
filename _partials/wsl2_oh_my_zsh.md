@@ -6,7 +6,6 @@ We will use the shell named `zsh` instead of `bash`, the default one.
 # it will ask for your session password
 sudo apt install -y zsh curl vim nodejs imagemagick jq
 ```
-
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
