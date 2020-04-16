@@ -228,9 +228,10 @@ You can paste by doing a right click in the terminal.
 
 ```bash
 sudo apt update
+```
+```bash
 sudo apt install -y git apt-transport-https unzip gnome-terminal
 ```
-
 
 
 ## Visual Studio Code
