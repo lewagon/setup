@@ -337,6 +337,12 @@ On our pedagogical platform (Kitt, you'll soon discover it!), we have some video
 sudo apt install libavcodec-extra -y
 ```
 
+`tree` is a nice tool to visualize a directory tree inside the terminal.
+
+```bash
+sudo apt install tree
+```
+
 
 ## Check-up
 
