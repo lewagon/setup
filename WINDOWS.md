@@ -274,10 +274,10 @@ Paste the following just before the last **`}`**
   "erb": "html"
 },
 ```
-
 It should look like this:
-
 ![vscode_emmet](images/vscode_emmet.jpg)
+
+You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
 
 To make sure everything works fine, open your terminal and type:
 ```bash
