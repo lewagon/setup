@@ -217,7 +217,7 @@ After the restart, click on **Start** and type **terminal**. Open **Windows Term
 This terminal allows you to open multiple terminal tools, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier :point_up_2: This terminal has tabs. Locate the **down arrow** / v-shape next to the open tab, and click on it. It will show you all the terminals you can open from here, but for the rest of this guide, we will only need **Ubuntu**.
 
 
-Let's make Ubuntu the default terminal of your Windows terminal application. Press `Ctrl` + `,`. It should open the settings:
+Let's make Ubuntu the default terminal of your Windows terminal application. Press **`Ctrl` + `,`**. It should open the settings:
 
 ![wsl2_settings](images/wsl2_settings.jpg)
 
@@ -275,6 +275,7 @@ Paste the following just before the last **`}`**
 },
 ```
 It should look like this:
+
 ![vscode_emmet](images/vscode_emmet.jpg)
 
 You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
