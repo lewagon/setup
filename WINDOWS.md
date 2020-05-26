@@ -279,7 +279,12 @@ It should look like this:
 
 ![vscode_emmet](images/vscode_emmet.jpg)
 
-Now, your code editor is ready :muscle:.
+To make sure everything works fine, open your terminal and type:
+```bash
+code
+```
+If Visual Studio Code opens, your code editor is ready :muscle:.
+Please call a teacher if it doesn't.
 
 
 ## Oh-my-zsh - Fancy your Terminal
