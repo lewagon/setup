@@ -211,6 +211,7 @@ Please now **quit** all your opened terminal windows.
 Open a new terminal and type this:
 
 ```bash
+cd ~/code
 stt
 ```
 
