@@ -25,6 +25,7 @@ Paste the following just before the last **`}`**
 },
 ```
 It should look like this:
+
 ![vscode_emmet](images/vscode_emmet.jpg)
 
 You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
