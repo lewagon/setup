@@ -1,5 +1,14 @@
 Hello and welcome to this WSL2 Cheatsheet.
+
 The goal is to gather here all tips and known issues about WSL2!
+
+ - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
+    - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
+ - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#access-root-session)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#testing-on-rails)
 
 # Issues
 
@@ -22,6 +31,59 @@ Open a new WSL2 Tab, problem should be fixed.
 
 
 # Tips
+
+## Check Windows Subsystem for Linux
+
+Open a Powershell terminal.
+
+Type the following command:
+```bash
+wsl -l -v
+```
+
+It will tell you the name of your WSL, it's state and version.
+
+
+## Switch from version 1 to version 2
+
+To switch a WSL from version 1 to 2, open a Powershell terminal.
+
+Type the following command:
+⚠️ The conversion's time depends on the size of your Ubuntu filesystem, it can be long and WSL will be unsuable in the meantime. ⚠️
+```bash
+wsl --set-version Ubuntu 2
+```
+
+You can revert to version 1:
+```bash
+wsl --set-version Ubuntu 1
+```
+
+
+## Access root session
+
+To access the `root` session, open a Powershell terminal.
+
+Type the following command:
+```bash
+wsl -d Ubuntu -u root
+```
+
+You can change the password of that `root` session by using the command:
+```bash
+passwd
+```
+You will prompted to enter a new password.
+
+Now, from your normal session, you can switch from your session to the `root` on with:
+```bash
+su -
+```
+
+You will be asked for the password.
+
+You can exit the `root` session with `Ctrl + D`.
+
 
 ## Testing on Rails
 
