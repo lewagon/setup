@@ -35,6 +35,30 @@ wsl -l -v
 
 It will tell you the name of your WSL, it's state and version.
 
+## Access root session
+
+To access the `root` session, open a Powershell terminal.
+
+Type the following command:
+```bash
+wsl -d Ubuntu -u root
+```
+
+You can change the password of that `root` session by using the command:
+```bash
+passwd
+```
+You will prompted to enter a new password.
+
+Now, from your normal session, you can switch from your session to the `root` on with:
+```bash
+su -
+```
+
+You will be asked for the password.
+
+You can exit the `root` session with `Ctrl + D`.
+
 
 ## Testing on Rails
 
