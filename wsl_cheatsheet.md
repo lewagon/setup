@@ -1,4 +1,5 @@
 Hello and welcome to this WSL2 Cheatsheet.
+
 The goal is to gather here all tips and known issues about WSL2!
 
 # Issues
