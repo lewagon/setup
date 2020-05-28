@@ -24,6 +24,18 @@ Open a new WSL2 Tab, problem should be fixed.
 
 # Tips
 
+## Check Windows Subsystem for Linux
+
+Open a Powershell terminal.
+
+Type the following command:
+```bash
+wsl -l -v
+```
+
+It will tell you the name of your WSL, it's state and version.
+
+
 ## Testing on Rails
 
 Testing wont work by default on WSL2. It requires ChromeDriver and Chrome binary installed. For this we will need the `root` session ( AKA The super-mega-admin-session ).
