@@ -5,6 +5,9 @@ The goal is to gather here all tips and known issues about WSL2!
  - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#access-root-session)
     - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#testing-on-rails)
 
 # Issues
