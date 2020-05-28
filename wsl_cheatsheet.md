@@ -2,6 +2,11 @@ Hello and welcome to this WSL2 Cheatsheet.
 
 The goal is to gather here all tips and known issues about WSL2!
 
+ - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
+    - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
+ - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
+    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#testing-on-rails)
+
 # Issues
 
 ## Input/Output error
@@ -34,6 +39,21 @@ wsl -l -v
 ```
 
 It will tell you the name of your WSL, it's state and version.
+
+## Switch from version 1 to version 2
+
+To switch a WSL from version 1 to 2, open a Powershell tab.
+
+Type the following command:
+⚠️ The conversion's time depends on the size of your Ubuntu filesystem, it can be long and WSL will be unsuable in the meantime. ⚠️
+```bash
+wsl --set-version Ubuntu 2
+```
+
+You can revert to version 1:
+```bash
+wsl --set-version Ubuntu 1
+```
 
 ## Access root session
 
