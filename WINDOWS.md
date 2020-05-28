@@ -225,7 +225,7 @@ We have put in red the important parts.
 Locate the `"name": "Ubuntu",`.
 Add the following line after it (**don't forget the comma at the end**):
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-session-name-you-chose-at-the-ubuntu-install,
+"startingDirectory": "//wsl$/Ubuntu/home/the-session-name-you-chose-at-the-ubuntu-install",
 ```
 
 Locate the `"guid"` in red, copy the value between `{` and `}`.
