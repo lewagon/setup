@@ -43,6 +43,7 @@ wsl -l -v
 
 It will tell you the name of your WSL, it's state and version.
 
+
 ## Switch from version 1 to version 2
 
 To switch a WSL from version 1 to 2, open a Powershell tab.
@@ -57,6 +58,7 @@ You can revert to version 1:
 ```bash
 wsl --set-version Ubuntu 1
 ```
+
 
 ## Access root session
 
