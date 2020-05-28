@@ -46,7 +46,7 @@ It will tell you the name of your WSL, it's state and version.
 
 ## Switch from version 1 to version 2
 
-To switch a WSL from version 1 to 2, open a Powershell tab.
+To switch a WSL from version 1 to 2, open a Powershell terminal.
 
 Type the following command:
 ⚠️ The conversion's time depends on the size of your Ubuntu filesystem, it can be long and WSL will be unsuable in the meantime. ⚠️
