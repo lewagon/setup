@@ -4,6 +4,7 @@ The goal is to gather here all tips and known issues about WSL2!
 
  - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
+    - [ERR_CONNECTION_REFUSED](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_conection_refused)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
@@ -28,6 +29,30 @@ wsl -l -v
 ```
 
 Open a new WSL2 Tab, problem should be fixed.
+
+## ERR_CONNECTION_REFUSED
+
+If you get this error trying to connected to your `rails server` or `jupyter notebook`, you need to allow the connection in Windows Defender Public rules.
+Close all WSL terminal. Open a Powershell terminal and type the following command to stop all WSL processes:
+```bash
+wsl --shutdown Ubuntu
+```
+
+Hit **Start** and type `Windows Defender Firewall` and open it.
+
+Click on **Advanced Settings**
+
+Right click on **Inboud Rules** and select **New Rule...**. Under **Rule Type** leave `Program` selected and hit **Next**.
+
+For the program, Select `The program path:` and paste this path: `%SystemRoot%\System32\wsl.exe`. Click on **Next**.
+
+For the Action section, make sure `Allow the connection` is selected and hit **Next**.
+
+For the Profile section, make sure the 3 options are selected and click on **Next**. 
+
+Finally you will be asked to chose a name for this new rule, go with `WSL - Inbound`.
+
+Repeat the whole process by creating a **Outbound Rule** with the same settings, except for the name: `WSL - Outbound`.
 
 
 # Tips
