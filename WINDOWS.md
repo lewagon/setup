@@ -502,6 +502,21 @@ All, please run the following line:
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
 ```
 
+If you encounter the following error:
+
+`
+ERROR: While executing gem ... (TypeError)
+incompatible marshal file format (can't be read)
+format version 4.8 required; 60.33 given
+`
+
+Run the following command:
+```bash
+rm -rf ~/.gemrc
+```
+
+Rerun the command to install the gems.
+
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
 
