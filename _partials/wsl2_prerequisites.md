@@ -34,22 +34,12 @@ Once you're sure that you're using Windows 10, you will need to check that your 
 
 
 
-### The Insider program
+### Minimum version
 
-For the best development tools we need to be part of the **Windows Insider** program which gives access to pre-release versions of various tools.
+Some of the tools we need to install have been release with the `2004` version of Windows 10 so we need to make sure you have at least this one.
+Go to **Start → Settings → System → About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
 
-Go to **Start → Settings → Updates & Security → Insider Program**
-
-Click on **Get Started**. It will ask you to **Link an account**; follow the instructions on screen. You will be asked to choose your Insider parameters, choose the second setting, the **fast** one :zap:. Then confirm and restart your computer when you are asked to do so.
-
-After your computer has restarted you can double-check that you are now part of the Insider program by clicking on **Start → Settings → Updates & Security → Insider Program**. You should then be prompted with the Insider parameter that you chose earlier, i.e. **fast**.
-
-By joining the Insider program you have unlocked more content and updates — which we also need to install. Go to **Start → Settings → Updates & Security → Windows Update**, you should see new updates available.
-:warning: These updates can take a rather long time of more than 30 minutes, so make sure your computer has enough battery left, and that you won't have to close it during the installation :warning:
-
-Start the update and go grab a coffee :coffee: or tea :tea:.
-
-After your computer has restarted, go to **Start → Settings → System → About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
+If not just follow the paragraph above to install the latest updates.
 
 ### Virtualization
 
