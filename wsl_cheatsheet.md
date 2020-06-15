@@ -5,6 +5,7 @@ The goal is to gather here all tips and known issues about WSL2!
  - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
     - [ERR_CONNECTION_REFUSED](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused)
+    - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure_directory)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
@@ -53,6 +54,30 @@ For the Profile section, make sure the 3 options are selected and click on **Nex
 Finally you will be asked to chose a name for this new rule, go with `WSL - Inbound`.
 
 Repeat the whole process by creating a **Outbound Rule** with the same settings, except for the name: `WSL - Outbound`.
+
+## Insecure World Writable
+
+The warning `Insecure world writable dir /mnt/c in PATH, mode 040777` is caused by the two differents way of Windows & Linux to deal with file permissions.
+To silence those warnings:
+
+```bash
+sudo touch /etc/wsl.conf
+```
+
+Then open the create file with VSCode.
+
+```bash
+code /etc/wsl.conf
+```
+
+Paste the following lines:
+
+```
+[automount]
+options="metadata,umask=0033"
+```
+
+Restart all terminals.
 
 
 # Tips
