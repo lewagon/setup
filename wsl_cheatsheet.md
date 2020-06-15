@@ -62,19 +62,8 @@ To silence those warnings:
 
 ```bash
 sudo touch /etc/wsl.conf
-```
-
-Then open the create file with VSCode.
-
-```bash
-code /etc/wsl.conf
-```
-
-Paste the following lines:
-
-```
-[automount]
-options="metadata,umask=0033"
+echo '[automount]' | sudo tee -a /etc/wsl.conf > /dev/null
+echo 'options="metadata,umask=0033"' | sudo tee -a /etc/wsl.conf > /dev/null
 ```
 
 Restart all terminals.
