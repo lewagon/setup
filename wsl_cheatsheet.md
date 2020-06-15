@@ -5,7 +5,7 @@ The goal is to gather here all tips and known issues about WSL2!
  - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
     - [ERR_CONNECTION_REFUSED](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused)
-    - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure_directory)
+    - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
