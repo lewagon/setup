@@ -6,6 +6,7 @@ The goal is to gather here all tips and known issues about WSL2!
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
     - [ERR_CONNECTION_REFUSED](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused)
     - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
+    - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
@@ -68,6 +69,28 @@ echo 'options="metadata,umask=0033"' | sudo tee -a /etc/wsl.conf > /dev/null
 
 Restart all terminals.
 
+## Update version 2004 not offered
+
+Microsoft is slowly releasing the latest major version of Windows (version 2004). Here is the guideline if your Windows is not offering you the update.
+Go to [Windows 10](https://www.microsoft.com/en-us/software-download/windows10) and under `Windows 10 May 2020 Update` click on **Update now**. This will download a tool on your machine. Open it.
+
+A compatibility check will start:
+
+![windows_2004.png](images/windows_2004.png)
+
+Next, you will be offered a choice, choose **Upgrade this PC now** and click on **Next**:
+
+![windows_2004.png](images/windows_2004_2.png)
+
+Let the tool do the work:
+
+![windows_2004.png](images/windows_2004_3.png)
+
+When finished, you will be asked to restart your PC:
+
+![windows_2004.png](images/windows_2004_4.png)
+
+You should be running 2004 now.
 
 # Tips
 
