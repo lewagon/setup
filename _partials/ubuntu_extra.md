@@ -18,6 +18,8 @@ sudo apt install libavcodec-extra -y
 
 `tig` is a text-mode interface for `git`.
 
+`hub` is a command line tool that wraps `git` in order to extend it with extra features and commands that make working with GitHub easier.
+
 ```bash
-sudo apt install tree ncdu htop tig
+sudo apt install tree ncdu htop tig hub
 ```
