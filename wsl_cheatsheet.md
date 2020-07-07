@@ -86,11 +86,13 @@ Let the tool do the work:
 
 ![windows_2004.png](images/windows_2004_3.png)
 
-When finished, you will be asked to restart your PC:
+Microsoft is encountering some errors with the version 2004, Chances are that the update assistant will tell you that you're machine is not compatible yet!
+Do not close the assistant.
+Open a file explorer at this **path** `C:\$WINDOWS.~BT\Sources\Panther`
+Locate the file `compatscancache.dat` and **delete it**
+Go back to the update assistant and click **Refresh**.
 
-![windows_2004.png](images/windows_2004_4.png)
-
-You should be running 2004 now.
+The installation should carry on.
 
 # Tips
 
