@@ -14,6 +14,7 @@ REQUIRED_RUBY_VERSION = "2.6.6"
 REQUIRED_GIT_VERSION = "2.0"
 MINIMUM_AVATAR_SIZE = 2 * 1024
 GITHUB_AUTHORIZATION_NOTE = 'Le Wagon setup check'.freeze
+GITHUB_AUTHORIZATION_OTP = 'Le Wagon setup check otp'.freeze
 
 $all_good = true
 
@@ -67,7 +68,8 @@ def check_all
         client.authorizations.find { |a| a[:note] == GITHUB_AUTHORIZATION_NOTE } ||
         client.create_authorization(
           scopes: ['user:email'],
-          note: GITHUB_AUTHORIZATION_NOTE)
+          note: GITHUB_AUTHORIZATION_NOTE,
+          headers: {'X-Github-OTP': GITHUB_AUTHORIZATION_OTP})
       client.access_token = authorization["token"]
 
       avatar_url = client.user[:avatar_url]
