@@ -14,7 +14,6 @@ REQUIRED_RUBY_VERSION = "2.6.6"
 REQUIRED_GIT_VERSION = "2.0"
 MINIMUM_AVATAR_SIZE = 2 * 1024
 GITHUB_AUTHORIZATION_NOTE = 'Le Wagon setup check'.freeze
-GITHUB_AUTHORIZATION_OTP = 'Le Wagon setup check otp'.freeze
 
 $all_good = true
 
@@ -62,19 +61,31 @@ def check_all
       print "> "
       client.password = STDIN.noecho { |stdin| stdin.gets.chomp }
       puts "\nThanks. Asking some infos to GitHub..."
-      # TODO(ssaunier): https://github.com/octokit/octokit.rb#two-factor-authentication
-
-      authorization =
-        client.authorizations.find { |a| a[:note] == GITHUB_AUTHORIZATION_NOTE } ||
-        client.create_authorization(
+      begin
+        # This will create a Basic Auth
+        authorization =
+          client.create_authorization(
+            scopes: ['user:email'],
+            note: GITHUB_AUTHORIZATION_NOTE)
+          avatar_url = client.user[:avatar_url]
+          emails = client.emails.map { |email| email[:email] }
+      rescue Octokit::OneTimePasswordRequired => e # Rescue if user has 2FA enabled
+        puts "You have two Factor Authentication enabled on your Github account, please enter the 6 digits code you just received"
+        print "> "
+        otp_code = gets.chomp
+        # This will create a 2FA Auth
+        authorization = client.create_authorization(
           scopes: ['user:email'],
           note: GITHUB_AUTHORIZATION_NOTE,
-          headers: {'X-Github-OTP': GITHUB_AUTHORIZATION_OTP})
-      client.access_token = authorization["token"]
+          headers: { 'X-GitHub-OTP': otp_code })
+        # Using access_token to retrieve info whilst preserving basic auth client for delete_authorization later on
+        client2 = Octokit::Client.new(access_token: authorization["token"])
+        avatar_url = client2.user[:avatar_url]
+        emails = client2.emails.map { |email| email[:email] }
+      end
 
-      avatar_url = client.user[:avatar_url]
-      emails = client.emails.map { |email| email[:email] }
-      client.delete_authorization(authorization[:id])
+      # Delete_authorization can only be accessed using Basic Auth
+      client.delete_authorization(authorization[:id], headers: {'X-GitHub-OTP': otp_code})
 
       if emails.include?(git_email)
         content_length = `curl -s -I #{avatar_url} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
