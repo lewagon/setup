@@ -158,6 +158,10 @@ First, we need to download the [WSL2 installer](https://aka.ms/wsl2kernel). Clic
 
 Click on **Next**, then **Finish**.
 
+If you encounter the error **This update only applies to machines with the Windows Subsystem for Linux**: Right click on the program and select **uninstall**.
+
+You should be able to install it now.
+
 We also need to make sure that the program files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**. In the search bar type **folder**, open the folder options. Click on the second tab **View**, then under **Hidden files and folders**, select **Show hidden files, folders, and drives**. Click on **Apply**, then **Ok** to close this window.
 
 Open a file explorer. In the sidebar click on **This computer** → **Windows (C:)** → **Users** → **your username account** → **AppData** → **Local** → **Packages**. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
