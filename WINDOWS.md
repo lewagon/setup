@@ -197,21 +197,6 @@ wsl -l -v
 and double-check that the version is now **2**.
 
 
-
-## Git
-
-To install `git`, first open an Ubuntu terminal. To open an Ubuntu terminal, hit **Start**, type **windows terminal**, and click on **Windows Terminal (Preview)**, then open an **Ubuntu** tab via the drop-down menu next to the already open Windows Powershell tab.
-
-Then copy and paste the following lines **one line at a time** (note that you can paste by doing a right click in the terminal):
-
-```bash
-sudo apt update
-```
-```bash
-sudo apt install -y git apt-transport-https unzip gnome-terminal
-```
-
-
 ## Visual Studio Code
 
 We use Visual Code Studio for writing code on Windows, because it integrates nicely with the Ubuntu terminal.
@@ -282,6 +267,20 @@ Locate the `"defaultProfile"` and replace the value between `{` and `}` with wha
 
 Voilà, your **Windows Terminal** :confetti_ball: is setup! From now on, every time we will refer to the terminal/console it will be this one.
 
+
+## Nodejs
+
+This is not used at the beginning of the course, but let's get a head start and install nodejs, used for Javascript :thumbsup:.
+
+Copy paste the following commands:
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+```
+```bash
+sudo apt install -y nodejs
+```
+
+
 ## Oh-my-zsh - Fancy your Terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
@@ -299,6 +298,20 @@ At then end, your terminal should look like this:
 ![zsh](images/wsl2_zsh.jpg)
 
 If it doesn't, **ask a teacher**.
+
+
+## Git
+
+To install `git`, first open an Ubuntu terminal. To open an Ubuntu terminal, hit **Start**, type **windows terminal**, and click on **Windows Terminal (Preview)**, then open an **Ubuntu** tab via the drop-down menu next to the already open Windows Powershell tab.
+
+Then copy and paste the following lines **one line at a time** (note that you can paste by doing a right click in the terminal):
+
+```bash
+sudo apt update
+```
+```bash
+sudo apt install -y git apt-transport-https unzip gnome-terminal
+```
 
 
 ## GitHub
@@ -354,18 +367,6 @@ ssh-add ~/.ssh/id_ed25519
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
-
-## Nodejs
-
-This is not used at the beginning of the course, but let's get a head start and install nodejs, used for Javascript :thumbsup:.
-
-Copy paste the following commands:
-```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-```
-```bash
-sudo apt install -y nodejs
-```
 
 ## Dotfiles (Standard configuration)
 
