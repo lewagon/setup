@@ -2,12 +2,50 @@
 
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
-- Grab a text editor, where you'll spend your day and nights
+- Grab a text editor, where you will spend your days and nights
 - Install a package manager
 - Pimp your Terminal
 - Setup git and GitHub
 - Install Ruby
 
+
+## Remote tools
+
+To be able to interact when we are not in the same physical room, we will be using two tools:
+
+### Zoom
+
+Zoom is a video conferencing tool. To create an account and install the app, go to [https://zoom.us/download](https://zoom.us/download) and under **Zoom Client for Meetings** click the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connection** and create an account with the **Sign Up Free** option:
+
+![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
+
+Once connected, you should see:
+
+![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
+
+You can close Zoom now.
+
+### Teamviewer
+
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+
+![teamviewer.jpg](images/teamviewer.jpg)
+
+This will only be used as last resort when debugging becomes too tricky through spoken word. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
+
+You can close Teamviewer now.
+
+If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
+
+
+
+## ## A note about quitting apps on a Mac
+
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
+
+![quit.png](images/quit.png)
+
+During this setup you will be asked to **quit and re-open** applications multiple times, please make sure you do it properly :pray:
 
 ## Command Line Tools
 
@@ -38,7 +76,7 @@ While it's downloading, you can go on with configuring your GitHub account, but 
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do it **now**.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
 
 ## Homebrew
@@ -48,7 +86,7 @@ It will be used as soon as we need to install some software.
 To do so, open your Terminal and run:
 
 ```bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 This will ask for your confirmation (hit `Enter`) and your laptop session password.
@@ -182,7 +220,13 @@ understanding of what those keys are used for.
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account. Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
+:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account.
+
+You should arrive on a page that looks like this. Make sure to **select your GitHub account**.
+
+![](images/fork.png)
+
+Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
 Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
 own github usernickname.
@@ -225,6 +269,7 @@ Please now **quit** all your opened terminal windows.
 Open a new terminal and type this:
 
 ```bash
+cd ~/code
 stt
 ```
 
@@ -303,14 +348,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.6.3
+rbenv install 2.6.6
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.6.3 version by default.
+to use the 2.6.6 version by default.
 
 ```bash
-rbenv global 2.6.3
+rbenv global 2.6.6
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -319,7 +364,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.3p`. If not, ask a teacher.
+You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ## Installing some gems
 
@@ -344,6 +389,21 @@ All, please run the following line:
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
 ```
+
+If you encounter the following error:
+
+`
+ERROR: While executing gem ... (TypeError)
+incompatible marshal file format (can't be read)
+format version 4.8 required; 60.33 given
+`
+
+Run the following command:
+```bash
+rm -rf ~/.gemrc
+```
+
+Rerun the command to install the gems.
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
@@ -419,7 +479,10 @@ You can also sign in to Slack on your iPhone or Android device!
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-Enjoy your ride with Le Wagon :)
+In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+
+After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
+![](images/slack_mic_cam_all_green.png)
 
 
 ## Keyboard

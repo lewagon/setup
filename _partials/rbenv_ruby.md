@@ -3,14 +3,14 @@ Now, you are ready to install the latest ruby version, and set it as the default
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.6.3
+rbenv install <RUBY_VERSION>
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.6.3 version by default.
+to use the <RUBY_VERSION> version by default.
 
 ```bash
-rbenv global 2.6.3
+rbenv global <RUBY_VERSION>
 ```
 
 Then **restart** your Terminal again (close it and reopen it).
@@ -19,7 +19,7 @@ Then **restart** your Terminal again (close it and reopen it).
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.3p`. If not, ask a teacher.
+You should see something starting with `ruby <RUBY_VERSION>p`. If not, ask a teacher.
 
 ## Installing some gems
 
@@ -44,6 +44,21 @@ All, please run the following line:
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
 ```
+
+If you encounter the following error:
+
+`
+ERROR: While executing gem ... (TypeError)
+incompatible marshal file format (can't be read)
+format version 4.8 required; 60.33 given
+`
+
+Run the following command:
+```bash
+rm -rf ~/.gemrc
+```
+
+Rerun the command to install the gems.
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.

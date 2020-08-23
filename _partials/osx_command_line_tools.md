@@ -1,3 +1,11 @@
+## ## A note about quitting apps on a Mac
+
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
+
+![quit.png](images/quit.png)
+
+During this setup you will be asked to **quit and re-open** applications multiple times, please make sure you do it properly :pray:
+
 ## Command Line Tools
 
 Open the Terminal (click the magnifying glass icon in the top right corner of your screen and type `Terminal`):

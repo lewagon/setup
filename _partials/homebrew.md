@@ -5,7 +5,7 @@ It will be used as soon as we need to install some software.
 To do so, open your Terminal and run:
 
 ```bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 This will ask for your confirmation (hit `Enter`) and your laptop session password.
