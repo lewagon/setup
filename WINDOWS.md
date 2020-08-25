@@ -1,8 +1,5 @@
 # Setup your machine!
 
-Welcome to this setup where we are going to install the tools required to make your machine a true developer environment :muscle:.
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
-
 - Install a code editor, where you will spend your days and nights
 - Install a package manager
 - Pimp your Terminal
@@ -83,36 +80,6 @@ Follow the instructions you found to enable Virtualization and come back here, w
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
-
-## Remote tools
-
-To be able to interact when we are not in the same physical room, we will be using two tools:
-
-### Zoom
-
-Zoom is a video conferencing tool. To create an account and install the app, go to [https://zoom.us/download](https://zoom.us/download) and under **Zoom Client for Meetings** click the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connection** and create an account with the **Sign Up Free** option:
-
-![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
-
-Once connected, you should see:
-
-![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
-
-You can close Zoom now.
-
-### Teamviewer
-
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
-
-![teamviewer.jpg](images/teamviewer.jpg)
-
-This will only be used as last resort when debugging becomes too tricky through spoken word. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
-
-You can close Teamviewer now.
-
-If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
-
 
 
 ## Windows Subsystem for Linux
@@ -579,35 +546,5 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 ```
 
 It should tell you if your workstation is ready :) If not, ask a teacher.
-
-
-## Alumni
-
-Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
-
-Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
-
-Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
-
-- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
-- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
-
-
-## Slack
-
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
-
-Launch the app and sign in to `lewagon-alumni` organization.
-
-Make sure you upload a picture there.
-
-You can also sign in to Slack on your iPhone or Android device!
-
-The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
-
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
-
-After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
 
 
