@@ -198,20 +198,6 @@ and double-check that the version is now **2**.
 
 
 
-## Git
-
-To install `git`, first open an Ubuntu terminal. To open an Ubuntu terminal, hit **Start**, type **windows terminal**, and click on **Windows Terminal (Preview)**, then open an **Ubuntu** tab via the drop-down menu next to the already open Windows Powershell tab.
-
-Then copy and paste the following lines **one line at a time** (note that you can paste by doing a right click in the terminal):
-
-```bash
-sudo apt update
-```
-```bash
-sudo apt install -y git apt-transport-https unzip gnome-terminal
-```
-
-
 ## Visual Studio Code
 
 We use Visual Code Studio for writing code on Windows, because it integrates nicely with the Ubuntu terminal.
@@ -281,6 +267,20 @@ Locate the `"guid"` in red, copy the value between `{` and `}`.
 Locate the `"defaultProfile"` and replace the value between `{` and `}` with what you copied from above.
 
 Voilà, your **Windows Terminal** :confetti_ball: is setup! From now on, every time we will refer to the terminal/console it will be this one.
+
+## Git
+
+To install `git`, first open an Ubuntu terminal. To open an Ubuntu terminal, hit **Start**, type **windows terminal**, and click on **Windows Terminal (Preview)**, then open an **Ubuntu** tab via the drop-down menu next to the already open Windows Powershell tab.
+
+Then copy and paste the following lines **one line at a time** (note that you can paste by doing a right click in the terminal):
+
+```bash
+sudo apt update
+```
+```bash
+sudo apt install -y git apt-transport-https unzip gnome-terminal
+```
+
 
 ## Oh-my-zsh - Fancy your Terminal
 
