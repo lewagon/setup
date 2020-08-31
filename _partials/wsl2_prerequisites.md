@@ -75,4 +75,14 @@ If we take my example:
 
 So I googled "*UX310UA bios enable virtualization*" and the first video in the results taught me how to do it. Part of being a developer is searching for information and applying it to your work :nerd_face:.
 
+To access your motherboard settings, click on **Start** and type **recovery options** and open it.
+
+![wsl2_recovery.png](images/wsl2_recovery.png)
+
+Select **Restart now** under **Advanced start-up**
+
+![wsl2_recovery2.png](images/wsl2_recovery2.png)
+
+This will restart the machine and boot into a new menu, in which selecting **Troubleshoot -> Advanced Options -> UEFI Firmware Settings -> Restart** will boot into the motherboard settings where the necessary changes can be made.
+
 Follow the instructions you found to enable Virtualization and come back here, we will be waiting :smile:.
