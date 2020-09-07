@@ -227,15 +227,18 @@ Let's gain time now and add other nice extensions that will help your bootcamp e
 
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 
 Press `Ctrl` + `,` on your keyboard to open the settings. In the search bar, type **emmet**. Click on **Edit in settings.json**
 Paste the following just before the last **`}`**
+
 ```bash
 "emmet.triggerExpansionOnTab": true,
 "emmet.includeLanguages": {
   "erb": "html"
 },
 ```
+
 It should look like this:
 
 ![vscode_emmet](images/vscode_emmet.jpg)
@@ -243,9 +246,11 @@ It should look like this:
 You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
 
 To make sure everything works fine, open your terminal and type:
+
 ```bash
 code
 ```
+
 If Visual Studio Code opens, your code editor is ready :muscle:.
 Please call a teacher if it doesn't.
 
