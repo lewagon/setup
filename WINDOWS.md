@@ -628,4 +628,3 @@ In case of remote tickets, you will use Slack audio or video call to get help. T
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
 
-
