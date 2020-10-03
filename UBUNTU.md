@@ -130,29 +130,57 @@ Then you need to give your **public** key to GitHub. Run:
 cat ~/.ssh/id_ed25519.pub
 ```
 
-It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
-then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
-**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
-Finish by clicking on the **Add key** green button.
+It will prompt on the screen the content of the `id_ed25519.pub` file.
 
-To check that this step is completed, in the terminal run this. You will be
-prompted a warning, type `yes` then `Enter`.
+
+>\- Copy that text  
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)  
+>\- Click on `Add SSH key`  
+>\- Fill in the Title with your computer name  
+>\- Paste the **Key**  
+>\- Finish by clicking on the **Add key** green button.
+
+
+To check that this step is completed, in the terminal run this.
 
 ```bash
 ssh -T git@github.com
 ```
 
-If you see something like this, you're done!
+:warning: You will be prompted a warning, type `yes` then `Enter`.
 
-```bash
+This is the expected result:
+
+```
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-If it does not work, try running this before trying again the `ssh -T` command:
+&nbsp;
 
-```bash
-ssh-add ~/.ssh/id_ed25519
-```
+&nbsp;&nbsp;&nbsp; :white_check_mark: If you got this message, the keys were added successfully!
+
+&nbsp;&nbsp;&nbsp; :x: If you encountered an error, you will have to try again. Do not hesitate to *contact a teacher*.
+
+
+---
+
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>If `ssh -T git@github.com` does not work</summary>
+
+  &nbsp;
+  
+  
+  Try running this command before trying again:
+
+  ```bash
+  ssh-add ~/.ssh/id_ed25519
+  ```
+  </details>
+
+---
+
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
@@ -248,8 +276,14 @@ Then in the terminal, run:
 
 ```bash
 sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+```
+```bash
 sudo apt clean
+```
+```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
@@ -283,7 +317,13 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ---
 
-:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+<details>
+  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+
+
+  &nbsp;
+  
+  :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
 # China only!
@@ -294,6 +334,7 @@ gem sources -l
 # https://gems.ruby-china.com/
 # Ruby-china.com must be in the list now
 ```
+</details>
 
 ---
 
