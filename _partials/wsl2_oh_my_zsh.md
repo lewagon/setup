@@ -14,4 +14,34 @@ At then end, your terminal should look like this:
 
 ![zsh](images/wsl2_zsh.jpg)
 
-If it doesn't, **ask a teacher**.
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :x: If it does not, please **contact a teacher**.
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If everything is correct, let's configure GitHub!
+
+---
+
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>Error: "chsh command unsuccessful. Change your default shell manually."</summary>
+
+  &nbsp;
+  
+  
+  You probably typed the wrong password when asked.
+  Starting the script again will not work as it will try to create a configuration folder that now already exists !
+
+  We need to remove it first:
+
+  ```bash
+  rm -rf ~/.oh-my-zsh
+  ```
+
+
+  Then let's try again!
+</details>
+
+---

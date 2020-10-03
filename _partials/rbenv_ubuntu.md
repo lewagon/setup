@@ -14,8 +14,14 @@ Then in the terminal, run:
 
 ```bash
 sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+```
+```bash
 sudo apt clean
+```
+```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 

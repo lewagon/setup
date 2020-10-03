@@ -25,7 +25,13 @@ You should see something starting with `ruby <RUBY_VERSION>p`. If not, ask a tea
 
 ---
 
-:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+<details>
+  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+
+
+  &nbsp;
+  
+  :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
 # China only!
@@ -36,6 +42,7 @@ gem sources -l
 # https://gems.ruby-china.com/
 # Ruby-china.com must be in the list now
 ```
+</details>
 
 ---
 
