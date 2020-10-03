@@ -1,11 +1,30 @@
 ## Windows Subsystem for Linux
-
+### Install WSL 1
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-Click on **Start** and type **powershell**. Right click on **Windows Powershell**, then on **Run as administrator**. A blue terminal window will appear. Copy the following commands, paste them into the terminal windows by right-clicking into it, and run them by pressing Enter:
+We will install WSL through the Powershell Terminal:
 
-(If you are asked to restart your computer, type **n** and **enter** to prevent your computer from restarting at that moment).
 
+>\- Press `Windows` + `R`  
+>\- Type  `powershell`  
+>\- Press `Ctrl` + `Shift` + `Return`
+
+
+:warning: Be aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges.
+
+:warning: You may have to accept the UAC confirmation about the privilege elevation.
+
+
+&nbsp;  
+A blue terminal window will appear:
+
+
+>\- Copy the following commands  
+>\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
+>\- Run them by pressing `Return`
+
+
+&nbsp;  
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
@@ -18,64 +37,194 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-When all three commands ran without any errors, restart your computer.
+&nbsp;
 
-Once your computer has restarted, click on **Start** and type **Microsoft Store**. Launch it. In the search bar, type **Ubuntu**. Click on the result that says **Ubuntu** plainly, not **Ubuntu 18.04 LTS**. Then, click on **Install**.
 
-:warning: There is no progress bar for this installation. When it is done you will be asked, in the bottom right corner, to launch it.
+&nbsp;&nbsp;&nbsp; :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**!
 
-The first time you open WSL - you will be asked to choose a username :warning:. Your username should be **one word**, **lowercase** with no **special characters** :warning:, for example: `lewagon`.
-
-It will then ask you for a new password. When you type your password, :warning: it will not appear on the screen :warning: – and there will be no familiar typing indicator even though your keystrokes are being registered. This is a security feature to mask not only your password as a whole but also its length!
-
-You will have to retype your password, and then the installation should be complete.
-
-You can close the terminal now that WSL is installed on your computer.
+&nbsp;&nbsp;&nbsp; :white_check_mark: When all three commands ran without any error, you can restart your computer.
 
 
 ### Upgrade to WSL 2
+Once your computer has restarted, we need to download the WSL2 installer.
 
-First, we need to download the [WSL2 installer](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package and once it is downloaded, open the program.
+
+>\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer  
+>\- Click `Next`  
+>\- Click `Finish`
 
 ![update_wsl](images/update_wsl.jpg)
 
-Click on **Next**, then **Finish**.
+&nbsp;
 
-If you encounter the error **This update only applies to machines with the Windows Subsystem for Linux**: Right click on the program and select **uninstall**.
+&nbsp;&nbsp;&nbsp; :x: If you encounter the error `This update only applies to machines with the Windows Subsystem for Linux`, **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
-You should be able to install it now.
+&nbsp;&nbsp;&nbsp; :white_check_mark: If everything is fine, we are ready to use WSL 2 instead of WSL 1!
 
-We also need to make sure that the program files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**. In the search bar type **folder**, open the folder options. Click on the second tab **View**, then under **Hidden files and folders**, select **Show hidden files, folders, and drives**. Click on **Apply**, then **Ok** to close this window.
+### Make WSL 2 the default Windows Subsystem for Linux
+Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
-Open a file explorer. In the sidebar click on **This computer** → **Windows (C:)** → **Users** → **your username account** → **AppData** → **Local** → **Packages**. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
 
-Locate the **LocalState** folder and **right click** on it, then click on **Properties** → **Advanced**.
+>\- Press `Windows` + `R`  
+>\- Type  `cmd`  
+>\- Press `Return`
 
-Make sure that the option **Compress content** is **not** ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
 
-Click on **Start**. In the search bar type **cmd**, open the **Command Prompt**.
-You will see all the WSL updates installed on your machine with the command:
+In the window which appears, type:
+
+```bash
+wsl --set-default-version 2
+```
+
+&nbsp;
+
+
+&nbsp;&nbsp;&nbsp; :x: If the message you get talks about Virtualization, please **contact a teacher**
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: You can close this Command Prompt terminal; we are ready to install Ubuntu!
+
+
+## Ubuntu
+### Installation
+
+
+>\- Click on `Start`  
+>\- Type  `Microsoft Store`  
+>\- Click on the Microsoft Windows Store in the list
+>
+>
+>\- Search for `Ubuntu` in the search bar  
+>\- Select version without any number, just plain "Ubuntu"
+>
+>
+>\- Click on `Install`
+
+
+:warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
+
+---
+
+#### :wrench: Potential Fixes
+
+
+<details>
+  <summary>Uninstall wrong versions of Ubuntu</summary>
+
+  &nbsp;
+  
+  
+  To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
+
+
+  >\- Press `Windows` + `R`  
+  >\- Type  `appwiz.cpl`  
+  >\- Press `Return`
+
+
+  Find the right software to uninstall, and click on the uninstall button.
+</details>
+
+---
+
+
+&nbsp;
+Once the installation is done, the `Install` button becomes a `Launch` button:
+
+
+>\- Click on `Launch`
+
+
+At first launch, you will be asked some information:
+- Choose a **username**:
+    - one word
+    - lowercase
+    - no special characters
+    - for example: `lewagon` or your `firstname`
+- Choose a **password**
+- Confirm your password
+
+
+:warning: When typing the password, nothing will not appear on the screen — there will be no familiar typing indicator even though your keystrokes are being registered!
+
+:warning: This is a security feature to mask not only your password as a whole but also its length!
+
+
+&nbsp;
+
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: The installation should be complete; you can close the Ubuntu window now that it is installed on your computer.
+
+### Check the WSL version of Ubuntu 
+
+
+>\- Press `Windows` + `R`  
+>\- Type  `cmd`  
+>\- Press `Return`
+
+
+Type the following command:
 
 ```bash
 wsl -l -v
 ```
-(translates to "wsl list version")
 
-You should see the Ubuntu version that you installed before.
+&nbsp;
 
-Let's upgrade it to the version 2, by running the following command:
+&nbsp;&nbsp;&nbsp; :x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
 
-```bash
-wsl --set-version Ubuntu 2
-```
+&nbsp;&nbsp;&nbsp; :white_check_mark: If the version of Ubuntu WSL is 2, you are ready to install VS Code!
 
-A message will appear telling you that the conversion is in progress and that it will take a few minutes.
 
-When you get the message **The conversion is complete**, paste the first command into the command prompt again:
+---
 
-```bash
-wsl -l -v
-```
+#### :wrench: Potential Fixes
 
-and double-check that the version is now **2**.
+
+<details>
+  <summary>Convert Ubuntu WSL V1 to V2</summary>
+
+  
+  &nbsp;
+  
+  
+  In the Command Prompt window, type:
+
+  ```bash
+  wsl --set-version Ubuntu 2
+  ```
+  
+  &nbsp;
+
+  &nbsp;&nbsp;&nbsp; :white_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
+
+  &nbsp;&nbsp;&nbsp; :x: If it does not work, we need to be sure that Ubuntu files are not compressed.
+</details>
+
+<details>
+  <summary>Check for Uncompress Files</summary>
+
+
+  &nbsp;
+  >\- Press `Windows` + `R`  
+  >\- Type  `%localappdata%\Packages`  
+  >\- Press `Return`
+  >
+  >
+  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`  
+  >\- Right Click on the `LocalState` folder  
+  >\- Click on `Properties`  
+  >\- Click on `Advanced`  
+  >\- Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
+  
+
+  Apply changes to this folder only, and try to convert the Ubuntu WSL version again.
+
+
+  &nbsp;&nbsp;&nbsp; :x: If the conversion still does not work, please **contact a teacher**.
+</details>
+
+---
+
+
+(You can now close this Command Prompt window.)
 
