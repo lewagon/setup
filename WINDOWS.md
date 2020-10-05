@@ -63,7 +63,7 @@ Open Windows Update:
 
 
 >\- Press `Windows` + `R`  
->\- Type  `wuapp`  
+>\- Type  `ms-settings:windowsupdate`  
 >\- Press `Return`
 >
 >
