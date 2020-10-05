@@ -5,7 +5,7 @@ WSL is the development environment we are using to run Ubuntu. You can learn mor
 We will install WSL through the Powershell Terminal:
 
 
-:warning: In the following instruction, please aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Return`.
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Return`.
 
 
 >\- Press `Windows` + `R`  
@@ -118,7 +118,7 @@ wsl --set-default-version 2
 
 
   >\- Press `Windows` + `R`  
-  >\- Type  `appwiz.cpl`  
+  >\- Type  `ms-settings:appsfeatures`  
   >\- Press `Return`
 
 
