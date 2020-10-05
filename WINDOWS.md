@@ -475,6 +475,8 @@ The tool should start to download automatically.
 >    \- Register VS Code as an editor for supported file types  
 >    \- Let the other options as they are
 
+![VS Code install](images/vscode-install.png)
+
 ### Connecting VS Code to Ubuntu
 
 - Launch VS Code a first time, then:
