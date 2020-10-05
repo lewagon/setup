@@ -1,9 +1,9 @@
 require 'io/console'
 begin
   require "colored"
-  require "octokit"
+  require "http"
 rescue LoadError
-  puts "Could not find all needed gems. Please run `bundle install` and retry"
+  puts "Could not find all needed gems. Please run `gem install colored http` and retry"
   exit
 end
 
@@ -13,7 +13,6 @@ require "open-uri"
 REQUIRED_RUBY_VERSION = "2.6.6"
 REQUIRED_GIT_VERSION = "2.0"
 MINIMUM_AVATAR_SIZE = 2 * 1024
-GITHUB_AUTHORIZATION_NOTE = 'Le Wagon setup check'.freeze
 
 $all_good = true
 
@@ -49,59 +48,26 @@ def check_all
       [ false, "Your default git version is outdated: #{version_tokens.join(".")}"]
     end
   end
-  check("GitHub setup") do
-    begin
-      groups = `ssh -T git@github.com 2>&1`.match(/Hi (?<nickname>.*)! You've successfully authenticated/)
-      git_email = (`git config --global user.email`).chomp
-      nickname = groups["nickname"]
-
-      client = Octokit::Client.new
-      client.login = nickname
-      puts "Please type in your GitHub password (login: '#{nickname}'):"
-      print "> "
-      client.password = STDIN.noecho { |stdin| stdin.gets.chomp }
-      puts "\nThanks. Asking some infos to GitHub..."
-      begin
-        # This will create a Basic Auth
-        authorization =
-          client.create_authorization(
-            scopes: ['user:email'],
-            note: GITHUB_AUTHORIZATION_NOTE)
-          avatar_url = client.user[:avatar_url]
-          emails = client.emails.map { |email| email[:email] }
-      rescue Octokit::OneTimePasswordRequired => e # Rescue if user has 2FA enabled
-        puts "You have two Factor Authentication enabled on your Github account, please enter the 6 digits code you just received"
-        print "> "
-        otp_code = gets.chomp
-        # This will create a 2FA Auth
-        authorization = client.create_authorization(
-          scopes: ['user:email'],
-          note: GITHUB_AUTHORIZATION_NOTE,
-          headers: { 'X-GitHub-OTP': otp_code })
-        # Using access_token to retrieve info whilst preserving basic auth client for delete_authorization later on
-        client2 = Octokit::Client.new(access_token: authorization["token"])
-        avatar_url = client2.user[:avatar_url]
-        emails = client2.emails.map { |email| email[:email] }
-      end
-
-      # Delete_authorization can only be accessed using Basic Auth
-      client.delete_authorization(authorization[:id], headers: {'X-GitHub-OTP': otp_code})
-
-      if emails.include?(git_email)
-        content_length = `curl -s -I #{avatar_url} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
-        if content_length >= MINIMUM_AVATAR_SIZE
-          [ true, "GitHub email config is OK. And you have a profile picture 📸"]
-        else
-          [ false, "You don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture right now."]
-        end
-      else
-        [ false,
-          "Your git email is '#{git_email}' and is not listed in https://github.com/settings/emails\n" +
-          "Run `git config --global user.email george@abitbol.com` to set your git email address. With your own!"]
-      end
-    rescue Octokit::Unauthorized => e
-      puts "Wrong GitHub password, please try again 🙏     Details: #{e.message}"
-      exit 1
+  check("git/Github email matching") do
+    git_email = (`git config --global user.email`).chomp
+    puts "Please go to https://github.com/settings/emails and make sure that"
+    puts "the following email is listed on that page:"
+    puts "👉  #{git_email}"
+    print "Is that the case? (y/n + <Enter>)\n> "
+    response = gets.chomp
+    ok = response.downcase.include?("y")
+    [ ok, ok ? "git email is included in Github emails" : "Add #{git_email} to your GitHub account or update your git global settings" ]
+  end
+  check("GitHub profile picture") do
+    groups = `ssh -T git@github.com 2>&1`.match(/Hi (?<nickname>.*)! You've successfully authenticated/)
+    nickname = groups["nickname"]
+    puts "Your username on GitHub is #{nickname}, checking your profile picture now..."
+    avatar_url = JSON.parse(HTTP.get("https://api.github.com/users/#{nickname}"))['avatar_url']
+    content_length = `curl -s -I #{avatar_url} | grep 'Content-Length:'`.strip.gsub("Content-Length: ", "").to_i
+    if content_length >= MINIMUM_AVATAR_SIZE
+      [ true, "Thanks for uploading a GitHub profile picture 📸"]
+    else
+      [ false, "You don't have any profile picture set.\nIt's important, go to github.com/settings/profile and upload a picture *right now*."]
     end
   end
   check("git editor setup") do
