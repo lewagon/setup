@@ -231,12 +231,13 @@ WSL is the development environment we are using to run Ubuntu. You can learn mor
 We will install WSL through the Powershell Terminal:
 
 
+:warning: In the following instruction, please aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Return`.
+
+
 >\- Press `Windows` + `R`  
 >\- Type  `powershell`  
 >\- Press `Ctrl` + `Shift` + `Return`
 
-
-:warning: Be aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges.
 
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
