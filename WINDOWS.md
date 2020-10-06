@@ -29,7 +29,7 @@ To check your Windows version:
 
 >\- Press `Windows` + `R`  
 >\- Type  `winver`  
->\- Press `Return`
+>\- Press `Enter`
 
 &nbsp;
 
@@ -64,7 +64,7 @@ Open Windows Update:
 
 >\- Press `Windows` + `R`  
 >\- Type  `ms-settings:windowsupdate`  
->\- Press `Return`
+>\- Press `Enter`
 >
 >
 >\- Click on `Check updates`
@@ -91,7 +91,7 @@ Open Windows Update:
 
   >\- Press `Windows` + `R`  
   >\- Type  `services.msc`  
-  >\- Press `Return`
+  >\- Press `Enter`
   >
   >
   >\- Double Click `Windows Update Service`  
@@ -111,7 +111,7 @@ Some of the tools we need to install have been release with the `1903` version *
 
 >\- Press `Windows` + `R`  
 >\- Type  `winver`  
->\- Press `Return`  
+>\- Press `Enter`  
 
 
 Check the **Version number**:
@@ -132,7 +132,7 @@ For many computers, this is already the case. Let's check:
 
 >\- Press `Windows` + `R`  
 >\- Type  `taskmgr`  
->\- Press `Return`
+>\- Press `Enter`
 >
 >
 >\- Click on the `Performance` tab  
@@ -163,7 +163,7 @@ For many computers, this is already the case. Let's check:
 
   >\- Press `Windows + R`  
   >\- Type  `shutdown.exe /r /o /t 1`  
-  >\- Press `Return`
+  >\- Press `Enter`
   >
   >
   >\- Wait for the computer to shutdown
@@ -231,12 +231,12 @@ WSL is the development environment we are using to run Ubuntu. You can learn mor
 We will install WSL through the Powershell Terminal:
 
 
-:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Return`.
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
 
 >\- Press `Windows` + `R`  
 >\- Type  `powershell`  
->\- Press `Ctrl` + `Shift` + `Return`
+>\- Press `Ctrl` + `Shift` + `Enter`
 
 
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
@@ -248,7 +248,7 @@ A blue terminal window will appear:
 
 >\- Copy the following commands  
 >\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
->\- Run them by pressing `Return`
+>\- Run them by pressing `Enter`
 
 
 &nbsp;  
@@ -294,7 +294,7 @@ Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
 >\- Press `Windows` + `R`  
 >\- Type  `cmd`  
->\- Press `Return`
+>\- Press `Enter`
 
 
 In the window which appears, type:
@@ -345,7 +345,7 @@ wsl --set-default-version 2
 
   >\- Press `Windows` + `R`  
   >\- Type  `ms-settings:appsfeatures`  
-  >\- Press `Return`
+  >\- Press `Enter`
 
 
   Find the right software to uninstall, and click on the uninstall button.
@@ -386,7 +386,7 @@ At first launch, you will be asked some information:
 
 >\- Press `Windows` + `R`  
 >\- Type  `cmd`  
->\- Press `Return`
+>\- Press `Enter`
 
 
 Type the following command:
@@ -434,7 +434,7 @@ wsl -l -v
   &nbsp;
   >\- Press `Windows` + `R`  
   >\- Type  `%localappdata%\Packages`  
-  >\- Press `Return`
+  >\- Press `Enter`
   >
   >
   >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`  
@@ -501,7 +501,8 @@ In VS Code:
 
 ### VS Code Extensions
 
-Let's gain time now and add other nice extensions that will help your bootcamp even better in the future.
+Let's gain time now and add other extensions that will be helpful during your Bootcamp.
+
 
 For each of these extensions:
 
@@ -547,7 +548,7 @@ To make sure everything works fine, close VS Code, then open your Ubuntu termina
 
 >\- Press `Windows` + `R`  
 >\- Type  `ubuntu`  
->\- Press `Return`
+>\- Press `Enter`
 
 
 In Ubuntu, let's try to launch VS Code:

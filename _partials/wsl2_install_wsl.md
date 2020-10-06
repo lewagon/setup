@@ -5,12 +5,12 @@ WSL is the development environment we are using to run Ubuntu. You can learn mor
 We will install WSL through the Powershell Terminal:
 
 
-:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Return` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Return`.
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
 
 >\- Press `Windows` + `R`  
 >\- Type  `powershell`  
->\- Press `Ctrl` + `Shift` + `Return`
+>\- Press `Ctrl` + `Shift` + `Enter`
 
 
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
@@ -22,7 +22,7 @@ A blue terminal window will appear:
 
 >\- Copy the following commands  
 >\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
->\- Run them by pressing `Return`
+>\- Run them by pressing `Enter`
 
 
 &nbsp;  
@@ -68,7 +68,7 @@ Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
 >\- Press `Windows` + `R`  
 >\- Type  `cmd`  
->\- Press `Return`
+>\- Press `Enter`
 
 
 In the window which appears, type:
@@ -119,7 +119,7 @@ wsl --set-default-version 2
 
   >\- Press `Windows` + `R`  
   >\- Type  `ms-settings:appsfeatures`  
-  >\- Press `Return`
+  >\- Press `Enter`
 
 
   Find the right software to uninstall, and click on the uninstall button.
@@ -160,7 +160,7 @@ At first launch, you will be asked some information:
 
 >\- Press `Windows` + `R`  
 >\- Type  `cmd`  
->\- Press `Return`
+>\- Press `Enter`
 
 
 Type the following command:
@@ -208,7 +208,7 @@ wsl -l -v
   &nbsp;
   >\- Press `Windows` + `R`  
   >\- Type  `%localappdata%\Packages`  
-  >\- Press `Return`
+  >\- Press `Enter`
   >
   >
   >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`  

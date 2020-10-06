@@ -7,7 +7,7 @@ For many computers, this is already the case. Let's check:
 
 >\- Press `Windows` + `R`  
 >\- Type  `taskmgr`  
->\- Press `Return`
+>\- Press `Enter`
 >
 >
 >\- Click on the `Performance` tab  
@@ -38,7 +38,7 @@ For many computers, this is already the case. Let's check:
 
   >\- Press `Windows + R`  
   >\- Type  `shutdown.exe /r /o /t 1`  
-  >\- Press `Return`
+  >\- Press `Enter`
   >
   >
   >\- Wait for the computer to shutdown

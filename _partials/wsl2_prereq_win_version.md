@@ -5,7 +5,7 @@ Open Windows Update:
 
 >\- Press `Windows` + `R`  
 >\- Type  `ms-settings:windowsupdate`  
->\- Press `Return`
+>\- Press `Enter`
 >
 >
 >\- Click on `Check updates`
@@ -32,7 +32,7 @@ Open Windows Update:
 
   >\- Press `Windows` + `R`  
   >\- Type  `services.msc`  
-  >\- Press `Return`
+  >\- Press `Enter`
   >
   >
   >\- Double Click `Windows Update Service`  
@@ -52,7 +52,7 @@ Some of the tools we need to install have been release with the `1903` version *
 
 >\- Press `Windows` + `R`  
 >\- Type  `winver`  
->\- Press `Return`  
+>\- Press `Enter`  
 
 
 Check the **Version number**:

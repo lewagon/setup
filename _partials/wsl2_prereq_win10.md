@@ -9,7 +9,7 @@ To check your Windows version:
 
 >\- Press `Windows` + `R`  
 >\- Type  `winver`  
->\- Press `Return`
+>\- Press `Enter`
 
 &nbsp;
 
