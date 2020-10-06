@@ -1,4 +1,5 @@
-To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal:
+## Linking your default browser to Ubuntu
+To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
 
 
 <details>
