@@ -42,7 +42,8 @@ In VS Code:
 
 ### VS Code Extensions
 
-Let's gain time now and add other nice extensions that will help your bootcamp even better in the future.
+Let's gain time now and add other extensions that will be helpful during your Bootcamp.
+
 
 For each of these extensions:
 
@@ -88,7 +89,7 @@ To make sure everything works fine, close VS Code, then open your Ubuntu termina
 
 >\- Press `Windows` + `R`  
 >\- Type  `ubuntu`  
->\- Press `Return`
+>\- Press `Enter`
 
 
 In Ubuntu, let's try to launch VS Code:
