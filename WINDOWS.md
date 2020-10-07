@@ -1,45 +1,127 @@
-# Setup your machine!
+# Setup instructions
 
-Welcome to this setup where we are going to install the tools required to make your machine a true developer environment :muscle:.
 The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
 
-- Install a code editor, where you will spend your days and nights
+- Grab a text editor, where you will spend your days and nights
 - Install a package manager
 - Pimp your Terminal
 - Setup git and GitHub
 - Install Ruby
 
 
-
 ## Prerequisites
 
 Before we start, it is important you meet the following prerequisites to ensure the smooth running of the setup.
 Take your time to read through everything and do not hesitate to ask for help if you feel stuck.
+
 Ready? Let's go :sunglasses:
 
-If you already applied all the instructions that we sent you by email, please go directly to the [Virtualization](#Virtualization).
+
+
+### Windows 10
+
+For this setup, you need to be using the latest version of Windows.
+
+This means that you need to be on **Windows 10**, with all the latest updates installed.
+
+To check your Windows version:
+
+
+>\- Press `Windows` + `R`  
+>\- Type  `winver`  
+>\- Press `Enter`
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10!
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If the first words of this window are **Windows 10** you're good to go! :muscle:
+
+
+---
+
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>Upgrade to Windows 10</summary>
+
+  &nbsp;
+  - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
+  - Install it. It should take roughly an hour, bu this is dependent on your computer
+</details>
+
+---
+
+
+Once you're sure that you're using Windows 10, you will need to check that your computer has all the latest updates.
+
 
 
 ### Latest version of Windows
 
-For this setup, you need to be using the latest version of Windows.
-
-This means that you need to be on Windows 10, with all the latest updates installed.
-
-You can check your software version by clicking on **Start>Settings>System>About**. Look where it says **Edition**. If you see something that starts with "Windows 10..." you're good to go :muscle:.
-
-Not the case? Don't panic :scream: You can always install Windows 10 from [Microsoft]( https://www.microsoft.com/en-gb/windows/get-windows-10) (it should take roughly an hour to install but this is dependent on your computer). Click on **Check for Updates**, then follow the instructions on the screen. Come back to this setup when Windows 10 is installed.
-
-Once you're sure that you're using Windows 10, you will need to check that your computer has all the latest updates. For this click on **Start>Settings>Updates & Security>Windows Update**, then click on **Check updates**. If you have updates available please install them and repeat the process until it says that you are up to date :star:.
+Open Windows Update:
 
 
+>\- Press `Windows` + `R`  
+>\- Type  `ms-settings:windowsupdate`  
+>\- Press `Enter`
+>
+>
+>\- Click on `Check updates`
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :x: If you have an error message about Windows not being able to apply updates, please **contact a teacher**.
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If you have updates available please install them and repeat the process until it says that you are up to date :star:.
+
+
+---
+
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>Activate Windows Update Service to fix Updates</summary>
+
+  &nbsp;
+  
+  
+  Some antiviruses and pieces of software desactivate the Update service we need, resulting in the error you see. Let's fix that!
+
+
+  >\- Press `Windows` + `R`  
+  >\- Type  `services.msc`  
+  >\- Press `Enter`
+  >
+  >
+  >\- Double Click `Windows Update Service`  
+  >\- Set its `Startup` to `Automatic`  
+  >\- Click on `Start`  
+  >\- Click on `Ok`
+
+  Then let's try updates again!
+</details>
+
+---
 
 ### Minimum version
 
-Some of the tools we need to install have been release with the `2004` version of Windows 10 so we need to make sure you have at least this one.
-Go to **Start → Settings → System → About**. This time check the **Version**, if it says at least 2004, you are good to go :sunglasses:. 
+Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
 
-If not just follow the paragraph above to install the latest updates.
+
+>\- Press `Windows` + `R`  
+>\- Type  `winver`  
+>\- Press `Enter`  
+
+
+Check the **Version number**:
+
+
+&nbsp;&nbsp;&nbsp; :x: If it is below `1903`, just follow the [Latest version of Windows](#Latest-version-of-Windows) paragraph above to install the latest updates.
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If it says at least `1903`, you are good to go! :sunglasses:
+
+
 
 ### Virtualization
 
@@ -47,45 +129,63 @@ We need to ensure that the Virtualization options are enabled in the BIOS of you
 
 For many computers, this is already the case. Let's check:
 
-- Press `Ctrl + Alt + Del`.
-- Select **Task Manager**.
-- Click on the **Performance** tab.
-- Click on **CPU**.
-- The status will be listed under the graph and will say "Virtualization: Enabled" if this tool is enabled.
+
+>\- Press `Windows` + `R`  
+>\- Type  `taskmgr`  
+>\- Press `Enter`
+>
+>
+>\- Click on the `Performance` tab  
+>\- Click on `CPU`
+
 
 ![task_manager.jpg](images/task_manager.jpg)
 
-If **Virtualization** is already enabled, go directly to [Github account](https://github.com/lewagon/setup/blob/master/WINDOWS.md#github-account).
+&nbsp;
 
-If not, we need to enable it, which is a process that is different for each model of computer, so we can only offer vague guidelines in this guide. Please ask a teacher as soon as you get stuck!
+&nbsp;&nbsp;&nbsp; :x: If the line is missing or if it is disabled, please **contact a teacher before trying to activate the Virtualization**.
 
-Let's retrieve your motherboard model :muscle:
+&nbsp;&nbsp;&nbsp; :white_check_mark: The status will be listed under the graph and will say "Virtualization: Enabled" if this tool is enabled.
 
-Click on **Start** and type **System Information** and open it.
 
-Locate the **System Model** line, the value on the right is your motherboard model.
+---
 
-Now because everything is dependant on your motherboard model, we will have to do a Google search on how to enable the Virtualization option with this model. 
+#### :wrench: Potential Fixes
 
-:warning: We invite you to contact a teacher so you can complete this part of the setup together, as it might be a bit scary to not have clear guidelines. Choose the communication tool of your choice so the teacher can see your screen (your computer will have to be turned off during the setup so please use your phone, WhatsApp, Facetime etc..) :man_mechanic:​ :warning:
+<details>
+  <summary>Activate Virtualization</summary>
 
-If we take my example:
+  &nbsp;
+  
+  
+  We need to access the BIOS / UEFI of the computer to activate it.
 
-![wsl2_virtualization.png](images/wsl2_virtualization.png)
 
-So I googled "*UX310UA bios enable virtualization*" and the first video in the results taught me how to do it. Part of being a developer is searching for information and applying it to your work :nerd_face:.
+  >\- Press `Windows + R`  
+  >\- Type  `shutdown.exe /r /o /t 1`  
+  >\- Press `Enter`
+  >
+  >
+  >\- Wait for the computer to shutdown
+  >
+  >
+  >\- Click on `Troubleshoot`  
+  >\- Click on `Advanced Options`  
+  >\- Click on `UEFI Firmware Settings`  
+  >\- Click on `Restart`
 
-To access your motherboard settings, click on **Start** and type **recovery options** and open it.
 
-![wsl2_recovery.png](images/wsl2_recovery.png)
+  You need to activate the virtualization option for your processor here:
+  - Most of the time, in the advanced settings, the CPU settings, or the Northbridge settings
+  - The option can be called differently according to your computer:
+      - Intel: `Intel VT-x`, `Intel Virtualization Technology`, `Virtualization Extensions`, `Vanderpool`...
+      - AMD: `SVM Mode` or `AMD-V`
+  - Save the changes after activation, and reboot the computer through the appropriate option
+</details>
 
-Select **Restart now** under **Advanced start-up**
+---
 
-![wsl2_recovery2.png](images/wsl2_recovery2.png)
 
-This will restart the machine and boot into a new menu, in which selecting **Troubleshoot -> Advanced Options -> UEFI Firmware Settings -> Restart** will boot into the motherboard settings where the necessary changes can be made.
-
-Follow the instructions you found to enable Virtualization and come back here, we will be waiting :smile:.
 
 ## GitHub account
 
@@ -125,13 +225,33 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 
 ## Windows Subsystem for Linux
-
+### Install WSL 1
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-Click on **Start** and type **powershell**. Right click on **Windows Powershell**, then on **Run as administrator**. A blue terminal window will appear. Copy the following commands, paste them into the terminal windows by right-clicking into it, and run them by pressing Enter:
+We will install WSL through the Powershell Terminal:
 
-(If you are asked to restart your computer, type **n** and **enter** to prevent your computer from restarting at that moment).
 
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
+
+
+>\- Press `Windows` + `R`  
+>\- Type  `powershell`  
+>\- Press `Ctrl` + `Shift` + `Enter`
+
+
+:warning: You may have to accept the UAC confirmation about the privilege elevation.
+
+
+&nbsp;  
+A blue terminal window will appear:
+
+
+>\- Copy the following commands  
+>\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
+>\- Run them by pressing `Enter`
+
+
+&nbsp;  
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
@@ -144,66 +264,196 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-When all three commands ran without any errors, restart your computer.
+&nbsp;
 
-Once your computer has restarted, click on **Start** and type **Microsoft Store**. Launch it. In the search bar, type **Ubuntu**. Click on the result that says **Ubuntu** plainly, not **Ubuntu 18.04 LTS**. Then, click on **Install**.
 
-:warning: There is no progress bar for this installation. When it is done you will be asked, in the bottom right corner, to launch it.
+&nbsp;&nbsp;&nbsp; :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**!
 
-The first time you open WSL - you will be asked to choose a username :warning:. Your username should be **one word**, **lowercase** with no **special characters** :warning:, for example: `lewagon`.
-
-It will then ask you for a new password. When you type your password, :warning: it will not appear on the screen :warning: – and there will be no familiar typing indicator even though your keystrokes are being registered. This is a security feature to mask not only your password as a whole but also its length!
-
-You will have to retype your password, and then the installation should be complete.
-
-You can close the terminal now that WSL is installed on your computer.
+&nbsp;&nbsp;&nbsp; :white_check_mark: When all three commands ran without any error, you can restart your computer.
 
 
 ### Upgrade to WSL 2
+Once your computer has restarted, we need to download the WSL2 installer.
 
-First, we need to download the [WSL2 installer](https://aka.ms/wsl2kernel). Click on the suggested link to download the update package and once it is downloaded, open the program.
+
+>\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer  
+>\- Click `Next`  
+>\- Click `Finish`
 
 ![update_wsl](images/update_wsl.jpg)
 
-Click on **Next**, then **Finish**.
+&nbsp;
 
-If you encounter the error **This update only applies to machines with the Windows Subsystem for Linux**: Right click on the program and select **uninstall**.
+&nbsp;&nbsp;&nbsp; :x: If you encounter the error `This update only applies to machines with the Windows Subsystem for Linux`, **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
-You should be able to install it now.
+&nbsp;&nbsp;&nbsp; :white_check_mark: If everything is fine, we are ready to use WSL 2 instead of WSL 1!
 
-We also need to make sure that the program files are not compressed. Let's enable an option to let you see hidden files/folders :female_detective:. Click on **Start**. In the search bar type **folder**, open the folder options. Click on the second tab **View**, then under **Hidden files and folders**, select **Show hidden files, folders, and drives**. Click on **Apply**, then **Ok** to close this window.
+### Make WSL 2 the default Windows Subsystem for Linux
+Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
-Open a file explorer. In the sidebar click on **This computer** → **Windows (C:)** → **Users** → **your username account** → **AppData** → **Local** → **Packages**. Here you need to locate the folder starting with **CanonicalGroupLimited.UbuntuonWindows** and open it.
 
-Locate the **LocalState** folder and **right click** on it, then click on **Properties** → **Advanced**.
+>\- Press `Windows` + `R`  
+>\- Type  `cmd`  
+>\- Press `Enter`
 
-Make sure that the option **Compress content** is **not** ticked. Click on **Ok** to validate your choice. You will be asked if you want to apply this change only to this folder, or also the subfolders. Please choose only this folder. 
 
-Click on **Start**. In the search bar type **cmd**, open the **Command Prompt**.
-You will see all the WSL updates installed on your machine with the command:
+In the window which appears, type:
+
+```bash
+wsl --set-default-version 2
+```
+
+&nbsp;
+
+
+&nbsp;&nbsp;&nbsp; :x: If the message you get talks about Virtualization, please **contact a teacher**
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: You can close this Command Prompt terminal; we are ready to install Ubuntu!
+
+
+## Ubuntu
+### Installation
+
+
+>\- Click on `Start`  
+>\- Type  `Microsoft Store`  
+>\- Click on the Microsoft Windows Store in the list
+>
+>
+>\- Search for `Ubuntu` in the search bar  
+>\- Select version without any number, just plain "Ubuntu"
+>
+>
+>\- Click on `Install`
+
+
+:warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
+
+---
+
+#### :wrench: Potential Fixes
+
+
+<details>
+  <summary>Uninstall wrong versions of Ubuntu</summary>
+
+  &nbsp;
+  
+  
+  To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
+
+
+  >\- Press `Windows` + `R`  
+  >\- Type  `ms-settings:appsfeatures`  
+  >\- Press `Enter`
+
+
+  Find the right software to uninstall, and click on the uninstall button.
+</details>
+
+---
+
+
+&nbsp;
+Once the installation is done, the `Install` button becomes a `Launch` button:
+
+
+>\- Click on `Launch`
+
+
+At first launch, you will be asked some information:
+- Choose a **username**:
+    - one word
+    - lowercase
+    - no special characters
+    - for example: `lewagon` or your `firstname`
+- Choose a **password**
+- Confirm your password
+
+
+:warning: When typing the password, nothing will not appear on the screen — there will be no familiar typing indicator even though your keystrokes are being registered!
+
+:warning: This is a security feature to mask not only your password as a whole but also its length!
+
+
+&nbsp;
+
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: The installation should be complete; you can close the Ubuntu window now that it is installed on your computer.
+
+### Check the WSL version of Ubuntu 
+
+
+>\- Press `Windows` + `R`  
+>\- Type  `cmd`  
+>\- Press `Enter`
+
+
+Type the following command:
 
 ```bash
 wsl -l -v
 ```
-(translates to "wsl list version")
 
-You should see the Ubuntu version that you installed before.
+&nbsp;
 
-Let's upgrade it to the version 2, by running the following command:
+&nbsp;&nbsp;&nbsp; :x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
 
-```bash
-wsl --set-version Ubuntu 2
-```
+&nbsp;&nbsp;&nbsp; :white_check_mark: If the version of Ubuntu WSL is 2, you are ready to install VS Code!
 
-A message will appear telling you that the conversion is in progress and that it will take a few minutes.
 
-When you get the message **The conversion is complete**, paste the first command into the command prompt again:
+---
 
-```bash
-wsl -l -v
-```
+#### :wrench: Potential Fixes
 
-and double-check that the version is now **2**.
+
+<details>
+  <summary>Convert Ubuntu WSL V1 to V2</summary>
+
+  
+  &nbsp;
+  
+  
+  In the Command Prompt window, type:
+
+  ```bash
+  wsl --set-version Ubuntu 2
+  ```
+  
+  &nbsp;
+
+  &nbsp;&nbsp;&nbsp; :white_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
+
+  &nbsp;&nbsp;&nbsp; :x: If it does not work, we need to be sure that Ubuntu files are not compressed.
+</details>
+
+<details>
+  <summary>Check for Uncompress Files</summary>
+
+
+  &nbsp;
+  >\- Press `Windows` + `R`  
+  >\- Type  `%localappdata%\Packages`  
+  >\- Press `Enter`
+  >
+  >
+  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`  
+  >\- Right Click on the `LocalState` folder  
+  >\- Click on `Properties`  
+  >\- Click on `Advanced`  
+  >\- Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
+  
+
+  Apply changes to this folder only, and try to convert the Ubuntu WSL version again.
+
+
+  &nbsp;&nbsp;&nbsp; :x: If the conversion still does not work, please **contact a teacher**.
+</details>
+
+---
+
+
+(You can now close this Command Prompt window.)
 
 
 
@@ -213,25 +463,67 @@ We use Visual Code Studio for writing code on Windows, because it integrates nic
 
 For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
 
-Go the [Visual Studio Code page](https://code.visualstudio.com/download) and click on Windows. The tool should start to download automatically. Open the file you have just downloaded. Install it leaving all the default options as they are.
+### Installation
+>\- Go the [Visual Studio Code page](https://code.visualstudio.com/download)  
+>\- Choose the Windows version of VS Code
 
-To help VS Code interact with your terminal, we need to add the extension **Remote Development**. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) and click on **Install**. This will tell you that VS Code is required to install this extension. Click on **Continue**. You will get an alert asking you to open Visual Studio Code. The editor will open to the extension page.
 
-![remote_development](images/remote_development.jpg)
+The tool should start to download automatically.
 
-Click on **Install**.
-Click on **File → Preferences → Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
-Click on **Install**. Click on **Reload Required**
+>\- Open the file you have just downloaded.  
+>\- Install it with a few options:  
+>    \- Register VS Code as an editor for supported file types  
+>    \- Let the other options as they are
 
-Let's gain time now and add other nice extensions that will help your bootcamp even better in the future. Please go to the each extension links below and follow the same steps as the Remote Development one.
+![VS Code install](images/vscode-install.png)
+
+### Connecting VS Code to Ubuntu
+
+- Launch VS Code a first time, then:
+    - Pin it to the taskbar; you will be using it a lot!
+    - You should have a frame at the bottom-right corner of VS Code saying it detects WSL
+    - Accept the installation of the WSL extension for VS Code
+
+:warning: This extension is mandatory for you to be able to work with VS Code!
+
+### VS Code Shortcuts
+
+In VS Code:
+
+
+>\- Click on `File`  
+>\- Click on `Preferences`  
+>\- Click on `Keymaps`  
+>\- Click on `Sublime Text Keymap and Settings Importer`  
+>\- Click on `Install`  
+>\- Click on `Reload Required`
+
+
+### VS Code Extensions
+
+Let's gain time now and add other extensions that will be helpful during your Bootcamp.
+
+
+For each of these extensions:
+
+
+>\- On the web page, click on `install`  
+>\- In the browser, accept to use VS Code to install the extension  
+>\- In VS Code, click on `install`
+
 
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 
-Press `Ctrl` + `,` on your keyboard to open the settings. In the search bar, type **emmet**. Click on **Edit in settings.json**
-Paste the following just before the last **`}`**
+### VS Code Settings
+>\- Press `Ctrl` + `,` on your keyboard to open the settings  
+>\- In the search bar, type `emmet`  
+>\- Click on the first **`Edit in settings.json`** link
+
+
+Paste the following just before the last `}`:
 
 ```bash
 "emmet.triggerExpansionOnTab": true,
@@ -244,60 +536,141 @@ It should look like this:
 
 ![vscode_emmet](images/vscode_emmet.jpg)
 
-You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
+:warning: You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
 
-To make sure everything works fine, open your terminal and type:
+
+:warning: Don't forget to save those changes!
+
+### Final Check
+
+To make sure everything works fine, close VS Code, then open your Ubuntu terminal:
+
+
+>\- Press `Windows` + `R`  
+>\- Type  `ubuntu`  
+>\- Press `Enter`
+
+
+In Ubuntu, let's try to launch VS Code:
 
 ```bash
 code
 ```
 
-If Visual Studio Code opens, your code editor is ready :muscle:.
-Please call a teacher if it doesn't.
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :x: If Visual Studio Code does not open, please **contact a teacher**
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If Visual Studio Code opens, your code editor is ready! :muscle:
+
 
 
 ## Windows Terminal
 
-As with Ubuntu, click on **Start**, type **Microsoft Store**, and launch it.
+The standard Ubuntu terminal is a very crude way of using Ubuntu; let's use a real modern terminal!
 
-In the search bar, type **terminal**, then in the list of results, click on **Windows Terminal (Preview)**.
+### Installation
 
-Install it, and afterwards **reboot** your computer.
-
-After the restart, click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
-
-This terminal allows you to open multiple terminal tools, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier :point_up_2: This terminal has tabs. Locate the **down arrow** / v-shape next to the open tab, and click on it. It will show you all the terminals you can open from here, but for the rest of this guide, we will only need **Ubuntu**.
+We first need to install **Windows Terminal** from the Microsoft Windows Store:
 
 
-Let's make Ubuntu the default terminal of your Windows terminal application. Press **`Ctrl` + `,`**. It should open the settings:
+>\- Click on `Start`  
+>\- Type  `Microsoft Store`  
+>\- Click on the Microsoft Windows Store in the list
+>
+>
+>\- Search for `Windows Terminal` in the search bar
+>
+>
+>\- Click on `Install`
+
+
+Once the installation is done, the `Install` button becomes a `Launch` button:
+
+
+>\- Click on `Launch`  
+>\- Right Click on the icon in the taskbar  
+>\- Choose to pin the app to the bar
+
+
+This terminal allows you to open multiple terminal sessions, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier.
+
+This terminal has tabs: you can choose to open a new terminal tab clicking on the **down arrow** / **v-shape** next to the current one.
+
+:warning: From now on, we will only need **Ubuntu** as a terminal.
+
+### Ubuntu as the default terminal
+
+Let's make Ubuntu the default terminal of your Windows Terminal application.
+
+
+>\- Press `Ctrl` + `,`
+
+
+It should open the settings:
 
 ![wsl2_settings](images/wsl2_settings.jpg)
 
-We have put in red the important parts.
-Locate the `"name": "Ubuntu",`.
-Add the following line after it (**don't forget the comma at the end**):
+We have put in red the part we will use or change.
+
+
+&nbsp;
+
+
+First, let us ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
+
+
+
+>\- Locate the `"name": "Ubuntu",`  
+>\- Add the following line after it:
+
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-session-name-you-chose-at-the-ubuntu-install",
+"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
 ```
 
-Locate the `"guid"` in red, copy the value between `{` and `}`.
+:warning: Do not forget the comma at the end of the line!
 
-Locate the `"defaultProfile"` and replace the value between `{` and `}` with what you copied from above.
+:warning: Do not forget to replace the username by your own in the line above!
 
-Voilà, your **Windows Terminal** :confetti_ball: is setup! From now on, every time we will refer to the terminal/console it will be this one.
+
+
+&nbsp;
+
+Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launched:
+
+
+
+
+>\- Locate the `"guid"` for Ubuntu  
+>\- Copy the value between `{` and `}`  
+>\- Locate the `"defaultProfile"`  
+>\- Replace the value between `{` and `}` with what you copied from above
+
+
+:warning: Do not forget to save those changes!
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **From now on, every time we will refer to the terminal or the console it will be this one.**
+
+
 
 ## Git
 
-To install `git`, first open an Ubuntu terminal. To open an Ubuntu terminal, hit **Start**, type **windows terminal**, and click on **Windows Terminal (Preview)**, then open an **Ubuntu** tab via the drop-down menu next to the already open Windows Powershell tab.
+To install `git`:
 
-Then copy and paste the following lines **one line at a time** (note that you can paste by doing a right click in the terminal):
+
+>\- Open an Ubuntu terminal.  
+>\- Copy and paste the following lines:
+
 
 ```bash
 sudo apt update
 ```
 ```bash
 sudo apt install -y git apt-transport-https unzip gnome-terminal
-```
+````
 
 
 ## Oh-my-zsh - Fancy your Terminal
@@ -316,7 +689,37 @@ At then end, your terminal should look like this:
 
 ![zsh](images/wsl2_zsh.jpg)
 
-If it doesn't, **ask a teacher**.
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :x: If it does not, please **contact a teacher**.
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If everything is correct, let's configure GitHub!
+
+---
+
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>Error: "chsh command unsuccessful. Change your default shell manually."</summary>
+
+  &nbsp;
+  
+  
+  You probably typed the wrong password when asked.
+  Starting the script again will not work as it will try to create a configuration folder that now already exists !
+
+  We need to remove it first:
+
+  ```bash
+  rm -rf ~/.oh-my-zsh
+  ```
+
+
+  Then let's try again!
+</details>
+
+---
 
 
 ## GitHub
@@ -345,29 +748,57 @@ Then you need to give your **public** key to GitHub. Run:
 cat ~/.ssh/id_ed25519.pub
 ```
 
-It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
-then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
-**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
-Finish by clicking on the **Add key** green button.
+It will prompt on the screen the content of the `id_ed25519.pub` file.
 
-To check that this step is completed, in the terminal run this. You will be
-prompted a warning, type `yes` then `Enter`.
+
+>\- Copy that text from `ssh` to the end of your email address  
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)  
+>\- Click on `Add SSH key`  
+>\- Fill in the Title with your computer name  
+>\- Paste the **Key**  
+>\- Finish by clicking on the **Add key** green button.
+
+
+To check that this step is completed, in the terminal run this.
 
 ```bash
 ssh -T git@github.com
 ```
 
-If you see something like this, you're done!
+:warning: You will be prompted a warning, type `yes` then `Enter`.
 
-```bash
+This is the expected result:
+
+```
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-If it does not work, try running this before trying again the `ssh -T` command:
+&nbsp;
 
-```bash
-ssh-add ~/.ssh/id_ed25519
-```
+&nbsp;&nbsp;&nbsp; :white_check_mark: If you got this message, the keys were added successfully!
+
+&nbsp;&nbsp;&nbsp; :x: If you encountered an error, you will have to try again. Do not hesitate to *contact a teacher*.
+
+
+---
+
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>If `ssh -T git@github.com` does not work</summary>
+
+  &nbsp;
+  
+  
+  Try running this command before trying again:
+
+  ```bash
+  ssh-add ~/.ssh/id_ed25519
+  ```
+  </details>
+
+---
+
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
@@ -378,6 +809,8 @@ understanding of what those keys are used for.
 This is not used at the beginning of the course, but let's get a head start and install nodejs, used for Javascript :thumbsup:.
 
 Copy paste the following commands:
+
+
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 ```
@@ -385,20 +818,23 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
 
+
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account.
-
-You should arrive on a page that looks like this. Make sure to **select your GitHub account**.
+>\- [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account  
+>\- You should arrive on a page that looks like below  
+>\- Make sure to **select your GitHub account**.
 
 ![](images/fork.png)
 
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
 
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
-own github usernickname.
+Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`.
+
+We need to fork because each of you will need to put specific information (e.g. your name) in those files.
+
+>\- Open your terminal.
 
 ```bash
 export GITHUB_USERNAME=replace_this_with_your_github_username
@@ -406,52 +842,73 @@ export GITHUB_USERNAME=replace_this_with_your_github_username
 # Example:
 #   export GITHUB_USERNAME=ssaunier
 ```
+:warning: **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your* own GitHub usernickname.
 
-Now copy/paste this very long line in your terminal. Do **not** change this one.
+
+&nbsp;
+
+
+Now let's get your new default configuration on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
 ```
 
-Run the `dotfiles` installer.
+Run the `dotfiles` installer:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-```bash
-zsh install.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
 Then run the git installer:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-```bash
-zsh git_setup.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
+:point_up: This will **prompt** you for your name (`Firstname Lastname`), then your email.
 
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
 
-Copy the following command in your terminal to open the `~/.zshrc` profile file in Visual Code Studio:
+:warning: Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+
+
+&nbsp;
+
+
+Let us open the `~/.zshrc` profile file in Visual Code Studio and change slightly its content:
+
 ```bash
 code ~/.zshrc
 ```
-Locate the line `# Actually load Oh-My-Zsh` and **above it** write the following line:
+
+>\- Locate the line `# Actually load Oh-My-Zsh`  
+>\- **Above it** write the following line:
+
 ```bash
 ZSH_DISABLE_COMPFIX=true
 ```
 
+&nbsp;
 
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`.
-Spot the line starting with `plugins=` Then add `ssh-agent` to the plugins list. The list should look like:
+
+You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`:
+
+
+>\- Spot the line starting with `plugins=`  
+>\- Add `ssh-agent` to the plugins list.
+
+The list should look like:
 
 ```
 plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
-Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
+
+&nbsp;
+
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
+
+
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
@@ -469,8 +926,14 @@ Then in the terminal, run:
 
 ```bash
 sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+```
+```bash
 sudo apt clean
+```
+```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
@@ -504,7 +967,13 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ---
 
-:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+<details>
+  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+
+
+  &nbsp;
+  
+  :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
 # China only!
@@ -515,6 +984,7 @@ gem sources -l
 # https://gems.ruby-china.com/
 # Ruby-china.com must be in the list now
 ```
+</details>
 
 ---
 
@@ -543,25 +1013,48 @@ Rerun the command to install the gems.
 (or the Terminal) telling you to do so.
 
 
-To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal:
-Run the appropriate command in your terminal:
+## Linking your default browser to Ubuntu
+To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
 
-If you're using Google Chrome.
-```bash
-echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe" >> ~/.zshrc
-```
-If you're using Mozilla Firefox.
-```bash
-echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe" >> ~/.zshrc
-```
+
+<details>
+  <summary>Google Chrome as your default browser</summary>
+
+  &nbsp;
+  
+  
+  Run the command:
+
+
+  ```bash
+  echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe" >> ~/.zshrc
+  ```
+</details>
+
+
+<details>
+  <summary>Mozilla Firefox as your default browser</summary>
+
+  &nbsp;
+  
+  
+  Run the command:
+
+
+  ```bash
+  echo "export BROWSER=/mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe" >> ~/.zshrc
+  ```
+</details>
+
 
 Restart your terminal.
 
 
 ## Postgresql
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
-an open-source robust and production-ready database. Let's install it now.
+In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql, an open-source robust and production-ready database.
+
+Let's install it now.
 
 
 ```bash
@@ -585,6 +1078,7 @@ sudo chmod 440 /etc/sudoers.d/postgresql
 ```bash
 echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```
+
 
 ## Check-up
 

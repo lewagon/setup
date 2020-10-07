@@ -1,29 +1,89 @@
 ## Windows Terminal
 
-As with Ubuntu, click on **Start**, type **Microsoft Store**, and launch it.
+The standard Ubuntu terminal is a very crude way of using Ubuntu; let's use a real modern terminal!
 
-In the search bar, type **terminal**, then in the list of results, click on **Windows Terminal (Preview)**.
+### Installation
 
-Install it, and afterwards **reboot** your computer.
-
-After the restart, click on **Start** and type **terminal**. Open **Windows Terminal (Preview)**
-
-This terminal allows you to open multiple terminal tools, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier :point_up_2: This terminal has tabs. Locate the **down arrow** / v-shape next to the open tab, and click on it. It will show you all the terminals you can open from here, but for the rest of this guide, we will only need **Ubuntu**.
+We first need to install **Windows Terminal** from the Microsoft Windows Store:
 
 
-Let's make Ubuntu the default terminal of your Windows terminal application. Press **`Ctrl` + `,`**. It should open the settings:
+>\- Click on `Start`  
+>\- Type  `Microsoft Store`  
+>\- Click on the Microsoft Windows Store in the list
+>
+>
+>\- Search for `Windows Terminal` in the search bar
+>
+>
+>\- Click on `Install`
+
+
+Once the installation is done, the `Install` button becomes a `Launch` button:
+
+
+>\- Click on `Launch`  
+>\- Right Click on the icon in the taskbar  
+>\- Choose to pin the app to the bar
+
+
+This terminal allows you to open multiple terminal sessions, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier.
+
+This terminal has tabs: you can choose to open a new terminal tab clicking on the **down arrow** / **v-shape** next to the current one.
+
+:warning: From now on, we will only need **Ubuntu** as a terminal.
+
+### Ubuntu as the default terminal
+
+Let's make Ubuntu the default terminal of your Windows Terminal application.
+
+
+>\- Press `Ctrl` + `,`
+
+
+It should open the settings:
 
 ![wsl2_settings](images/wsl2_settings.jpg)
 
-We have put in red the important parts.
-Locate the `"name": "Ubuntu",`.
-Add the following line after it (**don't forget the comma at the end**):
+We have put in red the part we will use or change.
+
+
+&nbsp;
+
+
+First, let us ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
+
+
+
+>\- Locate the `"name": "Ubuntu",`  
+>\- Add the following line after it:
+
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-session-name-you-chose-at-the-ubuntu-install",
+"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
 ```
 
-Locate the `"guid"` in red, copy the value between `{` and `}`.
+:warning: Do not forget the comma at the end of the line!
 
-Locate the `"defaultProfile"` and replace the value between `{` and `}` with what you copied from above.
+:warning: Do not forget to replace the username by your own in the line above!
 
-Voilà, your **Windows Terminal** :confetti_ball: is setup! From now on, every time we will refer to the terminal/console it will be this one.
+
+
+&nbsp;
+
+Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launched:
+
+
+
+
+>\- Locate the `"guid"` for Ubuntu  
+>\- Copy the value between `{` and `}`  
+>\- Locate the `"defaultProfile"`  
+>\- Replace the value between `{` and `}` with what you copied from above
+
+
+:warning: Do not forget to save those changes!
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **From now on, every time we will refer to the terminal or the console it will be this one.**
+
