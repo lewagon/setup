@@ -36,8 +36,7 @@ In VS Code:
 >\- Click on `Preferences`  
 >\- Click on `Keymaps`  
 >\- Click on `Sublime Text Keymap and Settings Importer`  
->\- Click on `Install`  
->\- Click on `Reload Required`
+>\- Click on `Install`
 
 
 ### VS Code Extensions
