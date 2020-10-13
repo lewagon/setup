@@ -7,6 +7,7 @@ The goal is to gather here all tips and known issues about WSL2!
     - [ERR_CONNECTION_REFUSED](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused)
     - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
     - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
+    - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
@@ -93,6 +94,16 @@ Locate the file `compatscancache.dat` and **delete it**
 Go back to the update assistant and click **Refresh**.
 
 The installation should carry on.
+
+## Sudo apt update connection timed out
+
+This happens if you're using AVG antivirus.
+Disable AVG VPN if you're using it.
+
+Open AVG Internet Security -> Menu - Settings - Full Protection - Enhanced firewall. Check `Enable Internet connection sharing mode`
+On the same page, click on **System Rules** and enabled the first 2 options `Windows file & printer sharing` `Remote desktop connections`
+Scroll down to click on save.
+
 
 # Tips
 
