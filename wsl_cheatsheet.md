@@ -100,7 +100,7 @@ The installation should carry on.
 This happens if you're using AVG antivirus.
 Disable AVG VPN if you're using it.
 
-Open AVG Internet Security -> Menu - Settings - Full Protection - Enhanced firewall. Check `Enable Internet connection sharing mode`
+Open AVG Internet **Security -> Menu - Settings - Full Protection - Enhanced firewall**. Check `Enable Internet connection sharing mode`
 On the same page, click on **System Rules** and enabled the first 2 options `Windows file & printer sharing` `Remote desktop connections`
 Scroll down to click on save.
 
