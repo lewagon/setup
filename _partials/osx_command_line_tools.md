@@ -1,4 +1,4 @@
-## ## A note about quitting apps on a Mac
+## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
@@ -8,24 +8,16 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open the Terminal (click the magnifying glass icon in the top right corner of your screen and type `Terminal`):
+Go to [Downloads for Apple Developers](https://developer.apple.com/download/more/).
 
-![](images/open-terminal.png)
+Sign in or create an account.
 
-Copy-paste the following command in the terminal and hit Enter.
+Download [Command Line Tools for Xcode 12](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_12/Command_Line_Tools_for_Xcode_12.dmg).
 
-```bash
-xcode-select --install
-```
+Open the `Command_Line_Tools_for_Xcode_12.dmg` file by double clicking on it.
 
-If you'll receive the following message, you can just skip this step and go to next step.
+Open the `Command Line Tools.pkg` file by double clicking on it and follow the instructions.
 
-```
-# command line tools are already installed, use "Software Update" to install updates
-```
+If you see the following message, you can proceed to the following step. If it fails, call a teacher.
 
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple servers are overloaded.
-
-![](images/xcode-select-install.png)
-
-While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
+![macos_cl_tools_success.png](images/macos_cl_tools_success.png)
