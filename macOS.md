@@ -59,7 +59,7 @@ Copy-paste the following command in the terminal and hit Enter.
 xcode-select --install
 ```
 
-If you'll receive the following message, you can just skip this step and go to next step.
+If you receive the following message, you can just skip this step and go to next step.
 
 ```
 # command line tools are already installed, use "Software Update" to install updates
@@ -70,6 +70,26 @@ Otherwise, it will open a window asking you if you want to install some software
 ![](images/xcode-select-install.png)
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
+
+If you receive the following message, you need to update the sofware update catalog.
+
+```
+Xcode is not currently available from the Software Update server
+```
+
+In this case, copy-paste the following command in the terminal and hit Enter.
+
+```bash
+sudo softwareupdate --clear-catalog
+```
+
+Once this is done, you can try to install again (copy-paste the following command and hit enter).
+
+```bash
+xcode-select --install
+```
+
+Then follow the previous instructions for this command.
 
 
 ## GitHub account
