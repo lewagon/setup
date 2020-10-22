@@ -8,6 +8,7 @@ The goal is to gather here all tips and known issues about WSL2!
     - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
     - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
     - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
+    - [Slow network](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#slow-network)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
@@ -103,6 +104,32 @@ Disable AVG VPN if you're using it.
 Open AVG Internet **Security -> Menu - Settings - Full Protection - Enhanced firewall**. Check `Enable Internet connection sharing mode`
 On the same page, click on **System Rules** and enabled the first 2 options `Windows file & printer sharing` `Remote desktop connections`
 Scroll down to click on save.
+
+## Slow network
+
+If you experience slow network on your fresh WSL2:
+
+ - Open Ubuntu (or your other distro)
+
+ - Open Network Connections in your settings ("View network connections" in your windows search)
+
+ - You should see
+
+ ```bash
+   vEthernet (WSL)
+   Enabled
+   Hyper-V Virtual Ethernet Adapter
+```
+
+ - Right-click and open Properties
+
+ - In the Properties pane, click Configure...
+
+ - In the Configure pane, go to the "Advanced" Tab
+
+ - Click on "Large Send Offload Version 2" and update the value to "Disabled"
+
+If you see two "Large Send Offload Version" options, disable both.
 
 
 # Tips
