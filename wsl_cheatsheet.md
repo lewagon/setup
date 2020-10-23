@@ -4,7 +4,7 @@ The goal is to gather here all tips and known issues about WSL2!
 
  - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
-    - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused-unable-to-reach-localhost)
+    - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
     - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
     - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
     - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
