@@ -9,6 +9,7 @@ The goal is to gather here all tips and known issues about WSL2!
     - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
     - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
     - [Slow network](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#slow-network)
+    - [Unable to reach localhost:8000 while running serve](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#unable-to-reach-localhost8000-while-running-serve)
  - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
     - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
     - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
@@ -52,7 +53,7 @@ For the program, Select `The program path:` and paste this path: `%SystemRoot%\S
 
 For the Action section, make sure `Allow the connection` is selected and hit **Next**.
 
-For the Profile section, make sure the 3 options are selected and click on **Next**. 
+For the Profile section, make sure the 3 options are selected and click on **Next**.
 
 Finally you will be asked to chose a name for this new rule, go with `WSL - Inbound`.
 
@@ -130,6 +131,22 @@ If you experience slow network on your fresh WSL2:
  - Click on "Large Send Offload Version 2" and update the value to "Disabled"
 
 If you see two "Large Send Offload Version" options, disable both.
+
+## Unable to reach localhost:8000 while running `serve`
+
+⚠️ Issue solved thanks to [this thread](https://github.com/microsoft/WSL/issues/4636), but seems to be a mix of several issues that lead to the same outcome, localhost unreachable.
+
+
+If the alias `localhost:8000` for the local machine is not working, try to connect to the local IP of the machine on `127.0.0.1:8000` instead.
+
+If that is still not reaching the server, follow these instructions to restart `wsl` :
+
+ - Open a new Windows PowerShell tab in the terminal
+ - Run `wsl --shutdown` to shutdown WSL.
+ - Run `wsl` or open a new tab to restart WSL.
+ - Change directory to the one dedicated to the exercise
+ - Run `serve`
+ - Access to at least `127.0.0.1:8000` should be available.
 
 
 # Tips
