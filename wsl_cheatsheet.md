@@ -4,7 +4,7 @@ The goal is to gather here all tips and known issues about WSL2!
 
  - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
     - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
-    - [ERR_CONNECTION_REFUSED](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused)
+    - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused-unable-to-reach-localhost)
     - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
     - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
     - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
@@ -35,9 +35,16 @@ wsl -l -v
 
 Open a new WSL2 Tab, problem should be fixed.
 
-## ERR_CONNECTION_REFUSED
+## ERR_CONNECTION_REFUSED / Unable to reach localhost
 
-If you get this error trying to connected to your `rails server` or `jupyter notebook`, you need to allow the connection in Windows Defender Public rules.
+If you get this error trying to connect to your `rails server`, `serve` or `jupyter notebook`, a simple restart of WSL might do the trick.
+ - Open a new PowerShell tab
+ - Run `wsl --shutdown` to shutdown WSL.
+ - Open a new PowerShell tab or run `wsl` to restart WSL.
+ - Retry to connect to `localhost:xxxx`. You can as well try `127.0.0.1:xxxx` (the local IP of the machine) instead.
+
+
+If the issue is still present, you need to allow the connection in Windows Defender Public rules.
 Close all WSL terminal. Open a Powershell terminal and type the following command to stop all WSL processes:
 ```bash
 wsl --shutdown Ubuntu
@@ -131,23 +138,6 @@ If you experience slow network on your fresh WSL2:
  - Click on "Large Send Offload Version 2" and update the value to "Disabled"
 
 If you see two "Large Send Offload Version" options, disable both.
-
-## Unable to reach localhost:8000 while running `serve`
-
-⚠️ Issue solved thanks to [this thread](https://github.com/microsoft/WSL/issues/4636), but seems to be a mix of several issues that lead to the same outcome, localhost unreachable.
-
-
-If the alias `localhost:8000` for the local machine is not working, try to connect to the local IP of the machine on `127.0.0.1:8000` instead.
-
-If that is still not reaching the server, follow these instructions to restart `wsl` :
-
- - Open a new Windows PowerShell tab in the terminal
- - Run `wsl --shutdown` to shutdown WSL.
- - Run `wsl` or open a new tab to restart WSL.
- - Change directory to the one dedicated to the exercise
- - Run `serve`
- - Access to `127.0.0.1:8000` should be available.
-
 
 # Tips
 
