@@ -146,7 +146,7 @@ If that is still not reaching the server, follow these instructions to restart `
  - Run `wsl` or open a new tab to restart WSL.
  - Change directory to the one dedicated to the exercise
  - Run `serve`
- - Access to at least `127.0.0.1:8000` should be available.
+ - Access to `127.0.0.1:8000` should be available.
 
 
 # Tips
