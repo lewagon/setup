@@ -27,7 +27,7 @@ To check your Windows version:
 
   &nbsp;
   - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
-  - Install it. It should take roughly an hour, bu this is dependent on your computer
+  - Install it. It should take roughly an hour, but this is dependent on your computer
 </details>
 
 ---
