@@ -86,7 +86,7 @@ Open Windows Update:
   &nbsp;
   
   
-  Some antiviruses and pieces of software desactivate the Update service we need, resulting in the error you see. Let's fix that!
+  Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
 
 
   >\- Press `Windows` + `R`  
@@ -228,10 +228,10 @@ If you are not familiar with video calls, here is a great [article](https://mart
 ### Install WSL 1
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-We will install WSL through the Powershell Terminal:
+We will install WSL through the PowerShell Terminal:
 
 
-:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
 
 >\- Press `Windows` + `R`  
@@ -247,7 +247,7 @@ A blue terminal window will appear:
 
 
 >\- Copy the following commands  
->\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
+>\- Paste them into the PowerShell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
 >\- Run them by pressing `Enter`
 
 
@@ -348,7 +348,7 @@ wsl --set-default-version 2
   >\- Press `Enter`
 
 
-  Find the right software to uninstall, and click on the uninstall button.
+  Find the right software to uninstall and click on the uninstall button.
 </details>
 
 ---
@@ -428,7 +428,7 @@ wsl -l -v
 </details>
 
 <details>
-  <summary>Check for Uncompress Files</summary>
+  <summary>Check for Uncompressed Files</summary>
 
 
   &nbsp;
@@ -444,7 +444,7 @@ wsl -l -v
   >\- Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
   
 
-  Apply changes to this folder only, and try to convert the Ubuntu WSL version again.
+  Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
 
   &nbsp;&nbsp;&nbsp; :x: If the conversion still does not work, please **contact a teacher**.
@@ -592,7 +592,7 @@ Once the installation is done, the `Install` button becomes a `Launch` button:
 >\- Choose to pin the app to the bar
 
 
-This terminal allows you to open multiple terminal sessions, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier.
+This terminal allows you to open multiple terminal sessions, including **PowerShell**, **Command Prompt**, and **Ubuntu** that you installed earlier.
 
 This terminal has tabs: you can choose to open a new terminal tab clicking on the **down arrow** / **v-shape** next to the current one.
 
@@ -684,7 +684,7 @@ sudo apt install -y zsh curl vim nodejs imagemagick jq
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-At then end, your terminal should look like this:
+At the end, your terminal should look like this:
 
 ![zsh](images/wsl2_zsh.jpg)
 
@@ -706,7 +706,7 @@ At then end, your terminal should look like this:
   
   
   You probably typed the wrong password when asked.
-  Starting the script again will not work as it will try to create a configuration folder that now already exists !
+  Starting the script again will not work as it will try to create a configuration folder that now already exists!
 
   We need to remove it first:
 
@@ -890,7 +890,7 @@ ZSH_DISABLE_COMPFIX=true
 &nbsp;
 
 
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`:
+You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
 
 >\- Spot the line starting with `plugins=`  
@@ -911,7 +911,7 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
@@ -1049,9 +1049,9 @@ To be sure that you can interact with your browser installed on Windows from you
 Restart your terminal.
 
 
-## Postgresql
+## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql, an open-source robust and production-ready database.
+In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL, an open-source robust and production-ready database.
 
 Let's install it now.
 
