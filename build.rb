@@ -14,6 +14,7 @@ MAC_OS = %w[intro
   ssh_osx
   rbenv_osx
   rbenv_ruby
+  osx_nvm
   osx_postgresql
   osx_security
   checkup
