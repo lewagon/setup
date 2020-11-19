@@ -32,6 +32,7 @@ UBUNTU = %w[intro
   dotfiles
   rbenv_ubuntu
   rbenv_ruby
+  ubuntu_nvm
   ubuntu_postgresql
   ubuntu_inotify
   ubuntu_extra
