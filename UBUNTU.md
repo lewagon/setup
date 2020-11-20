@@ -85,7 +85,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim imagemagick jq
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
 ```
