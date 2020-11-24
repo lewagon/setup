@@ -10,6 +10,30 @@ To do so, open your Terminal and run:
 
 This will ask for your confirmation (hit `Enter`) and your laptop session password.
 
+---
+
+<details>
+  <summary>Click here if you are using <bold>Apple ARM</bold></summary>
+
+  &nbsp;
+  
+  :warning: Brew is actually not 100% compatible with macOS 11 Big Sur. oOu can [check the status on the issue](https://github.com/Homebrew/brew/issues/7857).
+
+```bash
+# Apple ARM processor only!
+Homebrew is not (yet) supported on ARM processors!
+Rerun the Homebrew installer under Rosetta 2.
+```
+
+To get Homebrew working, let’s install it using Rosetta:
+```bash
+arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+</details>
+
+---
+
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
 Then install some useful software:
