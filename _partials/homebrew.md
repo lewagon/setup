@@ -30,10 +30,6 @@ To get Homebrew working, let’s install it using Rosetta:
 arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-```
-alias ibrew='arch -x86_64 /usr/local/bin/brew'
-```
-
 </details>
 
 ---
