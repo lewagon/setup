@@ -17,7 +17,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
                         /____/                       ....is now installed!
 ````
 
-Now quit the Terminal (`⌘` + `Q`), and restart it.
+Now quit the Terminal (`⌘` + `Q`) and restart it.
 
 You should see something like this:
 

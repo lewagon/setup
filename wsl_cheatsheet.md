@@ -23,7 +23,7 @@ This happens when the hidden `wslhost.exe` is not working. We just need to resta
 
 Close all WSL2 tabs.
 
-Open a Powershell tab and run the following command:
+Open a PowerShell tab and run the following command:
 ```bash
 wsl.exe --shutdown
 ```
@@ -44,7 +44,7 @@ If you get this error trying to connect to your `rails server`, `serve` or `jupy
 
 
 If the issue is still present, you need to allow the connection in Windows Defender Public rules.
-Close all WSL terminal. Open a Powershell terminal and type the following command to stop all WSL processes:
+Close all WSL terminal. Open a PowerShell terminal and type the following command to stop all WSL processes:
 ```bash
 wsl --shutdown Ubuntu
 ```
@@ -142,7 +142,7 @@ If you see two "Large Send Offload Version" options, disable both.
 
 ## Check Windows Subsystem for Linux
 
-Open a Powershell terminal.
+Open a PowerShell terminal.
 
 Type the following command:
 ```bash
@@ -154,7 +154,7 @@ It will tell you the name of your WSL, it's state and version.
 
 ## Switch from version 1 to version 2
 
-To switch a WSL from version 1 to 2, open a Powershell terminal.
+To switch a WSL from version 1 to 2, open a PowerShell terminal.
 
 Type the following command:
 ⚠️ The conversion's time depends on the size of your Ubuntu filesystem, it can be long and WSL will be unsuable in the meantime. ⚠️
@@ -170,7 +170,7 @@ wsl --set-version Ubuntu 1
 
 ## Access root session
 
-To access the `root` session, open a Powershell terminal.
+To access the `root` session, open a PowerShell terminal.
 
 Type the following command:
 ```bash
@@ -200,7 +200,7 @@ Testing wont work by default on WSL2. It requires ChromeDriver and Chrome binary
 You may skip the reset of the password if you already have one for your root session.
 
 Close all WSL2 tabs.
-Open a Powershell tab and run the following command:
+Open a PowerShell tab and run the following command:
 ```bash
 wsl -d Ubuntu -u root
 ```

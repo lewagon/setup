@@ -1,6 +1,6 @@
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm

@@ -27,7 +27,7 @@ You can close Zoom now.
 
 ### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
@@ -167,7 +167,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
                         /____/                       ....is now installed!
 ````
 
-Now quit the Terminal (`⌘` + `Q`), and restart it.
+Now quit the Terminal (`⌘` + `Q`) and restart it.
 
 You should see something like this:
 
@@ -366,7 +366,7 @@ Host *
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
@@ -391,7 +391,7 @@ brew install rbenv
 Again, quit all your terminal windows and restart.
 
 
-Now, you are ready to install the latest ruby version, and set it as the default version.
+Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
@@ -423,7 +423,7 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 
   &nbsp;
-  
+
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
@@ -464,9 +464,9 @@ Rerun the command to install the gems.
 (or the Terminal) telling you to do so.
 
 
-## Postgresql
+## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
 an open-source robust and production-ready database. Let's install it now.
 
 ```bash
@@ -494,9 +494,9 @@ To quit it, type `\q` then `Enter`.
 
 ## Security
 
-It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
+It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
-You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
+You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
 
 
 ## Check-up
@@ -526,7 +526,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store, and sign in to `lewagon-alumni` organization.
+[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store and sign in to `lewagon-alumni` organization.
 
 Make sure you upload a picture there.
 

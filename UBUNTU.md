@@ -27,7 +27,7 @@ You can close Zoom now.
 
 ### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
@@ -262,7 +262,7 @@ When it's done, you can close Sublime Text.
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
@@ -290,7 +290,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 **Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
-Now, you are ready to install the latest ruby version, and set it as the default version.
+Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
@@ -322,7 +322,7 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 
   &nbsp;
-  
+
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
@@ -363,9 +363,9 @@ Rerun the command to install the gems.
 (or the Terminal) telling you to do so.
 
 
-## Postgresql
+## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
 an open-source robust and production-ready database. Let's install it now.
 
 ```
@@ -376,7 +376,7 @@ sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 
 ## Ubuntu inotify
 
-Ubuntu is always tracking changes in your folders, and to do this it uses inotify.
+Ubuntu is always tracking changes in your folders and to do this it uses inotify.
 By default the Ubuntu limit is set to 8192 files monitored.
 
 As programming involves a lot of files, we need to raise this limit.
@@ -385,6 +385,7 @@ In your terminal run:
 ```bash
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
+
 
 ## Extra
 
