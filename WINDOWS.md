@@ -1129,6 +1129,7 @@ It should tell you if your workstation is ready :) If not, ask a teacher.
 
 
 ## Alumni
+:warning: **If you have received an email from Le Wagon inviting you to sign up on Kitt (our learning platform), you can safely skip this step and follow the instructions in the email you received. If you are unsure, please ask a teacher for help.**
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
 
