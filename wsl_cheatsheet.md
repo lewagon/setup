@@ -2,18 +2,19 @@ Hello and welcome to this WSL2 Cheatsheet.
 
 The goal is to gather here all tips and known issues about WSL2!
 
- - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
-    - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
-    - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
-    - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
-    - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
-    - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
-    - [Slow network](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#slow-network)
- - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
-    - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
-    - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
-    - [Access root session](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#access-root-session)
-    - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#testing-on-rails)
+- [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
+  - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
+  - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
+  - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
+  - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
+  - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
+  - [Slow network](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#slow-network)
+  - [Cloudinary: Stale request](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#stale-request)
+- [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
+  - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
+  - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
+  - [Access root session](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#access-root-session)
+  - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#testing-on-rails)
 
 # Issues
 
@@ -24,10 +25,13 @@ This happens when the hidden `wslhost.exe` is not working. We just need to resta
 Close all WSL2 tabs.
 
 Open a PowerShell tab and run the following command:
+
 ```bash
 wsl.exe --shutdown
 ```
+
 Check that your Ubuntu is properly stopped with the command
+
 ```bash
 wsl -l -v
 ```
@@ -37,14 +41,15 @@ Open a new WSL2 Tab, problem should be fixed.
 ## ERR_CONNECTION_REFUSED / Unable to reach localhost
 
 If you get this error trying to connect to your `rails server`, `serve` or `jupyter notebook`, a simple restart of WSL might do the trick.
- - Open a new PowerShell tab
- - Run `wsl --shutdown` to shutdown WSL.
- - Open a new PowerShell tab or run `wsl` to restart WSL.
- - Retry to connect to `localhost:xxxx`. You can as well try `127.0.0.1:xxxx` (the local IP of the machine) instead.
 
+- Open a new PowerShell tab
+- Run `wsl --shutdown` to shutdown WSL.
+- Open a new PowerShell tab or run `wsl` to restart WSL.
+- Retry to connect to `localhost:xxxx`. You can as well try `127.0.0.1:xxxx` (the local IP of the machine) instead.
 
 If the issue is still present, you need to allow the connection in Windows Defender Public rules.
 Close all WSL terminal. Open a PowerShell terminal and type the following command to stop all WSL processes:
+
 ```bash
 wsl --shutdown Ubuntu
 ```
@@ -116,27 +121,43 @@ Scroll down to click on save.
 
 If you experience slow network on your fresh WSL2:
 
- - Open Ubuntu (or your other distro)
+- Open Ubuntu (or your other distro)
 
- - Open Network Connections in your settings ("View network connections" in your windows search)
+- Open Network Connections in your settings ("View network connections" in your windows search)
 
- - You should see
+- You should see
 
- ```bash
-   vEthernet (WSL)
-   Enabled
-   Hyper-V Virtual Ethernet Adapter
+```bash
+  vEthernet (WSL)
+  Enabled
+  Hyper-V Virtual Ethernet Adapter
 ```
 
- - Right-click and open Properties
+- Right-click and open Properties
 
- - In the Properties pane, click Configure...
+- In the Properties pane, click Configure...
 
- - In the Configure pane, go to the "Advanced" Tab
+- In the Configure pane, go to the "Advanced" Tab
 
- - Click on "Large Send Offload Version 2" and update the value to "Disabled"
+- Click on "Large Send Offload Version 2" and update the value to "Disabled"
 
 If you see two "Large Send Offload Version" options, disable both.
+
+## Cloudinary: Stale request
+
+If you see issues connecting to your Cloudinary API from your local WSL and you saw this error.
+
+```
+Stale request - reported time is 2016-12-15 04:14:53 +0000 which is more than 1 hour ago
+```
+
+The error is caused by a different system time between the WSL OS and the windows host machine. To fix it, please run this command in your windows terminal:
+
+```
+sudo hwclock -s
+```
+
+Type your WSL password and click enter.
 
 # Tips
 
@@ -145,12 +166,12 @@ If you see two "Large Send Offload Version" options, disable both.
 Open a PowerShell terminal.
 
 Type the following command:
+
 ```bash
 wsl -l -v
 ```
 
 It will tell you the name of your WSL, it's state and version.
-
 
 ## Switch from version 1 to version 2
 
@@ -158,32 +179,37 @@ To switch a WSL from version 1 to 2, open a PowerShell terminal.
 
 Type the following command:
 ⚠️ The conversion's time depends on the size of your Ubuntu filesystem, it can be long and WSL will be unsuable in the meantime. ⚠️
+
 ```bash
 wsl --set-version Ubuntu 2
 ```
 
 You can revert to version 1:
+
 ```bash
 wsl --set-version Ubuntu 1
 ```
-
 
 ## Access root session
 
 To access the `root` session, open a PowerShell terminal.
 
 Type the following command:
+
 ```bash
 wsl -d Ubuntu -u root
 ```
 
 You can change the password of that `root` session by using the command:
+
 ```bash
 passwd
 ```
+
 You will prompted to enter a new password.
 
 Now, from your normal session, you can switch from your session to the `root` on with:
+
 ```bash
 su -
 ```
@@ -191,7 +217,6 @@ su -
 You will be asked for the password.
 
 You can exit the `root` session with `Ctrl + D`.
-
 
 ## Testing on Rails
 
@@ -201,6 +226,7 @@ You may skip the reset of the password if you already have one for your root ses
 
 Close all WSL2 tabs.
 Open a PowerShell tab and run the following command:
+
 ```bash
 wsl -d Ubuntu -u root
 ```
@@ -208,6 +234,7 @@ wsl -d Ubuntu -u root
 You are now login in your Ubuntu as `root`.
 
 Type the following command to change it's password:
+
 ```bash
 passwd
 ```
@@ -217,25 +244,31 @@ You will be prompted twice for a new password.
 Close this WSL2 tab.
 
 Open a WSL2 tab, you should be logged in with **your** account. Run the following command (**line per line**):
+
 ```bash
 sudo apt-get update
 sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
 ```
 
 We need to act as the `root` session for the next command, so let's login as root (you will be prompted for the `root` password):
+
 ```bash
 su -
 ```
+
 Now, let's run:
+
 ```bash
 sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
 sudo echo "deb [arch=amd64]  http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
 ```
+
 Press `Ctrl+D` to quit the root session.
 
-If you are unsure about which session you're logged in with, you can use the ```whoami``` command 💡.
+If you are unsure about which session you're logged in with, you can use the `whoami` command 💡.
 
 Let's run the following commands to install Google Chrome binary and ChromeDriver on your WSL2:
+
 ```bash
 sudo apt-get -y update
 sudo apt-get -y install google-chrome-stable
@@ -245,14 +278,18 @@ sudo mv chromedriver /usr/bin/chromedriver
 sudo chown your-session-here:your-session-here /usr/bin/chromedriver
 sudo chmod +x /usr/bin/chromedriver
 ```
-⚠️ Replace **your-session-here** by the result of the command ```whoami```.
-My result is ```barangerbenjamin:barangerbenjamin```. ⚠️
+
+⚠️ Replace **your-session-here** by the result of the command `whoami`.
+My result is `barangerbenjamin:barangerbenjamin`. ⚠️
 
 You can now use testing in Rails. You need to open a second tab and run:
+
 ```bash
 chromedriver
 ```
+
 In the other tab you can run your tests with:
+
 ```bash
 rails test:system
 ```
