@@ -9,7 +9,7 @@ The goal is to gather here all tips and known issues about WSL2!
   - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#update-version-2004-not-offered)
   - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#sudo-apt-update-connection-timed-out)
   - [Slow network](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#slow-network)
-  - [Cloudinary: Stale request](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#stale-request)
+  - [Cloudinary: Stale request](https://github.com/primaulia/setup/blob/master/wsl_cheatsheet.md#cloudinary-stale-request)
 - [Tips](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#tips)
   - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#check-windows-subsystem-for-linux)
   - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#switch-from-version-1-to-version-2)
