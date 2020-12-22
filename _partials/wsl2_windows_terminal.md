@@ -7,8 +7,8 @@ The standard Ubuntu terminal is a very crude way of using Ubuntu; let's use a re
 We first need to install **Windows Terminal** from the Microsoft Windows Store:
 
 
->\- Click on `Start`  
->\- Type  `Microsoft Store`  
+>\- Click on `Start`
+>\- Type  `Microsoft Store`
 >\- Click on the Microsoft Windows Store in the list
 >
 >
@@ -21,12 +21,12 @@ We first need to install **Windows Terminal** from the Microsoft Windows Store:
 Once the installation is done, the `Install` button becomes a `Launch` button:
 
 
->\- Click on `Launch`  
->\- Right Click on the icon in the taskbar  
+>\- Click on `Launch`
+>\- Right Click on the icon in the taskbar
 >\- Choose to pin the app to the bar
 
 
-This terminal allows you to open multiple terminal sessions, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier.
+This terminal allows you to open multiple terminal sessions, including **PowerShell**, **Command Prompt** and **Ubuntu** that you installed earlier.
 
 This terminal has tabs: you can choose to open a new terminal tab clicking on the **down arrow** / **v-shape** next to the current one.
 
@@ -54,7 +54,7 @@ First, let us ask Ubuntu to start directly inside your Ubuntu Home Directory ins
 
 
 
->\- Locate the `"name": "Ubuntu",`  
+>\- Locate the `"name": "Ubuntu",`
 >\- Add the following line after it:
 
 ```bash
@@ -74,9 +74,9 @@ Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launc
 
 
 
->\- Locate the `"guid"` for Ubuntu  
->\- Copy the value between `{` and `}`  
->\- Locate the `"defaultProfile"`  
+>\- Locate the `"guid"` for Ubuntu
+>\- Copy the value between `{` and `}`
+>\- Locate the `"defaultProfile"`
 >\- Replace the value between `{` and `}` with what you copied from above
 
 
@@ -84,6 +84,6 @@ Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launc
 
 &nbsp;
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:  
+&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **From now on, every time we will refer to the terminal or the console it will be this one.**
 

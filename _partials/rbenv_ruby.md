@@ -1,4 +1,4 @@
-Now, you are ready to install the latest ruby version, and set it as the default version.
+Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
@@ -30,7 +30,7 @@ You should see something starting with `ruby <RUBY_VERSION>p`. If not, ask a tea
 
 
   &nbsp;
-  
+
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash

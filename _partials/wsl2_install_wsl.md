@@ -2,30 +2,30 @@
 ### Install WSL 1
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-We will install WSL through the Powershell Terminal:
+We will install WSL through the PowerShell Terminal:
 
 
-:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
 
->\- Press `Windows` + `R`  
->\- Type  `powershell`  
+>\- Press `Windows` + `R`
+>\- Type  `powershell`
 >\- Press `Ctrl` + `Shift` + `Enter`
 
 
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 
-&nbsp;  
+&nbsp;
 A blue terminal window will appear:
 
 
->\- Copy the following commands  
->\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
+>\- Copy the following commands
+>\- Paste them into the PowerShell window by right-clicking into it (`Ctrl` + `V` does not work here!)
 >\- Run them by pressing `Enter`
 
 
-&nbsp;  
+&nbsp;
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
@@ -50,8 +50,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 Once your computer has restarted, we need to download the WSL2 installer.
 
 
->\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer  
->\- Click `Next`  
+>\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer
+>\- Click `Next`
 >\- Click `Finish`
 
 ![update_wsl](images/update_wsl.jpg)
@@ -66,8 +66,8 @@ Once your computer has restarted, we need to download the WSL2 installer.
 Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
 
->\- Press `Windows` + `R`  
->\- Type  `cmd`  
+>\- Press `Windows` + `R`
+>\- Type  `cmd`
 >\- Press `Enter`
 
 
@@ -89,12 +89,12 @@ wsl --set-default-version 2
 ### Installation
 
 
->\- Click on `Start`  
->\- Type  `Microsoft Store`  
+>\- Click on `Start`
+>\- Type  `Microsoft Store`
 >\- Click on the Microsoft Windows Store in the list
 >
 >
->\- Search for `Ubuntu` in the search bar  
+>\- Search for `Ubuntu` in the search bar
 >\- Select version without any number, just plain "Ubuntu"
 >
 >
@@ -112,17 +112,17 @@ wsl --set-default-version 2
   <summary>Uninstall wrong versions of Ubuntu</summary>
 
   &nbsp;
-  
-  
+
+
   To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
 
 
-  >\- Press `Windows` + `R`  
-  >\- Type  `ms-settings:appsfeatures`  
+  >\- Press `Windows` + `R`
+  >\- Type  `ms-settings:appsfeatures`
   >\- Press `Enter`
 
 
-  Find the right software to uninstall, and click on the uninstall button.
+  Find the right software to uninstall and click on the uninstall button.
 </details>
 
 ---
@@ -155,11 +155,11 @@ At first launch, you will be asked some information:
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: The installation should be complete; you can close the Ubuntu window now that it is installed on your computer.
 
-### Check the WSL version of Ubuntu 
+### Check the WSL version of Ubuntu
 
 
->\- Press `Windows` + `R`  
->\- Type  `cmd`  
+>\- Press `Windows` + `R`
+>\- Type  `cmd`
 >\- Press `Enter`
 
 
@@ -184,16 +184,16 @@ wsl -l -v
 <details>
   <summary>Convert Ubuntu WSL V1 to V2</summary>
 
-  
+
   &nbsp;
-  
-  
+
+
   In the Command Prompt window, type:
 
   ```bash
   wsl --set-version Ubuntu 2
   ```
-  
+
   &nbsp;
 
   &nbsp;&nbsp;&nbsp; :white_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
@@ -202,23 +202,23 @@ wsl -l -v
 </details>
 
 <details>
-  <summary>Check for Uncompress Files</summary>
+  <summary>Check for Uncompressed Files</summary>
 
 
   &nbsp;
-  >\- Press `Windows` + `R`  
-  >\- Type  `%localappdata%\Packages`  
+  >\- Press `Windows` + `R`
+  >\- Type  `%localappdata%\Packages`
   >\- Press `Enter`
   >
   >
-  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`  
-  >\- Right Click on the `LocalState` folder  
-  >\- Click on `Properties`  
-  >\- Click on `Advanced`  
+  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
+  >\- Right Click on the `LocalState` folder
+  >\- Click on `Properties`
+  >\- Click on `Advanced`
   >\- Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
-  
 
-  Apply changes to this folder only, and try to convert the Ubuntu WSL version again.
+
+  Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
 
   &nbsp;&nbsp;&nbsp; :x: If the conversion still does not work, please **contact a teacher**.

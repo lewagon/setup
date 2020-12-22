@@ -32,7 +32,7 @@ At then end, your terminal should look like this:
 
 
   You probably typed the wrong password when asked.
-  Starting the script again will not work as it will try to create a configuration folder that now already exists !
+  Starting the script again will not work as it will try to create a configuration folder that now already exists!
 
   We need to remove it first:
 

@@ -2,8 +2,8 @@
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
->\- [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account  
->\- You should arrive on a page that looks like below  
+>\- [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account
+>\- You should arrive on a page that looks like below
 >\- Make sure to **select your GitHub account**.
 
 ![](images/fork.png)
@@ -60,7 +60,7 @@ Let us open the `~/.zshrc` profile file in Visual Code Studio and change slightl
 code ~/.zshrc
 ```
 
->\- Locate the line `# Actually load Oh-My-Zsh`  
+>\- Locate the line `# Actually load Oh-My-Zsh`
 >\- **Above it** write the following line:
 
 ```bash
@@ -70,10 +70,10 @@ ZSH_DISABLE_COMPFIX=true
 &nbsp;
 
 
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`:
+You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
 
->\- Spot the line starting with `plugins=`  
+>\- Spot the line starting with `plugins=`
 >\- Add `ssh-agent` to the plugins list.
 
 The list should look like:

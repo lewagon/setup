@@ -5,12 +5,12 @@ We need to ensure that the Virtualization options are enabled in the BIOS of you
 For many computers, this is already the case. Let's check:
 
 
->\- Press `Windows` + `R`  
->\- Type  `taskmgr`  
+>\- Press `Windows` + `R`
+>\- Type  `taskmgr`
 >\- Press `Enter`
 >
 >
->\- Click on the `Performance` tab  
+>\- Click on the `Performance` tab
 >\- Click on `CPU`
 
 
@@ -31,22 +31,22 @@ For many computers, this is already the case. Let's check:
   <summary>Activate Virtualization</summary>
 
   &nbsp;
-  
-  
+
+
   We need to access the BIOS / UEFI of the computer to activate it.
 
 
-  >\- Press `Windows + R`  
-  >\- Type  `shutdown.exe /r /o /t 1`  
+  >\- Press `Windows + R`
+  >\- Type  `shutdown.exe /r /o /t 1`
   >\- Press `Enter`
   >
   >
   >\- Wait for the computer to shutdown
   >
   >
-  >\- Click on `Troubleshoot`  
-  >\- Click on `Advanced Options`  
-  >\- Click on `UEFI Firmware Settings`  
+  >\- Click on `Troubleshoot`
+  >\- Click on `Advanced Options`
+  >\- Click on `UEFI Firmware Settings`
   >\- Click on `Restart`
 
 
@@ -55,7 +55,7 @@ For many computers, this is already the case. Let's check:
   - The option can be called differently according to your computer:
       - Intel: `Intel VT-x`, `Intel Virtualization Technology`, `Virtualization Extensions`, `Vanderpool`...
       - AMD: `SVM Mode` or `AMD-V`
-  - Save the changes after activation, and reboot the computer through the appropriate option
+  - Save the changes after activation and reboot the computer through the appropriate option
 </details>
 
 ---

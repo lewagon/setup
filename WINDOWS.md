@@ -62,8 +62,8 @@ Once you're sure that you're using Windows 10, you will need to check that your 
 Open Windows Update:
 
 
->\- Press `Windows` + `R`  
->\- Type  `ms-settings:windowsupdate`  
+>\- Press `Windows` + `R`
+>\- Type  `ms-settings:windowsupdate`
 >\- Press `Enter`
 >
 >
@@ -84,19 +84,19 @@ Open Windows Update:
   <summary>Activate Windows Update Service to fix Updates</summary>
 
   &nbsp;
-  
-  
-  Some antiviruses and pieces of software desactivate the Update service we need, resulting in the error you see. Let's fix that!
 
 
-  >\- Press `Windows` + `R`  
-  >\- Type  `services.msc`  
+  Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
+
+
+  >\- Press `Windows` + `R`
+  >\- Type  `services.msc`
   >\- Press `Enter`
   >
   >
-  >\- Double Click `Windows Update Service`  
-  >\- Set its `Startup` to `Automatic`  
-  >\- Click on `Start`  
+  >\- Double Click `Windows Update Service`
+  >\- Set its `Startup` to `Automatic`
+  >\- Click on `Start`
   >\- Click on `Ok`
 
   Then let's try updates again!
@@ -109,9 +109,9 @@ Open Windows Update:
 Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
 
 
->\- Press `Windows` + `R`  
->\- Type  `winver`  
->\- Press `Enter`  
+>\- Press `Windows` + `R`
+>\- Type  `winver`
+>\- Press `Enter`
 
 
 Check the **Version number**:
@@ -130,12 +130,12 @@ We need to ensure that the Virtualization options are enabled in the BIOS of you
 For many computers, this is already the case. Let's check:
 
 
->\- Press `Windows` + `R`  
->\- Type  `taskmgr`  
+>\- Press `Windows` + `R`
+>\- Type  `taskmgr`
 >\- Press `Enter`
 >
 >
->\- Click on the `Performance` tab  
+>\- Click on the `Performance` tab
 >\- Click on `CPU`
 
 
@@ -156,22 +156,22 @@ For many computers, this is already the case. Let's check:
   <summary>Activate Virtualization</summary>
 
   &nbsp;
-  
-  
+
+
   We need to access the BIOS / UEFI of the computer to activate it.
 
 
-  >\- Press `Windows + R`  
-  >\- Type  `shutdown.exe /r /o /t 1`  
+  >\- Press `Windows + R`
+  >\- Type  `shutdown.exe /r /o /t 1`
   >\- Press `Enter`
   >
   >
   >\- Wait for the computer to shutdown
   >
   >
-  >\- Click on `Troubleshoot`  
-  >\- Click on `Advanced Options`  
-  >\- Click on `UEFI Firmware Settings`  
+  >\- Click on `Troubleshoot`
+  >\- Click on `Advanced Options`
+  >\- Click on `UEFI Firmware Settings`
   >\- Click on `Restart`
 
 
@@ -180,7 +180,7 @@ For many computers, this is already the case. Let's check:
   - The option can be called differently according to your computer:
       - Intel: `Intel VT-x`, `Intel Virtualization Technology`, `Virtualization Extensions`, `Vanderpool`...
       - AMD: `SVM Mode` or `AMD-V`
-  - Save the changes after activation, and reboot the computer through the appropriate option
+  - Save the changes after activation and reboot the computer through the appropriate option
 </details>
 
 ---
@@ -212,7 +212,7 @@ You can close Zoom now.
 
 ### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
@@ -228,30 +228,30 @@ If you are not familiar with video calls, here is a great [article](https://mart
 ### Install WSL 1
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-We will install WSL through the Powershell Terminal:
+We will install WSL through the PowerShell Terminal:
 
 
-:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Powershell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
 
->\- Press `Windows` + `R`  
->\- Type  `powershell`  
+>\- Press `Windows` + `R`
+>\- Type  `powershell`
 >\- Press `Ctrl` + `Shift` + `Enter`
 
 
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 
-&nbsp;  
+&nbsp;
 A blue terminal window will appear:
 
 
->\- Copy the following commands  
->\- Paste them into the Powershell window by right-clicking into it (`Ctrl` + `V` does not work here!)  
+>\- Copy the following commands
+>\- Paste them into the PowerShell window by right-clicking into it (`Ctrl` + `V` does not work here!)
 >\- Run them by pressing `Enter`
 
 
-&nbsp;  
+&nbsp;
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
@@ -276,8 +276,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 Once your computer has restarted, we need to download the WSL2 installer.
 
 
->\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer  
->\- Click `Next`  
+>\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer
+>\- Click `Next`
 >\- Click `Finish`
 
 ![update_wsl](images/update_wsl.jpg)
@@ -292,8 +292,8 @@ Once your computer has restarted, we need to download the WSL2 installer.
 Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
 
->\- Press `Windows` + `R`  
->\- Type  `cmd`  
+>\- Press `Windows` + `R`
+>\- Type  `cmd`
 >\- Press `Enter`
 
 
@@ -315,12 +315,12 @@ wsl --set-default-version 2
 ### Installation
 
 
->\- Click on `Start`  
->\- Type  `Microsoft Store`  
+>\- Click on `Start`
+>\- Type  `Microsoft Store`
 >\- Click on the Microsoft Windows Store in the list
 >
 >
->\- Search for `Ubuntu` in the search bar  
+>\- Search for `Ubuntu` in the search bar
 >\- Select version without any number, just plain "Ubuntu"
 >
 >
@@ -338,17 +338,17 @@ wsl --set-default-version 2
   <summary>Uninstall wrong versions of Ubuntu</summary>
 
   &nbsp;
-  
-  
+
+
   To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
 
 
-  >\- Press `Windows` + `R`  
-  >\- Type  `ms-settings:appsfeatures`  
+  >\- Press `Windows` + `R`
+  >\- Type  `ms-settings:appsfeatures`
   >\- Press `Enter`
 
 
-  Find the right software to uninstall, and click on the uninstall button.
+  Find the right software to uninstall and click on the uninstall button.
 </details>
 
 ---
@@ -381,11 +381,11 @@ At first launch, you will be asked some information:
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: The installation should be complete; you can close the Ubuntu window now that it is installed on your computer.
 
-### Check the WSL version of Ubuntu 
+### Check the WSL version of Ubuntu
 
 
->\- Press `Windows` + `R`  
->\- Type  `cmd`  
+>\- Press `Windows` + `R`
+>\- Type  `cmd`
 >\- Press `Enter`
 
 
@@ -410,16 +410,16 @@ wsl -l -v
 <details>
   <summary>Convert Ubuntu WSL V1 to V2</summary>
 
-  
+
   &nbsp;
-  
-  
+
+
   In the Command Prompt window, type:
 
   ```bash
   wsl --set-version Ubuntu 2
   ```
-  
+
   &nbsp;
 
   &nbsp;&nbsp;&nbsp; :white_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
@@ -428,23 +428,23 @@ wsl -l -v
 </details>
 
 <details>
-  <summary>Check for Uncompress Files</summary>
+  <summary>Check for Uncompressed Files</summary>
 
 
   &nbsp;
-  >\- Press `Windows` + `R`  
-  >\- Type  `%localappdata%\Packages`  
+  >\- Press `Windows` + `R`
+  >\- Type  `%localappdata%\Packages`
   >\- Press `Enter`
   >
   >
-  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`  
-  >\- Right Click on the `LocalState` folder  
-  >\- Click on `Properties`  
-  >\- Click on `Advanced`  
+  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
+  >\- Right Click on the `LocalState` folder
+  >\- Click on `Properties`
+  >\- Click on `Advanced`
   >\- Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
-  
 
-  Apply changes to this folder only, and try to convert the Ubuntu WSL version again.
+
+  Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
 
   &nbsp;&nbsp;&nbsp; :x: If the conversion still does not work, please **contact a teacher**.
@@ -573,8 +573,8 @@ The standard Ubuntu terminal is a very crude way of using Ubuntu; let's use a re
 We first need to install **Windows Terminal** from the Microsoft Windows Store:
 
 
->\- Click on `Start`  
->\- Type  `Microsoft Store`  
+>\- Click on `Start`
+>\- Type  `Microsoft Store`
 >\- Click on the Microsoft Windows Store in the list
 >
 >
@@ -587,12 +587,12 @@ We first need to install **Windows Terminal** from the Microsoft Windows Store:
 Once the installation is done, the `Install` button becomes a `Launch` button:
 
 
->\- Click on `Launch`  
->\- Right Click on the icon in the taskbar  
+>\- Click on `Launch`
+>\- Right Click on the icon in the taskbar
 >\- Choose to pin the app to the bar
 
 
-This terminal allows you to open multiple terminal sessions, including **Powershell**, **Command Prompt**, and **Ubuntu** that you installed earlier.
+This terminal allows you to open multiple terminal sessions, including **PowerShell**, **Command Prompt** and **Ubuntu** that you installed earlier.
 
 This terminal has tabs: you can choose to open a new terminal tab clicking on the **down arrow** / **v-shape** next to the current one.
 
@@ -620,7 +620,7 @@ First, let us ask Ubuntu to start directly inside your Ubuntu Home Directory ins
 
 
 
->\- Locate the `"name": "Ubuntu",`  
+>\- Locate the `"name": "Ubuntu",`
 >\- Add the following line after it:
 
 ```bash
@@ -640,9 +640,9 @@ Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launc
 
 
 
->\- Locate the `"guid"` for Ubuntu  
->\- Copy the value between `{` and `}`  
->\- Locate the `"defaultProfile"`  
+>\- Locate the `"guid"` for Ubuntu
+>\- Copy the value between `{` and `}`
+>\- Locate the `"defaultProfile"`
 >\- Replace the value between `{` and `}` with what you copied from above
 
 
@@ -650,7 +650,7 @@ Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launc
 
 &nbsp;
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:  
+&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **From now on, every time we will refer to the terminal or the console it will be this one.**
 
 
@@ -706,7 +706,7 @@ At then end, your terminal should look like this:
 
 
   You probably typed the wrong password when asked.
-  Starting the script again will not work as it will try to create a configuration folder that now already exists !
+  Starting the script again will not work as it will try to create a configuration folder that now already exists!
 
   We need to remove it first:
 
@@ -822,8 +822,8 @@ sudo apt install -y nodejs
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
 
->\- [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account  
->\- You should arrive on a page that looks like below  
+>\- [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account
+>\- You should arrive on a page that looks like below
 >\- Make sure to **select your GitHub account**.
 
 ![](images/fork.png)
@@ -880,7 +880,7 @@ Let us open the `~/.zshrc` profile file in Visual Code Studio and change slightl
 code ~/.zshrc
 ```
 
->\- Locate the line `# Actually load Oh-My-Zsh`  
+>\- Locate the line `# Actually load Oh-My-Zsh`
 >\- **Above it** write the following line:
 
 ```bash
@@ -890,10 +890,10 @@ ZSH_DISABLE_COMPFIX=true
 &nbsp;
 
 
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`:
+You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
 
->\- Spot the line starting with `plugins=`  
+>\- Spot the line starting with `plugins=`
 >\- Add `ssh-agent` to the plugins list.
 
 The list should look like:
@@ -911,7 +911,7 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
@@ -939,7 +939,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 **Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
-Now, you are ready to install the latest ruby version, and set it as the default version.
+Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
@@ -971,7 +971,7 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 
   &nbsp;
-  
+
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
@@ -1113,9 +1113,9 @@ To be sure that you can interact with your browser installed on Windows from you
 Restart your terminal.
 
 
-## Postgresql
+## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql, an open-source robust and production-ready database.
+In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL, an open-source robust and production-ready database.
 
 Let's install it now.
 
