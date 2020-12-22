@@ -39,7 +39,7 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 
 
-## ## A note about quitting apps on a Mac
+## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
