@@ -678,7 +678,7 @@ We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
 # it will ask for your session password
-sudo apt install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim imagemagick jq
 ```
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -1010,6 +1010,34 @@ Rerun the command to install the gems.
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
+
+
+## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+```
+
+Restart your terminal and run the following:
+
+```bash
+nvm -v
+```
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 14.15.0
+```
+
+When the command returns, run
+
+```bash
+node -v
+```
+
+You should see `v14.15.0`. If not, ask a teacher.
 
 
 ## Linking your default browser to Ubuntu
