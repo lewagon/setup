@@ -803,19 +803,32 @@ Don't be in a rush, take time to [read this article](http://sebastien.saunier.me
 understanding of what those keys are used for.
 
 
-## Nodejs
-
-This is not used at the beginning of the course, but let's get a head start and install nodejs, used for Javascript :thumbsup:.
-
-Copy paste the following commands:
-
+## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
 ```
+
+Restart your terminal and run the following:
+
 ```bash
-sudo apt install -y nodejs
+nvm -v
 ```
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 14.15.0
+```
+
+When the command returns, run
+
+```bash
+node -v
+```
+
+You should see `v14.15.0`. If not, ask a teacher.
 
 
 ## Dotfiles (Standard configuration)

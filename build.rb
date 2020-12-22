@@ -53,7 +53,7 @@ WINDOWS = %w[intro
   wsl2_git
   wsl2_oh_my_zsh
   github_rsa
-  wsl2_nodejs
+  ubuntu_nvm
   wsl2_dotfiles
   rbenv_ubuntu
   rbenv_ruby
