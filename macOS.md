@@ -346,9 +346,10 @@ In a terminal window, launch this command:
 sw_vers
 ```
 
-If your OS version (`ProductVersion` line) is greater than or equal to **10.12**, you may proceed with the rest of this section. :warning: Otherwise, skip it and go directly to the Ruby install.
+<details>
+  <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
-In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+If your OS version (`ProductVersion` line) is less than **10.12**, you need to do an extra step to avoid re-typing your SSH passphrase at every `git push`. First open the `~/.ssh/config` file.
 
 ```bash
 touch ~/.ssh/config  # Creates the file if it does not exist
@@ -362,6 +363,7 @@ Host *
   AddKeysToAgent yes
   UseKeychain yes
 ```
+</details>
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
