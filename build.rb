@@ -57,6 +57,7 @@ WINDOWS = %w[intro
   wsl2_dotfiles
   rbenv_ubuntu
   rbenv_ruby
+  ubuntu_nvm
   wsl_browser_variable
   wls_postgresql
   checkup
