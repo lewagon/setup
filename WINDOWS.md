@@ -803,34 +803,6 @@ Don't be in a rush, take time to [read this article](http://sebastien.saunier.me
 understanding of what those keys are used for.
 
 
-## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
-```
-
-Restart your terminal and run the following:
-
-```bash
-nvm -v
-```
-You should see a version. If not, ask a teacher.
-
-Now let's install node:
-
-```bash
-nvm install 14.15.0
-```
-
-When the command returns, run
-
-```bash
-node -v
-```
-
-You should see `v14.15.0`. If not, ask a teacher.
-
-
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
