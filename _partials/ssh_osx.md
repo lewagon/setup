@@ -7,6 +7,7 @@ sw_vers
 ```
 
 <details>
+
   <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
   In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
