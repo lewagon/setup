@@ -39,7 +39,7 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 
 
-## ## A note about quitting apps on a Mac
+## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
@@ -346,22 +346,26 @@ In a terminal window, launch this command:
 sw_vers
 ```
 
-If your OS version (`ProductVersion` line) is greater than or equal to **10.12**, you may proceed with the rest of this section. :warning: Otherwise, skip it and go directly to the Ruby install.
+<details>
+  <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
-In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  
+  First open the `~/.ssh/config` file.
 
-```bash
-touch ~/.ssh/config  # Creates the file if it does not exist
-st ~/.ssh/config     # Opens the file in Sublime text
-```
+  ```bash
+  touch ~/.ssh/config  # Creates the file if it does not exist
+  st ~/.ssh/config     # Opens the file in Sublime text
+  ```
 
-And then add these 3 lines to the file. **Save**.
+  And then add these 3 lines to the file. **Save**.
 
-```bash
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-```
+  ```bash
+  Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+  ```
+</details>
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
