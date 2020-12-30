@@ -49,11 +49,11 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open the Terminal (click the magnifying glass icon in the top right corner of your screen and type `Terminal`):
+Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
 ![](images/open-terminal.png)
 
-Copy-paste the following command in the terminal and hit Enter.
+Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
 ```bash
 xcode-select --install
@@ -65,7 +65,7 @@ If you receive the following message, you can just skip this step and go to next
 # command line tools are already installed, use "Software Update" to install updates
 ```
 
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple servers are overloaded.
+Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
 
 ![](images/xcode-select-install.png)
 
@@ -98,6 +98,8 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
+![](images/github_upload_picture.png)
+
 
 ## Homebrew
 
@@ -106,10 +108,11 @@ It will be used as soon as we need to install some software.
 To do so, open your Terminal and run:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This will ask for your confirmation (hit `Enter`) and your laptop session password.
+This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
@@ -129,12 +132,12 @@ brew update
 Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
-function install_or_upgrade { if brew list --formula | grep -q $1; then brew upgrade $1; else brew install $1; fi }
-install_or_upgrade "git"
-install_or_upgrade "wget"
-install_or_upgrade "imagemagick"
-install_or_upgrade "jq"
-install_or_upgrade "openssl"
+brew upgrade git         || brew install git
+brew upgrade gh          || brew install gh
+brew upgrade wget        || brew install wget
+brew upgrade imagemagick || brew install imagemagick
+brew upgrade jq          || brew install jq
+brew upgrade openssl     || brew install openssl
 ```
 
 
@@ -150,13 +153,13 @@ Again, make sure that Sublime Text is there, not in the disk image you downloade
 
 ## Oh-my-zsh - Fancy your Terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one.
+We will use the shell named `zsh` instead of `bash`, the default one, alongside with useful and fancy [`oh-my-zsh`](https://ohmyz.sh/) plugins:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:
+Be careful, at the end of this script, it will prompt for your macOS user account password again (Remember! No visual feedback!). You should get something like:
 
 ```bash
          __                                     __
@@ -179,7 +182,9 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 
 ![](images/terminal-pro.png)
 
-Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
+**Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
+
+:bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
 
 
 ## GitHub
@@ -211,11 +216,11 @@ cat ~/.ssh/id_ed25519.pub
 It will prompt on the screen the content of the `id_ed25519.pub` file.
 
 
->\- Copy that text from `ssh` to the end of your email address  
->\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)  
->\- Click on `Add SSH key`  
->\- Fill in the Title with your computer name  
->\- Paste the **Key**  
+>\- Copy that text from `ssh` to the end of your email address
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)
+>\- Click on the green button `New SSH key`
+>\- Fill in the Title with your computer name (`Macbook Pro` for instance)
+>\- Paste the **Key**
 >\- Finish by clicking on the **Add key** green button.
 
 
@@ -242,14 +247,14 @@ This is the expected result:
 
 ---
 
-#### :wrench: Potential Fixes
+#### :wrench: Troubleshooting
 
 <details>
-  <summary>If `ssh -T git@github.com` does not work</summary>
+  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
 
   &nbsp;
-  
-  
+
+
   Try running this command before trying again:
 
   ```bash
@@ -264,51 +269,102 @@ Don't be in a rush, take time to [read this article](http://sebastien.saunier.me
 understanding of what those keys are used for.
 
 
-## Dotfiles (Standard configuration)
+## GitHub CLI
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account.
+In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the Terminal.
 
-You should arrive on a page that looks like this. Make sure to **select your GitHub account**.
-
-![](images/fork.png)
-
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
-
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
-own github usernickname.
+It should already be installed on your laptop from the previous commands. First you need to **login**:
 
 ```bash
-export GITHUB_USERNAME=replace_this_with_your_github_username
-
-# Example:
-#   export GITHUB_USERNAME=ssaunier
+gh auth login -s 'user:email' -w
 ```
 
-Now copy/paste this very long line in your terminal. Do **not** change this one.
+You will get the following output:
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+- Logging into github.com
+
+! First copy your one-time code: 0EF9-D015
+- Press Enter to open github.com in your browser...
+```
+
+Select and copy the code (`0EF9-D015` in the example), then type `Enter`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit. Come back to the terminal, type `Enter` again, and that should be it :tada:
+
+To check that you are properly connected, type:
+
+```bash
+gh auth status
+```
+
+If you get `Logged in to github.com as <YOUR USERNAME> `, then all good. If not, **ask a teacher**.
+
+Then run the following configuration line:
+
+```bash
+gh config set git_protocol ssh
+```
+
+Finally, create a [gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists) to make sure `gh` is working:
+
+```bash
+echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
+```
+
+This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
+
+
+## Dotfiles (Standard configuration)
+
+Hackers love to refine and polish their shell and tools.
+
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
+
+As your configuration is personal, you need your **own** repository storing it. Forking means
+that it will create a new repo in your GitHub account, identical to the original one.
+You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
+We need to fork because each of you will need to put **specific** information (e.g. your name) in those files.
+
+Open your terminal and run the following command:
+
+```bash
+export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+echo $GITHUB_USERNAME
+```
+
+You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
+There seems to be a problem with the previous step (`gh auth`).
+
+Time to fork the repo and clone it on your laptop:
+
+```bash
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+gh repo fork lewagon/dotfiles --clone
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-zsh install.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Then run the git installer:
+Check the emails registered with your GitHub Account. You'll need to pick one
+at the next step:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-zsh git_setup.sh
+gh api user/emails | jq -r '.[].email'
 ```
 
-:point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
+Run the git installer:
 
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
+```
+
+:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email. Be careful
+you **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you
+don't do that, Kitt won't be able to track your progress.
 
 Please now **quit** all your opened terminal windows.
 
@@ -515,7 +571,7 @@ psql -d postgres
 If you enter a new prompt like this one, you're good!
 
 ```bash
-psql (9.5.3)
+psql (12.5)
 Type "help" for help.
 
 postgres=#

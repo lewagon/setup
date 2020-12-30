@@ -27,11 +27,11 @@ cat ~/.ssh/id_ed25519.pub
 It will prompt on the screen the content of the `id_ed25519.pub` file.
 
 
->\- Copy that text from `ssh` to the end of your email address  
->\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)  
->\- Click on `Add SSH key`  
->\- Fill in the Title with your computer name  
->\- Paste the **Key**  
+>\- Copy that text from `ssh` to the end of your email address
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)
+>\- Click on the green button `New SSH key`
+>\- Fill in the Title with your computer name (`Macbook Pro` for instance)
+>\- Paste the **Key**
 >\- Finish by clicking on the **Add key** green button.
 
 
@@ -58,14 +58,14 @@ This is the expected result:
 
 ---
 
-#### :wrench: Potential Fixes
+#### :wrench: Troubleshooting
 
 <details>
-  <summary>If `ssh -T git@github.com` does not work</summary>
+  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
 
   &nbsp;
-  
-  
+
+
   Try running this command before trying again:
 
   ```bash
