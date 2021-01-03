@@ -54,8 +54,8 @@ WINDOWS = %w[intro
   wsl2_windows_terminal
   wsl2_git
   wsl2_oh_my_zsh
-  wsl_browser_variable
   github_rsa
+  wsl_browser_variable
   gh_cli
   wsl2_dotfiles
   rbenv_ubuntu
