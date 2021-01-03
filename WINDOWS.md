@@ -193,6 +193,8 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
+![](images/github_upload_picture.png)
+
 
 ## Remote tools
 
@@ -660,7 +662,7 @@ Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launc
 To install `git`:
 
 
->\- Open an Ubuntu terminal.  
+>\- Open an Ubuntu terminal.
 >\- Copy and paste the following lines:
 
 
@@ -670,6 +672,23 @@ sudo apt update
 ```bash
 sudo apt install -y git apt-transport-https unzip gnome-terminal
 ````
+
+Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
+
+```bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install gh
+```
+
+To check that `gh` has been successfully installed on your machine, you can run:
+
+```bash
+gh --version
+```
+
+If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
 
 
 ## Oh-my-zsh - Fancy your Terminal
@@ -750,11 +769,11 @@ cat ~/.ssh/id_ed25519.pub
 It will prompt on the screen the content of the `id_ed25519.pub` file.
 
 
->\- Copy that text from `ssh` to the end of your email address  
->\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)  
->\- Click on `Add SSH key`  
->\- Fill in the Title with your computer name  
->\- Paste the **Key**  
+>\- Copy that text from `ssh` to the end of your email address
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)
+>\- Click on the green button `New SSH key`
+>\- Fill in the Title with your computer name (`Macbook Pro` for instance)
+>\- Paste the **Key**
 >\- Finish by clicking on the **Add key** green button.
 
 
@@ -781,14 +800,14 @@ This is the expected result:
 
 ---
 
-#### :wrench: Potential Fixes
+#### :wrench: Troubleshooting
 
 <details>
-  <summary>If `ssh -T git@github.com` does not work</summary>
+  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
 
   &nbsp;
-  
-  
+
+
   Try running this command before trying again:
 
   ```bash
@@ -803,57 +822,102 @@ Don't be in a rush, take time to [read this article](http://sebastien.saunier.me
 understanding of what those keys are used for.
 
 
-## Dotfiles (Standard configuration)
+## GitHub CLI
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
 
->\- [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account
->\- You should arrive on a page that looks like below
->\- Make sure to **select your GitHub account**.
+In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the Terminal.
 
-![](images/fork.png)
-
-
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`.
-
-We need to fork because each of you will need to put specific information (e.g. your name) in those files.
-
->\- Open your terminal.
+It should already be installed on your laptop from the previous commands. First you need to **login**:
 
 ```bash
-export GITHUB_USERNAME=replace_this_with_your_github_username
-
-# Example:
-#   export GITHUB_USERNAME=ssaunier
+gh auth login -s 'user:email' -w
 ```
-:warning: **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your* own GitHub usernickname.
 
-
-&nbsp;
-
-
-Now let's get your new default configuration on your computer:
+You will get the following output:
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+- Logging into github.com
+
+! First copy your one-time code: 0EF9-D015
+- Press Enter to open github.com in your browser...
 ```
 
-Run the `dotfiles` installer:
+Select and copy the code (`0EF9-D015` in the example), then type `Enter`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit. Come back to the terminal, type `Enter` again, and that should be it :tada:
+
+To check that you are properly connected, type:
+
+```bash
+gh auth status
+```
+
+If you get `Logged in to github.com as <YOUR USERNAME> `, then all good. If not, **ask a teacher**.
+
+Then run the following configuration line:
+
+```bash
+gh config set git_protocol ssh
+```
+
+Finally, create a [gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists) to make sure `gh` is working:
+
+```bash
+echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
+```
+
+This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
+
+
+Hackers love to refine and polish their shell and tools.
+
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
+
+As your configuration is personal, you need your **own** repository storing it. Forking means
+that it will create a new repo in your GitHub account, identical to the original one.
+You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
+We need to fork because each of you will need to put **specific** information (e.g. your name) in those files.
+
+Open your terminal and run the following command:
+
+```bash
+export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+echo $GITHUB_USERNAME
+```
+
+You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
+There seems to be a problem with the previous step (`gh auth`).
+
+Time to fork the repo and clone it on your laptop:
+
+```bash
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+gh repo fork lewagon/dotfiles --clone
+```
+
+Run the `dotfiles` installer.
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Then run the git installer:
+Check the emails registered with your GitHub Account. You'll need to pick one
+at the next step:
+
+```bash
+gh api user/emails | jq -r '.[].email'
+```
+
+Run the git installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: This will **prompt** you for your name (`Firstname Lastname`), then your email.
+:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email. Be careful
+you **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you
+don't do that, Kitt won't be able to track your progress.
 
-
-:warning: Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+Please now **quit** all your opened terminal windows.
 
 
 &nbsp;

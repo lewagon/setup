@@ -10,6 +10,7 @@ MAC_OS = %w[intro
   osx_sublime_text
   osx_oh_my_zsh
   github_rsa
+  gh_cli
   dotfiles
   ssh_osx
   rbenv_osx
@@ -29,6 +30,7 @@ UBUNTU = %w[intro
   ubuntu_sublime_text
   ubuntu_oh_my_zsh
   github_rsa
+  gh_cli
   dotfiles
   rbenv_ubuntu
   rbenv_ruby
@@ -53,6 +55,7 @@ WINDOWS = %w[intro
   wsl2_git
   wsl2_oh_my_zsh
   github_rsa
+  gh_cli
   wsl2_dotfiles
   rbenv_ubuntu
   rbenv_ruby

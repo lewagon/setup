@@ -5,10 +5,11 @@ It will be used as soon as we need to install some software.
 To do so, open your Terminal and run:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This will ask for your confirmation (hit `Enter`) and your laptop session password.
+This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
@@ -28,10 +29,10 @@ brew update
 Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
-function install_or_upgrade { if brew list --formula | grep -q $1; then brew upgrade $1; else brew install $1; fi }
-install_or_upgrade "git"
-install_or_upgrade "wget"
-install_or_upgrade "imagemagick"
-install_or_upgrade "jq"
-install_or_upgrade "openssl"
+brew upgrade git         || brew install git
+brew upgrade gh          || brew install gh
+brew upgrade wget        || brew install wget
+brew upgrade imagemagick || brew install imagemagick
+brew upgrade jq          || brew install jq
+brew upgrade openssl     || brew install openssl
 ```
