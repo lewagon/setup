@@ -56,7 +56,7 @@ For each of these extensions:
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
-- [Python extension by Microsoft](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 ### VS Code Settings
 >\- Press `Ctrl` + `,` on your keyboard to open the settings
