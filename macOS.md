@@ -314,6 +314,33 @@ echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Sta
 
 This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
 
+## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+
+```bash
+brew install nvm
+```
+
+Restart your terminal and run the following:
+
+```bash
+nvm -v
+```
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 14.15.0
+```
+
+When the command returns, run
+
+```bash
+node -v
+```
+
+You should see `v14.15.0`. If not, ask a teacher.
+
 
 ## Dotfiles (Standard configuration)
 
@@ -406,7 +433,7 @@ sw_vers
   <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
   In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
-  
+
   First open the `~/.ssh/config` file.
 
   ```bash
@@ -522,34 +549,6 @@ Rerun the command to install the gems.
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
-
-
-## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
-
-```bash
-brew install nvm
-```
-
-Restart your terminal and run the following:
-
-```bash
-nvm -v
-```
-You should see a version. If not, ask a teacher.
-
-Now let's install node:
-
-```bash
-nvm install 14.15.0
-```
-
-When the command returns, run
-
-```bash
-node -v
-```
-
-You should see `v14.15.0`. If not, ask a teacher.
 
 
 ## PostgreSQL
