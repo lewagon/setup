@@ -11,11 +11,11 @@ MAC_OS = %w[intro
   osx_oh_my_zsh
   github_rsa
   gh_cli
+  osx_nvm
   dotfiles
   ssh_osx
   rbenv_osx
   rbenv_ruby
-  osx_nvm
   osx_postgresql
   osx_security
   checkup
@@ -31,10 +31,10 @@ UBUNTU = %w[intro
   ubuntu_oh_my_zsh
   github_rsa
   gh_cli
+  ubuntu_nvm
   dotfiles
   rbenv_ubuntu
   rbenv_ruby
-  ubuntu_nvm
   ubuntu_postgresql
   ubuntu_inotify
   ubuntu_extra

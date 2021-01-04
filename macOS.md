@@ -314,6 +314,7 @@ echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Sta
 
 This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
 
+
 ## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
@@ -433,7 +434,7 @@ sw_vers
   <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
   In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
-
+  
   First open the `~/.ssh/config` file.
 
   ```bash
