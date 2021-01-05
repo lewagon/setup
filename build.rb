@@ -51,6 +51,7 @@ WINDOWS = %w[intro
   remote_tools
   wsl2_install_wsl
   wsl2_vscode
+  wsl_explorer
   wsl2_windows_terminal
   wsl2_git
   wsl2_oh_my_zsh
