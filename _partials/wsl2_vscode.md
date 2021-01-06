@@ -54,7 +54,7 @@ For each of these extensions:
 For everyone
 - [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 
-For fullstack bootcamp:
+For the Web Development bootcamp:
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
