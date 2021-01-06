@@ -60,7 +60,7 @@ For fullstack bootcamp:
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 
-For datascience bootcamp:
+For the Data Science bootcamp:
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 - [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 - [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
