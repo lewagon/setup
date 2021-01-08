@@ -5,15 +5,15 @@ We use Visual Code Studio for writing code on Windows, because it integrates nic
 For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
 
 ### Installation
->\- Go the [Visual Studio Code page](https://code.visualstudio.com/download)  
+>\- Go to the [Visual Studio Code page](https://code.visualstudio.com/download)
 >\- Choose the Windows version of VS Code
 
 
 The tool should start to download automatically.
 
->\- Open the file you have just downloaded.  
->\- Install it with a few options:  
->    \- Register VS Code as an editor for supported file types  
+>\- Open the file you have just downloaded.
+>\- Install it with a few options:
+>    \- Register VS Code as an editor for supported file types
 >    \- Let the other options as they are
 
 ![VS Code install](images/vscode-install.png)
@@ -32,10 +32,10 @@ The tool should start to download automatically.
 In VS Code:
 
 
->\- Click on `File`  
->\- Click on `Preferences`  
->\- Click on `Keymaps`  
->\- Click on `Sublime Text Keymap and Settings Importer`  
+>\- Click on `File`
+>\- Click on `Preferences`
+>\- Click on `Keymaps`
+>\- Click on `Sublime Text Keymap and Settings Importer`
 >\- Click on `Install`
 
 
@@ -47,19 +47,27 @@ Let's gain time now and add other extensions that will be helpful during your Bo
 For each of these extensions:
 
 
->\- On the web page, click on `install`  
->\- In the browser, accept to use VS Code to install the extension  
+>\- On the web page, click on `install`
+>\- In the browser, accept to use VS Code to install the extension
 >\- In VS Code, click on `install`
 
+For everyone
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 
+For the Web Development bootcamp:
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 
+For the Data Science bootcamp:
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
+
 ### VS Code Settings
->\- Press `Ctrl` + `,` on your keyboard to open the settings  
->\- In the search bar, type `emmet`  
+>\- Press `Ctrl` + `,` on your keyboard to open the settings
+>\- In the search bar, type `emmet`
 >\- Click on the first **`Edit in settings.json`** link
 
 
@@ -86,8 +94,8 @@ It should look like this:
 To make sure everything works fine, close VS Code, then open your Ubuntu terminal:
 
 
->\- Press `Windows` + `R`  
->\- Type  `ubuntu`  
+>\- Press `Windows` + `R`
+>\- Type  `ubuntu`
 >\- Press `Enter`
 
 
@@ -102,4 +110,3 @@ code
 &nbsp;&nbsp;&nbsp; :x: If Visual Studio Code does not open, please **contact a teacher**
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: If Visual Studio Code opens, your code editor is ready! :muscle:
-
