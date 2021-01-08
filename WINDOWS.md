@@ -466,7 +466,7 @@ We use Visual Code Studio for writing code on Windows, because it integrates nic
 For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
 
 ### Installation
->\- Go the [Visual Studio Code page](https://code.visualstudio.com/download)
+>\- Go to the [Visual Studio Code page](https://code.visualstudio.com/download)
 >\- Choose the Windows version of VS Code
 
 
@@ -512,12 +512,19 @@ For each of these extensions:
 >\- In the browser, accept to use VS Code to install the extension
 >\- In VS Code, click on `install`
 
+For everyone
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 
+For the Web Development bootcamp:
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
+
+For the Data Science bootcamp:
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 
 ### VS Code Settings
 >\- Press `Ctrl` + `,` on your keyboard to open the settings
@@ -564,7 +571,6 @@ code
 &nbsp;&nbsp;&nbsp; :x: If Visual Studio Code does not open, please **contact a teacher**
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: If Visual Studio Code opens, your code editor is ready! :muscle:
-
 
 
 
@@ -874,6 +880,8 @@ understanding of what those keys are used for.
 ## Linking your default browser to Ubuntu
 To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
 
+⚠️ You need to execute at least one of the following commands below:
+
 
 <details>
   <summary>Google Chrome as your default browser</summary>
@@ -940,6 +948,14 @@ To be sure that you can interact with your browser installed on Windows from you
   ```
 </details>
 
+
+Please make sure that the following command returns "Browser defined 👌":
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+If it does not, choose a browser in the list above and execute the corresponding command.
 
 Restart your terminal.
 
