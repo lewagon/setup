@@ -27,7 +27,7 @@ You can close Zoom now.
 
 ### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
@@ -45,6 +45,8 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
+![](images/github_upload_picture.png)
+
 
 ## Git
 
@@ -57,6 +59,24 @@ sudo apt install -y git
 ```
 
 :bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
+
+
+Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
+
+```bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install -y gh
+```
+
+To check that `gh` has been successfully installed on your machine, you can run:
+
+```bash
+gh --version
+```
+
+If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
 
 
 ## Sublime Text 3 - Your text editor
@@ -85,7 +105,7 @@ Sublime Text is free without any time limitation but a popup will appear every t
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sudo apt install -y zsh curl vim nodejs imagemagick jq
+sudo apt install -y zsh curl vim imagemagick jq
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # it will ask for your session password
 ```
@@ -130,79 +150,186 @@ Then you need to give your **public** key to GitHub. Run:
 cat ~/.ssh/id_ed25519.pub
 ```
 
-It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
-then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
-**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
-Finish by clicking on the **Add key** green button.
+It will prompt on the screen the content of the `id_ed25519.pub` file.
 
-To check that this step is completed, in the terminal run this. You will be
-prompted a warning, type `yes` then `Enter`.
+
+>\- Copy that text from `ssh` to the end of your email address
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)
+>\- Click on the green button `New SSH key`
+>\- Fill in the Title with your computer name (`Macbook Pro` for instance)
+>\- Paste the **Key**
+>\- Finish by clicking on the **Add key** green button.
+
+
+To check that this step is completed, in the terminal run this.
 
 ```bash
 ssh -T git@github.com
 ```
 
-If you see something like this, you're done!
+:warning: You will be prompted a warning, type `yes` then `Enter`.
 
-```bash
+This is the expected result:
+
+```
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-If it does not work, try running this before trying again the `ssh -T` command:
+&nbsp;
 
-```bash
-ssh-add ~/.ssh/id_ed25519
-```
+&nbsp;&nbsp;&nbsp; :white_check_mark: If you got this message, the keys were added successfully!
+
+&nbsp;&nbsp;&nbsp; :x: If you encountered an error, you will have to try again. Do not hesitate to *contact a teacher*.
+
+
+---
+
+#### :wrench: Troubleshooting
+
+<details>
+  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
+
+  &nbsp;
+
+
+  Try running this command before trying again:
+
+  ```bash
+  ssh-add ~/.ssh/id_ed25519
+  ```
+  </details>
+
+---
+
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
 
-## Dotfiles (Standard configuration)
+## GitHub CLI
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account.
+In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the Terminal.
 
-You should arrive on a page that looks like this. Make sure to **select your GitHub account**.
-
-![](images/fork.png)
-
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
-
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
-own github usernickname.
+It should already be installed on your laptop from the previous commands. First you need to **login**:
 
 ```bash
-export GITHUB_USERNAME=replace_this_with_your_github_username
-
-# Example:
-#   export GITHUB_USERNAME=ssaunier
+gh auth login -s 'user:email' -w
 ```
 
-Now copy/paste this very long line in your terminal. Do **not** change this one.
+You will get the following output:
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+- Logging into github.com
+
+! First copy your one-time code: 0EF9-D015
+- Press Enter to open github.com in your browser...
+```
+
+Select and copy the code (`0EF9-D015` in the example), then type `Enter`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit. Come back to the terminal, type `Enter` again, and that should be it :tada:
+
+To check that you are properly connected, type:
+
+```bash
+gh auth status
+```
+
+If you get `Logged in to github.com as <YOUR USERNAME> `, then all good. If not, **ask a teacher**.
+
+Then run the following configuration line:
+
+```bash
+gh config set git_protocol ssh
+```
+
+Finally, create a [gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists) to make sure `gh` is working:
+
+```bash
+echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
+```
+
+This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
+
+
+## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+```
+
+Restart your terminal and run the following:
+
+```bash
+nvm -v
+```
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 14.15.0
+```
+
+When the command returns, run
+
+```bash
+node -v
+```
+
+You should see `v14.15.0`. If not, ask a teacher.
+
+
+## Dotfiles (Standard configuration)
+
+Hackers love to refine and polish their shell and tools.
+
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
+
+As your configuration is personal, you need your **own** repository storing it. Forking means
+that it will create a new repo in your GitHub account, identical to the original one.
+You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
+We need to fork because each of you will need to put **specific** information (e.g. your name) in those files.
+
+Open your terminal and run the following command:
+
+```bash
+export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+echo $GITHUB_USERNAME
+```
+
+You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
+There seems to be a problem with the previous step (`gh auth`).
+
+Time to fork the repo and clone it on your laptop:
+
+```bash
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+gh repo fork lewagon/dotfiles --clone
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-zsh install.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Then run the git installer:
+Check the emails registered with your GitHub Account. You'll need to pick one
+at the next step:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-zsh git_setup.sh
+gh api user/emails | jq -r '.[].email'
 ```
 
-:point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
+Run the git installer:
 
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
+```
+
+:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email. Be careful
+you **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you
+don't do that, Kitt won't be able to track your progress.
 
 Please now **quit** all your opened terminal windows.
 
@@ -234,7 +361,7 @@ When it's done, you can close Sublime Text.
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
@@ -248,15 +375,21 @@ Then in the terminal, run:
 
 ```bash
 sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
+```
+```bash
 sudo apt clean
+```
+```bash
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
 **Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
-Now, you are ready to install the latest ruby version, and set it as the default version.
+Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
@@ -283,7 +416,13 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ---
 
-:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+<details>
+  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+
+
+  &nbsp;
+
+  :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
 # China only!
@@ -294,13 +433,14 @@ gem sources -l
 # https://gems.ruby-china.com/
 # Ruby-china.com must be in the list now
 ```
+</details>
 
 ---
 
 All, please run the following line:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
 If you encounter the following error:
@@ -322,9 +462,9 @@ Rerun the command to install the gems.
 (or the Terminal) telling you to do so.
 
 
-## Postgresql
+## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
 an open-source robust and production-ready database. Let's install it now.
 
 ```
@@ -335,7 +475,7 @@ sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 
 ## Ubuntu inotify
 
-Ubuntu is always tracking changes in your folders, and to do this it uses inotify.
+Ubuntu is always tracking changes in your folders and to do this it uses inotify.
 By default the Ubuntu limit is set to 8192 files monitored.
 
 As programming involves a lot of files, we need to raise this limit.
@@ -344,6 +484,7 @@ In your terminal run:
 ```bash
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
+
 
 ## Extra
 
@@ -365,10 +506,8 @@ sudo apt install libavcodec-extra -y
 
 `tig` is a text-mode interface for `git`.
 
-`hub` is a command line tool that wraps `git` in order to extend it with extra features and commands that make working with GitHub easier.
-
 ```bash
-sudo apt install tree ncdu htop tig hub
+sudo apt install tree ncdu htop tig
 ```
 
 
@@ -386,6 +525,8 @@ It should tell you if your workstation is ready :) If not, ask a teacher.
 
 
 ## Alumni
+:warning: If you have received an email from Le Wagon inviting you to sign up on Kitt (our learning platform), you can safely skip this step. Instead, please follow the instructions in the email you received if you haven't done so already.
+If you are unsure about what to do, you can follow [this link](https://kitt.lewagon.com/). If you are already logged in, you can safely skip this section. If you are not logged in, click on `Enter Kitt as a Student`. If you manage to login, you can safely skip this step. Otherwise ask a teacher whether you should have received an email or follow the instructions below.
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
 

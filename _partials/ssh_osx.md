@@ -6,19 +6,23 @@ In a terminal window, launch this command:
 sw_vers
 ```
 
-If your OS version (`ProductVersion` line) is greater or equal than **10.12**, you may proceed with the rest of this section. :warning: Otherwise, skip it and go directly to the Ruby install.
+<details>
+  <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
-In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  
+  First open the `~/.ssh/config` file.
 
-```bash
-touch ~/.ssh/config  # Creates the file if it does not exist
-st ~/.ssh/config     # Opens the file in Sublime text
-```
+  ```bash
+  touch ~/.ssh/config  # Creates the file if it does not exist
+  st ~/.ssh/config     # Opens the file in Sublime text
+  ```
 
-And then add these 3 lines to the file. **Save**.
+  And then add these 3 lines to the file. **Save**.
 
-```bash
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-```
+  ```bash
+  Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+  ```
+</details>

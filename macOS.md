@@ -27,7 +27,7 @@ You can close Zoom now.
 
 ### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer**, and open the file you just have downloaded. Leave the default settings as they are, and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
+For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
 ![teamviewer.jpg](images/teamviewer.jpg)
 
@@ -39,7 +39,7 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 
 
-## ## A note about quitting apps on a Mac
+## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
@@ -49,27 +49,47 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open the Terminal (click the magnifying glass icon in the top right corner of your screen and type `Terminal`):
+Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
 ![](images/open-terminal.png)
 
-Copy-paste the following command in the terminal and hit Enter.
+Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
 ```bash
 xcode-select --install
 ```
 
-If you'll receive the following message, you can just skip this step and go to next step.
+If you receive the following message, you can just skip this step and go to next step.
 
 ```
 # command line tools are already installed, use "Software Update" to install updates
 ```
 
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again the command line above, sometimes the Apple servers are overloaded.
+Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
 
 ![](images/xcode-select-install.png)
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
+
+If you receive the following message, you need to update the sofware update catalog.
+
+```
+Xcode is not currently available from the Software Update server
+```
+
+In this case, copy-paste the following command in the terminal and hit Enter.
+
+```bash
+sudo softwareupdate --clear-catalog
+```
+
+Once this is done, you can try to install again (copy-paste the following command and hit enter).
+
+```bash
+xcode-select --install
+```
+
+Then follow the previous instructions for this command.
 
 
 ## GitHub account
@@ -77,6 +97,8 @@ While it's downloading, you can go on with configuring your GitHub account, but 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+
+![](images/github_upload_picture.png)
 
 
 ## Homebrew
@@ -86,10 +108,11 @@ It will be used as soon as we need to install some software.
 To do so, open your Terminal and run:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This will ask for your confirmation (hit `Enter`) and your laptop session password.
+This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
@@ -109,12 +132,12 @@ brew update
 Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
-function install_or_upgrade { brew ls | grep $1 > /dev/null; if (($? == 0)); then brew upgrade $1; else brew install $1; fi }
-install_or_upgrade "git"
-install_or_upgrade "wget"
-install_or_upgrade "imagemagick"
-install_or_upgrade "jq"
-install_or_upgrade "openssl"
+brew upgrade git         || brew install git
+brew upgrade gh          || brew install gh
+brew upgrade wget        || brew install wget
+brew upgrade imagemagick || brew install imagemagick
+brew upgrade jq          || brew install jq
+brew upgrade openssl     || brew install openssl
 ```
 
 
@@ -130,13 +153,13 @@ Again, make sure that Sublime Text is there, not in the disk image you downloade
 
 ## Oh-my-zsh - Fancy your Terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one.
+We will use the shell named `zsh` instead of `bash`, the default one, alongside with useful and fancy [`oh-my-zsh`](https://ohmyz.sh/) plugins:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Be careful, at the end of this script, it will prompt for your laptop password again. You have to write it correctly (you will not see it when you type) and hit `Enter`. You should get something like:
+Be careful, at the end of this script, it will prompt for your macOS user account password again (Remember! No visual feedback!). You should get something like:
 
 ```bash
          __                                     __
@@ -147,7 +170,7 @@ Be careful, at the end of this script, it will prompt for your laptop password a
                         /____/                       ....is now installed!
 ````
 
-Now quit the Terminal (`⌘` + `Q`), and restart it.
+Now quit the Terminal (`⌘` + `Q`) and restart it.
 
 You should see something like this:
 
@@ -159,7 +182,9 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 
 ![](images/terminal-pro.png)
 
-Quit and relaunch the Terminal. It should now have a nice black background, more easy on the eyes.
+**Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
+
+:bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
 
 
 ## GitHub
@@ -188,79 +213,186 @@ Then you need to give your **public** key to GitHub. Run:
 cat ~/.ssh/id_ed25519.pub
 ```
 
-It will prompt on the screen the content of the `id_ed25519.pub` file. Copy that text,
-then go to [github.com/settings/ssh](https://github.com/settings/ssh). Click on
-**Add SSH key**, fill in the Title with your computer name, and paste the **Key**.
-Finish by clicking on the **Add key** green button.
+It will prompt on the screen the content of the `id_ed25519.pub` file.
 
-To check that this step is completed, in the terminal run this. You will be
-prompted a warning, type `yes` then `Enter`.
+
+>\- Copy that text from `ssh` to the end of your email address
+>\- Go to [github.com/settings/ssh](https://github.com/settings/ssh)
+>\- Click on the green button `New SSH key`
+>\- Fill in the Title with your computer name (`Macbook Pro` for instance)
+>\- Paste the **Key**
+>\- Finish by clicking on the **Add key** green button.
+
+
+To check that this step is completed, in the terminal run this.
 
 ```bash
 ssh -T git@github.com
 ```
 
-If you see something like this, you're done!
+:warning: You will be prompted a warning, type `yes` then `Enter`.
 
-```bash
+This is the expected result:
+
+```
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-If it does not work, try running this before trying again the `ssh -T` command:
+&nbsp;
 
-```bash
-ssh-add ~/.ssh/id_ed25519
-```
+&nbsp;&nbsp;&nbsp; :white_check_mark: If you got this message, the keys were added successfully!
+
+&nbsp;&nbsp;&nbsp; :x: If you encountered an error, you will have to try again. Do not hesitate to *contact a teacher*.
+
+
+---
+
+#### :wrench: Troubleshooting
+
+<details>
+  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
+
+  &nbsp;
+
+
+  Try running this command before trying again:
+
+  ```bash
+  ssh-add ~/.ssh/id_ed25519
+  ```
+  </details>
+
+---
+
 
 Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
 understanding of what those keys are used for.
 
 
-## Dotfiles (Standard configuration)
+## GitHub CLI
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account.
+In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the Terminal.
 
-You should arrive on a page that looks like this. Make sure to **select your GitHub account**.
-
-![](images/fork.png)
-
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
-
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
-own github usernickname.
+It should already be installed on your laptop from the previous commands. First you need to **login**:
 
 ```bash
-export GITHUB_USERNAME=replace_this_with_your_github_username
-
-# Example:
-#   export GITHUB_USERNAME=ssaunier
+gh auth login -s 'user:email' -w
 ```
 
-Now copy/paste this very long line in your terminal. Do **not** change this one.
+You will get the following output:
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+- Logging into github.com
+
+! First copy your one-time code: 0EF9-D015
+- Press Enter to open github.com in your browser...
+```
+
+Select and copy the code (`0EF9-D015` in the example), then type `Enter`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit. Come back to the terminal, type `Enter` again, and that should be it :tada:
+
+To check that you are properly connected, type:
+
+```bash
+gh auth status
+```
+
+If you get `Logged in to github.com as <YOUR USERNAME> `, then all good. If not, **ask a teacher**.
+
+Then run the following configuration line:
+
+```bash
+gh config set git_protocol ssh
+```
+
+Finally, create a [gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists) to make sure `gh` is working:
+
+```bash
+echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
+```
+
+This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
+
+
+## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+
+```bash
+brew install nvm
+```
+
+Restart your terminal and run the following:
+
+```bash
+nvm -v
+```
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 14.15.0
+```
+
+When the command returns, run
+
+```bash
+node -v
+```
+
+You should see `v14.15.0`. If not, ask a teacher.
+
+
+## Dotfiles (Standard configuration)
+
+Hackers love to refine and polish their shell and tools.
+
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
+
+As your configuration is personal, you need your **own** repository storing it. Forking means
+that it will create a new repo in your GitHub account, identical to the original one.
+You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
+We need to fork because each of you will need to put **specific** information (e.g. your name) in those files.
+
+Open your terminal and run the following command:
+
+```bash
+export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+echo $GITHUB_USERNAME
+```
+
+You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
+There seems to be a problem with the previous step (`gh auth`).
+
+Time to fork the repo and clone it on your laptop:
+
+```bash
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+gh repo fork lewagon/dotfiles --clone
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-zsh install.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Then run the git installer:
+Check the emails registered with your GitHub Account. You'll need to pick one
+at the next step:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-zsh git_setup.sh
+gh api user/emails | jq -r '.[].email'
 ```
 
-:point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
+Run the git installer:
 
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
+```
+
+:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email. Be careful
+you **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you
+don't do that, Kitt won't be able to track your progress.
 
 Please now **quit** all your opened terminal windows.
 
@@ -298,27 +430,31 @@ In a terminal window, launch this command:
 sw_vers
 ```
 
-If your OS version (`ProductVersion` line) is greater or equal than **10.12**, you may proceed with the rest of this section. :warning: Otherwise, skip it and go directly to the Ruby install.
+<details>
+  <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
-In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  
+  First open the `~/.ssh/config` file.
 
-```bash
-touch ~/.ssh/config  # Creates the file if it does not exist
-st ~/.ssh/config     # Opens the file in Sublime text
-```
+  ```bash
+  touch ~/.ssh/config  # Creates the file if it does not exist
+  st ~/.ssh/config     # Opens the file in Sublime text
+  ```
 
-And then add these 3 lines to the file. **Save**.
+  And then add these 3 lines to the file. **Save**.
 
-```bash
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-```
+  ```bash
+  Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+  ```
+</details>
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
 
-First we need to clean up any previous Ruby installation you might have:
+First, we need to clean up any previous Ruby installation you might have:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
@@ -343,7 +479,7 @@ brew install rbenv
 Again, quit all your terminal windows and restart.
 
 
-Now, you are ready to install the latest ruby version, and set it as the default version.
+Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
@@ -370,7 +506,13 @@ You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
 
 ---
 
-:warning: If you are in **China** :cn:, you should update the way we'll install gem with the following commands. If you are not in China, well just skip this and go directly to the next `gem install` command!
+<details>
+  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+
+
+  &nbsp;
+
+  :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
 ```bash
 # China only!
@@ -381,13 +523,14 @@ gem sources -l
 # https://gems.ruby-china.com/
 # Ruby-china.com must be in the list now
 ```
+</details>
 
 ---
 
 All, please run the following line:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug hub colored octokit
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
 If you encounter the following error:
@@ -409,9 +552,9 @@ Rerun the command to install the gems.
 (or the Terminal) telling you to do so.
 
 
-## Postgresql
+## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called Postgresql,
+In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
 an open-source robust and production-ready database. Let's install it now.
 
 ```bash
@@ -428,7 +571,7 @@ psql -d postgres
 If you enter a new prompt like this one, you're good!
 
 ```bash
-psql (9.5.3)
+psql (12.5)
 Type "help" for help.
 
 postgres=#
@@ -439,9 +582,9 @@ To quit it, type `\q` then `Enter`.
 
 ## Security
 
-It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups`, and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
+It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
-You can also go to ` > System Preferences > Mission Control`, and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
+You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
 
 
 ## Check-up
@@ -458,6 +601,8 @@ It should tell you if your workstation is ready :) If not, ask a teacher.
 
 
 ## Alumni
+:warning: If you have received an email from Le Wagon inviting you to sign up on Kitt (our learning platform), you can safely skip this step. Instead, please follow the instructions in the email you received if you haven't done so already.
+If you are unsure about what to do, you can follow [this link](https://kitt.lewagon.com/). If you are already logged in, you can safely skip this section. If you are not logged in, click on `Enter Kitt as a Student`. If you manage to login, you can safely skip this step. Otherwise ask a teacher whether you should have received an email or follow the instructions below.
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
 
@@ -471,7 +616,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store, and sign in to `lewagon-alumni` organization.
+[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store and sign in to `lewagon-alumni` organization.
 
 Make sure you upload a picture there.
 

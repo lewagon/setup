@@ -4,35 +4,109 @@ We use Visual Code Studio for writing code on Windows, because it integrates nic
 
 For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
 
-Go the [Visual Studio Code page](https://code.visualstudio.com/download) and click on Windows. The tool should start to download automatically. Open the file you have just downloaded. Install it leaving all the default options as they are.
+### Installation
+>\- Go to the [Visual Studio Code page](https://code.visualstudio.com/download)
+>\- Choose the Windows version of VS Code
 
-To help VS Code interact with your terminal, we need to add the extension **Remote Development**. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) and click on **Install**. This will tell you that VS Code is required to install this extension. Click on **Continue**. You will get an alert asking you to open Visual Studio Code. The editor will open to the extension page.
 
-![remote_development](images/remote_development.jpg)
+The tool should start to download automatically.
 
-Click on **Install**.
-Click on **File → Preferences → Keymaps**. Click on **Sublime Text Keymap and Settings Importer**.
-Click on **Install**. Click on **Reload Required**
+>\- Open the file you have just downloaded.
+>\- Install it with a few options:
+>    \- Register VS Code as an editor for supported file types
+>    \- Let the other options as they are
 
-Let's gain time now and add the Ruby on Rails support for your code editor. Go to the [extension page](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets) and follow the same steps as the Remote Development one.
+![VS Code install](images/vscode-install.png)
 
-Press `Ctrl` + `,` on your keyboard to open the settings. In the search bar, type **emmet**. Click on **Edit in settings.json**
-Paste the following just before the last **`}`**
+### Connecting VS Code to Ubuntu
+
+- Launch VS Code a first time, then:
+    - Pin it to the taskbar; you will be using it a lot!
+    - You should have a frame at the bottom-right corner of VS Code saying it detects WSL
+    - Accept the installation of the WSL extension for VS Code
+
+:warning: This extension is mandatory for you to be able to work with VS Code!
+
+### VS Code Shortcuts
+
+In VS Code:
+
+
+>\- Click on `File`
+>\- Click on `Preferences`
+>\- Click on `Keymaps`
+>\- Click on `Sublime Text Keymap and Settings Importer`
+>\- Click on `Install`
+
+
+### VS Code Extensions
+
+Let's gain time now and add other extensions that will be helpful during your Bootcamp.
+
+
+For each of these extensions:
+
+
+>\- On the web page, click on `install`
+>\- In the browser, accept to use VS Code to install the extension
+>\- In VS Code, click on `install`
+
+For everyone
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+
+For the Web Development bootcamp:
+- [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
+- [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
+
+For the Data Science bootcamp:
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
+
+### VS Code Settings
+>\- Press `Ctrl` + `,` on your keyboard to open the settings
+>\- In the search bar, type `emmet`
+>\- Click on the first **`Edit in settings.json`** link
+
+
+Paste the following just before the last `}`:
+
 ```bash
 "emmet.triggerExpansionOnTab": true,
 "emmet.includeLanguages": {
   "erb": "html"
 },
 ```
+
 It should look like this:
 
 ![vscode_emmet](images/vscode_emmet.jpg)
 
-You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
+:warning: You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
 
-To make sure everything works fine, open your terminal and type:
+
+:warning: Don't forget to save those changes!
+
+### Final Check
+
+To make sure everything works fine, close VS Code, then open your Ubuntu terminal:
+
+
+>\- Press `Windows` + `R`
+>\- Type  `ubuntu`
+>\- Press `Enter`
+
+
+In Ubuntu, let's try to launch VS Code:
+
 ```bash
 code
 ```
-If Visual Studio Code opens, your code editor is ready :muscle:.
-Please call a teacher if it doesn't.
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp; :x: If Visual Studio Code does not open, please **contact a teacher**
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: If Visual Studio Code opens, your code editor is ready! :muscle:

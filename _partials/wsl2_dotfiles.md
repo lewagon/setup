@@ -1,67 +1,88 @@
-## Dotfiles (Standard configuration)
+Hackers love to refine and polish their shell and tools.
 
-Hackers love to refine and polish their shell and tools. We'll start with a great default configuration provided by [Le Wagon](http://github.com/lewagon/dotfiles), stored on GitHub. As your configuration is personal, you need your own repository storing it, so you first need to fork it to your GitHub account.
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
 
-:arrow_right: [Click here to **fork**](https://github.com/lewagon/dotfiles/fork) the `lewagon/dotfiles` repository to your account.
+As your configuration is personal, you need your **own** repository storing it. Forking means
+that it will create a new repo in your GitHub account, identical to the original one.
+You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
+We need to fork because each of you will need to put **specific** information (e.g. your name) in those files.
 
-You should arrive on a page that looks like this. Make sure to **select your GitHub account**.
-
-![](images/fork.png)
-
-Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `your_github_username/dotfiles`. We need to fork because each of you will need to put specific information (e.g. your name) in those files.
-
-Open your terminal. **Don't blindly copy paste this line**, replace `replace_this_with_your_github_username` with *your*
-own github usernickname.
+Open your terminal and run the following command:
 
 ```bash
-export GITHUB_USERNAME=replace_this_with_your_github_username
-
-# Example:
-#   export GITHUB_USERNAME=ssaunier
+export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+echo $GITHUB_USERNAME
 ```
 
-Now copy/paste this very long line in your terminal. Do **not** change this one.
+You should see your GitHub username printed. If it's not the case, **stop here** and ask for help.
+There seems to be a problem with the previous step (`gh auth`).
+
+Time to fork the repo and clone it on your laptop:
 
 ```bash
-mkdir -p ~/code/$GITHUB_USERNAME && cd $_ && git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+gh repo fork lewagon/dotfiles --clone
 ```
 
 Run the `dotfiles` installer.
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-```bash
-zsh install.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 ```
 
-Then run the git installer:
+Check the emails registered with your GitHub Account. You'll need to pick one
+at the next step:
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles
+gh api user/emails | jq -r '.[].email'
 ```
+
+Run the git installer:
+
 ```bash
-zsh git_setup.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: This will **prompt** you for your name (`Firstname Lastname`) and your email.
+:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email. Be careful
+you **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you
+don't do that, Kitt won't be able to track your progress.
 
-Be careful, you **need** to put the **same** email as the one you sign up with on GitHub.
+Please now **quit** all your opened terminal windows.
 
-Copy the following command in your terminal to open the `~/.zshrc` profile file in Visual Code Studio:
+
+&nbsp;
+
+
+Let us open the `~/.zshrc` profile file in Visual Code Studio and change slightly its content:
+
 ```bash
 code ~/.zshrc
 ```
-Locate the line `# Actually load Oh-My-Zsh` and **above it** write the following line:
+
+>\- Locate the line `# Actually load Oh-My-Zsh`
+>\- **Above it** write the following line:
+
 ```bash
 ZSH_DISABLE_COMPFIX=true
 ```
 
+&nbsp;
 
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So you need to add the plugin `ssh-agent` to `oh my zsh`.
-Spot the line starting with `plugins=` Then add `ssh-agent` to the plugins list. The list should look like:
+
+You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
+
+
+>\- Spot the line starting with `plugins=`
+>\- Add `ssh-agent` to the plugins list.
+
+The list should look like:
 
 ```
 plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
-Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
+
+&nbsp;
+
+
+&nbsp;&nbsp;&nbsp; :white_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
+

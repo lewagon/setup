@@ -2,9 +2,71 @@
 
 SETUP_RUBY_VERSION = "2.6.6"
 
-MAC_OS = %w[intro remote_tools osx_command_line_tools github homebrew osx_sublime_text osx_oh_my_zsh github_rsa dotfiles ssh_osx rbenv_osx rbenv_ruby osx_postgresql osx_security checkup alumni_platform osx_slack osx_preferences].freeze
-UBUNTU = %w[intro remote_tools github ubuntu_git ubuntu_sublime_text ubuntu_oh_my_zsh github_rsa dotfiles rbenv_ubuntu rbenv_ruby ubuntu_postgresql ubuntu_inotify ubuntu_extra checkup alumni_platform ubuntu_slack].freeze
-WINDOWS = %w[wsl2_prerequisites github remote_tools wsl2_install_wsl wsl2_git wsl2_vscode wsl2_windows_terminal wsl2_oh_my_zsh github_rsa wsl2_nodejs wsl2_dotfiles rbenv_ubuntu rbenv_ruby wsl_browser_variable wls_postgresql checkup alumni_platform wls_slack].freeze
+MAC_OS = %w[intro
+  remote_tools
+  osx_command_line_tools
+  github
+  homebrew
+  osx_sublime_text
+  osx_oh_my_zsh
+  github_rsa
+  gh_cli
+  osx_nvm
+  dotfiles
+  ssh_osx
+  rbenv_osx
+  rbenv_ruby
+  osx_postgresql
+  osx_security
+  checkup
+  alumni_platform
+  osx_slack
+  osx_preferences].freeze
+
+UBUNTU = %w[intro
+  remote_tools
+  github
+  ubuntu_git
+  ubuntu_sublime_text
+  ubuntu_oh_my_zsh
+  github_rsa
+  gh_cli
+  ubuntu_nvm
+  dotfiles
+  rbenv_ubuntu
+  rbenv_ruby
+  ubuntu_postgresql
+  ubuntu_inotify
+  ubuntu_extra
+  checkup
+  alumni_platform
+  ubuntu_slack].freeze
+
+WINDOWS = %w[intro
+  wsl2_prereq_intro
+  wsl2_prereq_win10
+  wsl2_prereq_win_version
+  wsl2_prereq_virtualization
+  github
+  remote_tools
+  wsl2_install_wsl
+  wsl2_vscode
+  wsl_explorer
+  wsl2_windows_terminal
+  wsl2_git
+  wsl2_oh_my_zsh
+  github_rsa
+  wsl_browser_variable
+  gh_cli
+  wsl2_dotfiles
+  rbenv_ubuntu
+  rbenv_ruby
+  ubuntu_nvm
+  wls_postgresql
+  checkup
+  alumni_platform
+  wls_slack].freeze
+
 filenames = {
   'macOS.md' => MAC_OS,
   'UBUNTU.md' => UBUNTU,
