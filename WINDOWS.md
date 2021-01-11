@@ -880,6 +880,8 @@ understanding of what those keys are used for.
 ## Linking your default browser to Ubuntu
 To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
 
+⚠️ You need to execute at least one of the following commands below:
+
 
 <details>
   <summary>Google Chrome as your default browser</summary>
@@ -946,6 +948,14 @@ To be sure that you can interact with your browser installed on Windows from you
   ```
 </details>
 
+
+Please make sure that the following command returns "Browser defined 👌":
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+If it does not, choose a browser in the list above and execute the corresponding command.
 
 Restart your terminal.
 
