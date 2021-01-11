@@ -15,7 +15,7 @@ MAC_OS = %w[intro
   ssh_osx
   rbenv_osx
   rbenv_ruby
-  osx_nvm
+  nvm
   osx_postgresql
   osx_security
   checkup
@@ -34,7 +34,7 @@ UBUNTU = %w[intro
   dotfiles
   rbenv_ubuntu
   rbenv_ruby
-  ubuntu_nvm
+  nvm
   ubuntu_postgresql
   ubuntu_inotify
   ubuntu_extra
@@ -61,7 +61,7 @@ WINDOWS = %w[intro
   wsl2_dotfiles
   rbenv_ubuntu
   rbenv_ruby
-  ubuntu_nvm
+  nvm
   wls_postgresql
   checkup
   alumni_platform
