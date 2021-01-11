@@ -466,7 +466,7 @@ We use Visual Code Studio for writing code on Windows, because it integrates nic
 For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
 
 ### Installation
->\- Go the [Visual Studio Code page](https://code.visualstudio.com/download)
+>\- Go to the [Visual Studio Code page](https://code.visualstudio.com/download)
 >\- Choose the Windows version of VS Code
 
 
@@ -512,12 +512,19 @@ For each of these extensions:
 >\- In the browser, accept to use VS Code to install the extension
 >\- In VS Code, click on `install`
 
+For everyone
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 
+For the Web Development bootcamp:
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
+
+For the Data Science bootcamp:
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 
 ### VS Code Settings
 >\- Press `Ctrl` + `,` on your keyboard to open the settings
@@ -564,7 +571,6 @@ code
 &nbsp;&nbsp;&nbsp; :x: If Visual Studio Code does not open, please **contact a teacher**
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: If Visual Studio Code opens, your code editor is ready! :muscle:
-
 
 
 
@@ -725,7 +731,7 @@ sudo apt install -y git apt-transport-https unzip gnome-terminal
 Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
 
 ```bash
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install -y gh

@@ -64,7 +64,7 @@ sudo apt install -y git
 Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
 
 ```bash
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install -y gh
@@ -252,34 +252,6 @@ echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Sta
 This line should open your browser on the newly created gist page. See, we've just created a [**Markdown**](https://guides.github.com/features/mastering-markdown/) file!
 
 
-## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
-```
-
-Restart your terminal and run the following:
-
-```bash
-nvm -v
-```
-You should see a version. If not, ask a teacher.
-
-Now let's install node:
-
-```bash
-nvm install 14.15.0
-```
-
-When the command returns, run
-
-```bash
-node -v
-```
-
-You should see `v14.15.0`. If not, ask a teacher.
-
-
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools.
@@ -460,6 +432,34 @@ Rerun the command to install the gems.
 
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
 (or the Terminal) telling you to do so.
+
+
+## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+```
+
+Restart your terminal and run the following:
+
+```bash
+nvm -v
+```
+You should see a version. If not, ask a teacher.
+
+Now let's install node:
+
+```bash
+nvm install 14.15.0
+```
+
+When the command returns, run
+
+```bash
+node -v
+```
+
+You should see `v14.15.0`. If not, ask a teacher.
 
 
 ## PostgreSQL
