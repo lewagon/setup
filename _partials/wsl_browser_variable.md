@@ -65,7 +65,7 @@ To be sure that you can interact with your browser installed on Windows from you
 
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/msedge.exe\"'" >> ~/.zshrc
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
   ```
 </details>
 
