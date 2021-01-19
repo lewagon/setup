@@ -3,6 +3,7 @@ Hello and welcome to this WSL2 Cheatsheet.
 The goal is to gather here all tips and known issues about WSL2!
 
 - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
+  - [Network unreachable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#network-unreachable)
   - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
   - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
   - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
@@ -17,6 +18,43 @@ The goal is to gather here all tips and known issues about WSL2!
   - [Testing in Rails](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#testing-on-rails)
 
 # Issues
+
+## Network Unreachable
+
+When trying to connect to remote hosts, eg. when trying to do `sudo apt update`, you might see an error message saying that the network is unreachable. Here are two possible solutions: if the first one doesn't help, try the second one.
+
+### A note about diagnosing this problem
+- This is a common networking issue, and we must be sure that the problem lies with WSL only, and not with the Windows host. Please first ensure that there are no known networking issues on Windows. If you can successfully browse a few sites on Windows, but you can't connect to the internet in WSL, it would appear that this is an WSL problem. Please continue to the next section.
+
+### Refresh and reset network
+- `Start` > `cmd` > 'Open as administrator'
+- Run the following commands:
+    ```bash
+    wsl --shutdown
+    netsh winsock reset
+    netsh int ip reset all
+    netsh winhttp reset proxy
+    ipconfig /flushdns
+    ```
+- Reset the network (`Start` > Search for `Network Reset`; click `Reset`)
+- Restart Windows
+- *[Source](https://github.com/microsoft/WSL/issues/4926#issuecomment-679410653)*. There might be other relevant solutions there.
+- If this still does not solve your problem, try the next section.
+
+### Add a custom DNS server address to WSL
+- Open a WSL terminal and type the following:
+  ```bash
+  sudo mv /etc/resolv.conf /etc/resolv.conf.old
+  sudo touch /etc/resolv.conf
+  sudo echo "[network]\ngenerateResolvConf = false\n" >> /etc/resolv.conf
+  ```
+- You should now have internet access within the WSL terminal.
+- Ensure that the fix works even when WSL is restarted. Open PowerShell and run the following command:
+  ```bash
+  wsl.exe --shutdown
+  ```
+- Open a new WSL terminal. You should be able to access the internet.
+- *[Source](https://stackoverflow.com/a/60302925)*.
 
 ## Input/Output error
 
