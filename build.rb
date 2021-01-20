@@ -51,7 +51,6 @@ WINDOWS = %w[intro
   remote_tools
   wsl2_install_wsl
   wsl2_vscode
-  wsl_explorer
   wsl2_windows_terminal
   wsl2_git
   wsl2_oh_my_zsh
@@ -64,6 +63,7 @@ WINDOWS = %w[intro
   nvm
   wls_postgresql
   checkup
+  wsl_explorer
   alumni_platform
   wls_slack].freeze
 
