@@ -46,7 +46,7 @@ When trying to connect to remote hosts, eg. when trying to do `sudo apt update`,
   ```bash
   sudo mv /etc/resolv.conf /etc/resolv.conf.old
   sudo touch /etc/resolv.conf
-  sudo echo "[network]\ngenerateResolvConf = false\n" >> /etc/resolv.conf
+  sudo echo "[network]\ngenerateResolvConf = false\n" >> /etc/wsl.conf
   ```
 - You should now have internet access within the WSL terminal.
 - Ensure that the fix works even when WSL is restarted. Open PowerShell and run the following command:
