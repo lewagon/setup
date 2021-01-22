@@ -76,8 +76,8 @@ Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launc
 
 >\- Locate the `"guid"` for Ubuntu  
 >\- Copy the value between `{` and `}`  
->\- Locate the `"defaultProfile"`  
->\- Replace the value between `{` and `}` with what you copied from above  
+>\- Locate the `"defaultProfile"`   
+>\- Replace the value between `{` and `}` with what you copied from above   
 >\- Add a comma after the `defaultProfile` so you can add the `"multiLinePasteWarning": false,` option as well. This will disable an annoying warning every time you want to paste multiple lines to your terminal.  
 
 You can refer to the screenshot above to get a sense of how it should look like. Don't hesitate to ask for help.
