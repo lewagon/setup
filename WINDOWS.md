@@ -619,7 +619,7 @@ Let's make Ubuntu the default terminal of your Windows Terminal application.
 
 It should open the settings:
 
-![wsl2_settings](images/wsl2_settings.jpg)
+![wsl2_settings](images/settings_wsl2.PNG)
 
 We have put in red the part we will use or change.
 
