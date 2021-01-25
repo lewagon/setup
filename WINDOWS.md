@@ -885,6 +885,7 @@ To be sure that you can interact with your browser installed on Windows from you
     echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
   ```
 
+  Else run:
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
