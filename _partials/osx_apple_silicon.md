@@ -19,7 +19,7 @@ fi
 
 ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
 
-If your computer uses Apple Silicon, proceed with the next section. Otherwise, you can skip the section below.
+If your computer uses Apple Silicon, proceed with the next section. Otherwise, you can skip to the section below.
 
 ## Setup for Apple Silicon
 
