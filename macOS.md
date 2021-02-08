@@ -70,6 +70,8 @@ If your computer uses Apple Silicon, proceed with the next section. Otherwise, y
 
 We need to uninstall Homebrew in case a native version was installed.
 
+Execute the following command in the terminal:
+
 ``` bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
 ```
