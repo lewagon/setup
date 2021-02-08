@@ -4,6 +4,7 @@ SETUP_RUBY_VERSION = "2.6.6"
 
 MAC_OS = %w[intro
   remote_tools
+  osx_apple_silicon
   osx_command_line_tools
   github
   homebrew

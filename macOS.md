@@ -41,6 +41,56 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 
 
+
+## Checking your computer for Apple Silicon (Apple M1 chips)
+
+If you bought your computer after late 2020, chances are your Apple laptop uses Apple silicon instead of Intel processors. Let's find out...
+
+Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
+
+![](images/open-terminal.png)
+
+Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+``` bash
+if [[ `uname -m` == 'arm64' ]]; then
+  echo "Your computer uses Apple Silicon 🌟"
+else
+  echo "Your computer has an Intel processor 🤖"
+fi
+```
+
+☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+If your computer uses Apple Silicon, proceed with the next section. Otherwise, you can skip the section below.
+
+## Setup for Apple Silicon
+
+### Uninstall Homebrew
+
+We need to uninstall Homebrew in case a native version was installed.
+
+``` bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
+
+If brew was not installed you will get the message `brew: command not found!`
+
+### Configure Terminal for Rosetta
+
+Open the Finder app (or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014)).
+
+Go to Applications > Utilities.
+
+Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
+
+Press Cmd + I on the Terminal Rosetta app, then check the box "Run under Rosetta".
+
+⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
+
+Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
+
+
 ## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
@@ -451,6 +501,34 @@ brew install rbenv
 ```
 
 Again, quit all your terminal windows and restart.
+
+## Apple Silicon computers
+
+<details>
+  <summary>Forgot if your computer uses Apple Silicon ?</summary>
+
+  &nbsp;
+
+
+  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+  ``` bash
+  if [[ `uname -m` == 'arm64' ]]; then
+    echo "Your computer uses Apple Silicon 🌟"
+  else
+    echo "Your computer has an Intel processor 🤖"
+  fi
+  ```
+
+  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+</details>
+
+If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
+
+``` bash
+echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
+```
 
 
 Now, you are ready to install the latest ruby version and set it as the default version.
