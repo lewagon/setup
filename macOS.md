@@ -44,7 +44,7 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 ## Checking your computer for Apple Silicon (Apple M1 chips)
 
-If you bought your computer after late 2020, chances are your Apple laptop uses Apple silicon instead of Intel processors. Let's find out...
+If you bought your computer after late 2020, chances are it uses Apple silicon instead of Intel processors. Let's find out...
 
 Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
