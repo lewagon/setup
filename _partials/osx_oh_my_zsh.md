@@ -32,3 +32,39 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 **Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
 
 :bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
+
+## Apple Silicon computers
+
+<details>
+  <summary>Forgot if your computer uses Apple Silicon ?</summary>
+
+  &nbsp;
+
+
+  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+  ``` bash
+  arch_name="$(uname -m)"
+
+  if [ "${arch_name}" = "x86_64" ]; then
+      if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
+          echo "Your computer uses Apple Silicon (Rosetta) 🌟"
+      else
+          echo "Your computer has an Intel processor 🤖"
+      fi
+  elif [ "${arch_name}" = "arm64" ]; then
+      echo "Your computer uses Apple Silicon 🌟"
+  else
+      echo "Unknown architecture: ${arch_name}, call a TA 🤔"
+  fi
+  ```
+
+  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+</details>
+
+If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
+
+``` bash
+echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
+```
