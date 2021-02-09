@@ -53,11 +53,7 @@ Open a new Terminal window from Applications > Utilities or search with [Spotlig
 Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
 ``` bash
-if [[ `uname -m` == 'arm64' ]]; then
-  echo "Your computer uses Apple Silicon 🌟"
-else
-  echo "Your computer has an Intel processor 🤖"
-fi
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
 ```
 
 ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
@@ -249,19 +245,7 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
   Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
   ``` bash
-  arch_name="$(uname -m)"
-
-  if [ "${arch_name}" = "x86_64" ]; then
-      if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
-          echo "Your computer uses Apple Silicon (Rosetta) 🌟"
-      else
-          echo "Your computer has an Intel processor 🤖"
-      fi
-  elif [ "${arch_name}" = "arm64" ]; then
-      echo "Your computer uses Apple Silicon 🌟"
-  else
-      echo "Unknown architecture: ${arch_name}, call a TA 🤔"
-  fi
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
   ```
 
   ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
