@@ -23,39 +23,3 @@ brew install rbenv
 ```
 
 Again, quit all your terminal windows and restart.
-
-## Apple Silicon computers
-
-<details>
-  <summary>Forgot if your computer uses Apple Silicon ?</summary>
-
-  &nbsp;
-
-
-  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
-
-  ``` bash
-  arch_name="$(uname -m)"
-
-  if [ "${arch_name}" = "x86_64" ]; then
-      if [ "$(sysctl -in sysctl.proc_translated)" = "1" ]; then
-          echo "Your computer uses Apple Silicon (Rosetta) 🌟"
-      else
-          echo "Your computer has an Intel processor 🤖"
-      fi
-  elif [ "${arch_name}" = "arm64" ]; then
-      echo "Your computer uses Apple Silicon 🌟"
-  else
-      echo "Unknown architecture: ${arch_name}, call a TA 🤔"
-  fi
-  ```
-
-  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
-
-</details>
-
-If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
-
-``` bash
-echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
-```
