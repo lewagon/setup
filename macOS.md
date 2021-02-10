@@ -41,6 +41,54 @@ If you are not familiar with video calls, here is a great [article](https://mart
 
 
 
+
+## Checking your computer for Apple Silicon (Apple M1 chips)
+
+If you bought your computer after late 2020, chances are it uses Apple silicon instead of Intel processors. Let's find out...
+
+Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
+
+![](images/open-terminal.png)
+
+Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+``` bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
+```
+
+☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+If your computer uses Apple Silicon, proceed with the next section. Otherwise, you can skip to the section below.
+
+## Setup for Apple Silicon
+
+### Uninstall Homebrew
+
+We need to uninstall Homebrew in case a native version was installed.
+
+Execute the following command in the terminal:
+
+``` bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
+
+If brew was not installed you will get the message `brew: command not found!`
+
+### Configure Terminal for Rosetta
+
+Open the Finder app (or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014)).
+
+Go to Applications > Utilities.
+
+Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
+
+Press Cmd + I on the Terminal Rosetta app, then check the box "Run under Rosetta".
+
+⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
+
+Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
+
+
 ## A note about quitting apps on a Mac
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
@@ -51,9 +99,7 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014):
-
-![](images/open-terminal.png)
+Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014).
 
 Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
@@ -187,6 +233,30 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 **Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
 
 :bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
+
+## Apple Silicon computers
+
+<details>
+  <summary>Forgot if your computer uses Apple Silicon?</summary>
+
+  &nbsp;
+
+
+  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+  ``` bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
+  ```
+
+  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+</details>
+
+If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
+
+``` bash
+echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
+```
 
 
 ## GitHub

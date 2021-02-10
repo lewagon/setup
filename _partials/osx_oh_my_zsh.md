@@ -32,3 +32,27 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 **Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
 
 :bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
+
+## Apple Silicon computers
+
+<details>
+  <summary>Forgot if your computer uses Apple Silicon?</summary>
+
+  &nbsp;
+
+
+  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+  ``` bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
+  ```
+
+  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+</details>
+
+If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
+
+``` bash
+echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
+```
