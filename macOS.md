@@ -237,7 +237,7 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 ## Apple Silicon computers
 
 <details>
-  <summary>Forgot if your computer uses Apple Silicon ?</summary>
+  <summary>Forgot if your computer uses Apple Silicon?</summary>
 
   &nbsp;
 
