@@ -61,7 +61,7 @@ Copy-paste the following command in the terminal and hit `Enter` to execute the 
 If your computer uses Apple Silicon, expand the paragraph below and go through it. Otherwise ignore it.
 
 <details>
-  <summary>👉 Setup for Apple Silicon 👈</summary>
+  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
 
   &nbsp;
 
