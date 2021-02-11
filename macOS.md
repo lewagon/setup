@@ -58,7 +58,14 @@ Copy-paste the following command in the terminal and hit `Enter` to execute the 
 
 ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
 
-If your computer uses Apple Silicon, proceed with the next section. Otherwise, you can skip to the section below.
+If your computer uses Apple Silicon, expand the paragraph below and go through it. Otherwise ignore it.
+
+<details>
+  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
+
+  &nbsp;
+
+
 
 ## Setup for Apple Silicon
 
@@ -87,6 +94,8 @@ Press Cmd + I on the Terminal Rosetta app, then check the box "Run under Rosetta
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 
 Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
+
+</details>
 
 
 ## A note about quitting apps on a Mac
