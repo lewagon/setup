@@ -58,10 +58,10 @@ Copy-paste the following command in the terminal and hit `Enter` to execute the 
 
 ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
 
-If your computer uses Apple Silicon, expand the paragraph below and go through it 👇. Otherwise ignore it.
+If your computer uses Apple Silicon, expand the paragraph below and go through it. Otherwise ignore it.
 
 <details>
-  <summary>Setup for Apple Silicon</summary>
+  <summary>👉 Setup for Apple Silicon 👈</summary>
 
   &nbsp;
 
