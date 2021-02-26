@@ -71,12 +71,12 @@ To be sure that you can interact with your browser installed on Windows from you
 </details>
 
 
-Please make sure that the following command returns "Browser defined 👌":
+👉 Restart your terminal
+
+Then please make sure that the following command returns "Browser defined 👌":
 
 ```bash
 [ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
 ```
 
 If it does not, choose a browser in the list above and execute the corresponding command.
-
-Restart your terminal.
