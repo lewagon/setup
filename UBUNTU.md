@@ -436,7 +436,7 @@ Rerun the command to install the gems.
 (or the Terminal) telling you to do so.
 
 
-## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+## Node (with [nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
@@ -462,6 +462,20 @@ node -v
 ```
 
 You should see `v14.15.0`. If not, ask a teacher.
+
+
+## yarn (https://classic.yarnpkg.com/en/docs/install)
+
+```bash
+npm install --global yarn
+```
+
+Restart your terminal and run the following:
+
+```bash
+yarn -v
+```
+You should see a version. If not, ask a teacher.
 
 
 ## PostgreSQL

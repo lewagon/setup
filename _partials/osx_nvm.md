@@ -1,4 +1,4 @@
-## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+## Node (with [nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
 brew install nvm
