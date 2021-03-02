@@ -46,7 +46,7 @@ Go to Applications > Utilities.
 
 Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
 
-Press Cmd + I on the Terminal Rosetta app, then check the box "Run under Rosetta".
+Press Cmd + I on the Terminal Rosetta app, then check the box "Open using Rosetta".
 
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 
