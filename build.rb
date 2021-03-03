@@ -17,6 +17,7 @@ MAC_OS = %w[intro
   rbenv_osx
   rbenv_ruby
   nvm
+  yarn
   osx_postgresql
   osx_security
   checkup
@@ -36,6 +37,7 @@ UBUNTU = %w[intro
   rbenv_ubuntu
   rbenv_ruby
   nvm
+  yarn
   ubuntu_postgresql
   ubuntu_inotify
   ubuntu_extra
@@ -62,6 +64,7 @@ WINDOWS = %w[intro
   rbenv_ubuntu
   rbenv_ruby
   nvm
+  yarn
   wls_postgresql
   checkup
   wsl_explorer

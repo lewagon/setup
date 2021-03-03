@@ -1,4 +1,4 @@
-## Installing Node (with [nvm](https://github.com/nvm-sh/nvm))
+## Node (with [nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
