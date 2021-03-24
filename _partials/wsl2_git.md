@@ -3,8 +3,8 @@
 To install `git`:
 
 
->\- Open an Ubuntu terminal.
->\- Copy and paste the following lines:
+- Open an Ubuntu terminal.
+- Copy and paste the following lines:
 
 
 ```bash

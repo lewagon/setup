@@ -59,8 +59,8 @@ Let us open the `~/.zshrc` profile file in Visual Code Studio and change slightl
 code ~/.zshrc
 ```
 
->\- Locate the line `# Actually load Oh-My-Zsh`
->\- **Above it** write the following line:
+- Locate the line `# Actually load Oh-My-Zsh`
+- **Above it** write the following line:
 
 ```bash
 ZSH_DISABLE_COMPFIX=true
@@ -72,8 +72,8 @@ ZSH_DISABLE_COMPFIX=true
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
 
->\- Spot the line starting with `plugins=`
->\- Add `ssh-agent` to the plugins list.
+- Spot the line starting with `plugins=`
+- Add `ssh-agent` to the plugins list.
 
 The list should look like:
 
