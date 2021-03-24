@@ -5,13 +5,13 @@ We need to ensure that the Virtualization options are enabled in the BIOS of you
 For many computers, this is already the case. Let's check:
 
 
->\- Press `Windows` + `R`
->\- Type  `taskmgr`
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `taskmgr`
+- Press `Enter`
 >
 >
->\- Click on the `Performance` tab
->\- Click on `CPU`
+- Click on the `Performance` tab
+- Click on `CPU`
 
 
 ![task_manager.jpg](images/task_manager.jpg)
@@ -36,18 +36,18 @@ For many computers, this is already the case. Let's check:
   We need to access the BIOS / UEFI of the computer to activate it.
 
 
-  >\- Press `Windows + R`
-  >\- Type  `shutdown.exe /r /o /t 1`
-  >\- Press `Enter`
+  - Press `Windows + R`
+  - Type  `shutdown.exe /r /o /t 1`
+  - Press `Enter`
   >
   >
-  >\- Wait for the computer to shutdown
+  - Wait for the computer to shutdown
   >
   >
-  >\- Click on `Troubleshoot`
-  >\- Click on `Advanced Options`
-  >\- Click on `UEFI Firmware Settings`
-  >\- Click on `Restart`
+  - Click on `Troubleshoot`
+  - Click on `Advanced Options`
+  - Click on `UEFI Firmware Settings`
+  - Click on `Restart`
 
 
   You need to activate the virtualization option for your processor here:

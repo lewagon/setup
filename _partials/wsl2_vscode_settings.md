@@ -13,9 +13,7 @@ In VS Code:
 
 Let's gain time now and add other extensions that will be helpful during your Bootcamp.
 
-
 For each of these extensions:
-
 
 - On the web page, click on `install`
 - In the browser, accept to use VS Code to install the extension
@@ -33,7 +31,6 @@ For each of these extensions:
 - In the search bar, type `emmet`
 - Click on the first **`Edit in settings.json`** link
 
-
 Paste the following just before the last `}`:
 
 ```bash
@@ -49,13 +46,11 @@ It should look like this:
 
 :warning: You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
 
-
 :warning: Don't forget to save those changes!
 
 ### Final Check
 
 To make sure everything works fine, close VS Code, then open your Ubuntu terminal:
-
 
 - Press `Windows` + `R`
 - Type  `ubuntu`

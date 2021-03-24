@@ -7,9 +7,9 @@ This means that you need to be on **Windows 10**, with all the latest updates in
 To check your Windows version:
 
 
->\- Press `Windows` + `R`  
->\- Type  `winver`  
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `winver`
+- Press `Enter`
 
 &nbsp;
 

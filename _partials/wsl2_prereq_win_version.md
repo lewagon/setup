@@ -3,12 +3,12 @@
 Open Windows Update:
 
 
->\- Press `Windows` + `R`
->\- Type  `ms-settings:windowsupdate`
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `ms-settings:windowsupdate`
+- Press `Enter`
 >
 >
->\- Click on `Check updates`
+- Click on `Check updates`
 
 &nbsp;
 
@@ -30,15 +30,15 @@ Open Windows Update:
   Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
 
 
-  >\- Press `Windows` + `R`
-  >\- Type  `services.msc`
-  >\- Press `Enter`
+  - Press `Windows` + `R`
+  - Type  `services.msc`
+  - Press `Enter`
   >
   >
-  >\- Double Click `Windows Update Service`
-  >\- Set its `Startup` to `Automatic`
-  >\- Click on `Start`
-  >\- Click on `Ok`
+  - Double Click `Windows Update Service`
+  - Set its `Startup` to `Automatic`
+  - Click on `Start`
+  - Click on `Ok`
 
   Then let's try updates again!
 </details>
@@ -50,9 +50,9 @@ Open Windows Update:
 Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
 
 
->\- Press `Windows` + `R`
->\- Type  `winver`
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `winver`
+- Press `Enter`
 
 
 Check the **Version number**:

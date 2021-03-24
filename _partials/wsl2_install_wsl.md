@@ -8,9 +8,9 @@ We will install WSL through the PowerShell Terminal:
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
 
->\- Press `Windows` + `R`
->\- Type  `powershell`
->\- Press `Ctrl` + `Shift` + `Enter`
+- Press `Windows` + `R`
+- Type  `powershell`
+- Press `Ctrl` + `Shift` + `Enter`
 
 
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
@@ -20,9 +20,9 @@ We will install WSL through the PowerShell Terminal:
 A blue terminal window will appear:
 
 
->\- Copy the following commands
->\- Paste them into the PowerShell window by right-clicking into it (`Ctrl` + `V` does not work here!)
->\- Run them by pressing `Enter`
+- Copy the following commands
+- Paste them into the PowerShell window by right-clicking into it (`Ctrl` + `V` does not work here!)
+- Run them by pressing `Enter`
 
 
 &nbsp;
@@ -50,9 +50,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 Once your computer has restarted, we need to download the WSL2 installer.
 
 
->\- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer
->\- Click `Next`
->\- Click `Finish`
+- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer
+- Click `Next`
+- Click `Finish`
 
 ![update_wsl](images/update_wsl.jpg)
 
@@ -66,9 +66,9 @@ Once your computer has restarted, we need to download the WSL2 installer.
 Now that WSL 2 is installed, let's use it by default when we deal with WSL:
 
 
->\- Press `Windows` + `R`
->\- Type  `cmd`
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `cmd`
+- Press `Enter`
 
 
 In the window which appears, type:
@@ -89,16 +89,16 @@ wsl --set-default-version 2
 ### Installation
 
 
->\- Click on `Start`
->\- Type  `Microsoft Store`
->\- Click on the Microsoft Windows Store in the list
+- Click on `Start`
+- Type  `Microsoft Store`
+- Click on the Microsoft Windows Store in the list
 >
 >
->\- Search for `Ubuntu` in the search bar
->\- Select version without any number, just plain "Ubuntu"
+- Search for `Ubuntu` in the search bar
+- Select version without any number, just plain "Ubuntu"
 >
 >
->\- Click on `Install`
+- Click on `Install`
 
 
 :warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
@@ -117,9 +117,9 @@ wsl --set-default-version 2
   To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
 
 
-  >\- Press `Windows` + `R`
-  >\- Type  `ms-settings:appsfeatures`
-  >\- Press `Enter`
+  - Press `Windows` + `R`
+  - Type  `ms-settings:appsfeatures`
+  - Press `Enter`
 
 
   Find the right software to uninstall and click on the uninstall button.
@@ -132,7 +132,7 @@ wsl --set-default-version 2
 Once the installation is done, the `Install` button becomes a `Launch` button:
 
 
->\- Click on `Launch`
+- Click on `Launch`
 
 
 At first launch, you will be asked some information:
@@ -158,9 +158,9 @@ At first launch, you will be asked some information:
 ### Check the WSL version of Ubuntu
 
 
->\- Press `Windows` + `R`
->\- Type  `cmd`
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `cmd`
+- Press `Enter`
 
 
 Type the following command:
@@ -206,16 +206,16 @@ wsl -l -v
 
 
   &nbsp;
-  >\- Press `Windows` + `R`
-  >\- Type  `%localappdata%\Packages`
-  >\- Press `Enter`
+  - Press `Windows` + `R`
+  - Type  `%localappdata%\Packages`
+  - Press `Enter`
   >
   >
-  >\- Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
-  >\- Right Click on the `LocalState` folder
-  >\- Click on `Properties`
-  >\- Click on `Advanced`
-  >\- Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
+  - Open the folder named `CanonicalGroupLimited.UbuntuonWindows...`
+  - Right Click on the `LocalState` folder
+  - Click on `Properties`
+  - Click on `Advanced`
+  - Make sure that the option `Compress content` is **not** ticked, then click on `Ok`.
 
 
   Apply changes to this folder only and try to convert the Ubuntu WSL version again.
