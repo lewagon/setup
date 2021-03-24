@@ -490,10 +490,10 @@ The tool should start to download automatically.
 
 :warning: This extension is mandatory for you to be able to work with VS Code!
 
+
 ### VS Code Shortcuts
 
 In VS Code:
-
 
 - Click on `File`
 - Click on `Preferences`
@@ -514,19 +514,12 @@ For each of these extensions:
 - In the browser, accept to use VS Code to install the extension
 - In VS Code, click on `install`
 
-For everyone
+**Extensions**
 - [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-
-For the Web Development bootcamp:
 - [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
-
-For the Data Science bootcamp:
-- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
-- [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent)
 
 ### VS Code Settings
 - Press `Ctrl` + `,` on your keyboard to open the settings
@@ -557,9 +550,9 @@ It should look like this:
 To make sure everything works fine, close VS Code, then open your Ubuntu terminal:
 
 
->\- Press `Windows` + `R`
->\- Type  `ubuntu`
->\- Press `Enter`
+- Press `Windows` + `R`
+- Type  `ubuntu`
+- Press `Enter`
 
 
 In Ubuntu, let's try to launch VS Code:
