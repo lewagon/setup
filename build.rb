@@ -41,20 +41,20 @@ WINDOWS = %w[
   wsl2_git
   wsl2_oh_my_zsh
   github_rsa
-  wsl_browser_variable
+  wsl2_browser_variable
   gh_cli
   wsl2_dotfiles
-  rbenv_ubuntu
+  ubuntu_rbenv
   rbenv_ruby
   nvm
   yarn
-  wls_postgresql
+  wsl2_postgresql
   checkup
-  wsl_explorer
+  wsl2_explorer
   alumni_platform
-  wls_slack].freeze
+  wsl2_slack].freeze
 
-LINUX = %w[
+UBUNTU = %w[
   intro
   zoom
   github
@@ -64,7 +64,7 @@ LINUX = %w[
   github_rsa
   gh_cli
   dotfiles
-  rbenv_ubuntu
+  ubuntu_rbenv
   rbenv_ruby
   nvm
   yarn
@@ -78,7 +78,7 @@ LINUX = %w[
 filenames = {
   'MACOS.md' => MACOS,
   'WINDOWS.md' => WINDOWS,
-  'LINUX.md' => LINUX
+  'UBUNTU.md' => UBUNTU
 }
 
 filenames.each do |filename, partials|
