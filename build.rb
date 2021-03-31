@@ -2,56 +2,38 @@
 
 SETUP_RUBY_VERSION = "2.6.6"
 
-MAC_OS = %w[intro
-  remote_tools
-  osx_apple_silicon
-  osx_command_line_tools
+MACOS = %w[
+  intro
+  zoom
+  macos_apple_silicon
+  macos_command_line_tools
   github
   homebrew
-  osx_sublime_text
-  osx_oh_my_zsh
+  macos_vscode
+  macos_oh_my_zsh
   github_rsa
   gh_cli
   dotfiles
-  ssh_osx
-  rbenv_osx
+  macos_ssh
+  macos_rbenv
   rbenv_ruby
   nvm
   yarn
-  osx_postgresql
-  osx_security
+  macos_postgresql
+  macos_security
   checkup
   alumni_platform
-  osx_slack
-  osx_preferences].freeze
+  macos_slack
+  macos_preferences].freeze
 
-UBUNTU = %w[intro
-  remote_tools
-  github
-  ubuntu_git
-  ubuntu_sublime_text
-  ubuntu_oh_my_zsh
-  github_rsa
-  gh_cli
-  dotfiles
-  rbenv_ubuntu
-  rbenv_ruby
-  nvm
-  yarn
-  ubuntu_postgresql
-  ubuntu_inotify
-  ubuntu_extra
-  checkup
-  alumni_platform
-  ubuntu_slack].freeze
-
-WINDOWS = %w[intro
+WINDOWS = %w[
+  intro
   wsl2_prereq_intro
   wsl2_prereq_win10
   wsl2_prereq_win_version
   wsl2_prereq_virtualization
   github
-  remote_tools
+  zoom
   wsl2_install_wsl
   wsl2_vscode
   wsl2_vscode_settings
@@ -72,10 +54,31 @@ WINDOWS = %w[intro
   alumni_platform
   wls_slack].freeze
 
+LINUX = %w[
+  intro
+  zoom
+  github
+  ubuntu_git
+  ubuntu_sublime_text
+  ubuntu_oh_my_zsh
+  github_rsa
+  gh_cli
+  dotfiles
+  rbenv_ubuntu
+  rbenv_ruby
+  nvm
+  yarn
+  ubuntu_postgresql
+  ubuntu_inotify
+  ubuntu_extra
+  checkup
+  alumni_platform
+  ubuntu_slack].freeze
+
 filenames = {
-  'macOS.md' => MAC_OS,
-  'UBUNTU.md' => UBUNTU,
-  'WINDOWS.md' => WINDOWS
+  'MACOS.md' => MACOS,
+  'WINDOWS.md' => WINDOWS,
+  'LINUX.md' => LINUX
 }
 
 filenames.each do |filename, partials|

@@ -9,11 +9,9 @@ The following instructions will help you to get ready for [Le Wagon](http://www.
 - Install Ruby
 
 
-## Remote tools
+## Zoom
 
-To be able to interact when we are not in the same physical room, we will be using two tools:
-
-### Zoom
+To be able to interact when we are not in the same physical room, we will be using Zoom.
 
 ⚠️ If you already have Zoom installed, please make sure that the version is at least **5.4**. Otherwise, you will not be able to use breakout rooms in order to work with your buddy.
 
@@ -27,18 +25,114 @@ Once connected, you should see:
 
 You can close Zoom now.
 
-### Teamviewer
 
-For the most complicated problems, a teacher might have to take control of your computer. To be able to do this, we will need to use the Teamviewer tool. Go to the [Teamviewer download page](https://www.teamviewer.com/en/download). It should automatically detect your operating system. If it doesn't, choose your operating system from the list at the top of the page. Click on **Download Teamviewer** and open the file you just have downloaded. Leave the default settings as they are and click on **Accept**. A progress bar will appear, then Teamviewer will start when the installation is over. It should look like this:
 
-![teamviewer.jpg](images/teamviewer.jpg)
+## Checking your computer for Apple Silicon (Apple M1 chips)
 
-This will only be used as last resort when debugging becomes too tricky through spoken word. Nobody will ever be able to take control of your screen without you knowing it :ok_hand:
+If you bought your computer after late 2020, chances are it uses Apple silicon instead of Intel processors. Let's find out...
 
-You can close Teamviewer now.
+Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
-If you are not familiar with video calls, here is a great [article](https://martinfowler.com/articles/effective-video-calls.html) full of good practices :camera: :microphone:
+![](images/open-terminal.png)
 
+Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+<!-- TODO(dmilon): update branch when merged to master -->
+``` bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/vscode/utils/macos_list_processor_type.sh)"
+```
+
+☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+If your computer uses Apple Silicon, expand the paragraph below and go through it. Otherwise ignore it.
+
+<details>
+  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
+
+  &nbsp;
+
+
+
+## Setup for Apple Silicon
+
+### Uninstall Homebrew
+
+We need to uninstall Homebrew in case a native version was installed.
+
+Execute the following command in the terminal:
+
+``` bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+```
+
+If brew was not installed you will get the message `brew: command not found!`
+
+### Configure Terminal for Rosetta
+
+Open the Finder app (or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014)).
+
+Go to Applications > Utilities.
+
+Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
+
+Press Cmd + I on the Terminal Rosetta app, then check the box "Open using Rosetta".
+
+⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
+
+Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
+
+</details>
+
+
+## A note about quitting apps on a Mac
+
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
+
+![quit.png](images/quit.png)
+
+During this setup you will be asked to **quit and re-open** applications multiple times, please make sure you do it properly :pray:
+
+## Command Line Tools
+
+Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014).
+
+Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+
+```bash
+xcode-select --install
+```
+
+If you receive the following message, you can just skip this step and go to next step.
+
+```
+# command line tools are already installed, use "Software Update" to install updates
+```
+
+Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
+
+![](images/xcode-select-install.png)
+
+While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
+
+If you receive the following message, you need to update the sofware update catalog.
+
+```
+Xcode is not currently available from the Software Update server
+```
+
+In this case, copy-paste the following command in the terminal and hit Enter.
+
+```bash
+sudo softwareupdate --clear-catalog
+```
+
+Once this is done, you can try to install again (copy-paste the following command and hit enter).
+
+```bash
+xcode-select --install
+```
+
+Then follow the previous instructions for this command.
 
 
 ## GitHub account
@@ -50,79 +144,106 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ![](images/github_upload_picture.png)
 
 
-## Git
+## Homebrew
 
-To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
-
-Then copy this line with `Ctrl` + `C`:
-
-```bash
-sudo apt install -y git
-```
-
-:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
-
-
-Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
+On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
+It will be used as soon as we need to install some software.
+To do so, open your Terminal and run:
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
-sudo apt update
-sudo apt install -y gh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-To check that `gh` has been successfully installed on your machine, you can run:
+This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
+
+If you already have Homebrew, it will tell you so, that's fine, go on.
+
+Then install some useful software:
 
 ```bash
-gh --version
+brew update
 ```
 
-If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
-
-
-## Sublime Text 3 - Your text editor
-
-A text editor is one of the most important tools of a developer.
-Follow these instructions in the Terminal:
+If you get a `/usr/local must be writable` error, just run this:
 
 ```bash
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo chown -R $USER:admin /usr/local
+brew update
 ```
 
-:point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmy type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
+Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
-sudo apt install -y apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install -y sublime-text
+brew upgrade git         || brew install git
+brew upgrade gh          || brew install gh
+brew upgrade wget        || brew install wget
+brew upgrade imagemagick || brew install imagemagick
+brew upgrade jq          || brew install jq
+brew upgrade openssl     || brew install openssl
 ```
 
-Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
+
+## VS Code
 
 
 ## Oh-my-zsh - Fancy your Terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one.
+We will use the shell named `zsh` instead of `bash`, the default one, alongside with useful and fancy [`oh-my-zsh`](https://ohmyz.sh/) plugins:
 
 ```bash
-sudo apt install -y zsh curl vim imagemagick jq
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# it will ask for your session password
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Be careful, those commands will ask you to type your password twice. At the end
-your prompt should look like this:
-
-![](images/ubuntu_oh_my_zsh.png)
-
-If it doesn't, **ask a teacher**.
-
-To make this change stick, restart your laptop (or virtual machine):
+Be careful, at the end of this script, it will prompt for your macOS user account password again (Remember! No visual feedback!). You should get something like:
 
 ```bash
-sudo reboot
+         __                                     __
+  ____  / /_     ____ ___  __  __   ____  _____/ /_
+ / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
+/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
+\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
+                        /____/                       ....is now installed!
+````
+
+Now quit the Terminal (`⌘` + `Q`) and restart it.
+
+You should see something like this:
+
+![](images/on-my-zsh.png)
+
+If not, **stop right away** and call a teacher.
+
+On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
+
+![](images/terminal-pro.png)
+
+**Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
+
+:bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
+
+## Apple Silicon computers
+
+<details>
+  <summary>Forgot if your computer uses Apple Silicon?</summary>
+
+  &nbsp;
+
+
+  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+  <!-- TODO(dmilon): update branch when merged to master -->
+  ``` bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/vscode/master/utils/macos_list_processor_type.sh)"
+  ```
+
+  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
+
+</details>
+
+If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
+
+``` bash
+echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
 ```
 
 
@@ -326,11 +447,41 @@ stt
 
 **Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
 
-To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on OSX, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
+To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on macOS, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
 
 If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
 
 When it's done, you can close Sublime Text.
+
+
+### SSH Passphrase
+
+In a terminal window, launch this command:
+
+```bash
+sw_vers
+```
+
+<details>
+  <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
+
+  In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
+  
+  First open the `~/.ssh/config` file.
+
+  ```bash
+  touch ~/.ssh/config  # Creates the file if it does not exist
+  st ~/.ssh/config     # Opens the file in Sublime text
+  ```
+
+  And then add these 3 lines to the file. **Save**.
+
+  ```bash
+  Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+  ```
+</details>
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
@@ -342,25 +493,22 @@ rvm implode && sudo rm -rf ~/.rvm
 # If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
 # on your computer, that's what we want!
 
-rm -rf ~/.rbenv
+sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 
-Then in the terminal, run:
+Now let's get [`rbenv`](https://github.com/rbenv/rbenv) and [`ruby-build`](https://github.com/rbenv/ruby-build) packages from Homebrew, they'll be useful.
 
 ```bash
-sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-```
-```bash
-sudo apt clean
-```
-```bash
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-```
-```bash
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+brew uninstall --force rbenv ruby-build
 ```
 
-**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+Then quit **all your opened terminal windows** (Cmd + Q) and restart one. Then run:
+
+```bash
+brew install rbenv
+```
+
+Again, quit all your terminal windows and restart.
 
 
 Now, you are ready to install the latest ruby version and set it as the default version.
@@ -486,48 +634,34 @@ You should see a version. If not, ask a teacher.
 In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
 an open-source robust and production-ready database. Let's install it now.
 
+```bash
+brew install postgresql
+brew services start postgresql
 ```
-sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
-```
 
-
-## Ubuntu inotify
-
-Ubuntu is always tracking changes in your folders and to do this it uses inotify.
-By default the Ubuntu limit is set to 8192 files monitored.
-
-As programming involves a lot of files, we need to raise this limit.
-In your terminal run:
+Once you've done that, let's check if it worked:
 
 ```bash
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+psql -d postgres
 ```
 
-
-## Extra
-
-### Install video codec H264
-
-On our pedagogical platform (Kitt, you'll soon discover it!), we have some videos. By default Firefox on Linux cannot play them as they use an unsupported codec (H264). To get those videos working for you, you need to run this:
+If you enter a new prompt like this one, you're good!
 
 ```bash
-sudo apt install libavcodec-extra -y
+psql (12.5)
+Type "help" for help.
+
+postgres=#
 ```
 
-### Install useful terminal tools
+To quit it, type `\q` then `Enter`.
 
-`tree` is a nice tool to visualize a directory tree inside the terminal:
 
-`ncdu` is a text-based interface disk utility.
+## Security
 
-`htop` is an interactive process viewer.
+It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
 
-`tig` is a text-mode interface for `git`.
-
-```bash
-sudo apt install tree ncdu htop tig
-```
+You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
 
 
 ## Check-up
@@ -559,9 +693,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Install Slack for Linux (beta)](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-).
-
-Launch the app and sign in to `lewagon-alumni` organization.
+[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store and sign in to `lewagon-alumni` organization.
 
 Make sure you upload a picture there.
 
@@ -573,5 +705,41 @@ In case of remote tickets, you will use Slack audio or video call to get help. T
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
+
+
+## Keyboard
+
+As you become a programmer, you'll understand that leaving the keyboard takes a lot of time,
+so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on macOS
+to help you do that:
+
+### Keyboard speed
+
+Go to  > System Preferences > Keyboard. Set `Key Repeat` to the fastest position (to the right) and
+`Delay Until Repeat` to the shortest position (to the right).
+
+### Full Keyboard Access
+
+Go to  > System Preferences > Keyboard. Click on the third tab (Shortcuts). At the bottom of the
+pane, click the radio button `All controls`. This way when you get a dialog with several options,
+you'll be able to type `Enter` to confirm, or `Space` to choose the cancel option. If you have more than
+two options, you can use tab to circle between them.
+
+### macOS For hackers
+
+[Read this script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and cherry-pick some stuff you think will suit you.
+For instance, you can type in the terminal this one:
+
+```bash
+# Expanding the save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# Save screenshots to the Desktop (or elsewhere)
+defaults write com.apple.screencapture location "${HOME}/Desktop"
+
+# etc..
+```
 
 

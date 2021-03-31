@@ -42,9 +42,9 @@ On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Pro
 
 
   Copy-paste the following command in the terminal and hit `Enter` to execute the command.
-
+  <!-- TODO(dmilon): update branch when merged to master -->
   ``` bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/vscode/master/utils/macos_list_processor_type.sh)"
   ```
 
   ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
