@@ -10,6 +10,7 @@ MACOS = %w[
   github
   homebrew
   macos_vscode
+  vscode_extensions
   macos_oh_my_zsh
   github_rsa
   gh_cli
@@ -36,7 +37,7 @@ WINDOWS = %w[
   zoom
   wsl2_install_wsl
   wsl2_vscode
-  wsl2_vscode_settings
+  vscode_extensions
   wsl2_windows_terminal
   wsl2_git
   wsl2_oh_my_zsh
@@ -60,7 +61,7 @@ UBUNTU = %w[
   github
   ubuntu_git
   ubuntu_vscode
-  vscode_setup
+  vscode_extensions
   ubuntu_oh_my_zsh
   github_rsa
   gh_cli
