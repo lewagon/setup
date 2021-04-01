@@ -10,7 +10,6 @@ sudo apt install -y git
 
 :bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
 
-
 Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
 
 ```bash

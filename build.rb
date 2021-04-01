@@ -59,7 +59,8 @@ UBUNTU = %w[
   zoom
   github
   ubuntu_git
-  ubuntu_sublime_text
+  ubuntu_vscode
+  vscode_setup
   ubuntu_oh_my_zsh
   github_rsa
   gh_cli
