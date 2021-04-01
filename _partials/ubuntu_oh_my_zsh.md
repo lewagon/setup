@@ -1,4 +1,4 @@
-## Oh-my-zsh - Fancy your Terminal
+## Oh-my-zsh - Fancy your terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
