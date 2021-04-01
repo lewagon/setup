@@ -47,7 +47,6 @@ sudo apt install -y git
 
 :bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
 
-
 Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
 
 ```bash
@@ -66,25 +65,83 @@ gh --version
 If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
 
 
-## Sublime Text 3 - Your text editor
+## Visual Studio Code - Your text editor
 
 A text editor is one of the most important tools of a developer.
-Follow these instructions in the Terminal:
+
+Follow these instructions in the Terminal **one by one** (don't copy and paste everything at once):
 
 ```bash
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-```
-
-:point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmy type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
-
-```bash
-sudo apt install -y apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt update
-sudo apt install -y sublime-text
+sudo apt install code
 ```
 
-Sublime Text is free without any time limitation but a popup will appear every ten saves to remind you there is a license to buy. You can hit `Esc` when this happens, but feel free to buy Sublime Text if you really like this one (there are alternatives).
+:point_up: This command will ask for your password with: `[sudo] password for <username>:`. Don't panick! Calmly type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
+
+Now let's try to launch your VSCode from **the Terminal**:
+
+```bash
+code
+```
+If the text editor opens in a new window, you can move forward!
+
+### VS Code Shortcuts
+
+In VS Code:
+- Click on `File`
+- Click on `Preferences`
+- Click on `Keymaps`
+- Click on `Sublime Text Keymap and Settings Importer`
+- Click on `Install`
+
+
+### VS Code Extensions
+
+Let's gain time now and add other extensions that will be helpful during your Bootcamp.
+For each of these extensions:
+- On the web page, click on `install`
+- In the browser, accept to use VS Code to install the extension
+- In VS Code, click on `install`
+
+**Extensions**
+- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
+- [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
+
+```bash
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension hridoy.rails-snippets
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension rayhanw.erb-helpers
+code --install-extension misogi.ruby-rubocop
+```
+
+### VS Code Settings
+
+- On macOS, press `Cmd` + `,` on your keyboard (or `Ctrl` + `,` on Windows or Linux) to open the settings
+- In the search bar, type `emmet`
+- Click on the first **`Edit in settings.json`** link
+
+Paste the following just before the last `}`:
+
+```bash
+"emmet.triggerExpansionOnTab": true,
+"emmet.includeLanguages": {
+  "erb": "html"
+},
+```
+
+It should look like this:
+
+![vscode_emmet](images/vscode_emmet.jpg)
+
+:warning: You should add a comma if there is none after the **`]`** like line 26 in the image above ☝️
+
+:warning: Don't forget to save those changes!
 
 
 ## Oh-my-zsh - Fancy your Terminal

@@ -1,20 +1,12 @@
-## Visual Studio Code
-
-We use Visual Code Studio for writing code on Windows, because it integrates nicely with the Ubuntu terminal.
-
-For this integration to work, you need to uninstall other code editor, like for example SublimeText, as their WSL integration interferes with the integration of VS Code.
+## Visual Studio Code - Your text editor
 
 ### Installation
-- Go to the [Visual Studio Code page](https://code.visualstudio.com/download)
-- Choose the Windows version of VS Code
 
-
-The tool should start to download automatically.
-
-- Open the file you have just downloaded.
-- Install it with a few options:
-    - Register VS Code as an editor for supported file types
-    - Let the other options as they are
+1. Download [Visual Studio Code for Windows](https://code.visualstudio.com/download).
+2. Open the file you have just downloaded.
+3. Install it with a few options:
+  - Register VS Code as an editor for supported file types
+  - Let the other options as they are
 
 ![VS Code install](images/vscode-install.png)
 
