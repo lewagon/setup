@@ -1,8 +1,10 @@
-## Visual Studio Code - Your text editor
+## Visual Studio Code
 
 ### Installation
 
-Follow these instructions in the terminal **one by one** (don't copy and paste everything at once):
+Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
+
+Copy (`CTRL` + `C`) the commands below then paste them in your terminal (`CTRL` + `SHIFT` + `v`):
 
 ```bash
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -

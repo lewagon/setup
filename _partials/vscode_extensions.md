@@ -9,6 +9,8 @@ Let's install some useful extensions to VS Code:
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+Copy the commands below then paste them in your terminal:
+
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension hridoy.rails-snippets

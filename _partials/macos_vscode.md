@@ -1,4 +1,4 @@
-## Visual Studio Code - Your text editor
+## Visual Studio Code
 
 ### Installation
 
