@@ -1,10 +1,10 @@
 # Setup instructions
 
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
+The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) Web Development course:
 
 - Grab a text editor, where you will spend your days and nights
 - Install a package manager
-- Pimp your Terminal
+- Pimp your terminal
 - Setup git and GitHub
 - Install Ruby
 
@@ -184,7 +184,7 @@ brew upgrade openssl     || brew install openssl
 ```
 
 
-## Visual Studio Code - Your text editor
+## Visual Studio Code
 
 ### Installation
 
@@ -219,6 +219,8 @@ Let's install some useful extensions to VS Code:
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+Copy the commands below then paste them in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
@@ -472,31 +474,6 @@ you **need** to put one of the email listed above thanks to the previous `gh api
 don't do that, Kitt won't be able to track your progress.
 
 Please now **quit** all your opened terminal windows.
-
-### Sublime Text auto-configuration
-
-Open a new terminal and type this:
-
-```bash
-cd ~/code
-stt
-```
-
-It will **open Sublime Text in the context of your current folder**. That's how we'll use it.
-
-**Close Sublime text** and open it again:
-
-```bash
-stt
-```
-
-**Wait 1 minute** for additional packages to be automatically installed (New tabs with text will automatically open, containing documentation for each new package installed). TO follow package installation, you can go to `View > Show console`.
-
-To check if plugins are installed, open the Command Palette (`⌘` + `⇧` + `P` on macOS, `Ctrl` + `⇧` + `P` on Linux), type in `Packlist` and then `Enter`, you should see a couple of packages installed (like [Emmet](http://emmet.io/)).
-
-If you don't, please install all of them manually. The list is referenced [here](https://github.com/lewagon/dotfiles/blob/master/Package%20Control.sublime-settings).
-
-When it's done, you can close Sublime Text.
 
 
 ### SSH Passphrase

@@ -1,10 +1,10 @@
 # Setup instructions
 
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) fullstack bootcamp:
+The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) Web Development course:
 
 - Grab a text editor, where you will spend your days and nights
 - Install a package manager
-- Pimp your Terminal
+- Pimp your terminal
 - Setup git and GitHub
 - Install Ruby
 
@@ -446,7 +446,7 @@ wsl -l -v
 
 
 
-## Visual Studio Code - Your text editor
+## Visual Studio Code
 
 ### Installation
 
@@ -478,6 +478,8 @@ Let's install some useful extensions to VS Code:
 - [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+Copy the commands below then paste them in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
