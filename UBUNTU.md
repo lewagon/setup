@@ -115,7 +115,7 @@ code --install-extension dbaeumer.vscode-eslint
 ```
 
 
-## Oh-my-zsh - Fancy your Terminal
+## Oh-my-zsh - Fancy your terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
@@ -271,7 +271,8 @@ This line should open your browser on the newly created gist page. See, we've ju
 
 Hackers love to refine and polish their shell and tools.
 
-We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
+<!-- TODO(dmilon): update branch when merged to master -->
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles/tree/vscode).
 
 As your configuration is personal, you need your **own** repository storing it. Forking means
 that it will create a new repo in your GitHub account, identical to the original one.
@@ -298,7 +299,9 @@ gh repo fork lewagon/dotfiles --clone
 Run the `dotfiles` installer.
 
 ```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
+cd ~/code/$GITHUB_USERNAME/dotfiles
+git checkout --track upstream/vscode
+zsh install.sh
 ```
 
 Check the emails registered with your GitHub Account. You'll need to pick one

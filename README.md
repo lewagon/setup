@@ -1,10 +1,8 @@
-## New alumni
-
-### In China?
+## In China?
 
 Before starting the setup :point_down: you want to turn on your VPN, or get VPN codes from your city manager right away.
 
-### Worldwide
+## Worldwide
 
 Setup guides made for [Le Wagon](https://www.lewagon.com). Please choose your operating system (OS):
 
