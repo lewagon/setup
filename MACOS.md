@@ -209,7 +209,9 @@ Now quit the Terminal (`⌘` + `Q`) and restart it.
 Try typing `code` :point_right: if VS Code opens in new window, you can proceed to the next point!
 
 
-### VS Code Extensions
+## VS Code Extensions
+
+### Installation
 
 Let's install some useful extensions to VS Code:
 
@@ -225,6 +227,18 @@ Copy the command below then paste them in your terminal:
 ```bash
 code --install-extension ms-vscode.sublime-keybindings MS-vsliveshare.vsliveshare misogi.ruby-rubocop hridoy.rails-snippets dbaeumer.vscode-eslint
 ```
+
+### Live Share configuration
+
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
+
+Click on the little arrow at the bottom of the left bar :point_down:
+
+![](images/liveshare.png)
+
+Click on the "Share" button, then on "GitHub (Sign in using GitHub account)". A popup appears asking you to sign in with GitHub: click on "Allow". You are redirected to a GitHub page in you browser asking you to authorize Visual Studio Code: click on "Continue" then "Authorize github".
+
+That's it, you're good to go!
 
 
 ## Oh-my-zsh - Fancy your Terminal
