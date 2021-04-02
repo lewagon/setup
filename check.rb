@@ -72,8 +72,8 @@ def check_all
   end
   check("git editor setup") do
     editor = `git config --global core.editor`
-    if editor.match(/subl/i)
-      [ true, "Sublime Text is your default git editor"]
+    if editor.match(/code/i)
+      [ true, "VS Code is your default git editor"]
     else
       [ false, "Ask a teacher to check your ~/.gitconfig editor setup. Right now, it's `#{editor.chomp}`"]
     end
