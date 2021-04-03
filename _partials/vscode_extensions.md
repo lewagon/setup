@@ -5,7 +5,7 @@
 Let's install some useful extensions to VS Code:
 
 **Extensions**
-- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [Ruby on Rails](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
