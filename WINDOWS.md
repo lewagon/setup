@@ -472,20 +472,18 @@ wsl -l -v
 
 ### Installation
 
-Let's install some useful extensions to VS Code:
+Let's install some useful extensions to VS Code. Copy the command below then paste it in your terminal:
 
-**Extensions**
+```bash
+code --install-extension ms-vscode.sublime-keybindings MS-vsliveshare.vsliveshare misogi.ruby-rubocop hridoy.rails-snippets dbaeumer.vscode-eslint
+```
+
+Here is a list of the extensions you are installing:
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [Ruby on Rails](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-Copy the command below then paste them in your terminal:
-
-```bash
-code --install-extension ms-vscode.sublime-keybindings MS-vsliveshare.vsliveshare misogi.ruby-rubocop hridoy.rails-snippets dbaeumer.vscode-eslint
-```
 
 ### Live Share configuration
 

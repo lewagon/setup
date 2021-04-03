@@ -188,23 +188,29 @@ brew upgrade openssl     || brew install openssl
 
 ### Installation
 
-1. Download [Visual Studio Code for macOS](https://code.visualstudio.com/Download).
-2. Open the browser's download list and locate the downloaded file.
-3. Select the `magnifying glass` icon to open the file in `Finder`.
-4. Drag `Visual Studio Code.app` to the **Applications** folder, making it available in the macOS Launchpad. **Don't skip this step!**
-5. Add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock.
+Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
+
+Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`):
+
+```bash
+brew install --cask visual-studio-code
+```
+
+Then launch VS Code:
+
+```bash
+'/Applications/Visual Studio Code.app'
+```
+
+Now, add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock.
 
 ### Launching from the terminal
 
-You can also run VS Code from the terminal by typing `code` after adding it to the path.
-
-Launch VS Code by clicking the icon in your Dock.
-
-Open the Command Palette (`Cmd` + `Shift` + `P`) and type `shell command` to find the Shell Command: Install 'code' command in PATH command:
+In VS Code, open the Command Palette (`CMD` + `SHIFT` + `P`), type `shell command` and click on "Shell Command: Install 'code' command in PATH" :point_down:
 
 ![](images/mac_vscode_command.png)
 
-Now quit the Terminal (`⌘` + `Q`) and restart it.
+Now quit the VS Code, quit the Terminal (`CMD` + `Q`) and restart it.
 
 Try typing `code` :point_right: if VS Code opens in new window, you can proceed to the next point!
 
@@ -213,20 +219,18 @@ Try typing `code` :point_right: if VS Code opens in new window, you can proceed 
 
 ### Installation
 
-Let's install some useful extensions to VS Code:
+Let's install some useful extensions to VS Code. Copy the command below then paste it in your terminal:
 
-**Extensions**
+```bash
+code --install-extension ms-vscode.sublime-keybindings MS-vsliveshare.vsliveshare misogi.ruby-rubocop hridoy.rails-snippets dbaeumer.vscode-eslint
+```
+
+Here is a list of the extensions you are installing:
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [Ruby on Rails](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-
-Copy the command below then paste them in your terminal:
-
-```bash
-code --install-extension ms-vscode.sublime-keybindings MS-vsliveshare.vsliveshare misogi.ruby-rubocop hridoy.rails-snippets dbaeumer.vscode-eslint
-```
 
 ### Live Share configuration
 
