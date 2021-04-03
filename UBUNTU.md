@@ -314,6 +314,7 @@ gh repo fork lewagon/dotfiles --clone
 
 Run the `dotfiles` installer.
 
+<!-- TODO(dmilon): remove checkout command before merge master -->
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
 git checkout --track upstream/vscode

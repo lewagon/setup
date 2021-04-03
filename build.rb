@@ -44,6 +44,7 @@ WINDOWS = %w[
   github_rsa
   wsl2_browser_variable
   gh_cli
+  dotfiles
   wsl2_dotfiles
   ubuntu_rbenv
   rbenv_ruby
