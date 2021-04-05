@@ -318,7 +318,7 @@ wsl --set-default-version 2
 
 <details>
   <summary>Enable Virtual Machine Platform Windows feature</summary>
-  Follow the steps described [here](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202)
+  Follow the steps described [here](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) until you enable **Virtual Machine Platform** and **Windows Subsystem for Linux**
 
 </details>
 
@@ -1324,5 +1324,4 @@ In case of remote tickets, you will use Slack audio or video call to get help. T
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
-
 
