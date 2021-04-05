@@ -199,7 +199,7 @@ brew install --cask visual-studio-code
 Then launch VS Code:
 
 ```bash
-'/Applications/Visual Studio Code.app'
+open '/Applications/Visual Studio Code.app'
 ```
 
 Now, add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock.
@@ -780,5 +780,4 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 
 # etc..
 ```
-
 
