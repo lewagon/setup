@@ -475,7 +475,11 @@ wsl -l -v
 Let's install some useful extensions to VS Code. Copy the command below then paste it in your terminal:
 
 ```bash
-code --install-extension ms-vscode.sublime-keybindings MS-vsliveshare.vsliveshare misogi.ruby-rubocop hridoy.rails-snippets dbaeumer.vscode-eslint
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension misogi.ruby-rubocop
+code --install-extension hridoy.rails-snippets
+code --install-extension dbaeumer.vscode-eslint
 ```
 
 Here is a list of the extensions you are installing:

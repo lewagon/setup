@@ -16,7 +16,9 @@ Then launch VS Code:
 '/Applications/Visual Studio Code.app'
 ```
 
-Now, add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing Options, Keep in Dock.
+Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Options" then "Keep in Dock":
+
+![](images/mac_vscode_dock.png)
 
 ### Launching from the terminal
 

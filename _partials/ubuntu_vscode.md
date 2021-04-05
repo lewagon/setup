@@ -25,6 +25,8 @@ Now let's try to launch your VS Code from **the terminal**:
 code
 ```
 
-When VS Code opens in a new window, right-click on its logo in the dock and click on "Add to Favorites"
+Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Add to Favorites":
+
+![](images/ubuntu_vscode_dock.png)
 
 You can move forward!
