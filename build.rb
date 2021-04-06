@@ -15,7 +15,6 @@ MACOS = %w[
   github_rsa
   gh_cli
   dotfiles
-  macos_ssh
   macos_rbenv
   rbenv_ruby
   nvm
