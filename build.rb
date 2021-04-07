@@ -59,9 +59,9 @@ WINDOWS = %w[intro
   wsl2_git
   wsl2_oh_my_zsh
   github_rsa
-  wsl_browser_variable
   gh_cli
   wsl2_dotfiles
+  wsl_browser_variable
   rbenv_ubuntu
   rbenv_ruby
   nvm
