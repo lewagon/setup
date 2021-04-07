@@ -22,6 +22,8 @@ arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebr
 Issue with Zsh setup (with MacBookAir M1):
 
 Here is the error message displayed after installing Zsh :
+
+
 ![zsh_permissions.png](images/zsh_permissions.PNG)
 
 
