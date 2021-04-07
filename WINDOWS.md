@@ -319,6 +319,7 @@ wsl --set-default-version 2
 <details>
   <summary>Enable Virtual Machine Platform Windows feature</summary>
   Follow the steps described <a src='https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202'>here</a> until you enable <strong>Virtual Machine Platform</strong> and <strong>Windows Subsystem for Linux</strong>
+
 </details>
 
 <details>
@@ -833,90 +834,6 @@ Don't be in a rush, take time to [read this article](http://sebastien.saunier.me
 understanding of what those keys are used for.
 
 
-## Linking your default browser to Ubuntu
-To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
-
-⚠️ You need to execute at least one of the following commands below:
-
-
-<details>
-  <summary>Google Chrome as your default browser</summary>
-
-  &nbsp;
-
-
-  Run the command:
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-  ```
-
-  If you get an error like `ls: cannot access...` Run the following command:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-
-  Else run:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-
-</details>
-
-
-<details>
-  <summary>Mozilla Firefox as your default browser</summary>
-
-  &nbsp;
-
-
-  Run the command:
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
-  ```
-
-  If you get an error like `ls: cannot access...` Run the following command:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-
-  Else run:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-<details>
-  <summary>Microsoft Edge as your default browser</summary>
-
-  &nbsp;
-
-
-  Run the command:
-
-
-  ```bash
-  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-
-👉 Restart your terminal
-
-Then please make sure that the following command returns "Browser defined 👌":
-
-```bash
-[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
-```
-
-If it does not, choose a browser in the list above and execute the corresponding command.
-
-
 ## GitHub CLI
 
 CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
@@ -1051,6 +968,90 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close Visual Code Studio.
 
+
+
+## Linking your default browser to Ubuntu
+To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
+
+⚠️ You need to execute at least one of the following commands below:
+
+
+<details>
+  <summary>Google Chrome as your default browser</summary>
+
+  &nbsp;
+
+
+  Run the command:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+  ```
+
+  If you get an error like `ls: cannot access...` Run the following command:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+  Else run:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+</details>
+
+
+<details>
+  <summary>Mozilla Firefox as your default browser</summary>
+
+  &nbsp;
+
+
+  Run the command:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
+  ```
+
+  If you get an error like `ls: cannot access...` Run the following command:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+
+  Else run:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>Microsoft Edge as your default browser</summary>
+
+  &nbsp;
+
+
+  Run the command:
+
+
+  ```bash
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+
+👉 Restart your terminal
+
+Then please make sure that the following command returns "Browser defined 👌":
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+If it does not, choose a browser in the list above and execute the corresponding command.
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
@@ -1323,4 +1324,5 @@ In case of remote tickets, you will use Slack audio or video call to get help. T
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
+
 
