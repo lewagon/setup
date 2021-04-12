@@ -4,6 +4,7 @@ The goal is to gather here all tips and known issues about WSL2!
 
 - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
   - [Network unreachable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#network-unreachable)
+  - [Uncompressed and Unencrypted error](#uncompressed-and-unencrypted-error)
   - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
   - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
   - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
@@ -56,7 +57,7 @@ When trying to connect to remote hosts, eg. when trying to do `sudo apt update`,
 - Open a new WSL terminal. You should be able to access the internet.
 - *[Source](https://stackoverflow.com/a/60302925)*.
 
-## WslRegisterDistribution failed with error: 0xc03a001a
+## Uncompressed and Unencrypted error
 
 When running `wsl --set-default-version 2`, you might get a:
 ```
