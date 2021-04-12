@@ -63,7 +63,7 @@ def check_all
     nickname = groups["nickname"]
     puts "Your username on GitHub is #{nickname}, checking your profile picture now..."
     avatar_url = JSON.parse(HTTP.get("https://api.github.com/users/#{nickname}"))['avatar_url']
-    content_length = `curl -s -I #{avatar_url} | grep 'content-length:'`.strip.gsub("content-length: ", "").to_i
+    content_length = `curl -s -I #{avatar_url}`.match(/content-length:\s(?<length>\d+)/i)[:length].to_i
     if content_length >= MINIMUM_AVATAR_SIZE
       [ true, "Thanks for uploading a GitHub profile picture 📸"]
     else
