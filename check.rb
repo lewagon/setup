@@ -73,6 +73,8 @@ def check_all
     editor = `git config --global core.editor`
     if editor.match(/subl/i)
       [ true, "Sublime Text is your default git editor"]
+    elsif editor.chomp == 'code --wait'
+      [ true, "Visual Studio Code is your default git editor"]
     else
       [ false, "Ask a teacher to check your ~/.gitconfig editor setup. Right now, it's `#{editor.chomp}`"]
     end
