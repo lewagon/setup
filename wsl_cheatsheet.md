@@ -4,7 +4,7 @@ The goal is to gather here all tips and known issues about WSL2!
 
 - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
   - [Network unreachable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#network-unreachable)
-  - [Uncompressed and Unencrypted error](#uncompressed-and-unencrypted-error)
+  - [Uncompressed and Unencrypted error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#uncompressed-and-unencrypted-error)
   - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
   - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
   - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
