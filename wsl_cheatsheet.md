@@ -4,6 +4,7 @@ The goal is to gather here all tips and known issues about WSL2!
 
 - [Issues](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#issues)
   - [Network unreachable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#network-unreachable)
+  - [Uncompressed and Unencrypted error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#uncompressed-and-unencrypted-error)
   - [I/O error](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#inputoutput-error)
   - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
   - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/wsl_cheatsheet.md#insecure-world-writable)
@@ -55,6 +56,28 @@ When trying to connect to remote hosts, eg. when trying to do `sudo apt update`,
   ```
 - Open a new WSL terminal. You should be able to access the internet.
 - *[Source](https://stackoverflow.com/a/60302925)*.
+
+## Uncompressed and Unencrypted error
+
+When running `wsl --set-default-version 2`, you might get a:
+```
+Error: 0xc03a001a The requested operation could not be completed due to a virtual disk system limitation. Virtual hard disk files must be uncompressed and unencrypted and must not be sparse.
+```
+![image](https://user-images.githubusercontent.com/45776359/114172634-474fc700-990c-11eb-9687-39ff94dd2536.png)
+
+To fix this issue, open the `File Explorer` and go to:
+`C:\Users\<YOUR_USERNAME>\AppData\Local\Packages\CanonicalGroupLimited<SOMETHING>`
+
+It should look something like this:
+![image](https://user-images.githubusercontent.com/45776359/114173107-01473300-990d-11eb-81c6-9950d6315569.png)
+
+Right click on `LocalState`, then `Properties`, then `Advanced`.
+
+Ensure `Compress contents to save disk space` and `Encrypt contents to secure data` are both deselected.
+
+Click `OK`, then `Apply`, then `Apply changes to this folder only`.
+
+[Credits](https://simplernerd.com/wsl2-uncompressed/).
 
 ## Input/Output error
 
