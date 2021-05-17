@@ -830,7 +830,7 @@ CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Com
 
 In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the Terminal.
 
-It should already be installed on your laptop from the previous commands. First you need to **login**:
+It should already be installed on your laptop from the previous commands. First you need to **login**, copy the following line (**do not** edit it!) and paste it in your terminal, then press the `Enter` key:
 
 ```bash
 gh auth login -s 'user:email' -w
