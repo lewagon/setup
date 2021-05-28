@@ -116,7 +116,7 @@ Otherwise, it will open a window asking you if you want to install some software
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
 
-If you receive the following message, you need to update the sofware update catalog.
+If you receive the following message, you need to update the software update catalog.
 
 ```
 Xcode is not currently available from the Software Update server
@@ -475,7 +475,7 @@ sw_vers
   <summary>Click here if your OS version (ProductVersion line) is less than 10.12</summary>
 
   In order not to re-type your SSH passphrase at every `git push`, you can add these lines to the `~/.ssh/config` file:
-  
+
   First open the `~/.ssh/config` file.
 
   ```bash
