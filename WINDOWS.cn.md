@@ -105,7 +105,7 @@
 
 ---
 
-### 最小版本
+### Windows版本要求
 
 有些我们需要的工具已经在Windows 10的`1903`或**之后**的版本中发布了。所以请保证你最少要这个版本！
 
@@ -482,7 +482,7 @@ wsl -l -v
 
 ![VS Code install](images/vscode-install.png)
 
-### 链接Code和Ubuntu
+### 链接VS Code和Ubuntu
 
 - 首次启动VS Code之后:
     - 把它加在你的任务栏上；你会经常用到它！
@@ -856,13 +856,15 @@ echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Sta
 
 这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
 
+## Dotfiles (标准配置)
 
 黑客很喜欢把他们的shell和工具变得很酷炫。
 
 让我们用Le Wagon提供的一个超棒的默认配置文件来开始吧：[`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
 
-因为你的配置是自用的，所以你需要保存在**自己**的代码库里（repository/repo）。Fork的意思是：在你的GitHub账号上建一个新的代码库，和原始的那一个是一模一样的（可以想象成你在复制粘贴这个代码库）。
+因为你的配置是私人的，所以你需要保存在**自己**的代码库里（repository/repo）。Fork的意思是：在你的GitHub账号上建一个新的代码库，和原始的那一个是一模一样的（可以想象成你在复制粘贴这个代码库）。
 这样，你在你的GitHub上就会有一个新的代码库： `$GITHUB_USERNAME/dotfiles`。
+
 我们需要fork，因为每个人都需要在那些文件里加上一些**特定**信息（比如你的名字）。
 
 打开终端，运行下面的命令：
