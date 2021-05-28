@@ -28,7 +28,7 @@ Otherwise, it will open a window asking you if you want to install some software
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
 
-If you receive the following message, you need to update the sofware update catalog.
+If you receive the following message, you need to update the software update catalog.
 
 ```
 Xcode is not currently available from the Software Update server
