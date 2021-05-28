@@ -477,7 +477,8 @@ sw_vers
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
 # 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 `rvm` is not
-# on your computer, that's what we want!
+# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 你的电脑上没有安装`rvm`
+# 这是我们想要的！
 
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
@@ -613,7 +614,7 @@ yarn -v
 
 ## PostgreSQL
 
-我们在之后将会用几周的时间，来学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产的强大数据库。让我们现在一起安装它。
+几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。让我们现在一起安装它。
 
 ```bash
 brew install postgresql
@@ -716,8 +717,6 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 
 # etc..
 ```
-
-
 
 
 
