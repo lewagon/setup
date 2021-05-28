@@ -614,7 +614,7 @@ yarn -v
 
 ## PostgreSQL
 
-我们在之后将会用几周的时间，来学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产的强大数据库。让我们现在一起安装它。
+几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。让我们现在一起安装它。
 
 ```bash
 brew install postgresql
@@ -717,7 +717,6 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 
 # etc..
 ```
-
 
 
 
