@@ -365,7 +365,7 @@ echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Sta
 这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
 
 
-## Dotfiles (Standard configuration)
+## Dotfiles (标准配置)
 
 黑客很喜欢把他们的shell和工具变得很酷炫。
 
