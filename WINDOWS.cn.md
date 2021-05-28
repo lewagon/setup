@@ -698,7 +698,7 @@ gh --version
 sudo apt install -y zsh curl vim imagemagick jq
 ```
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_ohmyzsh.sh)"
 ```
 
 最终，你的终端应该会像这样：
@@ -942,31 +942,31 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 
 
 
-## Linking your default browser to Ubuntu
-To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
+## 把你的默认浏览器链接到Ubuntu
+为了保证你可以在Ubuntu终端和浏览器进行交互，你需要设置你的默认浏览器。
 
-⚠️ You need to execute at least one of the following commands below:
+⚠️ 你需要执行下面的至少一组命令：You need to execute at least one of the following commands below:
 
 
 <details>
-  <summary>Google Chrome as your default browser</summary>
+  <summary>用Google Chrome作为默认浏览器</summary>
 
   &nbsp;
 
 
-  Run the command:
+  运行下面的命令:
 
   ```bash
     ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following command:
+  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
   ```
 
-  Else run:
+  如果没有错误信息，就运行下面这一行:
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
@@ -976,24 +976,24 @@ To be sure that you can interact with your browser installed on Windows from you
 
 
 <details>
-  <summary>Mozilla Firefox as your default browser</summary>
+  <summary>用Mozilla Firefox作为默认浏览器</summary>
 
   &nbsp;
 
 
-  Run the command:
+  运行下面的命令:
 
   ```bash
     ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following command:
+  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
   ```
 
-  Else run:
+  如果没有错误信息，就运行下面这一行:
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
@@ -1001,12 +1001,12 @@ To be sure that you can interact with your browser installed on Windows from you
 </details>
 
 <details>
-  <summary>Microsoft Edge as your default browser</summary>
+  <summary>用Microsoft Edge作为默认浏览器</summary>
 
   &nbsp;
 
 
-  Run the command:
+  运行下面的命令:
 
 
   ```bash
@@ -1015,30 +1015,30 @@ To be sure that you can interact with your browser installed on Windows from you
 </details>
 
 
-👉 Restart your terminal
+👉 重启你的终端
 
-Then please make sure that the following command returns "Browser defined 👌":
+然后请保证下面这行命令会返回"Browser defined 👌"这句话：
 
 ```bash
 [ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
 ```
 
-If it does not, choose a browser in the list above and execute the corresponding command.
+如果没有返回这句话，那在上面的列表中选一个浏览器，然后运行对应的命令。
 
 
-## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
+## 安装Ruby (使用[rbenv](https://github.com/sstephenson/rbenv))
 
-First, we need to clean up any previous Ruby installation you might have:
+首先，我们需要先清理我们之前可能安装过的Ruby:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
-# If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
-# on your computer, that's what we want!
+# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 你的电脑上没有安装`rvm`
+# 这是我们想要的！
 
 rm -rf ~/.rbenv
 ```
 
-Then in the terminal, run:
+然后在终端再运行：
 
 ```bash
 sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
@@ -1053,43 +1053,42 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
-**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+**关掉你的终端再重启** (Alt+F4然后重启)。如果你看到一个警告，现在**忽略**它（Ruby还没有安装好）。
 
 
-Now, you are ready to install the latest ruby version and set it as the default version.
+现在，你就可以安装最新版本的ruby了，然后把它设置成默认版本。
 
-Run this command, it will **take a while (5-10 minutes)**
+运行这行命令，这会**花掉一点时间（5-10分钟）**
 
 ```bash
 rbenv install 2.6.6
 ```
 
-Once the ruby installation is done, run this command to tell the system
-to use the 2.6.6 version by default.
+当Ruby安装好后，运行下面这个指令来告诉系统使用2.6.6这个版本作为默认版本。
 
 ```bash
 rbenv global 2.6.6
 ```
 
-Then **restart** your Terminal again (close it and reopen it).
+然后再次**重启**你的终端（关掉并重新打开它）。
 
 ```bash
 ruby -v
 ```
 
-You should see something starting with `ruby 2.6.6p`. If not, ask a teacher.
+你应该会看到`ruby 2.6.6p`。如果没有的话，询问一下老师。
 
-## Installing some gems
+## 安装一些gems
 
 ---
 
 <details>
-  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+  <summary>点击这里，如果你在 :cn: <bold>中国</bold>的话</summary>
 
 
   &nbsp;
 
-  :warning: If you are in China, you should update the way we'll install gem with the following commands.
+  :warning: 如果你在中国的话，你应该使用以下命令来安装gem。
 
 ```bash
 # China only!
@@ -1104,13 +1103,13 @@ gem sources -l
 
 ---
 
-All, please run the following line:
+无论你是不是在中国，请都运行下面的指令：
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-If you encounter the following error:
+如果你遇到了以下的报错：
 
 `
 ERROR: While executing gem ... (TypeError)
@@ -1118,67 +1117,69 @@ incompatible marshal file format (can't be read)
 format version 4.8 required; 60.33 given
 `
 
-Run the following command:
+运行以下的指令：
+
 ```bash
 rm -rf ~/.gemrc
 ```
 
-Rerun the command to install the gems.
+然后，重新运行安装gems的指令。
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
-(or the Terminal) telling you to do so.
+**永远不要**使用`sudo gem install`来安装一个gem！即使你偶然发现了一个网络上的答案（或者终端提示）叫你这么做。
 
 
-## Node (with [nvm](https://github.com/nvm-sh/nvm))
+## Node (使用[nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_nvm.sh | zsh
 ```
 
-Restart your terminal and run the following:
+重启你的终端并执行下方指令：
 
 ```bash
 nvm -v
 ```
-You should see a version. If not, ask a teacher.
 
-Now let's install node:
+你应该会看到你的nvm的版本。如果没有的话，问一下你的老师。
+
+现在，让我们来安装node：
+
 
 ```bash
 nvm install 14.15.0
 ```
 
-When the command returns, run
+当这个指令执行结束之后，运行：
 
 ```bash
 node -v
 ```
 
-You should see `v14.15.0`. If not, ask a teacher.
+你应该会看到`v14.15.0`。如果没有的话，问一下你的老师。
 
 
 ## yarn
 
-Let's install [`yarn`](https://classic.yarnpkg.com/en/docs/install):
+让我们一起来安装[`yarn`](https://classic.yarnpkg.com/en/docs/install):
 
 ```bash
 npm install --global yarn
 ```
 
-Restart your terminal and run the following:
+重启终端并运行：
 
 ```bash
 yarn -v
 ```
 
-You should see a version. If not, ask a teacher.
+你应该会看到你yarn的版本。如果没有的话，问一下你的老师。
 
 
 ## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL, an open-source robust and production-ready database.
+几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。
 
-Let's install it now.
+让我们现在安装它。
 
 
 ```bash
@@ -1191,7 +1192,7 @@ sudo /etc/init.d/postgresql start
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
 
-You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
+你可以把PostgreSQL配置成自动启动，这样每次你打开新的终端时，你就不需要执行`sudo /etc/init.d/postgresql start`：
 
 ```bash
 sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
@@ -1204,97 +1205,96 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```
 
 
-## Check-up
+## 最终检查
 
-Let's check if you successfully installed everything.
+让我们来看看你是否已经成功安装好了所有软件。
 
-Quit all opened Terminal, open a new one and run the following commands:
+退出所有的终端，打开一个新的终端窗口并运行下方指令：
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb || rm _.rb
+curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-It should tell you if your workstation is ready :) If not, ask a teacher.
+它应该会告诉你，你的工作台是否已经正确的设置好了 ：）如果没有的话，问一下你的老师。
 
 
 
-## Ubuntu File System
+## Ubuntu文件系统
 
-### Exchange files between Windows and Ubuntu
+### 在Windows和Ubuntu之间交换文件
 
-We need an easy way to transfer files from Windows to Ubuntu and vice versa.
+我们需要一个简单的方法在Windows和Ubuntu之间交换文件。
 
-In order to do that, we will create shortcuts to Ubuntu directories in the Windows **File Explorer**.
+想这样的话，你需要建一些可以从Windows的**File Explorer**访问Ubuntu文件目录的快捷键。
 
 ![](images/wsl_ubuntu_file_system.png)
 
-Here are the steps:
+你需要做下面这些步骤:
 
-- Open an Ubuntu terminal
-- Open the Windows File Explorer (or use the shortcut Win + E)
-- In the Address Bar, enter `\\wsl$\` (or `\\wsl$\Ubuntu` if it does not work)
-- You now have acces to the Ubuntu file system
-- Dive into the Ubuntu file system in order to look for directories of interest
-- Drag the desired folders into the Address Bar in order to create shortcuts
+- 打开Ubuntu终端
+- 打开Windows File Explorer (或者使用快捷键Win + E)
+- 在地址栏，输入`\\wsl$\`（如果不行的话，就输入`\\wsl$\Ubuntu`）
+- 现在你就有Ubuntu文件系统的访问权限了
+- 看一下Ubuntu的文件系统，看看有哪些目录是你会想用的
+- 拖拽想要的文件夹到地址栏，就可以创建快捷键了
 
 ![](images/wsl_ubuntu_file_system.gif)
 
-### Open the Windows File Explorer from the Ubuntu terminal
+### 从Ubuntu终端打开Windows File Explorer
 
-Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal.
+另一个交换文件的方法是从Ubuntu终端打开Windows**File Explorer**。
 
-In order to do that:
+你需要做下面这些步骤：
 
-- Open an Ubuntu terminal
-- Go to the directory you wish to explore
-- Run the `explorer.exe .` command (alternatively, use `wslview .`)
-- If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
+- 打开Ubuntu终端
+- 进入你想看的目录
+- 运行`explorer.exe .`命令（或者，使用`wslview .`）
+- 如果你看到一条输入输出的报错，那就在Windows PowerShell运行`wsl --shutdown`然后再重新打开Ubuntu终端
 
 ![](images/wsl_explorer.png)
 
-### Find your way in the Ubuntu File System
+### 在Ubuntu文件系统里找到方向
 
-You might want to figure out the exact location of a Windows directory in the Ubuntu file system, or the other way around.
+你可能想搞清楚Ubuntu文件系统里的Windows目录到底在哪儿。或者Windows文件系统里的Ubuntu目录在哪儿。
 
-In order to convert a Windows path to and from an Ubuntu path:
+要把一个Windows路径变成Ubuntu路径（或者反过来），你需要做：
 
-- Open an Ubuntu terminal
-- Use the `wslpath "C:\Program Files"` command in order to translate a Windows path into an Ubuntu path
-- Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
-- In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
+- 打开Ubuntu终端
+- 使用`wslpath "C:\Program Files"`命令来把Windows路径变成Ubuntu路径
+- 使用`wslpath -w "/home"`命令来把Ubuntu路径变成Windows路径
+- 还有，`wslpath -w $(pwd)`命令会返回当前Ubuntu路径的Windows路径
 
 ![](images/wsl_path.png)
 
 
-## Alumni
-:warning: If you have received an email from Le Wagon inviting you to sign up on Kitt (our learning platform), you can safely skip this step. Instead, please follow the instructions in the email you received if you haven't done so already.
-If you are unsure about what to do, you can follow [this link](https://kitt.lewagon.com/). If you are already logged in, you can safely skip this section. If you are not logged in, click on `Enter Kitt as a Student`. If you manage to login, you can safely skip this step. Otherwise ask a teacher whether you should have received an email or follow the instructions below.
+## 校友
+:warning: 如果你已经收到了一封来自Le Wagon邀请你去注册Kitt(我们的学习平台)的邮件并且你也注册完成了的话，你可以安全的跳过这一章节。如果你还没有注册完成的话，请跟随邮件里的教程，完成注册。
 
-Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
+如果你不确定你要做什么，可以查看[这个链接](https://kitt.lewagon.com/)。如果你已经登录了的话，你可以跳过这个章节。如果你没有登录的话，你需要点击`Enter Kitt as a Student`。如果你可以成功的登录，你也可以安全的跳过这一步。不然的话，你可以询问一下老师你是否有收到过相关的邮件，或者直接跟着执行下面的教程。
 
-Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
+前往[kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding)，注册成为Le Wagon的一名校友。选择你的batch，用gitHub账户登录并填写你的信息。
 
-Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
+你的老师将会验证你的确属于这个batch。你可以在完成了注册表单后去询问老师去做验证。
 
-- One from Slack, inviting you to the Le Wagon Alumni slack community (where you'll chat with your buddies and all the previous alumni). Click on **Join** and fill the information.
-- One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
+当你的老师验证成功后，请前往你的邮箱收件箱。你应该会有两封邮件：
+
+- 一封来自Slack,邀请你加入Le Wagon Alumni Slack社群（在这儿你可以与你的伙伴和所有之前的学员交流）。点击**Join**并填写相应的个人信息。
+
+- 一封来自GitHub,要求你加入`lewagon`团队。**接受它**，不然的话你将没有办法看到有关讲座和课程的文件。
 
 
 ## Slack
 
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
+在mac App Store上[下载](https://itunes.apple.com/fr/app/slack/id803453959?mt=12)Slack的本地应用并注册进入`lewagon-alumni`的组织。
 
-Launch the app and sign in to `lewagon-alumni` organization.
+确保你在上面上传了照片。
 
-Make sure you upload a picture there.
+你也可以在你的iPhone或者Android设备上登录Slack!
 
-You can also sign in to Slack on your iPhone or Android device!
+这么做的意义是，你可以一直开着Slack，于是你就可以分享有用的链接/寻求帮助/决定哪儿里吃饭/等等。
 
-The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
+至于远程的ticket，你将可以用Slack语音或者视频电话来获取帮助。为了确保所有都可以正常工作，在你的电脑上启动Slack应用程序，然后[跟着这里的步骤](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test)（tl;dr 输入`/call --test`然后在任何的channel里按下`Enter`键）。
 
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, launch the Slack app on your Laptop, then [follow this procedure](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test) (tl;dr type `/call --test` then the `Enter` key in any channel).
+等测试结束之后，你应该至少会在麦克风和相机处，看到绿色“All clear”消息。如果没有的话，问一下你的老师。
 
-After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
-
-
