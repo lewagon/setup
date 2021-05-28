@@ -477,7 +477,8 @@ sw_vers
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
 # 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 `rvm` is not
-# on your computer, that's what we want!
+# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 你的电脑上没有安装`rvm`
+# 这是我们想要的！
 
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
@@ -716,7 +717,6 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 
 # etc..
 ```
-
 
 
 
