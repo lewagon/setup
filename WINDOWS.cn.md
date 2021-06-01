@@ -1287,7 +1287,9 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 
 ## Slack
 
-在mac App Store上[下载](https://itunes.apple.com/fr/app/slack/id803453959?mt=12)Slack的本地应用并注册进入`lewagon-alumni`的组织。
+从[slack.com](https://slack.com/downloads/windows)上下载Slack的本地应用。
+
+启动程序并注册进入`lewagon-alumni`的组织。
 
 确保你在上面上传了照片。
 

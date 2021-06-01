@@ -571,7 +571,7 @@ rm -rf ~/.gemrc
 ## Node (使用[nvm](https://github.com/nvm-sh/nvm))
 
 ```bash
-curl -o- https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_nvm.sh | zsh
+brew install nvm
 ```
 
 重启你的终端并执行下方指令：
@@ -676,7 +676,7 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 
 ## Slack
 
-在mac App Store上[下载](https://itunes.apple.com/fr/app/slack/id803453959?mt=12)Slack的本地应用并注册进入`lewagon-alumni`的组织。
+在Mac App Store上[下载](https://itunes.apple.com/fr/app/slack/id803453959?mt=12)Slack的本地应用并注册进入`lewagon-alumni`的组织。
 
 确保你在上面上传了照片。
 
