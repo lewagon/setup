@@ -1,5 +1,7 @@
 ## New alumni
 
+如果你在参加中文课程，请打开<a href="README.cn.md">中文设置指南</a>
+
 ### In China?
 
 Before starting the setup :point_down: you want to turn on your VPN, or get VPN codes from your city manager right away.
