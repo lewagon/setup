@@ -78,11 +78,16 @@ filenames = {
   'WINDOWS.md' => WINDOWS
 }
 
-filenames.each do |filename, partials|
-  File.open(filename.to_s, 'w:utf-8') do |f|
-    partials.each do |partial|
-      f << File.read(File.join('_partials', "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION)
-      f << "\n\n"
+["", "cn"].each do |locale|
+  filenames.each do |filename, partials|
+    filename = locale.blank? ? filename : filename.split(".md").join("#{locale}.")
+    option = locale
+    File.open(filename.to_s, 'w:utf-8') do |f|
+      partials.each do |partial|
+        folder = locale.blank? ? "_partials" : "_partials/#{locale}"
+        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION)
+        f << "\n\n"
+      end
     end
   end
 end
