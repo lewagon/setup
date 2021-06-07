@@ -10,7 +10,7 @@ end
 require "json"
 require "open-uri"
 
-REQUIRED_RUBY_VERSION = "2.6.6"
+REQUIRED_RUBY_VERSION = "2.7.3"
 REQUIRED_GIT_VERSION = "2.0"
 MINIMUM_AVATAR_SIZE = 2 * 1024
 

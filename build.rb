@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -wU
 
-SETUP_RUBY_VERSION = "2.6.6"
+SETUP_RUBY_VERSION = "2.7.3"
 
 MACOS = %w[
   intro
