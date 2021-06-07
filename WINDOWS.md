@@ -1105,7 +1105,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 14.15.0
+nvm install 14.15
 ```
 
 When the command returns, run
