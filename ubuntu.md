@@ -26,115 +26,6 @@ Once connected, you should see:
 You can close Zoom now.
 
 
-
-## Checking your computer for Apple Silicon (Apple M1 chips)
-
-If you bought your computer after late 2020, chances are it uses Apple silicon instead of Intel processors. Let's find out...
-
-Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
-
-![](images/open-terminal.png)
-
-Copy-paste the following command in the terminal and hit `Enter` to execute the command.
-
-<!-- TODO(dmilon): update branch when merged to master -->
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/vscode/utils/macos_list_processor_type.sh)"
-```
-
-☝️ The result of the command should indicate whether your computer uses Apple Silicon.
-
-If your computer uses Apple Silicon, expand the paragraph below and go through it. Otherwise ignore it.
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-  &nbsp;
-
-
-
-## Setup for Apple Silicon
-
-### Uninstall Homebrew
-
-We need to uninstall Homebrew in case a native version was installed.
-
-Execute the following command in the terminal:
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-If brew was not installed you will get the message `brew: command not found!`
-
-### Configure Terminal for Rosetta
-
-Open the Finder app (or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014)).
-
-Go to Applications > Utilities.
-
-Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
-
-Press Cmd + I on the Terminal Rosetta app, then check the box "Open using Rosetta".
-
-⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
-
-Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
-
-</details>
-
-
-## A note about quitting apps on a Mac
-
-Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
-
-![quit.png](images/quit.png)
-
-During this setup you will be asked to **quit and re-open** applications multiple times, please make sure you do it properly :pray:
-
-## Command Line Tools
-
-Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014).
-
-Copy-paste the following command in the terminal and hit `Enter` to execute the command.
-
-```bash
-xcode-select --install
-```
-
-If you receive the following message, you can just skip this step and go to next step.
-
-```
-# command line tools are already installed, use "Software Update" to install updates
-```
-
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
-
-![](images/xcode-select-install.png)
-
-While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
-
-If you receive the following message, you need to update the sofware update catalog.
-
-```
-Xcode is not currently available from the Software Update server
-```
-
-In this case, copy-paste the following command in the terminal and hit Enter.
-
-```bash
-sudo softwareupdate --clear-catalog
-```
-
-Once this is done, you can try to install again (copy-paste the following command and hit enter).
-
-```bash
-xcode-select --install
-```
-
-Then follow the previous instructions for this command.
-
-
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
@@ -144,44 +35,34 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ![](images/github_upload_picture.png)
 
 
-## Homebrew
+## Git
 
-On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
-It will be used as soon as we need to install some software.
-To do so, open your Terminal and run:
+To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
-:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
-
-If you already have Homebrew, it will tell you so, that's fine, go on.
-
-Then install some useful software:
+Then copy this line with `Ctrl` + `C`:
 
 ```bash
-brew update
+sudo apt install -y git
 ```
 
-If you get a `/usr/local must be writable` error, just run this:
+:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
+
+Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
 
 ```bash
-sudo chown -R $USER:admin /usr/local
-brew update
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+sudo apt update
+sudo apt install -y gh
 ```
 
-Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
+To check that `gh` has been successfully installed on your machine, you can run:
 
 ```bash
-brew upgrade git         || brew install git
-brew upgrade gh          || brew install gh
-brew upgrade wget        || brew install wget
-brew upgrade imagemagick || brew install imagemagick
-brew upgrade jq          || brew install jq
-brew upgrade openssl     || brew install openssl
+gh --version
 ```
+
+If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
 
 
 ## Visual Studio Code
@@ -190,31 +71,32 @@ brew upgrade openssl     || brew install openssl
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`):
+Copy (`CTRL` + `C`) the commands below then paste them in your terminal (`CTRL` + `SHIFT` + `v`):
 
 ```bash
-brew install --cask visual-studio-code
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
 ```
 
-Then launch VS Code:
+:point_up: This command will ask for your password with: `[sudo] password for <username>:`.
 
-```bash
-'/Applications/Visual Studio Code.app'
-```
-
-Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Options" then "Keep in Dock":
-
-![](images/macos_vscode_dock.png)
+Don't panick! Calmly type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
 
 ### Launching from the terminal
 
-In VS Code, open the Command Palette (`CMD` + `SHIFT` + `P`), type `shell command` and click on "Shell Command: Install 'code' command in PATH" :point_down:
+Now let's try to launch your VS Code from **the terminal**:
 
-![](images/macos_vscode_command.png)
+```bash
+code
+```
 
-Now quit the VS Code, quit the Terminal (`CMD` + `Q`) and restart it.
+Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Add to Favorites":
 
-Try typing `code` :point_right: if VS Code opens in new window, you can proceed to the next point!
+![](images/ubuntu_dock.png)
+
+You can move forward!
 
 
 ## VS Code Extensions
@@ -249,67 +131,32 @@ Click on the little arrow at the bottom of the left bar :point_down:
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".
 - You are redirected to a GitHub page in you browser asking you to authorize Visual Studio Code: click on "Continue" then "Authorize github".
+- VS Code may display additional pop-ups: close them by clicking "OK".
 
 That's it, you're good to go!
 
 
-## Oh-my-zsh - Fancy your Terminal
+## Oh-my-zsh - Fancy your terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one, alongside with useful and fancy [`oh-my-zsh`](https://ohmyz.sh/) plugins:
+We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt install -y zsh curl vim imagemagick jq
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# it will ask for your session password
 ```
 
-Be careful, at the end of this script, it will prompt for your macOS user account password again (Remember! No visual feedback!). You should get something like:
+Be careful, those commands will ask you to type your password twice. At the end
+your prompt should look like this:
+
+![](images/ubuntu_oh_my_zsh.png)
+
+If it doesn't, **ask a teacher**.
+
+To make this change stick, restart your laptop (or virtual machine):
 
 ```bash
-         __                                     __
-  ____  / /_     ____ ___  __  __   ____  _____/ /_
- / __ \/ __ \   / __ `__ \/ / / /  /_  / / ___/ __ \
-/ /_/ / / / /  / / / / / / /_/ /    / /_(__  ) / / /
-\____/_/ /_/  /_/ /_/ /_/\__, /    /___/____/_/ /_/
-                        /____/                       ....is now installed!
-````
-
-Now quit the Terminal (`⌘` + `Q`) and restart it.
-
-You should see something like this:
-
-![](images/on-my-zsh.png)
-
-If not, **stop right away** and call a teacher.
-
-On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
-
-![](images/terminal-pro.png)
-
-**Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
-
-:bulb: There are plenty of themes available on the Internet like [MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download) if you fancy trying another one. That's something you can configure later during the day or come back to it if you are done with your setup early. Please carry on with the Github setup!
-
-## Apple Silicon computers
-
-<details>
-  <summary>Forgot if your computer uses Apple Silicon?</summary>
-
-  &nbsp;
-
-
-  Copy-paste the following command in the terminal and hit `Enter` to execute the command.
-  <!-- TODO(dmilon): update branch when merged to master -->
-  ``` bash
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/vscode/master/utils/macos_list_processor_type.sh)"
-  ```
-
-  ☝️ The result of the command should indicate whether your computer uses Apple Silicon.
-
-</details>
-
-If your computer uses **Apple Silicon**, run the following command. If not, ignore it.
-
-``` bash
-echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"' >> ~/.zshrc
+sudo reboot
 ```
 
 
@@ -445,8 +292,7 @@ This line should open your browser on the newly created gist page. See, we've ju
 
 Hackers love to refine and polish their shell and tools.
 
-<!-- TODO(dmilon): update branch when merged to master -->
-We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles/tree/vscode).
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles).
 
 As your configuration is personal, you need your **own** repository storing it. Forking means
 that it will create a new repo in your GitHub account, identical to the original one.
@@ -472,10 +318,8 @@ gh repo fork lewagon/dotfiles --clone
 
 Run the `dotfiles` installer.
 
-<!-- TODO(dmilon): remove checkout command before merge master -->
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
-git checkout --track upstream/vscode
 zsh install.sh
 ```
 
@@ -508,22 +352,25 @@ rvm implode && sudo rm -rf ~/.rvm
 # If you got "zsh: command not found: rvm", carry on. It means `rvm` is not
 # on your computer, that's what we want!
 
-sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
+rm -rf ~/.rbenv
 ```
 
-Now let's get [`rbenv`](https://github.com/rbenv/rbenv) and [`ruby-build`](https://github.com/rbenv/ruby-build) packages from Homebrew, they'll be useful.
+Then in the terminal, run:
 
 ```bash
-brew uninstall --force rbenv ruby-build
+sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
 ```
-
-Then quit **all your opened terminal windows** (Cmd + Q) and restart one. Then run:
-
 ```bash
-brew install rbenv
+sudo apt clean
+```
+```bash
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+```
+```bash
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
-Again, quit all your terminal windows and restart.
+**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
 Now, you are ready to install the latest ruby version and set it as the default version.
@@ -624,7 +471,7 @@ When the command returns, run
 node -v
 ```
 
-You should see `v14.15.0`. If not, ask a teacher.
+You should see `v14.15`. If not, ask a teacher.
 
 
 ## yarn
@@ -649,34 +496,48 @@ You should see a version. If not, ask a teacher.
 In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
 an open-source robust and production-ready database. Let's install it now.
 
-```bash
-brew install postgresql
-brew services start postgresql
+```
+sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
+sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
 
-Once you've done that, let's check if it worked:
+
+## Ubuntu inotify
+
+Ubuntu is always tracking changes in your folders and to do this it uses inotify.
+By default the Ubuntu limit is set to 8192 files monitored.
+
+As programming involves a lot of files, we need to raise this limit.
+In your terminal run:
 
 ```bash
-psql -d postgres
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
 
-If you enter a new prompt like this one, you're good!
+
+## Extra
+
+### Install video codec H264
+
+On our pedagogical platform (Kitt, you'll soon discover it!), we have some videos. By default Firefox on Linux cannot play them as they use an unsupported codec (H264). To get those videos working for you, you need to run this:
 
 ```bash
-psql (12.5)
-Type "help" for help.
-
-postgres=#
+sudo apt install libavcodec-extra -y
 ```
 
-To quit it, type `\q` then `Enter`.
+### Install useful terminal tools
 
+`tree` is a nice tool to visualize a directory tree inside the terminal:
 
-## Security
+`ncdu` is a text-based interface disk utility.
 
-It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
+`htop` is an interactive process viewer.
 
-You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
+`tig` is a text-mode interface for `git`.
+
+```bash
+sudo apt install tree ncdu htop tig
+```
 
 
 ## Check-up
@@ -708,7 +569,9 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store and sign in to `lewagon-alumni` organization.
+[Install Slack for Linux (beta)](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-).
+
+Launch the app and sign in to `lewagon-alumni` organization.
 
 Make sure you upload a picture there.
 
@@ -722,39 +585,20 @@ After the test are finished, you should have green "All clear" messages at least
 ![](images/slack_mic_cam_all_green.png)
 
 
-## Keyboard
+## Pin apps to your taskbar
 
-As you become a programmer, you'll understand that leaving the keyboard takes a lot of time,
-so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on macOS
-to help you do that:
+You are going to use most of the apps you've just installed really often. So let's pin them to your taskbar so that they are just a click away!
 
-### Keyboard speed
+To do so, launch the app, right-click on the icon to bring up the context menu and choose "Pin to taskbar".
 
-Go to  > System Preferences > Keyboard. Set `Key Repeat` to the fastest position (to the right) and
-`Delay Until Repeat` to the shortest position (to the right).
+![How to pin VS Code to the taskbar in Windows 10](images/windows_taskbar.png)
 
-### Full Keyboard Access
-
-Go to  > System Preferences > Keyboard. Click on the third tab (Shortcuts). At the bottom of the
-pane, click the radio button `All controls`. This way when you get a dialog with several options,
-you'll be able to type `Enter` to confirm, or `Space` to choose the cancel option. If you have more than
-two options, you can use tab to circle between them.
-
-### macOS For hackers
-
-[Read this script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and cherry-pick some stuff you think will suit you.
-For instance, you can type in the terminal this one:
-
-```bash
-# Expanding the save panel by default
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
-
-# Save screenshots to the Desktop (or elsewhere)
-defaults write com.apple.screencapture location "${HOME}/Desktop"
-
-# etc..
-```
+You should at least pin:
+- The terminal
+- The file explorer
+- The Internet browser
+- VS Code
+- Slack
+- Zoom
 
 

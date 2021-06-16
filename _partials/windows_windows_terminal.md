@@ -40,11 +40,15 @@ Let's make Ubuntu the default terminal of your Windows Terminal application.
 - Press `Ctrl` + `,`
 
 
-It should open the settings:
+It should open the terminal settings:
 
-![wsl2_settings](images/settings_wsl2.PNG)
+![wsl2_settings](images/wsl2_settings.png)
 
-We have put in red the part we will use or change.
+Click on "Open JSON file"
+
+We have put in red the part we will use or change:
+
+![wsl2_settings](images/wsl2_settings_json.jpg)
 
 
 &nbsp;

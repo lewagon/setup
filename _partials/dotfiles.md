@@ -2,8 +2,7 @@
 
 Hackers love to refine and polish their shell and tools.
 
-<!-- TODO(dmilon): update branch when merged to master -->
-We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles/tree/vscode).
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles).
 
 As your configuration is personal, you need your **own** repository storing it. Forking means
 that it will create a new repo in your GitHub account, identical to the original one.
@@ -29,10 +28,8 @@ gh repo fork lewagon/dotfiles --clone
 
 Run the `dotfiles` installer.
 
-<!-- TODO(dmilon): remove checkout command before merge master -->
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
-git checkout --track upstream/vscode
 zsh install.sh
 ```
 

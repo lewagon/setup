@@ -23,4 +23,4 @@ When the command returns, run
 node -v
 ```
 
-You should see `v14.15.0`. If not, ask a teacher.
+You should see `v14.15`. If not, ask a teacher.

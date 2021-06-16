@@ -30,5 +30,6 @@ Click on the little arrow at the bottom of the left bar :point_down:
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".
 - You are redirected to a GitHub page in you browser asking you to authorize Visual Studio Code: click on "Continue" then "Authorize github".
+- VS Code may display additional pop-ups: close them by clicking "OK".
 
 That's it, you're good to go!

@@ -27,6 +27,6 @@ code
 
 Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Add to Favorites":
 
-![](images/ubuntu_vscode_dock.png)
+![](images/ubuntu_dock.png)
 
 You can move forward!

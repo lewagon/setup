@@ -450,20 +450,19 @@ wsl -l -v
 
 ### Installation
 
+Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
+
 1. Download [Visual Studio Code for Windows](https://code.visualstudio.com/download).
 2. Open the file you have just downloaded.
 3. Install it with a few options:
-  - Register VS Code as an editor for supported file types
-  - Let the other options as they are
 
-![VS Code install](images/vscode-install.png)
+![VS Code install](images/windows_vscode_installation.png)
+
+When the installation is done, launch VS Code.
 
 ### Connecting VS Code to Ubuntu
 
-- Launch VS Code a first time, then:
-    - Pin it to the taskbar; you will be using it a lot!
-    - You should have a frame at the bottom-right corner of VS Code saying it detects WSL
-    - Accept the installation of the WSL extension for VS Code
+You should see a frame at the bottom-right corner of VS Code saying it detects WSL. Accept the installation of the WSL extension for VS Code.
 
 :warning: This extension is mandatory for you to be able to work with VS Code!
 
@@ -500,6 +499,7 @@ Click on the little arrow at the bottom of the left bar :point_down:
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".
 - You are redirected to a GitHub page in you browser asking you to authorize Visual Studio Code: click on "Continue" then "Authorize github".
+- VS Code may display additional pop-ups: close them by clicking "OK".
 
 That's it, you're good to go!
 
@@ -546,11 +546,15 @@ Let's make Ubuntu the default terminal of your Windows Terminal application.
 - Press `Ctrl` + `,`
 
 
-It should open the settings:
+It should open the terminal settings:
 
-![wsl2_settings](images/settings_wsl2.PNG)
+![wsl2_settings](images/wsl2_settings.png)
 
-We have put in red the part we will use or change.
+Click on "Open JSON file"
+
+We have put in red the part we will use or change:
+
+![wsl2_settings](images/wsl2_settings_json.jpg)
 
 
 &nbsp;
@@ -897,8 +901,7 @@ This line should open your browser on the newly created gist page. See, we've ju
 
 Hackers love to refine and polish their shell and tools.
 
-<!-- TODO(dmilon): update branch when merged to master -->
-We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles/tree/vscode).
+We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles).
 
 As your configuration is personal, you need your **own** repository storing it. Forking means
 that it will create a new repo in your GitHub account, identical to the original one.
@@ -924,10 +927,8 @@ gh repo fork lewagon/dotfiles --clone
 
 Run the `dotfiles` installer.
 
-<!-- TODO(dmilon): remove checkout command before merge master -->
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
-git checkout --track upstream/vscode
 zsh install.sh
 ```
 
@@ -1114,7 +1115,7 @@ When the command returns, run
 node -v
 ```
 
-You should see `v14.15.0`. If not, ask a teacher.
+You should see `v14.15`. If not, ask a teacher.
 
 
 ## yarn
@@ -1256,5 +1257,22 @@ In case of remote tickets, you will use Slack audio or video call to get help. T
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)
+
+
+## Pin apps to your taskbar
+
+You are going to use most of the apps you've just installed really often. So let's pin them to your taskbar so that they are just a click away!
+
+To do so, launch the app, right-click on the icon to bring up the context menu and choose "Pin to taskbar".
+
+![How to pin VS Code to the taskbar in Windows 10](images/windows_taskbar.png)
+
+You should at least pin:
+- The terminal
+- The file explorer
+- The Internet browser
+- VS Code
+- Slack
+- Zoom
 
 

@@ -9,18 +9,18 @@ Setup guides for [Le Wagon](https://www.lewagon.com) Web Development course. Ple
 <table>
   <tr>
     <td>
-      <a href="MACOS.md">
-        <img src="images/apple.png" alt="macOS">
+      <a href="macos.md">
+        <img src="images/apple_logo.png" alt="macOS">
       </a>
     </td>
     <td>
-      <a href="WINDOWS.md">
-        <img src="images/windows.png" alt="Windows">
+      <a href="windows.md">
+        <img src="images/windows_logo.png" alt="Windows">
       </a>
     </td>
     <td>
-      <a href="UBUNTU.md">
-        <img src="images/linux.png" alt="Ubuntu">
+      <a href="ubuntu.md">
+        <img src="images/linux_logo.png" alt="Ubuntu">
       </a>
     </td>
   </tr>

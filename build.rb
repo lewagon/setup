@@ -24,36 +24,38 @@ MACOS = %w[
   checkup
   alumni_platform
   macos_slack
-  macos_preferences].freeze
+  macos_preferences
+  macos_dock].freeze
 
 WINDOWS = %w[
   intro
-  wsl2_prereq_intro
-  wsl2_prereq_win10
-  wsl2_prereq_win_version
-  wsl2_prereq_virtualization
+  windows_prereq_intro
+  windows_prereq_win10
+  windows_prereq_win_version
+  windows_prereq_virtualization
   github
   zoom
-  wsl2_install_wsl
-  wsl2_vscode
+  windows_install_wsl
+  windows_vscode
   vscode_extensions
-  wsl2_windows_terminal
-  wsl2_git
-  wsl2_oh_my_zsh
+  windows_windows_terminal
+  windows_git
+  windows_oh_my_zsh
   github_rsa
-  wsl2_browser_variable
+  windows_browser_variable
   gh_cli
   dotfiles
-  wsl2_dotfiles
+  windows_dotfiles
   ubuntu_rbenv
   rbenv_ruby
   nvm
   yarn
-  wsl2_postgresql
+  windows_postgresql
   checkup
-  wsl2_explorer
+  windows_explorer
   alumni_platform
-  wsl2_slack].freeze
+  windows_slack
+  windows_taskbar].freeze
 
 UBUNTU = %w[
   intro
@@ -75,12 +77,13 @@ UBUNTU = %w[
   ubuntu_extra
   checkup
   alumni_platform
-  ubuntu_slack].freeze
+  ubuntu_slack
+  ubuntu_dock].freeze
 
 filenames = {
-  'MACOS.md' => MACOS,
-  'WINDOWS.md' => WINDOWS,
-  'UBUNTU.md' => UBUNTU
+  'macos.md' => MACOS,
+  'windows.md' => WINDOWS,
+  'ubuntu.md' => UBUNTU
 }
 
 filenames.each do |filename, partials|

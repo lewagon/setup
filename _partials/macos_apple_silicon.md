@@ -5,7 +5,7 @@ If you bought your computer after late 2020, chances are it uses Apple silicon i
 
 Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
-![](images/open-terminal.png)
+![](images/macos_open_terminal.png)
 
 Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
@@ -22,8 +22,6 @@ If your computer uses Apple Silicon, expand the paragraph below and go through i
   <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
 
   &nbsp;
-
-
 
 ## Setup for Apple Silicon
 

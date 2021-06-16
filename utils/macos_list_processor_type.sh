@@ -3,7 +3,7 @@
 # the goal of this script is to tell Mac students whether their late 2020 machine
 # uses an Intel or Apple Silicon chip
 
-# this script is aimed at running on MacOS only
+# this script is aimed at running on macOS only
 # ⚠️ the output of this script will not make sense if ran on a Windows or Linux machine
 
 arch_name="$(uname -m)"
