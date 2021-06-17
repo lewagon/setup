@@ -1,9 +1,7 @@
 # Setup instructions
 
-The following instructions will help you to get ready for [Le Wagon](http://www.lewagon.org) Web Development course:
+You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)
 
-- Grab a text editor, where you will spend your days and nights
-- Install a package manager
-- Pimp your terminal
-- Setup git and GitHub
-- Install Ruby
+Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a TA for help :raising_hand:
+
+Let's start :rocket:
