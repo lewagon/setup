@@ -6,7 +6,8 @@
 
 To install `git`:
 - Open a terminal
-- Copy and paste the following commands:
+- Copy and paste the following commands
+- It will ask for your Ubuntu password: type it in
 
 ```bash
 sudo apt update
@@ -17,7 +18,7 @@ sudo apt install -y git
 
 Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
-In you terminal, copy-paste the following commands:
+In you terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0

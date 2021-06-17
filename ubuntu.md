@@ -51,7 +51,8 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 To install `git`:
 - Open a terminal
-- Copy and paste the following commands:
+- Copy and paste the following commands
+- It will ask for your Ubuntu password: type it in
 
 ```bash
 sudo apt update
@@ -62,7 +63,7 @@ sudo apt install -y git
 
 Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
-In you terminal, copy-paste the following commands:
+In you terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
@@ -165,24 +166,28 @@ That's it, you're good to go!
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
+In a terminal execute the following command and type in your password if asked:
+
 ```bash
 sudo apt install -y zsh curl vim imagemagick jq
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# it will ask for your session password
 ```
 
-Be careful, those commands will ask you to type your password twice. At the end
-your prompt should look like this:
-
-![Ubuntu terminal with OhMyZsh](images/ubuntu_oh_my_zsh.png)
-
-If it doesn't, **ask a teacher**.
-
-To make this change stick, restart your laptop (or virtual machine):
+Then copy-paste the following command:
 
 ```bash
-sudo reboot
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ```
+
+When asked "Do you want to change your default shell to zsh?", press `Y`
+
+At the end your terminal should look like this:
+
+![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
+
+:white_check_mark: If it does, you're good to go :+1:
+
+:x: Otherwise, please **ask for a teacher**
 
 
 ## GitHub
