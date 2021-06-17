@@ -89,7 +89,7 @@ filenames = {
 
 ["", "cn"].each do |locale|
   filenames.each do |filename, partials|
-    filename = locale.empty? ? filename : "#{filename.split('.md').first}.#{locale}.md"
+    filename = "#{filename.split('.md').first}.#{locale}.md" unless locale.empty?
     File.open(filename, 'w:utf-8') do |f|
       partials.each do |partial|
         folder = locale.empty? ? "_partials" : "_partials/#{locale}"

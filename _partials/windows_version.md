@@ -20,7 +20,7 @@ To check your Windows version:
 
   - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
   - Install it. It should take roughly an hour, but this is dependent on your computer
-  - When the installation is over, execute the commands above :pointing_up: to check that you now have **Windows 10**
+  - When the installation is over, execute the commands above to check that you now have **Windows 10**
 </details>
 
 ### Latest updates
