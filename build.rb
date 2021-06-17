@@ -91,7 +91,7 @@ filenames = {
 
 ["", "cn"].each do |locale|
   filenames.each do |filename, partials|
-    filename = locale.empty? ? filename : filename.split(".md").join("#{locale}.")
+    filename = locale.empty? ? filename : "#{filename.split('.md').first}.#{locale}.md"
     option = locale
     File.open(filename.to_s, 'w:utf-8') do |f|
       partials.each do |partial|
