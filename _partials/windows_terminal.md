@@ -35,7 +35,7 @@ Press `Ctrl` + `,`
 
 It should open the terminal settings:
 
-![Windows Terminal Settings](images/windows_settings.png)
+![Windows Terminal Settings](images/windows_terminal_settings.png)
 
 - Change the default profile to "Ubuntu"
 - Click on "Save"
@@ -43,7 +43,7 @@ It should open the terminal settings:
 
 We have circle in red the part you will change:
 
-![Windows Terminal JSON settings file](images/wsl2_settings_json.png)
+![Windows Terminal JSON settings file](images/windows_terminal_settings_json.png)
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
 - Locate the `"name": "Ubuntu",`
@@ -68,8 +68,8 @@ Then, let's disable warning for copy-pasting commands between Windows and Ubuntu
 
 You can save these changes by pressing `CTRL` + `V`
 
-:white_check_mark: Your **Windows Terminal** is now setup! :confetti_ball:
+:white_check_mark: Your **Windows Terminal** is now setup :+1:
 
-This terminal has tabs: you can choose to open a new terminal tab by clicking on the **plus** next to the current one.
+This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
 
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
