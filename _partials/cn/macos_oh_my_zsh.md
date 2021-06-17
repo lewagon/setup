@@ -43,7 +43,7 @@ sh -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliy
   复制粘贴下方的代码到终端中并按下`Enter`来执行指令。
 
   ``` bash
-  /bin/bash -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/osx_list_processor_type.sh)"
+  /bin/bash -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/macos_list_processor_type.sh)"
   ```
 
   ☝️ 这个指令的输出可以显示你的电脑是否是使用Apple Silicon的。

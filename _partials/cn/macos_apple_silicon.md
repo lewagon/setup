@@ -9,7 +9,7 @@
 复制粘贴以下的指令到终端里并按`Enter`来执行这段指令。
 
 ``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
 ```
 
 ☝️执行完这段代码之后将会表明你的电脑是否使用的是Apple Silicon。

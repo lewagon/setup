@@ -38,7 +38,7 @@ Zoom是一个视频会议工具。想要创建账户并安装这个应用，你�
 复制粘贴以下的指令到终端里并按`Enter`来执行这段指令。
 
 ``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/osx_list_processor_type.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
 ```
 
 ☝️执行完这段代码之后将会表明你的电脑是否使用的是Apple Silicon。
@@ -234,7 +234,7 @@ sh -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliy
   复制粘贴下方的代码到终端中并按下`Enter`来执行指令。
 
   ``` bash
-  /bin/bash -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/osx_list_processor_type.sh)"
+  /bin/bash -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/macos_list_processor_type.sh)"
   ```
 
   ☝️ 这个指令的输出可以显示你的电脑是否是使用Apple Silicon的。
