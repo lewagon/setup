@@ -54,7 +54,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 - Click `Next`
 - Click `Finish`
 
-![update_wsl](images/update_wsl.jpg)
+![update_wsl](images/windows_update_wsl.png)
 
 &nbsp;
 

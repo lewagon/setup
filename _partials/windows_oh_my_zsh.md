@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 At then end, your terminal should look like this:
 
-![zsh](images/wsl2_zsh.jpg)
+![zsh](images/windows_oh_my_zsh.jpg)
 
 
 &nbsp;

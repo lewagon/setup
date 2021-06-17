@@ -24,7 +24,7 @@ If you receive the following message, you can just skip this step and go to next
 
 Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
 
-![](images/xcode-select-install.png)
+![](images/macos_xcode_select_install.png)
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
 

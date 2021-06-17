@@ -27,7 +27,7 @@ If not, **stop right away** and call a teacher.
 
 On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
 
-![](images/mac-s_terminal_pro.png)
+![](images/macos_terminal_pro.png)
 
 **Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
 
