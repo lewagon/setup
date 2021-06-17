@@ -1,12 +1,12 @@
-# 设置指南
+# 电脑设置教程
 
-以下的步骤会帮助你设置好你的电脑，为[Le Wagon](http://www.lewagon.org)全栈课程做准备：
+以下的教程将会帮助你为接下来在[Le Wagon](http://www.lewagon.org) 全栈开发训练营中做好准备：
 
-- 下载一个代码编辑器，你会和这个编辑器一起共度很多时光
-- 安装一个程序包管理器
-- 配置好你的终端
-- 设置好git和Github
-- 下载Ruby
+- 获取一个文本编辑器，这里将会是你日日夜夜花时间的地方
+- 安装一个软件包管理器
+- 装扮你的终端
+- 配置git和GitHub
+- 安装Ruby
 
 
 ## 开始设置的条件
@@ -123,7 +123,6 @@
 &nbsp;&nbsp;&nbsp; :white_check_mark: 如果你是`1903`或以上的版本, 你就可以继续下一步了！ :sunglasses:
 
 
-
 ### 虚拟化
 
 
@@ -187,32 +186,14 @@
 ---
 
 
+## GitHub账户
 
-## GitHub账号
+你有注册好GitHub账户嘛？如果还没有，[现在注册](https://github.com/join)。
 
-你注册GitHub账号了吗？如果没有的话，[赶紧现在就注册吧！](https://github.com/join).
+:point_right: **[上传一张照片](https://github.com/settings/profile)** 并在你的GitHub账户中设置你的名称。这一步很重要，因为我们将使用一个带有你头像的内部dashboard。请**现在**立即做这一步，然后再去继续下面的步骤。
 
-:point_right: **[上传头像照片](https://github.com/settings/profile)**然后正确地填写你的名字。这很重要哦 - 因为你的头像和名字都会在内部系统中使用。请**现在**就这样做，然后再继续下一步！
 ![](images/github_upload_picture.png)
 
-
-## 远程工具
-
-当我们不在同一个地方的时候，我们会用到下面这两个工具来交流：
-
-### Zoom
-
-⚠️ 如果你已经安装了Zoom，请确保你Zoom的版本不低于**5.4**。否则，你将不能使用分组讨论室来和你的伙伴一起工作。
-
-Zoom是一个视频会议工具。想要创建账户并安装这个应用，你需要到[https://zoom.us/download](https://zoom.us/download)这个网页，并在**Zoom会议客户端（Zoom Client for Meetings）**下方点击**下载（Download）**按钮。打开你刚下载好的文件。将出现一个进度条，然后Zoom便会开始。点击**Connection** 并创建一个账户，选择**Sign Up Free**选项：
-
-![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
-
-当你连接成功后，你将会看到:
-
-![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
-
-现在你可以关闭Zoom了。
 
 
 
@@ -462,6 +443,7 @@ wsl -l -v
 
 
 
+
 ## Visual Studio Code
 
 在Windows上，我们会用Visual Code Studio来编辑代码，因为它和Ubuntu终端配合得很好~
@@ -491,77 +473,7 @@ wsl -l -v
 
 :warning: 要用VS Code，这个插件必须要安装！
 
-### VS Code快捷键
 
-在VS Code里：
-（如果你的电脑系统语言是中文，你可以找到下面英文按键的对应中文按键。如果找不到，可以问问老师！）
-
-- 点击 `File`
-- 点击 `Preferences`
-- 点击 `Keymaps`
-- 点击 `Sublime Text Keymap and Settings Importer`
-- 点击 `Install`
-
-
-### VS Code插件
-
-让我们下载一些其他有用的插件吧！
-
-针对每个插件，你需要:
-
-- 在网站里，点击`install`
-- 再浏览器里，接受使用VS Code来安装插件
-- 在VS Code里，点击`install`
-
-**插件列表**
-- [Sublime Text Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [Rails Snippets](https://marketplace.visualstudio.com/items?itemName=hridoy.rails-snippets)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [ERB Helper Tags](https://marketplace.visualstudio.com/items?itemName=rayhanw.erb-helpers)
-- [ruby-rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
-
-### VS Code设置
-- 按下`Ctrl` + `,` 来打开设置
-- 在搜索栏里，输入`emmet`
-- 点击第一个**`Edit in settings.json`**链接
-
-复制，并把下面的部分粘贴在最后的`}`之前:
-
-```bash
-"emmet.triggerExpansionOnTab": true,
-"emmet.includeLanguages": {
-  "erb": "html"
-},
-```
-
-应该像下面这样：
-
-![vscode_emmet](images/vscode_emmet.jpg)
-
-:warning: 你需要加一个逗号，如果**`]`**后面没有逗号的话，就像上面图片里的第26行一样☝️
-
-:warning: 别忘了要保存这些修改！
-
-### 最终检查
-
-现在我们要保证所有东西都可以正常工作。关掉VS Code，然后打开Ubuntu终端：
-
-- 按下`Windows` + `R`
-- 输入`ubuntu`
-- 按下`Enter`
-
-
-在Ubuntu里，我们来试试启动VS Code：
-
-```bash
-code
-```
-
-&nbsp;
-
-&nbsp;&nbsp;&nbsp; :x: 如果Visual Studio Code没有打开的话，请**叫老师来帮忙**
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果Visual Studio Code打开了，那说明你的代码编辑器已经好啦！ :muscle:
 
 
 ## Windows终端
@@ -689,53 +601,28 @@ gh --version
 如果这行命令没有提示`gh version X.Y.Z (YYYY-MM-DD)`，且版本（version）大于等于1.4 ，请参考[这个文档](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources)：这里面有故障排查的方法。如果有困惑，问问老师。
 
 
-## Oh-my-zsh - 把终端变得好看！
+## Oh-my-zsh - Fancy your Terminal
 
-我们会用一个叫`zsh`的shell来代替默认的`bash`。
+We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-# 它会问你会话的密码
 sudo apt install -y zsh curl vim imagemagick jq
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# it will ask for your session password
 ```
+
+Be careful, those commands will ask you to type your password twice. At the end
+your prompt should look like this:
+
+![](images/ubuntu_oh_my_zsh.png)
+
+If it doesn't, **ask a teacher**.
+
+To make this change stick, restart your laptop (or virtual machine):
+
 ```bash
-sh -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_ohmyzsh.sh)"
+sudo reboot
 ```
-
-最终，你的终端应该会像这样：
-
-![zsh](images/wsl2_zsh.jpg)
-
-
-&nbsp;
-
-&nbsp;&nbsp;&nbsp; :x: 如果你的终端不长这样，那就**叫老师来帮忙**。
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果都是ok的，我们就来配置GitHub吧！
-
----
-
-#### :wrench: 可能的解决方案
-
-<details>
-  <summary>错误： "chsh command unsuccessful. Change your default shell manually."</summary>
-
-  &nbsp;
-
-
-  你可能输入了错误的密码。
-  重新跑一边上面的命令是不行的，因为它会新建一个配置文件夹，但其实是你第一次跑这些命令的时候已经建啦！
-
-  所以你需要先删除它：
-
-  ```bash
-  rm -rf ~/.oh-my-zsh
-  ```
-
-
-  现在，可以再运行一遍了！
-</details>
-
----
 
 
 ## GitHub
@@ -759,7 +646,7 @@ cat ~/.ssh/id_ed25519.pub
 它会在屏幕上显示`id_ed25519.pub`文件的内容。
 
 
-- 复制粘贴出现的内容（公钥）
+- 复制出现在`ssh`的内容（公钥）粘贴到你邮箱地址的末尾
 - 打开[github.com/settings/ssh](https://github.com/settings/ssh)
 - 点击绿色的按钮`New SSH key`
 - 填你的电脑的名称 （可以自己取一个，比如`My Windows`）
@@ -811,9 +698,94 @@ ssh -T git@github.com
 别着急，花点时间看看[这篇文章](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html)来更好地了解那些密钥都是干什么用的。
 
 
+## 把你的默认浏览器链接到Ubuntu
+为了保证你可以在Ubuntu终端和浏览器进行交互，你需要设置你的默认浏览器。
+
+⚠️ 你需要执行下面的至少一组命令：You need to execute at least one of the following commands below:
+
+
+<details>
+  <summary>用Google Chrome作为默认浏览器</summary>
+
+  &nbsp;
+
+
+  运行下面的命令:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+  ```
+
+  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+  如果没有错误信息，就运行下面这一行:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+</details>
+
+
+<details>
+  <summary>用Mozilla Firefox作为默认浏览器</summary>
+
+  &nbsp;
+
+
+  运行下面的命令:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
+  ```
+
+  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+
+  如果没有错误信息，就运行下面这一行:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>用Microsoft Edge作为默认浏览器</summary>
+
+  &nbsp;
+
+
+  运行下面的命令:
+
+
+  ```bash
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+
+👉 重启你的终端
+
+然后请保证下面这行命令会返回"Browser defined 👌"这句话：
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+如果没有返回这句话，那在上面的列表中选一个浏览器，然后运行对应的命令。
+
+
+
 ## GitHub CLI
 
-CLI是[Command-line Interface（命令行界面）](https://en.wikipedia.org/wiki/Command-line_interface)的首字母缩写。
+CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2/9910197?fr=aladdin)的首字母缩写。
 
 在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以从终端链接GitHub的数据，执行一些有用的动作。
 
@@ -827,7 +799,6 @@ gh auth login -s 'user:email' -w
 
 ```bash
 - Logging into github.com
-
 ! First copy your one-time code: 0EF9-D015
 - Press Enter to open github.com in your browser...
 ```
@@ -855,6 +826,81 @@ echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Sta
 ```
 
 这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
+
+
+## Dotfiles (标准配置)
+
+黑客很喜欢把他们的shell和工具变得很酷炫。
+
+让我们用Le Wagon提供的一个超棒的默认配置文件来开始吧：[`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
+
+因为你的配置是私人的，所以你需要保存在**自己**的代码库里（repository/repo）。Fork的意思是：在你的GitHub账号上建一个新的代码库，和原始的那一个是一模一样的（可以想象成你在复制粘贴这个代码库）。
+这样，你在你的GitHub上就会有一个新的代码库： `$GITHUB_USERNAME/dotfiles`。
+我们需要fork，因为每个人都需要在那些文件里加上一些**特定**信息（比如你的名字）。
+
+打开终端，运行下面的命令：
+
+```bash
+export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+echo $GITHUB_USERNAME
+```
+
+你就能看到你的GitHub用户名在终端里显示出来了。
+如果没有的话，现在就**停下**，找老师帮忙。看起来之前的步骤(`gh auth`)有一些问题。
+
+现在就可以fork代码库（repo)，然后克隆到你自己的电脑上了：
+
+```bash
+mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+gh repo fork lewagon/dotfiles --clone
+```
+
+运行`dotfiles`安装器：
+
+```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
+```
+
+用下面的命令检查一下你GitHub账号录入的电子邮箱。你需要在其中选一个（如果你有好几个的话），然后再进入下一个步骤：
+
+```bash
+gh api user/emails | jq -r '.[].email'
+```
+
+运行git安装器：
+
+```bash
+cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
+```
+
+:point_up: 这会**提示**填写你的全名（`FirstName LastName`）和你的邮箱。注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
+
+现在**退出**你刚打开的所有终端窗口。
+
+
+### Sublime Text 自动配置
+
+打开一个新的终端并输入：
+
+```bash
+cd ~/code
+stt
+```
+
+它将会**在Sublime Text中打开当前文件夹**。这是我们如何使用它的方法。
+
+**关闭Sublime Text**并重新打开它：
+
+```bash
+stt
+```
+
+**等待一分钟**，等所有额外的软件包都自动安装好（会自动打开一个带有文本的新的窗口，上面会包含每个你安装好的新包的文档）。如果想要跟踪软件包的安装进度，你可以前往`View > Show console`。
+
+如果想要核查是否所有的插件都安装好了，你可以打开`命令面板 Command Palette`(在OSX上，按下`⌘` + `⇧` + `P`；在linux上，按下`Ctrl` + `⇧` + `P`)，输入`Packlist`然后按`Enter`，你应该会看到有一些软件包被安装了（像是[Emmet](http://emmet.io/)）。
+
+当这些结束之后，你可以关闭Sublime Text。
+
 
 ## Dotfiles (标准配置)
 
@@ -944,132 +990,19 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 
 
 
-## 把你的默认浏览器链接到Ubuntu
-为了保证你可以在Ubuntu终端和浏览器进行交互，你需要设置你的默认浏览器。
 
-⚠️ 你需要执行下面的至少一组命令：You need to execute at least one of the following commands below:
+现在，你已经准备好了去安装最新Ruby版本并把它设置为默认版本。
 
-
-<details>
-  <summary>用Google Chrome作为默认浏览器</summary>
-
-  &nbsp;
-
-
-  运行下面的命令:
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-  ```
-
-  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-
-  如果没有错误信息，就运行下面这一行:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-
-</details>
-
-
-<details>
-  <summary>用Mozilla Firefox作为默认浏览器</summary>
-
-  &nbsp;
-
-
-  运行下面的命令:
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
-  ```
-
-  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-
-  如果没有错误信息，就运行下面这一行:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-<details>
-  <summary>用Microsoft Edge作为默认浏览器</summary>
-
-  &nbsp;
-
-
-  运行下面的命令:
-
-
-  ```bash
-  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-
-👉 重启你的终端
-
-然后请保证下面这行命令会返回"Browser defined 👌"这句话：
+运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+rbenv install 2.7.3
 ```
 
-如果没有返回这句话，那在上面的列表中选一个浏览器，然后运行对应的命令。
-
-
-## 安装Ruby (使用[rbenv](https://github.com/sstephenson/rbenv))
-
-首先，我们需要先清理我们之前可能安装过的Ruby:
+当Ruby安装好后，运行下面这个指令来告诉系统使用2.7.3这个版本作为默认版本。
 
 ```bash
-rvm implode && sudo rm -rf ~/.rvm
-# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 你的电脑上没有安装`rvm`
-# 这是我们想要的！
-
-rm -rf ~/.rbenv
-```
-
-然后在终端再运行：
-
-```bash
-sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
-```
-```bash
-sudo apt clean
-```
-```bash
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-```
-```bash
-git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-```
-
-**关掉你的终端再重启** (Alt+F4然后重启)。如果你看到一个警告，现在**忽略**它（Ruby还没有安装好）。
-
-
-现在，你就可以安装最新版本的ruby了，然后把它设置成默认版本。
-
-运行这行命令，这会**花掉一点时间（5-10分钟）**
-
-```bash
-rbenv install 2.6.6
-```
-
-当Ruby安装好后，运行下面这个指令来告诉系统使用2.6.6这个版本作为默认版本。
-
-```bash
-rbenv global 2.6.6
+rbenv global 2.7.3
 ```
 
 然后再次**重启**你的终端（关掉并重新打开它）。
@@ -1078,7 +1011,7 @@ rbenv global 2.6.6
 ruby -v
 ```
 
-你应该会看到`ruby 2.6.6p`。如果没有的话，询问一下老师。
+你应该会看到`ruby 2.7.3p`。如果没有的话，询问一下老师。
 
 ## 安装一些gems
 
@@ -1146,7 +1079,6 @@ nvm -v
 
 现在，让我们来安装node：
 
-
 ```bash
 nvm install 14.15.0
 ```
@@ -1207,7 +1139,7 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```
 
 
-## 最终检查
+## 最后检查
 
 让我们来看看你是否已经成功安装好了所有软件。
 
@@ -1218,7 +1150,6 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 ```
 
 它应该会告诉你，你的工作台是否已经正确的设置好了 ：）如果没有的话，问一下你的老师。
-
 
 
 ## Ubuntu文件系统
@@ -1269,6 +1200,7 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 ![](images/wsl_path.png)
 
 
+
 ## 校友
 :warning: 如果你已经收到了一封来自Le Wagon邀请你去注册Kitt(我们的学习平台)的邮件并且你也注册完成了的话，你可以安全的跳过这一章节。如果你还没有注册完成的话，请跟随邮件里的教程，完成注册。
 
@@ -1302,3 +1234,9 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 等测试结束之后，你应该至少会在麦克风和相机处，看到绿色“All clear”消息。如果没有的话，问一下你的老师。
 
 ![](images/slack_mic_cam_all_green.png)
+
+
+
+
+
+
