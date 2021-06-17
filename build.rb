@@ -12,7 +12,7 @@ MACOS = %w[
   macos_vscode
   vscode_extensions
   macos_oh_my_zsh
-  github_rsa
+  ssh_key
   gh_cli
   dotfiles
   macos_rbenv
@@ -41,7 +41,7 @@ WINDOWS = %w[
   vscode_extensions
   git
   oh_my_zsh
-  github_rsa
+  ssh_key
   windows_browser
   gh_cli
   dotfiles
@@ -66,7 +66,7 @@ UBUNTU = %w[
   ubuntu_vscode
   vscode_extensions
   oh_my_zsh
-  github_rsa
+  ssh_key
   gh_cli
   dotfiles
   rbenv
