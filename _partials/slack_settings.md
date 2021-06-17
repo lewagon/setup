@@ -2,7 +2,9 @@
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
-Make sure you **upload a profile picture** there.
+Make sure you **upload a profile picture** :pointing_down:
+
+![How to upload a profile picture on Slack](images/slack_profile_picture.gif)
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
