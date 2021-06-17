@@ -37,9 +37,9 @@ WINDOWS = %w[
   windows_ubuntu
   windows_vscode
   windows_terminal
-  vscode_extensions
   github
-  windows_git
+  vscode_extensions
+  git
   oh_my_zsh
   github_rsa
   windows_browser
@@ -62,7 +62,7 @@ UBUNTU = %w[
   intro
   zoom
   github
-  ubuntu_git
+  git
   ubuntu_vscode
   vscode_extensions
   oh_my_zsh

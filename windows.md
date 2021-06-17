@@ -419,6 +419,15 @@ This terminal has tabs: you can choose to open a new terminal tab by clicking on
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
 
 
+## GitHub account
+
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
+
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+
+![GitHub picture](images/github_picture.png)
+
+
 ## VS Code Extensions
 
 ### Installation
@@ -448,6 +457,8 @@ Here is a list of the extensions you are installing:
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
 
+Launch VS Code from your terminal by typing `code` and pressing `ENTER`.
+
 Click on the little arrow at the bottom of the left bar :point_down:
 
 ![VS Code Live Share](images/vscode_live_share.png)
@@ -460,38 +471,38 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
-![GitHub picture](images/github_picture.png)
-
-
 ## Git
 
+### Installation
+
+[`git`](https://git-scm.com/) is a command line software used for version control.
+
 To install `git`:
-
-
-- Open an Ubuntu terminal.
-- Copy and paste the following lines:
-
+- Open a terminal
+- Copy and paste the following commands:
 
 ```bash
 sudo apt update
-```
-```bash
-sudo apt install -y git apt-transport-https unzip gnome-terminal
+sudo apt install -y git
 ````
 
-Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
+### GitHub CLI
+
+Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
+
+In you terminal, copy-paste the following commands:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
+```
+
+Then copy-paste the following command:
+
+```bash
 sudo apt install -y gh
+
 ```
 
 To check that `gh` has been successfully installed on your machine, you can run:
@@ -500,7 +511,9 @@ To check that `gh` has been successfully installed on your machine, you can run:
 gh --version
 ```
 
-If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
+:white_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
+
+:x: Otherwise, please **contact a teacher**
 
 
 ## Oh-my-zsh - Fancy your terminal

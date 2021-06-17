@@ -45,23 +45,36 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ## Git
 
-To install `git`, first open a terminal. To open a terminal, you can click on the Ubuntu Start button in the sidebar and type `Terminal`. Then click on the terminal icon.
+### Installation
 
-Then copy this line with `Ctrl` + `C`:
+[`git`](https://git-scm.com/) is a command line software used for version control.
+
+To install `git`:
+- Open a terminal
+- Copy and paste the following commands:
 
 ```bash
+sudo apt update
 sudo apt install -y git
-```
+````
 
-:bulb: To **paste it in the terminal**, you need to use `Ctrl` + `Shift` + `V`.
+### GitHub CLI
 
-Let's now install GitHub [official CLI](https://cli.github.com) (Command Line Interface) with the following commands:
+Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
+
+In you terminal, copy-paste the following commands:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
+```
+
+Then copy-paste the following command:
+
+```bash
 sudo apt install -y gh
+
 ```
 
 To check that `gh` has been successfully installed on your machine, you can run:
@@ -70,7 +83,9 @@ To check that `gh` has been successfully installed on your machine, you can run:
 gh --version
 ```
 
-If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
+:white_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
+
+:x: Otherwise, please **contact a teacher**
 
 
 ## Visual Studio Code
@@ -131,6 +146,8 @@ Here is a list of the extensions you are installing:
 ### Live Share configuration
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
+
+Launch VS Code from your terminal by typing `code` and pressing `ENTER`.
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
