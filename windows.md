@@ -105,7 +105,7 @@ Check the **Version number**:
 :x: If it is below `1903`, please **contact a teacher**.
 
 
-### Virtualization
+## Virtualization
 
 We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 

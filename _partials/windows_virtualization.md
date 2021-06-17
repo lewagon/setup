@@ -1,4 +1,4 @@
-### Virtualization
+## Virtualization
 
 We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 
