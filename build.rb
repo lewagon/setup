@@ -16,13 +16,13 @@ MACOS = %w[
   gh_cli
   dotfiles
   macos_rbenv
-  rbenv_ruby
+  ruby
   nvm
   yarn
   macos_postgresql
   macos_security
   checkup
-  alumni_platform
+  kitt
   macos_slack
   macos_preferences
   macos_dock].freeze
@@ -38,22 +38,22 @@ WINDOWS = %w[
   windows_install_wsl
   windows_vscode
   vscode_extensions
-  windows_windows_terminal
+  windows_terminal
   windows_git
-  windows_oh_my_zsh
+  oh_my_zsh
   github_rsa
   windows_browser_variable
   gh_cli
   dotfiles
   windows_dotfiles
-  ubuntu_rbenv
-  rbenv_ruby
+  rbenv
+  ruby
   nvm
   yarn
   windows_postgresql
   checkup
   windows_explorer
-  alumni_platform
+  kitt
   windows_slack
   windows_taskbar].freeze
 
@@ -64,19 +64,19 @@ UBUNTU = %w[
   ubuntu_git
   ubuntu_vscode
   vscode_extensions
-  ubuntu_oh_my_zsh
+  oh_my_zsh
   github_rsa
   gh_cli
   dotfiles
-  ubuntu_rbenv
-  rbenv_ruby
+  rbenv
+  ruby
   nvm
   yarn
   ubuntu_postgresql
   ubuntu_inotify
   ubuntu_extra
   checkup
-  alumni_platform
+  kitt
   ubuntu_slack
   ubuntu_dock].freeze
 
