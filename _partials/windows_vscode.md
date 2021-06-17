@@ -4,13 +4,14 @@
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-1. Download [Visual Studio Code for Windows](https://code.visualstudio.com/download).
-2. Open the file you have just downloaded.
-3. Install it with a few options:
+- Go to [Visual Studio Code download page](https://code.visualstudio.com/download).
+- Click on "Windows" button
+- Open the file you have just downloaded.
+- Install it with few options:
 
 ![VS Code installation options](images/windows_vscode_installation.png)
 
-When the installation is done, launch VS Code.
+When the installation is finished, launch VS Code.
 
 ### Connecting VS Code to Ubuntu
 

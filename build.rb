@@ -35,10 +35,10 @@ WINDOWS = %w[
   windows_virtualization
   windows_wsl
   windows_ubuntu
-  github
   windows_vscode
-  vscode_extensions
   windows_terminal
+  vscode_extensions
+  github
   windows_git
   oh_my_zsh
   github_rsa

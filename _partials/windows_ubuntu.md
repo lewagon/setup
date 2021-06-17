@@ -6,7 +6,7 @@
 - Type  `Microsoft Store`
 - Click on the Microsoft Windows Store in the list
 - Search for `Ubuntu` in the search bar
-- Select version without any number, just plain "Ubuntu"
+- **Select version without any number, just plain "Ubuntu"**
 - Click on `Install`
 
 :warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
@@ -20,12 +20,10 @@
   - Type  `ms-settings:appsfeatures`
   - Press `Enter`
 
-  Find the right software to uninstall and click on the uninstall button.
+  Find the software to uninstall and click on the uninstall button.
 </details>
 
-Once the installation is done, the `Install` button becomes a `Launch` button:
-
-- Click on `Launch`
+Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
 
 At first launch, you will be asked some information:
 - Choose a **username**:
@@ -40,7 +38,7 @@ At first launch, you will be asked some information:
 
 :warning: This is a security feature to mask not only your password as a whole but also its length!
 
-:white_check_mark: The installation should be complete; you can close the Ubuntu window now that it is installed on your computer.
+You can close the Ubuntu window now that it is installed on your computer.
 
 ### Check the WSL version of Ubuntu
 
@@ -54,13 +52,12 @@ Type the following command:
 wsl -l -v
 ```
 
-:white_check_mark: If the version of Ubuntu WSL is 2, you are ready to install VS Code!
+:white_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
 
 :x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
 
 <details>
   <summary>Convert Ubuntu WSL V1 to V2</summary>
-
 
   In the Command Prompt window, type:
 
@@ -87,8 +84,7 @@ wsl -l -v
 
   Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
-
   :x: If the conversion still does not work, please **contact a teacher**.
 </details>
 
-(You can now close this Command Prompt window.)
+You can now close this terminal window.

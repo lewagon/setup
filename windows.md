@@ -236,7 +236,7 @@ wsl --set-default-version 2
 - Type  `Microsoft Store`
 - Click on the Microsoft Windows Store in the list
 - Search for `Ubuntu` in the search bar
-- Select version without any number, just plain "Ubuntu"
+- **Select version without any number, just plain "Ubuntu"**
 - Click on `Install`
 
 :warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
@@ -250,12 +250,10 @@ wsl --set-default-version 2
   - Type  `ms-settings:appsfeatures`
   - Press `Enter`
 
-  Find the right software to uninstall and click on the uninstall button.
+  Find the software to uninstall and click on the uninstall button.
 </details>
 
-Once the installation is done, the `Install` button becomes a `Launch` button:
-
-- Click on `Launch`
+Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
 
 At first launch, you will be asked some information:
 - Choose a **username**:
@@ -270,7 +268,7 @@ At first launch, you will be asked some information:
 
 :warning: This is a security feature to mask not only your password as a whole but also its length!
 
-:white_check_mark: The installation should be complete; you can close the Ubuntu window now that it is installed on your computer.
+You can close the Ubuntu window now that it is installed on your computer.
 
 ### Check the WSL version of Ubuntu
 
@@ -284,13 +282,12 @@ Type the following command:
 wsl -l -v
 ```
 
-:white_check_mark: If the version of Ubuntu WSL is 2, you are ready to install VS Code!
+:white_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
 
 :x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
 
 <details>
   <summary>Convert Ubuntu WSL V1 to V2</summary>
-
 
   In the Command Prompt window, type:
 
@@ -317,20 +314,10 @@ wsl -l -v
 
   Apply changes to this folder only and try to convert the Ubuntu WSL version again.
 
-
   :x: If the conversion still does not work, please **contact a teacher**.
 </details>
 
-(You can now close this Command Prompt window.)
-
-
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
-![GitHub picture](images/github_picture.png)
+You can now close this terminal window.
 
 
 ## Visual Studio Code
@@ -339,19 +326,97 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-1. Download [Visual Studio Code for Windows](https://code.visualstudio.com/download).
-2. Open the file you have just downloaded.
-3. Install it with a few options:
+- Go to [Visual Studio Code download page](https://code.visualstudio.com/download).
+- Click on "Windows" button
+- Open the file you have just downloaded.
+- Install it with few options:
 
 ![VS Code installation options](images/windows_vscode_installation.png)
 
-When the installation is done, launch VS Code.
+When the installation is finished, launch VS Code.
 
 ### Connecting VS Code to Ubuntu
 
 You should see a frame at the bottom-right corner of VS Code saying it detects WSL. Accept the installation of the WSL extension for VS Code.
 
 :warning: This extension is mandatory for you to be able to work with VS Code!
+
+
+## Windows Terminal
+
+The standard terminal installed by Ubuntu is a very crude: let's install **Windows Terminal**, a real modern terminal.
+
+### Installation
+
+- Click on `Start`
+- Type  `Microsoft Store`
+- Click on the Microsoft Windows Store in the list
+- Search for `Windows Terminal` in the search bar
+- **Select Windows Terminal"**
+- Click on `Install`
+
+:warning: DO NOT install **Windows Terminal Preview**, just **Windows Terminal**!
+
+<details>
+  <summary>Uninstall wrong version of Windows Terminal</summary>
+
+  To uninstall a wrong version of Windows Terminal, you just have to go to the Installed Program List of Windows 10:
+
+  - Press `Windows` + `R`
+  - Type  `ms-settings:appsfeatures`
+  - Press `Enter`
+
+  Find the software to uninstall and click on the uninstall button.
+</details>
+
+Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
+
+### Ubuntu as the default terminal
+
+Let's make Ubuntu the default terminal of your Windows Terminal application.
+
+Press `Ctrl` + `,`
+
+It should open the terminal settings:
+
+![Windows Terminal Settings](images/windows_settings.png)
+
+- Change the default profile to "Ubuntu"
+- Click on "Save"
+- Click on "Open JSON file"
+
+We have circle in red the part you will change:
+
+![Windows Terminal JSON settings file](images/wsl2_settings_json.png)
+
+First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
+- Locate the `"name": "Ubuntu",`
+- Add the following line after it:
+
+```bash
+"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
+```
+:warning: Do not forget the comma at the end of the line!
+
+:warning: Do not forget to replace the username by your own in the line above!
+
+Then, let's disable warning for copy-pasting commands between Windows and Ubuntu:
+- Locate the line `"defaultProfile": "{2c4de342-...}"`
+- Add the following line after it:
+
+```bash
+"multiLinePasteWarning": false,
+```
+
+:warning: Do not forget the comma at the end of the line!
+
+You can save these changes by pressing `CTRL` + `V`
+
+:white_check_mark: Your **Windows Terminal** is now setup! :confetti_ball:
+
+This terminal has tabs: you can choose to open a new terminal tab by clicking on the **plus** next to the current one.
+
+**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
 
 
 ## VS Code Extensions
@@ -391,102 +456,13 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## Windows Terminal
+## GitHub account
 
-The standard Ubuntu terminal is a very crude way of using Ubuntu; let's use a real modern terminal!
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-### Installation
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
-We first need to install **Windows Terminal** from the Microsoft Windows Store:
-
-
-- Click on `Start`
-- Type  `Microsoft Store`
-- Click on the Microsoft Windows Store in the list
->
->
-- Search for `Windows Terminal` in the search bar
->
->
-- Click on `Install`
-
-
-Once the installation is done, the `Install` button becomes a `Launch` button:
-
-
-- Click on `Launch`
-- Right Click on the icon in the taskbar
-- Choose to pin the app to the bar
-
-
-This terminal allows you to open multiple terminal sessions, including **PowerShell**, **Command Prompt** and **Ubuntu** that you installed earlier.
-
-This terminal has tabs: you can choose to open a new terminal tab clicking on the **down arrow** / **v-shape** next to the current one.
-
-:warning: From now on, we will only need **Ubuntu** as a terminal.
-
-### Ubuntu as the default terminal
-
-Let's make Ubuntu the default terminal of your Windows Terminal application.
-
-
-- Press `Ctrl` + `,`
-
-
-It should open the terminal settings:
-
-![Windows Terminal Settings](images/windows_settings.png)
-
-Click on "Open JSON file"
-
-We have put in red the part we will use or change:
-
-![Windows Terminal JSON settings file](images/wsl2_settings_json.jpg)
-
-
-&nbsp;
-
-
-First, let us ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
-
-
-
-- Locate the `"name": "Ubuntu",`
-- Add the following line after it:
-
-```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
-```
-
-:warning: Do not forget the comma at the end of the line!
-
-:warning: Do not forget to replace the username by your own in the line above!
-
-
-
-&nbsp;
-
-Now, let us ask Windows Terminal to start directly an Ubuntu Terminal when launched:
-
-
-
-
-- Locate the `"guid"` for Ubuntu
-- Copy the value between `{` and `}`
-- Locate the `"defaultProfile"`
-- Replace the value between `{` and `}` with what you copied from above
-- Add a comma after the `defaultProfile` so you can add the `"multiLinePasteWarning": false,` option as well. This will disable an annoying warning every time you want to paste multiple lines to your terminal.
-
-You can refer to the screenshot above to get a sense of how it should look like. Don't hesitate to ask for help.
-
-
-:warning: Do not forget to save those changes!
-
-&nbsp;
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: Voilà, your **Windows Terminal** is setup! :confetti_ball:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **From now on, every time we will refer to the terminal or the console it will be this one.**
-
+![GitHub picture](images/github_picture.png)
 
 
 ## Git
