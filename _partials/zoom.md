@@ -22,4 +22,4 @@ You should then see a screen like this:
 
 ![Zoom Home Screen](images/zoom_home_screen.png)
 
-You can now close Zoom.
+You can now close the Zoom app.

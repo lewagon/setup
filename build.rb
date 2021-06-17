@@ -31,10 +31,8 @@ MACOS = %w[
 WINDOWS = %w[
   intro
   zoom
-  windows_prereq_intro
-  windows_prereq_win10
-  windows_prereq_win_version
-  windows_prereq_virtualization
+  windows_version
+  windows_virtualization
   github
   windows_install_wsl
   windows_vscode

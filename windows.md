@@ -2,7 +2,7 @@
 
 You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)
 
-Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a TA for help :raising_hand:
+Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a teacher for help :raising_hand:
 
 Let's start :rocket:
 
@@ -31,121 +31,80 @@ You should then see a screen like this:
 
 ![Zoom Home Screen](images/zoom_home_screen.png)
 
-You can now close Zoom.
+You can now close the Zoom app.
 
 
-## Prerequisites
+## Windows version
 
-Before we start, it is important you meet the following prerequisites to ensure the smooth running of the setup.
-Take your time to read through everything and do not hesitate to ask for help if you feel stuck.
-
-Ready? Let's go :sunglasses:
-
-
+Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
 
 ### Windows 10
 
-For this setup, you need to be using the latest version of Windows.
-
-This means that you need to be on **Windows 10**, with all the latest updates installed.
+To be able to set up your computer, you need to have **Windows 10** installed.
 
 To check your Windows version:
-
-
 - Press `Windows` + `R`
 - Type  `winver`
 - Press `Enter`
 
-&nbsp;
+:white_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
 
-&nbsp;&nbsp;&nbsp; :x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10!
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: If the first words of this window are **Windows 10** you're good to go! :muscle:
-
-
----
+:x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
 
 #### :wrench: Potential Fixes
 
 <details>
   <summary>Upgrade to Windows 10</summary>
-
-  &nbsp;
   - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
   - Install it. It should take roughly an hour, but this is dependent on your computer
+  - When the installation is over, execute the commands above :pointing_up: to check that you now have **Windows 10**
 </details>
 
----
+### Latest updates
 
-
-Once you're sure that you're using Windows 10, you will need to check that your computer has all the latest updates.
-
-
-
-### Latest version of Windows
+Once you're sure that you're using Windows 10, you need to install all the latest updates.
 
 Open Windows Update:
-
-
 - Press `Windows` + `R`
 - Type  `ms-settings:windowsupdate`
 - Press `Enter`
->
->
 - Click on `Check updates`
 
-&nbsp;
 
-&nbsp;&nbsp;&nbsp; :x: If you have an error message about Windows not being able to apply updates, please **contact a teacher**.
+:white_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: If you have updates available please install them and repeat the process until it says that you are up to date :star:.
+:warning: If you have a red exclamation mark and the message "Update available", please install them and repeat the process until it says that you are up to date :loop:
 
-
----
+:x: If you have an error message about Windows not being able to apply updates, please **contact a teacher**.
 
 #### :wrench: Potential Fixes
 
 <details>
   <summary>Activate Windows Update Service to fix Updates</summary>
-
-  &nbsp;
-
-
   Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
-
-
   - Press `Windows` + `R`
   - Type  `services.msc`
   - Press `Enter`
-  >
-  >
   - Double Click `Windows Update Service`
   - Set its `Startup` to `Automatic`
   - Click on `Start`
   - Click on `Ok`
-
   Then let's try updates again!
 </details>
-
----
 
 ### Minimum version
 
 Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
 
-
 - Press `Windows` + `R`
 - Type  `winver`
 - Press `Enter`
 
-
 Check the **Version number**:
 
+:white_check_mark: If it says at least `1903`, you are good to go :+1:
 
-&nbsp;&nbsp;&nbsp; :x: If it is below `1903`, just follow the [Latest version of Windows](#Latest-version-of-Windows) paragraph above to install the latest updates.
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: If it says at least `1903`, you are good to go! :sunglasses:
-
+:x: If it is below `1903`, please **contact a teacher**.
 
 
 ### Virtualization

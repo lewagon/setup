@@ -2,7 +2,7 @@
 
 You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)
 
-Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a TA for help :raising_hand:
+Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a teacher for help :raising_hand:
 
 Let's start :rocket:
 
@@ -31,7 +31,7 @@ You should then see a screen like this:
 
 ![Zoom Home Screen](images/zoom_home_screen.png)
 
-You can now close Zoom.
+You can now close the Zoom app.
 
 
 
