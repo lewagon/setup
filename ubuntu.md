@@ -32,7 +32,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
-![](images/github_upload_picture.png)
+![GitHub picture](images/github_picture.png)
 
 
 ## Git
@@ -92,10 +92,6 @@ Now let's try to launch your VS Code from **the terminal**:
 code
 ```
 
-Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Add to Favorites":
-
-![](images/ubuntu_dock.png)
-
 You can move forward!
 
 
@@ -126,7 +122,7 @@ Here is a list of the extensions you are installing:
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
-![](images/liveshare.png)
+![VS Code Live Share](images/vscode_live_share.png)
 
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".
@@ -149,7 +145,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Be careful, those commands will ask you to type your password twice. At the end
 your prompt should look like this:
 
-![](images/ubuntu_oh_my_zsh.png)
+![Ubuntu terminal with OhMyZsh](images/ubuntu_oh_my_zsh.png)
 
 If it doesn't, **ask a teacher**.
 
@@ -569,20 +565,25 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Install Slack for Linux (beta)](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-).
+### Installation
+
+[Download the Slack app](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-) and install it.
+
+
+### Settings
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
-Make sure you upload a picture there.
-
-You can also sign in to Slack on your iPhone or Android device!
+Make sure you **upload a profile picture** there.
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+To ensure that everything is working fine for video calls, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
+![Check microphone and webcam with Slack](images/slack_mic_cam_all_green.png)
+
+You can also sign in to Slack on your iPhone or Android device!
 
 
 ## Pin apps to your taskbar
@@ -591,7 +592,7 @@ You are going to use most of the apps you've just installed really often. So let
 
 To do so, launch the app, right-click on the icon to bring up the context menu and choose "Pin to taskbar".
 
-![How to pin VS Code to the taskbar in Windows 10](images/windows_taskbar.png)
+![How to pin VS Code to the dock in Ubuntu](images/ubuntu_dock.png)
 
 You should at least pin:
 - The terminal

@@ -14,7 +14,7 @@ For many computers, this is already the case. Let's check:
 - Click on `CPU`
 
 
-![task_manager.jpg](images/task_manager.jpg)
+![Windows task manager](images/windows_task_manager.jpg)
 
 &nbsp;
 

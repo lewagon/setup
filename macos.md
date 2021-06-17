@@ -33,7 +33,7 @@ If you bought your computer after late 2020, chances are it uses Apple silicon i
 
 Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
-![](images/macos_open_terminal.png)
+![Open Terminal on macOS](images/macos_open_terminal.png)
 
 Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 
@@ -86,7 +86,7 @@ Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
 
 Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
-![quit.png](images/macos_quit.png)
+![Quit Terminal on macOS](images/macos_quit.png)
 
 During this setup you will be asked to **quit and re-open** applications multiple times, please make sure you do it properly :pray:
 
@@ -108,7 +108,7 @@ If you receive the following message, you can just skip this step and go to next
 
 Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
 
-![](images/macos_xcode_select_install.png)
+![Install xcode-select on macOS](images/macos_xcode_select_install.png)
 
 While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
 
@@ -139,7 +139,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
-![](images/github_upload_picture.png)
+![GitHub picture](images/github_picture.png)
 
 
 ## Homebrew
@@ -200,15 +200,11 @@ Then launch VS Code:
 '/Applications/Visual Studio Code.app'
 ```
 
-Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Options" then "Keep in Dock":
-
-![How to pin VS Code to the Dock on macOS](images/macos_dock.png)
-
 ### Launching from the terminal
 
 In VS Code, open the Command Palette (`CMD` + `SHIFT` + `P`), type `shell command` and click on "Shell Command: Install 'code' command in PATH" :point_down:
 
-![](images/macos_vscode_command.png)
+![Install VS Code command on macOS](images/macos_vscode_command.png)
 
 Now quit the VS Code, quit the Terminal (`CMD` + `Q`) and restart it.
 
@@ -242,7 +238,7 @@ Here is a list of the extensions you are installing:
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
-![](images/liveshare.png)
+![VS Code Live Share](images/vscode_live_share.png)
 
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".
@@ -275,13 +271,13 @@ Now quit the Terminal (`⌘` + `Q`) and restart it.
 
 You should see something like this:
 
-![](images/macos_on_my_zsh.png)
+![Terminal with OhMyZsh on macOS](images/macos_oh_my_zsh.png)
 
 If not, **stop right away** and call a teacher.
 
 On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
 
-![](images/macos_terminal_pro.png)
+![Set Terminal Pro theme on macOS](images/macos_terminal_pro.png)
 
 **Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
 
@@ -704,18 +700,25 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-[Download](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) the Slack native app from the mac App Store and sign in to `lewagon-alumni` organization.
+### Installation
 
-Make sure you upload a picture there.
+[Download the Slack app](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) and install it.
 
-You can also sign in to Slack on your iPhone or Android device!
+
+### Settings
+
+Launch the app and sign in to `lewagon-alumni` organization.
+
+Make sure you **upload a profile picture** there.
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+To ensure that everything is working fine for video calls, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
+![Check microphone and webcam with Slack](images/slack_mic_cam_all_green.png)
+
+You can also sign in to Slack on your iPhone or Android device!
 
 
 ## Keyboard

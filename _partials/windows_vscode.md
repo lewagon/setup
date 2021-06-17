@@ -8,7 +8,7 @@ Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 2. Open the file you have just downloaded.
 3. Install it with a few options:
 
-![VS Code install](images/windows_vscode_installation.png)
+![VS Code installation options](images/windows_vscode_installation.png)
 
 When the installation is done, launch VS Code.
 

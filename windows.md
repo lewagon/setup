@@ -139,7 +139,7 @@ For many computers, this is already the case. Let's check:
 - Click on `CPU`
 
 
-![task_manager.jpg](images/task_manager.jpg)
+![Windows task manager](images/windows_task_manager.jpg)
 
 &nbsp;
 
@@ -193,7 +193,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 :point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
 
-![](images/github_upload_picture.png)
+![GitHub picture](images/github_picture.png)
 
 
 ## Zoom
@@ -269,7 +269,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 - Click `Next`
 - Click `Finish`
 
-![update_wsl](images/windows_update_wsl.png)
+![Update WSL from version 1 to 2](images/windows_update_wsl.png)
 
 &nbsp;
 
@@ -456,7 +456,7 @@ Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 2. Open the file you have just downloaded.
 3. Install it with a few options:
 
-![VS Code install](images/windows_vscode_installation.png)
+![VS Code installation options](images/windows_vscode_installation.png)
 
 When the installation is done, launch VS Code.
 
@@ -494,7 +494,7 @@ Here is a list of the extensions you are installing:
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
-![](images/liveshare.png)
+![VS Code Live Share](images/vscode_live_share.png)
 
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".
@@ -649,7 +649,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Be careful, those commands will ask you to type your password twice. At the end
 your prompt should look like this:
 
-![](images/ubuntu_oh_my_zsh.png)
+![Ubuntu terminal with OhMyZsh](images/ubuntu_oh_my_zsh.png)
 
 If it doesn't, **ask a teacher**.
 
@@ -1162,7 +1162,7 @@ We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
 In order to do that, we will create shortcuts to Ubuntu directories in the Windows **File Explorer**.
 
-![](images/windows_ubuntu_file_system_shortcut.png)
+![How to add a shortcut to Ubuntu file system on Windows](images/windows_ubuntu_file_system_shortcut.png)
 
 Here are the steps:
 
@@ -1173,7 +1173,7 @@ Here are the steps:
 - Dive into the Ubuntu file system in order to look for directories of interest
 - Drag the desired folders into the Address Bar in order to create shortcuts
 
-![](images/windows_ubuntu_file_system_shortcut.gif)
+![How to add a shortcut to Ubuntu file system on Windows](images/windows_ubuntu_file_system_shortcut.gif)
 
 ### Open the Windows File Explorer from the Ubuntu terminal
 
@@ -1186,7 +1186,7 @@ In order to do that:
 - Run the `explorer.exe .` command (alternatively, use `wslview .`)
 - If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
 
-![](images/windows_explorer_from_terminal.png)
+![How to launch Windows Explorer from Ubuntu terminal](images/windows_explorer_from_terminal.png)
 
 ### Find your way in the Ubuntu File System
 
@@ -1199,7 +1199,7 @@ In order to convert a Windows path to and from an Ubuntu path:
 - Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
 - In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
 
-![](images/windows_path_from_terminal.png)
+![How to access a Windows path from Ubuntu terminal](images/windows_path_from_terminal.png)
 
 
 ## Alumni
@@ -1218,20 +1218,25 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
-Download and install the Slack app from [slack.com](https://slack.com/downloads/windows).
+### Installation
+
+[Download the Slack app](https://slack.com/downloads/windows) and install it.
+
+
+### Settings
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
-Make sure you upload a picture there.
-
-You can also sign in to Slack on your iPhone or Android device!
+Make sure you **upload a profile picture** there.
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+To ensure that everything is working fine for video calls, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![](images/slack_mic_cam_all_green.png)
+![Check microphone and webcam with Slack](images/slack_mic_cam_all_green.png)
+
+You can also sign in to Slack on your iPhone or Android device!
 
 
 ## Pin apps to your taskbar
