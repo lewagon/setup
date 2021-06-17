@@ -33,7 +33,7 @@ WINDOWS = %w[
   zoom
   windows_version
   windows_virtualization
-  windows_install_wsl
+  windows_wsl
   github
   windows_vscode
   vscode_extensions
@@ -41,7 +41,7 @@ WINDOWS = %w[
   windows_git
   oh_my_zsh
   github_rsa
-  windows_browser_variable
+  windows_browser
   gh_cli
   dotfiles
   windows_dotfiles
