@@ -299,6 +299,21 @@ wsl --set-default-version 2
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: You can close this Command Prompt terminal; we are ready to install Ubuntu!
 
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>Enable Virtual Machine Platform Windows feature</summary>
+
+Follow the steps described [here](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) until you enable <strong>Virtual Machine Platform</strong> and <strong>Windows Subsystem for Linux</strong>
+
+</details>
+
+<details>
+  <summary>Enable Hyper-V Windows feature</summary>
+
+Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
+
+</details>
 
 ## Ubuntu
 ### Installation
@@ -832,7 +847,7 @@ CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Com
 
 In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the Terminal.
 
-It should already be installed on your laptop from the previous commands. First you need to **login**:
+It should already be installed on your laptop from the previous commands. First you need to **login**, copy the following line (**do not** edit it!) and paste it in your terminal, then press the `Enter` key:
 
 ```bash
 gh auth login -s 'user:email' -w
@@ -847,7 +862,7 @@ You will get the following output:
 - Press Enter to open github.com in your browser...
 ```
 
-Select and copy the code (`0EF9-D015` in the example), then type `Enter`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit. Come back to the terminal, type `Enter` again, and that should be it :tada:
+Select and copy the code (`0EF9-D015` in the example), then press `Enter`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit. Come back to the terminal, press `Enter` again, and that should be it :tada:
 
 To check that you are properly connected, type:
 
@@ -1233,12 +1248,16 @@ Make sure you **upload a profile picture** :pointing_down:
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-To ensure that everything is working fine for video calls, [test your camera and microphone](https://lewagon-alumni.slack.com/help/test/calls). If your browser is asking your permission to access your microphone and camera, click on yes.
+To ensure that everything is working fine for video calls, let's test your camera and microphone:
+- Open the Slack app
+- In any channel message bar type `/call --test` and press Enter
+- Click on the "Start test" green button
 
-After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
-![Check microphone and webcam with Slack](images/slack_mic_cam_all_green.png)
+When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. If not, ask a teacher.
 
-You can also sign in to Slack on your iPhone or Android device!
+![Check microphone and webcam with Slack](images/slack_call_test.png)
+
+You can also install Slack app on your phone and `lewagon-alumni`!
 
 
 ## Pin apps to your taskbar

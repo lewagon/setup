@@ -84,6 +84,21 @@ wsl --set-default-version 2
 
 &nbsp;&nbsp;&nbsp; :white_check_mark: You can close this Command Prompt terminal; we are ready to install Ubuntu!
 
+#### :wrench: Potential Fixes
+
+<details>
+  <summary>Enable Virtual Machine Platform Windows feature</summary>
+
+Follow the steps described [here](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) until you enable <strong>Virtual Machine Platform</strong> and <strong>Windows Subsystem for Linux</strong>
+
+</details>
+
+<details>
+  <summary>Enable Hyper-V Windows feature</summary>
+
+Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
+
+</details>
 
 ## Ubuntu
 ### Installation

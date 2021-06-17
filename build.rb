@@ -89,11 +89,16 @@ filenames = {
   'ubuntu.md' => UBUNTU
 }
 
-filenames.each do |filename, partials|
-  File.open(filename.to_s, 'w:utf-8') do |f|
-    partials.each do |partial|
-      f << File.read(File.join('_partials', "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION)
-      f << "\n\n"
+["", "cn"].each do |locale|
+  filenames.each do |filename, partials|
+    filename = locale.empty? ? filename : filename.split(".md").join("#{locale}.")
+    option = locale
+    File.open(filename.to_s, 'w:utf-8') do |f|
+      partials.each do |partial|
+        folder = locale.empty? ? "_partials" : "_partials/#{locale}"
+        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION)
+        f << "\n\n"
+      end
     end
   end
 end
