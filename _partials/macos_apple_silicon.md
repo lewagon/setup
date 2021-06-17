@@ -5,7 +5,7 @@ If you bought your computer after late 2020, chances are it uses Apple silicon i
 
 Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
-![](images/macos_open_terminal.png)
+![Open Terminal on macOS](images/macos_open_terminal.png)
 
 Copy-paste the following command in the terminal and hit `Enter` to execute the command.
 

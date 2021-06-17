@@ -7,7 +7,7 @@ We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
 In order to do that, we will create shortcuts to Ubuntu directories in the Windows **File Explorer**.
 
-![](images/windows_ubuntu_file_system_shortcut.png)
+![How to add a shortcut to Ubuntu file system on Windows](images/windows_ubuntu_file_system_shortcut.png)
 
 Here are the steps:
 
@@ -18,7 +18,7 @@ Here are the steps:
 - Dive into the Ubuntu file system in order to look for directories of interest
 - Drag the desired folders into the Address Bar in order to create shortcuts
 
-![](images/windows_ubuntu_file_system_shortcut.gif)
+![How to add a shortcut to Ubuntu file system on Windows](images/windows_ubuntu_file_system_shortcut.gif)
 
 ### Open the Windows File Explorer from the Ubuntu terminal
 
@@ -31,7 +31,7 @@ In order to do that:
 - Run the `explorer.exe .` command (alternatively, use `wslview .`)
 - If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
 
-![](images/windows_explorer_from_terminal.png)
+![How to launch Windows Explorer from Ubuntu terminal](images/windows_explorer_from_terminal.png)
 
 ### Find your way in the Ubuntu File System
 
@@ -44,4 +44,4 @@ In order to convert a Windows path to and from an Ubuntu path:
 - Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
 - In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
 
-![](images/windows_path_from_terminal.png)
+![How to access a Windows path from Ubuntu terminal](images/windows_path_from_terminal.png)

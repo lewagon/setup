@@ -16,15 +16,11 @@ Then launch VS Code:
 '/Applications/Visual Studio Code.app'
 ```
 
-Now, pin VS Code to your Dock by righ-clicking on the icon to bring up the context menu and choosing "Options" then "Keep in Dock":
-
-![How to pin VS Code to the Dock on macOS](images/macos_dock.png)
-
 ### Launching from the terminal
 
 In VS Code, open the Command Palette (`CMD` + `SHIFT` + `P`), type `shell command` and click on "Shell Command: Install 'code' command in PATH" :point_down:
 
-![](images/macos_vscode_command.png)
+![Install VS Code command on macOS](images/macos_vscode_command.png)
 
 Now quit the VS Code, quit the Terminal (`CMD` + `Q`) and restart it.
 

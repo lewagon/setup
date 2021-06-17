@@ -4,7 +4,7 @@ You are going to use most of the apps you've just installed really often. So let
 
 To do so, launch the app, right-click on the icon to bring up the context menu and choose "Pin to taskbar".
 
-![How to pin VS Code to the taskbar in Windows 10](images/windows_taskbar.png)
+![How to pin VS Code to the dock in Ubuntu](images/ubuntu_dock.png)
 
 You should at least pin:
 - The terminal

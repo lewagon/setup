@@ -11,7 +11,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 Be careful, those commands will ask you to type your password twice. At the end
 your prompt should look like this:
 
-![](images/ubuntu_oh_my_zsh.png)
+![Ubuntu terminal with OhMyZsh](images/ubuntu_oh_my_zsh.png)
 
 If it doesn't, **ask a teacher**.
 

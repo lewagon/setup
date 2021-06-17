@@ -24,6 +24,7 @@ MACOS = %w[
   checkup
   kitt
   macos_slack
+  slack_settings
   macos_preferences
   macos_dock].freeze
 
@@ -55,6 +56,7 @@ WINDOWS = %w[
   windows_explorer
   kitt
   windows_slack
+  slack_settings
   windows_taskbar].freeze
 
 UBUNTU = %w[
@@ -78,6 +80,7 @@ UBUNTU = %w[
   checkup
   kitt
   ubuntu_slack
+  slack_settings
   ubuntu_dock].freeze
 
 filenames = {

@@ -200,15 +200,15 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 To be able to interact when we are not in the same physical room, we will be using Zoom.
 
-⚠️ If you already have Zoom installed, please make sure that the version is at least **5.4**. Otherwise, you will not be able to use breakout rooms in order to work with your buddy.
+⚠️ If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
 Zoom is a video conferencing tool. To create an account and install the app, go to [https://zoom.us/download](https://zoom.us/download) and under **Zoom Client for Meetings** click the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connection** and create an account with the **Sign Up Free** option:
 
-![zoom-sign-up-free.png](images/zoom-sign-up-free.png)
+![Sign Up to Zoom](images/zoom_sign_up_free.png)
 
-Once connected, you should see:
+Then sign in the Zoom app using your credentials. You should see a screen like this:
 
-![zoom-welcome-screen.png](images/zoom-welcome-screen.png)
+![Zoom Home Screen](images/zoom_home_screen.png)
 
 You can close Zoom now.
 
@@ -269,7 +269,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 - Click `Next`
 - Click `Finish`
 
-![update_wsl](images/update_wsl.jpg)
+![update_wsl](images/windows_update_wsl.png)
 
 &nbsp;
 
@@ -548,13 +548,13 @@ Let's make Ubuntu the default terminal of your Windows Terminal application.
 
 It should open the terminal settings:
 
-![wsl2_settings](images/wsl2_settings.png)
+![Windows Terminal Settings](images/windows_settings.png)
 
 Click on "Open JSON file"
 
 We have put in red the part we will use or change:
 
-![wsl2_settings](images/wsl2_settings_json.jpg)
+![Windows Terminal JSON settings file](images/wsl2_settings_json.jpg)
 
 
 &nbsp;
@@ -636,53 +636,28 @@ gh --version
 If you don't get a prompt saying `gh version X.Y.Z (YYYY-MM-DD)` with at least version 1.4, please refer to [the documentation](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources) where they list some troubleshooting information. In doubt, ask a TA.
 
 
-## Oh-my-zsh - Fancy your Terminal
+## Oh-my-zsh - Fancy your terminal
 
 We will use the shell named `zsh` instead of `bash`, the default one.
 
 ```bash
-# it will ask for your session password
 sudo apt install -y zsh curl vim imagemagick jq
-```
-```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# it will ask for your session password
 ```
 
-At then end, your terminal should look like this:
+Be careful, those commands will ask you to type your password twice. At the end
+your prompt should look like this:
 
-![zsh](images/wsl2_zsh.jpg)
+![](images/ubuntu_oh_my_zsh.png)
 
+If it doesn't, **ask a teacher**.
 
-&nbsp;
+To make this change stick, restart your laptop (or virtual machine):
 
-&nbsp;&nbsp;&nbsp; :x: If it does not, please **contact a teacher**.
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: If everything is correct, let's configure GitHub!
-
----
-
-#### :wrench: Potential Fixes
-
-<details>
-  <summary>Error: "chsh command unsuccessful. Change your default shell manually."</summary>
-
-  &nbsp;
-
-
-  You probably typed the wrong password when asked.
-  Starting the script again will not work as it will try to create a configuration folder that now already exists!
-
-  We need to remove it first:
-
-  ```bash
-  rm -rf ~/.oh-my-zsh
-  ```
-
-
-  Then let's try again!
-</details>
-
----
+```bash
+sudo reboot
+```
 
 
 ## GitHub
@@ -1187,7 +1162,7 @@ We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
 In order to do that, we will create shortcuts to Ubuntu directories in the Windows **File Explorer**.
 
-![](images/wsl_ubuntu_file_system.png)
+![](images/windows_ubuntu_file_system_shortcut.png)
 
 Here are the steps:
 
@@ -1198,7 +1173,7 @@ Here are the steps:
 - Dive into the Ubuntu file system in order to look for directories of interest
 - Drag the desired folders into the Address Bar in order to create shortcuts
 
-![](images/wsl_ubuntu_file_system.gif)
+![](images/windows_ubuntu_file_system_shortcut.gif)
 
 ### Open the Windows File Explorer from the Ubuntu terminal
 
@@ -1211,7 +1186,7 @@ In order to do that:
 - Run the `explorer.exe .` command (alternatively, use `wslview .`)
 - If you get an input output error message, run `wsl --shutdown` in a Windows PowerShell and reopen an Ubuntu terminal
 
-![](images/wsl_explorer.png)
+![](images/windows_explorer_from_terminal.png)
 
 ### Find your way in the Ubuntu File System
 
@@ -1224,7 +1199,7 @@ In order to convert a Windows path to and from an Ubuntu path:
 - Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path
 - In particular, the `wslpath -w $(pwd)` command returns the Windows path of the current Ubuntu directory
 
-![](images/wsl_path.png)
+![](images/windows_path_from_terminal.png)
 
 
 ## Alumni

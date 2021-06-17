@@ -25,7 +25,7 @@ Here is a list of the extensions you are installing:
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
-![](images/liveshare.png)
+![VS Code Live Share](images/vscode_live_share.png)
 
 - Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
 - A popup appears asking you to sign in with GitHub: click on "Allow".

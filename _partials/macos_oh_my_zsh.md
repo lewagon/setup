@@ -21,13 +21,13 @@ Now quit the Terminal (`⌘` + `Q`) and restart it.
 
 You should see something like this:
 
-![](images/macos_on_my_zsh.png)
+![Terminal with OhMyZsh on macOS](images/macos_oh_my_zsh.png)
 
 If not, **stop right away** and call a teacher.
 
 On Mac, open `Terminal > Preferences` and set the "Pro" theme as default in `Profiles` (*`Réglages`* in French).
 
-![](images/macos_terminal_pro.png)
+![Set Terminal Pro theme on macOS](images/macos_terminal_pro.png)
 
 **Quit** and restart the Terminal. It should now have a nice black background, more easy on the eyes.
 
