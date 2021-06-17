@@ -586,19 +586,19 @@ After the test are finished, you should have green "All clear" messages at least
 You can also sign in to Slack on your iPhone or Android device!
 
 
-## Pin apps to your taskbar
+## Pin apps to your dock
 
-You are going to use most of the apps you've just installed really often. So let's pin them to your taskbar so that they are just a click away!
+You are going to use most of the apps you've installed today really often. So let's pin them to your dock so that they are just one click away!
 
-To do so, launch the app, right-click on the icon to bring up the context menu and choose "Pin to taskbar".
+To pin an app to your dock, launch the app, right-click on the icon in the dock to bring up the context menu and choose "Add to Favorites".
 
-![How to pin VS Code to the dock in Ubuntu](images/ubuntu_dock.png)
+![How to pin an app to the dock in Ubuntu](images/ubuntu_dock.png)
 
-You should at least pin:
-- The terminal
-- The file explorer
-- The Internet browser
+You must pin:
+- Your terminal
+- Your file explorer
 - VS Code
+- Your Internet browser
 - Slack
 - Zoom
 

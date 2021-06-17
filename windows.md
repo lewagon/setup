@@ -1241,17 +1241,17 @@ You can also sign in to Slack on your iPhone or Android device!
 
 ## Pin apps to your taskbar
 
-You are going to use most of the apps you've just installed really often. So let's pin them to your taskbar so that they are just a click away!
+You are going to use most of the apps you've installed today really often. So let's pin them to your taskbar so that they are just one click away!
 
-To do so, launch the app, right-click on the icon to bring up the context menu and choose "Pin to taskbar".
+To pin an app to your taskbar, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Pin to taskbar".
 
-![How to pin VS Code to the taskbar in Windows 10](images/windows_taskbar.png)
+![How to pin an app to the taskbar in Windows](images/windows_taskbar.png)
 
-You should at least pin:
-- The terminal
-- The file explorer
-- The Internet browser
+You must pin:
+- Your terminal
+- Your file explorer
 - VS Code
+- Your Internet browser
 - Slack
 - Zoom
 
