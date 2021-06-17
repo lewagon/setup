@@ -15,10 +15,9 @@ To check your Windows version:
 
 :x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
 
-#### :wrench: Potential Fixes
-
 <details>
   <summary>Upgrade to Windows 10</summary>
+
   - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
   - Install it. It should take roughly an hour, but this is dependent on your computer
   - When the installation is over, execute the commands above :pointing_up: to check that you now have **Windows 10**
@@ -41,10 +40,9 @@ Open Windows Update:
 
 :x: If you have an error message about Windows not being able to apply updates, please **contact a teacher**.
 
-#### :wrench: Potential Fixes
-
 <details>
   <summary>Activate Windows Update Service to fix Updates</summary>
+
   Some antiviruses and pieces of software deactivate the Update service we need, resulting in the error you see. Let's fix that!
   - Press `Windows` + `R`
   - Type  `services.msc`
