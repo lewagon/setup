@@ -9,19 +9,29 @@ Let's start :rocket:
 
 ## Zoom
 
-To be able to interact when we are not in the same physical room, we will be using Zoom.
+To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
 
-⚠️ If you already have Zoom installed, please make sure that the version is at least **5.6**.
+:warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
-Zoom is a video conferencing tool. To create an account and install the app, go to [https://zoom.us/download](https://zoom.us/download) and under **Zoom Client for Meetings** click the **Download** button. Open the file you have just downloaded. A progress bar will appear, then Zoom will start. Click on **Connection** and create an account with the **Sign Up Free** option:
+To create an account and install the app:
+- Open your web browser and go to [https://zoom.us/download](https://zoom.us/download)
+- Under **Zoom Client** click the **Download** button
+- Open the file you have just downloaded to install the app
+- Open the Zoom app
+- If you already have a Zoom account, sign in using your credentials
+- If not, click on the **Sign Up Free** link:
 
-![Sign Up to Zoom](images/zoom_sign_up_free.png)
+![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
 
-Then sign in the Zoom app using your credentials. You should see a screen like this:
+You will be redirected to Zoom's website to complete a form.
+
+When it's done, go back to the Zoom app and sign in using your credentials.
+
+You should then see a screen like this:
 
 ![Zoom Home Screen](images/zoom_home_screen.png)
 
-You can close Zoom now.
+You can now close Zoom.
 
 
 
