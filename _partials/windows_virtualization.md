@@ -12,6 +12,7 @@ For many computers, this is already the case. Let's check:
 ![Windows task manager](images/windows_task_manager.png)
 
 :white_check_mark: If you see "Virtualization: Enabled", you're good to go :+1:
+
 :x: If the line is missing or if the virtualization is disabled, please **contact a teacher before trying to activate the Virtualization**
 
 <details>

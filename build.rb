@@ -33,8 +33,8 @@ WINDOWS = %w[
   zoom
   windows_version
   windows_virtualization
-  github
   windows_install_wsl
+  github
   windows_vscode
   vscode_extensions
   windows_terminal
