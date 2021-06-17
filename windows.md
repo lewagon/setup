@@ -615,16 +615,13 @@ understanding of what those keys are used for.
 
 
 ## Linking your default browser to Ubuntu
-To be sure that you can interact with your browser installed on Windows from your new Ubuntu terminal, we need to set it as your default browser there.
 
-⚠️ You need to execute at least one of the following commands below:
+To be sure that you can interact with your browser installed on Windows from your Ubuntu terminal, we need to set it as your default browser there.
 
+:warning: You need to execute at least one of the following commands below:
 
 <details>
   <summary>Google Chrome as your default browser</summary>
-
-  &nbsp;
-
 
   Run the command:
 
@@ -643,15 +640,10 @@ To be sure that you can interact with your browser installed on Windows from you
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
   ```
-
 </details>
-
 
 <details>
   <summary>Mozilla Firefox as your default browser</summary>
-
-  &nbsp;
-
 
   Run the command:
 
@@ -675,19 +667,14 @@ To be sure that you can interact with your browser installed on Windows from you
 <details>
   <summary>Microsoft Edge as your default browser</summary>
 
-  &nbsp;
-
-
   Run the command:
-
 
   ```bash
   echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
   ```
 </details>
 
-
-👉 Restart your terminal
+Restart your terminal.
 
 Then please make sure that the following command returns "Browser defined 👌":
 
@@ -695,7 +682,11 @@ Then please make sure that the following command returns "Browser defined 👌":
 [ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
 ```
 
-If it does not, choose a browser in the list above and execute the corresponding command.
+If it does not,
+
+:white_check_mark: If you got this message, you can continue :+1:
+
+:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to close your terminal and open it again. Do not hesitate to **contact a teacher**.
 
 
 ## GitHub CLI
