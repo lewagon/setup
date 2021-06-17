@@ -14,7 +14,7 @@ To be able to interact when we are not in the same physical room, we will be usi
 :warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
 To create an account and install the app:
-- Open your web browser and go to [https://zoom.us/download](https://zoom.us/download)
+- Go to [https://zoom.us/download](https://zoom.us/download)
 - Under **Zoom Client** click the **Download** button
 - Open the file you have just downloaded to install the app
 - Open the Zoom app
@@ -186,24 +186,24 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 Once your computer has restarted, we need to download the WSL2 installer.
 
-- Go to the [download page](https://aka.ms/wsl2kernel) and get the installer
+- Go to the [download page](https://aka.ms/wsl2kernel)
+- Download "WSL2 Linux kernel update package"
+- Open the file you've just downloaded
 - Click `Next`
 - Click `Finish`
 
 ![Update WSL from version 1 to 2](images/windows_update_wsl.png)
 
-:white_check_mark: If everything is fine, we are ready to use WSL 2 instead of WSL 1!
+:white_check_mark: If didn't encounter any error message, you're good to go :+1:
 
-:x: If you encounter the error `This update only applies to machines with the Windows Subsystem for Linux`, **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
+:x: If you encounter the error "This update only applies to machines with the Windows Subsystem for Linux", **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
 ### Make WSL 2 the default Windows Subsystem for Linux
 
-Now that WSL 2 is installed, let's use it by default when we deal with WSL:
-
+Now that WSL 2 is installed, let's make it the default version:
 - Press `Windows` + `R`
 - Type  `cmd`
 - Press `Enter`
-
 
 In the window which appears, type:
 
@@ -211,23 +211,22 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:white_check_mark: You can close this Command Prompt terminal; we are ready to install Ubuntu!
+:white_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
 
-:x: If the message you get talks about Virtualization, please **contact a teacher**
+:x: If the message you get is about Virtualization, please **contact a teacher**
 
 <details>
   <summary>Enable Virtual Machine Platform Windows feature</summary>
 
-Follow the steps described [here](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) until you enable <strong>Virtual Machine Platform</strong> and <strong>Windows Subsystem for Linux</strong>
-
+  Follow the steps described [here](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) until you enable <strong>Virtual Machine Platform</strong> and <strong>Windows Subsystem for Linux</strong>
 </details>
 
 <details>
   <summary>Enable Hyper-V Windows feature</summary>
 
-Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
-
+  Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
 </details>
+
 
 ## Ubuntu
 

@@ -34,6 +34,7 @@ WINDOWS = %w[
   windows_version
   windows_virtualization
   windows_wsl
+  windows_ubuntu
   github
   windows_vscode
   vscode_extensions

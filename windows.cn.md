@@ -284,6 +284,7 @@ wsl --set-default-version 2
 
 </details>
 
+
 ## Ubuntu
 ### 安装
 
@@ -427,8 +428,6 @@ wsl -l -v
 
 
 (现在你可以关掉命令提示字元窗口了。)
-
-
 
 
 ## GitHub账户
