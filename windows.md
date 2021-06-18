@@ -784,10 +784,19 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 Please now **quit** all your opened terminal windows.
 
 
-&nbsp;
+## Windows `zshrc`
 
+### Disable compinit warning
 
-Let us open the `~/.zshrc` profile file in your text editor and change slightly its content:
+During the setup, you may have seen the following annoying warning message:
+
+```bash
+zsh compinit: insecure directories and files, run compaudit for list.
+```
+
+Let's disable this warning:
+
+- Open the `~/.zshrc` profile file in your text editor and change slightly its content:
 
 ```bash
 code ~/.zshrc
@@ -800,23 +809,20 @@ code ~/.zshrc
 ZSH_DISABLE_COMPFIX=true
 ```
 
-&nbsp;
+### Disable SSH passphrase prompt
 
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
-
 - Spot the line starting with `plugins=`
-- Add `ssh-agent` to the plugins list.
+- Add `ssh-agent` at the end of the plugins list
 
 The list should look like:
 
-```
+```bash
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
 
-&nbsp;
-
-&nbsp;&nbsp;&nbsp; :white_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
+:white_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
 
 
 ## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))

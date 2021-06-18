@@ -45,7 +45,7 @@ WINDOWS = %w[
   windows_browser
   gh_cli
   dotfiles
-  windows_dotfiles
+  windows_zshrc
   rbenv
   ruby
   nvm
