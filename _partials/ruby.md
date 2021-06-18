@@ -1,3 +1,7 @@
+## Ruby
+
+### Installation
+
 Now, you are ready to install the latest ruby version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
@@ -21,15 +25,10 @@ ruby -v
 
 You should see something starting with `ruby <RUBY_VERSION>p`. If not, ask a teacher.
 
-## Installing some gems
-
----
+### Installing some gems
 
 <details>
   <summary>Click here if you are in :cn: <bold>China</bold></summary>
-
-
-  &nbsp;
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
@@ -43,8 +42,6 @@ gem sources -l
 # Ruby-china.com must be in the list now
 ```
 </details>
-
----
 
 All, please run the following line:
 
@@ -67,5 +64,4 @@ rm -rf ~/.gemrc
 
 Rerun the command to install the gems.
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
-(or the Terminal) telling you to do so.
+**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.

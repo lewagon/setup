@@ -852,8 +852,14 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
-**Close your terminal and open it again** (Alt+F4 and restart it). If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+**Close your terminal and open it again**
 
+If you get a warning, just **ignore** it from now (Ruby is not installed yet).
+
+
+## Ruby
+
+### Installation
 
 Now, you are ready to install the latest ruby version and set it as the default version.
 
@@ -878,15 +884,10 @@ ruby -v
 
 You should see something starting with `ruby 2.7.3p`. If not, ask a teacher.
 
-## Installing some gems
-
----
+### Installing some gems
 
 <details>
   <summary>Click here if you are in :cn: <bold>China</bold></summary>
-
-
-  &nbsp;
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
@@ -900,8 +901,6 @@ gem sources -l
 # Ruby-china.com must be in the list now
 ```
 </details>
-
----
 
 All, please run the following line:
 
@@ -924,8 +923,7 @@ rm -rf ~/.gemrc
 
 Rerun the command to install the gems.
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer
-(or the Terminal) telling you to do so.
+**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
 
 
 ## Node (with [nvm](https://github.com/nvm-sh/nvm))
