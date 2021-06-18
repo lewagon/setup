@@ -1014,6 +1014,12 @@ sudo chmod 440 /etc/sudoers.d/postgresql
 echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```
 
+Open a new terminal.
+
+:white_check_mark: If you see a `* Starting PostgreSQL 12 database server` message, you're good to go :+1:
+
+:x: If not, **contact a teacher**.
+
 
 ## Check-up
 
@@ -1021,11 +1027,14 @@ Let's check if you successfully installed everything.
 
 Quit all opened Terminal, open a new one and run the following commands:
 
+<!-- TODO(dmilon): update branch before merging with master -->
 ```bash
-curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb || rm _.rb
+curl -Ls https://raw.githubusercontent.com/lewagon/setup/vscode/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-It should tell you if your workstation is ready :) If not, ask a teacher.
+:white_check_mark: If you get a green `Awesome! Your laptop is now ready!`, then you're good :+1:
+
+:x: If not, **contact a teacher**.
 
 
 

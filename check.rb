@@ -89,8 +89,7 @@ end
 def outro
   if $all_good
     puts ""
-    puts "🚀  Awesome! Your laptop is now ready for weeks of hard work :)".green
-    puts "Now it's time to onboard on the Alumni platform 👉  kitt.lewagon.com/onboarding"
+    puts "🚀  Awesome! Your laptop is now ready!".green
   else
     puts ""
     puts "😥  Bummer! Something's wrong, if you're stuck, ask a teacher.".red
