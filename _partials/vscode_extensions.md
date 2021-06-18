@@ -4,9 +4,7 @@
 
 Let's install some useful extensions to VS Code.
 
-- Open your terminal
-- Copy the commands below
-- Paste it in your terminal
+Copy-paste the following commands in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings

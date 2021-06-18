@@ -2,17 +2,17 @@
 
 ### Generation
 
-We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password couple.
+We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password pair.
 
 If you already generated keys that you already use with other services, you can skip this step.
 
 Open a terminal and copy-paste this command, replacing the email with **yours** (the same one you used to create your GitHub account).
 
-It will prompt for information. Just press enter until it asks for a **passphrase**.
-
 ```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
+
+It will prompt for information. Just press enter until it asks for a **passphrase**.
 
 :warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
 

@@ -225,9 +225,7 @@ Try typing `code` :point_right: if VS Code opens in new window, you can proceed 
 
 Let's install some useful extensions to VS Code.
 
-- Open your terminal
-- Copy the commands below
-- Paste it in your terminal
+Copy-paste the following commands in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
@@ -326,17 +324,17 @@ echo 'export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1
 
 ### Generation
 
-We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password couple.
+We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password pair.
 
 If you already generated keys that you already use with other services, you can skip this step.
 
 Open a terminal and copy-paste this command, replacing the email with **yours** (the same one you used to create your GitHub account).
 
-It will prompt for information. Just press enter until it asks for a **passphrase**.
-
 ```bash
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
+
+It will prompt for information. Just press enter until it asks for a **passphrase**.
 
 :warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
 
@@ -399,7 +397,11 @@ CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Com
 
 In this section, we will install [GitHub CLI](https://cli.github.com/) to perform useful actions with GitHub data directly from the terminal.
 
-It should already be installed on your laptop from the previous commands. First you need to **login**, copy the following line (**do not** edit it!) and paste it in your terminal, then press the `ENTER` key:
+It should already be installed on your computer from the previous commands.
+
+First in order to **login**, copy-paste the following command in your terminal:
+
+:warning: **DO NOT edit the `email`**
 
 ```bash
 gh auth login -s 'user:email' -w
@@ -412,7 +414,9 @@ You will get the following output:
 - Press Enter to open github.com in your browser...
 ```
 
-Select and copy the code (`0EF9-D015` in the example), then press `ENTER`. Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
+Select and copy the code (`0EF9-D015` in the example), then press `ENTER`.
+
+Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
 
 Come back to the terminal, press `ENTER` again, and that's it.
 
@@ -441,9 +445,9 @@ We'll start with a great default configuration provided by Le Wagon: [`lewagon/d
 
 As your configuration is personal, you need your **own** repository storing it. So you will **fork** Le Wagon repository.
 
-Forking means that you will create a new repo in your own GitHub account `$GITHUB_USERNAME/dotfiles`, identical to the original one Le Wagon one that you will be able to modify at will.
+Forking means that you will create a new repo in your own GitHub account `$GITHUB_USERNAME/dotfiles`, identical to the original Le Wagon one that you will be able to modify at will.
 
-Open your terminal and run the following command:
+Open your terminal and run the following commands:
 
 ```bash
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
@@ -454,7 +458,7 @@ echo $GITHUB_USERNAME
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 
-Time to fork the repo and clone it on your laptop:
+Time to fork the repo and clone it on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
@@ -684,7 +688,7 @@ Quit all opened Terminal, open a new one and run the following commands:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/vscode/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: If you get a green `Awesome! Your laptop is now ready!`, then you're good :+1:
+:check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
 
 :x: If not, **contact a teacher**.
 
@@ -791,7 +795,7 @@ You must pin:
 
 ## Setup completed!
 
-Your laptop is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
+Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Enjoy the bootcamp, you will nail it :rocket:
 

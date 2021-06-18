@@ -13,7 +13,9 @@ sudo apt update
 sudo apt install -y git
 ````
 
-:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+These commands will ask for your password: type it in.
+
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
 
 ### GitHub CLI
 

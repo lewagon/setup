@@ -6,9 +6,9 @@ We'll start with a great default configuration provided by Le Wagon: [`lewagon/d
 
 As your configuration is personal, you need your **own** repository storing it. So you will **fork** Le Wagon repository.
 
-Forking means that you will create a new repo in your own GitHub account `$GITHUB_USERNAME/dotfiles`, identical to the original one Le Wagon one that you will be able to modify at will.
+Forking means that you will create a new repo in your own GitHub account `$GITHUB_USERNAME/dotfiles`, identical to the original Le Wagon one that you will be able to modify at will.
 
-Open your terminal and run the following command:
+Open your terminal and run the following commands:
 
 ```bash
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
@@ -19,7 +19,7 @@ echo $GITHUB_USERNAME
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 
-Time to fork the repo and clone it on your laptop:
+Time to fork the repo and clone it on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_

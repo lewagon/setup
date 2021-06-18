@@ -13,16 +13,18 @@ sudo apt update
 sudo apt install code
 ```
 
-:point_up: This command will ask for your password with: `[sudo] password for <username>:`.
+These commands will ask for your password: type it in.
 
-Don't panick! Calmly type your password key by key. You won't have a visual feedback (like little `*`), that's **perfectly normal**, keep on typing. When you're done, hit `Enter` :muscle:.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
 
 ### Launching from the terminal
 
-Now let's try to launch your VS Code from **the terminal**:
+Now let's launch VS Code from **the terminal**:
 
 ```bash
 code
 ```
 
-You can move forward!
+:heavy_check_mark: If a VS Code window has just opened, you're good to go :+1:
+
+:x: Otherwise, please **contact a teacher**

@@ -60,26 +60,30 @@ gh --version
 
 ## Oh-my-zsh - Fancy your Terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one.
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
+
+In a terminal execute the following command and type in your password if asked:
 
 ```bash
 sudo apt install -y zsh curl vim imagemagick jq
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# it will ask for your session password
 ```
 
-Be careful, those commands will ask you to type your password twice. At the end
-your prompt should look like this:
-
-![](images/ubuntu_oh_my_zsh.png)
-
-If it doesn't, **ask a teacher**.
-
-To make this change stick, restart your laptop (or virtual machine):
+Then copy-paste the following command:
 
 ```bash
-sudo reboot
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ```
+
+When asked "Do you want to change your default shell to zsh?", press `Y`
+
+At the end your terminal should look like this:
+
+![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
+
+:heavy_check_mark: If it does, you can continue :+1:
+
+:x: Otherwise, please **ask for a teacher**
 
 
 ## GitHub
@@ -484,7 +488,7 @@ You can also sign in to Slack on your iPhone or Android device!
 
 The idea is that you'll have Slack open all day, so that you can share useful links / ask for help / decide where to go to lunch / etc.
 
-In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, launch the Slack app on your Laptop, then [follow this procedure](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test) (tl;dr type `/call --test` then the `Enter` key in any channel).
+In case of remote tickets, you will use Slack audio or video call to get help. To ensure that everything is working fine, launch the Slack app on your computer, then [follow this procedure](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test) (tl;dr type `/call --test` then the `Enter` key in any channel).
 
 After the test are finished, you should have green "All clear" messages at least for your microphone and camera. If not, ask a teacher.
 ![](images/slack_mic_cam_all_green.png)

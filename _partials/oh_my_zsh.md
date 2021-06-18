@@ -1,6 +1,6 @@
 ## Oh-my-zsh - Fancy your terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one.
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
 
 In a terminal execute the following command and type in your password if asked:
 
@@ -21,6 +21,6 @@ At the end your terminal should look like this:
 
 ![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
 
-:heavy_check_mark: If it does, you're good to go :+1:
+:heavy_check_mark: If it does, you can continue :+1:
 
 :x: Otherwise, please **ask for a teacher**
