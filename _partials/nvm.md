@@ -1,4 +1,4 @@
-## Node.js (with [nvm](https://github.com/nvm-sh/nvm))
+## Node.js
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 

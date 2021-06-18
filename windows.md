@@ -825,7 +825,7 @@ plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history
 :white_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
 
 
-## `rbenv`
+## rbenv
 
 Let's install [`rbenv`](https://github.com/sstephenson/rbenv), a software to install and manage `ruby` environments.
 
@@ -928,7 +928,7 @@ Rerun the command to install the gems.
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
 
 
-## Node.js (with [nvm](https://github.com/nvm-sh/nvm))
+## Node.js
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
@@ -961,7 +961,7 @@ node -v
 You should see `v14.15`. If not, ask a teacher.
 
 
-## `yarn`
+## yarn
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 
@@ -982,17 +982,20 @@ You should see a version. If not, ask a teacher.
 
 ## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL, an open-source robust and production-ready database.
+In a few weeks, we'll talk about databases and SQL and you'll need something called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
 
 Let's install it now.
 
+Run the following commands:
 
 ```bash
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 ```
+
 ```bash
 sudo /etc/init.d/postgresql start
 ```
+
 ```bash
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 ```
@@ -1002,9 +1005,11 @@ You can configure PostgreSQL to autostart, so you don't have to execute `sudo /e
 ```bash
 sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
 ```
+
 ```bash
 sudo chmod 440 /etc/sudoers.d/postgresql
 ```
+
 ```bash
 echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 ```

@@ -584,7 +584,7 @@ Rerun the command to install the gems.
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
 
 
-## Node.js (with [nvm](https://github.com/nvm-sh/nvm))
+## Node.js
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
@@ -617,7 +617,7 @@ node -v
 You should see `v14.15`. If not, ask a teacher.
 
 
-## `yarn`
+## yarn
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 

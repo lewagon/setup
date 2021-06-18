@@ -1,4 +1,4 @@
-## `yarn`
+## yarn
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 

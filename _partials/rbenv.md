@@ -1,4 +1,4 @@
-## `rbenv`
+## rbenv
 
 Let's install [`rbenv`](https://github.com/sstephenson/rbenv), a software to install and manage `ruby` environments.
 
