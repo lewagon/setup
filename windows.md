@@ -1037,21 +1037,15 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/vscode/check.rb > _.rb 
 :x: If not, **contact a teacher**.
 
 
-
 ## Ubuntu File System
 
 ### Exchange files between Windows and Ubuntu
 
 We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
-In order to do that, we will create shortcuts to Ubuntu directories in the Windows **File Explorer**.
+In order to do that, let's create shortcuts to Ubuntu directories in the Windows **File Explorer**:
 
-![How to add a shortcut to Ubuntu file system on Windows](images/windows_ubuntu_file_system_shortcut.png)
-
-Here are the steps:
-
-- Open an Ubuntu terminal
-- Open the Windows File Explorer (or use the shortcut Win + E)
+- Open the Windows File Explorer (or use the shortcut `WIN` + `E`)
 - In the Address Bar, enter `\\wsl$\` (or `\\wsl$\Ubuntu` if it does not work)
 - You now have acces to the Ubuntu file system
 - Dive into the Ubuntu file system in order to look for directories of interest
@@ -1061,9 +1055,7 @@ Here are the steps:
 
 ### Open the Windows File Explorer from the Ubuntu terminal
 
-Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal.
-
-In order to do that:
+Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal:
 
 - Open an Ubuntu terminal
 - Go to the directory you wish to explore
