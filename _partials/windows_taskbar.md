@@ -1,6 +1,6 @@
 ## Pin apps to your taskbar
 
-You are going to use most of the apps you've installed today really often. So let's pin them to your taskbar so that they are just one click away!
+You are going to use most of the apps you've installed today really often. Let's pin them to your taskbar so that they are just one click away!
 
 To pin an app to your taskbar, launch the app, right-click on the icon in the taskbar to bring up the context menu and choose "Pin to taskbar".
 
