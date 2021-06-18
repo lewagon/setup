@@ -1029,7 +1029,7 @@ Quit all opened Terminal, open a new one and run the following commands:
 
 <!-- TODO(dmilon): update branch before merging with master -->
 ```bash
-curl -Ls https://raw.githubusercontent.com/lewagon/setup/vscode/check.rb > _.rb && ruby _.rb || rm _.rb
+curl -Ls https://raw.githubusercontent.com/lewagon/setup/vscode/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
 :white_check_mark: If you get a green `Awesome! Your laptop is now ready!`, then you're good :+1:
@@ -1142,5 +1142,12 @@ You must pin:
 - Your Internet browser
 - Slack
 - Zoom
+
+
+## Setup completed!
+
+Your laptop is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
+
+Enjoy the bootcamp, you will nail it :rocket:
 
 

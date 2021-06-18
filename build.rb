@@ -26,7 +26,8 @@ MACOS = %w[
   macos_slack
   slack_settings
   macos_preferences
-  macos_dock].freeze
+  macos_dock
+  conclusion].freeze
 
 WINDOWS = %w[
   intro
@@ -56,7 +57,8 @@ WINDOWS = %w[
   windows_slack
   slack_settings
   windows_explorer
-  windows_taskbar].freeze
+  windows_taskbar
+  conclusion].freeze
 
 UBUNTU = %w[
   intro
@@ -80,7 +82,8 @@ UBUNTU = %w[
   kitt
   ubuntu_slack
   slack_settings
-  ubuntu_dock].freeze
+  ubuntu_dock
+  conclusion].freeze
 
 filenames = {
   'macos.md' => MACOS,
