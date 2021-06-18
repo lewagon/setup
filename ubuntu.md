@@ -51,13 +51,14 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 To install `git`:
 - Open a terminal
-- Copy and paste the following commands
-- It will ask for your Ubuntu password: type it in
+- Copy and paste the following commands:
 
 ```bash
 sudo apt update
 sudo apt install -y git
 ````
+
+:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
 
 ### GitHub CLI
 
@@ -206,7 +207,9 @@ It will prompt for information. Just press enter until it asks for a **passphras
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
-**NB:** when asked for a passphrase, put something you want (and that you'll remember). It's a password to protect your private key stored on your hard drive. When you you'll type, nothing will show up on the screen, **that's normal**. Just type the passphrase and when you're done, press `ENTER`.
+:warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
+
+:warning: When you you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
 
 ### Giving your public key to GitHub
 

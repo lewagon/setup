@@ -34,9 +34,7 @@ At first launch, you will be asked some information:
 - Choose a **password**
 - Confirm your password
 
-:warning: When typing the password, nothing will not appear on the screen — there will be no familiar typing indicator even though your keystrokes are being registered!
-
-:warning: This is a security feature to mask not only your password as a whole but also its length!
+:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
 
 You can close the Ubuntu window now that it is installed on your computer.
 
