@@ -465,7 +465,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
-Run the `dotfiles` installer.
+Run the `dotfiles` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
@@ -479,7 +479,7 @@ Check the emails registered with your GitHub Account. You'll need to pick one at
 gh api user/emails | jq -r '.[].email'
 ```
 
-Run the git installer:
+Run the `git` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
@@ -538,13 +538,15 @@ to use the 2.7.3 version by default.
 rbenv global 2.7.3
 ```
 
-Then **restart** your Terminal again (close it and reopen it).
+Then **restart** your terminal again (close it and reopen it).
 
 ```bash
 ruby -v
 ```
 
-You should see something starting with `ruby 2.7.3p`. If not, ask a teacher.
+:heavy_check_mark: If you see something starting with `ruby 2.7.3p` then you can proceed +1:
+
+:x: If not, **ask a teacher**
 
 ### Installing some gems
 
@@ -564,7 +566,9 @@ gem sources -l
 ```
 </details>
 
-All, please run the following line:
+In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
+
+In your terminal, copy-paste the following command:
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
@@ -587,7 +591,7 @@ rm -rf ~/.gemrc
 
 Rerun the command to install the gems.
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
+:warning: **NEVER** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the terminal) telling you to do so.
 
 
 ## Node.js
@@ -614,13 +618,15 @@ Now let's install node:
 nvm install 14.15
 ```
 
-When the command returns, run
+When the installation is finished, run:
 
 ```bash
 node -v
 ```
 
-You should see `v14.15`. If not, ask a teacher.
+:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+
+:x: If not, **contact a teacher**
 
 
 ## yarn
@@ -639,7 +645,9 @@ Restart your terminal and run the following command:
 yarn -v
 ```
 
-You should see a version. If not, ask a teacher.
+:heavy_check_mark: If you a version, you're good :+1:
+
+:x: If not, **ask for a teacher**
 
 
 ## PostgreSQL
@@ -668,13 +676,6 @@ postgres=#
 ```
 
 To quit it, type `\q` then `Enter`.
-
-
-## Security
-
-It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
-
-You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
 
 
 ## Check-up
@@ -740,7 +741,15 @@ To ensure that everything is working fine for video calls, let's test your camer
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
 
-## Keyboard
+## macOS settings
+
+### Security
+
+It is mandatory that you protect your session behind a password.If it is not already the case, go to ` > System Preferences > Users & Groups` and change your account password. You should also go to ` > System Preferences > Security > General`. You should require a password `5 seconds` after sleep or screen saver begins.
+
+You can also go to ` > System Preferences > Mission Control` and click on the `Hot Corners` button at the bottom left. Choose for the bottom right corner to start the screen saver. That way, when you leave your desk, you can quickly lock you screen by putting your mouse in the bottom right corner. 5 seconds after, your Macbook will be locked and will ask for a password to get back on the session.
+
+### Keyboard
 
 As you become a programmer, you'll understand that leaving the keyboard takes a lot of time,
 so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on macOS
@@ -774,23 +783,6 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 
 # etc..
 ```
-
-
-## Pin apps to your dock
-
-You are going to use most of the apps you've installed today really often. So let's pin them to your dock so that they are just one click away!
-
-To do so, launch the app, right-click on the icon to bring up the context menu and choose "Options" then "Keep in Dock.
-
-![How to pin an app to the dock in macOS](images/macos_dock.png)
-
-You must pin:
-- Your terminal
-- Your file explorer
-- VS Code
-- Your Internet browser
-- Slack
-- Zoom
 
 
 ## Setup completed!

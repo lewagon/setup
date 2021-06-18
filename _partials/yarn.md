@@ -14,4 +14,6 @@ Restart your terminal and run the following command:
 yarn -v
 ```
 
-You should see a version. If not, ask a teacher.
+:heavy_check_mark: If you a version, you're good :+1:
+
+:x: If not, **ask for a teacher**

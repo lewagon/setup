@@ -1237,8 +1237,6 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 
 
 
-
-
 conclusion.md
 
 

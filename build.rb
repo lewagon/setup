@@ -20,13 +20,11 @@ MACOS = %w[
   nvm
   yarn
   macos_postgresql
-  macos_security
   checkup
   kitt
   macos_slack
   slack_settings
-  macos_preferences
-  macos_dock
+  macos_settings
   conclusion].freeze
 
 WINDOWS = %w[
@@ -56,8 +54,7 @@ WINDOWS = %w[
   kitt
   windows_slack
   slack_settings
-  windows_explorer
-  windows_taskbar
+  windows_settings
   conclusion].freeze
 
 UBUNTU = %w[
@@ -76,13 +73,11 @@ UBUNTU = %w[
   nvm
   yarn
   ubuntu_postgresql
-  ubuntu_inotify
-  ubuntu_extra
   checkup
   kitt
   ubuntu_slack
   slack_settings
-  ubuntu_dock
+  ubuntu_settings
   conclusion].freeze
 
 filenames = {

@@ -26,7 +26,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
-Run the `dotfiles` installer.
+Run the `dotfiles` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
@@ -40,7 +40,7 @@ Check the emails registered with your GitHub Account. You'll need to pick one at
 gh api user/emails | jq -r '.[].email'
 ```
 
-Run the git installer:
+Run the `git` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh

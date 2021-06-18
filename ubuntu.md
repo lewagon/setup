@@ -338,7 +338,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
-Run the `dotfiles` installer.
+Run the `dotfiles` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
@@ -352,7 +352,7 @@ Check the emails registered with your GitHub Account. You'll need to pick one at
 gh api user/emails | jq -r '.[].email'
 ```
 
-Run the git installer:
+Run the `git` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
@@ -416,13 +416,15 @@ to use the 2.7.3 version by default.
 rbenv global 2.7.3
 ```
 
-Then **restart** your Terminal again (close it and reopen it).
+Then **restart** your terminal again (close it and reopen it).
 
 ```bash
 ruby -v
 ```
 
-You should see something starting with `ruby 2.7.3p`. If not, ask a teacher.
+:heavy_check_mark: If you see something starting with `ruby 2.7.3p` then you can proceed +1:
+
+:x: If not, **ask a teacher**
 
 ### Installing some gems
 
@@ -442,7 +444,9 @@ gem sources -l
 ```
 </details>
 
-All, please run the following line:
+In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
+
+In your terminal, copy-paste the following command:
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
@@ -465,7 +469,7 @@ rm -rf ~/.gemrc
 
 Rerun the command to install the gems.
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
+:warning: **NEVER** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the terminal) telling you to do so.
 
 
 ## Node.js
@@ -492,13 +496,15 @@ Now let's install node:
 nvm install 14.15
 ```
 
-When the command returns, run
+When the installation is finished, run:
 
 ```bash
 node -v
 ```
 
-You should see `v14.15`. If not, ask a teacher.
+:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+
+:x: If not, **contact a teacher**
 
 
 ## yarn
@@ -517,55 +523,25 @@ Restart your terminal and run the following command:
 yarn -v
 ```
 
-You should see a version. If not, ask a teacher.
+:heavy_check_mark: If you a version, you're good :+1:
+
+:x: If not, **ask for a teacher**
 
 
 ## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
-an open-source robust and production-ready database. Let's install it now.
+In a few weeks, we'll talk about databases and SQL and you'll need something called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
 
-```
+Let's install it now.
+
+Run the following commands:
+
+```bash
 sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
+```
+
+```bash
 sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
-```
-
-
-## Ubuntu inotify
-
-Ubuntu is always tracking changes in your folders and to do this it uses inotify.
-By default the Ubuntu limit is set to 8192 files monitored.
-
-As programming involves a lot of files, we need to raise this limit.
-In your terminal run:
-
-```bash
-echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
-```
-
-
-## Extra
-
-### Install video codec H264
-
-On our pedagogical platform (Kitt, you'll soon discover it!), we have some videos. By default Firefox on Linux cannot play them as they use an unsupported codec (H264). To get those videos working for you, you need to run this:
-
-```bash
-sudo apt install libavcodec-extra -y
-```
-
-### Install useful terminal tools
-
-`tree` is a nice tool to visualize a directory tree inside the terminal:
-
-`ncdu` is a text-based interface disk utility.
-
-`htop` is an interactive process viewer.
-
-`tig` is a text-mode interface for `git`.
-
-```bash
-sudo apt install tree ncdu htop tig
 ```
 
 
@@ -632,7 +608,43 @@ To ensure that everything is working fine for video calls, let's test your camer
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
 
-## Pin apps to your dock
+## Ubuntu settings
+
+### Install video codec H264
+
+On our pedagogical platform (Kitt, you'll soon discover it!), we have some videos. By default Firefox on Linux cannot play them as they use an unsupported codec (H264). To get those videos working for you, you need to run this:
+
+```bash
+sudo apt install libavcodec-extra -y
+```
+
+### Install useful terminal tools
+
+`tree` is a nice tool to visualize a directory tree inside the terminal:
+
+`ncdu` is a text-based interface disk utility.
+
+`htop` is an interactive process viewer.
+
+`tig` is a text-mode interface for `git`.
+
+```bash
+sudo apt install tree ncdu htop tig
+```
+
+### Ubuntu inotify
+
+Ubuntu is always tracking changes in your folders and to do this it uses inotify.
+By default the Ubuntu limit is set to 8192 files monitored.
+
+As programming involves a lot of files, we need to raise this limit.
+In your terminal run:
+
+```bash
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+
+### Pin apps to your dock
 
 You are going to use most of the apps you've installed today really often. So let's pin them to your dock so that they are just one click away!
 

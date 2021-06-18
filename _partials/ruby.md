@@ -17,13 +17,15 @@ to use the <RUBY_VERSION> version by default.
 rbenv global <RUBY_VERSION>
 ```
 
-Then **restart** your Terminal again (close it and reopen it).
+Then **restart** your terminal again (close it and reopen it).
 
 ```bash
 ruby -v
 ```
 
-You should see something starting with `ruby <RUBY_VERSION>p`. If not, ask a teacher.
+:heavy_check_mark: If you see something starting with `ruby <RUBY_VERSION>p` then you can proceed +1:
+
+:x: If not, **ask a teacher**
 
 ### Installing some gems
 
@@ -43,7 +45,9 @@ gem sources -l
 ```
 </details>
 
-All, please run the following line:
+In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
+
+In your terminal, copy-paste the following command:
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
@@ -66,4 +70,4 @@ rm -rf ~/.gemrc
 
 Rerun the command to install the gems.
 
-**Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
+:warning: **NEVER** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the terminal) telling you to do so.

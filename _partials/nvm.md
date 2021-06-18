@@ -22,10 +22,12 @@ Now let's install node:
 nvm install 14.15
 ```
 
-When the command returns, run
+When the installation is finished, run:
 
 ```bash
 node -v
 ```
 
-You should see `v14.15`. If not, ask a teacher.
+:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+
+:x: If not, **contact a teacher**
