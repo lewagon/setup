@@ -34,6 +34,15 @@ You should then see a screen like this:
 You can now close the Zoom app.
 
 
+## GitHub account
+
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
+
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+
+![GitHub picture](images/github_picture.png)
+
+
 
 ## Checking your computer for Apple Silicon (Apple M1 chips)
 
@@ -139,15 +148,6 @@ xcode-select --install
 ```
 
 Then follow the previous instructions for this command.
-
-
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
-![GitHub picture](images/github_picture.png)
 
 
 ## Homebrew

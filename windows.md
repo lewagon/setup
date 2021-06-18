@@ -34,6 +34,15 @@ You should then see a screen like this:
 You can now close the Zoom app.
 
 
+## GitHub account
+
+Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
+
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+
+![GitHub picture](images/github_picture.png)
+
+
 ## Windows version
 
 Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
@@ -415,15 +424,6 @@ You can save these changes by pressing `CTRL` + `V`
 This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
 
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
-
-
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
-
-![GitHub picture](images/github_picture.png)
 
 
 ## VS Code Extensions

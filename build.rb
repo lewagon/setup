@@ -5,9 +5,9 @@ SETUP_RUBY_VERSION = "2.7.3"
 MACOS = %w[
   intro
   zoom
+  github
   macos_apple_silicon
   macos_command_line_tools
-  github
   homebrew
   macos_vscode
   vscode_extensions
@@ -30,13 +30,13 @@ MACOS = %w[
 WINDOWS = %w[
   intro
   zoom
+  github
   windows_version
   windows_virtualization
   windows_wsl
   windows_ubuntu
   windows_vscode
   windows_terminal
-  github
   vscode_extensions
   git
   oh_my_zsh
@@ -61,9 +61,9 @@ UBUNTU = %w[
   intro
   zoom
   github
-  git
   ubuntu_vscode
   vscode_extensions
+  git
   oh_my_zsh
   ssh_key
   gh_cli

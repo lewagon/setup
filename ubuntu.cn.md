@@ -20,6 +20,10 @@
 ![](images/github_upload_picture.png)
 
 
+
+
+
+
 ## Git
 
 安装`git`：
@@ -52,10 +56,6 @@ gh --version
 ```
 
 如果这行命令没有提示`gh version X.Y.Z (YYYY-MM-DD)`，且版本（version）大于等于1.4 ，请参考[这个文档](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources)：这里面有故障排查的方法。如果有困惑，问问老师。
-
-
-
-
 
 
 ## Oh-my-zsh - Fancy your Terminal
