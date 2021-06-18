@@ -50,7 +50,7 @@ Type the following command:
 wsl -l -v
 ```
 
-:white_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
+:heavy_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
 
 :x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
 
@@ -63,7 +63,7 @@ wsl -l -v
   wsl --set-version Ubuntu 2
   ```
 
-  :white_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
+  :heavy_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
 
   :x: If it does not work, we need to be sure that Ubuntu files are not compressed.
 </details>

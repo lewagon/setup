@@ -84,6 +84,6 @@
 
 &nbsp;
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 好咯, 你的**Windows终端**就设置好了！:confetti_ball:
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 好咯, 你的**Windows终端**就设置好了！:confetti_ball:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **从现在开始，每次我们说终端的时候，就是在指这个终端。**
 

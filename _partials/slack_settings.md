@@ -15,7 +15,7 @@ To ensure that everything is working fine for video calls, let's test your camer
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)
 
-:white_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
+:heavy_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
 
 :x: If not, **contact a teacher**.
 

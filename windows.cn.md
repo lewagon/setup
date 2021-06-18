@@ -35,7 +35,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果你的电脑没有提示**Windows 10**，那么你暂时不能继续设置的步骤。但别担心，你现在就可以更新到Windows 10！
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果窗口里的前几个词就是**Windows 10**的话，你可以直接到下一步了！ :muscle:
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果窗口里的前几个词就是**Windows 10**的话，你可以直接到下一步了！ :muscle:
 
 
 ---
@@ -71,7 +71,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果出现关于无法更新的错误提示，**叫老师**来看看。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果你看到有可以更新的版本，请安装它然后重复以上步骤直到电脑提示你所有的东西都是最新版本了。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你看到有可以更新的版本，请安装它然后重复以上步骤直到电脑提示你所有的东西都是最新版本了。
 
 
 ---
@@ -118,7 +118,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果低于`1903`, 你可以根据上面[最新的Windows版本](#Latest-version-of-Windows)的部分来安装更新。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果你是`1903`或以上的版本, 你就可以继续下一步了！ :sunglasses:
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你是`1903`或以上的版本, 你就可以继续下一步了！ :sunglasses:
 
 
 ### 虚拟化
@@ -144,7 +144,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果这一行没有出现，或者显示禁用了，请**让老师来帮你激活虚拟化**。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果被激活了的话，那在图表下方会显示状态 "Virtualization: Enabled"。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果被激活了的话，那在图表下方会显示状态 "Virtualization: Enabled"。
 
 
 ---
@@ -229,7 +229,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 &nbsp;&nbsp;&nbsp; :x: 如果你看到报错信息（或者在窗口里看到一些红色的文本），请**叫老师来看看**！
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 等到上面三组命令都执行完毕，并且没有报错后，重启电脑。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 等到上面三组命令都执行完毕，并且没有报错后，重启电脑。
 
 
 ### 升级到WSL 2
@@ -246,7 +246,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 &nbsp;&nbsp;&nbsp; :x: 如果出现了这个错误：`This update only applies to machines with the Windows Subsystem for Linux`, 那就在软件上**右击**，然后选择`uninstall`(卸载); 然后你就可以正常地安装。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果没有错误提示的话，那你现在就可以使用WSL 2了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果没有错误提示的话，那你现在就可以使用WSL 2了！
 
 ### 把WSL 2设置成Windows默认的Linux子系统
 WSL 2已经安装好了，那就把它设置成默认的WSL吧：
@@ -267,7 +267,7 @@ wsl --set-default-version 2
 
 &nbsp;&nbsp;&nbsp; :x: 如果出现了关于虚拟化的信息，请**叫老师来帮忙**。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 你可以关掉这个弹出的终端；现在我们就可以安装Ubuntu了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 你可以关掉这个弹出的终端；现在我们就可以安装Ubuntu了！
 
 #### :wrench: 可能的解决方案
 <details>
@@ -353,7 +353,7 @@ wsl --set-default-version 2
 &nbsp;
 
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 安装应该都完成了。现在你可以选择Ubuntu窗口了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 安装应该都完成了。现在你可以选择Ubuntu窗口了！
 
 ### 检查Ubuntu的WSL version
 
@@ -373,7 +373,7 @@ wsl -l -v
 
 &nbsp;&nbsp;&nbsp; :x: 如果Ubuntu WSL的版本是1，你需要把它换成2。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果Ubuntu WSL版本是2，你就可以安装VS Code了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果Ubuntu WSL版本是2，你就可以安装VS Code了！
 
 
 ---
@@ -396,7 +396,7 @@ wsl -l -v
 
   &nbsp;
 
-  &nbsp;&nbsp;&nbsp; :white_check_mark: 几秒之后，你应该会收到这条转换完成的信息：`The conversion is complete`.
+  &nbsp;&nbsp;&nbsp; :heavy_check_mark: 几秒之后，你应该会收到这条转换完成的信息：`The conversion is complete`.
 
   &nbsp;&nbsp;&nbsp; :x: 如果不行的话，我们就需要检查并确保Ubuntu文件没有被压缩。
 </details>
@@ -546,7 +546,7 @@ wsl -l -v
 
 &nbsp;
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 好咯, 你的**Windows终端**就设置好了！:confetti_ball:
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 好咯, 你的**Windows终端**就设置好了！:confetti_ball:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **从现在开始，每次我们说终端的时候，就是在指这个终端。**
 
 
@@ -665,7 +665,7 @@ ssh -T git@github.com
 
 &nbsp;
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果你看到这条信息，那说明密钥已经被成功加上了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你看到这条信息，那说明密钥已经被成功加上了！
 
 &nbsp;&nbsp;&nbsp; :x: 如果你看到错误提示，你需要重新试试。别忘了你可以*叫老师来帮忙*。
 
@@ -981,7 +981,7 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 &nbsp;
 
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 按下`Ctrl` + `S` 保存`.zshrc`文件，然后关掉Visual Code Studio。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 按下`Ctrl` + `S` 保存`.zshrc`文件，然后关掉Visual Code Studio。
 
 
 

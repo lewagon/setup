@@ -43,7 +43,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 &nbsp;&nbsp;&nbsp; :x: 如果你看到报错信息（或者在窗口里看到一些红色的文本），请**叫老师来看看**！
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 等到上面三组命令都执行完毕，并且没有报错后，重启电脑。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 等到上面三组命令都执行完毕，并且没有报错后，重启电脑。
 
 
 ### 升级到WSL 2
@@ -60,7 +60,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 &nbsp;&nbsp;&nbsp; :x: 如果出现了这个错误：`This update only applies to machines with the Windows Subsystem for Linux`, 那就在软件上**右击**，然后选择`uninstall`(卸载); 然后你就可以正常地安装。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果没有错误提示的话，那你现在就可以使用WSL 2了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果没有错误提示的话，那你现在就可以使用WSL 2了！
 
 ### 把WSL 2设置成Windows默认的Linux子系统
 WSL 2已经安装好了，那就把它设置成默认的WSL吧：
@@ -81,7 +81,7 @@ wsl --set-default-version 2
 
 &nbsp;&nbsp;&nbsp; :x: 如果出现了关于虚拟化的信息，请**叫老师来帮忙**。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 你可以关掉这个弹出的终端；现在我们就可以安装Ubuntu了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 你可以关掉这个弹出的终端；现在我们就可以安装Ubuntu了！
 
 #### :wrench: 可能的解决方案
 <details>

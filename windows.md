@@ -47,7 +47,7 @@ To check your Windows version:
 - Type  `winver`
 - Press `Enter`
 
-:white_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
+:heavy_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
 
 :x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
 
@@ -70,7 +70,7 @@ Open Windows Update:
 - Click on `Check updates`
 
 
-:white_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
+:heavy_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
 
 :warning: If you have a red exclamation mark and the message "Update available", please install them and repeat the process until it says that you are up to date :loop:
 
@@ -100,7 +100,7 @@ Some of the tools we need to install have been release with the `1903` version *
 
 Check the **Version number**:
 
-:white_check_mark: If it says at least `1903`, you are good to go :+1:
+:heavy_check_mark: If it says at least `1903`, you are good to go :+1:
 
 :x: If it is below `1903`, please **contact a teacher**.
 
@@ -118,7 +118,7 @@ For many computers, this is already the case. Let's check:
 
 ![Windows task manager](images/windows_task_manager.png)
 
-:white_check_mark: If you see "Virtualization: Enabled", you're good to go :+1:
+:heavy_check_mark: If you see "Virtualization: Enabled", you're good to go :+1:
 
 :x: If the line is missing or if the virtualization is disabled, please **contact a teacher before trying to activate the Virtualization**
 
@@ -178,7 +178,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-:white_check_mark: If all three commands ran without any error, please restart your terminal and continue below :+1:
+:heavy_check_mark: If all three commands ran without any error, please restart your terminal and continue below :+1:
 
 :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
 
@@ -194,7 +194,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 
 ![Update WSL from version 1 to 2](images/windows_update_wsl.png)
 
-:white_check_mark: If didn't encounter any error message, you're good to go :+1:
+:heavy_check_mark: If didn't encounter any error message, you're good to go :+1:
 
 :x: If you encounter the error "This update only applies to machines with the Windows Subsystem for Linux", **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
@@ -211,7 +211,7 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:white_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
+:heavy_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
 
 :x: If the message you get is about Virtualization, please **contact a teacher**
 
@@ -280,7 +280,7 @@ Type the following command:
 wsl -l -v
 ```
 
-:white_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
+:heavy_check_mark: If the version of Ubuntu WSL is 2, you are good to go :+1:
 
 :x: If the version of Ubuntu WSL is 1, we will need to convert it to version 2.
 
@@ -293,7 +293,7 @@ wsl -l -v
   wsl --set-version Ubuntu 2
   ```
 
-  :white_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
+  :heavy_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
 
   :x: If it does not work, we need to be sure that Ubuntu files are not compressed.
 </details>
@@ -410,7 +410,7 @@ Then, let's disable warning for copy-pasting commands between Windows and Ubuntu
 
 You can save these changes by pressing `CTRL` + `V`
 
-:white_check_mark: Your **Windows Terminal** is now setup :+1:
+:heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
 This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
 
@@ -511,7 +511,7 @@ To check that `gh` has been successfully installed on your machine, you can run:
 gh --version
 ```
 
-:white_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
+:heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
 :x: Otherwise, please **contact a teacher**
 
@@ -539,7 +539,7 @@ At the end your terminal should look like this:
 
 ![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
 
-:white_check_mark: If it does, you're good to go :+1:
+:heavy_check_mark: If it does, you're good to go :+1:
 
 :x: Otherwise, please **ask for a teacher**
 
@@ -597,7 +597,7 @@ This is the expected result:
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-:white_check_mark: If you got this message, the keys were added successfully :+1:
+:heavy_check_mark: If you got this message, the keys were added successfully :+1:
 
 :x: If you encountered an error, you will have to try again. Do not hesitate to **contact a teacher**.
 
@@ -685,7 +685,7 @@ Then please make sure that the following command returns "Browser defined 👌":
 
 If it does not,
 
-:white_check_mark: If you got this message, you can continue :+1:
+:heavy_check_mark: If you got this message, you can continue :+1:
 
 :x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to close your terminal and open it again. Do not hesitate to **contact a teacher**.
 
@@ -719,7 +719,7 @@ To check that you are properly connected, type:
 gh auth status
 ```
 
-:white_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
+:heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
 
 :x: If not, **contact a teacher**.
 
@@ -747,7 +747,7 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-:white_check_mark: You should see your GitHub username printed.
+:heavy_check_mark: You should see your GitHub username printed.
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 
@@ -823,7 +823,7 @@ The list should look like:
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search ssh-agent)
 ```
 
-:white_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
+:heavy_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
 
 
 ## rbenv
@@ -909,7 +909,7 @@ All, please run the following line:
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-:white_check_mark: If you get `xx gems installed`, then all good :+1:
+:heavy_check_mark: If you get `xx gems installed`, then all good :+1:
 
 :x: If you encounter the following error:
 
@@ -1017,7 +1017,7 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 Open a new terminal.
 
-:white_check_mark: If you see a `* Starting PostgreSQL 12 database server` message, you're good to go :+1:
+:heavy_check_mark: If you see a `* Starting PostgreSQL 12 database server` message, you're good to go :+1:
 
 :x: If not, **contact a teacher**.
 
@@ -1080,7 +1080,7 @@ To ensure that everything is working fine for video calls, let's test your camer
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)
 
-:white_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
+:heavy_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
 
 :x: If not, **contact a teacher**.
 

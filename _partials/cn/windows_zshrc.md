@@ -82,4 +82,4 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 &nbsp;
 
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 按下`Ctrl` + `S` 保存`.zshrc`文件，然后关掉Visual Code Studio。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 按下`Ctrl` + `S` 保存`.zshrc`文件，然后关掉Visual Code Studio。

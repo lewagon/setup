@@ -11,7 +11,7 @@ To check your Windows version:
 - Type  `winver`
 - Press `Enter`
 
-:white_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
+:heavy_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
 
 :x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
 
@@ -34,7 +34,7 @@ Open Windows Update:
 - Click on `Check updates`
 
 
-:white_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
+:heavy_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
 
 :warning: If you have a red exclamation mark and the message "Update available", please install them and repeat the process until it says that you are up to date :loop:
 
@@ -64,6 +64,6 @@ Some of the tools we need to install have been release with the `1903` version *
 
 Check the **Version number**:
 
-:white_check_mark: If it says at least `1903`, you are good to go :+1:
+:heavy_check_mark: If it says at least `1903`, you are good to go :+1:
 
 :x: If it is below `1903`, please **contact a teacher**.

@@ -49,7 +49,7 @@ All, please run the following line:
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-:white_check_mark: If you get `xx gems installed`, then all good :+1:
+:heavy_check_mark: If you get `xx gems installed`, then all good :+1:
 
 :x: If you encounter the following error:
 

@@ -22,7 +22,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果你的电脑没有提示**Windows 10**，那么你暂时不能继续设置的步骤。但别担心，你现在就可以更新到Windows 10！
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果窗口里的前几个词就是**Windows 10**的话，你可以直接到下一步了！ :muscle:
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果窗口里的前几个词就是**Windows 10**的话，你可以直接到下一步了！ :muscle:
 
 
 ---
@@ -58,7 +58,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果出现关于无法更新的错误提示，**叫老师**来看看。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果你看到有可以更新的版本，请安装它然后重复以上步骤直到电脑提示你所有的东西都是最新版本了。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你看到有可以更新的版本，请安装它然后重复以上步骤直到电脑提示你所有的东西都是最新版本了。
 
 
 ---
@@ -105,4 +105,4 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果低于`1903`, 你可以根据上面[最新的Windows版本](#Latest-version-of-Windows)的部分来安装更新。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果你是`1903`或以上的版本, 你就可以继续下一步了！ :sunglasses:
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你是`1903`或以上的版本, 你就可以继续下一步了！ :sunglasses:

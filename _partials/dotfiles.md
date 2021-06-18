@@ -15,7 +15,7 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-:white_check_mark: You should see your GitHub username printed.
+:heavy_check_mark: You should see your GitHub username printed.
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 

@@ -275,7 +275,7 @@ ssh -T git@github.com
 
 &nbsp;
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果你看到这条信息，那说明密钥已经被成功加上了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你看到这条信息，那说明密钥已经被成功加上了！
 
 &nbsp;&nbsp;&nbsp; :x: 如果你看到错误提示，你需要重新试试。别忘了你可以*叫老师来帮忙*。
 

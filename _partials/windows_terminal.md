@@ -68,7 +68,7 @@ Then, let's disable warning for copy-pasting commands between Windows and Ubuntu
 
 You can save these changes by pressing `CTRL` + `V`
 
-:white_check_mark: Your **Windows Terminal** is now setup :+1:
+:heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
 This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
 

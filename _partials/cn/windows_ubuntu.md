@@ -66,7 +66,7 @@
 &nbsp;
 
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 安装应该都完成了。现在你可以选择Ubuntu窗口了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 安装应该都完成了。现在你可以选择Ubuntu窗口了！
 
 ### 检查Ubuntu的WSL version
 
@@ -86,7 +86,7 @@ wsl -l -v
 
 &nbsp;&nbsp;&nbsp; :x: 如果Ubuntu WSL的版本是1，你需要把它换成2。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果Ubuntu WSL版本是2，你就可以安装VS Code了！
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果Ubuntu WSL版本是2，你就可以安装VS Code了！
 
 
 ---
@@ -109,7 +109,7 @@ wsl -l -v
 
   &nbsp;
 
-  &nbsp;&nbsp;&nbsp; :white_check_mark: 几秒之后，你应该会收到这条转换完成的信息：`The conversion is complete`.
+  &nbsp;&nbsp;&nbsp; :heavy_check_mark: 几秒之后，你应该会收到这条转换完成的信息：`The conversion is complete`.
 
   &nbsp;&nbsp;&nbsp; :x: 如果不行的话，我们就需要检查并确保Ubuntu文件没有被压缩。
 </details>

@@ -27,7 +27,7 @@ To check that you are properly connected, type:
 gh auth status
 ```
 
-:white_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
+:heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
 
 :x: If not, **contact a teacher**.
 

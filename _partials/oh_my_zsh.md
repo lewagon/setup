@@ -21,6 +21,6 @@ At the end your terminal should look like this:
 
 ![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
 
-:white_check_mark: If it does, you're good to go :+1:
+:heavy_check_mark: If it does, you're good to go :+1:
 
 :x: Otherwise, please **ask for a teacher**

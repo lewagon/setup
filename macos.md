@@ -375,7 +375,7 @@ This is the expected result:
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-:white_check_mark: If you got this message, the keys were added successfully :+1:
+:heavy_check_mark: If you got this message, the keys were added successfully :+1:
 
 :x: If you encountered an error, you will have to try again. Do not hesitate to **contact a teacher**.
 
@@ -422,7 +422,7 @@ To check that you are properly connected, type:
 gh auth status
 ```
 
-:white_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
+:heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
 
 :x: If not, **contact a teacher**.
 
@@ -450,7 +450,7 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-:white_check_mark: You should see your GitHub username printed.
+:heavy_check_mark: You should see your GitHub username printed.
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 
@@ -566,7 +566,7 @@ All, please run the following line:
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-:white_check_mark: If you get `xx gems installed`, then all good :+1:
+:heavy_check_mark: If you get `xx gems installed`, then all good :+1:
 
 :x: If you encounter the following error:
 
@@ -729,7 +729,7 @@ To ensure that everything is working fine for video calls, let's test your camer
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)
 
-:white_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
+:heavy_check_mark: When the test is finished, you should see green "Succeed" messages at least for your microphone and camera. :+1:
 
 :x: If not, **contact a teacher**.
 

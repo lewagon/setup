@@ -21,7 +21,7 @@
 
 &nbsp;&nbsp;&nbsp; :x: 如果这一行没有出现，或者显示禁用了，请**让老师来帮你激活虚拟化**。
 
-&nbsp;&nbsp;&nbsp; :white_check_mark: 如果被激活了的话，那在图表下方会显示状态 "Virtualization: Enabled"。
+&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果被激活了的话，那在图表下方会显示状态 "Virtualization: Enabled"。
 
 
 ---

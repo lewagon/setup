@@ -40,6 +40,6 @@ To check that `gh` has been successfully installed on your machine, you can run:
 gh --version
 ```
 
-:white_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
+:heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
 :x: Otherwise, please **contact a teacher**

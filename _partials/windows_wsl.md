@@ -32,7 +32,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-:white_check_mark: If all three commands ran without any error, please restart your terminal and continue below :+1:
+:heavy_check_mark: If all three commands ran without any error, please restart your terminal and continue below :+1:
 
 :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
 
@@ -48,7 +48,7 @@ Once your computer has restarted, we need to download the WSL2 installer.
 
 ![Update WSL from version 1 to 2](images/windows_update_wsl.png)
 
-:white_check_mark: If didn't encounter any error message, you're good to go :+1:
+:heavy_check_mark: If didn't encounter any error message, you're good to go :+1:
 
 :x: If you encounter the error "This update only applies to machines with the Windows Subsystem for Linux", **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
@@ -65,7 +65,7 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:white_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
+:heavy_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
 
 :x: If the message you get is about Virtualization, please **contact a teacher**
 
