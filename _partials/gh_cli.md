@@ -13,8 +13,6 @@ gh auth login -s 'user:email' -w
 You will get the following output:
 
 ```bash
-- Logging into github.com
-
 ! First copy your one-time code: 0EF9-D015
 - Press Enter to open github.com in your browser...
 ```

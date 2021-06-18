@@ -4,10 +4,9 @@ Hackers love to refine and polish their shell and tools.
 
 We'll start with a great default configuration provided by Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles).
 
-As your configuration is personal, you need your **own** repository storing it. Forking means
-that it will create a new repo in your GitHub account, identical to the original one.
-You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
-We need to fork because each of you will need to put **specific** information (e.g. your name) in those files.
+As your configuration is personal, you need your **own** repository storing it. So you will **fork** Le Wagon repository.
+
+Forking means that it will create a new repo in your GitHub account, identical to the original one. You'll have a new repository on your GitHub account, `$GITHUB_USERNAME/dotfiles`.
 
 Open your terminal and run the following command:
 
