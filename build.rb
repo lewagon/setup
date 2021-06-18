@@ -52,10 +52,10 @@ WINDOWS = %w[
   yarn
   windows_postgresql
   checkup
-  windows_explorer
   kitt
   windows_slack
   slack_settings
+  windows_explorer
   windows_taskbar].freeze
 
 UBUNTU = %w[

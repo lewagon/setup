@@ -1147,6 +1147,43 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 它应该会告诉你，你的工作台是否已经正确的设置好了 ：）如果没有的话，问一下你的老师。
 
 
+## 校友
+:warning: 如果你已经收到了一封来自Le Wagon邀请你去注册Kitt(我们的学习平台)的邮件并且你也注册完成了的话，你可以安全的跳过这一章节。如果你还没有注册完成的话，请跟随邮件里的教程，完成注册。
+
+如果你不确定你要做什么，可以查看[这个链接](https://kitt.lewagon.com/)。如果你已经登录了的话，你可以跳过这个章节。如果你没有登录的话，你需要点击`Enter Kitt as a Student`。如果你可以成功的登录，你也可以安全的跳过这一步。不然的话，你可以询问一下老师你是否有收到过相关的邮件，或者直接跟着执行下面的教程。
+
+前往[kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding)，注册成为Le Wagon的一名校友。选择你的batch，用gitHub账户登录并填写你的信息。
+
+你的老师将会验证你的确属于这个batch。你可以在完成了注册表单后去询问老师去做验证。
+
+当你的老师验证成功后，请前往你的邮箱收件箱。你应该会有两封邮件：
+
+- 一封来自Slack,邀请你加入Le Wagon Alumni Slack社群（在这儿你可以与你的伙伴和所有之前的学员交流）。点击**Join**并填写相应的个人信息。
+
+- 一封来自GitHub,要求你加入`lewagon`团队。**接受它**，不然的话你将没有办法看到有关讲座和课程的文件。
+
+
+## Slack
+
+从[slack.com](https://slack.com/downloads/windows)上下载Slack的本地应用。
+
+启动程序并注册进入`lewagon-alumni`的组织。
+
+确保你在上面上传了照片。
+
+你也可以在你的iPhone或者Android设备上登录Slack!
+
+这么做的意义是，你可以一直开着Slack，于是你就可以分享有用的链接/寻求帮助/决定哪儿里吃饭/等等。
+
+至于远程的ticket，你将可以用Slack语音或者视频电话来获取帮助。为了确保所有都可以正常工作，在你的电脑上启动Slack应用程序，然后[跟着这里的步骤](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test)（tl;dr 输入`/call --test`然后在任何的channel里按下`Enter`键）。
+
+等测试结束之后，你应该至少会在麦克风和相机处，看到绿色“All clear”消息。如果没有的话，问一下你的老师。
+
+![](images/slack_mic_cam_all_green.png)
+
+
+
+
 ## Ubuntu文件系统
 
 ### 在Windows和Ubuntu之间交换文件
@@ -1193,43 +1230,6 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 - 还有，`wslpath -w $(pwd)`命令会返回当前Ubuntu路径的Windows路径
 
 ![](images/wsl_path.png)
-
-
-
-## 校友
-:warning: 如果你已经收到了一封来自Le Wagon邀请你去注册Kitt(我们的学习平台)的邮件并且你也注册完成了的话，你可以安全的跳过这一章节。如果你还没有注册完成的话，请跟随邮件里的教程，完成注册。
-
-如果你不确定你要做什么，可以查看[这个链接](https://kitt.lewagon.com/)。如果你已经登录了的话，你可以跳过这个章节。如果你没有登录的话，你需要点击`Enter Kitt as a Student`。如果你可以成功的登录，你也可以安全的跳过这一步。不然的话，你可以询问一下老师你是否有收到过相关的邮件，或者直接跟着执行下面的教程。
-
-前往[kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding)，注册成为Le Wagon的一名校友。选择你的batch，用gitHub账户登录并填写你的信息。
-
-你的老师将会验证你的确属于这个batch。你可以在完成了注册表单后去询问老师去做验证。
-
-当你的老师验证成功后，请前往你的邮箱收件箱。你应该会有两封邮件：
-
-- 一封来自Slack,邀请你加入Le Wagon Alumni Slack社群（在这儿你可以与你的伙伴和所有之前的学员交流）。点击**Join**并填写相应的个人信息。
-
-- 一封来自GitHub,要求你加入`lewagon`团队。**接受它**，不然的话你将没有办法看到有关讲座和课程的文件。
-
-
-## Slack
-
-从[slack.com](https://slack.com/downloads/windows)上下载Slack的本地应用。
-
-启动程序并注册进入`lewagon-alumni`的组织。
-
-确保你在上面上传了照片。
-
-你也可以在你的iPhone或者Android设备上登录Slack!
-
-这么做的意义是，你可以一直开着Slack，于是你就可以分享有用的链接/寻求帮助/决定哪儿里吃饭/等等。
-
-至于远程的ticket，你将可以用Slack语音或者视频电话来获取帮助。为了确保所有都可以正常工作，在你的电脑上启动Slack应用程序，然后[跟着这里的步骤](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test)（tl;dr 输入`/call --test`然后在任何的channel里按下`Enter`键）。
-
-等测试结束之后，你应该至少会在麦克风和相机处，看到绿色“All clear”消息。如果没有的话，问一下你的老师。
-
-![](images/slack_mic_cam_all_green.png)
-
 
 
 
