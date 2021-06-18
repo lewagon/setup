@@ -887,7 +887,7 @@ You should see something starting with `ruby 2.7.3p`. If not, ask a teacher.
 ### Installing some gems
 
 <details>
-  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+  <summary>If you are in <bold>China</bold></summary>
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
@@ -908,13 +908,15 @@ All, please run the following line:
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-If you encounter the following error:
+:white_check_mark: If you get `xx gems installed`, then all good :+1:
 
-`
+:x: If you encounter the following error:
+
+```bash
 ERROR: While executing gem ... (TypeError)
 incompatible marshal file format (can't be read)
 format version 4.8 required; 60.33 given
-`
+```
 
 Run the following command:
 ```bash
@@ -926,7 +928,11 @@ Rerun the command to install the gems.
 **Never** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the Terminal) telling you to do so.
 
 
-## Node (with [nvm](https://github.com/nvm-sh/nvm))
+## Node.js (with [nvm](https://github.com/nvm-sh/nvm))
+
+[Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
+
+In a terminal, execute the following command:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
@@ -937,6 +943,7 @@ Restart your terminal and run the following:
 ```bash
 nvm -v
 ```
+
 You should see a version. If not, ask a teacher.
 
 Now let's install node:

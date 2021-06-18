@@ -28,7 +28,7 @@ You should see something starting with `ruby <RUBY_VERSION>p`. If not, ask a tea
 ### Installing some gems
 
 <details>
-  <summary>Click here if you are in :cn: <bold>China</bold></summary>
+  <summary>If you are in <bold>China</bold></summary>
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
@@ -49,13 +49,15 @@ All, please run the following line:
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-If you encounter the following error:
+:white_check_mark: If you get `xx gems installed`, then all good :+1:
 
-`
+:x: If you encounter the following error:
+
+```bash
 ERROR: While executing gem ... (TypeError)
 incompatible marshal file format (can't be read)
 format version 4.8 required; 60.33 given
-`
+```
 
 Run the following command:
 ```bash
