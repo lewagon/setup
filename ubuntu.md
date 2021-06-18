@@ -331,6 +331,7 @@ Run the `dotfiles` installer.
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
+git checkout --track upstream/vscode # TODO(dmilon): remove this line before merging to master
 zsh install.sh
 ```
 
