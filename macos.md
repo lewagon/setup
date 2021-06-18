@@ -617,15 +617,17 @@ node -v
 You should see `v14.15`. If not, ask a teacher.
 
 
-## yarn
+## `yarn`
 
-Let's install [`yarn`](https://classic.yarnpkg.com/en/docs/install):
+[`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
+
+In a terminal, run the following command:
 
 ```bash
 npm install --global yarn
 ```
 
-Restart your terminal and run the following:
+Restart your terminal and run the following command:
 
 ```bash
 yarn -v
