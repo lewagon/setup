@@ -11,7 +11,8 @@ MACOS = %w[
   homebrew
   macos_vscode
   vscode_extensions
-  macos_oh_my_zsh
+  macos_terminal
+  oh_my_zsh
   ssh_key
   gh_cli
   dotfiles
@@ -39,6 +40,7 @@ WINDOWS = %w[
   windows_terminal
   vscode_extensions
   git
+  zsh
   oh_my_zsh
   ssh_key
   windows_browser
@@ -64,6 +66,7 @@ UBUNTU = %w[
   ubuntu_vscode
   vscode_extensions
   git
+  zsh
   oh_my_zsh
   ssh_key
   gh_cli

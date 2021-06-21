@@ -164,9 +164,9 @@ gh --version
 :x: Otherwise, please **contact a teacher**
 
 
-## Oh-my-zsh - Fancy your terminal
+## zsh
 
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
 In a terminal execute the following command and type in your password if asked:
 
@@ -174,13 +174,18 @@ In a terminal execute the following command and type in your password if asked:
 sudo apt install -y zsh curl vim imagemagick jq
 ```
 
-Then copy-paste the following command:
+
+## Oh-my-zsh
+
+Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
+
+In a terminal execute the following command:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-When asked "Do you want to change your default shell to zsh?", press `Y`
+If asked "Do you want to change your default shell to zsh?", press `Y`
 
 At the end your terminal should look like this:
 

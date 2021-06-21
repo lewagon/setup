@@ -596,9 +596,9 @@ gh --version
 如果这行命令没有提示`gh version X.Y.Z (YYYY-MM-DD)`，且版本（version）大于等于1.4 ，请参考[这个文档](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources)：这里面有故障排查的方法。如果有困惑，问问老师。
 
 
-## Oh-my-zsh - Fancy your Terminal
+## zsh
 
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
 In a terminal execute the following command and type in your password if asked:
 
@@ -606,14 +606,18 @@ In a terminal execute the following command and type in your password if asked:
 sudo apt install -y zsh curl vim imagemagick jq
 ```
 
-Then copy-paste the following command:
+
+## Oh-my-zsh
+
+Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
+
+In a terminal execute the following command:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-When asked "Do you want to change your default shell to zsh?", press `Y`
+If asked "Do you want to change your default shell to zsh?", press `Y`
 
 At the end your terminal should look like this:
 

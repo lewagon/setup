@@ -238,19 +238,32 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## Oh-my-zsh - Fancy your terminal
+## macOS Terminal Theme
 
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
+Launch a terminal, click on `Terminal > Preferences` and set the "Pro" theme as default profile.
+
+![Set Pro Theme for macOS terminal](images/macos_terminal_pro.png)
+
+**Quit and restart** your terminal: it should now have a nice black background, easier on the eyes.
+
+
+## Oh-my-zsh
+
+Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
+
+In a terminal execute the following command:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-You should see something like this:
+If asked "Do you want to change your default shell to zsh?", press `Y`
 
-![Terminal with OhMyZsh on macOS](images/macos_oh_my_zsh.png)
+At the end your terminal should look like this:
 
-:heavy_check_mark: If you do, it does, you can continue :+1:
+![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
+
+:heavy_check_mark: If it does, you can continue :+1:
 
 :x: Otherwise, please **ask for a teacher**
 
