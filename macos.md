@@ -601,15 +601,18 @@ yarn -v
 
 ## PostgreSQL
 
-In a few weeks, we'll talk about SQL and Databases and you'll need something called PostgreSQL,
-an open-source robust and production-ready database. Let's install it now.
+In a few weeks, we'll talk about databases and SQL and you'll need something called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
+
+Let's install it now.
+
+Run the following commands:
 
 ```bash
 brew install postgresql
 brew services start postgresql
 ```
 
-Once you've done that, let's check if it worked:
+Once you've done that, let's check that it worked:
 
 ```bash
 psql -d postgres
@@ -618,7 +621,7 @@ psql -d postgres
 If you enter a new prompt like this one, you're good!
 
 ```bash
-psql (12.5)
+psql (13.3)
 Type "help" for help.
 
 postgres=#
@@ -661,6 +664,8 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
+[Slack](https://slack.com/) is a communcation platform pretty popular in the tech industry.
+
 ### Installation
 
 [Download the Slack app](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) and install it.
@@ -700,26 +705,19 @@ You can also go to ` > System Preferences > Mission Control` and click on the
 
 ### Keyboard
 
-As you become a programmer, you'll understand that leaving the keyboard takes a lot of time,
-so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on macOS
-to help you do that:
+As you become a programmer, you'll understand that leaving the keyboard takes a lot of time, so you'll want to minimize using the trackpad or the mouse. Here are a few tricks on macOS to help you do that.
 
-### Keyboard speed
+#### Keyboard speed
 
-Go to  > System Preferences > Keyboard. Set `Key Repeat` to the fastest position (to the right) and
-`Delay Until Repeat` to the shortest position (to the right).
+Go to  > System Preferences > Keyboard. Set `Key Repeat` to the fastest position (to the right) and `Delay Until Repeat` to the shortest position (to the right).
 
-### Full Keyboard Access
+#### Full Keyboard Access
 
-Go to  > System Preferences > Keyboard. Click on the third tab (Shortcuts). At the bottom of the
-pane, click the radio button `All controls`. This way when you get a dialog with several options,
-you'll be able to type `Enter` to confirm, or `Space` to choose the cancel option. If you have more than
-two options, you can use tab to circle between them.
+Go to  > System Preferences > Keyboard. Click on the third tab (Shortcuts). At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
 
-### macOS For hackers
+#### macOS For hackers
 
-[Read this script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and cherry-pick some stuff you think will suit you.
-For instance, you can type in the terminal this one:
+[Read this script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) and cherry-pick some stuff you think will suit you. For instance, you can type in the terminal this one:
 
 ```bash
 # Expanding the save panel by default

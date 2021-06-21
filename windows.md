@@ -501,7 +501,6 @@ Then copy-paste the following command:
 
 ```bash
 sudo apt install -y gh
-
 ```
 
 To check that `gh` has been successfully installed on your machine, you can run:
