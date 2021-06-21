@@ -8,7 +8,7 @@ MACOS = %w[
   github
   macos_apple_silicon
   macos_command_line_tools
-  homebrew
+  macos_homebrew
   macos_vscode
   vscode_extensions
   macos_terminal
