@@ -1,13 +1,12 @@
+## Apple Silicon Chips
 
-## Checking your computer for Apple Silicon (Apple M1 chips)
+If you bought your computer after late 2020, chances are it has a new Apple silicon chip instead of an Intel processor: let's find out.
 
-If you bought your computer after late 2020, chances are it uses Apple silicon instead of Intel processors. Let's find out...
-
-Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
+Open a new terminal window from Applications > Utilities or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
 ![Open Terminal on macOS](images/macos_open_terminal.png)
 
-Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+Copy-paste the following command in the terminal and hit `ENTER` to execute.
 
 <!-- TODO(dmilon): update branch when merged to master -->
 ``` bash
@@ -20,10 +19,6 @@ If your computer uses Apple Silicon, expand the paragraph below and go through i
 
 <details>
   <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-  &nbsp;
-
-## Setup for Apple Silicon
 
 ### Uninstall Homebrew
 
@@ -43,9 +38,9 @@ Open the Finder app (or search for it with [Spotlight](https://support.apple.com
 
 Go to Applications > Utilities.
 
-Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
+Duplicate the terminal app (select it, then `CMD` + `C`, `CMD` + `V`), and rename a copy as Terminal Rosetta.
 
-Press Cmd + I on the Terminal Rosetta app, then check the box "Open using Rosetta".
+Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
 
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 

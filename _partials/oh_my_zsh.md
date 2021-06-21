@@ -11,8 +11,7 @@ sudo apt install -y zsh curl vim imagemagick jq
 Then copy-paste the following command:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 When asked "Do you want to change your default shell to zsh?", press `Y`

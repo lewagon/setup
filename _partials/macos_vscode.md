@@ -10,18 +10,12 @@ Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`
 brew install --cask visual-studio-code
 ```
 
-Then launch VS Code:
+Then launch VS Code by running the following command in your terminal:
 
 ```bash
-'/Applications/Visual Studio Code.app'
+code
 ```
 
-### Launching from the terminal
+:heavy_check_mark: If a VS Code window has just opened, you're good to go :+1:
 
-In VS Code, open the Command Palette (`CMD` + `SHIFT` + `P`), type `shell command` and click on "Shell Command: Install 'code' command in PATH" :point_down:
-
-![Install VS Code command on macOS](images/macos_vscode_command.png)
-
-Now quit the VS Code, quit the Terminal (`CMD` + `Q`) and restart it.
-
-Try typing `code` :point_right: if VS Code opens in new window, you can proceed to the next point!
+:x: Otherwise, please **contact a teacher**

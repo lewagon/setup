@@ -1,6 +1,6 @@
-## Oh-my-zsh - Fancy your Terminal
+## Oh-my-zsh - Fancy your terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one, alongside with useful and fancy [`oh-my-zsh`](https://ohmyz.sh/) plugins:
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

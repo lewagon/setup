@@ -1,15 +1,16 @@
 ## Homebrew
 
-On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
-It will be used as soon as we need to install some software.
-To do so, open your Terminal and run:
+Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
+
+Open a terminal and run:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
-:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
+This will ask for your confirmation (hit `ENTER`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+
+:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 

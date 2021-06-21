@@ -42,16 +42,15 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ![GitHub picture](images/github_picture.png)
 
 
+## Apple Silicon Chips
 
-## Checking your computer for Apple Silicon (Apple M1 chips)
+If you bought your computer after late 2020, chances are it has a new Apple silicon chip instead of an Intel processor: let's find out.
 
-If you bought your computer after late 2020, chances are it uses Apple silicon instead of Intel processors. Let's find out...
-
-Open a new Terminal window from Applications > Utilities or search with [Spotlight](https://support.apple.com/en-gb/HT204014):
+Open a new terminal window from Applications > Utilities or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014):
 
 ![Open Terminal on macOS](images/macos_open_terminal.png)
 
-Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+Copy-paste the following command in the terminal and hit `ENTER` to execute.
 
 <!-- TODO(dmilon): update branch when merged to master -->
 ``` bash
@@ -64,10 +63,6 @@ If your computer uses Apple Silicon, expand the paragraph below and go through i
 
 <details>
   <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-  &nbsp;
-
-## Setup for Apple Silicon
 
 ### Uninstall Homebrew
 
@@ -87,9 +82,9 @@ Open the Finder app (or search for it with [Spotlight](https://support.apple.com
 
 Go to Applications > Utilities.
 
-Duplicate the Terminal app (select it, then Cmd + C, Cmd + V), and rename a copy as Terminal Rosetta.
+Duplicate the terminal app (select it, then `CMD` + `C`, `CMD` + `V`), and rename a copy as Terminal Rosetta.
 
-Press Cmd + I on the Terminal Rosetta app, then check the box "Open using Rosetta".
+Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
 
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 
@@ -100,7 +95,7 @@ Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
 
 ## A note about quitting apps on a Mac
 
-Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `CMD + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
 ![Quit Terminal on macOS](images/macos_quit.png)
 
@@ -108,9 +103,7 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open a new Terminal window from Applications > Utilities or searching with [Spotlight](https://support.apple.com/en-gb/HT204014).
-
-Copy-paste the following command in the terminal and hit `Enter` to execute the command.
+Open a new terminal, copy-paste the following command and hit `ENTER`:
 
 ```bash
 xcode-select --install
@@ -118,49 +111,41 @@ xcode-select --install
 
 If you receive the following message, you can just skip this step and go to next step.
 
-```
+```bash
 # command line tools are already installed, use "Software Update" to install updates
 ```
 
-Otherwise, it will open a window asking you if you want to install some software. Accept and wait. If it fails, try again `xcode-select --install`, sometimes the Apple servers are overloaded.
+Otherwise, it will open a window asking you if you want to install some software: click on "Install" and wait.
+
 
 ![Install xcode-select on macOS](images/macos_xcode_select_install.png)
 
-While it's downloading, you can go on with configuring your GitHub account, but **stop** before Homebrew. You'll need the command line tools installed for that step.
+:heavy_check_mark: If you see the message "The software was installed" then all good :+1:
 
-If you receive the following message, you need to update the software update catalog.
+:x: If the command `xcode-select --install` fails try again: sometimes the Apple servers are overloaded.
 
-```
-Xcode is not currently available from the Software Update server
-```
-
-In this case, copy-paste the following command in the terminal and hit Enter.
+:x: If you see the message "Xcode is not currently available from the Software Update server", you need to update the software update catalog:
 
 ```bash
 sudo softwareupdate --clear-catalog
 ```
 
-Once this is done, you can try to install again (copy-paste the following command and hit enter).
-
-```bash
-xcode-select --install
-```
-
-Then follow the previous instructions for this command.
+Once this is done, you can try to install again.
 
 
 ## Homebrew
 
-On Mac, you need to install [Homebrew](http://brew.sh/) which is a Package Manager.
-It will be used as soon as we need to install some software.
-To do so, open your Terminal and run:
+Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
+
+Open a terminal and run:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
-:warning: When typing a password in the Terminal, you will **not** get a visual feedback (something like `*****`), this is **normal**!! Type the password and confirm by typing `Enter`.
+This will ask for your confirmation (hit `ENTER`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+
+:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
@@ -201,21 +186,15 @@ Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`
 brew install --cask visual-studio-code
 ```
 
-Then launch VS Code:
+Then launch VS Code by running the following command in your terminal:
 
 ```bash
-'/Applications/Visual Studio Code.app'
+code
 ```
 
-### Launching from the terminal
+:heavy_check_mark: If a VS Code window has just opened, you're good to go :+1:
 
-In VS Code, open the Command Palette (`CMD` + `SHIFT` + `P`), type `shell command` and click on "Shell Command: Install 'code' command in PATH" :point_down:
-
-![Install VS Code command on macOS](images/macos_vscode_command.png)
-
-Now quit the VS Code, quit the Terminal (`CMD` + `Q`) and restart it.
-
-Try typing `code` :point_right: if VS Code opens in new window, you can proceed to the next point!
+:x: Otherwise, please **contact a teacher**
 
 
 ## VS Code Extensions
@@ -259,9 +238,9 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## Oh-my-zsh - Fancy your Terminal
+## Oh-my-zsh - Fancy your terminal
 
-We will use the shell named `zsh` instead of `bash`, the default one, alongside with useful and fancy [`oh-my-zsh`](https://ohmyz.sh/) plugins:
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh` and its plugin [Oh My Zsh](https://ohmyz.sh/).
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
