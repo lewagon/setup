@@ -2,7 +2,7 @@
 
 ### Installation
 
-Now, you are ready to install the latest ruby version and set it as the default version.
+Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 

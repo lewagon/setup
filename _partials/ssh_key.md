@@ -51,7 +51,7 @@ This is the expected result:
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-:heavy_check_mark: If you got this message, the keys were added successfully :+1:
+:heavy_check_mark: If you got this message, the key was added to GitHub successfully :+1:
 
 :x: If you encountered an error, you will have to try again. Do not hesitate to **contact a teacher**.
 
@@ -63,7 +63,4 @@ This is the expected result:
   ```bash
   ssh-add ~/.ssh/id_ed25519
   ```
-  </details>
-
-Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
-understanding of what those keys are used for.
+</details>

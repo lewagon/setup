@@ -321,7 +321,7 @@ This is the expected result:
 # Hi --------! You've successfully authenticated, but GitHub does not provide shell access
 ```
 
-:heavy_check_mark: If you got this message, the keys were added successfully :+1:
+:heavy_check_mark: If you got this message, the key was added to GitHub successfully :+1:
 
 :x: If you encountered an error, you will have to try again. Do not hesitate to **contact a teacher**.
 
@@ -333,10 +333,7 @@ This is the expected result:
   ```bash
   ssh-add ~/.ssh/id_ed25519
   ```
-  </details>
-
-Don't be in a rush, take time to [read this article](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html) to get a better
-understanding of what those keys are used for.
+</details>
 
 
 ## GitHub CLI
@@ -440,7 +437,9 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 Please now **quit** all your opened terminal windows.
 
 
-## Installing Ruby (with [rbenv](https://github.com/sstephenson/rbenv))
+## rbenv
+
+Let's install [`rbenv`](https://github.com/sstephenson/rbenv), a software to install and manage `ruby` environments.
 
 First, we need to clean up any previous Ruby installation you might have:
 
@@ -452,26 +451,28 @@ rvm implode && sudo rm -rf ~/.rvm
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 
-Now let's get [`rbenv`](https://github.com/rbenv/rbenv) and [`ruby-build`](https://github.com/rbenv/ruby-build) packages from Homebrew, they'll be useful.
+:warning: This command may prompt for your password.
+
+:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+
+Then in the terminal, run:
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-Then quit **all your opened terminal windows** (Cmd + Q) and restart one. Then run:
+Then quit **all your opened terminal windows** (`CMD` + `Q`) and restart one. Then run:
 
 ```bash
 brew install rbenv
 ```
-
-Again, quit all your terminal windows and restart.
 
 
 ## Ruby
 
 ### Installation
 
-Now, you are ready to install the latest ruby version and set it as the default version.
+Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) version and set it as the default version.
 
 Run this command, it will **take a while (5-10 minutes)**
 
