@@ -207,10 +207,10 @@ Copy-paste the following commands in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension MS-vsliveshare.vsliveshare
-code --install-extension emmanuelbeziat.vscode-great-icons
 ```
 
 Here is a list of the extensions you are installing:
