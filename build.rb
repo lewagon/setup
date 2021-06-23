@@ -1,90 +1,103 @@
 #!/usr/bin/env ruby -wU
 
-SETUP_RUBY_VERSION = "2.6.6"
+SETUP_RUBY_VERSION = "2.7.3"
 
-MAC_OS = %w[intro
-  remote_tools
-  osx_apple_silicon
-  osx_command_line_tools
+MACOS = %w[
+  intro
+  zoom
   github
-  homebrew
-  osx_sublime_text
-  osx_oh_my_zsh
-  github_rsa
+  macos_apple_silicon
+  macos_command_line_tools
+  macos_homebrew
+  macos_vscode
+  vscode_extensions
+  vscode_liveshare
+  macos_terminal
+  oh_my_zsh
+  ssh_key
   gh_cli
   dotfiles
-  ssh_osx
-  rbenv_osx
-  rbenv_ruby
+  macos_rbenv
+  ruby
   nvm
   yarn
-  osx_postgresql
-  osx_security
+  macos_postgresql
   checkup
-  alumni_platform
-  osx_slack
-  osx_preferences].freeze
+  kitt
+  macos_slack
+  slack_settings
+  macos_settings
+  conclusion].freeze
 
-UBUNTU = %w[intro
-  remote_tools
+WINDOWS = %w[
+  intro
+  zoom
   github
-  ubuntu_git
-  ubuntu_sublime_text
-  ubuntu_oh_my_zsh
-  github_rsa
+  windows_version
+  windows_virtualization
+  windows_wsl
+  windows_ubuntu
+  windows_vscode
+  windows_terminal
+  vscode_extensions
+  vscode_liveshare
+  git
+  zsh
+  oh_my_zsh
+  ssh_key
+  windows_browser
   gh_cli
   dotfiles
-  rbenv_ubuntu
-  rbenv_ruby
+  windows_ssh
+  rbenv
+  ruby
+  nvm
+  yarn
+  windows_postgresql
+  checkup
+  kitt
+  windows_slack
+  slack_settings
+  windows_settings
+  conclusion].freeze
+
+UBUNTU = %w[
+  intro
+  zoom
+  github
+  ubuntu_vscode
+  vscode_extensions
+  vscode_liveshare
+  git
+  zsh
+  oh_my_zsh
+  ssh_key
+  gh_cli
+  dotfiles
+  rbenv
+  ruby
   nvm
   yarn
   ubuntu_postgresql
-  ubuntu_inotify
-  ubuntu_extra
   checkup
-  alumni_platform
-  ubuntu_slack].freeze
-
-WINDOWS = %w[intro
-  wsl2_prereq_intro
-  wsl2_prereq_win10
-  wsl2_prereq_win_version
-  wsl2_prereq_virtualization
-  github
-  remote_tools
-  wsl2_install_wsl
-  wsl2_vscode
-  wsl2_vscode_settings
-  wsl2_windows_terminal
-  wsl2_git
-  wsl2_oh_my_zsh
-  github_rsa
-  gh_cli
-  wsl2_dotfiles
-  wsl_browser_variable
-  rbenv_ubuntu
-  rbenv_ruby
-  nvm
-  yarn
-  wls_postgresql
-  checkup
-  wsl_explorer
-  alumni_platform
-  wls_slack].freeze
+  kitt
+  ubuntu_slack
+  slack_settings
+  ubuntu_settings
+  conclusion].freeze
 
 filenames = {
-  'macOS.md' => MAC_OS,
-  'UBUNTU.md' => UBUNTU,
-  'WINDOWS.md' => WINDOWS
+  'macos.md' => MACOS,
+  'windows.md' => WINDOWS,
+  'ubuntu.md' => UBUNTU
 }
 
 ["", "cn"].each do |locale|
   filenames.each do |filename, partials|
-    filename = locale.blank? ? filename : filename.split(".md").join("#{locale}.")
-    option = locale
-    File.open(filename.to_s, 'w:utf-8') do |f|
+    filename = "#{filename.split('.md').first}.#{locale}.md" unless locale.empty?
+    File.open(filename, 'w:utf-8') do |f|
       partials.each do |partial|
-        folder = locale.blank? ? "_partials" : "_partials/#{locale}"
+        folder = locale.empty? ? "_partials" : "_partials/#{locale}"
         f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION)
         f << "\n\n"
       end

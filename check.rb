@@ -9,7 +9,7 @@ end
 
 require "json"
 
-REQUIRED_RUBY_VERSION = "2.6.6"
+REQUIRED_RUBY_VERSION = "2.7.3"
 REQUIRED_GIT_VERSION = "2.0"
 MINIMUM_AVATAR_SIZE = 2 * 1024
 
@@ -71,10 +71,8 @@ def check_all
   end
   check("git editor setup") do
     editor = `git config --global core.editor`
-    if editor.match(/subl/i)
-      [ true, "Sublime Text is your default git editor"]
-    elsif editor.chomp == 'code --wait'
-      [ true, "Visual Studio Code is your default git editor"]
+    if editor.match(/code/i)
+      [ true, "VS Code is your default git editor"]
     else
       [ false, "Ask a teacher to check your ~/.gitconfig editor setup. Right now, it's `#{editor.chomp}`"]
     end
@@ -91,8 +89,7 @@ end
 def outro
   if $all_good
     puts ""
-    puts "🚀  Awesome! Your laptop is now ready for weeks of hard work :)".green
-    puts "Now it's time to onboard on the Alumni platform 👉  kitt.lewagon.com/onboarding"
+    puts "🚀  Awesome! Your computer is now ready!".green
   else
     puts ""
     puts "😥  Bummer! Something's wrong, if you're stuck, ask a teacher.".red
