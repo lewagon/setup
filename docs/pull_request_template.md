@@ -11,8 +11,8 @@ We know that encountering issues can be frustrating but before opening a PR to m
 We currently have a cheatsheet for each OS for tips and / issues that don't belong to the setup itself, so feel free to have a look there first. Maybe your contributing should live there:
 
 - [macOS](https://github.com/lewagon/setup/blob/master/docs/macos_cheatsheet.md)
-- [Windows](https://github.com/lewagon/setup/blob/master/windows_cheatsheet.md)
-- [Ubuntu](https://github.com/lewagon/setup/blob/master/ubuntu_cheatsheet.md)
+- [Windows](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md)
+- [Ubuntu](https://github.com/lewagon/setup/blob/master/docs/ubuntu_cheatsheet.md)
 
 ## Opening a Pull Request
 

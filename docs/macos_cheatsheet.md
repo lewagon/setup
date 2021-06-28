@@ -2,10 +2,10 @@ Hello and welcome to this Apple M1 Cheatsheet.
 
 The goal is to gather here all tips and known issues about the new processor from Apple!
 
-- [Issues](https://github.com/lewagon/setup/blob/master/apple_m1_cheatsheet.md#issues)
-  - [Install brew](https://github.com/lewagon/setup/blob/master/apple_m1_cheatsheet.md#install-brew)
-  - [ZSH Permissions](https://github.com/lewagon/setup/blob/master/apple_m1_cheatsheet.md#zsh-permissions)
-- [Tips](https://github.com/lewagon/setup/blob/master/apple_m1_cheatsheet.md#tips)
+- [Issues](https://github.com/lewagon/setup/blob/master/docs/macos_cheatsheet.md#issues)
+  - [Install brew](https://github.com/lewagon/setup/blob/master/docs/macos_cheatsheet.md#install-brew)
+  - [ZSH Permissions](https://github.com/lewagon/setup/blob/master/docs/macos_cheatsheet.md#zsh-permissions)
+- [Tips](https://github.com/lewagon/setup/blob/master/docs/macos_cheatsheet.md#tips)
   
 
 # Issues
