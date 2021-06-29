@@ -1,4 +1,8 @@
-Here are some tracks to solve issues when installing Ubuntu:
+Hello and welcome to this Ubuntu cheatsheet.
+
+The goal is to gather here all known issues and tips with the Ubuntu setup.
+
+# Issues
 
 ## No Devices choice at reboot
 

@@ -1,22 +1,6 @@
-Hello and welcome to this WSL2 Cheatsheet.
+Hello and welcome to this Windows cheatsheet.
 
-The goal is to gather here all tips and known issues about WSL2!
-
-- [Issues](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#issues)
-  - [Network unreachable](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#network-unreachable)
-  - [Uncompressed and Unencrypted error](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#uncompressed-and-unencrypted-error)
-  - [I/O error](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#inputoutput-error)
-  - [ERR_CONNECTION_REFUSED / Unable to reach localhost](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#err_connection_refused--unable-to-reach-localhost)
-  - [Insecure World Writable](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#insecure-world-writable)
-  - [Update version 2004 not offered](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#update-version-2004-not-offered)
-  - [sudo apt update connection timed out](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#sudo-apt-update-connection-timed-out)
-  - [Slow network](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#slow-network)
-  - [Cloudinary: Stale request](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#cloudinary-stale-request)
-- [Tips](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#tips)
-  - [Check Windows Subsystem for Linux](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#check-windows-subsystem-for-linux)
-  - [Switch from version 1 to version 2](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#switch-from-version-1-to-version-2)
-  - [Access root session](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#access-root-session)
-  - [Testing in Rails](https://github.com/lewagon/setup/blob/master/docs/windows_cheatsheet.md#testing-on-rails)
+The goal is to gather here all known issues and tips with the Windows setup.
 
 # Issues
 
@@ -25,9 +9,11 @@ The goal is to gather here all tips and known issues about WSL2!
 When trying to connect to remote hosts, eg. when trying to do `sudo apt update`, you might see an error message saying that the network is unreachable. Here are two possible solutions: if the first one doesn't help, try the second one.
 
 ### A note about diagnosing this problem
+
 - This is a common networking issue, and we must be sure that the problem lies with WSL only, and not with the Windows host. Please first ensure that there are no known networking issues on Windows. If you can successfully browse a few sites on Windows, but you can't connect to the internet in WSL, it would appear that this is an WSL problem. Please continue to the next section.
 
 ### Refresh and reset network
+
 - `Start` > `cmd` > 'Open as administrator'
 - Run the following commands:
     ```bash
@@ -43,6 +29,7 @@ When trying to connect to remote hosts, eg. when trying to do `sudo apt update`,
 - If this still does not solve your problem, try the next section.
 
 ### Add a custom DNS server address to WSL
+
 - Open a WSL terminal and type the following:
   ```bash
   sudo mv /etc/resolv.conf /etc/resolv.conf.old
