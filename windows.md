@@ -802,6 +802,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 code .zshrc
 ```
 
+Then:
 - Spot the line starting with `plugins=`
 - Add `ssh-agent` at the end of the plugins list
 
