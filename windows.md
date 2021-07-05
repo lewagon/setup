@@ -186,7 +186,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-:heavy_check_mark: If all three commands ran without any error, please restart your terminal and continue below :+1:
+:heavy_check_mark: If all three commands ran without any error, please restart your computer and continue below :+1:
 
 :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
 
