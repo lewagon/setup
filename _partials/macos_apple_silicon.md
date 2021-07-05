@@ -43,6 +43,4 @@ Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Ro
 
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 
-Launch the Terminal app. You will be prompted to install Rosetta. Click Install.
-
 </details>
