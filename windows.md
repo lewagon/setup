@@ -794,6 +794,7 @@ Please now **quit** all your opened terminal windows.
 
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
+- Open the configuration file with `code ~/.zshrc`
 - Spot the line starting with `plugins=`
 - Add `ssh-agent` at the end of the plugins list
 
@@ -1136,5 +1137,3 @@ You must pin:
 Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Enjoy the bootcamp, you will nail it :rocket:
-
-
