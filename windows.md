@@ -796,9 +796,7 @@ You don't want to be asked for your passphrase every time you communicate with a
 
 First, open the `.zshrc` file:
 ```bash
-export GITHUB_USERNAME=`gh api user | jq -r '.login'`
-echo $GITHUB_USERNAME
-cd ~/code/$GITHUB_USERNAME/dotfiles
+cd ~
 code .zshrc
 ```
 
