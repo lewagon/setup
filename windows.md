@@ -796,8 +796,7 @@ You don't want to be asked for your passphrase every time you communicate with a
 
 First, open the `.zshrc` file:
 ```bash
-cd ~
-code .zshrc
+code ~/.zshrc
 ```
 
 Then:
