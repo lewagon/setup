@@ -7,7 +7,7 @@ First, open the `.zshrc` file:
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 cd ~/code/$GITHUB_USERNAME/dotfiles
-code .zshrc
+code zshrc
 ```
 
 Then:
