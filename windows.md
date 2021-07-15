@@ -795,11 +795,9 @@ Please now **quit** all your opened terminal windows.
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
 First, open the `.zshrc` file:
+
 ```bash
-export GITHUB_USERNAME=`gh api user | jq -r '.login'`
-echo $GITHUB_USERNAME
-cd ~/code/$GITHUB_USERNAME/dotfiles
-code zshrc
+code ~/.zshrc
 ```
 
 Then:
