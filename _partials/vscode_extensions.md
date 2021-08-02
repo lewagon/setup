@@ -12,6 +12,7 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension misogi.ruby-rubocop
 ```
 
 Here is a list of the extensions you are installing:
@@ -19,4 +20,5 @@ Here is a list of the extensions you are installing:
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [Ruby Rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
