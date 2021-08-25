@@ -176,6 +176,7 @@ Configure the newly installed git software:
 git config --global init.defaultBranch main
 ```
 
+
 ## Visual Studio Code
 
 ### Installation
