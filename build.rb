@@ -14,8 +14,8 @@ MACOS = %w[
   vscode_liveshare
   macos_terminal
   oh_my_zsh
-  ssh_key
   gh_cli
+  ssh_key
   dotfiles
   macos_rbenv
   ruby
@@ -44,9 +44,9 @@ WINDOWS = %w[
   git
   zsh
   oh_my_zsh
-  ssh_key
   windows_browser
   gh_cli
+  ssh_key
   dotfiles
   windows_ssh
   rbenv
@@ -71,8 +71,8 @@ UBUNTU = %w[
   git
   zsh
   oh_my_zsh
-  ssh_key
   gh_cli
+  ssh_key
   dotfiles
   rbenv
   ruby
