@@ -205,6 +205,51 @@ At the end your terminal should look like this:
 :x: Otherwise, please **ask for a teacher**
 
 
+## GitHub CLI
+
+CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2/9910197?fr=aladdin)的首字母缩写。
+
+在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以从终端链接GitHub的数据，执行一些有用的动作。
+
+之前执行的命令应该已经安装了GitHub CLI。首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
+
+```bash
+gh auth login -s 'user:email' -w
+```
+
+你会看到下面的输出结果：
+
+```bash
+- Logging into github.com
+! First copy your one-time code: 0EF9-D015
+- Press Enter to open github.com in your browser...
+```
+
+复制那段验证码（code）(在上面的例子中是`0EF9-D015` ），然后敲击`Enter`。你的浏览器就会打开一个页面让你授权GitHub CLI使用你的GitHub账号。同意，并等待一会儿。回到终端，再次敲击`回车`，然后就应该好啦:tada:
+
+检查一下你有没有链接好：
+
+```bash
+gh auth status
+```
+
+如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。如果没有，**问问老师**。
+
+然后运行下面的配置命令:
+
+```bash
+gh config set git_protocol ssh
+```
+
+最后，新建一个[gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists)来确保`gh` 可以正常运作：
+
+```bash
+echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
+```
+
+这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
+
+
 ## GitHub
 
 我们需要生成SSH密钥。这些会在GitHub和Heroku上使用。把它当成一种登陆的方式好了，但它和平时用的用户名和密码不一样。如果你之前有生成过密钥，你就可以跳过这个步骤。
@@ -276,51 +321,6 @@ ssh -T git@github.com
 
 
 别着急，花点时间看看[这篇文章](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html)来更好地了解那些密钥都是干什么用的。
-
-
-## GitHub CLI
-
-CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2/9910197?fr=aladdin)的首字母缩写。
-
-在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以从终端链接GitHub的数据，执行一些有用的动作。
-
-之前执行的命令应该已经安装了GitHub CLI。首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
-
-```bash
-gh auth login -s 'user:email' -w
-```
-
-你会看到下面的输出结果：
-
-```bash
-- Logging into github.com
-! First copy your one-time code: 0EF9-D015
-- Press Enter to open github.com in your browser...
-```
-
-复制那段验证码（code）(在上面的例子中是`0EF9-D015` ），然后敲击`Enter`。你的浏览器就会打开一个页面让你授权GitHub CLI使用你的GitHub账号。同意，并等待一会儿。回到终端，再次敲击`回车`，然后就应该好啦:tada:
-
-检查一下你有没有链接好：
-
-```bash
-gh auth status
-```
-
-如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。如果没有，**问问老师**。
-
-然后运行下面的配置命令:
-
-```bash
-gh config set git_protocol ssh
-```
-
-最后，新建一个[gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists)来确保`gh` 可以正常运作：
-
-```bash
-echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
-```
-
-这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
 
 
 ## Dotfiles (标准配置)
