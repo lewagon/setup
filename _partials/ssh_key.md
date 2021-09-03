@@ -25,42 +25,15 @@ Now, you will give your **public** key to GitHub.
 In your terminal copy-paste the following command:
 
 ```bash
-cat ~/.ssh/id_ed25519.pub
+gh auth refresh -s write:public_key
 ```
 
-It will prompt on the screen the content of the `id_ed25519.pub` file.
+It will prompt a one time code (####-####) on the screen. Copy it and press `ENTER`, then paste the code in your browser and follow the instructions to **Authorize GitHub**.
 
-- Copy that text from `ssh` to the end of your email address
-- Go to [github.com/settings/ssh](https://github.com/settings/keys)
-- Click on the green button `New SSH key`
-- Fill in the Title with your computer name (`Macbook Pro` for instance)
-- Paste the **key**
-- Finish by clicking on the **Add SSH key** green button.
-
-To check that this step is completed, in the terminal run this.
+Back in the terminal, press `ENTER` and run this:
 
 ```bash
-ssh -T git@github.com
+gh ssh-key add ~/.ssh/id_ed25519.pub
 ```
 
-:warning: You will be prompted a warning, type `yes` then `ENTER`.
-
-This is the expected result:
-
-```
-# Hi --------! You've successfully authenticated, but GitHub does not provide shell access
-```
-
-:heavy_check_mark: If you got this message, the key was added to GitHub successfully :+1:
-
-:x: If you encountered an error, you will have to try again. Do not hesitate to **contact a teacher**.
-
-<details>
-  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
-
-  Try running this command before trying again:
-
-  ```bash
-  ssh-add ~/.ssh/id_ed25519
-  ```
-</details>
+This should return `✓ Public key added to your account`. If not, do not hesitate to **contact a teacher**.
