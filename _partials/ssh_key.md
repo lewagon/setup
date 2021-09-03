@@ -28,7 +28,7 @@ In your terminal copy-paste the following command:
 gh auth refresh -s write:public_key
 ```
 
-It will prompt a one time code (####-####) on the screen. Copy it and press `ENTER`, then paste the code in your browser and follow the instructions to **Authorize github**.
+It will prompt a one time code (####-####) on the screen. Copy it and press `ENTER`, then paste the code in your browser and follow the instructions to **Authorize GitHub**.
 
 Back in the terminal, press `ENTER` and run this:
 
