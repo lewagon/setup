@@ -152,62 +152,17 @@ mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE
 然后你需要把**公钥**存到GitHub上。运行下面的命令：
 
 ```bash
-cat ~/.ssh/id_ed25519.pub
+gh auth refresh -s write:public_key
 ```
 
-它会在屏幕上显示`id_ed25519.pub`文件的内容。
+它会在屏幕上提示一次性代码(####-####). 复制后按“ENTER”，然后将代码粘贴到浏览器中，然后按照说明对 GitHub 进行授权.
 
-
-- 复制出现在`ssh`的内容（公钥）粘贴到你邮箱地址的末尾
-- 打开[github.com/settings/ssh](https://github.com/settings/ssh)
-- 点击绿色的按钮`New SSH key`
-- 填你的电脑的名称 （可以自己取一个，比如`My Windows`）
-- 粘贴**公钥**
-- 点击绿色按钮**Add key**，就完成这个步骤了
-
-
-再检查一下，在终端里运行：
+回到终端，按“ENTER”并运行:
 
 ```bash
-ssh -T git@github.com
+gh ssh-key add ~/.ssh/id_ed25519.pub
 ```
-
-:warning: 它会显示一个警告提示，输入`yes`，然后敲击`Enter`。
-
-这个是应该看到的结果:
-
-```
-# Hi --------! You've successfully authenticated, but GitHub does not provide shell access
-```
-
-&nbsp;
-
-&nbsp;&nbsp;&nbsp; :heavy_check_mark: 如果你看到这条信息，那说明密钥已经被成功加上了！
-
-&nbsp;&nbsp;&nbsp; :x: 如果你看到错误提示，你需要重新试试。别忘了你可以*叫老师来帮忙*。
-
-
----
-
-#### :wrench: 故障排查
-
-<details>
-  <summary>如果<code>ssh -T git@github.com</code> 不行的话</summary>
-
-  &nbsp;
-
-
-  运行下面的命令，然后再尝试一遍:
-
-  ```bash
-  ssh-add ~/.ssh/id_ed25519
-  ```
-  </details>
-
----
-
-
-别着急，花点时间看看[这篇文章](http://sebastien.saunier.me/blog/2015/05/10/github-public-key-authentication.html)来更好地了解那些密钥都是干什么用的。
+这应该返回 `✓ Public key added to your account` . 如果没有，请不要犹豫**与老师联系.**
 
 
 ## Dotfiles (标准配置)
