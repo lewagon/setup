@@ -260,7 +260,7 @@ It will prompt for information. Just press enter until it asks for a **passphras
 
 :warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
 
-:warning: When you you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
 
 ### Giving your public key to GitHub
 
@@ -281,6 +281,7 @@ gh ssh-key add ~/.ssh/id_ed25519.pub
 ```
 
 This should return `✓ Public key added to your account`. If not, do not hesitate to **contact a teacher**.
+
 
 ## Dotfiles (Standard configuration)
 
