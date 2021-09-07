@@ -272,7 +272,7 @@ At first launch, you will be asked some information:
 - Choose a **password**
 - Confirm your password
 
-:warning: When you you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
 
 You can close the Ubuntu window now that it is installed on your computer.
 
@@ -686,7 +686,7 @@ It will prompt for information. Just press enter until it asks for a **passphras
 
 :warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
 
-:warning: When you you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
 
 ### Giving your public key to GitHub
 
