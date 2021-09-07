@@ -708,6 +708,7 @@ gh ssh-key add ~/.ssh/id_ed25519.pub
 
 This should return `✓ Public key added to your account`. If not, do not hesitate to **contact a teacher**.
 
+
 ## Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools.
