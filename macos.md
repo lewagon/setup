@@ -564,7 +564,7 @@ Restart your terminal and run the following command:
 yarn -v
 ```
 
-:heavy_check_mark: If you see a version, you're good :+1:
+:heavy_check_mark: If you a version, you're good :+1:
 
 :x: If not, **ask for a teacher**
 
@@ -610,7 +610,7 @@ Quit all opened Terminal, open a new one and run the following commands:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:heavy_check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
+:check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
 
 :x: If not, **contact a teacher**.
 
