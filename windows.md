@@ -827,14 +827,14 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.3
+rbenv install 2.7.4
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.7.3 version by default.
+to use the 2.7.4 version by default.
 
 ```bash
-rbenv global 2.7.3
+rbenv global 2.7.4
 ```
 
 Then **restart** your terminal again (close it and reopen it).
@@ -843,7 +843,7 @@ Then **restart** your terminal again (close it and reopen it).
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 2.7.3p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 2.7.4p` then you can proceed +1:
 
 :x: If not, **ask a teacher**
 
