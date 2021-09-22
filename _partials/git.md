@@ -21,7 +21,7 @@ These commands will ask for your password: type it in.
 
 Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
-In you terminal, copy-paste the following commands and type in your password if asked:
+In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
