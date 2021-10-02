@@ -345,6 +345,14 @@ When the installation is finished, launch VS Code.
 
 You should see a frame at the bottom-right corner of VS Code saying it detects WSL. Accept the installation of the WSL extension for VS Code.
 
+<details>
+  <summary>If you don't see anything at the bottom-right corner</summary>
+  
+  [Open the marketplace and install it](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl).
+  
+  :x: If you still can not install, please **contact a teacher**.
+</details>
+
 :warning: This extension is mandatory for you to be able to work with VS Code!
 
 
