@@ -434,7 +434,7 @@ You can save these changes by pressing `CTRL` + `S`
 
 :heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
-This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
+This terminal has tabs: you can choose to open a new terminal tab by clicking on the **+** next to the current one.
 
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
 
