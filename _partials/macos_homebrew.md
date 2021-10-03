@@ -1,6 +1,6 @@
 ## Homebrew
 
-Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
+[Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
 
 Open a terminal and run:
 
