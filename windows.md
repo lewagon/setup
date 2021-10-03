@@ -758,7 +758,6 @@ cd ~/code/$GITHUB_USERNAME/dotfiles
 zsh install.sh
 ```
 
-
 Check the emails registered with your GitHub Account. You'll need to pick one at the next step:
 
 ```bash
