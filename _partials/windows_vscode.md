@@ -31,4 +31,6 @@ code .
 
 :heavy_check_mark: If you see `WSL: Ubuntu` in a green box in the bottom left corner of the VS Code window, you're good to go :+1:
 
+![WSL Ubuntu Remote](images/windows_remote_wsl.png)
+
 :x: Otherwise, please **contact a teacher**
