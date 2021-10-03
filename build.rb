@@ -99,7 +99,7 @@ filenames = {
     File.open(filename, 'w:utf-8') do |f|
       partials.each do |partial|
         folder = locale.empty? ? "_partials" : "_partials/#{locale}"
-        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION)
+        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION).gsub("<OS.md>", filename)
         f << "\n\n"
       end
     end

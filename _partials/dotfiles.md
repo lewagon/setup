@@ -43,7 +43,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: If you see the list of your registered emails, you can proceed :+1:
 
-:x: If not, please [reauthenticate to GitHub](https://github.com/lewagon/setup/blob/master/macos.md#github-cli) before running this command :point_up: again.
+:x: If not, please [reauthenticate to GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli) before running this command :point_up: again.
 
 ### git installer
 
