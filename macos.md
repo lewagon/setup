@@ -381,6 +381,8 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
+### Dotfiles installer
+
 Run the `dotfiles` installer:
 
 ```bash
@@ -396,29 +398,9 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: If you see the list of your registered emails, you can proceed :+1:
 
-:x: If not, please reauthenticate to GitHub before running this command :point_up: again.
+:x: If not, please [reauthenticate to GitHub](https://github.com/lewagon/setup/blob/master/macos.md#github-cli) before running this command :point_up: again.
 
-<details>
-  <summary>Authenticate to GitHub</summary>
-  Execute this command in your terminal **without editing the `email`**:
-
-  ```bash
-  gh auth login -s 'user:email' -w
-  ```
-
-  You will get the following output:
-
-  ```bash
-  ! First copy your one-time code: 0EF9-D015
-  - Press Enter to open github.com in your browser...
-  ```
-
-  Select and copy the code (`0EF9-D015` in the example), then press `ENTER`.
-
-  Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
-
-  Come back to the terminal, press `ENTER` again.
-</details>
+### git installer
 
 Run the `git` installer:
 
