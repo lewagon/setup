@@ -324,6 +324,32 @@ Check the emails registered with your GitHub Account. You'll need to pick one at
 gh api user/emails | jq -r '.[].email'
 ```
 
+:heavy_check_mark: If you see the list of your registered emails, you can proceed :+1:
+
+:x: If not, please reauthenticate to GitHub before running this command :point_up: again.
+
+<details>
+  <summary>Authenticate to GitHub</summary>
+  Execute this command in your terminal **without editing the `email`**:
+
+  ```bash
+  gh auth login -s 'user:email' -w
+  ```
+
+  You will get the following output:
+
+  ```bash
+  ! First copy your one-time code: 0EF9-D015
+  - Press Enter to open github.com in your browser...
+  ```
+
+  Select and copy the code (`0EF9-D015` in the example), then press `ENTER`.
+
+  Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
+
+  Come back to the terminal, press `ENTER` again.
+</details>
+
 Run the `git` installer:
 
 ```bash
@@ -335,6 +361,29 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 :warning: You **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress.
 
 Please now **quit** all your opened terminal windows.
+
+
+## Disable SSH passphrase prompt
+
+You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
+
+First, open the `.zshrc` file:
+
+```bash
+code ~/.zshrc
+```
+
+Then:
+- Spot the line starting with `plugins=`
+- Add `ssh-agent` at the end of the plugins list
+
+The list should look like:
+
+```bash
+plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
+```
+
+:heavy_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
 
 
 ## rbenv
@@ -550,9 +599,13 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ## Slack
 
+[Slack](https://slack.com/) is a communcation platform pretty popular in the tech industry.
+
 ### Installation
 
 [Download the Slack app](https://get.slack.help/hc/en-us/articles/212924728-Slack-for-Linux-beta-) and install it.
+
+:warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
 
 
 ### Settings

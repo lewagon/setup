@@ -132,7 +132,7 @@ Once this is done, you can try to install again.
 
 ## Homebrew
 
-Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
+[Homebrew](http://brew.sh/) is a package manager: it's a software used to install other software from the command line. Let's install it!
 
 Open a terminal and run:
 
@@ -394,6 +394,32 @@ Check the emails registered with your GitHub Account. You'll need to pick one at
 gh api user/emails | jq -r '.[].email'
 ```
 
+:heavy_check_mark: If you see the list of your registered emails, you can proceed :+1:
+
+:x: If not, please reauthenticate to GitHub before running this command :point_up: again.
+
+<details>
+  <summary>Authenticate to GitHub</summary>
+  Execute this command in your terminal **without editing the `email`**:
+
+  ```bash
+  gh auth login -s 'user:email' -w
+  ```
+
+  You will get the following output:
+
+  ```bash
+  ! First copy your one-time code: 0EF9-D015
+  - Press Enter to open github.com in your browser...
+  ```
+
+  Select and copy the code (`0EF9-D015` in the example), then press `ENTER`.
+
+  Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
+
+  Come back to the terminal, press `ENTER` again.
+</details>
+
 Run the `git` installer:
 
 ```bash
@@ -638,6 +664,8 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 ### Installation
 
 [Download the Slack app](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) and install it.
+
+:warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
 
 
 ### Settings

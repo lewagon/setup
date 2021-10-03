@@ -343,9 +343,23 @@ When the installation is finished, launch VS Code.
 
 ### Connecting VS Code to Ubuntu
 
-You should see a frame at the bottom-right corner of VS Code saying it detects WSL. Accept the installation of the WSL extension for VS Code.
+To make VS Code interact properly with Ubuntu, let's install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) VS Code extension.
 
-:warning: This extension is mandatory for you to be able to work with VS Code!
+Copy-paste the following commands in your terminal:
+
+```bash
+code --install-extension ms-vscode-remote.remote-wsl
+```
+
+Then open VS Code from your terminal:
+
+```bash
+code .
+```
+
+:heavy_check_mark: If you see `WSL: Ubuntu` in a green box in the bottom left corner of the VS Code window, you're good to go :+1:
+
+:x: Otherwise, please **contact a teacher**
 
 
 ## Windows Terminal
@@ -420,7 +434,7 @@ You can save these changes by pressing `CTRL` + `S`
 
 :heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
-This terminal has tabs: you can choose to open a new terminal tab by clicking on t**+** next to the current one.
+This terminal has tabs: you can choose to open a new terminal tab by clicking on the **+** next to the current one.
 
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
 
@@ -750,6 +764,32 @@ Check the emails registered with your GitHub Account. You'll need to pick one at
 gh api user/emails | jq -r '.[].email'
 ```
 
+:heavy_check_mark: If you see the list of your registered emails, you can proceed :+1:
+
+:x: If not, please reauthenticate to GitHub before running this command :point_up: again.
+
+<details>
+  <summary>Authenticate to GitHub</summary>
+  Execute this command in your terminal **without editing the `email`**:
+
+  ```bash
+  gh auth login -s 'user:email' -w
+  ```
+
+  You will get the following output:
+
+  ```bash
+  ! First copy your one-time code: 0EF9-D015
+  - Press Enter to open github.com in your browser...
+  ```
+
+  Select and copy the code (`0EF9-D015` in the example), then press `ENTER`.
+
+  Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
+
+  Come back to the terminal, press `ENTER` again.
+</details>
+
 Run the `git` installer:
 
 ```bash
@@ -1028,6 +1068,8 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 ### Installation
 
 [Download the Slack app](https://slack.com/downloads/windows) and install it.
+
+:warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
 
 
 ### Settings
