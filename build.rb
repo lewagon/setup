@@ -48,7 +48,7 @@ WINDOWS = %w[
   gh_cli
   ssh_key
   dotfiles
-  windows_ssh
+  ssh_agent
   rbenv
   ruby
   nvm
@@ -74,6 +74,7 @@ UBUNTU = %w[
   gh_cli
   ssh_key
   dotfiles
+  ssh_agent
   rbenv
   ruby
   nvm
