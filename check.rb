@@ -20,6 +20,8 @@ def check(label, &block)
   result, message = yield
   $all_good = $all_good && result
   puts result ? "[OK] #{message}".green : "[KO] #{message}".red
+rescue HTTP::Request::UnsupportedSchemeError
+  puts "Test not available for now..."
 end
 
 def check_all
