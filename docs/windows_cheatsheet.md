@@ -294,8 +294,8 @@ Close this WSL2 tab.
 Open a WSL2 tab, you should be logged in with **your** account. Run the following command (**line per line**):
 
 ```bash
-sudo apt-get update
-sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
+sudo apt update
+sudo apt install -y unzip xvfb libxi6 libgconf-2-4
 ```
 
 We need to act as the `root` session for the next command, so let's login as root (you will be prompted for the `root` password):
@@ -318,8 +318,8 @@ If you are unsure about which session you're logged in with, you can use the `wh
 Let's run the following commands to install Google Chrome binary and ChromeDriver on your WSL2:
 
 ```bash
-sudo apt-get -y update
-sudo apt-get -y install google-chrome-stable
+sudo apt -y update
+sudo apt -y install google-chrome-stable
 wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/chromedriver
