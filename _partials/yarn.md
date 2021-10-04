@@ -14,6 +14,6 @@ Restart your terminal and run the following command:
 yarn -v
 ```
 
-:heavy_check_mark: If you a version, you're good :+1:
+:heavy_check_mark: If you see a version, you're good :+1:
 
 :x: If not, **ask for a teacher**
