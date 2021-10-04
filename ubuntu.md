@@ -248,7 +248,7 @@ gh config set git_protocol ssh
 
 We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password pair.
 
-If you already generated keys that you already use with other services, you can skip this step.
+:warning: If you already generated keys that you already use with other services, you can skip this step.
 
 Open a terminal and copy-paste this command, replacing the email with **yours** (the same one you used to create your GitHub account).
 
