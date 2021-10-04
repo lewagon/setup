@@ -17,7 +17,7 @@ These commands will ask for your password: type it in.
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
 
-### GitHub CLI
+### GitHub CLI installation
 
 Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
