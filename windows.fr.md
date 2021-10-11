@@ -57,7 +57,7 @@ Pour connaître ta version de Windows :
 -   Saisis `winver`
 -   Appuie sur `ENTRÉE`
 
-:heavy\_check\_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10**, c’est bon :+1:
+:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10**, c’est bon :+1:
 
 :x: Si **Windows 10** n’apparaît pas, tu ne pourras pas utiliser cette configuration. Mais pas de panique ! Tu peux toujours passer à Windows 10 :relieved:
 
@@ -80,7 +80,7 @@ Ouvre Windows Update :
 -   Appuie sur `ENTRÉE`
 -   Clique sur « Rechercher les mises à jour »
 
-:heavy\_check\_mark: Si tu vois apparaître une coche verte et le message « Vous êtes à jour », c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître une coche verte et le message « Vous êtes à jour », c’est bon :+1:
 
 :warning: Si tu vois apparaître un point d’exclamation rouge et le message « Mise à jour disponible », installe-la et recommence jusqu’à ce que le message « Vous êtes à jour » apparaisse :loop:
 
@@ -111,7 +111,7 @@ Certains des outils qu’on doit installer sont compatibles avec la version `190
 
 Vérifie le **numéro de version** :
 
-:heavy\_check\_mark: Si la version indique au moins `1903`, c’est bon :+1:
+:heavy_check_mark: Si la version indique au moins `1903`, c’est bon :+1:
 
 :x: S’il s’agit d’une version antérieure, **demande au/à la prof**.
 
@@ -130,7 +130,7 @@ C’est déjà le cas sur de nombreux ordinateurs. Vérifions :
 
 ![Gestionnaire des tâches de Windows](images/windows_task_manager.png)
 
-:heavy\_check\_mark: Si tu vois « Virtualisation : activée », c’est bon :+1:
+:heavy_check_mark: Si tu vois « Virtualisation : activée », c’est bon :+1:
 
 :x: Si la ligne est manquante ou si la virtualisation est désactivée, **demande au/à la prof avant d’essayer d’activer la virtualisation**
 
@@ -150,7 +150,7 @@ On a besoin d’accéder au BIOS / à l’UEFI de l’ordinateur pour activer la
 
 Tu dois activer l’option de virtualisation de ton processeur ici :
 
--   la plupart du temps, dans les paramètres avancés, les paramètres du processeur ou les paramètres Northbridge
+-   La plupart du temps, dans les paramètres avancés, les paramètres du processeur ou les paramètres Northbridge
 -   L’option peut avoir un nom différent en fonction de ton ordinateur :
 
 -   Intel : `Intel VT-x`, `Intel Virtualization Technology`, `Virtualization Extensions`, `Vanderpool`...
@@ -193,7 +193,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-:heavy\_check\_mark: Si les trois commandes s’exécutent sans erreur, redémarre ton ordinateur et suis les instructions ci-dessous :+1:
+:heavy_check_mark: Si les trois commandes s’exécutent sans erreur, redémarre ton ordinateur et suis les instructions ci-dessous :+1:
 
 :x: Si tu obtiens un message d’erreur (ou si tu vois apparaître du texte en rouge dans la fenêtre), **demande au/à la prof**
 
@@ -209,7 +209,7 @@ Une fois que ton ordinateur a redémarré, on doit télécharger le programme d�
 
 ![Mettre à jour WSL de la version 1 à 2](images/windows_update_wsl.png)
 
-:heavy\_check\_mark: Si tu ne rencontres aucun message d’erreur, c’est bon :+1:
+:heavy_check_mark: Si tu ne rencontres aucun message d’erreur, c’est bon :+1:
 
 :x: Si tu obtiens l’erreur « Cette mise à jour s’applique seulement aux machines avec le sous-système Windows pour Linux », **fais un clic droit** sur le programme et sélectionne `uninstall` ; tu devrais pouvoir l’installer normalement cette fois-ci.
 
@@ -227,7 +227,7 @@ Dans la fenêtre qui apparaît, saisis :
 wsl --set-default-version 2
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître « Opération terminée avec succès », tu peux fermer ce terminal et suivre les instructions ci-dessous :+1:
+:heavy_check_mark: Si tu vois apparaître « Opération terminée avec succès », tu peux fermer ce terminal et suivre les instructions ci-dessous :+1:
 
 :x: Si le message qui s’affiche concerne la virtualisation, **demande au/à la prof**
 
@@ -298,7 +298,7 @@ Saisis la commande suivante :
 wsl -l -v
 ```
 
-:heavy\_check\_mark: Si la version de WSL sous Ubuntu est la 2, c’est bon. :+1:
+:heavy_check_mark: Si la version de WSL sous Ubuntu est la 2, c’est bon. :+1:
 
 :x: Si la version de WSL sous Ubuntu est la 1, il va falloir passer à la version 2.
 
@@ -309,7 +309,7 @@ Dans la fenêtre d’invite de commande, saisis :
 
 `bash wsl --set-version Ubuntu 2`
 
-:heavy\_check\_mark: Au bout de quelques secondes, tu devrais voir apparaître le message suivant : `The conversion is complete`.
+:heavy_check_mark: Au bout de quelques secondes, tu devrais voir apparaître le message suivant : `The conversion is complete`.
 
 :x: Si ce n’est pas le cas, il faut vérifier que les fichiers Ubuntu ne sont pas compressés.
 </details>
@@ -369,7 +369,7 @@ Le terminal standard installé par Ubuntu est très rudimentaire ; on va instal
 -   **Sélectionne Windows Terminal**
 -   Clique sur `Install`
 
-:warning: N’installe PAS **Windows Terminal Preview**, uniquement \*\*Windows Terminal\* !
+:warning: N’installe PAS **Windows Terminal Preview**, uniquement **Windows Terminal** !
 
 <details>
  <summary>Désinstaller la mauvaise version de Windows Terminal</summary>
@@ -429,11 +429,11 @@ On va ensuite désactiver les avertissements pour les commandes de copier-coller
 
 Tu peux enregistrer ces modifications en appuyant sur `CTRL` + `S`
 
-:heavy\_check\_mark: Ton **Windows Terminal** est maintenant configuré :+1:
+:heavy_check_mark: Ton **Windows Terminal** est maintenant configuré :+1:
 
-Ce terminal a des onglets ; tu peux choisir d’ouvrir un nouvel onglet de terminal en cliquant sur t**+** à côté de l’onglet actuel.
+Ce terminal a des onglets ; tu peux choisir d’ouvrir un nouvel onglet de terminal en cliquant sur **+** à côté de l’onglet actuel.
 
-**Désormais, chaque fois qu’on fera référence au terminal ou à la console, il s’agira de celui-ci.**N’utilise PLUS l’application Ubuntu.
+**Désormais, chaque fois qu’on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS l’application Ubuntu.
 
 Extensions VS Code
 ------------------
@@ -522,7 +522,7 @@ Pour vérifier que `gh` a bien été installé sur ta machine, tu peux exécuter
 gh --version
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
@@ -554,7 +554,7 @@ Si tu vois apparaître la question « Voulez-vous remplacer le shell par défau
 
 ![Terminal Ubuntu avec OhMyZsh](images/oh_my_zsh.png)
 
-:heavy\_check\_mark: Si c’est le cas, tu peux continuer :+1:
+:heavy_check_mark: Si c’est le cas, tu peux continuer :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -607,15 +607,15 @@ Exécute la commande :
 
 Redémarre ton terminal.
 
-Puis vérifie que la commande suivante renvoie « Navigateur défini ðŸ‘Œ" :
+Puis vérifie que la commande suivante renvoie « Navigateur défini 👌" :
 
-``` {.bash}
-[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable âš ï¸�" || echo "Browser defined ðŸ‘Œ"
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
 ```
 
 Si ce n’est pas le cas,
 
-:heavy\_check\_mark: Si tu vois apparaître ce message, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître ce message, tu peux continuer :+1:
 
 :x: Sinon, choisis un navigateur dans la liste ci-dessus et exécute la commande correspondante. N’oublie pas de fermer ton terminal et de le rouvrir. N’hésite pas à **demander au/à la prof**.
 
@@ -655,7 +655,7 @@ Pour vérifier que tu es bien connecté·e, saisis :
 gh auth status
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
@@ -704,7 +704,7 @@ De retour dans le terminal, appuie sur `ENTRÉE` et exécute la commande suivant
 gh ssh-key add ~/.ssh/id_ed25519.pub
 ```
 
-Tu devrais voir apparaître `âœ“ Public key added to your account`. Si ce n’est pas le cas, n’hésite pas à **demander au/à la prof**.
+Tu devrais voir apparaître `✓ Public key added to your account`. Si ce n’est pas le cas, n’hésite pas à **demander au/à la prof**.
 
 Dotfiles (configuration standard)
 ---------------------------------
@@ -724,7 +724,7 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-:heavy\_check\_mark: Tu devrais voir apparaître ton nom d’utilisateur GitHub.
+:heavy_check_mark: Tu devrais voir apparaître ton nom d’utilisateur GitHub.
 
 :x: Si ce n’est pas le cas, **arrête-toi ici** et demande de l’aide. Il se peut que tu aies rencontré un problème à l’étape précédente (`gh auth`).
 
@@ -782,7 +782,7 @@ La liste doit ressembler à ça :
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy\_check\_mark: Enregistre le fichier `.zshrc` à l’aide des touches `CTRL` + `S` et ferme ton éditeur de texte.
+:heavy_check_mark: Enregistre le fichier `.zshrc` à l’aide des touches `CTRL` + `S` et ferme ton éditeur de texte.
 
 rbenv
 -----
@@ -842,7 +842,7 @@ Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
 ruby -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître un message commençant par `ruby 2.7.4p`, tu peux continuer +1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 2.7.4p`, tu peux continuer +1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -873,7 +873,7 @@ Copie-colle la commande suivante dans ton terminal :
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
 
 :x: Si tu obtiens l’erreur suivante :
 
@@ -924,7 +924,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `v14.15`, l’installation a réussi :+1:
+:heavy_check_mark: Si tu vois apparaître `v14.15`, l’installation a réussi :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -945,7 +945,7 @@ Redémarre ton terminal et exécute la commande suivante :
 yarn -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître une version, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître une version, c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -986,7 +986,7 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 Ouvre un nouveau terminal.
 
-:heavy\_check\_mark: Si tu vois apparaître le message `* Starting PostgreSQL 12 database server`, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître le message `* Starting PostgreSQL 12 database server`, c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
@@ -1014,9 +1014,9 @@ Si tu n’es pas certain·e de ce que tu dois faire, suis [ce lien](https://kitt
 
 Inscris-toi en tant qu’alumni du Wagon sur [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Sélectionne ton batch, connecte-toi avec GitHub et renseigne toutes tes informations.
 
-Ton prof vérifiera ensuite avec toi que tu fais bien partie de ce batch. Tu peux lui demander de vérifier dès que tu as fini de remplir le formulaire d’inscription.
+Ton/Ta prof vérifiera ensuite avec toi que tu fais bien partie de ce batch. Tu peux lui demander de vérifier dès que tu as fini de remplir le formulaire d’inscription.
 
-Une fois que le prof a vérifié ton profil, consulte ta messagerie. Tu devrais avoir reçu 2 e-mails :
+Une fois que le/la prof a vérifié ton profil, consulte ta messagerie. Tu devrais avoir reçu 2 e-mails :
 
 -   un de Slack, t’invitant à rejoindre la communauté Slack des anciens étudiants du Wagon (où tu pourras discuter avec tes amis et tous les anciens élèves). Clique sur **Devenir membre** et renseigne toutes les informations ;
 -   un de GitHub, t’invitant à rejoindre l’équipe `lewagon`. **Accepte** pour accéder aux cours.
@@ -1048,7 +1048,7 @@ On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta c
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)
 
-:heavy\_check\_mark: Une fois le test terminé, tu devrais voir apparaître des messages de succès en vert, au moins pour ton micro et ta caméra. :+1:
+:heavy_check_mark: Une fois le test terminé, tu devrais voir apparaître des messages de succès en vert, au moins pour ton micro et ta caméra. :+1:
 
 :x: Sinon, **demande au/à la prof**.
 

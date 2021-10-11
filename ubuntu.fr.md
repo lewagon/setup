@@ -15,7 +15,7 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
 -   Va sur [<https://zoom.us/download>](https://zoom.us/download)
--   Sous **Client Zoom**, clique sur le bouton \*\*Télécharger\*
+-   Sous **Client Zoom**, clique sur le bouton **Télécharger**
 -   Ouvre le fichier que tu viens de télécharger pour installer l’application
 -   Ouvre l’application Zoom
 -   Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants
@@ -70,7 +70,7 @@ On va maintenant lancer VS Code depuis **le terminal** :
 code
 ```
 
-:heavy\_check\_mark: Si une fenêtre VS Code s’ouvre, c’est bon. :+1:
+:heavy_check_mark: Si une fenêtre VS Code s’ouvre, c’est bon. :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
@@ -161,7 +161,7 @@ Pour vérifier que `gh` a bien été installé sur ta machine, tu peux exécuter
 gh --version
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
@@ -193,7 +193,7 @@ Si tu vois apparaître la question « Voulez-vous remplacer le shell par défau
 
 ![Terminal Ubuntu avec OhMyZsh](images/oh_my_zsh.png)
 
-:heavy\_check\_mark: Si c’est le cas, tu peux continuer :+1:
+:heavy_check_mark: Si c’est le cas, tu peux continuer :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -233,7 +233,7 @@ Pour vérifier que tu es bien connecté·e, saisis :
 gh auth status
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
@@ -302,7 +302,7 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-:heavy\_check\_mark: Tu devrais voir apparaître ton nom d’utilisateur GitHub.
+:heavy_check_mark: Tu devrais voir apparaître ton nom d’utilisateur GitHub.
 
 :x: Si ce n’est pas le cas, **arrête-toi ici** et demande de l’aide. Il se peut que tu aies rencontré un problème à l’étape précédente (`gh auth`).
 
@@ -396,7 +396,7 @@ Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
 ruby -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître un message commençant par `ruby 2.7.4p`, tu peux continuer +1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 2.7.4p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -427,7 +427,7 @@ Copie-colle la commande suivante dans ton terminal :
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
 
 :x: Si tu obtiens l’erreur suivante :
 
@@ -478,7 +478,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître `v14.15`, l’installation a réussi :+1:
+:heavy_check_mark: Si tu vois apparaître `v14.15`, l’installation a réussi :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -499,7 +499,7 @@ Redémarre ton terminal et exécute la commande suivante :
 yarn -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître une version, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître une version, c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -544,9 +544,9 @@ Si tu n’es pas certain·e de ce que tu dois faire, suis [ce lien](https://kitt
 
 Inscris-toi en tant qu’alumni du Wagon sur [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Sélectionne ton batch, connecte-toi avec GitHub et renseigne toutes tes informations.
 
-Ton prof vérifiera ensuite avec toi que tu fais bien partie de ce batch. Tu peux lui demander de vérifier dès que tu as fini de remplir le formulaire d’inscription.
+Ton/ta prof vérifiera ensuite avec toi que tu fais bien partie de ce batch. Tu peux lui demander de vérifier dès que tu as fini de remplir le formulaire d’inscription.
 
-Une fois que le prof a vérifié ton profil, consulte ta messagerie. Tu devrais avoir reçu 2 e-mails :
+Une fois que le/la prof a vérifié ton profil, consulte ta messagerie. Tu devrais avoir reçu 2 e-mails :
 
 -   un de Slack, t’invitant à rejoindre la communauté Slack des anciens étudiants du Wagon (où tu pourras discuter avec tes amis et tous les anciens élèves). Clique sur **Devenir membre** et renseigne toutes les informations ;
 -   un de GitHub, t’invitant à rejoindre l’équipe `lewagon`. **Accepte** pour accéder aux cours.
@@ -576,7 +576,7 @@ On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta c
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)
 
-:heavy\_check\_mark: Une fois le test terminé, tu devrais voir apparaître des messages de succès en vert, au moins pour ton micro et ta caméra. :+1:
+:heavy_check_mark: Une fois le test terminé, tu devrais voir apparaître des messages de succès en vert, au moins pour ton micro et ta caméra. :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
