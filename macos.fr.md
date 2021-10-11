@@ -15,7 +15,7 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
 -   Va sur [<https://zoom.us/download>](https://zoom.us/download)
--   Sous **Client Zoom**, clique sur le bouton \*\*Télécharger\*
+-   Sous **Client Zoom**, clique sur le bouton **Télécharger**
 -   Ouvre le fichier que tu viens de télécharger pour installer l’application
 -   Ouvre l’application Zoom
 -   Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants
@@ -57,12 +57,12 @@ Copie-colle la commande suivante dans le terminal et appuie sur `ENTRÉE` pour l
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
 ```
 
-â˜�ï¸� Le résultat de la commande devrait t’indiquer si ton ordinateur utilise Apple Silicon.
+☝️ Le résultat de la commande devrait t’indiquer si ton ordinateur utilise Apple Silicon.
 
 Si ton ordinateur utilise Apple Silicon, affiche et lis le paragraphe ci-dessous. Sinon, n’en tiens pas compte.
 
 <details>
- <summary>ðŸ‘‰Â Â Setup for Apple Silicon ðŸ‘ˆ</summary>
+ <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
 
 ### Désinstaller Homebrew
 
@@ -86,7 +86,7 @@ Duplique l’application Terminal (sélectionne-la, puis `CMD` + `C`, `CMD` + `V
 
 Appuie sur `CMD` + `I` sur l’application Terminal Rosetta, puis coche la case « Ouvrir avec Rosetta ».
 
-âš ï¸� À partir de maintenant, et pendant tout le bootcamp, quand on te demandera d’ouvrir un terminal, il faudra utiliser l’application **Terminal Rosetta**.
+⚠️ À partir de maintenant, et pendant tout le bootcamp, quand on te demandera d’ouvrir un terminal, il faudra utiliser l’application **Terminal Rosetta**.
 
 </details>
 
@@ -133,7 +133,7 @@ Une fois la mise à jour effectuée, réessaie d’installer le logiciel.
 Homebrew
 --------
 
-Homebrew](<http://brew.sh/>) est un gestionnaire de paquets : un logiciel servant à installer d’autres logiciels à partir de la ligne de commande. On va l’installer.
+[Homebrew](http://brew.sh/) est un gestionnaire de paquets : un logiciel servant à installer d’autres logiciels à partir de la ligne de commande. On va l’installer.
 
 Ouvre un terminal et exécute :
 
@@ -351,7 +351,7 @@ De retour dans le terminal, appuie sur `ENTRÉE` et exécute la commande suivant
 gh ssh-key add ~/.ssh/id_ed25519.pub
 ```
 
-Tu devrais voir apparaître `âœ“ Public key added to your account`. Si ce n’est pas le cas, n’hésite pas à **demander au/à la prof**.
+Tu devrais voir apparaître `✓ Public key added to your account`. Si ce n’est pas le cas, n’hésite pas à **demander au/à la prof**.
 
 Dotfiles (configuration standard)
 ---------------------------------
@@ -671,9 +671,9 @@ Paramètres macOS
 
 ### Sécurité
 
-Tu dois obligatoirement protéger ta session avec un mot de passe. Si ce n’est pas déjà le cas, va à `ï£¿ > System Preferences > Users & Groups` et modifie le mot de passe de ton compte. Va aussi à `ï£¿ > System Preferences > Security > General` et configure la sécurité de façon à ce que ton mot de passe te soit demandé `5 secondes` après la mise en veille ou le démarrage de l’économiseur d’écran.
+Tu dois obligatoirement protéger ta session avec un mot de passe. Si ce n’est pas déjà le cas, va à ` > System Preferences > Users & Groups` et modifie le mot de passe de ton compte. Va aussi à `ï£¿ > System Preferences > Security > General` et configure la sécurité de façon à ce que ton mot de passe te soit demandé `5 secondes` après la mise en veille ou le démarrage de l’économiseur d’écran.
 
-Tu peux également aller à `ï£¿ > System Preferences > Mission Control` et cliquer sur le bouton `Hot Corners` en bas à gauche. Choisis le coin inférieur droit pour démarrer l’économiseur d’écran. De cette façon, lorsque tu quitteras ton bureau, tu pourras rapidement verrouiller ton écran en plaçant ta souris dans le coin inférieur droit. Cinq secondes plus tard, ton Mac sera verrouillé et tu devras fournir ton mot de passe pour accéder à ta session.
+Tu peux également aller à ` > System Preferences > Mission Control` et cliquer sur le bouton `Hot Corners` en bas à gauche. Choisis le coin inférieur droit pour démarrer l’économiseur d’écran. De cette façon, lorsque tu quitteras ton bureau, tu pourras rapidement verrouiller ton écran en plaçant ta souris dans le coin inférieur droit. Cinq secondes plus tard, ton Mac sera verrouillé et tu devras fournir ton mot de passe pour accéder à ta session.
 
 ### Clavier
 
@@ -681,11 +681,11 @@ Au fur et à mesure de ta formation de programmeur, tu comprendras que quitter l
 
 ### Vitesse du clavier
 
-Va à ï£¿ \> Préférences système \> Clavier. Définis `Répétition de touches` sur la position la plus rapide (à droite) et `Pause avant répétition` sur la position la plus courte (à droite).
+Va à  > Préférences système > Clavier. Définis `Répétition de touches` sur la position la plus rapide (à droite) et `Pause avant répétition` sur la position la plus courte (à droite).
 
 ### Accès complet au clavier
 
-Va à ï£¿ \> Préférences système \> Clavier. Clique sur le troisième onglet (Raccourcis). En bas de la fenêtre, clique sur le bouton radio `tous les contrôles`. De cette façon, lorsque tu verras apparaître une popup avec plusieurs options, tu pourras saisir `ENTRÉE` pour confirmer ou `SPACE` pour annuler. Si tu as plus de deux options, tu peux utiliser la touche de tabulation pour aller et venir entre elles.
+Va à  > Préférences système > Clavier. Clique sur le troisième onglet (Raccourcis). En bas de la fenêtre, clique sur le bouton radio `tous les contrôles`. De cette façon, lorsque tu verras apparaître une popup avec plusieurs options, tu pourras saisir `ENTRÉE` pour confirmer ou `SPACE` pour annuler. Si tu as plus de deux options, tu peux utiliser la touche de tabulation pour aller et venir entre elles.
 
 ### macOS pour les hackers
 
