@@ -607,7 +607,7 @@ Exécute la commande :
 
 Redémarre ton terminal.
 
-Puis vérifie que la commande suivante renvoie « Navigateur défini 👌" :
+Puis vérifie que la commande suivante renvoie « Navigateur défini 👌 » :
 
 ```bash
 [ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
