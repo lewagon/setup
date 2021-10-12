@@ -8,4 +8,6 @@
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-它应该会告诉你，你的工作台是否已经正确的设置好了 ：）如果没有的话，问一下你的老师。
+:check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
+
+如果没有的话，问一下你的老师。
