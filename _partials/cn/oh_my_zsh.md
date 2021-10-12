@@ -1,19 +1,19 @@
 ## Oh-my-zsh
 
-Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
+让我们一起安装`zsh`插件[Oh My Zsh](https://ohmyz.sh/).
 
-In a terminal execute the following command:
+在终端terminal里执行以下指令：
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-If asked "Do you want to change your default shell to zsh?", press `Y`
+如果终端里出现询问"Do you want to change your default shell to zsh?", 可以输入`Y`
 
-At the end your terminal should look like this:
+在你的终端的最后，你会看到以下内容:
 
 ![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
 
-:heavy_check_mark: If it does, you can continue :+1:
+:heavy_check_mark: 如果你的终端成功显示了上面，你就可以继续下一步了:+1:
 
-:x: Otherwise, please **ask for a teacher**
+:x: 如果安装失败的话，请询问**你的老师**

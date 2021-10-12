@@ -1,21 +1,21 @@
-## Visual Studio Code
+## Visual Studio Code (VS Code)
 
-### Installation
+### 安装
 
-Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
+让我们一起安装[Visual Studio Code](https://code.visualstudio.com)代码编辑器。 
 
-Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`):
+复制(`CMD` + `C`)下面的指令，并粘贴(`CMD` + `V`)到终端Terminal里:
 
 ```bash
 brew install --cask visual-studio-code
 ```
 
-Then launch VS Code by running the following command in your terminal:
+然后在终端使用下方指令启动VS Code:
 
 ```bash
 code
 ```
 
-:heavy_check_mark: If a VS Code window has just opened, you're good to go :+1:
+:heavy_check_mark: 如果一个VS Code窗口被打开，那么你就准备好继续下一步了:+1:
 
-:x: Otherwise, please **contact a teacher**
+:x: 如果没有成功打开的话，**请联系你的老师**
