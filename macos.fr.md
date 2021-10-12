@@ -464,7 +464,7 @@ Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
 ruby -v
 ```
 
-:heavy\_check\_mark: Si tu vois apparaître un message commençant par `ruby 2.7.4p`, tu peux continuer +1:
+:heavy\_check\_mark: Si tu vois apparaître un message commençant par `ruby 2.7.4p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au/à la prof**
 
@@ -613,7 +613,7 @@ Quitte toutes les fenêtres Terminal ouvertes, ouvres-en une nouvelle et exécut
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check\_mark: Si tu vois apparaître en vert `Awesome! Your computer is now ready!`, c’est bon :+1:
+:check_mark: Si tu vois apparaître en vert `Awesome! Your computer is now ready!`, c’est bon :+1:
 
 :x: Sinon, **demande au/à la prof**.
 
