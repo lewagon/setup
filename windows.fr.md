@@ -1,7 +1,7 @@
 Instructions de configuration
 =============================
 
-Les instructions ci-dessous vont te permettre de configurer ton ordinateur pour [la formation Développement Web du Wagon] (https://www.lewagon.com/web-development-course/full-time)
+Les instructions ci-dessous vont te permettre de configurer ton ordinateur pour [la formation Développement Web du Wagon](https://www.lewagon.com/web-development-course/full-time)
 
 **Lis-les attentivement et exécute toutes les commandes dans l’ordre suivant**. Si tu es bloqué·e, n’hésite pas à demander au/à la prof :raising\_hand:
 
@@ -340,7 +340,7 @@ Visual Studio Code
 
 On va maintenant installer l’éditeur de texte [Visual Studio Code](https://code.visualstudio.com).
 
--   Va sur la [page de téléchargement de Visual Studio Code] (https://code.visualstudio.com/download).
+-   Va sur la [page de téléchargement de Visual Studio Code](https://code.visualstudio.com/download).
 -   Clique sur le bouton « Windows »
 -   Ouvre le fichier que tu viens de télécharger.
 -   Installe-le avec peu d’options :
@@ -401,7 +401,7 @@ pour ouvrir les paramètres du terminal :
 
 La partie à modifier est entourée en rouge.
 
-[Fichier de paramètres JSON de Windows Terminal] (images/windows\_terminal\_settings\_json.png)
+[Fichier de paramètres JSON de Windows Terminal](images/windows\_terminal\_settings\_json.png)
 
 On va commencer par demander à Ubuntu de démarrer directement dans ton répertoire personnel Ubuntu au lieu du répertoire Windows :
 
