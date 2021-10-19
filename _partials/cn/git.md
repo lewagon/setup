@@ -1,32 +1,46 @@
 ## Git
 
-安装`git`：
+### 安装
 
+[`git`](https://git-scm.com/)是一个用来进行版本控制的命令行软件。
 
+安装`git`:
 - 打开Ubuntu终端
 - 复制粘贴下面的命令：
 
-
 ```bash
 sudo apt update
+sudo apt install -y git
 ```
-```bash
-sudo apt install -y git apt-transport-https unzip gnome-terminal
-````
 
-现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。运行以下代码:
+这些指令会问你的密码：输入你的密码。
+
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+
+### 安装GitHub CLI
+
+现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。这是一个用来在终端里和你的GitHub账户交互的一个软件。
+
+在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
+```
+
+然后复制粘贴下面的指令：
+
+```bash
 sudo apt install -y gh
 ```
 
-运行以下的命令，来检查`gh`是否成功安装了：
+你可以运行以下的命令，来检查`gh`是否成功安装了：
 
 ```bash
 gh --version
 ```
 
-如果这行命令没有提示`gh version X.Y.Z (YYYY-MM-DD)`，且版本（version）大于等于1.4 ，请参考[这个文档](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources)：这里面有故障排查的方法。如果有困惑，问问老师。
+:heavy_check_mark: 如果你看到了`gh version X.Y.Z (YYYY-MM-DD)`，你就可以继续下一步啦！:+1:
+
+:x: 如果没有看到话，**问问老师**。
