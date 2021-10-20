@@ -1,13 +1,10 @@
 # 电脑设置教程
 
-以下的教程将会帮助你为接下来在[Le Wagon](http://www.lewagon.org) 全栈开发训练营中做好准备：
+以下的教程将会帮助你为接下来在[Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)全栈开发训练营中做好准备：
 
-- 获取一个文本编辑器，这里将会是你日日夜夜花时间的地方
-- 安装一个软件包管理器
-- 装扮你的终端
-- 配置git和GitHub
-- 安装Ruby
+请**仔细阅读并按顺序执行指令**。如果你在哪一步卡住了，不用犹豫，可以举手咨询老师:raising_hand:
 
+让我们开始吧 :rocket:
 
 ## Zoom
 
@@ -41,36 +38,50 @@
 
 ## Git
 
-安装`git`：
+### 安装
 
+[`git`](https://git-scm.com/)是一个用来进行版本控制的命令行软件。
 
+安装`git`:
 - 打开Ubuntu终端
 - 复制粘贴下面的命令：
 
-
 ```bash
 sudo apt update
+sudo apt install -y git
 ```
-```bash
-sudo apt install -y git apt-transport-https unzip gnome-terminal
-````
 
-现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。运行以下代码:
+这些指令会问你的密码：输入你的密码。
+
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+
+### 安装GitHub CLI
+
+现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。这是一个用来在终端里和你的GitHub账户交互的一个软件。
+
+在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
 
 ```bash
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
+```
+
+然后复制粘贴下面的指令：
+
+```bash
 sudo apt install -y gh
 ```
 
-运行以下的命令，来检查`gh`是否成功安装了：
+你可以运行以下的命令，来检查`gh`是否成功安装了：
 
 ```bash
 gh --version
 ```
 
-如果这行命令没有提示`gh version X.Y.Z (YYYY-MM-DD)`，且版本（version）大于等于1.4 ，请参考[这个文档](https://github.com/cli/cli/blob/trunk/docs/install_linux.md#official-sources)：这里面有故障排查的方法。如果有困惑，问问老师。
+:heavy_check_mark: 如果你看到了`gh version X.Y.Z (YYYY-MM-DD)`，你就可以继续下一步啦！:+1:
+
+:x: 如果没有看到话，**问问老师**。
 
 
 ## zsh
@@ -111,7 +122,11 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 
 在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以从终端链接GitHub的数据，执行一些有用的动作。
 
-之前执行的命令应该已经安装了GitHub CLI。首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
+之前执行的命令应该已经安装了GitHub CLI。
+
+首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
+
+:warning: **不要更改下面指令中的`email`**
 
 ```bash
 gh auth login -s 'user:email' -w
@@ -125,7 +140,11 @@ gh auth login -s 'user:email' -w
 - Press Enter to open github.com in your browser...
 ```
 
-复制那段验证码（code）(在上面的例子中是`0EF9-D015` ），然后敲击`Enter`。你的浏览器就会打开一个页面让你授权GitHub CLI使用你的GitHub账号。同意，并等待一会儿。回到终端，再次敲击`回车`，然后就应该好啦:tada:
+复制那段验证码（code）(在上面的例子中是`0EF9-D015` ），然后敲击`Enter`。
+
+你的浏览器就会打开一个页面让你授权GitHub CLI使用你的GitHub账号。同意，并等待一会儿。
+
+回到终端，再次敲击`回车`，然后就应该好啦:tada:
 
 检查一下你有没有链接好：
 
@@ -133,22 +152,15 @@ gh auth login -s 'user:email' -w
 gh auth status
 ```
 
-如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。如果没有，**问问老师**。
+如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。
+
+:x: 如果没有，**问问老师**。
 
 然后运行下面的配置命令:
 
 ```bash
 gh config set git_protocol ssh
 ```
-
-最后，新建一个[gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists)来确保`gh` 可以正常运作：
-
-```bash
-echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
-```
-
-这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
-
 
 ## GitHub
 
@@ -435,7 +447,8 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 如果没有的话，问一下你的老师。
 
 
-## 校友
+## Kitt
+
 :warning: 如果你已经收到了一封来自Le Wagon邀请你去注册Kitt(我们的学习平台)的邮件并且你也注册完成了的话，你可以安全的跳过这一章节。如果你还没有注册完成的话，请跟随邮件里的教程，完成注册。
 
 如果你不确定你要做什么，可以查看[这个链接](https://kitt.lewagon.com/)。如果你已经登录了的话，你可以跳过这个章节。如果你没有登录的话，你需要点击`Enter Kitt as a Student`。如果你可以成功的登录，你也可以安全的跳过这一步。不然的话，你可以询问一下老师你是否有收到过相关的邮件，或者直接跟着执行下面的教程。
