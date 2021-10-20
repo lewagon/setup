@@ -4,7 +4,7 @@
 
 你可以从Applications > Utilities或者在[Spotlight](https://support.apple.com/en-gb/HT204014)里面搜索：
 
-![Open Terminal on macOS](images/macos_open_terminal.png)
+![macOS打开终端](images/macos_open_terminal.png)
 
 复制粘贴以下的指令到终端里并按`Enter`来执行这段指令。
 

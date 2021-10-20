@@ -4,7 +4,7 @@
 
 我们需要启动程序，右键点击，打开菜单栏并选择“选项”（Options），然后选择“保留在Dock上”（Keep in Dock）。
 
-![How to pin an app to the dock in macOS](images/macos_dock.png)
+![如何在macOS中将应用程序固定在Dock上](images/macos_dock.png)
 
 你一定要固定以下应用程序:
 - 你的终端
