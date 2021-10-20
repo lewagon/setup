@@ -1,6 +1,10 @@
 ## PostgreSQL
 
-几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。让我们现在一起安装它。
+几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。
+
+让我们现在一起安装它。
+
+运行下方指令：
 
 ```bash
 brew install postgresql
@@ -16,7 +20,7 @@ psql -d postgres
 如果你进入到了一个像下方这个，一个新的输入框的话，那么说明你的PostgreSQL已经安装好啦！
 
 ```bash
-psql (12.5)
+psql (13.3)
 Type "help" for help.
 
 postgres=#
