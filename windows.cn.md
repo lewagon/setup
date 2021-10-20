@@ -647,7 +647,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 在你的终端的最后，你会看到以下内容:
 
-![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
+![带有OhMyZsh的Ubuntu终端](images/oh_my_zsh.png)
 
 :heavy_check_mark: 如果你的终端成功显示了上面，你就可以继续下一步了:+1:
 
@@ -874,20 +874,27 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 现在**退出**你刚打开的所有终端窗口。
 
 
+## 禁用SSH密码输入
+
 每次跟远程的代码库交流的时候都问你要密码是件很烦的事。所以呀，你需要给`oh my zsh`加上一个`ssh-agent`插件：
 
+首先，打开`.zshrc`文件：
 
+```bash
+code ~/.zshrc
+```
+
+然后：
 - 找到`plugins=`开始的这一行
 - 在插件（plugin）列表里加上`ssh-agent`
 
 这个列表现在看起来应该是这样的：
 
 ```
-plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search ssh-agent)
+plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy_check_mark: 按下`Ctrl` + `S` 保存`.zshrc`文件，然后关掉Visual Code Studio。
-
+:heavy_check_mark: 按下`Ctrl` + `S` 保存`.zshrc`文件，然后关掉你的代码编辑器。
 
 ## rbenv
 
@@ -921,7 +928,11 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 如果你收到了一个警告，就请先**忽略**它（Ruby还没有安装好）。
 
 
-现在，你已经准备好了去安装最新Ruby版本并把它设置为默认版本。
+## Ruby
+
+### 安装
+
+现在，你已经准备好了去安装最新[ruby](https://www.ruby-lang.org/en/)版本并把它设置为默认版本。
 
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
@@ -941,17 +952,14 @@ rbenv global 2.7.4
 ruby -v
 ```
 
-你应该会看到`ruby 2.7.4p`。如果没有的话，询问一下老师。
+:heavy_check_mark: 如果你有看到`ruby 2.7.4p`，那么你可以继续下一步+1:
 
-## 安装一些gems
+:x: 如果没有的话，**询问一下老师**。
 
----
+### 安装一些gems
 
 <details>
   <summary>点击这里，如果你在 :cn: <bold>中国</bold>的话</summary>
-
-
-  &nbsp;
 
   :warning: 如果你在中国的话，你应该使用以下命令来安装gem。
 
@@ -966,21 +974,23 @@ gem sources -l
 ```
 </details>
 
----
+在ruby的世界里，我们将外部的库称之为`gems`：他们是一些你可以下载并在你的电脑上运行的ruby代码。让我们一起安装一些!
 
-无论你是不是在中国，请都运行下面的指令：
+在你的终端里，复制粘贴下面的指令：
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
 ```
 
-如果你遇到了以下的报错：
+:heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
 
-`
+:x: 如果你遇到了以下的报错：
+
+```bash
 ERROR: While executing gem ... (TypeError)
 incompatible marshal file format (can't be read)
 format version 4.8 required; 60.33 given
-`
+```
 
 运行以下的指令：
 
@@ -990,13 +1000,17 @@ rm -rf ~/.gemrc
 
 然后，重新运行安装gems的指令。
 
-**永远不要**使用`sudo gem install`来安装一个gem！即使你偶然发现了一个网络上的答案（或者终端提示）叫你这么做。
+:warning: **永远不要**使用`sudo gem install`来安装一个gem！即使你偶然发现了一个网络上的答案（或者终端提示）叫你这么做。
 
 
-## Node (使用[nvm](https://github.com/nvm-sh/nvm))
+## Node.js
+
+[Node.js](https://nodejs.org/en/)是一个JavaScript运行环境以在终端运行JavaScript代码。让我们一起用[nvm](https://github.com/nvm-sh/nvm)，一个Node.js的版本管理器，来安装Node.js。
+
+在终端里，运行以下指令：
 
 ```bash
-curl -o- https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_nvm.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
 ```
 
 重启你的终端并执行下方指令：
@@ -1010,7 +1024,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15.0
+nvm install 14.15
 ```
 
 当这个指令执行结束之后，运行：
@@ -1019,7 +1033,9 @@ nvm install 14.15.0
 node -v
 ```
 
-你应该会看到`v14.15.0`。如果没有的话，问一下你的老师。
+:heavy_check_mark: 如果看到`v14.15.0`，那么你安装成功了:+1:。
+
+:x: 如果没有的话，**问一下你的老师**。
 
 
 ## yarn
@@ -1120,7 +1136,7 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 ![](images/slack_mic_cam_all_green.png)
 
 
-### 设置Slack
+### 设置
 
 打开Slack应用程序并登入`lewagon-alumni`组织。
 
