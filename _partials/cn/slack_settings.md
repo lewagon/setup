@@ -1,4 +1,4 @@
-### 设置Slack
+### 设置
 
 打开Slack应用程序并登入`lewagon-alumni`组织。
 
