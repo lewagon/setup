@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 在你的终端的最后，你会看到以下内容:
 
-![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
+![带有OhMyZsh的Ubuntu终端](images/oh_my_zsh.png)
 
 :heavy_check_mark: 如果你的终端成功显示了上面，你就可以继续下一步了:+1:
 
