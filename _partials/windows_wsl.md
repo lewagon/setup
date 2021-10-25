@@ -1,8 +1,43 @@
 ## Windows Subsystem for Linux
 
+<details>
+  <summary>Windows 11</summary>
+  
+ ### Install WSL
+  
+WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
+
+We will install WSL through the PowerShell Terminal:
+
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
+
+- Press `Windows` + `R`
+- Type  `powershell`
+- Press **`Ctrl` + `Shift` + `Enter`**
+
+:warning: You may have to accept the UAC confirmation about the privilege elevation.
+
+A blue terminal window will appear:
+
+- Copy the following command (`CTRL` + `C`)
+- Paste them into the PowerShell window (`CTRL` + `V` or by right-clicking in the window)
+- Run them by pressing `Enter`
+  
+  ```powershell
+  wsl --install
+  ```
+  
+ Restart your computer to finish the WSL installation on Windows 11
+
+</details>
+
+
+<details>
+  <summary>Windows 10</summary>
+
 ### Install WSL 1
 
-WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
+WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq) .
 
 We will install WSL through the PowerShell Terminal:
 
@@ -79,4 +114,6 @@ wsl --set-default-version 2
   <summary>Enable Hyper-V Windows feature</summary>
 
   Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
+</details>
+
 </details>
