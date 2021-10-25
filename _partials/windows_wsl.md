@@ -37,7 +37,7 @@ A blue terminal window will appear:
 
 ### Install WSL 1
 
-WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq) .
+WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
 We will install WSL through the PowerShell Terminal:
 
