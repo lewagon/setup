@@ -1,0 +1,73 @@
+## Ruby
+
+### Installation
+
+Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lang.org/en/) et en faire la version par défaut.
+
+Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
+
+```bash
+rbenv install <RUBY_VERSION>
+```
+
+Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
+d’utiliser la version <RUBY_VERSION> par défaut.
+
+```bash
+rbenv global <RUBY_VERSION>
+```
+
+Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
+
+```bash
+ruby -v
+```
+
+:heavy_check_mark: Si tu vois apparaître un message commençant par `<RUBY_VERSION>p`, tu peux continuer :+1:
+
+:x: Sinon, **demande au prof**
+
+### Installer des gems
+
+<details>
+  <summary>Si tu es en <bold>Chine</bold></summary>
+
+  :warning: Si tu es en Chine, mets à jour la procédure d’installation des gems avec les commandes suivantes.
+
+```bash
+# En Chine seulement !
+gem sources --remove https://rubygems.org/
+gem sources -a https://gems.ruby-china.com/
+gem sources -l
+# *** SOURCES ACTUELLES ***
+# https://gems.ruby-china.com/
+# Ruby-china.com doit maintenant figurer dans la liste
+```
+</details>
+
+Dans l’environnement ruby, les librairies externes sont appelées des `gems` : ce sont des bouts de code ruby, que tu peux télécharger et exécuter sur ton ordinateur. On va en installer quelques-unes.
+
+Copie-colle la commande suivante dans ton terminal :
+
+```bash
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
+```
+
+:heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
+
+:x: Si tu obtiens l’erreur suivante :
+
+```bash
+ERROR: While executing gem ... (TypeError)
+incompatible marshal file format (can't be read)
+format version 4.8 required; 60.33 given
+```
+
+Exécute la commande suivante :
+```bash
+rm -rf ~/.gemrc
+```
+
+Exécute à nouveau la commande pour installer les gems.
+
+:warning: N’installe **JAMAIS** une gem avec `sudo gem install` ! Et ce même si tu tombes sur une réponse de Stack Overflow (ou du terminal) t’invitant à le faire.
