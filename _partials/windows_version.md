@@ -2,18 +2,18 @@
 
 Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
 
-### Windows 10
+### Windows 10 or Windows 11
 
-To be able to set up your computer, you need to have **Windows 10** installed.
+To be able to set up your computer, you need to have **Windows 10** or **Windows 11** installed.
 
 To check your Windows version:
 - Press `Windows` + `R`
 - Type  `winver`
 - Press `Enter`
 
-:heavy_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
+:heavy_check_mark: If the first words of this window are **Windows 10** or **Windows 11** you're good to go :+1:
 
-:x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
+:x: If it does not mention **Windows 10** or **Windows 11**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
 
 <details>
   <summary>Upgrade to Windows 10</summary>
@@ -25,7 +25,7 @@ To check your Windows version:
 
 ### Latest updates
 
-Once you're sure that you're using Windows 10, you need to install all the latest updates.
+Once you're sure that you're using Windows 10 or Windows 11, you need to install all the latest updates.
 
 Open Windows Update:
 - Press `Windows` + `R`
@@ -54,7 +54,7 @@ Open Windows Update:
   Then let's try updates again!
 </details>
 
-### Minimum version
+### Minimum version ( only for windows 10)
 
 Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
 
