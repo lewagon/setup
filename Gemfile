@@ -1,6 +1,6 @@
-gem 'rspec'
-gem 'rubocop'
-gem 'pry'
-gem 'pry-byebug'
-gem 'colored'
-gem 'http'
+gem "rspec"
+gem "rubocop"
+gem "pry"
+gem "pry-byebug"
+gem "colored"
+gem "http"

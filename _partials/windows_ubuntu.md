@@ -4,7 +4,7 @@
 
 - Click on `Start`
 - Type  `Microsoft Store`
-- Click on the Microsoft Windows Store in the list
+- Click on `Microsoft Store` in the list
 - Search for `Ubuntu` in the search bar
 - **Select version without any number, just plain "Ubuntu"**
 - Click on `Install`
@@ -15,7 +15,6 @@
   <summary>Uninstall wrong versions of Ubuntu</summary>
 
   To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
-
   - Press `Windows` + `R`
   - Type  `ms-settings:appsfeatures`
   - Press `Enter`
