@@ -151,7 +151,7 @@ For many computers, this is already the case. Let's check:
 </details>
 
 
-## Windows Subsystem for Linux
+## Windows Subsystem for Linux (WSL)
 
 ### Install WSL 1
 
@@ -168,7 +168,6 @@ We will install WSL through the PowerShell Terminal:
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 A blue terminal window will appear:
-
 - Copy the following commands one by one (`CTRL` + `C`)
 - Paste them into the PowerShell window (`CTRL` + `V` or by right-clicking in the window)
 - Run them by pressing `Enter`
@@ -218,7 +217,7 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: If you see "The operation completed successfully, you can close this terminal and continue below :+1:
+:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue below :+1:
 
 :x: If the message you get is about Virtualization, please **contact a teacher**
 

@@ -13,7 +13,7 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
-- Va sur [<https://zoom.us/download>](https://zoom.us/download)
+- Va sur [https://zoom.us/download](https://zoom.us/download)
 - Sous **Client Zoom**, clique sur le bouton **Télécharger**
 - Ouvre le fichier que tu viens de télécharger pour installer l’application
 - Ouvre l’application Zoom
@@ -156,7 +156,7 @@ C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 
 ### Installer WSL 1
 
-WSL est l’environnement de développement qu’on utilise pour exécuter Ubuntu. Pour en savoir plus sur WSL, [consulte cette page](https://docs.microsoft.com/fr-fr/windows/wsl/faq).
+WSL est l’environnement de développement que l’on utilise pour exécuter Ubuntu. Pour en savoir plus sur WSL, [consulte cette page](https://docs.microsoft.com/fr-fr/windows/wsl/faq).
 
 On va installer WSL à partir du terminal PowerShell :
 
@@ -169,7 +169,6 @@ On va installer WSL à partir du terminal PowerShell :
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
-
 - Copie les commandes suivantes une par une (`CTRL` + `C`)
 - Colle-les dans la fenêtre PowerShell (`CTRL` + `V` ou en faisant un clic droit dans la fenêtre)
 - Exécute-les en appuyant sur `ENTRÉE`
@@ -192,13 +191,13 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 ### Mise à niveau vers WSL 2
 
-Une fois que ton ordinateur a redémarré, on doit télécharger le programme d’installation de SWL2.
+Une fois que ton ordinateur a redémarré, on doit télécharger le programme d’installation de WSL 2.
 
 - Va sur la [page de téléchargement](https://aka.ms/wsl2kernel)
-- Télécharge le « package de mise à jour du noyau Linux pour WSL 2 »
+- Télécharge le « WSL2 Linux kernel update package 2 »
 - Ouvre le fichier que tu viens de télécharger
-- Clique sur `Next`
-- Clique sur `Finish`
+- Clique sur `Suivant`
+- Clique sur `Terminer`
 
 ![Mettre à jour WSL de la version 1 à 2](images/windows_update_wsl.png)
 
@@ -206,10 +205,9 @@ Une fois que ton ordinateur a redémarré, on doit télécharger le programme d�
 
 :x: Si tu obtiens l’erreur « Cette mise à jour s’applique seulement aux machines avec le sous-système Windows pour Linux », **fais un clic droit** sur le programme et sélectionne `uninstall` ; tu devrais pouvoir l’installer normalement cette fois-ci.
 
-### Définir WSL2 comme sous-système Windows pour Linux par défaut
+### Définir WSL 2 comme sous-système Windows pour Linux par défaut
 
-Maintenant que WLS2 est installé, on va le définir comme version par défaut :
-
+Maintenant que WLS 2 est installé, on va le définir comme version par défaut :
 - Appuie sur `Windows` + `R`
 - Saisis `cmd`
 - Appuie sur `ENTRÉE`
@@ -220,20 +218,20 @@ Dans la fenêtre qui apparaît, saisis :
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: Si tu vois apparaître « Opération terminée avec succès », tu peux fermer ce terminal et suivre les instructions ci-dessous :+1:
+:heavy_check_mark: Si tu vois apparaître « The operation completed successfully », tu peux fermer ce terminal et suivre les instructions ci-dessous :+1:
 
 :x: Si le message qui s’affiche concerne la virtualisation, **demande au prof**
 
 <details>
  <summary>Activer la fonction Virtual Machine Platform sous Windows</summary>
 
-Suis les étapes décrites [ici](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) pour activer <strong>Virtual Machine Platform</strong> et <strong>le sous-système Windows pour Linux</strong>
+  Suis les étapes décrites [ici](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in-the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Ensure%20that%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL%202) pour activer <strong>Virtual Machine Platform</strong> et <strong>le sous-système Windows pour Linux</strong>
 </details>
 
 <details>
  <summary>Activer la fonction Hyper-V sous Windows</summary>
 
-Suis les étapes décrites [ici](https://winaero.com/enable-use-hyper-v-windows-10/) pour activer le groupe <strong>Hyper-V</strong>
+  Suis les étapes décrites [ici](https://winaero.com/enable-use-hyper-v-windows-10/) pour activer le groupe <strong>Hyper-V</strong>
 </details>
 
 
@@ -335,7 +333,7 @@ On va maintenant installer l’éditeur de texte [Visual Studio Code](https://co
 - Va sur la [page de téléchargement de Visual Studio Code](https://code.visualstudio.com/download).
 - Clique sur le bouton « Windows »
 - Ouvre le fichier que tu viens de télécharger.
-- Installe-le avec peu d’options :
+- Installe-le avec quelques options :
 
 ![Options d’installation de VS Code](images/windows_vscode_installation.png)
 
@@ -954,7 +952,7 @@ node -v
 
 ## yarn
 
-[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d’installer des bibliothèques JavaScript. On va l’installer :
+[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d’installer des bibliothèques JavaScript. Installons-le :
 
 Exécute la commande suivante dans le terminal :
 
