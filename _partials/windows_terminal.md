@@ -6,7 +6,7 @@ The standard terminal installed by Ubuntu is a very crude: let's install **Windo
 
 - Click on `Start`
 - Type  `Microsoft Store`
-- Click on the Microsoft Windows Store in the list
+- Click on `Microsoft Store` in the list
 - Search for `Windows Terminal` in the search bar
 - **Select Windows Terminal"**
 - Click on `Install`
