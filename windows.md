@@ -37,7 +37,7 @@ You can now close the Zoom app.
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
 ![GitHub picture](images/github_picture.png)
 
@@ -76,7 +76,6 @@ Open Windows Update:
 - Type  `ms-settings:windowsupdate`
 - Press `Enter`
 - Click on `Check updates`
-
 
 :heavy_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
 
@@ -242,7 +241,7 @@ wsl --set-default-version 2
 
 - Click on `Start`
 - Type  `Microsoft Store`
-- Click on the Microsoft Windows Store in the list
+- Click on `Microsoft Store` in the list
 - Search for `Ubuntu` in the search bar
 - **Select version without any number, just plain "Ubuntu"**
 - Click on `Install`
@@ -253,7 +252,6 @@ wsl --set-default-version 2
   <summary>Uninstall wrong versions of Ubuntu</summary>
 
   To uninstall a wrong version of Ubuntu, you just have to go to the Installed Program List of Windows 10:
-
   - Press `Windows` + `R`
   - Type  `ms-settings:appsfeatures`
   - Press `Enter`
@@ -372,7 +370,7 @@ The standard terminal installed by Ubuntu is a very crude: let's install **Windo
 
 - Click on `Start`
 - Type  `Microsoft Store`
-- Click on the Microsoft Windows Store in the list
+- Click on `Microsoft Store` in the list
 - Search for `Windows Terminal` in the search bar
 - **Select Windows Terminal"**
 - Click on `Install`
@@ -1087,7 +1085,6 @@ You can also install Slack app on your phone and sign in `lewagon-alumni`!
 We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
 In order to do that, let's create shortcuts to Ubuntu directories in the Windows **File Explorer**:
-
 - Open the Windows File Explorer (or use the shortcut `WIN` + `E`)
 - In the Address Bar, enter `\\wsl$\` (or `\\wsl$\Ubuntu` if it does not work)
 - You now have acces to the Ubuntu file system
@@ -1099,7 +1096,6 @@ In order to do that, let's create shortcuts to Ubuntu directories in the Windows
 ### Open the Windows File Explorer from the Ubuntu terminal
 
 Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal:
-
 - Open an Ubuntu terminal
 - Go to the directory you wish to explore
 - Run the `explorer.exe .` command (alternatively, use `wslview .`)
@@ -1112,7 +1108,6 @@ Another option to move files around is to open the Windows **File Explorer** fro
 You might want to figure out the exact location of a Windows directory in the Ubuntu file system, or the other way around.
 
 In order to convert a Windows path to and from an Ubuntu path:
-
 - Open an Ubuntu terminal
 - Use the `wslpath "C:\Program Files"` command in order to translate a Windows path into an Ubuntu path
 - Use the `wslpath -w "/home"` command in order to translate an Ubuntu path into a Windows path

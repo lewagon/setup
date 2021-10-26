@@ -37,7 +37,7 @@ You can now close the Zoom app.
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
 ![GitHub picture](images/github_picture.png)
 
@@ -688,11 +688,11 @@ As you become a programmer, you'll understand that leaving the keyboard takes a 
 
 #### Keyboard speed
 
-Go to  > System Preferences > Keyboard. Set `Key Repeat` to the fastest position (to the right) and `Delay Until Repeat` to the shortest position (to the right).
+Go to ` > System Preferences > Keyboard`. Set `Key Repeat` to the fastest position (to the right) and `Delay Until Repeat` to the shortest position (to the right).
 
 #### Full Keyboard Access
 
-Go to  > System Preferences > Keyboard. Click on the third tab (Shortcuts). At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
+Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
 
 #### macOS For hackers
 
