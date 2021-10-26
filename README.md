@@ -1,10 +1,10 @@
-## In China?
-
-如果你在参加中文课程，请打开<a href="README.cn.md">中文设置指南</a>
-
 ## En Français ?
 
 Clique sur <a href="README.fr.md">ce lien</a> pour accéder à la version française du setup.
+
+## In China?
+
+如果你在参加中文课程，请打开<a href="README.cn.md">中文设置指南</a>
 
 ## Worldwide
 
