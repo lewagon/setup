@@ -19,7 +19,7 @@ Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande su
     echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
   ```
 
-  Ou exécute :
+  Sinon, exécute :
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
@@ -41,7 +41,7 @@ Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande su
     echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
   ```
 
-  Ou exécute :
+  Sinon, exécute :
 
   ```bash
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
@@ -60,7 +60,7 @@ Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande su
 
 Redémarre ton terminal.
 
-Puis vérifie que la commande suivante renvoie « Navigateur défini 👌 » :
+Puis vérifie que la commande suivante renvoie « Browser defined 👌 » :
 
 ```bash
 [ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"

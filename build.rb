@@ -88,15 +88,15 @@ UBUNTU = %w[
   conclusion].freeze
 
 filenames = {
-  'macos.md' => MACOS,
-  'windows.md' => WINDOWS,
-  'ubuntu.md' => UBUNTU
+  "macos.md" => MACOS,
+  "windows.md" => WINDOWS,
+  "ubuntu.md" => UBUNTU
 }
 
-["", "cn"].each do |locale|
+["", "fr", "cn"].each do |locale|
   filenames.each do |filename, partials|
-    filename = "#{filename.split('.md').first}.#{locale}.md" unless locale.empty?
-    File.open(filename, 'w:utf-8') do |f|
+    filename = "#{filename.split(".md").first}.#{locale}.md" unless locale.empty?
+    File.open(filename, "w:utf-8") do |f|
       partials.each do |partial|
         folder = locale.empty? ? "_partials" : "_partials/#{locale}"
         f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION).gsub("<OS.md>", filename)

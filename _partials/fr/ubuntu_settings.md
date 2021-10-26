@@ -43,10 +43,9 @@ Pour épingler une application à ton Dock, lance l’application, fais un clic 
 ![Comment épingler une application au Dock dans Ubuntu](images/ubuntu_dock.png)
 
 Tu dois épingler :
-
--   ton terminal
--   ton explorateur de fichiers
--   VS Code
--   ton navigateur Internet
--   Slack
--   Zoom
+- ton terminal
+- ton explorateur de fichiers
+- VS Code
+- ton navigateur Internet
+- Slack
+- Zoom

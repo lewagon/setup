@@ -1,6 +1,6 @@
 ## Homebrew
 
-[Homebrew](http://brew.sh/) est un gestionnaire de paquets : un logiciel servant à installer d’autres logiciels à partir de la ligne de commande. On va l’installer.
+[Homebrew](http://brew.sh/) est un gestionnaire de paquets : un logiciel servant à installer d’autres logiciels à partir de la ligne de commande. Installons-le !
 
 Ouvre un terminal et exécute :
 

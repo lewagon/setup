@@ -12,11 +12,11 @@ Ouvre un terminal et copie-colle cette commande, en remplaçant l’adresse e-ma
 mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
-On te demandera de fournir des informations. Appuie simplement sur Entrée jusqu’à ce qu’une **phrase secrète** te soit demandée.
+On te demandera de fournir des informations. Appuie simplement sur Entrée jusqu’à ce qu’un **mot de passe** te soit demandée.
 
-:warning: Saisis une phrase secrète dont tu te souviendras. Ce mot de passe sert à protéger tes clés privées enregistrées sur ton disque sur.
+:warning: Saisis une phrase secrète dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur.
 
-:warning: Lorsque tu saisiras ta phrase secrète, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ta phrase secrète, mais aussi sa longueur. Saisis simplement ta phrase secrète, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
 
 ### Donner ta clé publique à GitHub
 

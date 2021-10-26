@@ -45,7 +45,7 @@ gem sources -l
 ```
 </details>
 
-Dans l’environnement ruby, les librairies externes sont appelées des `gems` : ce sont des bouts de code ruby, que tu peux télécharger et exécuter sur ton ordinateur. On va en installer quelques-unes.
+Dans l’environnement ruby, les bibliothèques externes sont appelées des `gems` : ce sont des bouts de code ruby, que tu peux télécharger et exécuter sur ton ordinateur. On va en installer quelques-unes.
 
 Copie-colle la commande suivante dans ton terminal :
 

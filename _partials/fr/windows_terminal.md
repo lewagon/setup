@@ -4,12 +4,12 @@ Le terminal standard installé par Ubuntu est très rudimentaire ; on va instal
 
 ### Installation
 
--   Clique sur `Start`
--   Saisis `Microsoft Store`
--   Active Microsoft Windows Store dans la liste
--   Recherche `Windows Terminal` dans la barre de recherche
--   **Sélectionne Windows Terminal**
--   Clique sur `Install`
+- Clique sur `Démarrer`
+- Saisis `Microsoft Store`
+- Clique sur `Microsoft Store` dans la liste
+- Recherche `Windows Terminal` dans la barre de recherche
+- **Sélectionne Windows Terminal**
+- Clique sur `Installer`
 
 :warning: N’installe PAS **Windows Terminal Preview**, uniquement **Windows Terminal** !
 
@@ -18,9 +18,9 @@ Le terminal standard installé par Ubuntu est très rudimentaire ; on va instal
 
   Pour désinstaller une mauvaise version de Windows Terminal, il te suffit d’aller dans la liste des programmes installés de Windows 10 :
 
-  -   Appuie sur `Windows` + `R`
-  -   Saisis `ms-settings:appsfeatures`
-  -   Appuie sur `ENTRÉE`
+  - Appuie sur `Windows` + `R`
+  - Saisis `ms-settings:appsfeatures`
+  - Appuie sur `ENTRÉE`
 
   Trouve le logiciel à désinstaller et clique sur le bouton de désinstallation.
 </details>
@@ -37,18 +37,17 @@ pour ouvrir les paramètres du terminal :
 
 ![Paramètres de Windows Terminal](images/windows_terminal_settings.png)
 
--   Remplace le profil par défaut par « Ubuntu »
--   Clique sur « Enregistrer »
--   Clique sur « Ouvrir le fichier JSON »
+- Remplace le profil par défaut par « Ubuntu »
+- Clique sur « Enregistrer »
+- Clique sur « Ouvrir le fichier JSON »
 
-La partie à modifier est entourée en rouge.
+La partie à modifier est entourée en rouge :
 
 [Fichier de paramètres JSON de Windows Terminal](images/windows\_terminal\_settings\_json.png)
 
 On va commencer par demander à Ubuntu de démarrer directement dans ton répertoire personnel Ubuntu au lieu du répertoire Windows :
-
--   Recherche `"name": "Ubuntu",`
--   Ajoute la ligne suivante après :
+- Recherche `"name": "Ubuntu",`
+- Ajoute la ligne suivante après :
 
 ```bash
 "startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
@@ -58,9 +57,8 @@ On va commencer par demander à Ubuntu de démarrer directement dans ton répert
 :warning: N’oublie pas de remplacer le nom d’utilisateur par le tien dans la ligne ci-dessus !
 
 On va ensuite désactiver les avertissements pour les commandes de copier-coller entre Windows et Ubuntu :
-
--   Recherche la ligne `"defaultProfile": "{2c4de342-...}"`
--   Ajoute la ligne suivante après :
+- Recherche la ligne `"defaultProfile": "{2c4de342-...}"`
+- Ajoute la ligne suivante après :
 
 ```bash
 "multiLinePasteWarning": false,
@@ -74,4 +72,4 @@ Tu peux enregistrer ces modifications en appuyant sur `CTRL` + `S`
 
 Ce terminal a des onglets ; tu peux choisir d’ouvrir un nouvel onglet de terminal en cliquant sur **+** à côté de l’onglet actuel.
 
-**Désormais, chaque fois qu’on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS l’application Ubuntu.
+**Désormais, chaque fois que l'on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS l’application Ubuntu.

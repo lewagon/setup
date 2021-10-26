@@ -8,17 +8,17 @@ On va installer WSL à partir du terminal PowerShell :
 
 :warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
 
--   Appuie sur `Windows` + `R`
--   Saisis `powershell`
--   Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+- Appuie sur `Windows` + `R`
+- Saisis `powershell`
+- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
 
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
 
--   Copie les commandes suivantes une par une (`CTRL` + `C`)
--   Colle-les dans la fenêtre PowerShell (`CTRL` + `V` ou en faisant un clic droit dans la fenêtre)
--   Exécute-les en appuyant sur `ENTRÉE`
+- Copie les commandes suivantes une par une (`CTRL` + `C`)
+- Colle-les dans la fenêtre PowerShell (`CTRL` + `V` ou en faisant un clic droit dans la fenêtre)
+- Exécute-les en appuyant sur `ENTRÉE`
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -40,11 +40,11 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 Une fois que ton ordinateur a redémarré, on doit télécharger le programme d’installation de SWL2.
 
--   Va sur la [page de téléchargement](https://aka.ms/wsl2kernel)
--   Télécharge le « package de mise à jour du noyau Linux pour WSL 2 »
--   Ouvre le fichier que tu viens de télécharger
--   Clique sur `Next`
--   Clique sur `Finish`
+- Va sur la [page de téléchargement](https://aka.ms/wsl2kernel)
+- Télécharge le « package de mise à jour du noyau Linux pour WSL 2 »
+- Ouvre le fichier que tu viens de télécharger
+- Clique sur `Next`
+- Clique sur `Finish`
 
 ![Mettre à jour WSL de la version 1 à 2](images/windows_update_wsl.png)
 
@@ -56,9 +56,9 @@ Une fois que ton ordinateur a redémarré, on doit télécharger le programme d�
 
 Maintenant que WLS2 est installé, on va le définir comme version par défaut :
 
--   Appuie sur `Windows` + `R`
--   Saisis `cmd`
--   Appuie sur `ENTRÉE`
+- Appuie sur `Windows` + `R`
+- Saisis `cmd`
+- Appuie sur `ENTRÉE`
 
 Dans la fenêtre qui apparaît, saisis :
 

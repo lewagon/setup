@@ -8,15 +8,14 @@ Pense à **télécharger une photo de profil** :point_down:
 
 L’idée est de laisser Slack ouvert toute la journée pour partager des liens utiles / demander de l’aide / décider où aller manger, etc.
 
-On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta caméra et ton micro :
-
--   Ouvre l’application Slack
--   Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `ENTRÉE`
--   Clique sur le bouton vert « Démarrer le test »
+On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta caméra et ton microphone :
+- Ouvre l’application Slack
+- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `ENTRÉE`
+- Clique sur le bouton vert « Démarrer le test »
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)
 
-:heavy_check_mark: Une fois le test terminé, tu devrais voir apparaître des messages de succès en vert, au moins pour ton micro et ta caméra. :+1:
+:heavy_check_mark: Une fois le test terminé, tu devrais voir apparaître des messages de succès en vert, au moins pour ton microphone et ta caméra. :+1:
 
 :x: Sinon, **demande au prof**.
 

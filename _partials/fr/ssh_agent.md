@@ -1,6 +1,6 @@
 ## Désactiver l’invite de phrase secrète SSH
 
-Tu veux éviter d’avoir à fournir ta phrase secrète chaque fois que tu communiques avec un répertoire distant. Pour cela, tu as besoin d’ajouter le plug-in `ssh-agent` à `oh my zsh` :
+Tu veux éviter d’avoir à fournir ta phrase secrète chaque fois que tu communiques avec un dépôt de code distant. Pour cela, tu as besoin d’ajouter le plug-in `ssh-agent` à `oh my zsh` :
 
 Commence par ouvrir le fichier `.zshrc` :
 
@@ -9,9 +9,8 @@ code ~/.zshrc
 ```
 
 Puis :
-
--   Localise la ligne commençant par `plugins=`
--   Ajoute `ssh-agent` à la fin de la liste des plug-ins
+- Localise la ligne commençant par `plugins=`
+- Ajoute `ssh-agent` à la fin de la liste des plug-ins
 
 La liste doit ressembler à ça :
 

@@ -28,7 +28,7 @@ Sinon, une nouvelle fenêtre s’ouvrira, te demandant si tu souhaites installer
 
 :x: Si la commande `xcode-select --install` échoue, réessaie. Les serveurs Apple sont parfois saturés.
 
-:x: Si tu vois apparaître le message « Xcode n’est pas disponible pour le moment sur le serveur Mise à jour logicielle », tu dois mettre à jour le catalogue de mise à jour de logiciels :
+:x: Si tu vois apparaître le message « Xcode is not currently available from the Software Update server », tu dois mettre à jour le catalogue de mise à jour de logiciels :
 
 ```bash
 sudo softwareupdate --clear-catalog

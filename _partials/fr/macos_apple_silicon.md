@@ -1,6 +1,6 @@
 ## Processeurs Apple Silicon
 
-Si tu as acheté ton ordinateur après fin 2020, il est probable qu’il soit équipé d’un nouveau processeur Apple Silicon au lieu de l’ancien processeur Intel : regardons ça ensemble.
+Si tu as acheté ton ordinateur après fin 2020, il est probable qu’il soit équipé d’un nouveau processeur Apple Silicon au lieu de l’ancien processeur Intel : vérifions ça ensemble.
 
 Ouvre une nouvelle fenêtre de terminal depuis Applications > Utilitaires ou fais une recherche avec [Spotlight](https://support.apple.com/fr-fr/HT204014) :
 
@@ -35,7 +35,7 @@ Si brew n’est pas installé, tu verras apparaître le message suivant  : `bre
 
 Ouvre le Finder (ou fais une recherche avec [Spotlight](https://support.apple.com/fr-fr/HT204014).
 
-Va à Applications > Utilitaires.
+Va dans Applications > Utilitaires.
 
 Duplique l’application Terminal (sélectionne-la, puis `CMD` + `C`, `CMD` + `V`) et renomme la copie Terminal Rosetta.
 

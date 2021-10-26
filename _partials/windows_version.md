@@ -33,7 +33,6 @@ Open Windows Update:
 - Press `Enter`
 - Click on `Check updates`
 
-
 :heavy_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
 
 :warning: If you have a red exclamation mark and the message "Update available", please install them and repeat the process until it says that you are up to date :loop:

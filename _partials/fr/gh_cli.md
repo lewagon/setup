@@ -1,8 +1,8 @@
 ## GitHub CLI
 
-LI est l’acronyme de [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface), interface en ligne de commande.
+CLI est l’acronyme de [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface), interface en ligne de commande.
 
-Dans cette section, tu vas installer [GitHub CLI](https://cli.github.com/) pour réaliser des actions utiles avec des données GitHub directement depuis le terminal.
+Dans cette section, tu vas installer [GitHub CLI](https://cli.github.com/) pour interagir avec GitHub directement depuis le terminal.
 
 Elle doit déjà être installée sur ton ordinateur grâce aux commandes précédentes.
 
@@ -17,8 +17,8 @@ gh auth login -s 'user:email' -w
 Tu obtiendras le résultat suivant :
 
 ```bash
-! Commence par copier ton code à usage unique : 0EF9-D015
-- Appuie sur Entrée pour ouvrir github.com dans ton navigateur…
+! First copy your one-time code: 0EF9-D015
+- Press Enter to open github.com in your browser...
 ```
 
 Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `ENTRÉE`.

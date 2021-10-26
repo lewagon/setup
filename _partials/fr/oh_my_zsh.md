@@ -8,7 +8,7 @@ Exécute la commande suivante dans un terminal :
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Si tu vois apparaître la question « Voulez-vous remplacer le shell par défaut par zsh ? », appuie sur `Y`
+Si tu vois apparaître la question « Do you want to change your default shell to zsh? ? », appuie sur `Y`
 
 À la fin, ton terminal devrait ressembler à ceci :
 

@@ -4,9 +4,9 @@ Les hackers adorent perfectionner leur shell et leurs outils.
 
 On va commencer avec une super configuration par défaut fournie par Le Wagon : [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles).
 
-Ta configuration est personnelle ; tu as donc besoin de ton **propre** répertoire pour la sauvegarder. Tu vas donc faire un fork, c’est-à-dire une copie, du répertoire Le Wagon.
+Ta configuration est personnelle ; tu as donc besoin de ton **propre** dépôt pour la sauvegarder. Tu vas donc faire un fork, c’est-à-dire une copie, du dépôt Le Wagon.
 
-Faire un fork consiste à créer un nouveau répertoire dans ton compte GitHub personnel `$GITHUB_USERNAME/dotfiles`, identique au répertoire Le Wagon d’origine et que tu pourras modifier librement.
+Faire un fork consiste à créer un nouveau dépôt dans ton compte GitHub personnel `$GITHUB_USERNAME/dotfiles`, identique au dépôt Le Wagon d’origine et que tu pourras modifier librement.
 
 Ouvre ton terminal et exécute les commandes suivantes :
 
@@ -19,7 +19,7 @@ echo $GITHUB_USERNAME
 
 :x: Si ce n’est pas le cas, **arrête-toi ici** et demande de l’aide. Il se peut que tu aies rencontré un problème à l’étape précédente (`gh auth`).
 
-Il est temps de faire un fork du répertoire et de le cloner sur ton ordinateur :
+Il est temps de faire un fork du dépôt et de le cloner sur ton ordinateur :
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
@@ -47,7 +47,7 @@ gh api user/emails | jq -r '.[].email'
 
 ### Programme d'installation git
 
-Exécute le programme d’installation `git` :
+Exécute le programme d’installation de `git` :
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
