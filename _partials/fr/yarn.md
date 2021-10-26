@@ -1,6 +1,6 @@
 ## yarn
 
-[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d’installer des bibliothèques JavaScript. On va l’installer :
+[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d’installer des bibliothèques JavaScript. Installons-le :
 
 Exécute la commande suivante dans le terminal :
 

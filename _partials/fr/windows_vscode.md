@@ -7,7 +7,7 @@ On va maintenant installer l’éditeur de texte [Visual Studio Code](https://co
 - Va sur la [page de téléchargement de Visual Studio Code](https://code.visualstudio.com/download).
 - Clique sur le bouton « Windows »
 - Ouvre le fichier que tu viens de télécharger.
-- Installe-le avec peu d’options :
+- Installe-le avec quelques options :
 
 ![Options d’installation de VS Code](images/windows_vscode_installation.png)
 
