@@ -4,7 +4,7 @@ To be able to interact when we are not in the same physical room, we will be usi
 
 :warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
-- Go to [https://zoom.us/download](https://zoom.us/download)
+- Go to [zoom.us/download](https://zoom.us/download)
 - Under **Zoom Client** click the **Download** button
 - Open the file you have just downloaded to install the app
 - Open the Zoom app

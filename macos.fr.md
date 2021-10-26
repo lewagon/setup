@@ -1,6 +1,6 @@
 # Instructions de configuration
 
-Les instructions ci-dessous vont te permettre de configurer ton ordinateur pour [la formation Développement Web du Wagon](https://www.lewagon.com/web-development-course/full-time)
+Les instructions ci-dessous vont te permettre de configurer ton ordinateur pour [la formation Développement Web du Wagon](https://www.lewagon.com/web-development-course/full-time).
 
 **Lis-les attentivement et exécute toutes les commandes dans l’ordre suivant**. En cas de blocage, n’hésite pas à demander au prof :raising_hand:
 
@@ -13,7 +13,7 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
-- Va sur [https://zoom.us/download](https://zoom.us/download)
+- Va sur [zoom.us/download](https://zoom.us/download)
 - Sous **Client Zoom**, clique sur le bouton **Télécharger**
 - Ouvre le fichier que tu viens de télécharger pour installer l’application
 - Ouvre l’application Zoom
