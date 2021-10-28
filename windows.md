@@ -168,8 +168,8 @@ We will install WSL through the PowerShell Terminal:
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 A blue terminal window will appear:
-- Copy the following commands one by one (`CTRL` + `C`)
-- Paste them into the PowerShell window (`CTRL` + `V` or by right-clicking in the window)
+- Copy the following commands one by one (`Ctrl` + `C`)
+- Paste them into the PowerShell window (`Ctrl` + `V` or by right-clicking in the window)
 - Run them by pressing `Enter`
 
 ```powershell
@@ -429,7 +429,7 @@ Then, let's disable warning for copy-pasting commands between Windows and Ubuntu
 
 :warning: Do not forget the comma at the end of the line!
 
-You can save these changes by pressing `CTRL` + `S`
+You can save these changes by pressing `Ctrl` + `S`
 
 :heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
@@ -804,7 +804,7 @@ The list should look like:
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
+:heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
 
 
 ## rbenv

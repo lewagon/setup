@@ -22,7 +22,7 @@ Puis dans le terminal, exécute :
 brew uninstall --force rbenv ruby-build
 ```
 
-Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`CMD` + `Q`) et redémarres-en une. Exécute ensuite :
+Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`Cmd` + `Q`) et redémarres-en une. Exécute ensuite :
 
 ```bash
 brew install rbenv

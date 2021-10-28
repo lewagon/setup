@@ -48,7 +48,7 @@ Est-ce que tu as déjà un compte GitHub ? Si ce n’est pas le cas, [inscris-t
 
 On va maintenant installer l’éditeur de texte [Visual Studio Code](https://code.visualstudio.com).
 
-Copie (`CTRL` + `C`) les commandes ci-dessous, puis colle-les dans ton terminal (`CTRL` + `SHIFT` + `v`) :
+Copie (`Ctrl` + `C`) les commandes ci-dessous, puis colle-les dans ton terminal (`Ctrl` + `Shift` + `v`) :
 
 ```bash
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
@@ -365,7 +365,7 @@ La liste doit ressembler à ça :
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy_check_mark: Enregistre le fichier `.zshrc` à l’aide des touches `CTRL` + `S` et ferme ton éditeur de texte.
+:heavy_check_mark: Enregistre le fichier `.zshrc` à l’aide des touches `Ctrl` + `S` et ferme ton éditeur de texte.
 
 
 ## rbenv

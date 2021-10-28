@@ -66,7 +66,7 @@ Then, let's disable warning for copy-pasting commands between Windows and Ubuntu
 
 :warning: Do not forget the comma at the end of the line!
 
-You can save these changes by pressing `CTRL` + `S`
+You can save these changes by pressing `Ctrl` + `S`
 
 :heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 

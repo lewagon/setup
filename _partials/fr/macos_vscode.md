@@ -4,7 +4,7 @@
 
 On va maintenant installer l’éditeur de texte [Visual Studio Code](https://code.visualstudio.com).
 
-Copie (`CMD` + `C`) la commande ci-dessous, puis colle-la dans ton terminal (`CMD` + `V`) :
+Copie (`Cmd` + `C`) la commande ci-dessous, puis colle-la dans ton terminal (`Cmd` + `V`) :
 
 ```bash
 brew install --cask visual-studio-code
