@@ -4,7 +4,7 @@
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-Copy (`CTRL` + `C`) the commands below then paste them in your terminal (`CTRL` + `SHIFT` + `v`):
+Copy (`Ctrl` + `C`) the commands below then paste them in your terminal (`Ctrl` + `Shift` + `v`):
 
 ```bash
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -

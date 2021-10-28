@@ -81,9 +81,9 @@ Open the Finder app (or search for it with [Spotlight](https://support.apple.com
 
 Go to Applications > Utilities.
 
-Duplicate the terminal app (select it, then `CMD` + `C`, `CMD` + `V`), and rename a copy as Terminal Rosetta.
+Duplicate the terminal app (select it, then `Cmd` + `C`, `Cmd` + `V`), and rename a copy as Terminal Rosetta.
 
-Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
+Press `Cmd` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
 
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 
@@ -92,7 +92,7 @@ Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Ro
 
 ## A note about quitting apps on a Mac
 
-Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `CMD + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
 ![Quit Terminal on macOS](images/macos_quit.png)
 
@@ -177,7 +177,7 @@ brew upgrade openssl     || brew install openssl
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`):
+Copy (`Cmd` + `C`) the command below then paste it in your terminal (`Cmd` + `V`):
 
 ```bash
 brew install --cask visual-studio-code
@@ -439,7 +439,7 @@ Then in the terminal, run:
 brew uninstall --force rbenv ruby-build
 ```
 
-Then quit **all your opened terminal windows** (`CMD` + `Q`) and restart one. Then run:
+Then quit **all your opened terminal windows** (`Cmd` + `Q`) and restart one. Then run:
 
 ```bash
 brew install rbenv

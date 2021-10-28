@@ -66,7 +66,7 @@ On va ensuite désactiver les avertissements pour les commandes de copier-coller
 
 :warning: N’oublie pas la virgule à la fin de la ligne !
 
-Tu peux enregistrer ces modifications en appuyant sur `CTRL` + `S`
+Tu peux enregistrer ces modifications en appuyant sur `Ctrl` + `S`
 
 :heavy_check_mark: Ton **Windows Terminal** est maintenant configuré :+1:
 

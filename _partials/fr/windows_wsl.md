@@ -15,8 +15,8 @@ On va installer WSL à partir du terminal PowerShell :
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
-- Copie les commandes suivantes une par une (`CTRL` + `C`)
-- Colle-les dans la fenêtre PowerShell (`CTRL` + `V` ou en faisant un clic droit dans la fenêtre)
+- Copie les commandes suivantes une par une (`Ctrl` + `C`)
+- Colle-les dans la fenêtre PowerShell (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
 - Exécute-les en appuyant sur `ENTRÉE`
 
 ```powershell

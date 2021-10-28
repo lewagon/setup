@@ -169,8 +169,8 @@ On va installer WSL à partir du terminal PowerShell :
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
-- Copie les commandes suivantes une par une (`CTRL` + `C`)
-- Colle-les dans la fenêtre PowerShell (`CTRL` + `V` ou en faisant un clic droit dans la fenêtre)
+- Copie les commandes suivantes une par une (`Ctrl` + `C`)
+- Colle-les dans la fenêtre PowerShell (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
 - Exécute-les en appuyant sur `ENTRÉE`
 
 ```powershell
@@ -430,7 +430,7 @@ On va ensuite désactiver les avertissements pour les commandes de copier-coller
 
 :warning: N’oublie pas la virgule à la fin de la ligne !
 
-Tu peux enregistrer ces modifications en appuyant sur `CTRL` + `S`
+Tu peux enregistrer ces modifications en appuyant sur `Ctrl` + `S`
 
 :heavy_check_mark: Ton **Windows Terminal** est maintenant configuré :+1:
 
@@ -805,7 +805,7 @@ La liste doit ressembler à ça :
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy_check_mark: Enregistre le fichier `.zshrc` à l’aide des touches `CTRL` + `S` et ferme ton éditeur de texte.
+:heavy_check_mark: Enregistre le fichier `.zshrc` à l’aide des touches `Ctrl` + `S` et ferme ton éditeur de texte.
 
 
 ## rbenv

@@ -15,8 +15,8 @@ We will install WSL through the PowerShell Terminal:
 :warning: You may have to accept the UAC confirmation about the privilege elevation.
 
 A blue terminal window will appear:
-- Copy the following commands one by one (`CTRL` + `C`)
-- Paste them into the PowerShell window (`CTRL` + `V` or by right-clicking in the window)
+- Copy the following commands one by one (`Ctrl` + `C`)
+- Paste them into the PowerShell window (`Ctrl` + `V` or by right-clicking in the window)
 - Run them by pressing `Enter`
 
 ```powershell

@@ -81,9 +81,9 @@ Ouvre le Finder (ou fais une recherche avec [Spotlight](https://support.apple.co
 
 Va dans Applications > Utilitaires.
 
-Duplique l’application Terminal (sélectionne-la, puis `CMD` + `C`, `CMD` + `V`) et renomme la copie Terminal Rosetta.
+Duplique l’application Terminal (sélectionne-la, puis `Cmd` + `C`, `Cmd` + `V`) et renomme la copie Terminal Rosetta.
 
-Appuie sur `CMD` + `I` sur l’application Terminal Rosetta, puis coche la case « Ouvrir avec Rosetta ».
+Appuie sur `Cmd` + `I` sur l’application Terminal Rosetta, puis coche la case « Ouvrir avec Rosetta ».
 
 ⚠️ À partir de maintenant, et pendant tout le bootcamp, quand on te demandera d’ouvrir un terminal, il faudra utiliser l’application **Terminal Rosetta**.
 
@@ -92,7 +92,7 @@ Appuie sur `CMD` + `I` sur l’application Terminal Rosetta, puis coche la case 
 
 ## Comment quitter des applications sur un Mac
 
-Cliquer sur la petite croix rouge dans le coin supérieur gauche de la fenêtre d’une application sur un Mac **ne permet pas vraiment de quitter l’application**, mais seulement de fermer une fenêtre active. Pour *vraiment* quitter une application, appuie sur `CMD + Q` lorsque l’application est active, ou clique sur `APP_NAME` -\> `Quitter` dans la barre de menu.
+Cliquer sur la petite croix rouge dans le coin supérieur gauche de la fenêtre d’une application sur un Mac **ne permet pas vraiment de quitter l’application**, mais seulement de fermer une fenêtre active. Pour *vraiment* quitter une application, appuie sur `Cmd + Q` lorsque l’application est active, ou clique sur `APP_NAME` -\> `Quitter` dans la barre de menu.
 
 ![Quitter le terminal sur macOS](images/macos_quit.png)
 
@@ -176,7 +176,7 @@ brew upgrade openssl     || brew install openssl
 
 On va maintenant installer l’éditeur de texte [Visual Studio Code](https://code.visualstudio.com).
 
-Copie (`CMD` + `C`) la commande ci-dessous, puis colle-la dans ton terminal (`CMD` + `V`) :
+Copie (`Cmd` + `C`) la commande ci-dessous, puis colle-la dans ton terminal (`Cmd` + `V`) :
 
 ```bash
 brew install --cask visual-studio-code
@@ -438,7 +438,7 @@ Puis dans le terminal, exécute :
 brew uninstall --force rbenv ruby-build
 ```
 
-Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`CMD` + `Q`) et redémarres-en une. Exécute ensuite :
+Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`Cmd` + `Q`) et redémarres-en une. Exécute ensuite :
 
 ```bash
 brew install rbenv

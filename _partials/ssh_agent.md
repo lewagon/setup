@@ -18,4 +18,4 @@ The list should look like:
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
+:heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
