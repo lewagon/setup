@@ -306,7 +306,7 @@ gem sources -l
 无论你是不是在中国，请都运行下面的指令：
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
 ```
 
 如果你遇到了以下的报错：
