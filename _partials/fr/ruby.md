@@ -50,7 +50,7 @@ Dans l’environnement ruby, les bibliothèques externes sont appelées des `gem
 Copie-colle la commande suivante dans ton terminal :
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
