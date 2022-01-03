@@ -944,7 +944,11 @@ When the installation is finished, run:
 node -v
 ```
 
-:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+If you see `v14.15`, the installation succeeded :heavy_check_mark: You can then run:
+
+```bash
+nvm cache clear
+```
 
 :x: If not, **contact a teacher**
 
