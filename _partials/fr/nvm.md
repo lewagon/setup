@@ -5,7 +5,7 @@
 Exécute la commande suivante dans ton terminal :
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
 ```
 
 Redémarre ton terminal et exécute la commande suivante :
@@ -19,7 +19,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 14.15
+nvm install <NODE_VERSION>
 ```
 
 Une fois l’installation terminée, exécute :

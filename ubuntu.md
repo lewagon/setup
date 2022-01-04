@@ -409,14 +409,14 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.7.4 version by default.
+to use the 3.0.3 version by default.
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
 Then **restart** your terminal again (close it and reopen it).
@@ -425,7 +425,7 @@ Then **restart** your terminal again (close it and reopen it).
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 2.7.4p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
 
 :x: If not, **ask a teacher**
 
@@ -482,7 +482,7 @@ Rerun the command to install the gems.
 In a terminal, execute the following command:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v16.3.1/install.sh | zsh
 ```
 
 Restart your terminal and run the following:
@@ -496,7 +496,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 14.15
+nvm install 16.3.1
 ```
 
 When the installation is finished, run:

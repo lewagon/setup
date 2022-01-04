@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby -wU
 
-SETUP_RUBY_VERSION = "2.7.4"
+RUBY_SETUP_VERSION = "3.0.3"
+NVM_VERSION = "0.39.1"
+NODE_VERSION = "16.3.1"
 
 MACOS = %w[
   intro
@@ -99,7 +101,11 @@ filenames = {
     File.open(filename, "w:utf-8") do |f|
       partials.each do |partial|
         folder = locale.empty? ? "_partials" : "_partials/#{locale}"
-        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8").gsub("<RUBY_VERSION>", SETUP_RUBY_VERSION).gsub("<OS.md>", filename)
+        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8")
+          .gsub("<RUBY_VERSION>", RUBY_SETUP_VERSION)
+          .gsub("<NVM_VERSION>", NODE_VERSION)
+          .gsub("<NODE_VERSION>", NODE_VERSION)
+          .gsub("<OS.md>", filename)
         f << "\n\n"
       end
     end

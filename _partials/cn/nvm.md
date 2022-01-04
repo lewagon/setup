@@ -15,7 +15,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15.0
+nvm install <NODE_VERSION>
 ```
 
 当这个指令执行结束之后，运行：
