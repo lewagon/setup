@@ -8,7 +8,6 @@ MACOS = %w[
   intro
   zoom
   github
-  macos_apple_silicon
   macos_command_line_tools
   macos_homebrew
   macos_vscode

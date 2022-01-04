@@ -4,12 +4,21 @@ To be able to interact when we are not in the same physical room, we will be usi
 
 :warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
-- Go to [zoom.us/download](https://zoom.us/download)
-- Under **Zoom Client** click the **Download** button
-- Open the file you have just downloaded to install the app
-- Open the Zoom app
-- If you already have a Zoom account, sign in using your credentials
-- If not, click on the **Sign Up Free** link:
+Go to [zoom.us/download](https://zoom.us/download)
+
+Under **Zoom Client** click the **Download** button
+
+Open the file you have just downloaded to install the app
+
+Open the Zoom app
+
+If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
+
+![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
+
+If you already have a Zoom account, sign in using your credentials
+
+If not, click on the **Sign Up Free** link:
 
 ![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
 

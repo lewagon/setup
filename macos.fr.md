@@ -42,54 +42,6 @@ Est-ce que tu as déjà un compte GitHub ? Si ce n’est pas le cas, [inscris-t
 ![image de GitHub](images/github_picture.png)
 
 
-## Processeurs Apple Silicon
-
-Si tu as acheté ton ordinateur après fin 2020, il est probable qu’il soit équipé d’un nouveau processeur Apple Silicon au lieu de l’ancien processeur Intel : vérifions ça ensemble.
-
-Ouvre une nouvelle fenêtre de terminal depuis Applications > Utilitaires ou fais une recherche avec [Spotlight](https://support.apple.com/fr-fr/HT204014) :
-
-![Ouvrir Terminal sur macOS](images/macos_open_terminal.png)
-
-Copie-colle la commande suivante dans le terminal et appuie sur `ENTRÉE` pour l’exécuter.
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
-```
-
-☝️ Le résultat de la commande devrait t’indiquer si ton ordinateur utilise Apple Silicon.
-
-Si ton ordinateur utilise Apple Silicon, affiche et lis le paragraphe ci-dessous. Sinon, n’en tiens pas compte.
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup pour Apple Silicon 👈</summary>
-
-### Désinstaller Homebrew
-
-Si une version native de Homebrew est installée sur ton ordinateur, tu dois la désinstaller.
-
-Exécute la commande suivante dans le terminal :
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-Si brew n’est pas installé, tu verras apparaître le message suivant  : `brew: command not found!`
-
-### Configurer le terminal pour Rosetta
-
-Ouvre le Finder (ou fais une recherche avec [Spotlight](https://support.apple.com/fr-fr/HT204014).
-
-Va dans Applications > Utilitaires.
-
-Duplique l’application Terminal (sélectionne-la, puis `Cmd` + `C`, `Cmd` + `V`) et renomme la copie Terminal Rosetta.
-
-Appuie sur `Cmd` + `I` sur l’application Terminal Rosetta, puis coche la case « Ouvrir avec Rosetta ».
-
-⚠️ À partir de maintenant, et pendant tout le bootcamp, quand on te demandera d’ouvrir un terminal, il faudra utiliser l’application **Terminal Rosetta**.
-
-</details>
-
-
 ## Comment quitter des applications sur un Mac
 
 Cliquer sur la petite croix rouge dans le coin supérieur gauche de la fenêtre d’une application sur un Mac **ne permet pas vraiment de quitter l’application**, mais seulement de fermer une fenêtre active. Pour *vraiment* quitter une application, appuie sur `Cmd + Q` lorsque l’application est active, ou clique sur `APP_NAME` -\> `Quitter` dans la barre de menu.
@@ -411,7 +363,11 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès.
 
-**Quitte** toutes les fenêtres de terminal ouvertes.
+**Réinitialise** ton terminal en exécutant :
+
+```bash
+exec zsh
+```
 
 
 ## rbenv
@@ -432,15 +388,16 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
 
-Puis dans le terminal, exécute :
+Dans le terminal, exécute :
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`Cmd` + `Q`) et redémarres-en une. Exécute ensuite :
+Puis exécute ensuite :
 
 ```bash
+exec zsh
 brew install rbenv
 ```
 
@@ -615,9 +572,10 @@ Pour quitter PostgreSQL, saisis `\q` puis `ENTRÉE`.
 
 On va maintenant vérifier que tu as tout installé correctement.
 
-Quitte toutes les fenêtres Terminal ouvertes, ouvres-en une nouvelle et exécute les commandes suivantes :
+Dans ton terminal, exécute les commandes suivantes :
 
 ```bash
+exec zsh
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
