@@ -23,7 +23,7 @@ Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `<RUBY_VERSION>p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby <RUBY_VERSION>p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 

@@ -24,4 +24,4 @@ nvm install <NODE_VERSION>
 node -v
 ```
 
-你应该会看到`v14.15.0`。如果没有的话，问一下你的老师。
+你应该会看到`v<NODE_VERSION>`。如果没有的话，问一下你的老师。

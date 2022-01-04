@@ -103,7 +103,7 @@ filenames = {
         folder = locale.empty? ? "_partials" : "_partials/#{locale}"
         f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8")
           .gsub("<RUBY_VERSION>", RUBY_SETUP_VERSION)
-          .gsub("<NVM_VERSION>", NODE_VERSION)
+          .gsub("<NVM_VERSION>", NVM_VERSION)
           .gsub("<NODE_VERSION>", NODE_VERSION)
           .gsub("<OS.md>", filename)
         f << "\n\n"

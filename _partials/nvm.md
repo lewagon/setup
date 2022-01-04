@@ -28,7 +28,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v14.15`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v<NODE_VERSION>`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear

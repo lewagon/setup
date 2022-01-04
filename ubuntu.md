@@ -482,7 +482,7 @@ Rerun the command to install the gems.
 In a terminal, execute the following command:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v16.3.1/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 Restart your terminal and run the following:
@@ -505,7 +505,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v14.15`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v16.3.1`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear
