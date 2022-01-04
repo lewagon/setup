@@ -541,7 +541,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 16.3.1
+nvm install 16.13.1
 ```
 
 Une fois l’installation terminée, exécute :
@@ -550,7 +550,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-Si tu vois apparaître `v16.3.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
+Si tu vois apparaître `v16.13.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
 
 ```bash
 nvm cache clear

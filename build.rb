@@ -2,7 +2,7 @@
 
 RUBY_SETUP_VERSION = "3.0.3"
 NVM_VERSION = "0.39.1"
-NODE_VERSION = "16.3.1"
+NODE_VERSION = "16.13.1"
 
 MACOS = %w[
   intro
