@@ -51,18 +51,18 @@ Est-ce que tu as déjà un compte GitHub ? Si ce n’est pas le cas, [inscris-t
 
 Avant de commencer, on va vérifier que la version de Windows installée sur ton ordinateur est compatible avec ces instructions de configuration.
 
-### Windows 10
+### Windows 10 ou Windows 11
 
-Pour pouvoir configurer ton ordinateur, **Windows 10** doit être installé dessus.
+Pour pouvoir configurer ton ordinateur, **Windows 10 ou Windows 11** doit être installé dessus.
 
 Pour connaître ta version de Windows :
 - Appuie sur `Windows` + `R`
 - Saisis `winver`
 - Appuie sur `ENTRÉE`
 
-:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10**, c’est bon :+1:
+:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10 ou Windows 11**, c’est bon :+1:
 
-:x: Si **Windows 10** n’apparaît pas, tu ne pourras pas utiliser cette configuration. Mais pas de panique ! Tu peux toujours passer à Windows 10 :relieved:
+:x: Sinon, tu ne pourras pas utiliser cette configuration. Il faut que tu mettes à jour ton Windows à la version 10 :point_down:
 
 <details>
   <summary>Mise à niveau vers Windows 10</summary>
@@ -72,9 +72,13 @@ Pour connaître ta version de Windows :
   - Une fois l’installation terminée, exécute les commandes ci-dessus pour vérifier que tu es sous **Windows 10**
 </details>
 
+:information_source: [La mise à jour Windows 11 est toujours en cours de déploiement](https://www.microsoft.com/en-us/windows/get-windows-11), ce qui signifie qu'elle peut être disponible, ou pas, pour ton ordinateur.
+
+:warning: **Si tu as Windows 10 installé, tu n'as pas besoin de faire la mise à jour Windows 11 pour continuer cette configuration**.
+
 ### Dernières mises à jour
 
-Une fois que tu as vérifié que tu utilises Windows 10, tu vas devoir installer les dernières mises à jour.
+Une fois que tu as vérifié que tu utilises Windows 10 ou 11, tu vas devoir installer les dernières mises à jour.
 
 Ouvre Windows Update :
 - Appuie sur `Windows` + `R`
@@ -159,11 +163,40 @@ C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 
 ## Sous-système Windows pour Linux (WSL)
 
-### Installer WSL 1
-
 WSL est l’environnement de développement que l’on utilise pour exécuter Ubuntu. Pour en savoir plus sur WSL, [consulte cette page](https://docs.microsoft.com/fr-fr/windows/wsl/faq).
 
-On va installer WSL à partir du terminal PowerShell :
+:information_source: Les instructions suivantes dépendent de ta version de Windows. Exécute uniquement les instructions qui correspondent à ta version :point_down:
+
+### Windows 11
+
+Si tu as Windows 11, nous allons installer WSL 2 et Ubuntu en une seule commande via le Windows Terminal.
+
+:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows Terminal** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
+
+- Appuie sur `Windows` + `R`
+- Saisis `wt`
+- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+
+:warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
+
+Une fenêtre de terminal bleue apparaîtra :
+- Copie la commande suivante (`Ctrl` + `C`)
+- Colle-la dans la fenêtre du terminal (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
+- Exécute-les en appuyant sur `ENTRÉE`
+
+```powershell
+wsl --install
+```
+
+:heavy_check_mark: Si la commande s’exécute sans erreur, redémarre ton ordinateur et suis les instructions ci-dessous :+1:
+
+:x: Si tu obtiens un message d’erreur (ou si tu vois apparaître du texte en rouge dans la fenêtre), **demande au prof**
+
+### Windows 10
+
+#### Installer WSL 1
+
+Si tu as Windows 10, on va d'abord installer WSL 1 à partir du terminal PowerShell.
 
 :warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
 
@@ -194,7 +227,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 :x: Si tu obtiens un message d’erreur (ou si tu vois apparaître du texte en rouge dans la fenêtre), **demande au prof**
 
-### Mise à niveau vers WSL 2
+#### Mise à niveau vers WSL 2
+
+Si tu as Windows 10, on va maintenant mettre à jour WSL à la version 2.
 
 Une fois que ton ordinateur a redémarré, on doit télécharger le programme d’installation de WSL 2.
 
@@ -210,7 +245,9 @@ Une fois que ton ordinateur a redémarré, on doit télécharger le programme d�
 
 :x: Si tu obtiens l’erreur « Cette mise à jour s’applique seulement aux machines avec le sous-système Windows pour Linux », **fais un clic droit** sur le programme et sélectionne `uninstall` ; tu devrais pouvoir l’installer normalement cette fois-ci.
 
-### Définir WSL 2 comme sous-système Windows pour Linux par défaut
+#### Définir WSL 2 comme sous-système Windows pour Linux par défaut
+
+Si tu as Windows 10, on va enfin définir la version 2 de WSL comme étant la version par défaut.
 
 Maintenant que WLS 2 est installé, on va le définir comme version par défaut :
 - Appuie sur `Windows` + `R`
@@ -244,6 +281,16 @@ wsl --set-default-version 2
 
 ### Installation
 
+:information_source: Les instructions suivantes dépendent de ta version de Windows. N'exécute que les instructions qui correspondent à ta version :point_down:
+
+#### Windows 11
+
+Si tu as Windows 11, après avoir redémarré ton ordinateur, tu devrais voir une fenêtre de terminal indiquant que WSL poursuit le processus d'installation d'Ubuntu. Lorsque c'est terminé, Ubuntu va se lancer.
+
+#### Windows 10
+
+Si tu as Windows 10, installons Ubuntu via le Microsoft Store :
+
 - Clique sur `Start`
 - Saisis `Microsoft Store`
 - Clique sur `Microsoft Store` dans la liste
@@ -266,7 +313,9 @@ wsl --set-default-version 2
 
 Une fois l’installation terminée, le bouton « Installer » se transforme en bouton « Lancer » ; clique dessus.
 
-Au premier lancement, on te demandera de fournir des informations.
+### Premier lancement
+
+Au premier lancement, on te demandera de fournir des informations :
 - Choisis un **nom d’utilisateur** :
   - un mot
   - en minuscules
@@ -369,9 +418,13 @@ code .
 
 ## Windows Terminal
 
-Le terminal standard installé par Ubuntu est très rudimentaire ; on va installer **Windows Terminal**, un terminal vraiment moderne.
-
 ### Installation
+
+:information_source: Les instructions suivantes dépendent de ta version de Windows.
+
+Si tu as Windows 11, le Windows Terminal est déjà installé et tu peux passer à la section suivante :point_down:
+
+Si tu as Windows 10, nous allons installer le Windows Terminal, un terminal vraiment moderne :
 
 - Clique sur `Démarrer`
 - Saisis `Microsoft Store`
@@ -416,11 +469,20 @@ La partie à modifier est entourée en rouge :
 
 On va commencer par demander à Ubuntu de démarrer directement dans ton répertoire personnel Ubuntu au lieu du répertoire Windows :
 - Recherche `"name": "Ubuntu",`
-- Ajoute la ligne suivante après :
+- Ajoute l'une des deux lignes suivantes après :
+
+Pour Windows 10 :point_down:
 
 ```bash
 "startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
 ```
+
+Pour Windows 11 :point_down:
+
+```bash
+"startingDirectory": "/home/the-username-you-chose-at-the-ubuntu-install",
+```
+
 :warning: N’oublie pas la virgule à la fin de la ligne !
 
 :warning: N’oublie pas de remplacer le nom d’utilisateur par le tien dans la ligne ci-dessus !
@@ -441,7 +503,7 @@ Tu peux enregistrer ces modifications en appuyant sur `Ctrl` + `S`
 
 Ce terminal a des onglets ; tu peux choisir d’ouvrir un nouvel onglet de terminal en cliquant sur **+** à côté de l’onglet actuel.
 
-**Désormais, chaque fois que l'on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS l’application Ubuntu.
+**Désormais, chaque fois que l'on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS aucun autre terminal.
 
 
 ## Extensions VS Code
@@ -458,14 +520,16 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
-Voici une liste des extensions que tu vas installer :
+Voici la liste des extensions que tu es en train d'installer :
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ### Configuration de Live Share
@@ -762,11 +826,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**Ferme ton terminal et rouvre-le**
-
-Si tu vois apparaître un avertissement, **ignore-le** (Ruby n’est pas encore installé).
 
 
 ## Ruby
@@ -788,9 +849,10 @@ d’utiliser la version 3.0.3 par défaut.
 rbenv global 3.0.3
 ```
 
-Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
+Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
+exec zsh
 ruby -v
 ```
 

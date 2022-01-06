@@ -4,7 +4,7 @@ Before we start, we need to check that the version of Windows installed on your 
 
 ### Windows 10 or Windows 11
 
-To be able to set up your computer, you need to have **Windows 10** or **Windows 11** installed.
+To be able to set up your computer, you need to have **Windows 10 or Windows 11** installed.
 
 To check your Windows version:
 - Press `Windows` + `R`

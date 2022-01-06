@@ -70,4 +70,10 @@ If it does not,
 
 :heavy_check_mark: If you got this message, you can continue :+1:
 
-:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to close your terminal and open it again. Do not hesitate to **contact a teacher**.
+:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to reset your terminal:
+
+```bash
+exec zsh
+```
+
+Do not hesitate to **contact a teacher**.

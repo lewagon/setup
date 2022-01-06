@@ -6,7 +6,7 @@ WSL is the development environment we are using to run Ubuntu. You can learn mor
 
 ### Windows 11
 
-If you are running Windows 11, we will install WSL 2 and Ubuntu in one command through the Windows Terminal:
+If you are running Windows 11, we will install WSL 2 and Ubuntu in one command through the Windows Terminal.
 
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Terminal** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
@@ -33,7 +33,7 @@ wsl --install
 
 #### Install WSL 1
 
-If you are running Windows 10, we will first install WSL 1 through the PowerShell Terminal:
+If you are running Windows 10, we will first install WSL 1 through the PowerShell Terminal.
 
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 

@@ -23,8 +23,5 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**Ferme ton terminal et rouvre-le**
-
-Si tu vois apparaître un avertissement, **ignore-le** (Ruby n’est pas encore installé).

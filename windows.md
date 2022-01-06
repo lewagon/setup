@@ -53,7 +53,7 @@ Before we start, we need to check that the version of Windows installed on your 
 
 ### Windows 10 or Windows 11
 
-To be able to set up your computer, you need to have **Windows 10** or **Windows 11** installed.
+To be able to set up your computer, you need to have **Windows 10 or Windows 11** installed.
 
 To check your Windows version:
 - Press `Windows` + `R`
@@ -168,7 +168,7 @@ WSL is the development environment we are using to run Ubuntu. You can learn mor
 
 ### Windows 11
 
-If you are running Windows 11, we will install WSL 2 and Ubuntu in one command through the Windows Terminal:
+If you are running Windows 11, we will install WSL 2 and Ubuntu in one command through the Windows Terminal.
 
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Terminal** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
@@ -195,7 +195,7 @@ wsl --install
 
 #### Install WSL 1
 
-If you are running Windows 10, we will first install WSL 1 through the PowerShell Terminal:
+If you are running Windows 10, we will first install WSL 1 through the PowerShell Terminal.
 
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
@@ -825,11 +825,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**Close your terminal and open it again**
-
-If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
 ## Ruby
@@ -851,9 +848,10 @@ to use the 3.0.3 version by default.
 rbenv global 3.0.3
 ```
 
-Then **restart** your terminal again (close it and reopen it).
+Then **reset** your terminal and check your Ruby version:
 
 ```bash
+exec zsh
 ruby -v
 ```
 

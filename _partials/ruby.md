@@ -17,9 +17,10 @@ to use the <RUBY_SETUP_VERSION> version by default.
 rbenv global <RUBY_SETUP_VERSION>
 ```
 
-Then **restart** your terminal again (close it and reopen it).
+Then **reset** your terminal and check your Ruby version:
 
 ```bash
+exec zsh
 ruby -v
 ```
 
