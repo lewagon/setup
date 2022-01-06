@@ -51,30 +51,34 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
 
-### Windows 10
+### Windows 10 or Windows 11
 
-To be able to set up your computer, you need to have **Windows 10** installed.
+To be able to set up your computer, you need to have **Windows 10** or **Windows 11** installed.
 
 To check your Windows version:
 - Press `Windows` + `R`
 - Type  `winver`
 - Press `Enter`
 
-:heavy_check_mark: If the first words of this window are **Windows 10** you're good to go :+1:
+:heavy_check_mark: If the first words of this window are **Windows 10** or **Windows 11** you're good to go :+1:
 
-:x: If it does not mention **Windows 10**, you cannot proceed with this setup — but do not panic! You can always upgrade to Windows 10 :relieved:
+:x: If not, you cannot proceed with this setup. You have to upgrade to Windows 10 first :point_down:
 
 <details>
   <summary>Upgrade to Windows 10</summary>
 
   - Download Windows 10 from [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
-  - Install it. It should take roughly an hour, but this is dependent on your computer
-  - When the installation is over, execute the commands above to check that you now have **Windows 10**
+  - Install it. It should take roughly an hour, but this depends on your computer.
+  - When the installation is over, execute the commands above :point_up: to check that you now have **Windows 10**.
 </details>
+
+:info: Windows 11 upgrade is rolling out until the end of 2022, which means it may or may not be available for your computer just yet.
+
+:warning: **If you have Windows 10 installed, you don't need to upgrade to Windows 11 to proceed with this setup**.
 
 ### Latest updates
 
-Once you're sure that you're using Windows 10, you need to install all the latest updates.
+Once you're sure that you're using Windows 10 or 11, you need to install all the latest updates.
 
 Open Windows Update:
 - Press `Windows` + `R`
