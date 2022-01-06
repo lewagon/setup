@@ -47,7 +47,6 @@ WINDOWS = %w[
   git
   zsh
   oh_my_zsh
-  windows_browser
   gh_cli
   ssh_key
   dotfiles

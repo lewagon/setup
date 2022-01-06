@@ -228,6 +228,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 #### Upgrade to WSL 2
 
+If you are running Windows 10, we will then upgrade WSL to version 2.
+
 Once your computer has restarted, we need to download the WSL2 installer.
 
 - Go to the [download page](https://aka.ms/wsl2kernel)
@@ -243,6 +245,8 @@ Once your computer has restarted, we need to download the WSL2 installer.
 :x: If you encounter the error "This update only applies to machines with the Windows Subsystem for Linux", **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
 #### Make WSL 2 the default Windows Subsystem for Linux
+
+If you are running Windows 10, we will set WSL default version to 2.
 
 Now that WSL 2 is installed, let's make it the default version:
 - Press `Windows` + `R`
@@ -283,6 +287,8 @@ wsl --set-default-version 2
 If you are running Windows 11, after restarting you computer, you should see a terminal window saying WSL is resuming the Ubuntu installation process. When it's done, Ubuntu will be launched.
 
 #### Windows 10
+
+If you are running Windows 10, let's install Ubuntu throught the Microsoft Store:
 
 - Click on `Start`
 - Type  `Microsoft Store`
@@ -411,9 +417,13 @@ code .
 
 ## Windows Terminal
 
-The standard terminal installed by Ubuntu is a very crude: let's install **Windows Terminal**, a real modern terminal.
-
 ### Installation
+
+:information_source: The following instructions depend on your version of Windows.
+
+If you are running Windows 11, the Windows Terminal is already installed and you can proceed to the next section :point_down:
+
+If you are running Windows 10, let's install Windows Terminal, a real modern terminal:
 
 - Click on `Start`
 - Type  `Microsoft Store`
@@ -458,11 +468,20 @@ We have circle in red the part you will change:
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
 - Locate the `"name": "Ubuntu",`
-- Add the following line after it:
+- Add one of the following lines after it:
+
+For Windows 10 :point_down:
 
 ```bash
 "startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
 ```
+
+For Windows 11 :point_down:
+
+```bash
+"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
+```
+
 :warning: Do not forget the comma at the end of the line!
 
 :warning: Do not forget to replace the username by your own in the line above!
@@ -483,7 +502,7 @@ You can save these changes by pressing `Ctrl` + `S`
 
 This terminal has tabs: you can choose to open a new terminal tab by clicking on the **+** next to the current one.
 
-**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
+**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
 
 
 ## VS Code Extensions
@@ -606,81 +625,6 @@ At the end your terminal should look like this:
 :heavy_check_mark: If it does, you can continue :+1:
 
 :x: Otherwise, please **ask for a teacher**
-
-
-## Linking your default browser to Ubuntu
-
-To be sure that you can interact with your browser installed on Windows from your Ubuntu terminal, we need to set it as your default browser there.
-
-:warning: You need to execute at least one of the following commands below:
-
-<details>
-  <summary>Google Chrome as your default browser</summary>
-
-  Run the command:
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-  ```
-
-  If you get an error like `ls: cannot access...` Run the following command:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-
-  Else run:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-<details>
-  <summary>Mozilla Firefox as your default browser</summary>
-
-  Run the command:
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
-  ```
-
-  If you get an error like `ls: cannot access...` Run the following command:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-
-  Else run:
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-<details>
-  <summary>Microsoft Edge as your default browser</summary>
-
-  Run the command:
-
-  ```bash
-  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-Restart your terminal.
-
-Then please make sure that the following command returns "Browser defined 👌":
-
-```bash
-[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
-```
-
-If it does not,
-
-:heavy_check_mark: If you got this message, you can continue :+1:
-
-:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to close your terminal and open it again. Do not hesitate to **contact a teacher**.
 
 
 ## GitHub CLI

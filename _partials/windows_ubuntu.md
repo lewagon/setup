@@ -10,6 +10,8 @@ If you are running Windows 11, after restarting you computer, you should see a t
 
 #### Windows 10
 
+If you are running Windows 10, let's install Ubuntu throught the Microsoft Store:
+
 - Click on `Start`
 - Type  `Microsoft Store`
 - Click on `Microsoft Store` in the list

@@ -66,6 +66,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 #### Upgrade to WSL 2
 
+If you are running Windows 10, we will then upgrade WSL to version 2.
+
 Once your computer has restarted, we need to download the WSL2 installer.
 
 - Go to the [download page](https://aka.ms/wsl2kernel)
@@ -81,6 +83,8 @@ Once your computer has restarted, we need to download the WSL2 installer.
 :x: If you encounter the error "This update only applies to machines with the Windows Subsystem for Linux", **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
 #### Make WSL 2 the default Windows Subsystem for Linux
+
+If you are running Windows 10, we will set WSL default version to 2.
 
 Now that WSL 2 is installed, let's make it the default version:
 - Press `Windows` + `R`
