@@ -30,12 +30,6 @@ sudo apt update
 sudo apt install -y gh
 ```
 
-Puis copie-colle la commande suivante :
-
-```bash
-sudo apt install -y gh
-```
-
 Pour vérifier que `gh` a bien été installé sur ta machine, tu peux exécuter :
 
 ```bash

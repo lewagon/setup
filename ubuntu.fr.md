@@ -61,7 +61,7 @@ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 sudo apt update
-sudo apt install code
+sudo apt install -y code
 ```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
@@ -152,12 +152,6 @@ Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
-sudo apt install -y gh
-```
-
-Puis copie-colle la commande suivante :
-
-```bash
 sudo apt install -y gh
 ```
 
