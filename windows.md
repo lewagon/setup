@@ -575,8 +575,8 @@ Let's now install [GitHub official CLI](https://cli.github.com) (Command Line In
 In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
 ```
 
