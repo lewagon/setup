@@ -9,6 +9,39 @@
 - 安装Ruby
 
 
+## Zoom
+
+To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
+
+:warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
+
+Go to [zoom.us/download](https://zoom.us/download).
+
+Under **Zoom Client** click the **Download** button.
+
+Open the file you have just downloaded to install the app.
+
+Open the Zoom app.
+
+If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
+
+![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
+
+If you already have a Zoom account, sign in using your credentials.
+
+If not, click on the **Sign Up Free** link:
+
+![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
+
+You will be redirected to Zoom's website to complete a form.
+
+When it's done, go back to the Zoom app and sign in using your credentials.
+
+You should then see a screen like this:
+
+![Zoom Home Screen](images/zoom_home_screen.png)
+
+You can now close the Zoom app.
 
 
 ## GitHub账户
@@ -20,67 +53,11 @@
 ![](images/github_upload_picture.png)
 
 
-## 检查你的电脑是否为Apple Silicon(Apple M1芯片)
-
-如果你是在2020下半年买的电脑，它更有可能是Apple Silicon而不是Intel处理器。让我们来查看查看...
-
-你可以从Applications > Utilities或者在[Spotlight](https://support.apple.com/en-gb/HT204014)里面搜索：
-
-![](images/open-terminal.png)
-
-复制粘贴以下的指令到终端里并按`Enter`来执行这段指令。
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
-```
-
-☝️执行完这段代码之后将会表明你的电脑是否使用的是Apple Silicon。
-
-如果你的电脑使用的是Apple Silicon，展开下面的段落并进行阅读。如果不是的话，请忽略它。
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-  &nbsp;
-
-
-
-## Apple Silicon的相关设置
-
-### 卸载Homebrew
-
-我们需要卸载Homebrew以防本地已经安装了一个版本。
-
-在终端中执行以下代码:
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-如果brew如果没有被安装，你将会得到以下消息`brew: command not found!`
-
-### 为Rosetta配置终端
-
-打开访达Finder（或者在[Spotlight](https://support.apple.com/en-gb/HT204014)里搜索它)。
-
-前往Applications > Utilities.
-
-复制终端应用(选择它, 然后Cmd + C, Cmd + V)，并将它的复制重命名为Terminal Rosetta。
-
-在Terminal Rosetta软件上按Cmd + I, 然后勾选”使用Rosetta打开（Open using Rosetta）“.
-
-⚠️ 从此以后在训练营中，每当你需要打开终端的时候，你将需要打开**Terminal Rosetta**应用。
-
-启动终端应用程序。将会跳出安装Rosetta窗口。点击安装。
-
-</details>
-
-
 ## 一个有关在mac上跳出应用程序的小贴士
 
 在mac上点击应用程序窗口左上方的小红叉**并不是真正的退出了它**，他只是关闭了一个活跃窗口。如果想要 _真正_ 的退出应用程序，你需要在应用活跃的时候按`Cmd + Q`，或者在你的菜单栏里前往`APP_NAME` -> 点击`Quit`
 
-![quit.png](images/quit.png)
+![Quit Terminal on macOS](images/macos_quit.png)
 
 在这个设置教程中，你将会被要求**退出并重启**应用程序很多次，请确保你可以正确的退出重启 :pray:
 
@@ -385,13 +362,13 @@ brew install rbenv
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用2.7.4这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用3.0.3这个版本作为默认版本。
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
 然后再次**重启**你的终端（关掉并重新打开它）。
@@ -400,7 +377,7 @@ rbenv global 2.7.4
 ruby -v
 ```
 
-你应该会看到`ruby 2.7.4p`。如果没有的话，询问一下老师。
+你应该会看到`ruby 3.0.3p`。如果没有的话，询问一下老师。
 
 ## 安装一些gems
 
@@ -469,7 +446,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15.0
+nvm install 16.13.1
 ```
 
 当这个指令执行结束之后，运行：
@@ -478,7 +455,7 @@ nvm install 14.15.0
 node -v
 ```
 
-你应该会看到`v14.15.0`。如果没有的话，问一下你的老师。
+你应该会看到`v16.13.1`。如果没有的话，问一下你的老师。
 
 
 ## yarn

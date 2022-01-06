@@ -15,7 +15,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15.0
+nvm install <NODE_VERSION>
 ```
 
 当这个指令执行结束之后，运行：
@@ -24,4 +24,4 @@ nvm install 14.15.0
 node -v
 ```
 
-你应该会看到`v14.15.0`。如果没有的话，问一下你的老师。
+你应该会看到`v<NODE_VERSION>`。如果没有的话，问一下你的老师。

@@ -7,23 +7,24 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install <RUBY_VERSION>
+rbenv install <RUBY_SETUP_VERSION>
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the <RUBY_VERSION> version by default.
+to use the <RUBY_SETUP_VERSION> version by default.
 
 ```bash
-rbenv global <RUBY_VERSION>
+rbenv global <RUBY_SETUP_VERSION>
 ```
 
-Then **restart** your terminal again (close it and reopen it).
+Then **reset** your terminal and check your Ruby version:
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby <RUBY_VERSION>p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby <RUBY_SETUP_VERSION>p` then you can proceed +1:
 
 :x: If not, **ask a teacher**
 

@@ -45,8 +45,8 @@ sudo apt install -y git apt-transport-https unzip gnome-terminal
 现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。运行以下代码:
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
 sudo apt install -y gh
 ```
@@ -261,13 +261,13 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用2.7.4这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用3.0.3这个版本作为默认版本。
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
 然后再次**重启**你的终端（关掉并重新打开它）。
@@ -276,7 +276,7 @@ rbenv global 2.7.4
 ruby -v
 ```
 
-你应该会看到`ruby 2.7.4p`。如果没有的话，询问一下老师。
+你应该会看到`ruby 3.0.3p`。如果没有的话，询问一下老师。
 
 ## 安装一些gems
 
@@ -345,7 +345,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15.0
+nvm install 16.13.1
 ```
 
 当这个指令执行结束之后，运行：
@@ -354,7 +354,7 @@ nvm install 14.15.0
 node -v
 ```
 
-你应该会看到`v14.15.0`。如果没有的话，问一下你的老师。
+你应该会看到`v16.13.1`。如果没有的话，问一下你的老师。
 
 
 ## yarn

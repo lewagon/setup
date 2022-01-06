@@ -57,4 +57,8 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès.
 
-**Quitte** toutes les fenêtres de terminal ouvertes.
+**Réinitialise** ton terminal en exécutant :
+
+```bash
+exec zsh
+```

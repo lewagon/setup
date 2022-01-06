@@ -2,6 +2,16 @@
 
 ### Installation
 
+:information_source: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
+
+#### Windows 11
+
+If you are running Windows 11, after restarting you computer, you should see a terminal window saying WSL is resuming the Ubuntu installation process. When it's done, Ubuntu will be launched.
+
+#### Windows 10
+
+If you are running Windows 10, let's install Ubuntu throught the Microsoft Store:
+
 - Click on `Start`
 - Type  `Microsoft Store`
 - Click on `Microsoft Store` in the list
@@ -23,6 +33,8 @@
 </details>
 
 Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
+
+### First launch
 
 At first launch, you will be asked some information:
 - Choose a **username**:

@@ -1,8 +1,12 @@
 ## Windows Terminal
 
-The standard terminal installed by Ubuntu is a very crude: let's install **Windows Terminal**, a real modern terminal.
-
 ### Installation
+
+:information_source: The following instructions depend on your version of Windows.
+
+If you are running Windows 11, the Windows Terminal is already installed and you can proceed to the next section :point_down:
+
+If you are running Windows 10, let's install Windows Terminal, a real modern terminal:
 
 - Click on `Start`
 - Type  `Microsoft Store`
@@ -47,11 +51,20 @@ We have circle in red the part you will change:
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
 - Locate the `"name": "Ubuntu",`
-- Add the following line after it:
+- Add one of the following lines after it:
+
+For Windows 10 :point_down:
 
 ```bash
 "startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
 ```
+
+For Windows 11 :point_down:
+
+```bash
+"startingDirectory": "/home/the-username-you-chose-at-the-ubuntu-install",
+```
+
 :warning: Do not forget the comma at the end of the line!
 
 :warning: Do not forget to replace the username by your own in the line above!
@@ -72,4 +85,4 @@ You can save these changes by pressing `Ctrl` + `S`
 
 This terminal has tabs: you can choose to open a new terminal tab by clicking on the **+** next to the current one.
 
-**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
+**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.

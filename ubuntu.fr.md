@@ -13,12 +13,17 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
-- Va sur [zoom.us/download](https://zoom.us/download)
-- Sous **Client Zoom**, clique sur le bouton **Télécharger**
-- Ouvre le fichier que tu viens de télécharger pour installer l’application
-- Ouvre l’application Zoom
-- Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants
-- Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :
+Va sur [zoom.us/download](https://zoom.us/download).
+
+Sous **Client Zoom**, clique sur le bouton **Télécharger**.
+
+Ouvre le fichier que tu viens de télécharger pour installer l’application.
+
+Ouvre l’application Zoom.
+
+Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants.
+
+Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :
 
 ![Inscrivez-vous à Zoom, c’est gratuit](images/zoom_sign_up_free.png)
 
@@ -51,10 +56,12 @@ On va maintenant installer l’éditeur de texte [Visual Studio Code](https://co
 Copie (`Ctrl` + `C`) les commandes ci-dessous, puis colle-les dans ton terminal (`Ctrl` + `Shift` + `v`) :
 
 ```bash
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
 sudo apt update
-sudo apt install code
+sudo apt install -y code
 ```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
@@ -88,14 +95,16 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
-Voici une liste des extensions que tu vas installer :
+Voici la liste des extensions que tu es en train d'installer :
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ### Configuration de Live Share
@@ -142,14 +151,9 @@ On va maintenant installer la [CLI officielle de GitHub](https://cli.github.com)
 Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe s’il t’est demandé :
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
-```
-
-Puis copie-colle la commande suivante :
-
-```bash
 sudo apt install -y gh
 ```
 
@@ -342,7 +346,11 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès.
 
-**Quitte** toutes les fenêtres de terminal ouvertes.
+**Réinitialise** ton terminal en exécutant :
+
+```bash
+exec zsh
+```
 
 
 ## Désactiver l’invite de phrase secrète SSH
@@ -393,11 +401,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**Ferme ton terminal et rouvre-le**
-
-Si tu vois apparaître un avertissement, **ignore-le** (Ruby n’est pas encore installé).
 
 
 ## Ruby
@@ -409,23 +414,24 @@ Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lan
 Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
 Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
-d’utiliser la version 2.7.4 par défaut.
+d’utiliser la version 3.0.3 par défaut.
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
-Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
+Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `2.7.4p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.0.3p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -482,7 +488,7 @@ Exécute à nouveau la commande pour installer les gems.
 Exécute la commande suivante dans ton terminal :
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 Redémarre ton terminal et exécute la commande suivante :
@@ -496,7 +502,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 14.15
+nvm install 16.13.1
 ```
 
 Une fois l’installation terminée, exécute :
@@ -505,7 +511,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-Si tu vois apparaître `v14.15`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
+Si tu vois apparaître `v16.13.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
 
 ```bash
 nvm cache clear
@@ -556,9 +562,10 @@ sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 
 On va maintenant vérifier que tu as tout installé correctement.
 
-Quitte toutes les fenêtres Terminal ouvertes, ouvres-en une nouvelle et exécute les commandes suivantes :
+Dans ton terminal, exécute les commandes suivantes :
 
 ```bash
+exec zsh
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 

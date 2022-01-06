@@ -13,12 +13,17 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
-- Va sur [zoom.us/download](https://zoom.us/download)
-- Sous **Client Zoom**, clique sur le bouton **Télécharger**
-- Ouvre le fichier que tu viens de télécharger pour installer l’application
-- Ouvre l’application Zoom
-- Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants
-- Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :
+Va sur [zoom.us/download](https://zoom.us/download).
+
+Sous **Client Zoom**, clique sur le bouton **Télécharger**.
+
+Ouvre le fichier que tu viens de télécharger pour installer l’application.
+
+Ouvre l’application Zoom.
+
+Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants.
+
+Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :
 
 ![Inscrivez-vous à Zoom, c’est gratuit](images/zoom_sign_up_free.png)
 
@@ -46,18 +51,18 @@ Est-ce que tu as déjà un compte GitHub ? Si ce n’est pas le cas, [inscris-t
 
 Avant de commencer, on va vérifier que la version de Windows installée sur ton ordinateur est compatible avec ces instructions de configuration.
 
-### Windows 10
+### Windows 10 ou Windows 11
 
-Pour pouvoir configurer ton ordinateur, **Windows 10** doit être installé dessus.
+Pour pouvoir configurer ton ordinateur, **Windows 10 ou Windows 11** doit être installé dessus.
 
 Pour connaître ta version de Windows :
 - Appuie sur `Windows` + `R`
 - Saisis `winver`
 - Appuie sur `ENTRÉE`
 
-:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10**, c’est bon :+1:
+:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10 ou Windows 11**, c’est bon :+1:
 
-:x: Si **Windows 10** n’apparaît pas, tu ne pourras pas utiliser cette configuration. Mais pas de panique ! Tu peux toujours passer à Windows 10 :relieved:
+:x: Sinon, tu ne pourras pas utiliser cette configuration. Il faut que tu mettes à jour ton Windows à la version 10 :point_down:
 
 <details>
   <summary>Mise à niveau vers Windows 10</summary>
@@ -67,9 +72,13 @@ Pour connaître ta version de Windows :
   - Une fois l’installation terminée, exécute les commandes ci-dessus pour vérifier que tu es sous **Windows 10**
 </details>
 
+:information_source: [La mise à jour Windows 11 est toujours en cours de déploiement](https://www.microsoft.com/en-us/windows/get-windows-11), ce qui signifie qu'elle peut être disponible, ou pas, pour ton ordinateur.
+
+:warning: **Si tu as Windows 10 installé, tu n'as pas besoin de faire la mise à jour Windows 11 pour continuer cette configuration**.
+
 ### Dernières mises à jour
 
-Une fois que tu as vérifié que tu utilises Windows 10, tu vas devoir installer les dernières mises à jour.
+Une fois que tu as vérifié que tu utilises Windows 10 ou 11, tu vas devoir installer les dernières mises à jour.
 
 Ouvre Windows Update :
 - Appuie sur `Windows` + `R`
@@ -154,11 +163,40 @@ C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 
 ## Sous-système Windows pour Linux (WSL)
 
-### Installer WSL 1
-
 WSL est l’environnement de développement que l’on utilise pour exécuter Ubuntu. Pour en savoir plus sur WSL, [consulte cette page](https://docs.microsoft.com/fr-fr/windows/wsl/faq).
 
-On va installer WSL à partir du terminal PowerShell :
+:information_source: Les instructions suivantes dépendent de ta version de Windows. Exécute uniquement les instructions qui correspondent à ta version :point_down:
+
+### Windows 11
+
+Si tu as Windows 11, nous allons installer WSL 2 et Ubuntu en une seule commande via le Windows Terminal.
+
+:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows Terminal** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
+
+- Appuie sur `Windows` + `R`
+- Saisis `wt`
+- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+
+:warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
+
+Une fenêtre de terminal bleue apparaîtra :
+- Copie la commande suivante (`Ctrl` + `C`)
+- Colle-la dans la fenêtre du terminal (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
+- Exécute-les en appuyant sur `ENTRÉE`
+
+```powershell
+wsl --install
+```
+
+:heavy_check_mark: Si la commande s’exécute sans erreur, redémarre ton ordinateur et suis les instructions ci-dessous :+1:
+
+:x: Si tu obtiens un message d’erreur (ou si tu vois apparaître du texte en rouge dans la fenêtre), **demande au prof**
+
+### Windows 10
+
+#### Installer WSL 1
+
+Si tu as Windows 10, on va d'abord installer WSL 1 à partir du terminal PowerShell.
 
 :warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
 
@@ -189,7 +227,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 :x: Si tu obtiens un message d’erreur (ou si tu vois apparaître du texte en rouge dans la fenêtre), **demande au prof**
 
-### Mise à niveau vers WSL 2
+#### Mise à niveau vers WSL 2
+
+Si tu as Windows 10, on va maintenant mettre à jour WSL à la version 2.
 
 Une fois que ton ordinateur a redémarré, on doit télécharger le programme d’installation de WSL 2.
 
@@ -205,7 +245,9 @@ Une fois que ton ordinateur a redémarré, on doit télécharger le programme d�
 
 :x: Si tu obtiens l’erreur « Cette mise à jour s’applique seulement aux machines avec le sous-système Windows pour Linux », **fais un clic droit** sur le programme et sélectionne `uninstall` ; tu devrais pouvoir l’installer normalement cette fois-ci.
 
-### Définir WSL 2 comme sous-système Windows pour Linux par défaut
+#### Définir WSL 2 comme sous-système Windows pour Linux par défaut
+
+Si tu as Windows 10, on va enfin définir la version 2 de WSL comme étant la version par défaut.
 
 Maintenant que WLS 2 est installé, on va le définir comme version par défaut :
 - Appuie sur `Windows` + `R`
@@ -239,6 +281,16 @@ wsl --set-default-version 2
 
 ### Installation
 
+:information_source: Les instructions suivantes dépendent de ta version de Windows. N'exécute que les instructions qui correspondent à ta version :point_down:
+
+#### Windows 11
+
+Si tu as Windows 11, après avoir redémarré ton ordinateur, tu devrais voir une fenêtre de terminal indiquant que WSL poursuit le processus d'installation d'Ubuntu. Lorsque c'est terminé, Ubuntu va se lancer.
+
+#### Windows 10
+
+Si tu as Windows 10, installons Ubuntu via le Microsoft Store :
+
 - Clique sur `Start`
 - Saisis `Microsoft Store`
 - Clique sur `Microsoft Store` dans la liste
@@ -261,7 +313,9 @@ wsl --set-default-version 2
 
 Une fois l’installation terminée, le bouton « Installer » se transforme en bouton « Lancer » ; clique dessus.
 
-Au premier lancement, on te demandera de fournir des informations.
+### Premier lancement
+
+Au premier lancement, on te demandera de fournir des informations :
 - Choisis un **nom d’utilisateur** :
   - un mot
   - en minuscules
@@ -364,9 +418,13 @@ code .
 
 ## Windows Terminal
 
-Le terminal standard installé par Ubuntu est très rudimentaire ; on va installer **Windows Terminal**, un terminal vraiment moderne.
-
 ### Installation
+
+:information_source: Les instructions suivantes dépendent de ta version de Windows.
+
+Si tu as Windows 11, le Windows Terminal est déjà installé et tu peux passer à la section suivante :point_down:
+
+Si tu as Windows 10, nous allons installer le Windows Terminal, un terminal vraiment moderne :
 
 - Clique sur `Démarrer`
 - Saisis `Microsoft Store`
@@ -411,11 +469,20 @@ La partie à modifier est entourée en rouge :
 
 On va commencer par demander à Ubuntu de démarrer directement dans ton répertoire personnel Ubuntu au lieu du répertoire Windows :
 - Recherche `"name": "Ubuntu",`
-- Ajoute la ligne suivante après :
+- Ajoute l'une des deux lignes suivantes après :
+
+Pour Windows 10 :point_down:
 
 ```bash
 "startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
 ```
+
+Pour Windows 11 :point_down:
+
+```bash
+"startingDirectory": "/home/the-username-you-chose-at-the-ubuntu-install",
+```
+
 :warning: N’oublie pas la virgule à la fin de la ligne !
 
 :warning: N’oublie pas de remplacer le nom d’utilisateur par le tien dans la ligne ci-dessus !
@@ -436,7 +503,7 @@ Tu peux enregistrer ces modifications en appuyant sur `Ctrl` + `S`
 
 Ce terminal a des onglets ; tu peux choisir d’ouvrir un nouvel onglet de terminal en cliquant sur **+** à côté de l’onglet actuel.
 
-**Désormais, chaque fois que l'on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS l’application Ubuntu.
+**Désormais, chaque fois que l'on fera référence au terminal ou à la console, il s’agira de celui-ci.** N’utilise PLUS aucun autre terminal.
 
 
 ## Extensions VS Code
@@ -453,14 +520,16 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
-Voici une liste des extensions que tu vas installer :
+Voici la liste des extensions que tu es en train d'installer :
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ### Configuration de Live Share
@@ -507,14 +576,9 @@ On va maintenant installer la [CLI officielle de GitHub](https://cli.github.com)
 Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe s’il t’est demandé :
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
-```
-
-Puis copie-colle la commande suivante :
-
-```bash
 sudo apt install -y gh
 ```
 
@@ -559,81 +623,6 @@ Si tu vois apparaître la question « Do you want to change your default shell 
 :heavy_check_mark: Si c’est le cas, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
-
-
-## Associer ton navigateur par défaut à Ubuntu
-
-Pour que tu puisses interagir avec le navigateur installé sous Windows depuis ton terminal Ubuntu, on doit le définir comme navigateur par défaut.
-
-:warning: Tu dois exécuter au moins une des commandes ci-dessous :
-
-<details>
- <summary>Google Chrome est ton navigateur par défaut</summary>
-
-Exécute la commande :
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
-  ```
-
-Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande suivante :
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-
-  Sinon, exécute :
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-<details>
- <summary>Mozilla Firefox est ton navigateur par défaut</summary>
-
-  Exécute la commande :
-
-  ```bash
-    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
-  ```
-
-  Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande suivante :
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-
-  Sinon, exécute :
-
-  ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-<details>
- <summary>Microsoft Edge est ton navigateur par défaut</summary>
-
-  Exécute la commande :
-
-  ```bash
-  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
-  ```
-</details>
-
-Redémarre ton terminal.
-
-Puis vérifie que la commande suivante renvoie « Browser defined 👌 » :
-
-```bash
-[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
-```
-
-Si ce n’est pas le cas,
-
-:heavy_check_mark: Si tu vois apparaître ce message, tu peux continuer :+1:
-
-:x: Sinon, choisis un navigateur dans la liste ci-dessus et exécute la commande correspondante. N’oublie pas de fermer ton terminal et de le rouvrir. N’hésite pas à **demander au prof**.
 
 
 ## GitHub CLI
@@ -782,7 +771,11 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès.
 
-**Quitte** toutes les fenêtres de terminal ouvertes.
+**Réinitialise** ton terminal en exécutant :
+
+```bash
+exec zsh
+```
 
 
 ## Désactiver l’invite de phrase secrète SSH
@@ -833,11 +826,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**Ferme ton terminal et rouvre-le**
-
-Si tu vois apparaître un avertissement, **ignore-le** (Ruby n’est pas encore installé).
 
 
 ## Ruby
@@ -849,23 +839,24 @@ Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lan
 Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
 Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
-d’utiliser la version 2.7.4 par défaut.
+d’utiliser la version 3.0.3 par défaut.
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
-Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
+Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `2.7.4p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.0.3p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -922,7 +913,7 @@ Exécute à nouveau la commande pour installer les gems.
 Exécute la commande suivante dans ton terminal :
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 Redémarre ton terminal et exécute la commande suivante :
@@ -936,7 +927,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 14.15
+nvm install 16.13.1
 ```
 
 Une fois l’installation terminée, exécute :
@@ -945,7 +936,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-Si tu vois apparaître `v14.15`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
+Si tu vois apparaître `v16.13.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
 
 ```bash
 nvm cache clear
@@ -1020,9 +1011,10 @@ Ouvre un nouveau terminal.
 
 On va maintenant vérifier que tu as tout installé correctement.
 
-Quitte toutes les fenêtres Terminal ouvertes, ouvres-en une nouvelle et exécute les commandes suivantes :
+Dans ton terminal, exécute les commandes suivantes :
 
 ```bash
+exec zsh
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 

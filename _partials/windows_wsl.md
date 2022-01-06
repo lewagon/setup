@@ -1,10 +1,39 @@
 ## Windows Subsystem for Linux (WSL)
 
-### Install WSL 1
-
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-We will install WSL through the PowerShell Terminal:
+:information_source: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
+
+### Windows 11
+
+If you are running Windows 11, we will install WSL 2 and Ubuntu in one command through the Windows Terminal.
+
+:warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows Terminal** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
+
+- Press `Windows` + `R`
+- Type  `wt`
+- Press **`Ctrl` + `Shift` + `Enter`**
+
+:warning: You may have to accept the UAC confirmation about the privilege elevation.
+
+A blue terminal window will appear:
+- Copy the following command (`Ctrl` + `C`)
+- Paste it into the terminal window (`Ctrl` + `V` or by right-clicking in the window)
+- Run it by pressing `Enter`
+
+```powershell
+wsl --install
+```
+
+:heavy_check_mark: If the command ran without any error, please restart your computer and continue below :+1:
+
+:x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
+
+### Windows 10
+
+#### Install WSL 1
+
+If you are running Windows 10, we will first install WSL 1 through the PowerShell Terminal.
 
 :warning: In the following instruction, please be aware of the `Ctrl` + `Shift` + `Enter` key stroke to execute **Windows PowerShell** with administrator privileges instead of just clicking on `Ok`or pressing `Enter`.
 
@@ -35,7 +64,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
 
-### Upgrade to WSL 2
+#### Upgrade to WSL 2
+
+If you are running Windows 10, we will then upgrade WSL to version 2.
 
 Once your computer has restarted, we need to download the WSL2 installer.
 
@@ -51,7 +82,9 @@ Once your computer has restarted, we need to download the WSL2 installer.
 
 :x: If you encounter the error "This update only applies to machines with the Windows Subsystem for Linux", **right click** on the program and select `uninstall`; you shall be able to install it normally this time.
 
-### Make WSL 2 the default Windows Subsystem for Linux
+#### Make WSL 2 the default Windows Subsystem for Linux
+
+If you are running Windows 10, we will set WSL default version to 2.
 
 Now that WSL 2 is installed, let's make it the default version:
 - Press `Windows` + `R`

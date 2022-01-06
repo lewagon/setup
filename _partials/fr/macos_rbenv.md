@@ -16,14 +16,15 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
 
-Puis dans le terminal, exécute :
+Dans le terminal, exécute :
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`Cmd` + `Q`) et redémarres-en une. Exécute ensuite :
+Puis exécute ensuite :
 
 ```bash
+exec zsh
 brew install rbenv
 ```

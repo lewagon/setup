@@ -2,18 +2,18 @@
 
 Avant de commencer, on va vérifier que la version de Windows installée sur ton ordinateur est compatible avec ces instructions de configuration.
 
-### Windows 10
+### Windows 10 ou Windows 11
 
-Pour pouvoir configurer ton ordinateur, **Windows 10** doit être installé dessus.
+Pour pouvoir configurer ton ordinateur, **Windows 10 ou Windows 11** doit être installé dessus.
 
 Pour connaître ta version de Windows :
 - Appuie sur `Windows` + `R`
 - Saisis `winver`
 - Appuie sur `ENTRÉE`
 
-:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10**, c’est bon :+1:
+:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10 ou Windows 11**, c’est bon :+1:
 
-:x: Si **Windows 10** n’apparaît pas, tu ne pourras pas utiliser cette configuration. Mais pas de panique ! Tu peux toujours passer à Windows 10 :relieved:
+:x: Sinon, tu ne pourras pas utiliser cette configuration. Il faut que tu mettes à jour ton Windows à la version 10 :point_down:
 
 <details>
   <summary>Mise à niveau vers Windows 10</summary>
@@ -23,9 +23,13 @@ Pour connaître ta version de Windows :
   - Une fois l’installation terminée, exécute les commandes ci-dessus pour vérifier que tu es sous **Windows 10**
 </details>
 
+:information_source: [La mise à jour Windows 11 est toujours en cours de déploiement](https://www.microsoft.com/en-us/windows/get-windows-11), ce qui signifie qu'elle peut être disponible, ou pas, pour ton ordinateur.
+
+:warning: **Si tu as Windows 10 installé, tu n'as pas besoin de faire la mise à jour Windows 11 pour continuer cette configuration**.
+
 ### Dernières mises à jour
 
-Une fois que tu as vérifié que tu utilises Windows 10, tu vas devoir installer les dernières mises à jour.
+Une fois que tu as vérifié que tu utilises Windows 10 ou 11, tu vas devoir installer les dernières mises à jour.
 
 Ouvre Windows Update :
 - Appuie sur `Windows` + `R`

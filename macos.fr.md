@@ -13,12 +13,21 @@ Pour interagir quand on ne sera pas dans la même pièce, on utilisera [Zoom](ht
 
 :warning: Si Zoom est déjà installé sur ton ordinateur, vérifie qu’il s’agit au moins de la version **5.6**.
 
-- Va sur [zoom.us/download](https://zoom.us/download)
-- Sous **Client Zoom**, clique sur le bouton **Télécharger**
-- Ouvre le fichier que tu viens de télécharger pour installer l’application
-- Ouvre l’application Zoom
-- Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants
-- Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :
+Va sur [zoom.us/download](https://zoom.us/download).
+
+Sous **Client Zoom**, clique sur le bouton **Télécharger**.
+
+Ouvre le fichier que tu viens de télécharger pour installer l’application.
+
+Ouvre l’application Zoom.
+
+Si tu as un Mac avec un processeur Apple Silicon, [on te demande d'installer Rosetta](https://support.apple.com/en-us/HT211861). Clique sur installer, puis tape ton nom d'utilisateur et ton mot de passe pour autoriser l'installation.
+
+![Installer Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
+
+Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants.
+
+Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :
 
 ![Inscrivez-vous à Zoom, c’est gratuit](images/zoom_sign_up_free.png)
 
@@ -40,54 +49,6 @@ Est-ce que tu as déjà un compte GitHub ? Si ce n’est pas le cas, [inscris-t
 :point_right: **[Télécharge une photo](https://github.com/settings/profile)** et indique correctement ton nom sur ton compte GitHub. C’est important, car notre tableau de bord interne utilise ton avatar. Fais-le **maintenant** avant de poursuivre la configuration de ton ordinateur.
 
 ![image de GitHub](images/github_picture.png)
-
-
-## Processeurs Apple Silicon
-
-Si tu as acheté ton ordinateur après fin 2020, il est probable qu’il soit équipé d’un nouveau processeur Apple Silicon au lieu de l’ancien processeur Intel : vérifions ça ensemble.
-
-Ouvre une nouvelle fenêtre de terminal depuis Applications > Utilitaires ou fais une recherche avec [Spotlight](https://support.apple.com/fr-fr/HT204014) :
-
-![Ouvrir Terminal sur macOS](images/macos_open_terminal.png)
-
-Copie-colle la commande suivante dans le terminal et appuie sur `ENTRÉE` pour l’exécuter.
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
-```
-
-☝️ Le résultat de la commande devrait t’indiquer si ton ordinateur utilise Apple Silicon.
-
-Si ton ordinateur utilise Apple Silicon, affiche et lis le paragraphe ci-dessous. Sinon, n’en tiens pas compte.
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup pour Apple Silicon 👈</summary>
-
-### Désinstaller Homebrew
-
-Si une version native de Homebrew est installée sur ton ordinateur, tu dois la désinstaller.
-
-Exécute la commande suivante dans le terminal :
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-Si brew n’est pas installé, tu verras apparaître le message suivant  : `brew: command not found!`
-
-### Configurer le terminal pour Rosetta
-
-Ouvre le Finder (ou fais une recherche avec [Spotlight](https://support.apple.com/fr-fr/HT204014).
-
-Va dans Applications > Utilitaires.
-
-Duplique l’application Terminal (sélectionne-la, puis `Cmd` + `C`, `Cmd` + `V`) et renomme la copie Terminal Rosetta.
-
-Appuie sur `Cmd` + `I` sur l’application Terminal Rosetta, puis coche la case « Ouvrir avec Rosetta ».
-
-⚠️ À partir de maintenant, et pendant tout le bootcamp, quand on te demandera d’ouvrir un terminal, il faudra utiliser l’application **Terminal Rosetta**.
-
-</details>
 
 
 ## Comment quitter des applications sur un Mac
@@ -207,14 +168,16 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
-Voici une liste des extensions que tu vas installer :
+Voici la liste des extensions que tu es en train d'installer :
 - [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
 - [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ### Configuration de Live Share
@@ -411,7 +374,11 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès.
 
-**Quitte** toutes les fenêtres de terminal ouvertes.
+**Réinitialise** ton terminal en exécutant :
+
+```bash
+exec zsh
+```
 
 
 ## rbenv
@@ -432,15 +399,16 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
 
-Puis dans le terminal, exécute :
+Dans le terminal, exécute :
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-Quitte ensuite **toutes les fenêtres de terminal ouvertes** (`Cmd` + `Q`) et redémarres-en une. Exécute ensuite :
+Puis exécute ensuite :
 
 ```bash
+exec zsh
 brew install rbenv
 ```
 
@@ -454,23 +422,24 @@ Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lan
 Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
 Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
-d’utiliser la version 2.7.4 par défaut.
+d’utiliser la version 3.0.3 par défaut.
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
-Puis **redémarre** à nouveau ton terminal (ferme-le, puis rouvre-le).
+Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `2.7.4p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.0.3p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -527,7 +496,7 @@ Exécute à nouveau la commande pour installer les gems.
 Exécute la commande suivante dans ton terminal :
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 Redémarre ton terminal et exécute la commande suivante :
@@ -541,7 +510,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 14.15
+nvm install 16.13.1
 ```
 
 Une fois l’installation terminée, exécute :
@@ -550,7 +519,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-Si tu vois apparaître `v14.15`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
+Si tu vois apparaître `v16.13.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
 
 ```bash
 nvm cache clear
@@ -615,9 +584,10 @@ Pour quitter PostgreSQL, saisis `\q` puis `ENTRÉE`.
 
 On va maintenant vérifier que tu as tout installé correctement.
 
-Quitte toutes les fenêtres Terminal ouvertes, ouvres-en une nouvelle et exécute les commandes suivantes :
+Dans ton terminal, exécute les commandes suivantes :
 
 ```bash
+exec zsh
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 

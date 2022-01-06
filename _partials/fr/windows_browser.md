@@ -70,4 +70,10 @@ Si ce n’est pas le cas,
 
 :heavy_check_mark: Si tu vois apparaître ce message, tu peux continuer :+1:
 
-:x: Sinon, choisis un navigateur dans la liste ci-dessus et exécute la commande correspondante. N’oublie pas de fermer ton terminal et de le rouvrir. N’hésite pas à **demander au prof**.
+:x: Sinon, choisis un navigateur dans la liste ci-dessus et exécute la commande correspondante. Puis n’oublie pas de réinitialiser ton terminal :
+
+```bash
+exec zsh
+```
+
+N’hésite pas à **demander au prof**.
