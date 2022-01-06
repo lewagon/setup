@@ -11,7 +11,7 @@ To check your Windows version:
 - Type  `winver`
 - Press `Enter`
 
-:heavy_check_mark: If the first words of this window are **Windows 10** or **Windows 11** you're good to go :+1:
+:heavy_check_mark: If the first words of this window are **Windows 10 or Windows 11** you're good to go :+1:
 
 :x: If not, you cannot proceed with this setup. You have to upgrade to Windows 10 first :point_down:
 
@@ -23,7 +23,7 @@ To check your Windows version:
   - When the installation is over, execute the commands above :point_up: to check that you now have **Windows 10**.
 </details>
 
-:info: Windows 11 upgrade is rolling out until the end of 2022, which means it may or may not be available for your computer just yet.
+:information_source: [Windows 11 upgrade is rolling now](https://www.microsoft.com/en-us/windows/get-windows-11), which means it may or may not be available for your computer just yet.
 
 :warning: **If you have Windows 10 installed, you don't need to upgrade to Windows 11 to proceed with this setup**.
 
