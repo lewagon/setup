@@ -12,7 +12,6 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
-code --install-extension partkyle.paste-and-indent
 code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
