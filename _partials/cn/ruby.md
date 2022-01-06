@@ -3,13 +3,13 @@
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install <RUBY_VERSION>
+rbenv install <RUBY_SETUP_VERSION>
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用<RUBY_VERSION>这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用<RUBY_SETUP_VERSION>这个版本作为默认版本。
 
 ```bash
-rbenv global <RUBY_VERSION>
+rbenv global <RUBY_SETUP_VERSION>
 ```
 
 然后再次**重启**你的终端（关掉并重新打开它）。
@@ -18,7 +18,7 @@ rbenv global <RUBY_VERSION>
 ruby -v
 ```
 
-你应该会看到`ruby <RUBY_VERSION>p`。如果没有的话，询问一下老师。
+你应该会看到`ruby <RUBY_SETUP_VERSION>p`。如果没有的话，询问一下老师。
 
 ## 安装一些gems
 

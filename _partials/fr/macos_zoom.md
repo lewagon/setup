@@ -12,6 +12,10 @@ Ouvre le fichier que tu viens de télécharger pour installer l’application.
 
 Ouvre l’application Zoom.
 
+Si tu as un Mac avec un processeur Apple Silicon, [on te demande d'installer Rosetta](https://support.apple.com/en-us/HT211861). Clique sur installer, puis tape ton nom d'utilisateur et ton mot de passe pour autoriser l'installation.
+
+![Installer Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
+
 Si tu as déjà un compte Zoom, connecte-toi avec tes identifiants.
 
 Sinon, clique sur le lien **Inscrivez-vous, c’est gratuit** :

@@ -1,12 +1,14 @@
 #!/usr/bin/env ruby -wU
 
-RUBY_SETUP_VERSION = "3.0.3"
-NVM_VERSION = "0.39.1"
-NODE_VERSION = "16.13.1"
+VERSIONS = {
+  'RUBY_SETUP_VERSION' => "3.0.3",
+  'NVM_VERSION' => "0.39.1",
+  'NODE_VERSION' => "16.13.1"
+}
 
 MACOS = %w[
   intro
-  zoom
+  macos_zoom
   github
   macos_command_line_tools
   macos_homebrew
@@ -88,23 +90,27 @@ UBUNTU = %w[
   ubuntu_settings
   conclusion].freeze
 
-filenames = {
+SETUPS = {
   "macos.md" => MACOS,
   "windows.md" => WINDOWS,
   "ubuntu.md" => UBUNTU
 }
 
 ["", "fr", "cn"].each do |locale|
-  filenames.each do |filename, partials|
+  SETUPS.each do |filename, partials|
     filename = "#{filename.split(".md").first}.#{locale}.md" unless locale.empty?
     File.open(filename, "w:utf-8") do |f|
       partials.each do |partial|
-        folder = locale.empty? ? "_partials" : "_partials/#{locale}"
-        f << File.read(File.join(folder, "#{partial}.md"), encoding: "utf-8")
-          .gsub("<RUBY_VERSION>", RUBY_SETUP_VERSION)
-          .gsub("<NVM_VERSION>", NVM_VERSION)
-          .gsub("<NODE_VERSION>", NODE_VERSION)
-          .gsub("<OS.md>", filename)
+        if !locale.empty? && File.exist?(File.join("_partials/#{locale}", "#{partial}.md"))
+          partial_content = File.read(File.join("_partials/#{locale}", "#{partial}.md"), encoding: "utf-8")
+        else
+          partial_content = File.read(File.join("_partials", "#{partial}.md"), encoding: "utf-8")
+        end
+        VERSIONS.each do |placeholder, value|
+          partial_content.gsub!("<#{placeholder}>", value)
+        end
+        partial_content.gsub!("<OS.md>", filename)
+        f << partial_content
         f << "\n\n"
       end
     end
