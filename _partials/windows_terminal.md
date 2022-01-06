@@ -62,7 +62,7 @@ For Windows 10 :point_down:
 For Windows 11 :point_down:
 
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
+"startingDirectory": "/home/the-username-you-chose-at-the-ubuntu-install",
 ```
 
 :warning: Do not forget the comma at the end of the line!
