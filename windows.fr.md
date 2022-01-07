@@ -849,10 +849,15 @@ d’utiliser la version 3.0.3 par défaut.
 rbenv global 3.0.3
 ```
 
-Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
+**Réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
 exec zsh
+```
+
+Puis exécute :
+
+```bash
 ruby -v
 ```
 
@@ -1011,10 +1016,15 @@ Ouvre un nouveau terminal.
 
 On va maintenant vérifier que tu as tout installé correctement.
 
-Dans ton terminal, exécute les commandes suivantes :
+Dans ton terminal, exécute la commande suivante :
 
 ```bash
 exec zsh
+```
+
+Puis exécute :
+
+```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 

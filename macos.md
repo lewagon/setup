@@ -404,12 +404,12 @@ In the terminal, run:
 
 ```bash
 brew uninstall --force rbenv ruby-build
+exec zsh
 ```
 
 Then run:
 
 ```bash
-exec zsh
 brew install rbenv
 ```
 
@@ -433,10 +433,15 @@ to use the 3.0.3 version by default.
 rbenv global 3.0.3
 ```
 
-Then **reset** your terminal and check your Ruby version:
+**Reset** your terminal and check your Ruby version:
 
 ```bash
 exec zsh
+```
+
+Then run:
+
+```bash
 ruby -v
 ```
 
@@ -585,10 +590,15 @@ To quit it, type `\q` then `Enter`.
 
 Let's check if you successfully installed everything.
 
-In you terminal, run the following commands:
+In you terminal, run the following command:
 
 ```bash
 exec zsh
+```
+
+Then run:
+
+```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
