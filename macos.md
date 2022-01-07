@@ -433,11 +433,13 @@ to use the 3.0.3 version by default.
 rbenv global 3.0.3
 ```
 
-Then **reset** your terminal and check your Ruby version:
+**Reset** your terminal and check your Ruby version:
 
 ```bash
 exec zsh
 ```
+
+Then run:
 
 ```bash
 ruby -v

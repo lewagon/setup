@@ -432,7 +432,7 @@ d’utiliser la version 3.0.3 par défaut.
 rbenv global 3.0.3
 ```
 
-Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
+**Réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
 exec zsh
