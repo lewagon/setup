@@ -6,6 +6,11 @@ In you terminal, run the following commands:
 
 ```bash
 exec zsh
+```
+
+And then:
+
+```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
