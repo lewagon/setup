@@ -53,16 +53,8 @@ First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory inst
 - Locate the `"name": "Ubuntu",`
 - Add one of the following lines after it:
 
-For Windows 10 :point_down:
-
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
-```
-
-For Windows 11 :point_down:
-
-```bash
-"startingDirectory": "/home/the-username-you-chose-at-the-ubuntu-install",
+"commandline": "wsl.exe ~",
 ```
 
 :warning: Do not forget the comma at the end of the line!
