@@ -59,8 +59,6 @@ First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory inst
 
 :warning: Do not forget the comma at the end of the line!
 
-:warning: Do not forget to replace the username by your own in the line above!
-
 Then, let's disable warning for copy-pasting commands between Windows and Ubuntu:
 - Locate the line `"defaultProfile": "{2c4de342-...}"`
 - Add the following line after it:
