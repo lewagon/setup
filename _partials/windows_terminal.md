@@ -51,7 +51,7 @@ We have circle in red the part you will change:
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
 - Locate the `"name": "Ubuntu",`
-- Add one of the following lines after it:
+- Add the following line after it:
 
 ```bash
 "commandline": "wsl.exe ~",
