@@ -396,7 +396,9 @@ When the installation is finished, launch VS Code.
 
 To make VS Code interact properly with Ubuntu, let's install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) VS Code extension.
 
-Copy-paste the following commands in your terminal:
+Open your **Ubuntu terminal**.
+
+Copy-paste the following commands in the terminal:
 
 ```bash
 code --install-extension ms-vscode-remote.remote-wsl
