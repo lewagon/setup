@@ -428,6 +428,9 @@ Then **reset** your terminal and check your Ruby version:
 
 ```bash
 exec zsh
+```
+
+```bash
 ruby -v
 ```
 
@@ -562,10 +565,15 @@ sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 
 Let's check if you successfully installed everything.
 
-In you terminal, run the following commands:
+In you terminal, run the following command:
 
 ```bash
 exec zsh
+```
+
+Then run:
+
+```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 

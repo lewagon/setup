@@ -20,11 +20,11 @@ Dans le terminal, exécute :
 
 ```bash
 brew uninstall --force rbenv ruby-build
+exec zsh
 ```
 
 Puis exécute ensuite :
 
 ```bash
-exec zsh
 brew install rbenv
 ```

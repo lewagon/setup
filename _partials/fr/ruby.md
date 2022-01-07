@@ -21,6 +21,11 @@ Puis **réinitialise** ton ton terminal et vérifie ta version de Ruby :
 
 ```bash
 exec zsh
+```
+
+Puis exécute :
+
+```bash
 ruby -v
 ```
 
