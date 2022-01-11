@@ -51,23 +51,13 @@ La partie à modifier est entourée en rouge :
 
 On va commencer par demander à Ubuntu de démarrer directement dans ton répertoire personnel Ubuntu au lieu du répertoire Windows :
 - Recherche `"name": "Ubuntu",`
-- Ajoute l'une des deux lignes suivantes après :
-
-Pour Windows 10 :point_down:
+- Ajoute la ligne suivante après :
 
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
-```
-
-Pour Windows 11 :point_down:
-
-```bash
-"startingDirectory": "/home/the-username-you-chose-at-the-ubuntu-install",
+"commandline": "wsl.exe ~",
 ```
 
 :warning: N’oublie pas la virgule à la fin de la ligne !
-
-:warning: N’oublie pas de remplacer le nom d’utilisateur par le tien dans la ligne ci-dessus !
 
 On va ensuite désactiver les avertissements pour les commandes de copier-coller entre Windows et Ubuntu :
 - Recherche la ligne `"defaultProfile": "{2c4de342-...}"`
