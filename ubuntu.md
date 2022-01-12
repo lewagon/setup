@@ -490,13 +490,14 @@ Rerun the command to install the gems.
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
-In a terminal, execute the following command:
+In a terminal, execute the following commands:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+exec zsh
 ```
 
-Restart your terminal and run the following:
+Then run the following command:
 
 ```bash
 nvm -v
@@ -529,13 +530,14 @@ nvm cache clear
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 
-In a terminal, run the following command:
+In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
+exec zsh
 ```
 
-Restart your terminal and run the following command:
+Then run the following command:
 
 ```bash
 yarn -v

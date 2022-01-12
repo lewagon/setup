@@ -2,13 +2,14 @@
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
-In a terminal, execute the following command:
+In a terminal, execute the following commands:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
+exec zsh
 ```
 
-Restart your terminal and run the following:
+Then run the following command:
 
 ```bash
 nvm -v

@@ -2,13 +2,14 @@
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 
-In a terminal, run the following command:
+In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
+exec zsh
 ```
 
-Restart your terminal and run the following command:
+Then run the following command:
 
 ```bash
 yarn -v
