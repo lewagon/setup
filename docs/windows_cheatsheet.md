@@ -138,15 +138,15 @@ Go to [Windows 10](https://www.microsoft.com/en-us/software-download/windows10) 
 
 A compatibility check will start:
 
-![Check PC compatibility with Windows 2004 1/3](images/windows_2004.png)
+![Check PC compatibility with Windows 2004 1/3](../images/windows_2004.png)
 
 Next, you will be offered a choice, choose **Upgrade this PC now** and click on **Next**:
 
-![Check PC compatibility with Windows 2004 1/3](images/windows_2004_2.png)
+![Check PC compatibility with Windows 2004 1/3](../images/windows_2004_2.png)
 
 Let the tool do the work:
 
-![Check PC compatibility with Windows 2004 1/3](images/windows_2004_3.png)
+![Check PC compatibility with Windows 2004 1/3](../images/windows_2004_3.png)
 
 Microsoft is encountering some errors with the version 2004, Chances are that the update assistant will tell you that you're machine is not compatible yet!
 Do not close the assistant.
