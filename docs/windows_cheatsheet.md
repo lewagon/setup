@@ -138,15 +138,15 @@ Go to [Windows 10](https://www.microsoft.com/en-us/software-download/windows10) 
 
 A compatibility check will start:
 
-![Check PC compatibility with Windows 2004 1/3](images/windows_2004.png)
+![Check PC compatibility with Windows 2004 1/3](../images/windows_2004.png)
 
 Next, you will be offered a choice, choose **Upgrade this PC now** and click on **Next**:
 
-![Check PC compatibility with Windows 2004 1/3](images/windows_2004_2.png)
+![Check PC compatibility with Windows 2004 1/3](../images/windows_2004_2.png)
 
 Let the tool do the work:
 
-![Check PC compatibility with Windows 2004 1/3](images/windows_2004_3.png)
+![Check PC compatibility with Windows 2004 1/3](../images/windows_2004_3.png)
 
 Microsoft is encountering some errors with the version 2004, Chances are that the update assistant will tell you that you're machine is not compatible yet!
 Do not close the assistant.
@@ -268,63 +268,18 @@ You can exit the `root` session with `Ctrl + D`.
 
 ## Testing on Rails
 
-Testing wont work by default on WSL2. It requires ChromeDriver and Chrome binary installed. For this we will need the `root` session ( AKA The super-mega-admin-session ).
+You need to have the latest version of Chrome installed on your machine to run tests on Rails, since we will use _Headless Chrome_ for System Testing. It's a browser without a user interface, well-suited for this kind of automated tests. Before running your system tests you need to make sure you have a **recent** version of Chrome on your system (not Chromium).
 
-You may skip the reset of the password if you already have one for your root session.
-
-Close all WSL2 tabs.
-Open a PowerShell tab and run the following command:
+If you are getting a `Webdrivers::BrowserNotFound: Failed to find Chrome binary` error when running tests, it means that you are missing Chrome on your system or need to install the latest version:
 
 ```bash
-wsl -d Ubuntu -u root
-```
-
-You are now login in your Ubuntu as `root`.
-
-Type the following command to change it's password:
-
-```bash
-passwd
-```
-
-You will be prompted twice for a new password.
-
-Close this WSL2 tab.
-
-Open a WSL2 tab, you should be logged in with **your** account. Run the following command (**line per line**):
-
-```bash
-sudo apt update
-sudo apt install -y unzip xvfb libxi6 libgconf-2-4
-```
-
-Now, let's run:
-
-```bash
+# Ubuntu
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
+rm -rf google-chrome-stable_current_amd64.deb
 ```
 
-Let's run the following commands to install ChromeDriver on your WSL2:
-
-```bash
-wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
-unzip chromedriver_linux64.zip
-sudo mv chromedriver /usr/bin/chromedriver
-sudo chown your-session-here:your-session-here /usr/bin/chromedriver
-sudo chmod +x /usr/bin/chromedriver
-```
-
-⚠️ Replace **your-session-here** by the result of the command `whoami`.
-My result is `barangerbenjamin:barangerbenjamin`. ⚠️
-
-You can now use testing in Rails. You need to open a second tab and run:
-
-```bash
-chromedriver
-```
-
-In the other tab you can run your tests with:
+Once installed, you can run your tests with:
 
 ```bash
 rails test:system
