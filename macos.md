@@ -131,6 +131,12 @@ brew upgrade jq || brew install jq
 brew upgrade openssl || brew install openssl
 ```
 
+Configure the newly installed git software:
+
+```bash
+git config --global init.defaultBranch main
+```
+
 
 ## Visual Studio Code
 
