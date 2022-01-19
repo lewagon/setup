@@ -866,13 +866,18 @@ rm -rf ~/.gemrc
 **永远不要**使用`sudo gem install`来安装一个gem！即使你偶然发现了一个网络上的答案（或者终端提示）叫你这么做。
 
 
-## Node (使用[nvm](https://github.com/nvm-sh/nvm))
+## Node.js
+
+[Node.js](https://nodejs.org/zh-cn/) 是一个Javascript的运行时刻，用来在终端运行Javascript代码。让我们用Node.js的版本管理器[nvm](https://github.com/nvm-sh/nvm)来安装。
+
+在终端，运行这行命令：
 
 ```bash
-curl -o- https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_nvm.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+exec zsh
 ```
 
-重启你的终端并执行下方指令：
+然后执行下方指令：
 
 ```bash
 nvm -v
@@ -892,7 +897,13 @@ nvm install 16.13.1
 node -v
 ```
 
-你应该会看到`v16.13.1`。如果没有的话，问一下你的老师。
+如果你看到了`v16.13.1`，安装就成功了:heavy_check_mark: 你就可以运行下面的命令：
+
+```bash
+nvm cache clear
+```
+
+:x: 如果没有的话, **请求助老师**
 
 
 ## yarn
