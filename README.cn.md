@@ -11,18 +11,18 @@
 <table>
   <tr>
     <td>
-      <a href="macOS.cn.md">
-        <img src="images/apple.png" alt="macOS" />
+      <a href="macos.cn.md">
+        <img src="images/apple_logo.png" alt="macOS">
       </a>
     </td>
     <td>
-      <a href="UBUNTU.md">
-        <img src="images/linux.png" alt="Ubuntu" />
+      <a href="ubuntu.cn.md">
+        <img src="images/windows_logo.png" alt="Ubuntu">
       </a>
     </td>
     <td>
-      <a href="WINDOWS.cn.md">
-        <img src="images/windows.png" alt="Windows">
+      <a href="windows.cn.md">
+        <img src="images/linux_logo.png" alt="Windows">
       </a>
     </td>
   </tr>

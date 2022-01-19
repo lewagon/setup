@@ -1,12 +1,16 @@
 ## Windows Terminal
 
-The standard terminal installed by Ubuntu is a very crude: let's install **Windows Terminal**, a real modern terminal.
-
 ### Installation
+
+:information_source: The following instructions depend on your version of Windows.
+
+If you are running Windows 11, the Windows Terminal is already installed and you can proceed to the next section :point_down:
+
+If you are running Windows 10, let's install Windows Terminal, a real modern terminal:
 
 - Click on `Start`
 - Type  `Microsoft Store`
-- Click on the Microsoft Windows Store in the list
+- Click on `Microsoft Store` in the list
 - Search for `Windows Terminal` in the search bar
 - **Select Windows Terminal"**
 - Click on `Install`
@@ -50,11 +54,10 @@ First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory inst
 - Add the following line after it:
 
 ```bash
-"startingDirectory": "//wsl$/Ubuntu/home/the-username-you-chose-at-the-ubuntu-install",
+"commandline": "wsl.exe ~",
 ```
-:warning: Do not forget the comma at the end of the line!
 
-:warning: Do not forget to replace the username by your own in the line above!
+:warning: Do not forget the comma at the end of the line!
 
 Then, let's disable warning for copy-pasting commands between Windows and Ubuntu:
 - Locate the line `"defaultProfile": "{2c4de342-...}"`
@@ -66,10 +69,10 @@ Then, let's disable warning for copy-pasting commands between Windows and Ubuntu
 
 :warning: Do not forget the comma at the end of the line!
 
-You can save these changes by pressing `CTRL` + `S`
+You can save these changes by pressing `Ctrl` + `S`
 
 :heavy_check_mark: Your **Windows Terminal** is now setup :+1:
 
 This terminal has tabs: you can choose to open a new terminal tab by clicking on the **+** next to the current one.
 
-**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use the Ubuntu app anymore.
+**From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.

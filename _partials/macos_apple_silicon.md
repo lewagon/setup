@@ -37,9 +37,9 @@ Open the Finder app (or search for it with [Spotlight](https://support.apple.com
 
 Go to Applications > Utilities.
 
-Duplicate the terminal app (select it, then `CMD` + `C`, `CMD` + `V`), and rename a copy as Terminal Rosetta.
+Duplicate the terminal app (select it, then `Cmd` + `C`, `Cmd` + `V`), and rename a copy as Terminal Rosetta.
 
-Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
+Press `Cmd` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
 
 ⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
 

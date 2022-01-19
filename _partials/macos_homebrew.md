@@ -30,10 +30,10 @@ brew update
 Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
-brew upgrade git         || brew install git
-brew upgrade gh          || brew install gh
-brew upgrade wget        || brew install wget
+brew upgrade git || brew install git
+brew upgrade gh || brew install gh
+brew upgrade wget || brew install wget
 brew upgrade imagemagick || brew install imagemagick
-brew upgrade jq          || brew install jq
-brew upgrade openssl     || brew install openssl
+brew upgrade jq || brew install jq
+brew upgrade openssl || brew install openssl
 ```

@@ -2,13 +2,14 @@
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
-In a terminal, execute the following command:
+In a terminal, execute the following commands:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
+exec zsh
 ```
 
-Restart your terminal and run the following:
+Then run the following command:
 
 ```bash
 nvm -v
@@ -19,7 +20,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 14.15
+nvm install <NODE_VERSION>
 ```
 
 When the installation is finished, run:
@@ -28,6 +29,10 @@ When the installation is finished, run:
 node -v
 ```
 
-:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+If you see `v<NODE_VERSION>`, the installation succeeded :heavy_check_mark: You can then run:
+
+```bash
+nvm cache clear
+```
 
 :x: If not, **contact a teacher**

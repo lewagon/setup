@@ -1,6 +1,6 @@
 # Setup instructions
 
-You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)
+You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time).
 
 Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a teacher for help :raising_hand:
 
@@ -13,12 +13,21 @@ To be able to interact when we are not in the same physical room, we will be usi
 
 :warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
-- Go to [https://zoom.us/download](https://zoom.us/download)
-- Under **Zoom Client** click the **Download** button
-- Open the file you have just downloaded to install the app
-- Open the Zoom app
-- If you already have a Zoom account, sign in using your credentials
-- If not, click on the **Sign Up Free** link:
+Go to [zoom.us/download](https://zoom.us/download).
+
+Under **Zoom Client** click the **Download** button.
+
+Open the file you have just downloaded to install the app.
+
+Open the Zoom app.
+
+If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
+
+![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
+
+If you already have a Zoom account, sign in using your credentials.
+
+If not, click on the **Sign Up Free** link:
 
 ![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
 
@@ -37,62 +46,14 @@ You can now close the Zoom app.
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
 ![GitHub picture](images/github_picture.png)
 
 
-## Apple Silicon Chips
-
-If you bought your computer after late 2020, chances are it has a new Apple silicon chip instead of an Intel processor: let's find out.
-
-Open a new terminal window from Applications > Utilities or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014):
-
-![Open Terminal on macOS](images/macos_open_terminal.png)
-
-Copy-paste the following command in the terminal and hit `ENTER` to execute.
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
-```
-
-☝️ The result of the command should indicate whether your computer uses Apple Silicon.
-
-If your computer uses Apple Silicon, expand the paragraph below and go through it. Otherwise ignore it.
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-### Uninstall Homebrew
-
-We need to uninstall Homebrew in case a native version was installed.
-
-Execute the following command in the terminal:
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-If brew was not installed you will get the message `brew: command not found!`
-
-### Configure Terminal for Rosetta
-
-Open the Finder app (or search for it with [Spotlight](https://support.apple.com/en-gb/HT204014)).
-
-Go to Applications > Utilities.
-
-Duplicate the terminal app (select it, then `CMD` + `C`, `CMD` + `V`), and rename a copy as Terminal Rosetta.
-
-Press `CMD` + `I` on the Terminal Rosetta app, then check the box "Open using Rosetta".
-
-⚠️ From now on during the bootcamp, whenever you are asked to open a Terminal, you will use the **Terminal Rosetta** app.
-
-</details>
-
-
 ## A note about quitting apps on a Mac
 
-Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `CMD + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
+Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
 
 ![Quit Terminal on macOS](images/macos_quit.png)
 
@@ -162,12 +123,12 @@ brew update
 Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
-brew upgrade git         || brew install git
-brew upgrade gh          || brew install gh
-brew upgrade wget        || brew install wget
+brew upgrade git || brew install git
+brew upgrade gh || brew install gh
+brew upgrade wget || brew install wget
 brew upgrade imagemagick || brew install imagemagick
-brew upgrade jq          || brew install jq
-brew upgrade openssl     || brew install openssl
+brew upgrade jq || brew install jq
+brew upgrade openssl || brew install openssl
 ```
 
 
@@ -177,7 +138,7 @@ brew upgrade openssl     || brew install openssl
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-Copy (`CMD` + `C`) the command below then paste it in your terminal (`CMD` + `V`):
+Copy (`Cmd` + `C`) the command below then paste it in your terminal (`Cmd` + `V`):
 
 ```bash
 brew install --cask visual-studio-code
@@ -208,6 +169,7 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
 Here is a list of the extensions you are installing:
@@ -216,6 +178,7 @@ Here is a list of the extensions you are installing:
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ### Live Share configuration
@@ -412,7 +375,11 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: You **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress.
 
-Please now **quit** all your opened terminal windows.
+Please now **reset** your terminal by running:
+
+```bash
+exec zsh
+```
 
 
 ## rbenv
@@ -433,13 +400,14 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
 
-Then in the terminal, run:
+In the terminal, run:
 
 ```bash
 brew uninstall --force rbenv ruby-build
+exec zsh
 ```
 
-Then quit **all your opened terminal windows** (`CMD` + `Q`) and restart one. Then run:
+Then run:
 
 ```bash
 brew install rbenv
@@ -455,23 +423,29 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.7.4 version by default.
+to use the 3.0.3 version by default.
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
-Then **restart** your terminal again (close it and reopen it).
+**Reset** your terminal and check your Ruby version:
+
+```bash
+exec zsh
+```
+
+Then run:
 
 ```bash
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 2.7.4p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
 
 :x: If not, **ask a teacher**
 
@@ -498,7 +472,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
@@ -525,13 +499,14 @@ Rerun the command to install the gems.
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
-In a terminal, execute the following command:
+In a terminal, execute the following commands:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+exec zsh
 ```
 
-Restart your terminal and run the following:
+Then run the following command:
 
 ```bash
 nvm -v
@@ -542,7 +517,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 14.15
+nvm install 16.13.1
 ```
 
 When the installation is finished, run:
@@ -551,7 +526,11 @@ When the installation is finished, run:
 node -v
 ```
 
-:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+If you see `v16.13.1`, the installation succeeded :heavy_check_mark: You can then run:
+
+```bash
+nvm cache clear
+```
 
 :x: If not, **contact a teacher**
 
@@ -560,13 +539,14 @@ node -v
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 
-In a terminal, run the following command:
+In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
+exec zsh
 ```
 
-Restart your terminal and run the following command:
+Then run the following command:
 
 ```bash
 yarn -v
@@ -612,7 +592,13 @@ To quit it, type `\q` then `Enter`.
 
 Let's check if you successfully installed everything.
 
-Quit all opened Terminal, open a new one and run the following commands:
+In you terminal, run the following command:
+
+```bash
+exec zsh
+```
+
+Then run:
 
 ```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
@@ -688,11 +674,11 @@ As you become a programmer, you'll understand that leaving the keyboard takes a 
 
 #### Keyboard speed
 
-Go to  > System Preferences > Keyboard. Set `Key Repeat` to the fastest position (to the right) and `Delay Until Repeat` to the shortest position (to the right).
+Go to ` > System Preferences > Keyboard`. Set `Key Repeat` to the fastest position (to the right) and `Delay Until Repeat` to the shortest position (to the right).
 
 #### Full Keyboard Access
 
-Go to  > System Preferences > Keyboard. Click on the third tab (Shortcuts). At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
+Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
 
 #### macOS For hackers
 

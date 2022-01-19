@@ -19,7 +19,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15
+nvm install <NODE_VERSION>
 ```
 
 当这个指令执行结束之后，运行：
@@ -28,6 +28,10 @@ nvm install 14.15
 node -v
 ```
 
-:heavy_check_mark: 如果看到`v14.15.0`，那么你安装成功了:+1:。
+如果看到`v<NODE_VERSION>`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
-:x: 如果没有的话，**问一下你的老师**。
+```bash
+nvm cache clear
+```
+
+:x: 如果没有看到版本的话，**问一下你的老师**。

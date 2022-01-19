@@ -8,18 +8,38 @@
 
 ## Zoom
 
-为了让我们能够线上的交流，我们将会使用[Zoom](https://zoom.us/)，一个视频会议工具。
+To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
 
+:warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
-:warning: 如果你已经安装了Zoom，请确保它的版本至少是**5.6**。
+Go to [zoom.us/download](https://zoom.us/download).
 
-- 打开[https://zoom.us/download](https://zoom.us/download)
-- 在**Zoom会议客户端（Zoom Client）**下方点击**下载（Download）**按钮
-- 打开你刚刚下载的文件并安装应用程序
+Under **Zoom Client** click the **Download** button.
 
-![Zoom主页面](images/zoom_home_screen.png)
+Open the file you have just downloaded to install the app.
 
-你现在可以关闭Zoom程序了。
+Open the Zoom app.
+
+If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
+
+![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
+
+If you already have a Zoom account, sign in using your credentials.
+
+If not, click on the **Sign Up Free** link:
+
+![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
+
+You will be redirected to Zoom's website to complete a form.
+
+When it's done, go back to the Zoom app and sign in using your credentials.
+
+You should then see a screen like this:
+
+![Zoom Home Screen](images/zoom_home_screen.png)
+
+You can now close the Zoom app.
+
 
 ## GitHub账户
 
@@ -28,55 +48,6 @@
 :point_right: **[上传一张照片](https://github.com/settings/profile)** 并在你的GitHub账户中设置你的名称。这一步很重要，因为我们将使用一个带有你头像的内部dashboard。请**现在**立即做这一步，然后再去继续下面的步骤。
 
 ![](images/github_upload_picture.png)
-
-
-## Apple M1芯片
-
-如果你是在2020下半年买的电脑，它更有可能是Apple Silicon而不是Intel处理器。让我们来查看查看...
-
-你可以从Applications > Utilities或者在[Spotlight](https://support.apple.com/en-gb/HT204014)里面搜索：
-
-![macOS打开终端](images/macos_open_terminal.png)
-
-复制粘贴以下的指令到终端里并按`Enter`来执行这段指令。
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"
-```
-
-☝️执行完这段代码之后将会表明你的电脑是否使用的是Apple Silicon。
-
-如果你的电脑使用的是Apple Silicon，展开下面的段落并进行阅读。如果不是的话，请忽略它。
-
-<details>
-  <summary>👉&nbsp;&nbsp;Setup for Apple Silicon 👈</summary>
-
-
-### 卸载Homebrew
-
-我们需要卸载Homebrew以防本地已经安装了一个版本。
-
-在终端中执行以下代码:
-
-``` bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-```
-
-如果brew如果没有被安装，你将会得到以下消息`brew: command not found!`
-
-### 为Rosetta配置终端
-
-打开访达Finder（或者在[Spotlight](https://support.apple.com/en-gb/HT204014)里搜索它)。
-
-前往Applications > Utilities.
-
-复制终端应用(选择它, 然后`Cmd` + `C`, `Cmd` + `V`)，并将它的复制重命名为Terminal Rosetta。
-
-在Terminal Rosetta软件上按`Cmd` + `I`, 然后勾选”使用Rosetta打开（Open using Rosetta）“.
-
-⚠️ 从此以后在训练营中，每当你需要打开终端的时候，你将需要打开**Terminal Rosetta**应用。
-
-</details>
 
 
 ## 一个有关在mac上跳出应用程序的小贴士
@@ -390,13 +361,13 @@ brew install rbenv
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用2.7.4这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用3.0.3这个版本作为默认版本。
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
 然后再次**重启**你的终端（关掉并重新打开它）。
@@ -405,7 +376,7 @@ rbenv global 2.7.4
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby 2.7.4p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby <RUBY_VERSION>p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -432,7 +403,7 @@ gem sources -l
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
@@ -477,7 +448,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 14.15
+nvm install 16.13.1
 ```
 
 当这个指令执行结束之后，运行：
@@ -486,9 +457,13 @@ nvm install 14.15
 node -v
 ```
 
-:heavy_check_mark: 如果看到`v14.15.0`，那么你安装成功了:+1:。
+如果看到`v16.13.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
-:x: 如果没有的话，**问一下你的老师**。
+```bash
+nvm cache clear
+```
+
+:x: 如果没有看到版本的话，**问一下你的老师**。
 
 
 ## yarn

@@ -1,6 +1,6 @@
 # Setup instructions
 
-You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)
+You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time).
 
 Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a teacher for help :raising_hand:
 
@@ -13,12 +13,17 @@ To be able to interact when we are not in the same physical room, we will be usi
 
 :warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
 
-- Go to [https://zoom.us/download](https://zoom.us/download)
-- Under **Zoom Client** click the **Download** button
-- Open the file you have just downloaded to install the app
-- Open the Zoom app
-- If you already have a Zoom account, sign in using your credentials
-- If not, click on the **Sign Up Free** link:
+Go to [zoom.us/download](https://zoom.us/download).
+
+Under **Zoom Client** click the **Download** button.
+
+Open the file you have just downloaded to install the app.
+
+Open the Zoom app.
+
+If you already have a Zoom account, sign in using your credentials.
+
+If not, click on the **Sign Up Free** link:
 
 ![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
 
@@ -37,7 +42,7 @@ You can now close the Zoom app.
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatars. Please do this **now**, before you continue with this guide.
+:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
 
 ![GitHub picture](images/github_picture.png)
 
@@ -48,13 +53,15 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
-Copy (`CTRL` + `C`) the commands below then paste them in your terminal (`CTRL` + `SHIFT` + `v`):
+Copy (`Ctrl` + `C`) the commands below then paste them in your terminal (`Ctrl` + `Shift` + `v`):
 
 ```bash
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
 sudo apt update
-sudo apt install code
+sudo apt install -y code
 ```
 
 These commands will ask for your password: type it in.
@@ -88,6 +95,7 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
 ```
 
 Here is a list of the extensions you are installing:
@@ -96,6 +104,7 @@ Here is a list of the extensions you are installing:
 - [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ### Live Share configuration
@@ -142,14 +151,9 @@ Let's now install [GitHub official CLI](https://cli.github.com) (Command Line In
 In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
-```
-
-Then copy-paste the following command:
-
-```bash
 sudo apt install -y gh
 ```
 
@@ -342,7 +346,11 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: You **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress.
 
-Please now **quit** all your opened terminal windows.
+Please now **reset** your terminal by running:
+
+```bash
+exec zsh
+```
 
 
 ## Disable SSH passphrase prompt
@@ -365,7 +373,7 @@ The list should look like:
 plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
 ```
 
-:heavy_check_mark: Save the `.zshrc` file with `CTRL` + `S` and close your text editor.
+:heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
 
 
 ## rbenv
@@ -393,11 +401,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**Close your terminal and open it again**
-
-If you get a warning, just **ignore** it from now (Ruby is not installed yet).
 
 
 ## Ruby
@@ -409,23 +414,29 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 2.7.4
+rbenv install 3.0.3
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 2.7.4 version by default.
+to use the 3.0.3 version by default.
 
 ```bash
-rbenv global 2.7.4
+rbenv global 3.0.3
 ```
 
-Then **restart** your terminal again (close it and reopen it).
+**Reset** your terminal and check your Ruby version:
+
+```bash
+exec zsh
+```
+
+Then run:
 
 ```bash
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 2.7.4p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
 
 :x: If not, **ask a teacher**
 
@@ -452,7 +463,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http
+gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
@@ -479,13 +490,14 @@ Rerun the command to install the gems.
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
-In a terminal, execute the following command:
+In a terminal, execute the following commands:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+exec zsh
 ```
 
-Restart your terminal and run the following:
+Then run the following command:
 
 ```bash
 nvm -v
@@ -496,7 +508,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 14.15
+nvm install 16.13.1
 ```
 
 When the installation is finished, run:
@@ -505,7 +517,11 @@ When the installation is finished, run:
 node -v
 ```
 
-:heavy_check_mark: If you see `v14.15`, the installation succeeded :+1:
+If you see `v16.13.1`, the installation succeeded :heavy_check_mark: You can then run:
+
+```bash
+nvm cache clear
+```
 
 :x: If not, **contact a teacher**
 
@@ -514,13 +530,14 @@ node -v
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 
-In a terminal, run the following command:
+In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
+exec zsh
 ```
 
-Restart your terminal and run the following command:
+Then run the following command:
 
 ```bash
 yarn -v
@@ -552,7 +569,13 @@ sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 
 Let's check if you successfully installed everything.
 
-Quit all opened Terminal, open a new one and run the following commands:
+In you terminal, run the following command:
+
+```bash
+exec zsh
+```
+
+Then run:
 
 ```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb

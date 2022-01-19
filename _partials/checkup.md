@@ -2,7 +2,13 @@
 
 Let's check if you successfully installed everything.
 
-Quit all opened Terminal, open a new one and run the following commands:
+In you terminal, run the following command:
+
+```bash
+exec zsh
+```
+
+Then run:
 
 ```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
