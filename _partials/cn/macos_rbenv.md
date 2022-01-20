@@ -16,14 +16,15 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
 
-然后在终端里输入并运行：
+在终端里运行：
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-然后退出**所有你打开着的终端窗口**（`Cmd` + `Q`)并重启新的一个。然后运行：
+然后运行：
 
 ```bash
+exec zsh
 brew install rbenv
 ```

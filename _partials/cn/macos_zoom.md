@@ -4,13 +4,17 @@
 
 :warning: 如果你已经安装了Zoom，请确保它的版本至少是**5.6**。
 
-打开[https://zoom.us/download](https://zoom.us/download)。
+打开[zoom.us/download](https://zoom.us/download).
 
 在**Zoom会议客户端（Zoom Client）**下方点击**下载（Download）**按钮。
 
 打开你刚刚下载的文件并安装应用程序。
 
 打开Zoom。
+
+如果你的Mac使用Apple silicon的话, [你必须安装Rosetta](https://support.apple.com/en-us/HT211861)。点击安装（install），然后输入你的用户名和密码来允许安装。
+
+![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
 
 如果你已经有Zoom账号了，那就用你的账号密码登陆吧。
 

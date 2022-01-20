@@ -5,7 +5,7 @@
 在终端里，运行以下指令：
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
 ```
 
 重启你的终端并执行下方指令：

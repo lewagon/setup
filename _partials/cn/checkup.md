@@ -2,9 +2,10 @@
 
 让我们来看看你是否已经成功安装好了所有软件。
 
-退出所有的终端，打开一个新的终端窗口并运行下方指令：
+在终端，运行下面两行命令：
 
 ```bash
+exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 

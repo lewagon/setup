@@ -56,4 +56,9 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: 注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
 
-现在**退出**你刚打开的所有终端窗口。
+现在运行下面的命令来**重置**你的终端：
+
+```bash
+exec zsh
+```
+

@@ -10,16 +10,32 @@
 
 为了让我们能够线上的交流，我们将会使用[Zoom](https://zoom.us/)，一个视频会议工具。
 
-
 :warning: 如果你已经安装了Zoom，请确保它的版本至少是**5.6**。
 
-- 打开[https://zoom.us/download](https://zoom.us/download)
-- 在**Zoom会议客户端（Zoom Client）**下方点击**下载（Download）**按钮
-- 打开你刚刚下载的文件并安装应用程序
+打开[https://zoom.us/download](https://zoom.us/download)。
 
-![Zoom主页面](images/zoom_home_screen.png)
+在**Zoom会议客户端（Zoom Client）**下方点击**下载（Download）**按钮。
 
-你现在可以关闭Zoom程序了。
+打开你刚刚下载的文件并安装应用程序。
+
+打开Zoom。
+
+如果你已经有Zoom账号了，那就用你的账号密码登陆吧。
+
+如果没有账号的话，点击**Sign Up Free**链接：
+
+![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
+
+接下来，它会跳转到Zoom的网站让你填一个表。
+
+完成这个表之后，回到Zoom软件，然后用你的账号密码登陆吧。
+
+你应该会看到下面这个界面：
+
+![Zoom Home Screen](images/zoom_home_screen.png)
+
+现在你可以关掉Zoom了。
+
 
 ## GitHub账户
 
@@ -30,8 +46,64 @@
 ![](images/github_upload_picture.png)
 
 
+## Visual Studio Code
+
+### 安装
+
+让我们一起安装[Visual Studio Code](https://code.visualstudio.com)代码编辑器。
+
+复制(`Ctrl` + `C`)下面的指令，并粘贴(`Ctrl` + `Shift` + `v`)到终端里：
+
+```bash
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt update
+sudo apt install -y code
+```
+
+这些命令需要你输入密码的时候，请输入！
+
+:warning: 你输入密码的时候，屏幕上不会显示你在输入任何东西，**这是正常的**。这是一个安全措施，保证别人不会看到你的密码内容以及长度。所以输入完成后，敲击回车键（`ENTER`）即可。
+
+### 用终端打开VS Code（Visual Studio Code)
+
+现在我们来**从终端**打开VS Code吧：
+
+```bash
+code
+```
+
+:heavy_check_mark: 如果VS Code窗口打开了，就没什么问题，进入下一步吧 :+1:
+
+:x: 如果没有的话，**请向老师求助**。
 
 
+## VS Code插件
+
+### 安装
+
+现在我们来给VS Code安装一些有用的插件吧。
+
+复制粘贴下面的命令到终端：
+
+```bash
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension rebornix.ruby
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+你安装的就是下面这些插件：
+- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 
@@ -65,11 +137,6 @@ sudo apt install -y git
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
-```
-
-然后复制粘贴下面的指令：
-
-```bash
 sudo apt install -y gh
 ```
 
@@ -248,7 +315,12 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: 注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
 
-现在**退出**你刚打开的所有终端窗口。
+现在运行下面的命令来**重置**你的终端：
+
+```bash
+exec zsh
+```
+
 
 
 ## 禁用SSH密码输入
@@ -298,11 +370,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+exec zsh
 ```
-
-**关闭你的终端并重新打开它**
-
-如果你收到了一个警告，就请先**忽略**它（Ruby还没有安装好）。
 
 
 ## Ruby
@@ -323,13 +392,14 @@ rbenv install 3.0.3
 rbenv global 3.0.3
 ```
 
-然后再次**重启**你的终端（关掉并重新打开它）。
+然后**重置**你的终端，然后检查Ruby版本：
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby <RUBY_VERSION>p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby 3.0.3p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -387,7 +457,7 @@ rm -rf ~/.gemrc
 在终端里，运行以下指令：
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 重启你的终端并执行下方指令：
@@ -456,9 +526,10 @@ sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
 
 让我们来看看你是否已经成功安装好了所有软件。
 
-退出所有的终端，打开一个新的终端窗口并运行下方指令：
+在终端，运行下面两行命令：
 
 ```bash
+exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 

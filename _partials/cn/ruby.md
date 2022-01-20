@@ -16,13 +16,14 @@ rbenv install <RUBY_SETUP_VERSION>
 rbenv global <RUBY_SETUP_VERSION>
 ```
 
-然后再次**重启**你的终端（关掉并重新打开它）。
+然后**重置**你的终端，然后检查Ruby版本：
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby <RUBY_VERSION>p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby <RUBY_SETUP_VERSION>p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 

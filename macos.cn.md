@@ -8,37 +8,37 @@
 
 ## Zoom
 
-To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
+为了让我们能够线上的交流，我们将会使用[Zoom](https://zoom.us/)，一个视频会议工具。
 
-:warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
+:warning: 如果你已经安装了Zoom，请确保它的版本至少是**5.6**。
 
-Go to [zoom.us/download](https://zoom.us/download).
+打开[zoom.us/download](https://zoom.us/download).
 
-Under **Zoom Client** click the **Download** button.
+在**Zoom会议客户端（Zoom Client）**下方点击**下载（Download）**按钮。
 
-Open the file you have just downloaded to install the app.
+打开你刚刚下载的文件并安装应用程序。
 
-Open the Zoom app.
+打开Zoom。
 
-If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
+如果你的Mac使用Apple silicon的话, [你必须安装Rosetta](https://support.apple.com/en-us/HT211861)。点击安装（install），然后输入你的用户名和密码来允许安装。
 
 ![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
 
-If you already have a Zoom account, sign in using your credentials.
+如果你已经有Zoom账号了，那就用你的账号密码登陆吧。
 
-If not, click on the **Sign Up Free** link:
+如果没有账号的话，点击**Sign Up Free**链接：
 
 ![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
 
-You will be redirected to Zoom's website to complete a form.
+接下来，它会跳转到Zoom的网站让你填一个表。
 
-When it's done, go back to the Zoom app and sign in using your credentials.
+完成这个表之后，回到Zoom软件，然后用你的账号密码登陆吧。
 
-You should then see a screen like this:
+你应该会看到下面这个界面：
 
 ![Zoom Home Screen](images/zoom_home_screen.png)
 
-You can now close the Zoom app.
+现在你可以关掉Zoom了。
 
 
 ## GitHub账户
@@ -153,6 +153,30 @@ code
 :x: 如果没有成功打开的话，**请联系你的老师**
 
 
+## VS Code插件
+
+### 安装
+
+现在我们来给VS Code安装一些有用的插件吧。
+
+复制粘贴下面的命令到终端：
+
+```bash
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension rebornix.ruby
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+你安装的就是下面这些插件：
+- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 
@@ -319,7 +343,12 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :warning: 注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
 
-现在**退出**你刚打开的所有终端窗口。
+现在运行下面的命令来**重置**你的终端：
+
+```bash
+exec zsh
+```
+
 
 
 ## rbenv
@@ -340,17 +369,19 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
 
-然后在终端里输入并运行：
+在终端里运行：
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-然后退出**所有你打开着的终端窗口**（`Cmd` + `Q`)并重启新的一个。然后运行：
+然后运行：
 
 ```bash
+exec zsh
 brew install rbenv
 ```
+
 
 ## Ruby
 
@@ -370,13 +401,14 @@ rbenv install 3.0.3
 rbenv global 3.0.3
 ```
 
-然后再次**重启**你的终端（关掉并重新打开它）。
+然后**重置**你的终端，然后检查Ruby版本：
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby <RUBY_VERSION>p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby 3.0.3p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -434,7 +466,7 @@ rm -rf ~/.gemrc
 在终端里，运行以下指令：
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 重启你的终端并执行下方指令：
@@ -518,9 +550,10 @@ postgres=#
 
 让我们来看看你是否已经成功安装好了所有软件。
 
-退出所有的终端，打开一个新的终端窗口并运行下方指令：
+在终端，运行下面两行命令：
 
 ```bash
+exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
