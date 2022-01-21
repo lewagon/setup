@@ -1,7 +1,8 @@
 ## 把你的默认浏览器链接到Ubuntu
+
 为了保证你可以在Ubuntu终端和浏览器进行交互，你需要设置你的默认浏览器。
 
-⚠️ 你需要执行下面的至少一组命令：You need to execute at least one of the following commands below:
+⚠️ 你需要执行下面的至少一组命令：
 
 
 <details>
@@ -71,9 +72,9 @@
 </details>
 
 
-👉 重启你的终端
+重启你的终端。
 
-然后请保证下面这行命令会返回"Browser defined 👌"这句话：
+然后请保证在终端运行下面这行命令后，会返回"Browser defined 👌"这句话：
 
 ```bash
 [ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
@@ -81,3 +82,14 @@
 
 如果没有返回这句话，那在上面的列表中选一个浏览器，然后运行对应的命令。
 
+如果没有的话，
+
+:heavy_check_mark: 如果你看到那条信息，你就可以继续 :+1:
+
+:x: 如果没有，那在上面的列表中选一个浏览器，然后运行对应的命令。然后别忘记重置你的终端：
+
+```bash
+exec zsh
+```
+
+有问题的话，别犹豫**问老师**。

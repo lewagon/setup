@@ -11,7 +11,7 @@ To install `git`:
 ```bash
 sudo apt update
 sudo apt install -y git
-````
+```
 
 These commands will ask for your password: type it in.
 

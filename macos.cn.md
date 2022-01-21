@@ -1,47 +1,44 @@
 # 电脑设置教程
 
-以下的教程将会帮助你为接下来在[Le Wagon](http://www.lewagon.org) 全栈开发训练营中做好准备：
+以下的教程将会帮助你为接下来在[Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)全栈开发训练营中做好准备：
 
-- 获取一个文本编辑器，这里将会是你日日夜夜花时间的地方
-- 安装一个软件包管理器
-- 装扮你的终端
-- 配置git和GitHub
-- 安装Ruby
+请**仔细阅读并按顺序执行指令**。如果你在哪一步卡住了，不用犹豫，可以举手咨询老师:raising_hand:
 
+让我们开始吧 :rocket:
 
 ## Zoom
 
-To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
+为了让我们能够线上的交流，我们将会使用[Zoom](https://zoom.us/)，一个视频会议工具。
 
-:warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
+:warning: 如果你已经安装了Zoom，请确保它的版本至少是**5.6**。
 
-Go to [zoom.us/download](https://zoom.us/download).
+打开[zoom.us/download](https://zoom.us/download).
 
-Under **Zoom Client** click the **Download** button.
+在**Zoom会议客户端（Zoom Client）**下方点击**下载（Download）**按钮。
 
-Open the file you have just downloaded to install the app.
+打开你刚刚下载的文件并安装应用程序。
 
-Open the Zoom app.
+打开Zoom。
 
-If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
+如果你的Mac使用Apple silicon的话, [你必须安装Rosetta](https://support.apple.com/en-us/HT211861)。点击安装（install），然后输入你的用户名和密码来允许安装。
 
 ![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
 
-If you already have a Zoom account, sign in using your credentials.
+如果你已经有Zoom账号了，那就用你的账号密码登陆吧。
 
-If not, click on the **Sign Up Free** link:
+如果没有账号的话，点击**Sign Up Free**链接：
 
 ![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
 
-You will be redirected to Zoom's website to complete a form.
+接下来，它会跳转到Zoom的网站让你填一个表。
 
-When it's done, go back to the Zoom app and sign in using your credentials.
+完成这个表之后，回到Zoom软件，然后用你的账号密码登陆吧。
 
-You should then see a screen like this:
+你应该会看到下面这个界面：
 
 ![Zoom Home Screen](images/zoom_home_screen.png)
 
-You can now close the Zoom app.
+现在你可以关掉Zoom了。
 
 
 ## GitHub账户
@@ -57,15 +54,13 @@ You can now close the Zoom app.
 
 在mac上点击应用程序窗口左上方的小红叉**并不是真正的退出了它**，他只是关闭了一个活跃窗口。如果想要 _真正_ 的退出应用程序，你需要在应用活跃的时候按`Cmd + Q`，或者在你的菜单栏里前往`APP_NAME` -> 点击`Quit`
 
-![Quit Terminal on macOS](images/macos_quit.png)
+![macOS退出终端程序](images/macos_quit.png)
 
 在这个设置教程中，你将会被要求**退出并重启**应用程序很多次，请确保你可以正确的退出重启 :pray:
 
 ## 命令行工具
 
-从Applications > Utilities或者[Spotlight](https://support.apple.com/en-gb/HT204014)搜索，打开一个新的终端窗口。
-
-复制粘贴以下指令到你的终端并按下`Enter`来执行指令。
+打开一个新的终端窗口,复制粘贴以下指令到你的终端并按下`Enter`来执行指令:
 
 ```bash
 xcode-select --install
@@ -73,23 +68,19 @@ xcode-select --install
 
 如果你收到了以下消息，你可以直接就跳过这一步并前往下一步。
 
-```
+```bash
 # command line tools are already installed, use "Software Update" to install updates
 ```
 
-不然的话，他将会打开一个窗口询问你是否想要下载一些软件。同意并等待。如果失败了，在重新尝试一下`xcode-select --install`这个指令，有的时候Apple服务器会过载。
+不然的话，他将会打开一个窗口询问你是否想要下载一些软件: 点击“Install”（安装）并等待。
 
-![](images/xcode-select-install.png)
+![macOS安装xcode-select](images/macos_xcode_select_install.png)
 
-当你下载的时候，你可以继续前往GitHub账户的设置，但是要在Homebrew章节前**停下来**。你将需要安装好的命令行工具来执行那一章节。
+:heavy_check_mark: 当你看到"The software was installed"这条消息的时候，你就可以继续下一步了 :+1:
 
-如果你收到了以下消息，你需要更新软件更新目录。
+:x: 如果`xcode-select --install` 指令失败了，再重新试着运行一次：有时候Apple服务器会过载。
 
-```
-Xcode is not currently available from the Software Update server
-```
-
-如果遇到这种情况的话，你需要复制粘贴以下指令并按下Enter。
+:x: 如果你看到"Xcode is not currently available from the Software Update server",你就需要更新你的软件系统：
 
 ```bash
 sudo softwareupdate --clear-catalog
@@ -97,25 +88,20 @@ sudo softwareupdate --clear-catalog
 
 这个执行结束之后，你可以尝试再一次安装（复制粘贴以下指令并按下Enter）。
 
-```bash
-xcode-select --install
-```
-
-然后你便可以继续接下来的教程啦。
-
 
 ## Homebrew
 
-在Mac上，你需要安装[Homebrew](http://brew.sh/)，一个包管理工具。我们将在安装一些软件的时候用到它。
+[Homebrew](http://brew.sh/)，一个包管理工具：这是一个帮助你在命令行中安装其他软件的软件。让我们一起安装它！
 
 想要安装，你需要打开终端并执行：
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_hb.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 这将会询问你的确认（按下`Enter`）并输入你的**macOS用户账户密码**（那个当你重启你Macbook时，用来[登入](https://support.apple.com/en-gb/HT202860) 的密码）。
-:warning:当你在终端输入密码的时候，你将**看不到**任何视觉反馈（类似`*****`），这是**正常的**！直接输入密码并按下`Enter`来确认。
+
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
 
 如果你已经有了Homebrew,终端会告诉你的。那么一切正常，你可以继续接下来的步骤。
 
@@ -144,8 +130,53 @@ brew upgrade openssl     || brew install openssl
 ```
 
 
+## Visual Studio Code (VS Code)
+
+### 安装
+
+让我们一起安装[Visual Studio Code](https://code.visualstudio.com)代码编辑器。 
+
+复制(`CMD` + `C`)下面的指令，并粘贴(`CMD` + `V`)到终端Terminal里:
+
+```bash
+brew install --cask visual-studio-code
+```
+
+然后在终端使用下方指令启动VS Code:
+
+```bash
+code
+```
+
+:heavy_check_mark: 如果一个VS Code窗口被打开，那么你就准备好继续下一步了:+1:
+
+:x: 如果没有成功打开的话，**请联系你的老师**
 
 
+## VS Code插件
+
+### 安装
+
+现在我们来给VS Code安装一些有用的插件吧。
+
+复制粘贴下面的命令到终端：
+
+```bash
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension rebornix.ruby
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+你安装的就是下面这些插件：
+- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 
@@ -154,32 +185,30 @@ brew upgrade openssl     || brew install openssl
 
 在Mac上，打开`Terminal > Preferences`并在`Profiles`中将“Pro”主题设置为默认。
 
-![](images/macos_terminal_pro.png)
+![为macOS终端设置Pro主题](images/macos_terminal_pro.png)
 
 **退出**并重启终端。它现在会有一个好看的黑色背景，对眼睛会更友好。
-
-:bulb: 如果你想尝试其他主题的话，网上有许多可用的主题，比如[MaterialDark](https://github.com/lysyi3m/macos-terminal-themes#materialdark-download)。换主题的部分你可以在你其他设置都设置好后，回头继续做。请先继续Github的设置！
 
 
 ## Oh-my-zsh
 
-Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
+让我们一起安装`zsh`插件[Oh My Zsh](https://ohmyz.sh/).
 
-In a terminal execute the following command:
+在终端terminal里执行以下指令：
 
 ```bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-If asked "Do you want to change your default shell to zsh?", press `Y`
+如果终端里出现询问"Do you want to change your default shell to zsh?", 可以输入`Y`
 
-At the end your terminal should look like this:
+在你的终端的最后，你会看到以下内容:
 
-![Ubuntu terminal with OhMyZsh](images/oh_my_zsh.png)
+![带有OhMyZsh的Ubuntu终端](images/oh_my_zsh.png)
 
-:heavy_check_mark: If it does, you can continue :+1:
+:heavy_check_mark: 如果你的终端成功显示了上面，你就可以继续下一步了:+1:
 
-:x: Otherwise, please **ask for a teacher**
+:x: 如果安装失败的话，请询问**你的老师**
 
 
 ## GitHub CLI
@@ -188,7 +217,11 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 
 在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以从终端链接GitHub的数据，执行一些有用的动作。
 
-之前执行的命令应该已经安装了GitHub CLI。首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
+之前执行的命令应该已经安装了GitHub CLI。
+
+首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
+
+:warning: **不要更改下面指令中的`email`**
 
 ```bash
 gh auth login -s 'user:email' -w
@@ -202,7 +235,11 @@ gh auth login -s 'user:email' -w
 - Press Enter to open github.com in your browser...
 ```
 
-复制那段验证码（code）(在上面的例子中是`0EF9-D015` ），然后敲击`Enter`。你的浏览器就会打开一个页面让你授权GitHub CLI使用你的GitHub账号。同意，并等待一会儿。回到终端，再次敲击`回车`，然后就应该好啦:tada:
+复制那段验证码（code）(在上面的例子中是`0EF9-D015` ），然后敲击`Enter`。
+
+你的浏览器就会打开一个页面让你授权GitHub CLI使用你的GitHub账号。同意，并等待一会儿。
+
+回到终端，再次敲击`回车`，然后就应该好啦:tada:
 
 检查一下你有没有链接好：
 
@@ -210,22 +247,15 @@ gh auth login -s 'user:email' -w
 gh auth status
 ```
 
-如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。如果没有，**问问老师**。
+如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。
+
+:x: 如果没有，**问问老师**。
 
 然后运行下面的配置命令:
 
 ```bash
 gh config set git_protocol ssh
 ```
-
-最后，新建一个[gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/editing-and-sharing-content-with-gists)来确保`gh` 可以正常运作：
-
-```bash
-echo "Hello [Le Wagon](https://www.lewagon.com) :wave:" | gh gist create -d "Starting my coding journey..." -f "SETUP_DAY.md" -p -w
-```
-
-这一行命令会在你的浏览器里打开刚创建的gist页面。看呐，我们刚创建了一个[**Markdown**](https://guides.github.com/features/mastering-markdown/)文件！
-
 
 ## GitHub
 
@@ -261,9 +291,9 @@ gh ssh-key add ~/.ssh/id_ed25519.pub
 
 让我们用Le Wagon提供的一个超棒的默认配置文件来开始吧：[`lewagon/dotfiles`](http://github.com/lewagon/dotfiles).
 
-因为你的配置是私人的，所以你需要保存在**自己**的代码库里（repository/repo）。Fork的意思是：在你的GitHub账号上建一个新的代码库，和原始的那一个是一模一样的（可以想象成你在复制粘贴这个代码库）。
-这样，你在你的GitHub上就会有一个新的代码库： `$GITHUB_USERNAME/dotfiles`。
-我们需要fork，因为每个人都需要在那些文件里加上一些**特定**信息（比如你的名字）。
+因为你的配置是私人的，所以你需要保存在**自己**的代码库里（repository/repo）。
+
+Fork的意思是：在你的GitHub账号上建一个新的代码库，和原始的那一个是一模一样的（可以想象成你在复制粘贴这个代码库）。这样，你在你的GitHub上就会有一个新的代码库： `$GITHUB_USERNAME/dotfiles`。我们需要fork，因为每个人都需要在那些文件里加上一些**特定**信息（比如你的名字）。
 
 打开终端，运行下面的命令：
 
@@ -272,8 +302,9 @@ export GITHUB_USERNAME=`gh api user | jq -r '.login'`
 echo $GITHUB_USERNAME
 ```
 
-你就能看到你的GitHub用户名在终端里显示出来了。
-如果没有的话，现在就**停下**，找老师帮忙。看起来之前的步骤(`gh auth`)有一些问题。
+:heavy_check_mark: 你应该能看到你的GitHub用户名在终端里显示出来了。
+
+:x: 如果没有的话，现在就**停下**，找老师帮忙。看起来之前的步骤(`gh auth`)有一些问题。
 
 现在就可以fork代码库（repo)，然后克隆到你自己的电脑上了：
 
@@ -281,6 +312,8 @@ echo $GITHUB_USERNAME
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
+
+### Dotfiles安装器
 
 运行`dotfiles`安装器：
 
@@ -294,70 +327,67 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh install.sh
 gh api user/emails | jq -r '.[].email'
 ```
 
+:heavy_check_mark: 如果你看到了你的注册邮箱列表，你就可以继续下一步啦:+1:
+
+:x: 如果没有的话，请在运行上面:point_up: 这个指令之前，[重新授权GitHub](https://github.com/lewagon/setup/blob/master/macos.cn.md#github-cli)。
+
+### git安装器
+
 运行git安装器：
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: 这会**提示**填写你的全名（`FirstName LastName`）和你的邮箱。注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
+:point_up: 这会**提示**填写你的全名（`FirstName LastName`）和你的邮箱。
 
-现在**退出**你刚打开的所有终端窗口。
+:warning: 注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
 
-
-### Sublime Text 自动配置
-
-打开一个新的终端并输入：
+现在运行下面的命令来**重置**你的终端：
 
 ```bash
-cd ~/code
-stt
+exec zsh
 ```
 
-它将会**在Sublime Text中打开当前文件夹**。这是我们如何使用它的方法。
-
-**关闭Sublime Text**并重新打开它：
-
-```bash
-stt
-```
-
-**等待一分钟**，等所有额外的软件包都自动安装好（会自动打开一个带有文本的新的窗口，上面会包含每个你安装好的新包的文档）。如果想要跟踪软件包的安装进度，你可以前往`View > Show console`。
-
-如果想要核查是否所有的插件都安装好了，你可以打开`命令面板 Command Palette`(在OSX上，按下`⌘` + `⇧` + `P`；在linux上，按下`Ctrl` + `⇧` + `P`)，输入`Packlist`然后按`Enter`，你应该会看到有一些软件包被安装了（像是[Emmet](http://emmet.io/)）。
-
-当这些结束之后，你可以关闭Sublime Text。
 
 
-## 安装Ruby (使用[rbenv](https://github.com/sstephenson/rbenv))
+## rbenv
+
+让我们来安装[rbenv](https://github.com/sstephenson/rbenv)，一个帮助我们安装并管理`ruby`环境的软件。
 
 首先，我们需要先清理我们之前可能安装过的Ruby:
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
-# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 `rvm` is not
-# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指 你的电脑上没有安装`rvm`
+# 如果出现"zsh: command not found: rvm"报错, 继续后续的步骤. 这是指你的电脑上没有安装`rvm`
 # 这是我们想要的！
 
 sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 ```
 
-现在让我们来通过Homebrew来获取[`rbenv`](https://github.com/rbenv/rbenv)和[`ruby-build`](https://github.com/rbenv/ruby-build)，他们将会很有用。
+:warning: 这条指令会需要你输入你的密码。
+
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+
+在终端里运行：
 
 ```bash
 brew uninstall --force rbenv ruby-build
 ```
 
-然后退出**所有你打开着的终端窗口**（Cmd + Q)并重启新的一个。然后运行：
+然后运行：
 
 ```bash
+exec zsh
 brew install rbenv
 ```
 
-再一次，退出所有你的终端窗口并重启。
 
+## Ruby
 
-现在，你已经准备好了去安装最新Ruby版本并把它设置为默认版本。
+### 安装
+
+现在，你已经准备好了去安装最新[ruby](https://www.ruby-lang.org/en/)版本并把它设置为默认版本。
 
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
@@ -371,23 +401,21 @@ rbenv install 3.0.3
 rbenv global 3.0.3
 ```
 
-然后再次**重启**你的终端（关掉并重新打开它）。
+然后**重置**你的终端，然后检查Ruby版本：
 
 ```bash
+exec zsh
 ruby -v
 ```
 
-你应该会看到`ruby 3.0.3p`。如果没有的话，询问一下老师。
+:heavy_check_mark: 如果你有看到`ruby 3.0.3p`，那么你可以继续下一步+1:
 
-## 安装一些gems
+:x: 如果没有的话，**询问一下老师**。
 
----
+### 安装一些gems
 
 <details>
   <summary>点击这里，如果你在 :cn: <bold>中国</bold>的话</summary>
-
-
-  &nbsp;
 
   :warning: 如果你在中国的话，你应该使用以下命令来安装gem。
 
@@ -402,21 +430,23 @@ gem sources -l
 ```
 </details>
 
----
+在ruby的世界里，我们将外部的库称之为`gems`：他们是一些你可以下载并在你的电脑上运行的ruby代码。让我们一起安装一些!
 
-无论你是不是在中国，请都运行下面的指令：
+在你的终端里，复制粘贴下面的指令：
 
 ```bash
 gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
 ```
 
-如果你遇到了以下的报错：
+:heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
 
-`
+:x: 如果你遇到了以下的报错：
+
+```bash
 ERROR: While executing gem ... (TypeError)
 incompatible marshal file format (can't be read)
 format version 4.8 required; 60.33 given
-`
+```
 
 运行以下的指令：
 
@@ -426,13 +456,17 @@ rm -rf ~/.gemrc
 
 然后，重新运行安装gems的指令。
 
-**永远不要**使用`sudo gem install`来安装一个gem！即使你偶然发现了一个网络上的答案（或者终端提示）叫你这么做。
+:warning: **永远不要**使用`sudo gem install`来安装一个gem！即使你偶然发现了一个网络上的答案（或者终端提示）叫你这么做。
 
 
-## Node (使用[nvm](https://github.com/nvm-sh/nvm))
+## Node.js
+
+[Node.js](https://nodejs.org/en/)是一个JavaScript运行环境以在终端运行JavaScript代码。让我们一起用[nvm](https://github.com/nvm-sh/nvm)，一个Node.js的版本管理器，来安装Node.js。
+
+在终端里，运行以下指令：
 
 ```bash
-curl -o- https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/install_nvm.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
 ```
 
 重启你的终端并执行下方指令：
@@ -455,7 +489,13 @@ nvm install 16.13.1
 node -v
 ```
 
-你应该会看到`v16.13.1`。如果没有的话，问一下你的老师。
+如果看到`v16.13.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
+
+```bash
+nvm cache clear
+```
+
+:x: 如果没有看到版本的话，**问一下你的老师**。
 
 
 ## yarn
@@ -477,7 +517,11 @@ yarn -v
 
 ## PostgreSQL
 
-几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。让我们现在一起安装它。
+几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。
+
+让我们现在一起安装它。
+
+运行下方指令：
 
 ```bash
 brew install postgresql
@@ -493,7 +537,7 @@ psql -d postgres
 如果你进入到了一个像下方这个，一个新的输入框的话，那么说明你的PostgreSQL已经安装好啦！
 
 ```bash
-psql (12.5)
+psql (13.3)
 Type "help" for help.
 
 postgres=#
@@ -506,16 +550,20 @@ postgres=#
 
 让我们来看看你是否已经成功安装好了所有软件。
 
-退出所有的终端，打开一个新的终端窗口并运行下方指令：
+在终端，运行下面两行命令：
 
 ```bash
+exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-它应该会告诉你，你的工作台是否已经正确的设置好了 ：）如果没有的话，问一下你的老师。
+:check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
+
+如果没有的话，问一下你的老师。
 
 
-## 校友
+## Kitt
+
 :warning: 如果你已经收到了一封来自Le Wagon邀请你去注册Kitt(我们的学习平台)的邮件并且你也注册完成了的话，你可以安全的跳过这一章节。如果你还没有注册完成的话，请跟随邮件里的教程，完成注册。
 
 如果你不确定你要做什么，可以查看[这个链接](https://kitt.lewagon.com/)。如果你已经登录了的话，你可以跳过这个章节。如果你没有登录的话，你需要点击`Enter Kitt as a Student`。如果你可以成功的登录，你也可以安全的跳过这一步。不然的话，你可以询问一下老师你是否有收到过相关的邮件，或者直接跟着执行下面的教程。
@@ -533,36 +581,59 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 
 ## Slack
 
-在Mac App Store上[下载](https://itunes.apple.com/fr/app/slack/id803453959?mt=12)Slack的本地应用并注册进入`lewagon-alumni`的组织。
+[Slack](https://slack.com/)是一个在技术领域里非常流行的一个交流平台。
 
-确保你在上面上传了照片。
+### 安装
 
-你也可以在你的iPhone或者Android设备上登录Slack!
+[下载Slack应用程序](https://itunes.apple.com/fr/app/slack/id803453959?mt=12)并安装它。
 
-这么做的意义是，你可以一直开着Slack，于是你就可以分享有用的链接/寻求帮助/决定哪儿里吃饭/等等。
+:warning: 如果你已经在你的浏览器里使用Slack了，请还是下载并安装功能更全面的**Slack桌面应用程序**。
 
-至于远程的ticket，你将可以用Slack语音或者视频电话来获取帮助。为了确保所有都可以正常工作，在你的电脑上启动Slack应用程序，然后[跟着这里的步骤](https://slack.com/intl/en-gb/help/articles/115003538426-Troubleshoot-Slack-Calls#run-our-calls-test)（tl;dr 输入`/call --test`然后在任何的channel里按下`Enter`键）。
+### 设置
 
-等测试结束之后，你应该至少会在麦克风和相机处，看到绿色“All clear”消息。如果没有的话，问一下你的老师。
+打开Slack应用程序并登入`lewagon-alumni`组织。
 
-![](images/slack_mic_cam_all_green.png)
+确保你已经**上传了你的头像照片** :point_down:
+
+![如何上传一张头像照片](images/slack_profile_picture.gif)
+
+之后你可以全天开着Slack，这样你可以在上面分享有用的链接/寻求帮助/决定去那儿吃饭/...
+
+为了确保视频电话可以正常工作，让我们一起测试摄像头和麦克风：
+- 打开Slack应用程序
+- 在任意群组的消息编辑框里输入`/call --test`并按下`ENTER`
+- 按下"Start test"绿色按钮
+
+![在Slack检查麦克风和摄像头](images/slack_call_test.png)
+
+:heavy_check_mark: 当测试结束以后，你应该会看到你的摄像头和麦克风有绿色的"Succeed"信息。:+1:
+
+:x: 如果测试失败的话，**请联系你的老师**.
+
+你也可以在手机上安装Slack应用并登入`lewagon-alumni`!
 
 
+## macOS设置
 
+### 安全
 
-## 键盘
+你必须使用密码来保护你的电脑。如果你还没有设置过密码的话，请前往`>系统偏好设置>用户和组`并更改您的帐户密码。您还应该前往`>系统偏好设置>安全性>通用`。睡眠或屏幕保护程序启动的`5秒`后，您应该要求输入密码。
 
-当你成为了一名程序员的时候，你将明白离开键盘去操作将会耗费大量的时间，所以你将会想最大化的减少花费在触控盘和鼠标的时间。以下是一些在OSX上的小技巧可以帮助你做到这些：
+您也可以前往` > 系统偏好设置 > 任务控制`，然后单击左下角的`Hot Corners`按钮。选择右下角以启动屏幕保护程序。这样，当您离开办公桌时，可以通过将鼠标置于右下角来快速锁定屏幕。5秒钟后，您的Macbook将被锁定，并要求输入密码以恢复。
 
-### 键盘速度
+### 键盘
+
+当你成为了一名程序员的时候，你将明白离开键盘去操作将会耗费大量的时间，所以你将会想最大化的减少花费在触控盘和鼠标的时间。以下是一些在macOS上的小技巧可以帮助你做到这些。
+
+#### 键盘速度
 
 前往  > 系统偏好设置 > 键盘。设置`Key Repeat`到最快的位置（最右边）并将`Delay Until Repeat`移到最短的位置（最右边）。
 
-### 全部键盘权限
+#### 全部键盘权限
 
 前往  > 系统偏好设置 > 键盘。点击第三个标签页（Shortcuts）。在窗体的底部，点击`All controls`单选按钮。这样的话，当你遇见一个带有多个选项的对话窗的时候，你可以按`Enter`来确认，或者按`Space`来选择取消选项。如果你遇到超过两个选项的对话窗，你可以按tab键来切换选择。
 
-### 黑客的macOS
+#### 黑客的macOS
 
 [阅读这个脚本](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)然后挑选一些你认为适合你的指令。例如，您可以在终端中输入以下内容：
 
@@ -578,7 +649,27 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 # etc..
 ```
 
+### 将应用程序固定在你的Dock上
 
-conclusion.md
+你将会经常使用今天安装的大部分应用程序。所以让我们把这些应用程序固定在Dock上，这样我们就很容易打开他们啦！
+
+我们需要启动程序，右键点击，打开菜单栏并选择“选项”（Options），然后选择“保留在Dock上”（Keep in Dock）。
+
+![如何在macOS中将应用程序固定在Dock上](images/macos_dock.png)
+
+你一定要固定以下应用程序:
+- 你的终端
+- 你的文件资源管理器
+- VS Code
+- 你的浏览器
+- Slack
+- Zoom
+
+
+## 设置完成啦!
+
+现在你的电脑已经完成[Le Wagon网页开发课程](https://www.lewagon.com/web-development-course/full-time)的设置啦 :muscle: :clap:
+
+享受你的编程之旅，你会掌握它的！ :rocket:
 
 

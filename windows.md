@@ -86,7 +86,7 @@ Open Windows Update:
 - Press `Enter`
 - Click on `Check updates`
 
-:heavy_check_mark: If you a green check mark and the message "You're up to date", you're good to go :+1:
+:heavy_check_mark: If you see a green check mark and the message "You're up to date", you're good to go :+1:
 
 :warning: If you have a red exclamation mark and the message "Update available", please install them and repeat the process until it says that you are up to date :loop:
 
@@ -554,7 +554,7 @@ To install `git`:
 ```bash
 sudo apt update
 sudo apt install -y git
-````
+```
 
 These commands will ask for your password: type it in.
 
