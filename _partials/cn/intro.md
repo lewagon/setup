@@ -1,9 +1,7 @@
 # 电脑设置教程
 
-以下的教程将会帮助你为接下来在[Le Wagon](http://www.lewagon.org) 全栈开发训练营中做好准备：
+以下的教程将会帮助你为接下来在[Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time)全栈开发训练营中做好准备：
 
-- 获取一个文本编辑器，这里将会是你日日夜夜花时间的地方
-- 安装一个软件包管理器
-- 装扮你的终端
-- 配置git和GitHub
-- 安装Ruby
+请**仔细阅读并按顺序执行指令**。如果你在哪一步卡住了，不用犹豫，可以举手咨询老师:raising_hand:
+
+让我们开始吧 :rocket:
