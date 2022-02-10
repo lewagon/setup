@@ -2,7 +2,7 @@
 
 ### 你在中国吗？
 
-开始设置之前，:point_down: 你可能会需要用到VPN，所以保证你有VPN，或者让老师为你提供一个。
+开始设置之前，:point_down: 你可能会需要用到 VPN，所以保证你有 VPN，或者让老师为你提供一个。
 
 ### 全球
 
@@ -16,13 +16,13 @@
       </a>
     </td>
     <td>
-      <a href="ubuntu.cn.md">
-        <img src="images/windows_logo.png" alt="Ubuntu">
+      <a href="windows.cn.md">
+        <img src="images/windows_logo.png" alt="Windows">
       </a>
     </td>
     <td>
-      <a href="windows.cn.md">
-        <img src="images/linux_logo.png" alt="Windows">
+      <a href="ubuntu.cn.md">
+        <img src="images/linux_logo.png" alt="Ubuntu">
       </a>
     </td>
   </tr>
