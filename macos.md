@@ -170,6 +170,7 @@ code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
+code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Here is a list of the extensions you are installing:
@@ -179,6 +180,7 @@ Here is a list of the extensions you are installing:
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+- [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
 ### Live Share configuration
