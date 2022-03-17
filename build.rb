@@ -13,6 +13,7 @@ MACOS = %w[
   macos_command_line_tools
   macos_homebrew
   macos_vscode
+  sqlite
   vscode_extensions
   vscode_liveshare
   macos_terminal
@@ -42,6 +43,7 @@ WINDOWS = %w[
   windows_ubuntu
   windows_vscode
   windows_terminal
+  sqlite
   vscode_extensions
   vscode_liveshare
   git
@@ -68,6 +70,7 @@ UBUNTU = %w[
   zoom
   github
   ubuntu_vscode
+  sqlite
   vscode_extensions
   vscode_liveshare
   git
