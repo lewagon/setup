@@ -11,7 +11,7 @@ sudo apt-get install sqlite3 libsqlite3-dev
 Then run the following command:
 
 ```bash
-sqlite3 -v
+sqlite3 -version
 ```
 
 
