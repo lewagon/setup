@@ -497,6 +497,26 @@ This terminal has tabs: you can choose to open a new terminal tab by clicking on
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
 
 
+## SQLite
+
+[SQLite](https://sqlite.org/index.html) is a database engine used to execute CRUD commands on databse files. Let's install it with `homebrew`.
+
+In a terminal, execute the following commands:
+
+```bash
+sudo apt-get install sqlite3 libsqlite3-dev
+```
+
+Then run the following command:
+
+```bash
+sqlite3 -version
+```
+
+
+You should see a version. If not, ask a teacher.
+
+
 ## VS Code Extensions
 
 ### Installation
