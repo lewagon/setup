@@ -18,7 +18,6 @@ MACOS = %w[
   macos_terminal
   oh_my_zsh
   gh_cli
-  ssh_key
   dotfiles
   macos_rbenv
   ruby
@@ -48,7 +47,6 @@ WINDOWS = %w[
   zsh
   oh_my_zsh
   gh_cli
-  ssh_key
   dotfiles
   ssh_agent
   rbenv
@@ -74,7 +72,6 @@ UBUNTU = %w[
   zsh
   oh_my_zsh
   gh_cli
-  ssh_key
   dotfiles
   ssh_agent
   rbenv
