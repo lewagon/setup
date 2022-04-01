@@ -33,6 +33,7 @@ Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal
 Cuando termine la instalación, el botón `Install` se transformará en un botón `Launch`: haz clic en él.
 
 ### Ubuntu como terminal predeterminada
+
 Hagamos que Ubuntu sea la terminal predeterminada de tu aplicación Windows terminal.
 
 Presiona `Ctrl` + `,`

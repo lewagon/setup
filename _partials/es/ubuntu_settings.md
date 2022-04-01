@@ -2,8 +2,7 @@
 
 ### Instala video codec H264
 
-Tenemos algunos videos en nuestra plataforma pedagógica (Kitt. ¡La descubrirás pronto!). La configuración predeterminada de Firefox en Linux no permite reproducirlos ya que usan un codec (H264) que no está soportado. Para que funcionen los videos debes ejecutar lo siguiente
-:
+Tenemos algunos videos en nuestra plataforma pedagógica (Kitt. ¡La descubrirás pronto!). La configuración predeterminada de Firefox en Linux no permite reproducirlos ya que usan un codec (H264) que no está soportado. Para que funcionen los videos debes ejecutar lo siguiente:
 
 ```bash
 sudo apt install libavcodec-extra -y

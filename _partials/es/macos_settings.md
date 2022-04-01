@@ -49,4 +49,3 @@ Ancla lo siguiente:
 - Tu navegador de Internet
 - Slack
 - Zoom
-

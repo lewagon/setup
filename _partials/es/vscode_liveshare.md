@@ -14,4 +14,3 @@ Haz clic en la pequeña flecha de la parte inferior de la barra de la izquierda:
 - Es posible que VS Code muestre más ventanas emergentess: Ciérralas haciendo clic en "OK".
 
 Eso es todo. ¡Ya puedes continuar!
-
