@@ -125,30 +125,32 @@ Clique sur la petite flèche en bas de la barre de gauche :point_down:
 C’est bon !
 
 
-## Git
+## Command line tools
 
-### Installation
+### Zsh & Git
 
-[`git`](https://git-scm.com/) est un logiciel en ligne de commande utilisé pour la gestion de versions.
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
-Pour installer `git` :
-- Ouvre un terminal
-- Copie-colle les commandes suivantes :
+We will also use [`git`](https://git-scm.com/), a command line software used for version control.
+
+Let's install them, along with other useful tools:
+- Open a terminal
+- Copy and paste the following commands:
 
 ```bash
 sudo apt update
-sudo apt install -y git
-````
+sudo apt install -y curl git imagemagick jq unzip vim zsh
+```
 
-Ces commandes te demanderont ton mot de passe ; saisis-le.
+These commands will ask for your password: type it in.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
 
-### Installation de GitHub CLI
+### GitHub CLI installation
 
-On va maintenant installer la [CLI officielle de GitHub](https://cli.github.com) (Command Line Interface, interface en ligne de commande). Il s’agit d’un logiciel qui te permet d’interagir avec ton compte GitHub via la ligne de commande.
+Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
-Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe s’il t’est demandé :
+In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -157,26 +159,15 @@ sudo apt update
 sudo apt install -y gh
 ```
 
-Pour vérifier que `gh` a bien été installé sur ta machine, tu peux exécuter :
+To check that `gh` has been successfully installed on your machine, you can run:
 
 ```bash
 gh --version
 ```
 
-:heavy_check_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
+:heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
-:x: Sinon, **demande au la prof**.
-
-
-## zsh
-
-Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, on utilisera `zsh`.
-
-Dans un terminal, exécute la commande suivante et saisis ton mot de passe s’il t’est demandé :
-
-```bash
-sudo apt install -y zsh curl vim imagemagick jq unzip
-```
+:x: Otherwise, please **contact a teacher**
 
 
 ## Oh-my-zsh

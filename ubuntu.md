@@ -129,19 +129,21 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## Git
+## Command line tools
 
-### Installation
+### Zsh & Git
 
-[`git`](https://git-scm.com/) is a command line software used for version control.
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
-To install `git`:
+We will also use [`git`](https://git-scm.com/), a command line software used for version control.
+
+Let's install them, along with other useful tools:
 - Open a terminal
 - Copy and paste the following commands:
 
 ```bash
 sudo apt update
-sudo apt install -y git
+sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
 These commands will ask for your password: type it in.
@@ -170,17 +172,6 @@ gh --version
 :heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
 :x: Otherwise, please **contact a teacher**
-
-
-## zsh
-
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
-
-In a terminal execute the following command and type in your password if asked:
-
-```bash
-sudo apt install -y zsh curl vim imagemagick jq unzip
-```
 
 
 ## Oh-my-zsh

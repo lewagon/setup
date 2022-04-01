@@ -108,30 +108,32 @@ code --install-extension Rubymaniac.vscode-paste-and-indent
 
 
 
-## Git
+## Command line tools
 
-### 安装
+### Zsh & Git
 
-[`git`](https://git-scm.com/)是一个用来进行版本控制的命令行软件。
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
-安装`git`:
-- 打开Ubuntu终端
-- 复制粘贴下面的命令：
+We will also use [`git`](https://git-scm.com/), a command line software used for version control.
+
+Let's install them, along with other useful tools:
+- Open a terminal
+- Copy and paste the following commands:
 
 ```bash
 sudo apt update
-sudo apt install -y git
+sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
-这些指令会问你的密码：输入你的密码。
+These commands will ask for your password: type it in.
 
-:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
 
-### 安装GitHub CLI
+### GitHub CLI installation
 
-现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。这是一个用来在终端里和你的GitHub账户交互的一个软件。
+Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
-在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
+In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -140,26 +142,15 @@ sudo apt update
 sudo apt install -y gh
 ```
 
-你可以运行以下的命令，来检查`gh`是否成功安装了：
+To check that `gh` has been successfully installed on your machine, you can run:
 
 ```bash
 gh --version
 ```
 
-:heavy_check_mark: 如果你看到了`gh version X.Y.Z (YYYY-MM-DD)`，你就可以继续下一步啦！:+1:
+:heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
-:x: 如果没有看到话，**问问老师**。
-
-
-## zsh
-
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
-
-In a terminal execute the following command and type in your password if asked:
-
-```bash
-sudo apt install -y zsh curl vim imagemagick jq
-```
+:x: Otherwise, please **contact a teacher**
 
 
 ## Oh-my-zsh

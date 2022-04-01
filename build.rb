@@ -43,8 +43,7 @@ WINDOWS = %w[
   windows_terminal
   vscode_extensions
   vscode_liveshare
-  git
-  zsh
+  cli_tools
   oh_my_zsh
   gh_cli
   dotfiles
@@ -68,8 +67,7 @@ UBUNTU = %w[
   ubuntu_vscode
   vscode_extensions
   vscode_liveshare
-  git
-  zsh
+  cli_tools
   oh_my_zsh
   gh_cli
   dotfiles
