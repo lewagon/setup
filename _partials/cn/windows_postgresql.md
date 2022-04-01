@@ -12,7 +12,7 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 sudo /etc/init.d/postgresql start
 ```
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
 你可以把PostgreSQL配置成自动启动，这样每次你打开新的终端时，你就不需要执行`sudo /etc/init.d/postgresql start`：
