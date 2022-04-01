@@ -218,15 +218,15 @@ gh auth login -s 'user:email' -w
 
 gh will ask you few questions:
 
-`What is your preferred protocol for Git operations?` Wih the arrows, choose `SSH` and press `Enter`.
+`What is your preferred protocol for Git operations?` Wih the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
 
-SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
-
-`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate thee SSH keys for you.
+`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
 
 If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
 
 `Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
 
 You will then get the following output:
 
