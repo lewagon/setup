@@ -154,52 +154,6 @@ code
 :x: Sinon, **demande au prof**.
 
 
-## SQLite
-
-[SQLite](https://sqlite.org/index.html) is a database engine used to execute CRUD commands on databse files. Let's install it with `homebrew` .
-
-In a terminal, execute the following commands:
-
-```bash
-brew install sqlite
-```
-
-Then run the following command:
-
-```bash
-sqlite3 -version
-```
-
-
-You should see a version. If not, ask a teacher.
-
-
-## Extensions VS Code
-
-### Installation
-
-On va maintenant installer quelques extensions utiles à VS Code.
-
-Copie-colle les commandes suivantes dans le terminal :
-
-```bash
-code --install-extension ms-vscode.sublime-keybindings
-code --install-extension emmanuelbeziat.vscode-great-icons
-code --install-extension MS-vsliveshare.vsliveshare
-code --install-extension rebornix.ruby
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension Rubymaniac.vscode-paste-and-indent
-```
-
-Voici la liste des extensions que tu es en train d'installer :
-- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
-- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
-
-
 ### Configuration de Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) est une extension de VS Code, qui te permet de partager du code dans ton éditeur de texte pour débugger et faire de la programmation en binôme. Configurons-le !
@@ -574,6 +528,52 @@ yarn -v
 :heavy_check_mark: Si tu vois apparaître une version, c’est bon :+1:
 
 :x: Sinon, **demande au prof**
+
+
+## SQLite
+
+In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/index.html) is a database engine used to execute CRUD commands on database files. Let's install it:
+
+In a terminal, execute the following commands:
+
+```bash
+brew install sqlite
+```
+
+Then run the following command:
+
+```bash
+sqlite3 -version
+```
+
+✅  If you see a version, you're good +1
+❌  If not, ask for a teacher
+
+
+## Extensions VS Code
+
+### Installation
+
+On va maintenant installer quelques extensions utiles à VS Code.
+
+Copie-colle les commandes suivantes dans le terminal :
+
+```bash
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension rebornix.ruby
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+Voici la liste des extensions que tu es en train d'installer :
+- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ## PostgreSQL
