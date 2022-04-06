@@ -8,7 +8,7 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open a new terminal, copy-paste the following command and hit `ENTER`:
+Open a new terminal, copy-paste the following command and hit `Enter`:
 
 ```bash
 xcode-select --install

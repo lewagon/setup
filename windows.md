@@ -327,7 +327,7 @@ At first launch, you will be asked some information:
 - Choose a **password**
 - Confirm your password
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
 You can close the Ubuntu window now that it is installed on your computer.
 
@@ -531,7 +531,7 @@ Here is a list of the extensions you are installing:
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
 
-Launch VS Code from your terminal by typing `code` and pressing `ENTER`.
+Launch VS Code from your terminal by typing `code` and pressing `Enter`.
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
@@ -564,7 +564,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh
 
 These commands will ask for your password: type it in.
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `Enter`.
 
 ### GitHub CLI installation
 
@@ -1025,7 +1025,7 @@ The idea is that you'll have Slack open all day, so that you can share useful li
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
 - Open the Slack app
-- In any channel message bar type `/call --test` and press `ENTER`
+- In any channel message bar type `/call --test` and press `Enter`
 - Click on the "Start test" green button
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)

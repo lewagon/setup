@@ -65,7 +65,7 @@ sudo apt install -y code
 
 这些命令需要你输入密码的时候，请输入！
 
-:warning: 你输入密码的时候，屏幕上不会显示你在输入任何东西，**这是正常的**。这是一个安全措施，保证别人不会看到你的密码内容以及长度。所以输入完成后，敲击回车键（`ENTER`）即可。
+:warning: 你输入密码的时候，屏幕上不会显示你在输入任何东西，**这是正常的**。这是一个安全措施，保证别人不会看到你的密码内容以及长度。所以输入完成后，敲击回车键（`Enter`）即可。
 
 ### 用终端打开VS Code（Visual Studio Code)
 
@@ -108,49 +108,7 @@ code --install-extension Rubymaniac.vscode-paste-and-indent
 
 
 
-## Command line tools
-
-### Zsh & Git
-
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
-
-We will also use [`git`](https://git-scm.com/), a command line software used for version control.
-
-Let's install them, along with other useful tools:
-- Open a terminal
-- Copy and paste the following commands:
-
-```bash
-sudo apt update
-sudo apt install -y curl git imagemagick jq unzip vim zsh
-```
-
-These commands will ask for your password: type it in.
-
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
-
-### GitHub CLI installation
-
-Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
-
-In your terminal, copy-paste the following commands and type in your password if asked:
-
-```bash
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-sudo apt update
-sudo apt install -y gh
-```
-
-To check that `gh` has been successfully installed on your machine, you can run:
-
-```bash
-gh --version
-```
-
-:heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
-
-:x: Otherwise, please **contact a teacher**
+cli_tools.md
 
 
 ## Oh-my-zsh
@@ -549,7 +507,7 @@ After the test are finished, you should have green "All clear" messages at least
 
 为了确保视频电话可以正常工作，让我们一起测试摄像头和麦克风：
 - 打开Slack应用程序
-- 在任意群组的消息编辑框里输入`/call --test`并按下`ENTER`
+- 在任意群组的消息编辑框里输入`/call --test`并按下`Enter`
 - 按下"Start test"绿色按钮
 
 ![在Slack检查麦克风和摄像头](images/slack_call_test.png)

@@ -65,7 +65,7 @@ During this setup you will be asked to **quit and re-open** applications multipl
 
 ## Command Line Tools
 
-Open a new terminal, copy-paste the following command and hit `ENTER`:
+Open a new terminal, copy-paste the following command and hit `Enter`:
 
 ```bash
 xcode-select --install
@@ -105,9 +105,9 @@ Open a terminal and run:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-This will ask for your confirmation (hit `ENTER`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
+This will ask for your confirmation (hit `Enter`) and your **macOS user account password** (the one you use to [log in](https://support.apple.com/en-gb/HT202860) when you reboot your Macbook).
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
@@ -189,7 +189,7 @@ Here is a list of the extensions you are installing:
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
 
-Launch VS Code from your terminal by typing `code` and pressing `ENTER`.
+Launch VS Code from your terminal by typing `code` and pressing `Enter`.
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
@@ -367,7 +367,7 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: This command may prompt for your password.
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
 In the terminal, run:
 
@@ -617,7 +617,7 @@ The idea is that you'll have Slack open all day, so that you can share useful li
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
 - Open the Slack app
-- In any channel message bar type `/call --test` and press `ENTER`
+- In any channel message bar type `/call --test` and press `Enter`
 - Click on the "Start test" green button
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)
@@ -647,7 +647,7 @@ Go to ` > System Preferences > Keyboard`. Set `Key Repeat` to the fastest pos
 
 #### Full Keyboard Access
 
-Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
+Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `Enter` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
 
 #### macOS For hackers
 

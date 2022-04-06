@@ -540,32 +540,32 @@ Clique sur la petite flèche en bas de la barre de gauche :point_down:
 C’est bon !
 
 
-## Command line tools
+## Outils en ligne de commande
 
 ### Zsh & Git
 
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
+Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, nous utiliserons `zsh`.
 
-We will also use [`git`](https://git-scm.com/), a command line software used for version control.
+Nous utiliserons aussi [`git`](https://git-scm.com/), un logiciel en ligne de commande utilisé pour la gestion de versions.
 
-Let's install them, along with other useful tools:
-- Open a terminal
-- Copy and paste the following commands:
+Installons-les, avec d'autres outils utiles :
+- Ouvre un terminal
+- Copie-colle les commandes suivantes :
 
 ```bash
 sudo apt update
-sudo apt install -y curl git imagemagick jq unzip vim zsh
+sudo apt install -y zsh curl vim imagemagick jq unzip
 ```
 
-These commands will ask for your password: type it in.
+Ces commandes te demanderont ton mot de passe ; saisis-le.
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
-### GitHub CLI installation
+### Installation de GitHub CLI
 
-Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
+On va maintenant installer la [CLI officielle de GitHub](https://cli.github.com) (Command Line Interface, interface en ligne de commande). Il s’agit d’un logiciel qui te permet d’interagir avec ton compte GitHub via la ligne de commande.
 
-In your terminal, copy-paste the following commands and type in your password if asked:
+Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe s’il t’est demandé :
 
 ```bash
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -574,15 +574,15 @@ sudo apt update
 sudo apt install -y gh
 ```
 
-To check that `gh` has been successfully installed on your machine, you can run:
+Pour vérifier que `gh` a bien été installé sur ta machine, tu peux exécuter :
 
 ```bash
 gh --version
 ```
 
-:heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
+:heavy_check_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
 
-:x: Otherwise, please **contact a teacher**
+:x: Sinon, **demande au la prof**.
 
 
 ## Oh-my-zsh
@@ -622,6 +622,18 @@ Pour **te connecter**, commence par copier-coller la commande suivante dans ton 
 gh auth login -s 'user:email' -w
 ```
 
+gh va te poser quelques questions :
+
+`What is your preferred protocol for Git operations?` Avec les flèches, choisis `SSH` et appuie sur `Enter`. SSH est un protocole pour s'authentifier en utilisant des clés SSH au lieu de la fameuse paire nom d'utilisateur et mot de passe.
+
+`Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
+
+Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
+
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer non seulement les caractères de ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
+
 Tu obtiendras le résultat suivant :
 
 ```bash
@@ -641,15 +653,9 @@ Pour vérifier que tu es bien connecté, saisis :
 gh auth status
 ```
 
-:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <YOUR USERNAME>`, alors c’est bon :+1:
 
 :x: Sinon, **demande au prof**.
-
-Puis exécute la ligne de configuration suivante :
-
-```bash
-gh config set git_protocol ssh
-```
 
 
 ## Dotfiles (configuration standard)

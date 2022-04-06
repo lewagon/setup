@@ -16,7 +16,7 @@ Te pedirá información. Simplemente presiona enter hasta que pida una **passphr
 
 :warning: Cuando te pidan una passphrase, pon algo que quieras y que recuerdes. Es una contraseña para proteger tu private key que está almacenada en tu disco duro.
 
-:warning: Cuando escribas tu passphrase, no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu passphrase como su longitud. Simplemente escribe tu passphrase y presiona `ENTER` al terminar.
+:warning: Cuando escribas tu passphrase, no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu passphrase como su longitud. Simplemente escribe tu passphrase y presiona `Enter` al terminar.
 
 ### Comunicarle tu public key a GitHub
 
@@ -28,9 +28,9 @@ En tu terminal copia y pega el siguiente comando:
 gh auth refresh -s write:public_key
 ```
 
-Mostrará una código una única vez (####-####) en la pantalla. Cópialo y presiona `ENTER`. Luego pega el código en tu navegador y sigue las instrucciones para **Autorizar a GitHub**.
+Mostrará una código una única vez (####-####) en la pantalla. Cópialo y presiona `Enter`. Luego pega el código en tu navegador y sigue las instrucciones para **Autorizar a GitHub**.
 
-Vuelve a la terminal. Presiona `ENTER` y ejecuta esto:
+Vuelve a la terminal. Presiona `Enter` y ejecuta esto:
 
 ```bash
 gh ssh-key add ~/.ssh/id_ed25519.pub

@@ -101,7 +101,7 @@ sudo softwareupdate --clear-catalog
 
 这将会询问你的确认（按下`Enter`）并输入你的**macOS用户账户密码**（那个当你重启你Macbook时，用来[登入](https://support.apple.com/en-gb/HT202860) 的密码）。
 
-:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
 
 如果你已经有了Homebrew,终端会告诉你的。那么一切正常，你可以继续接下来的步骤。
 
@@ -339,7 +339,7 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: 这条指令会需要你输入你的密码。
 
-:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
 
 在终端里运行：
 
@@ -573,7 +573,7 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 
 为了确保视频电话可以正常工作，让我们一起测试摄像头和麦克风：
 - 打开Slack应用程序
-- 在任意群组的消息编辑框里输入`/call --test`并按下`ENTER`
+- 在任意群组的消息编辑框里输入`/call --test`并按下`Enter`
 - 按下"Start test"绿色按钮
 
 ![在Slack检查麦克风和摄像头](images/slack_call_test.png)

@@ -10,7 +10,7 @@ La idea es tener Slack abierto todo el día para compartir enlaces útiles / ped
 
 Para asegurarte de que todo lo relacionado a videollamadas funcione bien, prueba tu cámara y tu micrófono:
 - Abre la aplicación Slack
-- Escribe `/call --test` en la barra de mensaje de cualquier canal y presiona `ENTER`
+- Escribe `/call --test` en la barra de mensaje de cualquier canal y presiona `Enter`
 - Haz clic en el botón verde "Start test"
 
 ![Chequea el micrófono y la cámara con Slack](images/slack_call_test.png)
