@@ -16,7 +16,7 @@ Go to ` > System Preferences > Keyboard`. Set `Key Repeat` to the fastest pos
 
 #### Full Keyboard Access
 
-Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `ENTER` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
+Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `Enter` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
 
 #### macOS For hackers
 

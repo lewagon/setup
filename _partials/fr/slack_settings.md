@@ -10,7 +10,7 @@ L’idée est de laisser Slack ouvert toute la journée pour partager des liens 
 
 On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta caméra et ton microphone :
 - Ouvre l’application Slack
-- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `ENTRÉE`
+- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `Enter`
 - Clique sur le bouton vert « Démarrer le test »
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)

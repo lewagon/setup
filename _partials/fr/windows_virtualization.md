@@ -5,7 +5,7 @@ On doit vérifier que les options de virtualisation sont activées dans le BIOS 
 C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 - Appuie sur `Windows` + `R`
 - Saisis `taskmgr`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 - Clique sur l’onglet `Performance`
 - Clique sur `CPU`
 
@@ -22,7 +22,7 @@ C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 
   - Appuie sur `Windows + R`
   - Saisis `shutdown.exe /r /o /t 1`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
   - Attends que l’ordinateur s’arrête
   - Clique sur `Troubleshoot`
   - Clique sur `Advanced Options`

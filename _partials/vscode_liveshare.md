@@ -2,7 +2,7 @@
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
 
-Launch VS Code from your terminal by typing `code` and pressing `ENTER`.
+Launch VS Code from your terminal by typing `code` and pressing `Enter`.
 
 Click on the little arrow at the bottom of the left bar :point_down:
 

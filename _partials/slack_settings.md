@@ -10,7 +10,7 @@ The idea is that you'll have Slack open all day, so that you can share useful li
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
 - Open the Slack app
-- In any channel message bar type `/call --test` and press `ENTER`
+- In any channel message bar type `/call --test` and press `Enter`
 - Click on the "Start test" green button
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)

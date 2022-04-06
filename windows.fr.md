@@ -58,7 +58,7 @@ Pour pouvoir configurer ton ordinateur, **Windows 10 ou Windows 11** doit êtr
 Pour connaître ta version de Windows :
 - Appuie sur `Windows` + `R`
 - Saisis `winver`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 
 :heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10 ou Windows 11**, c’est bon :+1:
 
@@ -83,7 +83,7 @@ Une fois que tu as vérifié que tu utilises Windows 10 ou 11, tu vas devoir in
 Ouvre Windows Update :
 - Appuie sur `Windows` + `R`
 - Saisis `ms-settings:windowsupdate`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 - Clique sur « Rechercher les mises à jour »
 
 :heavy_check_mark: Si tu vois apparaître une coche verte et le message « Vous êtes à jour », c’est bon :+1:
@@ -98,7 +98,7 @@ Ouvre Windows Update :
   Certains antivirus et logiciels désactivent le service de mise à jour dont on a besoin, entraînant l’erreur que tu vois apparaître. On va corriger ça !
   - Appuie sur `Windows` + `R`
   - Saisis `services.msc`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
   - Double-clique sur `Windows Update Service`
   - Définis `Startup` sur `Automatic`
   - Clique sur `Start`
@@ -112,7 +112,7 @@ Certains des outils qu’on doit installer sont compatibles avec la version `190
 
 - Appuie sur `Windows` + `R`
 - Saisis `winver`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 
 Vérifie le **numéro de version** :
 
@@ -128,7 +128,7 @@ On doit vérifier que les options de virtualisation sont activées dans le BIOS 
 C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 - Appuie sur `Windows` + `R`
 - Saisis `taskmgr`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 - Clique sur l’onglet `Performance`
 - Clique sur `CPU`
 
@@ -145,7 +145,7 @@ C’est déjà le cas sur de nombreux ordinateurs. Vérifions-le :
 
   - Appuie sur `Windows + R`
   - Saisis `shutdown.exe /r /o /t 1`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
   - Attends que l’ordinateur s’arrête
   - Clique sur `Troubleshoot`
   - Clique sur `Advanced Options`
@@ -171,18 +171,18 @@ WSL est l’environnement de développement que l’on utilise pour exécuter Ub
 
 Si tu as Windows 11, nous allons installer WSL 2 et Ubuntu en une seule commande via le Windows Terminal.
 
-:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows Terminal** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
+:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `Enter` pour exécuter **Windows Terminal** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `Enter`.
 
 - Appuie sur `Windows` + `R`
 - Saisis `wt`
-- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+- Appuie sur **`Ctrl` + `Shift` + `Enter`**
 
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
 - Copie la commande suivante (`Ctrl` + `C`)
 - Colle-la dans la fenêtre du terminal (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
-- Exécute-les en appuyant sur `ENTRÉE`
+- Exécute-les en appuyant sur `Enter`
 
 ```powershell
 wsl --install
@@ -198,18 +198,18 @@ wsl --install
 
 Si tu as Windows 10, on va d'abord installer WSL 1 à partir du terminal PowerShell.
 
-:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
+:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `Enter` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `Enter`.
 
 - Appuie sur `Windows` + `R`
 - Saisis `powershell`
-- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+- Appuie sur **`Ctrl` + `Shift` + `Enter`**
 
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
 - Copie les commandes suivantes une par une (`Ctrl` + `C`)
 - Colle-les dans la fenêtre PowerShell (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
-- Exécute-les en appuyant sur `ENTRÉE`
+- Exécute-les en appuyant sur `Enter`
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -252,7 +252,7 @@ Si tu as Windows 10, on va enfin définir la version 2 de WSL comme étant la ve
 Maintenant que WLS 2 est installé, on va le définir comme version par défaut :
 - Appuie sur `Windows` + `R`
 - Saisis `cmd`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 
 Dans la fenêtre qui apparaît, saisis :
 
@@ -306,7 +306,7 @@ Si tu as Windows 10, installons Ubuntu via le Microsoft Store :
   Pour désinstaller une mauvaise version d’Ubuntu, il te suffit d’aller dans la liste des programmes installés de Windows 10 :
   - Appuie sur `Windows` + `R`
   - Saisis `ms-settings:appsfeatures`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
 
   Trouve le logiciel à désinstaller et clique sur le bouton de désinstallation.
 </details>
@@ -324,7 +324,7 @@ Au premier lancement, on te demandera de fournir des informations :
 - Choisis un **mot de passe**
 - Confirme ton mot de passe
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 Tu peux fermer la fenêtre Ubuntu maintenant qu’elle est installée sur ton ordinateur.
 
@@ -332,7 +332,7 @@ Tu peux fermer la fenêtre Ubuntu maintenant qu’elle est installée sur ton or
 
 - Appuie sur `Windows` + `R`
 - Saisis `cmd`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 
 Saisis la commande suivante :
 
@@ -363,7 +363,7 @@ wsl -l -v
 
   - Appuie sur `Windows` + `R`
   - Saisis `%localappdata%\Packages`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
   - Ouvre le dossier nommé `CanonicalGroupLimited.UbuntuonWindows...`
   - Fais un clic droit sur le dossier `LocalState`
   - Clique sur `Properties`
@@ -442,7 +442,7 @@ Si tu as Windows 10, nous allons installer le Windows Terminal, un terminal vrai
 
   - Appuie sur `Windows` + `R`
   - Saisis `ms-settings:appsfeatures`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
 
   Trouve le logiciel à désinstaller et clique sur le bouton de désinstallation.
 </details>
@@ -528,7 +528,7 @@ Voici la liste des extensions que tu es en train d'installer :
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) est une extension de VS Code, qui te permet de partager du code dans ton éditeur de texte pour débugger et faire de la programmation en binôme. Configurons-le !
 
-Lance VS Code depuis ton terminal en saisissant `code` et en appuyant sur `ENTRÉE`.
+Lance VS Code depuis ton terminal en saisissant `code` et en appuyant sur `Enter`.
 
 Clique sur la petite flèche en bas de la barre de gauche :point_down:
 
@@ -542,24 +542,26 @@ Clique sur la petite flèche en bas de la barre de gauche :point_down:
 C’est bon !
 
 
-## Git
+## Outils en ligne de commande
 
-### Installation
+### Zsh & Git
 
-[`git`](https://git-scm.com/) est un logiciel en ligne de commande utilisé pour la gestion de versions.
+Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, nous utiliserons `zsh`.
 
-Pour installer `git` :
+Nous utiliserons aussi [`git`](https://git-scm.com/), un logiciel en ligne de commande utilisé pour la gestion de versions.
+
+Installons-les, avec d'autres outils utiles :
 - Ouvre un terminal
 - Copie-colle les commandes suivantes :
 
 ```bash
 sudo apt update
-sudo apt install -y git
-````
+sudo apt install -y zsh curl vim imagemagick jq unzip
+```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 ### Installation de GitHub CLI
 
@@ -583,17 +585,6 @@ gh --version
 :heavy_check_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
 
 :x: Sinon, **demande au la prof**.
-
-
-## zsh
-
-Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, on utilisera `zsh`.
-
-Dans un terminal, exécute la commande suivante et saisis ton mot de passe s’il t’est demandé :
-
-```bash
-sudo apt install -y zsh curl vim imagemagick jq unzip
-```
 
 
 ## Oh-my-zsh
@@ -633,6 +624,18 @@ Pour **te connecter**, commence par copier-coller la commande suivante dans ton 
 gh auth login -s 'user:email' -w
 ```
 
+gh va te poser quelques questions :
+
+`What is your preferred protocol for Git operations?` Avec les flèches, choisis `SSH` et appuie sur `Enter`. SSH est un protocole pour s'authentifier en utilisant des clés SSH au lieu de la fameuse paire nom d'utilisateur et mot de passe.
+
+`Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
+
+Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
+
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer non seulement les caractères de ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
+
 Tu obtiendras le résultat suivant :
 
 ```bash
@@ -640,11 +643,11 @@ Tu obtiendras le résultat suivant :
 - Press Enter to open github.com in your browser...
 ```
 
-Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `ENTRÉE`.
+Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `Enter`.
 
 Ton navigateur s’ouvrira et te demandera d’autoriser GitHub CLI à utiliser ton compte GitHub. Accepte et patiente un instant.
 
-Reviens au terminal, appuie à nouveau sur `ENTRÉE` et voilà.
+Reviens au terminal, appuie à nouveau sur `Enter` et voilà.
 
 Pour vérifier que tu es bien connecté, saisis :
 
@@ -652,56 +655,9 @@ Pour vérifier que tu es bien connecté, saisis :
 gh auth status
 ```
 
-:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <YOUR USERNAME>`, alors c’est bon :+1:
 
 :x: Sinon, **demande au prof**.
-
-Puis exécute la ligne de configuration suivante :
-
-```bash
-gh config set git_protocol ssh
-```
-
-
-## Clé SSH
-
-### Génération
-
-On doit générer des clés SSH qui serviront à t’authentifier dans GitHub. Vois ça comme un moyen de te connecter, mais différent de la combinaison courante nom d’utilisateur/mot de passe.
-
-Si tu as déjà généré des clés que tu utilises avec d’autres services, tu peux passer cette étape.
-
-Ouvre un terminal et copie-colle cette commande, en remplaçant l’adresse e-mail par **la tienne** (celle que tu as utilisée pour créer ton compte GitHub).
-
-```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
-```
-
-On te demandera de fournir des informations. Appuie simplement sur Entrée jusqu’à ce qu’un **mot de passe** te soit demandée.
-
-:warning: Saisis une phrase secrète dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur.
-
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
-
-### Donner ta clé publique à GitHub
-
-Tu vas maintenant donner ta clé **publique** à GitHub.
-
-Copie-colle la commande suivante dans ton terminal :
-
-```bash
-gh auth refresh -s write:public_key
-```
-
-Un code à usage unique (####-####) s’affichera à l’écran. Copie-le et appuie sur `ENTRÉE`, puis colle le code dans ton navigateur et suis les instructions pour **autoriser GitHub**.
-
-De retour dans le terminal, appuie sur `ENTRÉE` et exécute la commande suivante :
-
-```bash
-gh ssh-key add ~/.ssh/id_ed25519.pub
-```
-
-Tu devrais voir apparaître `✓ Public key added to your account`. Si ce n’est pas le cas, n’hésite pas à **demander au prof**.
 
 
 ## Dotfiles (configuration standard)
@@ -984,6 +940,7 @@ sqlite3 -version
 ```
 
 :heavy_check_mark: Si tu vois une version s'afficher, c'est tout bon :+1:
+
 :x: If not, **demande au prof**
 
 
@@ -1004,7 +961,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
 Tu peux configurer le démarrage automatique de PostgreSQL afin de ne pas avoir à exécuter `sudo /etc/init.d/postgresql start` chaque fois que tu ouvres un nouveau terminal :
@@ -1088,7 +1045,7 @@ L’idée est de laisser Slack ouvert toute la journée pour partager des liens 
 
 On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta caméra et ton microphone :
 - Ouvre l’application Slack
-- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `ENTRÉE`
+- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `Enter`
 - Clique sur le bouton vert « Démarrer le test »
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)

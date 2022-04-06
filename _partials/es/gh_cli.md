@@ -14,6 +14,18 @@ Lo primero que hay que hacer para **iniciar sesión** es copiar y pegar el coman
 gh auth login -s 'user:email' -w
 ```
 
+gh le hará algunas preguntas:
+
+`What is your preferred protocol for Git operations?` Con las flechas, elige `SSH` y presiona `Enter`. SSH es un protocolo para iniciar la sesión utilizando claves SSH en lugar de la famosa pareja nombre de usuario y contraseña.
+
+`Generate a new SSH key to add to your GitHub account?` Presiona `Enter` para pedirle a gh que genere las claves SSH por ti.
+
+Si ya tienes claves SSH, verás en su lugar `Upload your SSH public key to your GitHub account?`Con las flechas, selecciona la ruta de tu archivo de clave pública y pulsa `Intro`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Pon algo que quieras y que recuerdes. Es una contraseña para proteger tu private key que está almacenada en tu disco duro. Luego presiona `Enter`.
+
+:warning: Cuando escribas tu passphrase, no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu passphrase como su longitud. Simplemente escribe tu passphrase y presiona `Enter` al terminar.
+
 Obtendrás el siguiente resultado:
 
 ```bash
@@ -21,11 +33,11 @@ Obtendrás el siguiente resultado:
 - Press Enter to open github.com in your browser...
 ```
 
-Selecciona y copia el código (`0EF9-D015` en el ejemplo) y luego presiona `ENTER`.
+Selecciona y copia el código (`0EF9-D015` en el ejemplo) y luego presiona `Enter`.
 
 Tu navegador se abrirá y te pedirá que autorices GitHub CLI para usar tu cuenta GitHub. Acepta y espera un poco.
 
-Regresa a la terminal, presiona `ENTER` nuevamente y listo. Eso es todo.
+Regresa a la terminal, presiona `Enter` nuevamente y listo. Eso es todo.
 
 Para verificar que están conectado correctamente, escribe lo siguiente:
 
@@ -36,9 +48,3 @@ gh auth status
 :heavy_check_mark: Si obtienes este mensaje: `Logged in to github.com as <YOUR USERNAME> `, significa que todo está bien :+1:
 
 :x: De lo contrario, **contacta a un profesor**.
-
-Luego ejecuta esta línea de configuración:
-
-```bash
-gh config set git_protocol ssh
-```
