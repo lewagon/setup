@@ -13,6 +13,7 @@ MACOS = %w[
   macos_command_line_tools
   macos_homebrew
   macos_vscode
+  vscode_extensions
   vscode_liveshare
   macos_terminal
   oh_my_zsh
@@ -24,7 +25,6 @@ MACOS = %w[
   nvm
   yarn
   macos_sqlite
-  vscode_extensions
   macos_postgresql
   checkup
   kitt
@@ -42,6 +42,7 @@ WINDOWS = %w[
   windows_wsl
   windows_ubuntu
   windows_vscode
+  vscode_extensions
   windows_terminal
   vscode_liveshare
   git
@@ -56,7 +57,6 @@ WINDOWS = %w[
   nvm
   yarn
   sqlite
-  vscode_extensions
   windows_postgresql
   checkup
   kitt
@@ -70,6 +70,7 @@ UBUNTU = %w[
   zoom
   github
   ubuntu_vscode
+  vscode_extensions
   vscode_liveshare
   git
   zsh
@@ -83,7 +84,6 @@ UBUNTU = %w[
   nvm
   yarn
   sqlite
-  vscode_extensions
   ubuntu_postgresql
   checkup
   kitt
