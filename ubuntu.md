@@ -445,7 +445,7 @@ ruby -v
 ### Installing some gems
 
 <details>
-  <summary>If you are in <bold>China</bold></summary>
+  <summary>🇨🇳 If you are in <bold>China</bold>, expand this section first for mandatory pre-requisite step</summary>
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
@@ -460,12 +460,14 @@ gem sources -l
 ```
 </details>
 
+**Everyone** (in China or not!), continue here to install gems.
+
 In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
 
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
+gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:

@@ -1,9 +1,10 @@
 #!/usr/bin/env ruby -wU
 
-VERSIONS = {
+PLACEHOLDERS = {
   'RUBY_SETUP_VERSION' => "3.0.3",
   'NVM_VERSION' => "0.39.1",
-  'NODE_VERSION' => "16.13.1"
+  'NODE_VERSION' => "16.13.1",
+  'GEMS' => "rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'"
 }
 
 MACOS = %w[
@@ -108,7 +109,7 @@ SETUPS = {
         else
           partial_content = File.read(File.join("_partials", "#{partial}.md"), encoding: "utf-8")
         end
-        VERSIONS.each do |placeholder, value|
+        PLACEHOLDERS.each do |placeholder, value|
           partial_content.gsub!("<#{placeholder}>", value)
         end
         partial_content.gsub!("<OS.md>", filename)
