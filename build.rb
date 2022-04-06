@@ -42,8 +42,8 @@ WINDOWS = %w[
   windows_wsl
   windows_ubuntu
   windows_vscode
-  vscode_extensions
   windows_terminal
+  vscode_extensions
   vscode_liveshare
   git
   zsh
