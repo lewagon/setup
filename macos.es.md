@@ -580,7 +580,7 @@ Aquí está la lista de las extensiones que estás instalando:
 
 ## PostgreSQL
 
-En algunas semanas hablaremos de bases de datos y de SQL y necesitarás algo que se llama [PostgreSQL](https://www.postgresql.org/), un sistema de base de datos de código abierto y listo para usar en producción.
+A veces, SQLite no es suficiente y necesitaremos una herramienta más avanzada llamada [PostgreSQL](https://www.postgresql.org/). Es un sistema de base de datos de código abierto, robusto y listo para usar en producción.
 
 Vamos a instalarlo ahora.
 
