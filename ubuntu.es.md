@@ -522,6 +522,7 @@ sqlite3 -versión
 ```
 
 :heavy_check_mark: Si ves una versión, puedes continuar :+1:
+
 :x: Si no, **pídele ayuda a un profesor**
 
 
