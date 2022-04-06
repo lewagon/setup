@@ -418,7 +418,7 @@ ruby -v
 ### Instalación de algunas gemas
 
 <details>
-  <summary>Si estás en <bold>China</bold></summary>
+  <summary>Si estás en <bold>China</bold> 🇨🇳, haga clic aquí</summary>
 
   :warning: Si estás en China, deberías actualizar la forma de instalar las gemas con los siguientes comandos.
 
@@ -433,12 +433,14 @@ gem sources -l
 ```
 </details>
 
+**Todos, todas, en China o no**, continúen aquí para instalar gemas.
+
 En el universo de ruby, a las librerías externas se les llama `gems`: son pedazos de código ruby que puedes descargar y ejecutar en tu computadora. ¡Instalemos algunas!
 
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
+gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: Si obtienes `xx gems installed`, entonces todo está bien :+1:
@@ -525,7 +527,7 @@ yarn -v
 
 ## SQLite
 
-En algunas semanas, hablaremos de bases de datos y de SQL. [SQLite](https://sqlite.org/index.html) es un sistema de base de datos utilizado para ejecutar consultas SQL en bases de datos de un solo archivo. Vamos a instalarlo:
+En algunas semanas hablaremos de bases de datos y de SQL. [SQLite](https://sqlite.org/index.html) es un sistema utilizado en bases de datos para ejecutar consultas SQL en bases de datos de un solo archivo. Vamos a instalarlo:
 
 En un terminal, ejecuta los siguientes comandos:
 
@@ -540,12 +542,13 @@ sqlite3 -versión
 ```
 
 :heavy_check_mark: Si ves una versión, puedes continuar :+1:
+
 :x: Si no, **pídele ayuda a un profesor**
 
 
 ## PostgreSQL
 
-A veces, SQLite no es suficiente y necesitaremos una herramienta más avanzada llamada [PostgreSQL](https://www.postgresql.org/), un sistema de base de datos de código abierto y listo para usar en producción.
+A veces SQLite no es suficiente y necesitaremos una herramienta más avanzada llamada [PostgreSQL](https://www.postgresql.org/). Esta es un sistema para bases de datos de código abierto y listo para usar en producción.
 
 Vamos a instalarlo ahora.
 

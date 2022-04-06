@@ -828,7 +828,7 @@ gem sources -l
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
+gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
@@ -925,6 +925,7 @@ sqlite3 -version
 ```
 
 :heavy_check_mark: If you see a version, you're good :+1:
+
 :x: If not, **ask for a teacher**
 
 
