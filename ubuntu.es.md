@@ -551,7 +551,7 @@ yarn -v
 
 ## SQLite
 
-En algunas semanas, hablaremos de bases de datos y de SQL. [SQLite](https://sqlite.org/index.html) es un sistema de base de datos utilizado para ejecutar consultas SQL en bases de datos de un solo archivo. Vamos a instalarlo:
+En algunas semanas hablaremos de bases de datos y de SQL. [SQLite](https://sqlite.org/index.html) es un sistema utilizado base de datos para ejecutar consultas SQL en bases de datos de un solo archivo. Vamos a instalarlo:
 
 En un terminal, ejecuta los siguientes comandos:
 
@@ -571,7 +571,7 @@ sqlite3 -versión
 
 ## PostgreSQL
 
-A veces, SQLite no es suficiente y necesitaremos una herramienta más avanzada llamada [PostgreSQL](https://www.postgresql.org/), un sistema de base de datos de código abierto y listo para usar en producción.
+A veces SQLite no es suficiente y necesitaremos una herramienta más avanzada llamada [PostgreSQL](https://www.postgresql.org/). Esta es un sistema para base de datos de código abierto y listo para usar en producción.
 
 Instálalo ejecutando los siguientes comandos:
 
