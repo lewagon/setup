@@ -423,7 +423,7 @@ ruby -v
 ### Installing some gems
 
 <details>
-  <summary>🇨🇳 If you are in <bold>China</bold>, expand this section first for mandatory pre-requisite step</summary>
+  <summary>If you are in <bold>China</bold> 🇨🇳, click here</summary>
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
@@ -438,7 +438,7 @@ gem sources -l
 ```
 </details>
 
-**Everyone** (in China or not!), continue here to install gems.
+**Everyone, in China or not**, continue here to install gems.
 
 In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
 
