@@ -418,7 +418,7 @@ ruby -v
 ### Instalación de algunas gemas
 
 <details>
-  <summary>Si estás en <bold>China</bold></summary>
+  <summary>Si estás en <bold>China</bold> 🇨🇳, haga clic aquí</summary>
 
   :warning: Si estás en China, deberías actualizar la forma de instalar las gemas con los siguientes comandos.
 
@@ -433,12 +433,14 @@ gem sources -l
 ```
 </details>
 
+**Todos, todas, en China o no**, continúen aquí para instalar gemas.
+
 En el universo de ruby, a las librerías externas se les llama `gems`: son pedazos de código ruby que puedes descargar y ejecutar en tu computadora. ¡Instalemos algunas!
 
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http 'rails:~>6.1'
+gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
 ```
 
 :heavy_check_mark: Si obtienes `xx gems installed`, entonces todo está bien :+1:
