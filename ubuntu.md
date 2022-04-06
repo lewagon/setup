@@ -136,15 +136,9 @@ That's it, you're good to go!
 ### Zsh & Git
 
 Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
-<<<<<<< HEAD
 
 We will also use [`git`](https://git-scm.com/), a command line software used for version control.
 
-=======
-
-We will also use [`git`](https://git-scm.com/), a command line software used for version control.
-
->>>>>>> master
 Let's install them, along with other useful tools:
 - Open a terminal
 - Copy and paste the following commands:
@@ -433,11 +427,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-<<<<<<< HEAD
-gem install rake bundler rspec rubocop rubocop-performance pry pry-byebug colored http rails
-=======
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
->>>>>>> master
+gem install rake rspec rubocop-performance pry-byebug colored http rails
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
