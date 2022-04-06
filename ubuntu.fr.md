@@ -66,7 +66,7 @@ sudo apt install -y code
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 ### Lancement depuis le terminal
 
@@ -111,7 +111,7 @@ Voici la liste des extensions que tu es en train d'installer :
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) est une extension de VS Code, qui te permet de partager du code dans ton éditeur de texte pour débugger et faire de la programmation en binôme. Configurons-le !
 
-Lance VS Code depuis ton terminal en saisissant `code` et en appuyant sur `ENTRÉE`.
+Lance VS Code depuis ton terminal en saisissant `code` et en appuyant sur `Enter`.
 
 Clique sur la petite flèche en bas de la barre de gauche :point_down:
 
@@ -214,11 +214,11 @@ Tu obtiendras le résultat suivant :
 - Press Enter to open github.com in your browser...
 ```
 
-Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `ENTRÉE`.
+Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `Enter`.
 
 Ton navigateur s’ouvrira et te demandera d’autoriser GitHub CLI à utiliser ton compte GitHub. Accepte et patiente un instant.
 
-Reviens au terminal, appuie à nouveau sur `ENTRÉE` et voilà.
+Reviens au terminal, appuie à nouveau sur `Enter` et voilà.
 
 Pour vérifier que tu es bien connecté, saisis :
 
@@ -575,7 +575,7 @@ L’idée est de laisser Slack ouvert toute la journée pour partager des liens 
 
 On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta caméra et ton microphone :
 - Ouvre l’application Slack
-- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `ENTRÉE`
+- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `Enter`
 - Clique sur le bouton vert « Démarrer le test »
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)

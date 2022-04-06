@@ -26,4 +26,4 @@ Type "help" for help.
 postgres=#
 ```
 
-Pour quitter PostgreSQL, saisis `\q` puis `ENTRÉE`.
+Pour quitter PostgreSQL, saisis `\q` puis `Enter`.

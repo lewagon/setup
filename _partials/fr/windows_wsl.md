@@ -8,18 +8,18 @@ WSL est l’environnement de développement que l’on utilise pour exécuter Ub
 
 Si tu as Windows 11, nous allons installer WSL 2 et Ubuntu en une seule commande via le Windows Terminal.
 
-:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows Terminal** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
+:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `Enter` pour exécuter **Windows Terminal** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `Enter`.
 
 - Appuie sur `Windows` + `R`
 - Saisis `wt`
-- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+- Appuie sur **`Ctrl` + `Shift` + `Enter`**
 
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
 - Copie la commande suivante (`Ctrl` + `C`)
 - Colle-la dans la fenêtre du terminal (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
-- Exécute-les en appuyant sur `ENTRÉE`
+- Exécute-les en appuyant sur `Enter`
 
 ```powershell
 wsl --install
@@ -35,18 +35,18 @@ wsl --install
 
 Si tu as Windows 10, on va d'abord installer WSL 1 à partir du terminal PowerShell.
 
-:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `ENTRÉE` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `ENTRÉE`.
+:warning: Dans les instructions suivantes, utilise la combinaison de touches `Ctrl` + `Shift` + `Enter` pour exécuter **Windows PowerShell** en tant qu’administrateur au lieu de cliquer simplement sur `Ok` ou d’appuyer sur `Enter`.
 
 - Appuie sur `Windows` + `R`
 - Saisis `powershell`
-- Appuie sur **`Ctrl` + `Shift` + `ENTRÉE`**
+- Appuie sur **`Ctrl` + `Shift` + `Enter`**
 
 :warning: Tu devras peut-être accepter la confirmation UAC concernant l’octroi des droits d’administrateur.
 
 Une fenêtre de terminal bleue apparaîtra :
 - Copie les commandes suivantes une par une (`Ctrl` + `C`)
 - Colle-les dans la fenêtre PowerShell (`Ctrl` + `V` ou en faisant un clic droit dans la fenêtre)
-- Exécute-les en appuyant sur `ENTRÉE`
+- Exécute-les en appuyant sur `Enter`
 
 ```powershell
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -89,7 +89,7 @@ Si tu as Windows 10, on va enfin définir la version 2 de WSL comme étant la ve
 Maintenant que WLS 2 est installé, on va le définir comme version par défaut :
 - Appuie sur `Windows` + `R`
 - Saisis `cmd`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 
 Dans la fenêtre qui apparaît, saisis :
 
