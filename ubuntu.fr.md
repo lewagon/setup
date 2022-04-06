@@ -66,7 +66,7 @@ sudo apt install -y code
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 ### Lancement depuis le terminal
 
@@ -113,7 +113,7 @@ Voici la liste des extensions que tu es en train d'installer :
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) est une extension de VS Code, qui te permet de partager du code dans ton éditeur de texte pour débugger et faire de la programmation en binôme. Configurons-le !
 
-Lance VS Code depuis ton terminal en saisissant `code` et en appuyant sur `ENTRÉE`.
+Lance VS Code depuis ton terminal en saisissant `code` et en appuyant sur `Enter`.
 
 Clique sur la petite flèche en bas de la barre de gauche :point_down:
 
@@ -127,24 +127,26 @@ Clique sur la petite flèche en bas de la barre de gauche :point_down:
 C’est bon !
 
 
-## Git
+## Outils en ligne de commande
 
-### Installation
+### Zsh & Git
 
-[`git`](https://git-scm.com/) est un logiciel en ligne de commande utilisé pour la gestion de versions.
+Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, nous utiliserons `zsh`.
 
-Pour installer `git` :
+Nous utiliserons aussi [`git`](https://git-scm.com/), un logiciel en ligne de commande utilisé pour la gestion de versions.
+
+Installons-les, avec d'autres outils utiles :
 - Ouvre un terminal
 - Copie-colle les commandes suivantes :
 
 ```bash
 sudo apt update
-sudo apt install -y git
-````
+sudo apt install -y zsh curl vim imagemagick jq unzip
+```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 ### Installation de GitHub CLI
 
@@ -168,17 +170,6 @@ gh --version
 :heavy_check_mark: Si tu vois apparaître `gh version X.Y.Z (YYYY-MM-DD)`, c’est bon :+1:
 
 :x: Sinon, **demande au la prof**.
-
-
-## zsh
-
-Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, on utilisera `zsh`.
-
-Dans un terminal, exécute la commande suivante et saisis ton mot de passe s’il t’est demandé :
-
-```bash
-sudo apt install -y zsh curl vim imagemagick jq unzip
-```
 
 
 ## Oh-my-zsh
@@ -218,6 +209,18 @@ Pour **te connecter**, commence par copier-coller la commande suivante dans ton 
 gh auth login -s 'user:email' -w
 ```
 
+gh va te poser quelques questions :
+
+`What is your preferred protocol for Git operations?` Avec les flèches, choisis `SSH` et appuie sur `Enter`. SSH est un protocole pour s'authentifier en utilisant des clés SSH au lieu de la fameuse paire nom d'utilisateur et mot de passe.
+
+`Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
+
+Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
+
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer non seulement les caractères de ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
+
 Tu obtiendras le résultat suivant :
 
 ```bash
@@ -225,11 +228,11 @@ Tu obtiendras le résultat suivant :
 - Press Enter to open github.com in your browser...
 ```
 
-Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `ENTRÉE`.
+Sélectionne et copie le code (`0EF9-D015` dans l’exemple), puis appuie sur `Enter`.
 
 Ton navigateur s’ouvrira et te demandera d’autoriser GitHub CLI à utiliser ton compte GitHub. Accepte et patiente un instant.
 
-Reviens au terminal, appuie à nouveau sur `ENTRÉE` et voilà.
+Reviens au terminal, appuie à nouveau sur `Enter` et voilà.
 
 Pour vérifier que tu es bien connecté, saisis :
 
@@ -237,56 +240,9 @@ Pour vérifier que tu es bien connecté, saisis :
 gh auth status
 ```
 
-:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <TON USERNAME>`, alors c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître `Logged in to github.com as <YOUR USERNAME>`, alors c’est bon :+1:
 
 :x: Sinon, **demande au prof**.
-
-Puis exécute la ligne de configuration suivante :
-
-```bash
-gh config set git_protocol ssh
-```
-
-
-## Clé SSH
-
-### Génération
-
-On doit générer des clés SSH qui serviront à t’authentifier dans GitHub. Vois ça comme un moyen de te connecter, mais différent de la combinaison courante nom d’utilisateur/mot de passe.
-
-Si tu as déjà généré des clés que tu utilises avec d’autres services, tu peux passer cette étape.
-
-Ouvre un terminal et copie-colle cette commande, en remplaçant l’adresse e-mail par **la tienne** (celle que tu as utilisée pour créer ton compte GitHub).
-
-```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
-```
-
-On te demandera de fournir des informations. Appuie simplement sur Entrée jusqu’à ce qu’un **mot de passe** te soit demandée.
-
-:warning: Saisis une phrase secrète dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur.
-
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
-
-### Donner ta clé publique à GitHub
-
-Tu vas maintenant donner ta clé **publique** à GitHub.
-
-Copie-colle la commande suivante dans ton terminal :
-
-```bash
-gh auth refresh -s write:public_key
-```
-
-Un code à usage unique (####-####) s’affichera à l’écran. Copie-le et appuie sur `ENTRÉE`, puis colle le code dans ton navigateur et suis les instructions pour **autoriser GitHub**.
-
-De retour dans le terminal, appuie sur `ENTRÉE` et exécute la commande suivante :
-
-```bash
-gh ssh-key add ~/.ssh/id_ed25519.pub
-```
-
-Tu devrais voir apparaître `✓ Public key added to your account`. Si ce n’est pas le cas, n’hésite pas à **demander au prof**.
 
 
 ## Dotfiles (configuration standard)
@@ -567,6 +523,7 @@ sqlite3 -version
 ```
 
 :heavy_check_mark: Si tu vois une version s'afficher, c'est tout bon :+1:
+
 :x: If not, **demande au prof**
 
 
@@ -583,7 +540,7 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
 
@@ -647,7 +604,7 @@ L’idée est de laisser Slack ouvert toute la journée pour partager des liens 
 
 On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta caméra et ton microphone :
 - Ouvre l’application Slack
-- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `ENTRÉE`
+- Dans la barre de message de n’importe quel channel, saisis `/call --test` et appuie sur `Enter`
 - Clique sur le bouton vert « Démarrer le test »
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)

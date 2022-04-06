@@ -10,7 +10,7 @@
 
 为了确保视频电话可以正常工作，让我们一起测试摄像头和麦克风：
 - 打开Slack应用程序
-- 在任意群组的消息编辑框里输入`/call --test`并按下`ENTER`
+- 在任意群组的消息编辑框里输入`/call --test`并按下`Enter`
 - 按下"Start test"绿色按钮
 
 ![在Slack检查麦克风和摄像头](images/slack_call_test.png)

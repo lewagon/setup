@@ -14,6 +14,18 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 gh auth login -s 'user:email' -w
 ```
 
+gh will ask you few questions:
+
+`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+
+`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
+
+If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
+
 你会看到下面的输出结果：
 
 ```bash
@@ -37,9 +49,3 @@ gh auth status
 如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。
 
 :x: 如果没有，**问问老师**。
-
-然后运行下面的配置命令:
-
-```bash
-gh config set git_protocol ssh
-```

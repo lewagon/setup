@@ -6,7 +6,7 @@ Abre una nueva ventana de tu terminal desde Applications > Utilities o búscala 
 
 ![Abre la Terminal en macOS](images/macos_open_terminal.png)
 
-Copia y pega el siguiente comando en la terminal y presiona `ENTER` para ejecutarlo.
+Copia y pega el siguiente comando en la terminal y presiona `Enter` para ejecutarlo.
 
 ``` bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/lewagon/setup/master/utils/macos_list_processor_type.sh)"

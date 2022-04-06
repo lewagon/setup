@@ -16,7 +16,7 @@ Va dans ` > Préférences système > Clavier`. Définis `Répétition de touc
 
 #### Accès complet au clavier
 
-Va dans ` > Préférences système > Clavier`. Clique sur le troisième onglet `Raccourcis`. En bas de la fenêtre, clique sur le bouton radio `tous les contrôles`. De cette façon, lorsque tu verras apparaître une popup avec plusieurs options, tu pourras saisir `ENTRÉE` pour confirmer ou `SPACE` pour annuler. Si tu as plus de deux options, tu peux utiliser la touche de tabulation pour aller et venir entre elles.
+Va dans ` > Préférences système > Clavier`. Clique sur le troisième onglet `Raccourcis`. En bas de la fenêtre, clique sur le bouton radio `tous les contrôles`. De cette façon, lorsque tu verras apparaître une popup avec plusieurs options, tu pourras saisir `Enter` pour confirmer ou `SPACE` pour annuler. Si tu as plus de deux options, tu peux utiliser la touche de tabulation pour aller et venir entre elles.
 
 #### macOS pour les hackers
 

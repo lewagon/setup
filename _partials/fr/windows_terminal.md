@@ -24,7 +24,7 @@ Si tu as Windows 10, nous allons installer le Windows Terminal, un terminal vrai
 
   - Appuie sur `Windows` + `R`
   - Saisis `ms-settings:appsfeatures`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
 
   Trouve le logiciel à désinstaller et clique sur le bouton de désinstallation.
 </details>

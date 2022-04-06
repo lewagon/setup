@@ -1,21 +1,23 @@
-## Git
+## Outils en ligne de commande
 
-### Installation
+### Zsh & Git
 
-[`git`](https://git-scm.com/) est un logiciel en ligne de commande utilisé pour la gestion de versions.
+Au lieu d’utiliser le [shell](https://fr.wikipedia.org/wiki/Interface_syst%C3%A8me) `bash` par défaut, nous utiliserons `zsh`.
 
-Pour installer `git` :
+Nous utiliserons aussi [`git`](https://git-scm.com/), un logiciel en ligne de commande utilisé pour la gestion de versions.
+
+Installons-les, avec d'autres outils utiles :
 - Ouvre un terminal
 - Copie-colle les commandes suivantes :
 
 ```bash
 sudo apt update
-sudo apt install -y git
-````
+sudo apt install -y zsh curl vim imagemagick jq unzip
+```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 ### Installation de GitHub CLI
 

@@ -45,7 +45,7 @@ La primera vez que lo abras, te pedirán que:
 - Escoge un **password**
 - Confírmalo
 
-:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `ENTER` al terminar.
+:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
 Ahora puedes cerrar la ventana de Ubuntu ya que está instalado en tu computadora.
 

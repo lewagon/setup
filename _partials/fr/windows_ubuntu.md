@@ -27,7 +27,7 @@ Si tu as Windows 10, installons Ubuntu via le Microsoft Store :
   Pour désinstaller une mauvaise version d’Ubuntu, il te suffit d’aller dans la liste des programmes installés de Windows 10 :
   - Appuie sur `Windows` + `R`
   - Saisis `ms-settings:appsfeatures`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
 
   Trouve le logiciel à désinstaller et clique sur le bouton de désinstallation.
 </details>
@@ -45,7 +45,7 @@ Au premier lancement, on te demandera de fournir des informations :
 - Choisis un **mot de passe**
 - Confirme ton mot de passe
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `ENTRÉE`.
+:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
 Tu peux fermer la fenêtre Ubuntu maintenant qu’elle est installée sur ton ordinateur.
 
@@ -53,7 +53,7 @@ Tu peux fermer la fenêtre Ubuntu maintenant qu’elle est installée sur ton or
 
 - Appuie sur `Windows` + `R`
 - Saisis `cmd`
-- Appuie sur `ENTRÉE`
+- Appuie sur `Enter`
 
 Saisis la commande suivante :
 
@@ -84,7 +84,7 @@ wsl -l -v
 
   - Appuie sur `Windows` + `R`
   - Saisis `%localappdata%\Packages`
-  - Appuie sur `ENTRÉE`
+  - Appuie sur `Enter`
   - Ouvre le dossier nommé `CanonicalGroupLimited.UbuntuonWindows...`
   - Fais un clic droit sur le dossier `LocalState`
   - Clique sur `Properties`

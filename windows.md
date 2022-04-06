@@ -2,7 +2,11 @@
 
 You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time).
 
-Please **read them carefully and execute all commands in the following order**. If you get stuck, don't hesitate to ask a teacher for help :raising_hand:
+Please **read them carefully and execute all commands in the following order**.
+
+If you get stuck, don't hesitate to ask a teacher for help :raising_hand:
+
+You can also have a look at [our cheatsheets](https://github.com/lewagon/setup/tree/master/docs) for common issue fixes and tips :heavy_check_mark:
 
 Let's start :rocket:
 
@@ -323,7 +327,7 @@ At first launch, you will be asked some information:
 - Choose a **password**
 - Confirm your password
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
 You can close the Ubuntu window now that it is installed on your computer.
 
@@ -529,7 +533,7 @@ Here is a list of the extensions you are installing:
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
 
-Launch VS Code from your terminal by typing `code` and pressing `ENTER`.
+Launch VS Code from your terminal by typing `code` and pressing `Enter`.
 
 Click on the little arrow at the bottom of the left bar :point_down:
 
@@ -543,24 +547,26 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## Git
+## Command line tools
 
-### Installation
+### Zsh & Git
 
-[`git`](https://git-scm.com/) is a command line software used for version control.
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
-To install `git`:
+We will also use [`git`](https://git-scm.com/), a command line software used for version control.
+
+Let's install them, along with other useful tools:
 - Open a terminal
 - Copy and paste the following commands:
 
 ```bash
 sudo apt update
-sudo apt install -y git
+sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
 These commands will ask for your password: type it in.
 
-:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `ENTER`.
+:warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `Enter`.
 
 ### GitHub CLI installation
 
@@ -584,17 +590,6 @@ gh --version
 :heavy_check_mark: If you see `gh version X.Y.Z (YYYY-MM-DD)`, you're good to go :+1:
 
 :x: Otherwise, please **contact a teacher**
-
-
-## zsh
-
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
-
-In a terminal execute the following command and type in your password if asked:
-
-```bash
-sudo apt install -y zsh curl vim imagemagick jq unzip
-```
 
 
 ## Oh-my-zsh
@@ -634,18 +629,30 @@ First in order to **login**, copy-paste the following command in your terminal:
 gh auth login -s 'user:email' -w
 ```
 
-You will get the following output:
+gh will ask you few questions:
+
+`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+
+`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
+
+If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
+
+You will then get the following output:
 
 ```bash
 ! First copy your one-time code: 0EF9-D015
 - Press Enter to open github.com in your browser...
 ```
 
-Select and copy the code (`0EF9-D015` in the example), then press `ENTER`.
+Select and copy the code (`0EF9-D015` in the example), then press `Enter`.
 
 Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
 
-Come back to the terminal, press `ENTER` again, and that's it.
+Come back to the terminal, press `Enter` again, and that's it.
 
 To check that you are properly connected, type:
 
@@ -656,53 +663,6 @@ gh auth status
 :heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
 
 :x: If not, **contact a teacher**.
-
-Then run the following configuration line:
-
-```bash
-gh config set git_protocol ssh
-```
-
-
-## SSH Key
-
-### Generation
-
-We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password pair.
-
-:warning: If you already generated keys that you already use with other services, you can skip this step.
-
-Open a terminal and copy-paste this command, replacing the email with **yours** (the same one you used to create your GitHub account).
-
-```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
-```
-
-It will prompt for information. Just press enter until it asks for a **passphrase**.
-
-:warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
-
-:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
-
-### Giving your public key to GitHub
-
-Now, you will give your **public** key to GitHub.
-
-In your terminal copy-paste the following command:
-
-```bash
-gh auth refresh -s write:public_key
-```
-
-It will prompt a one time code (####-####) on the screen. Copy it and press `ENTER`, then paste the code in your browser and follow the instructions to **Authorize GitHub**.
-
-Back in the terminal, press `ENTER` and run this:
-
-```bash
-gh ssh-key add ~/.ssh/id_ed25519.pub
-```
-
-This should return `✓ Public key added to your account`. If not, do not hesitate to **contact a teacher**.
 
 
 ## Dotfiles (Standard configuration)
@@ -983,6 +943,7 @@ sqlite3 -version
 ```
 
 :heavy_check_mark: If you see a version, you're good :+1:
+
 :x: If not, **ask for a teacher**
 
 
@@ -1003,7 +964,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
 You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
@@ -1087,7 +1048,7 @@ The idea is that you'll have Slack open all day, so that you can share useful li
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
 - Open the Slack app
-- In any channel message bar type `/call --test` and press `ENTER`
+- In any channel message bar type `/call --test` and press `Enter`
 - Click on the "Start test" green button
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)

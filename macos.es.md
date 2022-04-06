@@ -61,7 +61,7 @@ Durante esta configuración, se te pedirá **cerrar y abrir nuevamente** aplicac
 
 ## Herramientas de la Línea de Comando
 
-Abre una nueva terminal, copia y pega el comando siguiente y presiona `ENTER`:
+Abre una nueva terminal, copia y pega el comando siguiente y presiona `Enter`:
 
 ```bash
 xcode-select --install
@@ -101,9 +101,9 @@ Abre la terminal y ejecuta lo siguiente:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Te pedirá que confirmes (presionando `ENTER`) y también te pedirá la **contraseña de tu cuenta de usuario macOS** (la que usas para [iniciar sesión](https://support.apple.com/en-gb/HT202860) cuando reinicias tu Macbook).
+Te pedirá que confirmes (presionando `Enter`) y también te pedirá la **contraseña de tu cuenta de usuario macOS** (la que usas para [iniciar sesión](https://support.apple.com/en-gb/HT202860) cuando reinicias tu Macbook).
 
-:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `ENTER` al terminar.
+:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
 Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
 
@@ -187,7 +187,7 @@ Aquí está la lista de las extensiones que estás instalando:
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) es una extensión de VS Code que te permite compartir el código en tu editor de texto para debugging y pair-programming: ¡Instalémoslo!
 
-Abre VS Code desde tu terminal escribiendo `code` y presionando `ENTER`.
+Abre VS Code desde tu terminal escribiendo `code` y presionando `Enter`.
 
 Haz clic en la pequeña flecha de la parte inferior de la barra de la izquierda:
 
@@ -247,6 +247,18 @@ Lo primero que hay que hacer para **iniciar sesión** es copiar y pegar el coman
 gh auth login -s 'user:email' -w
 ```
 
+gh le hará algunas preguntas:
+
+`What is your preferred protocol for Git operations?` Con las flechas, elige `SSH` y presiona `Enter`. SSH es un protocolo para iniciar la sesión utilizando claves SSH en lugar de la famosa pareja nombre de usuario y contraseña.
+
+`Generate a new SSH key to add to your GitHub account?` Presiona `Enter` para pedirle a gh que genere las claves SSH por ti.
+
+Si ya tienes claves SSH, verás en su lugar `Upload your SSH public key to your GitHub account?`Con las flechas, selecciona la ruta de tu archivo de clave pública y pulsa `Intro`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Pon algo que quieras y que recuerdes. Es una contraseña para proteger tu private key que está almacenada en tu disco duro. Luego presiona `Enter`.
+
+:warning: Cuando escribas tu passphrase, no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu passphrase como su longitud. Simplemente escribe tu passphrase y presiona `Enter` al terminar.
+
 Obtendrás el siguiente resultado:
 
 ```bash
@@ -254,11 +266,11 @@ Obtendrás el siguiente resultado:
 - Press Enter to open github.com in your browser...
 ```
 
-Selecciona y copia el código (`0EF9-D015` en el ejemplo) y luego presiona `ENTER`.
+Selecciona y copia el código (`0EF9-D015` en el ejemplo) y luego presiona `Enter`.
 
 Tu navegador se abrirá y te pedirá que autorices GitHub CLI para usar tu cuenta GitHub. Acepta y espera un poco.
 
-Regresa a la terminal, presiona `ENTER` nuevamente y listo. Eso es todo.
+Regresa a la terminal, presiona `Enter` nuevamente y listo. Eso es todo.
 
 Para verificar que están conectado correctamente, escribe lo siguiente:
 
@@ -269,53 +281,6 @@ gh auth status
 :heavy_check_mark: Si obtienes este mensaje: `Logged in to github.com as <YOUR USERNAME> `, significa que todo está bien :+1:
 
 :x: De lo contrario, **contacta a un profesor**.
-
-Luego ejecuta esta línea de configuración:
-
-```bash
-gh config set git_protocol ssh
-```
-
-
-## SSH Key
-
-### Generación
-
-Debemos generar SSH keys las cuales serán utilizadas por GitHub para autenticarte. Piensa que es una manera de iniciar sesión pero diferente a la forma convencional del usuario/contraseña.
-
-:warning: Si ya has generado keys que utilizas actualmente con otros servicios, puedes ignorar este paso.
-
-Abre una terminal y copia y pega este comando, reemplazando el email con el **tuyo** (el que usaste cuando creaste tu cuenta en GitHub).
-
-```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
-```
-
-Te pedirá información. Simplemente presiona enter hasta que pida una **passphrase**.
-
-:warning: Cuando te pidan una passphrase, pon algo que quieras y que recuerdes. Es una contraseña para proteger tu private key que está almacenada en tu disco duro.
-
-:warning: Cuando escribas tu passphrase, no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu passphrase como su longitud. Simplemente escribe tu passphrase y presiona `ENTER` al terminar.
-
-### Comunicarle tu public key a GitHub
-
-Ahora le vas a dar tu **public** key a GitHub.
-
-En tu terminal copia y pega el siguiente comando:
-
-```bash
-gh auth refresh -s write:public_key
-```
-
-Mostrará una código una única vez (####-####) en la pantalla. Cópialo y presiona `ENTER`. Luego pega el código en tu navegador y sigue las instrucciones para **Autorizar a GitHub**.
-
-Vuelve a la terminal. Presiona `ENTER` y ejecuta esto:
-
-```bash
-gh ssh-key add ~/.ssh/id_ed25519.pub
-```
-
-Eso debería devolver `✓ Public key added to your account`. Si no es el caso, no dudes **en pedirle ayuda a un profesor**.
 
 
 ## Dotfiles (configuración estándar)
@@ -400,7 +365,7 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: Este comando te puede pedir tu contraseña.
 
-:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `ENTER` al terminar.
+:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
 Ejecuta lo siguiente en tu terminal:
 
@@ -575,6 +540,7 @@ sqlite3 -versión
 ```
 
 :heavy_check_mark: Si ves una versión, puedes continuar :+1:
+
 :x: Si no, **pídele ayuda a un profesor**
 
 
@@ -669,7 +635,7 @@ La idea es tener Slack abierto todo el día para compartir enlaces útiles / ped
 
 Para asegurarte de que todo lo relacionado a videollamadas funcione bien, prueba tu cámara y tu micrófono:
 - Abre la aplicación Slack
-- Escribe `/call --test` en la barra de mensaje de cualquier canal y presiona `ENTER`
+- Escribe `/call --test` en la barra de mensaje de cualquier canal y presiona `Enter`
 - Haz clic en el botón verde "Start test"
 
 ![Chequea el micrófono y la cámara con Slack](images/slack_call_test.png)
@@ -699,7 +665,7 @@ Ve a ` > System Preferences > Keyboard`. Coloca a `Key Repeat` en la posició
 
 #### Acceso total al teclado
 
-Ve a ` > System Preferences > Keyboard`. Haz clic en la tercera pestaña `Shortcuts`. En la parte inferior del panel, haz clic en el botón del radio (también llamado de opción) `All controls`. De esta manera cuando veas un diálogo con muchas opciones, podrás escribir `ENTER` para confirmar, o `SPACE` para escoger la opción cancelar. Si hay más de dos opciones, puedes usar la tecla de tabulación para navegar entre ellas.
+Ve a ` > System Preferences > Keyboard`. Haz clic en la tercera pestaña `Shortcuts`. En la parte inferior del panel, haz clic en el botón del radio (también llamado de opción) `All controls`. De esta manera cuando veas un diálogo con muchas opciones, podrás escribir `Enter` para confirmar, o `SPACE` para escoger la opción cancelar. Si hay más de dos opciones, puedes usar la tecla de tabulación para navegar entre ellas.
 
 #### macOS para hackers
 

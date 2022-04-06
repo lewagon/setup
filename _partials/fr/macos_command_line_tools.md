@@ -8,7 +8,7 @@ Pendant le processus de configuration, on te demandera de **quitter et rouvrir**
 
 ## Outils de ligne de commande
 
-Ouvre un nouveau terminal, copie-colle la commande suivante et appuie sur `ENTRÉE` :
+Ouvre un nouveau terminal, copie-colle la commande suivante et appuie sur `Enter` :
 
 ```bash
 xcode-select --install

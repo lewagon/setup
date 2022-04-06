@@ -1,21 +1,23 @@
 ## Git
 
-### Instalación
+### Zsh & Git
 
-[`git`](https://git-scm.com/) es un programa de línea de comando utilizado para control de versiones.
+En lugar de usar el `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)) predeterminado, usaremos `zsh`.
 
-Sigue estos pasos para instalar `git`:
+También utilizaremos [`git`](https://git-scm.com/), un programa de línea de comando par control de versiones.
+
+Vamos a instalarlos, junto con otros programas útiles:
 - Abre una terminal
 - Copia y pega los siguientes comandos:
 
 ```bash
 sudo apt update
-sudo apt install -y git
+sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
 Estos comandos te pedirán tu contraseña: Agrégala.
 
-:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `ENTER` al terminar.
+:warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
 ### Instalación de la CLI de GitHub
 

@@ -101,7 +101,7 @@ sudo softwareupdate --clear-catalog
 
 这将会询问你的确认（按下`Enter`）并输入你的**macOS用户账户密码**（那个当你重启你Macbook时，用来[登入](https://support.apple.com/en-gb/HT202860) 的密码）。
 
-:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
 
 如果你已经有了Homebrew,终端会告诉你的。那么一切正常，你可以继续接下来的步骤。
 
@@ -229,6 +229,18 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 gh auth login -s 'user:email' -w
 ```
 
+gh will ask you few questions:
+
+`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+
+`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
+
+If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
+
 你会看到下面的输出结果：
 
 ```bash
@@ -252,39 +264,6 @@ gh auth status
 如果你看到`Logged in to github.com as <你的GitHub用户名> `，那就可以了。
 
 :x: 如果没有，**问问老师**。
-
-然后运行下面的配置命令:
-
-```bash
-gh config set git_protocol ssh
-```
-
-## GitHub
-
-我们需要生成SSH密钥。这些会在GitHub和Heroku上使用。把它当成一种登陆的方式好了，但它和平时用的用户名和密码不一样。如果你之前有生成过密钥，你就可以跳过这个步骤。
-
-打开终端，然后输入下面的命令，把email换成**你自己的**（应该用你注册GitHub的email）。然后它会提示你一些信息。按回车键，直到它问你要**密码**。
-
-```bash
-mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
-```
-
-**敲黑板：** 当它问你要密码时，输入你想要的密码（并且是你可以记住的密码）。这个密码会保护你保存在硬盘上的私钥。你输入的时候，还是不会在屏幕上看到任何东西，这是**正常的！**输入密码，当你输完的时候，按下回车。
-
-然后你需要把**公钥**存到GitHub上。运行下面的命令：
-
-```bash
-gh auth refresh -s write:public_key
-```
-
-它会在屏幕上提示一次性代码(####-####). 复制后按“ENTER”，然后将代码粘贴到浏览器中，然后按照说明对 GitHub 进行授权.
-
-回到终端，按“ENTER”并运行:
-
-```bash
-gh ssh-key add ~/.ssh/id_ed25519.pub
-```
-这应该返回 `✓ Public key added to your account` . 如果没有，请不要犹豫**与老师联系.**
 
 
 ## Dotfiles (标准配置)
@@ -369,7 +348,7 @@ sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
 
 :warning: 这条指令会需要你输入你的密码。
 
-:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`ENTER`就可以了。
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
 
 在终端里运行：
 
@@ -534,6 +513,7 @@ sqlite3 -version
 ```
 
 :heavy_check_mark: If you see a version, you're good :+1:
+
 :x: If not, **ask for a teacher**
 
 
@@ -624,7 +604,7 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 
 为了确保视频电话可以正常工作，让我们一起测试摄像头和麦克风：
 - 打开Slack应用程序
-- 在任意群组的消息编辑框里输入`/call --test`并按下`ENTER`
+- 在任意群组的消息编辑框里输入`/call --test`并按下`Enter`
 - 按下"Start test"绿色按钮
 
 ![在Slack检查麦克风和摄像头](images/slack_call_test.png)
