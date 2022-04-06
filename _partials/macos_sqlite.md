@@ -15,4 +15,5 @@ sqlite3 -version
 ```
 
 :heavy_check_mark: If you see a version, you're good :+1:
+
 :x: If not, **ask for a teacher**
