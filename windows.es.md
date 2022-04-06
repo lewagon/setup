@@ -816,7 +816,7 @@ ruby -v
 ### Instalación de algunas gemas
 
 <details>
-  <summary>Si estás en <bold>China</bold> 🇨🇳, haga clic aquí</summary>
+  <summary>Si estás en <bold>China</bold> 🇨🇳 haga clic aquí</summary>
 
   :warning: Si estás en China, deberías actualizar la forma de instalar las gemas con los siguientes comandos.
 
