@@ -515,6 +515,7 @@ code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
+code --install-extension alexcvzz.vscode-sqlite
 ```
 
 你安装的就是下面这些插件：
@@ -524,6 +525,7 @@ code --install-extension Rubymaniac.vscode-paste-and-indent
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+- [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
 ## PostgreSQL
