@@ -155,32 +155,6 @@ code
 :x: De lo contrario, por favor **contacta a un profesor**.
 
 
-## Extensiones de VS Code
-
-### Instalación
-
-Vamos a instalar algunas extensiones útiles de VS Code.
-
-Copia y pega los siguientes comandos en tu terminal:
-
-```bash
-code --install-extension ms-vscode.sublime-keybindings
-code --install-extension emmanuelbeziat.vscode-great-icons
-code --install-extension MS-vsliveshare.vsliveshare
-code --install-extension rebornix.ruby
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension Rubymaniac.vscode-paste-and-indent
-```
-
-Aquí está la lista de las extensiones que estás instalando:
-- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
-- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
-
-
 ### Configuración de Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) es una extensión de VS Code que te permite compartir el código en tu editor de texto para debugging y pair-programming: ¡Instalémoslo!
@@ -554,6 +528,52 @@ yarn -v
 :heavy_check_mark: si ves una versión, entonces todo está bien :+1:
 
 :x: Si no es el caso, **pídele ayuda a un profesor**
+
+
+## SQLite
+
+En algunas semanas, hablaremos de bases de datos y de SQL. [SQLite](https://sqlite.org/index.html) es un sistema de base de datos utilizado para ejecutar consultas SQL en bases de datos de un solo archivo. Vamos a instalarlo:
+
+En un terminal, ejecuta los siguientes comandos:
+
+```bash
+brew install sqlite
+```
+
+A continuación, ejecuta el siguiente comando:
+
+```bash
+sqlite3 -versión
+```
+
+:heavy_check_mark: Si ves una versión, puedes continuar :+1:
+:x: Si no, **pídele ayuda a un profesor**
+
+
+## Extensiones de VS Code
+
+### Instalación
+
+Vamos a instalar algunas extensiones útiles de VS Code.
+
+Copia y pega los siguientes comandos en tu terminal:
+
+```bash
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension MS-vsliveshare.vsliveshare
+code --install-extension rebornix.ruby
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+Aquí está la lista de las extensiones que estás instalando:
+- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
+- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 
 
 ## PostgreSQL
