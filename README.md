@@ -1,10 +1,14 @@
-## En Français ?
+## ¿En Español?
 
-Clique sur <a href="README.fr.md">ce lien</a> pour accéder à la version française du setup.
+Haga clic en <a href="README.es.md">este enlace</a> para acceder a la versión en español de la configuración.
 
 ## In Chinese?
 
 如果你在参加中文课程，请打开<a href="README.cn.md">中文设置指南</a>
+
+## En Français ?
+
+Clique sur <a href="README.fr.md">ce lien</a> pour accéder à la version française du setup.
 
 ## In English
 
