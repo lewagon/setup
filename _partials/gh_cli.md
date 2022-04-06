@@ -16,7 +16,7 @@ gh auth login -s 'user:email' -w
 
 gh will ask you few questions:
 
-`What is your preferred protocol for Git operations?` Wih the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
 
 `Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
 
