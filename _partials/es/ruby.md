@@ -35,7 +35,7 @@ ruby -v
 ### Instalación de algunas gemas
 
 <details>
-  <summary>Si estás en <bold>China</bold>, primero expandas esta sección</summary>
+  <summary>Si estás en <bold>China</bold> 🇨🇳, haga clic aquí</summary>
 
   :warning: Si estás en China, deberías actualizar la forma de instalar las gemas con los siguientes comandos.
 
@@ -50,7 +50,7 @@ gem sources -l
 ```
 </details>
 
-Todos, todas (¡en China o no!), continúen aquí para instalar gemas.
+**Todos, todas, en China o no**, continúen aquí para instalar gemas.
 
 En el universo de ruby, a las librerías externas se les llama `gems`: son pedazos de código ruby que puedes descargar y ejecutar en tu computadora. ¡Instalemos algunas!
 
