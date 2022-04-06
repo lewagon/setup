@@ -36,7 +36,7 @@ ruby -v
 ### Installing some gems
 
 <details>
-  <summary>If you are in <bold>China</bold> 🇨🇳, click here</summary>
+  <summary>If you are in <bold>China</bold> 🇨🇳 click here</summary>
 
   :warning: If you are in China, you should update the way we'll install gem with the following commands.
 
