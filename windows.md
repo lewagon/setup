@@ -516,6 +516,7 @@ code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
+code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Here is a list of the extensions you are installing:
@@ -525,6 +526,7 @@ Here is a list of the extensions you are installing:
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+- [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
 ### Live Share configuration
@@ -924,9 +926,29 @@ yarn -v
 :x: If not, **ask for a teacher**
 
 
+## SQLite
+
+In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/index.html) is a database engine used to execute SQL queries on single-file databases. Let's install it:
+
+In a terminal, execute the following commands:
+
+```bash
+sudo apt-get install sqlite3 libsqlite3-dev
+```
+
+Then run the following command:
+
+```bash
+sqlite3 -version
+```
+
+:heavy_check_mark: If you see a version, you're good :+1:
+:x: If not, **ask for a teacher**
+
+
 ## PostgreSQL
 
-In a few weeks, we'll talk about databases and SQL and you'll need something called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
+Sometimes, SQLite is not enough and we will need a more advanced tool called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
 
 Let's install it now.
 

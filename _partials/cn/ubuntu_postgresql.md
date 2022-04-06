@@ -1,5 +1,6 @@
 ## PostgreSQL
 
+Sometimes, SQLite is not enough and we will need a more advanced tool called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
 在后面的几周里，我们将会学习数据库和SQL并且你会需要一个叫做[PostgreSQL](https://www.postgresql.org/)的软件，一个开源的强大的可供生产的数据库系统。
 
 让我们现在一起安装它。

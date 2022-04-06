@@ -170,6 +170,7 @@ code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
+code --install-extension alexcvzz.vscode-sqlite
 ```
 
 Aquí está la lista de las extensiones que estás instalando:
@@ -179,6 +180,7 @@ Aquí está la lista de las extensiones que estás instalando:
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+- [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
 ### Configuración de Live Share
@@ -521,9 +523,29 @@ yarn -v
 :x: Si no es el caso, **pídele ayuda a un profesor**
 
 
+## SQLite
+
+En algunas semanas, hablaremos de bases de datos y de SQL. [SQLite](https://sqlite.org/index.html) es un sistema de base de datos utilizado para ejecutar consultas SQL en bases de datos de un solo archivo. Vamos a instalarlo:
+
+En un terminal, ejecuta los siguientes comandos:
+
+```bash
+brew install sqlite
+```
+
+A continuación, ejecuta el siguiente comando:
+
+```bash
+sqlite3 -versión
+```
+
+:heavy_check_mark: Si ves una versión, puedes continuar :+1:
+:x: Si no, **pídele ayuda a un profesor**
+
+
 ## PostgreSQL
 
-En algunas semanas hablaremos de bases de datos y de SQL y necesitarás algo que se llama [PostgreSQL](https://www.postgresql.org/), un sistema de base de datos de código abierto y listo para usar en producción.
+A veces, SQLite no es suficiente y necesitaremos una herramienta más avanzada llamada [PostgreSQL](https://www.postgresql.org/), un sistema de base de datos de código abierto y listo para usar en producción.
 
 Vamos a instalarlo ahora.
 

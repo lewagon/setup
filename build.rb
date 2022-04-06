@@ -23,6 +23,7 @@ MACOS = %w[
   ruby
   nvm
   yarn
+  macos_sqlite
   macos_postgresql
   checkup
   kitt
@@ -52,6 +53,7 @@ WINDOWS = %w[
   ruby
   nvm
   yarn
+  sqlite
   windows_postgresql
   checkup
   kitt
@@ -76,6 +78,7 @@ UBUNTU = %w[
   ruby
   nvm
   yarn
+  sqlite
   ubuntu_postgresql
   checkup
   kitt

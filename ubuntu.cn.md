@@ -95,6 +95,7 @@ code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
+code --install-extension alexcvzz.vscode-sqlite
 ```
 
 你安装的就是下面这些插件：
@@ -104,6 +105,7 @@ code --install-extension Rubymaniac.vscode-paste-and-indent
 - [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
+- [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
 
@@ -476,8 +478,29 @@ yarn -v
 你应该会看到你yarn的版本。如果没有的话，问一下你的老师。
 
 
+## SQLite
+
+In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/index.html) is a database engine used to execute SQL queries on single-file databases. Let's install it:
+
+In a terminal, execute the following commands:
+
+```bash
+sudo apt-get install sqlite3 libsqlite3-dev
+```
+
+Then run the following command:
+
+```bash
+sqlite3 -version
+```
+
+:heavy_check_mark: If you see a version, you're good :+1:
+:x: If not, **ask for a teacher**
+
+
 ## PostgreSQL
 
+Sometimes, SQLite is not enough and we will need a more advanced tool called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
 在后面的几周里，我们将会学习数据库和SQL并且你会需要一个叫做[PostgreSQL](https://www.postgresql.org/)的软件，一个开源的强大的可供生产的数据库系统。
 
 让我们现在一起安装它。
