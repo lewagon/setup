@@ -514,7 +514,7 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
 
