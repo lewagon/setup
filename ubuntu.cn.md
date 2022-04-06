@@ -108,7 +108,49 @@ code --install-extension Rubymaniac.vscode-paste-and-indent
 
 
 
-cli_tools.md
+## Command line tools
+
+### Zsh & Git
+
+Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
+
+[`git`](https://git-scm.com/)是一个用来进行版本控制的命令行软件。
+
+安装`git`:
+- 打开Ubuntu终端
+- 复制粘贴下面的命令：
+
+```bash
+sudo apt update
+sudo apt install -y curl git imagemagick jq unzip vim zsh
+```
+
+这些指令会问你的密码：输入你的密码。
+
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
+
+### 安装GitHub CLI
+
+现在我们来安装GitHub[官方命令行界面（CLI)](https://cli.github.com) (Command Line Interface)。这是一个用来在终端里和你的GitHub账户交互的一个软件。
+
+在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
+
+```bash
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install -y gh
+```
+
+你可以运行以下的命令，来检查`gh`是否成功安装了：
+
+```bash
+gh --version
+```
+
+:heavy_check_mark: 如果你看到了`gh version X.Y.Z (YYYY-MM-DD)`，你就可以继续下一步啦！:+1:
+
+:x: 如果没有看到话，**问问老师**。
 
 
 ## Oh-my-zsh
@@ -148,6 +190,18 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 gh auth login -s 'user:email' -w
 ```
 
+gh will ask you few questions:
+
+`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+
+`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
+
+If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
+
+`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+
+:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
+
 你会看到下面的输出结果：
 
 ```bash
@@ -172,11 +226,6 @@ gh auth status
 
 :x: 如果没有，**问问老师**。
 
-然后运行下面的配置命令:
-
-```bash
-gh config set git_protocol ssh
-```
 
 ## Dotfiles (标准配置)
 
