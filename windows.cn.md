@@ -969,7 +969,6 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 :x: 如果没有的话， **请让老师来帮助你**。
 
 
-
 ## 最后检查
 
 让我们来看看你是否已经成功安装好了所有软件。
