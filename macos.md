@@ -10,59 +10,6 @@ You can also have a look at [our cheatsheets](https://github.com/lewagon/setup/t
 
 Let's start :rocket:
 
-
-## Zoom
-
-To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
-
-:warning: If you already have Zoom installed, please make sure that the version is at least **5.6**.
-
-Go to [zoom.us/download](https://zoom.us/download).
-
-Under **Zoom Client** click the **Download** button.
-
-Open the file you have just downloaded to install the app.
-
-Open the Zoom app.
-
-If you have a Mac with Apple silicon, [you are asked to install Rosetta](https://support.apple.com/en-us/HT211861). Click Install, then enter your user name and password to allow installation to proceed.
-
-![Install Rosetta](https://support.apple.com/library/content/dam/edam/applecare/images/en_US/macos/Big-Sur/macos-big-sur-software-update-rosetta-alert.jpg)
-
-If you already have a Zoom account, sign in using your credentials.
-
-If not, click on the **Sign Up Free** link:
-
-![Sign Up Free to Zoom](images/zoom_sign_up_free.png)
-
-You will be redirected to Zoom's website to complete a form.
-
-When it's done, go back to the Zoom app and sign in using your credentials.
-
-You should then see a screen like this:
-
-![Zoom Home Screen](images/zoom_home_screen.png)
-
-You can now close the Zoom app.
-
-
-## GitHub account
-
-Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
-
-:point_right: **[Upload a picture](https://github.com/settings/profile)** and put your name correctly on your GitHub account. This is important as we'll use an internal dashboard with your avatar. Please do this **now**, before you continue with this guide.
-
-![GitHub picture](images/github_picture.png)
-
-
-## A note about quitting apps on a Mac
-
-Clicking the little red cross in the top left corner of the application window on a Mac **does not really quit it**, it just closes an active window. To quit the application _for real_ either press `Cmd + Q` when the application is active, or navigate to `APP_NAME` -> `Quit` in the menu bar.
-
-![Quit Terminal on macOS](images/macos_quit.png)
-
-During this setup you will be asked to **quit and re-open** applications multiple times, please make sure you do it properly :pray:
-
 ## Command Line Tools
 
 Open a new terminal, copy-paste the following command and hit `Enter`:
@@ -128,82 +75,11 @@ Error message or not, proceed running the following in the terminal (you can cop
 
 ```bash
 brew upgrade git || brew install git
-brew upgrade gh || brew install gh
 brew upgrade wget || brew install wget
 brew upgrade imagemagick || brew install imagemagick
 brew upgrade jq || brew install jq
 brew upgrade openssl || brew install openssl
 ```
-
-
-## Visual Studio Code
-
-### Installation
-
-Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
-
-Copy (`Cmd` + `C`) the command below then paste it in your terminal (`Cmd` + `V`):
-
-```bash
-brew install --cask visual-studio-code
-```
-
-Then launch VS Code by running the following command in your terminal:
-
-```bash
-code
-```
-
-:heavy_check_mark: If a VS Code window has just opened, you're good to go :+1:
-
-:x: Otherwise, please **contact a teacher**
-
-
-## VS Code Extensions
-
-### Installation
-
-Let's install some useful extensions to VS Code.
-
-Copy-paste the following commands in your terminal:
-
-```bash
-code --install-extension ms-vscode.sublime-keybindings
-code --install-extension emmanuelbeziat.vscode-great-icons
-code --install-extension MS-vsliveshare.vsliveshare
-code --install-extension rebornix.ruby
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension Rubymaniac.vscode-paste-and-indent
-code --install-extension alexcvzz.vscode-sqlite
-```
-
-Here is a list of the extensions you are installing:
-- [Sublime Text Keymap and Settings Importer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-- [VSCode Great Icons](https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons)
-- [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-- [Ruby](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
-- [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
-
-
-### Live Share configuration
-
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
-
-Launch VS Code from your terminal by typing `code` and pressing `Enter`.
-
-Click on the little arrow at the bottom of the left bar :point_down:
-
-![VS Code Live Share](images/vscode_live_share.png)
-
-- Click on the "Share" button, then on "GitHub (Sign in using GitHub account)".
-- A popup appears asking you to sign in with GitHub: click on "Allow".
-- You are redirected to a GitHub page in you browser asking you to authorize Visual Studio Code: click on "Continue" then "Authorize github".
-- VS Code may display additional pop-ups: close them by clicking "OK".
-
-That's it, you're good to go!
-
 
 ## macOS Terminal Theme
 
@@ -237,54 +113,77 @@ At the end your terminal should look like this:
 
 ## GitHub CLI
 
-CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
+<!-- Not using this section. Using SSH key generation instead -->
 
-In this section, we will use [GitHub CLI](https://cli.github.com/) to interact with GitHub directly from the terminal.
+## SSH Key
 
-It should already be installed on your computer from the previous commands.
+### Generation
 
-First in order to **login**, copy-paste the following command in your terminal:
+We need to generate SSH keys which are going to be used by GitHub to authenticate you. You can think of it as a way to log in, but different from the well known username/password pair.
 
-:warning: **DO NOT edit the `email`**
+If you already generated keys that you already use with other services, you can skip this step.
 
-```bash
-gh auth login -s 'user:email' -w
-```
-
-gh will ask you few questions:
-
-`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
-
-`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
-
-If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
-
-`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
-
-:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
-
-You will then get the following output:
+Open a terminal and copy-paste this command, replacing the email with **yours** (the same one you used to create your GitHub account).
 
 ```bash
-! First copy your one-time code: 0EF9-D015
-- Press Enter to open github.com in your browser...
+mkdir -p ~/.ssh && ssh-keygen -t ed25519 -o -a 100 -f ~/.ssh/id_ed25519 -C "TYPE_YOUR_EMAIL@HERE.com"
 ```
 
-Select and copy the code (`0EF9-D015` in the example), then press `Enter`.
+It will prompt for information. Just press enter until it asks for a **passphrase**.
 
-Your browser will open and ask you to authorize GitHub CLI to use your GitHub account. Accept and wait a bit.
+:warning: When asked for a passphrase, put something you want and that you'll remember. It's a password to protect your private key stored on your hard drive.
 
-Come back to the terminal, press `Enter` again, and that's it.
+:warning: When you you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `ENTER`.
 
-To check that you are properly connected, type:
+### Giving your public key to GitHub
+
+Now, you will give your **public** key to GitHub.
+
+In your terminal copy-paste the following command:
 
 ```bash
-gh auth status
+cat ~/.ssh/id_ed25519.pub
 ```
 
-:heavy_check_mark: If you get `Logged in to github.com as <YOUR USERNAME> `, then all good :+1:
+It will prompt on the screen the content of the `id_ed25519.pub` file.
 
-:x: If not, **contact a teacher**.
+- Copy that text from `ssh` to the end of your email address
+- Go to [github.com/settings/ssh](https://github.com/settings/keys)
+- Click on the green button `New SSH key`
+- Fill in the Title with your computer name (`Macbook Pro` for instance)
+- Paste the **key**
+- Finish by clicking on the **Add SSH key** green button.
+
+To check that this step is completed, in the terminal run this.
+
+```bash
+ssh -T git@github.com
+```
+
+:warning: You will be prompted a warning, type `yes` then `ENTER`.
+
+This is the expected result:
+
+```
+# Hi --------! You've successfully authenticated, but GitHub does not provide shell access
+```
+
+:heavy_check_mark: If you got this message, the key was added to GitHub successfully :+1:
+
+:x: If you encountered an error, you will have to try again. Do not hesitate to **contact a teacher**.
+
+<details>
+  <summary>If <code>ssh -T git@github.com</code> does not work</summary>
+
+  Try running this command before trying again:
+
+  ```bash
+  ssh-add ~/.ssh/id_ed25519
+  ```
+</details>
+
+
+
 
 
 ## Dotfiles (Standard configuration)
@@ -333,24 +232,6 @@ gh api user/emails | jq -r '.[].email'
 :heavy_check_mark: If you see the list of your registered emails, you can proceed :+1:
 
 :x: If not, please [reauthenticate to GitHub](https://github.com/lewagon/setup/blob/master/macos.md#github-cli) before running this command :point_up: again.
-
-### git installer
-
-Run the `git` installer:
-
-```bash
-cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
-```
-
-:point_up: This will **prompt** you for your name (`FirstName LastName`) and your email.
-
-:warning: You **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress.
-
-Please now **reset** your terminal by running:
-
-```bash
-exec zsh
-```
 
 
 ## rbenv
@@ -420,54 +301,6 @@ ruby -v
 
 :x: If not, **ask a teacher**
 
-### Installing some gems
-
-<details>
-  <summary>If you are in <bold>China</bold> 🇨🇳 click here</summary>
-
-  :warning: If you are in China, you should update the way we'll install gem with the following commands.
-
-```bash
-# China only!
-gem sources --remove https://rubygems.org/
-gem sources -a https://gems.ruby-china.com/
-gem sources -l
-# *** CURRENT SOURCES ***
-# https://gems.ruby-china.com/
-# Ruby-china.com must be in the list now
-```
-</details>
-
-**Everyone, in China or not**, continue here to install gems.
-
-In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
-
-In your terminal, copy-paste the following command:
-
-```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
-```
-
-:heavy_check_mark: If you get `xx gems installed`, then all good :+1:
-
-:x: If you encounter the following error:
-
-```bash
-ERROR: While executing gem ... (TypeError)
-incompatible marshal file format (can't be read)
-format version 4.8 required; 60.33 given
-```
-
-Run the following command:
-```bash
-rm -rf ~/.gemrc
-```
-
-Rerun the command to install the gems.
-
-:warning: **NEVER** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the terminal) telling you to do so.
-
-
 ## Node.js
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
@@ -515,8 +348,7 @@ nvm cache clear
 In a terminal, run the following commands:
 
 ```bash
-npm install --global yarn
-exec zsh
+brew install yarn
 ```
 
 Then run the following command:
