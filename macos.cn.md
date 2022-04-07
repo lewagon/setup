@@ -217,11 +217,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2/9910197?fr=aladdin)的首字母缩写。
 
-在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以从终端链接GitHub的数据，执行一些有用的动作。
+在这一章节里面，我们会安装[GitHub CLI](https://cli.github.com/)。这样我们就可以直接在终端和Github互动。
 
-之前执行的命令应该已经安装了GitHub CLI。
+你之前执行的命令应该已经安装了GitHub CLI。
 
-首先你需要**登陆**。复制下面的命令（**不要**更改它），然后复制到终端，敲击回车：
+首先你需要**登陆**。复制粘贴下面的命令到终端，敲击回车：
 
 :warning: **不要更改下面指令中的`email`**
 
@@ -229,22 +229,21 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 gh auth login -s 'user:email' -w
 ```
 
-gh will ask you few questions:
+gh会问你几个问题：
 
-`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH is a protocol to log in using SSH keys instead of the well known username/password pair.
+`What is your preferred protocol for Git operations?（你要用什么协议来执行Git操作？）` 让箭头`>`停在`SSH`前面，然后敲击回车。SSH使用SSH密钥来登陆用户，而不是用用户名和密码。
 
-`Generate a new SSH key to add to your GitHub account?` Press `Enter` to ask gh to generate the SSH keys for you.
+`Generate a new SSH key to add to your GitHub account?（生成新的SSH密钥，然后添加到Github账号上？）` 敲击回车，让gh帮你生成。
 
-If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
+如果你以前生成过SSH密钥，那你就会看到这个问题`Upload your SSH public key to your GitHub account?（上传公共密钥到Github账户上上吗？）` 上下移动箭头`>`，让它停在你想选的SSH公钥前面，然后敲击回车。
 
-`Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+`Enter a passphrase for your new SSH key (Optional)（输入新的SSH密钥的密码（非必填））`. 输入一个密码，然后写下来或者记住它。这是保护你本地私钥的密码。然后敲击回车。
 
-:warning: When you type your passphrase, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your passphrase as a whole but also its length. Just type your passphrase and when you're done, press `Enter`.
+:warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
 
-你会看到下面的输出结果：
+然后你会看到下面的文字输出：
 
 ```bash
-- Logging into github.com
 ! First copy your one-time code: 0EF9-D015
 - Press Enter to open github.com in your browser...
 ```
@@ -498,29 +497,28 @@ yarn -v
 
 ## SQLite
 
-In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/index.html) is a database engine used to execute SQL queries on single-file databases. Let's install it:
+几周后，我们就会开始学习数据库和SQL. [SQLite](https://sqlite.org/index.html)是一个数据库引擎，它可以在单文件数据库上执行SQL查询。现在来安装它吧：
 
-In a terminal, execute the following commands:
+在终端，执行下面的命令：
 
 ```bash
 brew install sqlite
 ```
 
-Then run the following command:
+然后执行下面的命令：
 
 ```bash
 sqlite3 -version
 ```
 
-:heavy_check_mark: If you see a version, you're good :+1:
+:heavy_check_mark: 如果你看到了版本号，那你就可以继续下一步了 :+1:
 
-:x: If not, **ask for a teacher**
+:x: 如果没有，**问问老师吧**！
 
 
 ## PostgreSQL
 
-Sometimes, SQLite is not enough and we will need a more advanced tool called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
-几周之后，我们会学习SQL和数据库。你将会需要一个叫做PostgreSQL的东西，一个开源的可用于生产环境的强大数据库。
+有的时候，SQLite功能会不够用。这个时候我们就需要使用一个更高级的工具，叫做[PostgreSQL](https://www.postgresql.org/)。这是一个开源的、强大的、生产环境可用的数据库系统。
 
 让我们现在一起安装它。
 

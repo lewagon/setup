@@ -2,12 +2,12 @@
 
 ### Zsh & Git
 
-Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
+我们将使用`zsh`来代替默认的`bash` [shell](https://zh.wikipedia.org/zh-cn/殼層)。
 
-[`git`](https://git-scm.com/)是一个用来进行版本控制的命令行软件。
+我们也会使用[`git`](https://git-scm.com/)，它是一个用来进行版本控制的命令行软件。
 
-安装`git`:
-- 打开Ubuntu终端
+下面来安装这些工具吧：
+- 打开终端
 - 复制粘贴下面的命令：
 
 ```bash
