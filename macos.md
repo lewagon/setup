@@ -121,6 +121,9 @@ If you get a `/usr/local must be writable` error, just run this:
 
 ```bash
 sudo chown -R $USER:admin /usr/local
+```
+
+```bash
 brew update
 ```
 
@@ -128,10 +131,25 @@ Error message or not, proceed running the following in the terminal (you can cop
 
 ```bash
 brew upgrade git || brew install git
+```
+
+```bash
 brew upgrade gh || brew install gh
+```
+
+```bash
 brew upgrade wget || brew install wget
+```
+
+```bash
 brew upgrade imagemagick || brew install imagemagick
+```
+
+```bash
 brew upgrade jq || brew install jq
+```
+
+```bash
 brew upgrade openssl || brew install openssl
 ```
 
@@ -169,11 +187,29 @@ Copy-paste the following commands in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
+```
+
+```bash
 code --install-extension emmanuelbeziat.vscode-great-icons
+```
+
+```bash
 code --install-extension MS-vsliveshare.vsliveshare
+```
+
+```bash
 code --install-extension rebornix.ruby
+```
+
+```bash
 code --install-extension dbaeumer.vscode-eslint
+```
+
+```bash
 code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+```bash
 code --install-extension alexcvzz.vscode-sqlite
 ```
 
@@ -297,10 +333,13 @@ As your configuration is personal, you need your **own** repository storing it. 
 
 Forking means that you will create a new repo in your own GitHub account `$GITHUB_USERNAME/dotfiles`, identical to the original Le Wagon one that you will be able to modify at will.
 
-Open your terminal and run the following commands:
+Open your terminal and set a variable for your GitHub username:
 
 ```bash
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
+```
+
+```bash
 echo $GITHUB_USERNAME
 ```
 
@@ -308,10 +347,16 @@ echo $GITHUB_USERNAME
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 
+:warning: Please note that this variable is only set for the time your terminal is open. If you close it before or during the next steps, you need to set it again with the two steps above!
+
+
 Time to fork the repo and clone it on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
+```
+
+```bash
 gh repo fork lewagon/dotfiles --clone
 ```
 
@@ -321,6 +366,9 @@ Run the `dotfiles` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
+```
+
+```bash
 zsh install.sh
 ```
 
@@ -375,6 +423,9 @@ In the terminal, run:
 
 ```bash
 brew uninstall --force rbenv ruby-build
+```
+
+```bash
 exec zsh
 ```
 
@@ -476,6 +527,9 @@ In a terminal, execute the following commands:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
+```
+
+```bash
 exec zsh
 ```
 
@@ -516,6 +570,9 @@ In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
+```
+
+```bash
 exec zsh
 ```
 
@@ -561,6 +618,9 @@ Run the following commands:
 
 ```bash
 brew install postgresql
+```
+
+```bash
 brew services start postgresql
 ```
 
