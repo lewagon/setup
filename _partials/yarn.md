@@ -6,6 +6,9 @@ In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
+```
+
+```bash
 exec zsh
 ```
 

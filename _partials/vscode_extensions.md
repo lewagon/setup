@@ -8,11 +8,29 @@ Copy-paste the following commands in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
+```
+
+```bash
 code --install-extension emmanuelbeziat.vscode-great-icons
+```
+
+```bash
 code --install-extension MS-vsliveshare.vsliveshare
+```
+
+```bash
 code --install-extension rebornix.ruby
+```
+
+```bash
 code --install-extension dbaeumer.vscode-eslint
+```
+
+```bash
 code --install-extension Rubymaniac.vscode-paste-and-indent
+```
+
+```bash
 code --install-extension alexcvzz.vscode-sqlite
 ```
 

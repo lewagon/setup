@@ -24,6 +24,9 @@ If you get a `/usr/local must be writable` error, just run this:
 
 ```bash
 sudo chown -R $USER:admin /usr/local
+```
+
+```bash
 brew update
 ```
 
@@ -31,9 +34,24 @@ Error message or not, proceed running the following in the terminal (you can cop
 
 ```bash
 brew upgrade git || brew install git
+```
+
+```bash
 brew upgrade gh || brew install gh
+```
+
+```bash
 brew upgrade wget || brew install wget
+```
+
+```bash
 brew upgrade imagemagick || brew install imagemagick
+```
+
+```bash
 brew upgrade jq || brew install jq
+```
+
+```bash
 brew upgrade openssl || brew install openssl
 ```
