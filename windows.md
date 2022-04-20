@@ -11,7 +11,7 @@ You can also have a look at [our cheatsheets](https://github.com/lewagon/setup/t
 Let's start :rocket:
 
 
-## Zoom
+## :one: Zoom
 
 To be able to interact when we are not in the same physical room, we will be using [Zoom](https://zoom.us/), a video conferencing tool.
 
@@ -42,7 +42,7 @@ You should then see a screen like this:
 You can now close the Zoom app.
 
 
-## GitHub account
+## :two: GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
 
@@ -51,11 +51,11 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 ![GitHub picture](images/github_picture.png)
 
 
-## Windows version
+## :three: Windows version
 
 Before we start, we need to check that the version of Windows installed on your computer is compatible with this setup instructions.
 
-### Windows 10 or Windows 11
+### :arrow_right: Windows 10 or Windows 11
 
 To be able to set up your computer, you need to have **Windows 10 or Windows 11** installed.
 
@@ -76,11 +76,11 @@ To check your Windows version:
   - When the installation is over, execute the commands above :point_up: to check that you now have **Windows 10**.
 </details>
 
-:information_source: [Windows 11 upgrade is rolling out now](https://www.microsoft.com/en-us/windows/get-windows-11), which means it may or may not be available for your computer just yet.
+:warning: [Windows 11 upgrade is rolling out now](https://www.microsoft.com/en-us/windows/get-windows-11), which means it may or may not be available for your computer just yet.
 
 :warning: **If you have Windows 10 installed, you don't need to upgrade to Windows 11 to proceed with this setup**.
 
-### Latest updates
+### :arrow_right: Latest updates
 
 Once you're sure that you're using Windows 10 or 11, you need to install all the latest updates.
 
@@ -110,7 +110,7 @@ Open Windows Update:
   Then let's try updates again!
 </details>
 
-### Minimum version
+### :arrow_right: Minimum version
 
 Some of the tools we need to install have been release with the `1903` version **or above** of Windows 10 so we need to make sure you have at least this one.
 
@@ -125,7 +125,7 @@ Check the **Version number**:
 :x: If it is below `1903`, please **contact a teacher**.
 
 
-## Virtualization
+## :four: Virtualization
 
 We need to ensure that the Virtualization options are enabled in the BIOS of your computer.
 
@@ -164,13 +164,13 @@ For many computers, this is already the case. Let's check:
 </details>
 
 
-## Windows Subsystem for Linux (WSL)
+## :five: Windows Subsystem for Linux (WSL)
 
 WSL is the development environment we are using to run Ubuntu. You can learn more about WSL [here](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-:information_source: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
+:warning: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
 
-### Windows 11
+### :arrow_right: Windows 11
 
 If you are running Windows 11, we will install WSL 2 and Ubuntu in one command through the Windows Terminal.
 
@@ -195,7 +195,7 @@ wsl --install
 
 :x: If you encounter an error message (or if you see some text in red in the window), please **contact a teacher**
 
-### Windows 10
+### :arrow_right: Windows 10
 
 #### Install WSL 1
 
@@ -280,11 +280,11 @@ wsl --set-default-version 2
 </details>
 
 
-## Ubuntu
+## :six: Ubuntu
 
-### Installation
+### :arrow_right: Installation
 
-:information_source: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
+:warning: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
 
 #### Windows 11
 
@@ -316,7 +316,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
 
 Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
 
-### First launch
+### :arrow_right: First launch
 
 At first launch, you will be asked some information:
 - Choose a **username**:
@@ -331,7 +331,7 @@ At first launch, you will be asked some information:
 
 You can close the Ubuntu window now that it is installed on your computer.
 
-### Check the WSL version of Ubuntu
+### :arrow_right: Check the WSL version of Ubuntu
 
 - Press `Windows` + `R`
 - Type  `cmd`
@@ -381,9 +381,9 @@ wsl -l -v
 You can now close this terminal window.
 
 
-## Visual Studio Code
+## :seven: Visual Studio Code
 
-### Installation
+### :arrow_right: Installation
 
 Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
@@ -396,7 +396,7 @@ Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
 
 When the installation is finished, launch VS Code.
 
-### Connecting VS Code to Ubuntu
+### :arrow_right: Connecting VS Code to Ubuntu
 
 To make VS Code interact properly with Ubuntu, let's install the [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) VS Code extension.
 
@@ -421,11 +421,11 @@ code .
 :x: Otherwise, please **contact a teacher**
 
 
-## Windows Terminal
+## :eight: Windows Terminal
 
-### Installation
+### :arrow_right: Installation
 
-:information_source: The following instructions depend on your version of Windows.
+:warning: The following instructions depend on your version of Windows.
 
 If you are running Windows 11, the Windows Terminal is already installed and you can proceed to the next section :point_down:
 
@@ -454,7 +454,7 @@ If you are running Windows 10, let's install Windows Terminal, a real modern ter
 
 Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
 
-### Ubuntu as the default terminal
+### :arrow_right: Ubuntu as the default terminal
 
 Let's make Ubuntu the default terminal of your Windows Terminal application.
 
@@ -501,9 +501,9 @@ This terminal has tabs: you can choose to open a new terminal tab by clicking on
 **From now on, every time we will refer to the terminal or the console it will be this one.** DO NOT use any other terminal anymore.
 
 
-## VS Code Extensions
+## :nine: VS Code Extensions
 
-### Installation
+### :arrow_right: Installation
 
 Let's install some useful extensions to VS Code.
 
@@ -529,7 +529,7 @@ Here is a list of the extensions you are installing:
 - [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
 
-### Live Share configuration
+### :arrow_right: Live Share configuration
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) is a VS Code extension which allows you to share the code in your text editor for debugging and pair-programming: let's set it up!
 
@@ -547,9 +547,9 @@ Click on the little arrow at the bottom of the left bar :point_down:
 That's it, you're good to go!
 
 
-## Command line tools
+## :one::zero: Command line tools
 
-### Zsh & Git
+### :arrow_right: Zsh & Git
 
 Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), we will use `zsh`.
 
@@ -568,7 +568,7 @@ These commands will ask for your password: type it in.
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type in your password and when you're done, press `Enter`.
 
-### GitHub CLI installation
+### :arrow_right: GitHub CLI installation
 
 Let's now install [GitHub official CLI](https://cli.github.com) (Command Line Interface). It's a software used to interact with your GitHub account via the command line.
 
@@ -592,7 +592,7 @@ gh --version
 :x: Otherwise, please **contact a teacher**
 
 
-## Oh-my-zsh
+## :one::one: Oh-my-zsh
 
 Let's install the `zsh` plugin [Oh My Zsh](https://ohmyz.sh/).
 
@@ -613,7 +613,7 @@ At the end your terminal should look like this:
 :x: Otherwise, please **ask for a teacher**
 
 
-## GitHub CLI
+## :one::two: GitHub CLI
 
 CLI is the acronym of [Command-line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
 
@@ -665,7 +665,7 @@ gh auth status
 :x: If not, **contact a teacher**.
 
 
-## Dotfiles (Standard configuration)
+## :one::three: Dotfiles (Standard configuration)
 
 Hackers love to refine and polish their shell and tools.
 
@@ -693,7 +693,7 @@ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 gh repo fork lewagon/dotfiles --clone
 ```
 
-### Dotfiles installer
+### :arrow_right: Dotfiles installer
 
 Run the `dotfiles` installer:
 
@@ -712,7 +712,7 @@ gh api user/emails | jq -r '.[].email'
 
 :x: If not, please [reauthenticate to GitHub](https://github.com/lewagon/setup/blob/master/windows.md#github-cli) before running this command :point_up: again.
 
-### git installer
+### :arrow_right: git installer
 
 Run the `git` installer:
 
@@ -731,7 +731,7 @@ exec zsh
 ```
 
 
-## Disable SSH passphrase prompt
+## :one::four: Disable SSH passphrase prompt
 
 You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
 
@@ -754,7 +754,7 @@ plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history
 :heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
 
 
-## rbenv
+## :one::five: rbenv
 
 Let's install [`rbenv`](https://github.com/sstephenson/rbenv), a software to install and manage `ruby` environments.
 
@@ -783,9 +783,9 @@ exec zsh
 ```
 
 
-## Ruby
+## :one::six: Ruby
 
-### Installation
+### :arrow_right: Installation
 
 Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) version and set it as the default version.
 
@@ -818,7 +818,7 @@ ruby -v
 
 :x: If not, **ask a teacher**
 
-### Installing some gems
+### :arrow_right: Installing some gems
 
 <details>
   <summary>If you are in <bold>China</bold> 🇨🇳 click here</summary>
@@ -866,7 +866,7 @@ Rerun the command to install the gems.
 :warning: **NEVER** install a gem with `sudo gem install`! Even if you stumble upon a Stackoverflow answer (or the terminal) telling you to do so.
 
 
-## Node.js
+## :one::seven: Node.js
 
 [Node.js](https://nodejs.org/en/) is a JavaScript runtime to execute JavaScript code in the terminal. Let's install it with [nvm](https://github.com/nvm-sh/nvm), a version manager for Node.js.
 
@@ -906,7 +906,7 @@ nvm cache clear
 :x: If not, **contact a teacher**
 
 
-## yarn
+## :one::eight: yarn
 
 [`yarn`](https://yarnpkg.com/) is a package manager to install JavaScript libraries. Let's install it:
 
@@ -928,7 +928,7 @@ yarn -v
 :x: If not, **ask for a teacher**
 
 
-## SQLite
+## :one::nine: SQLite
 
 In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/index.html) is a database engine used to execute SQL queries on single-file databases. Let's install it:
 
@@ -949,7 +949,7 @@ sqlite3 -version
 :x: If not, **ask for a teacher**
 
 
-## PostgreSQL
+## :two::zero: PostgreSQL
 
 Sometimes, SQLite is not enough and we will need a more advanced tool called [PostgreSQL](https://www.postgresql.org/), an open-source robust and production-ready database system.
 
@@ -990,7 +990,7 @@ Open a new terminal.
 :x: If not, **contact a teacher**.
 
 
-## Check-up
+## :two::one: Check-up
 
 Let's check if you successfully installed everything.
 
@@ -1011,7 +1011,7 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 :x: If not, **contact a teacher**.
 
 
-## Kitt
+## :two::two: Kitt
 
 :warning: If you have received an email from Le Wagon inviting you to sign up on Kitt (our learning platform), you can safely skip this step. Instead, please follow the instructions in the email you received if you haven't done so already.
 
@@ -1027,18 +1027,18 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 - One from GitHub, inviting you to `lewagon` team. **Accept it** otherwise you won't be able to access the lecture slides.
 
 
-## Slack
+## :two::three: Slack
 
 [Slack](https://slack.com/) is a communcation platform pretty popular in the tech industry.
 
-### Installation
+### :arrow_right: Installation
 
 [Download the Slack app](https://slack.com/downloads/windows) and install it.
 
 :warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
 
 
-### Settings
+### :arrow_right: Settings
 
 Launch the app and sign in to `lewagon-alumni` organization.
 
@@ -1062,9 +1062,9 @@ To ensure that everything is working fine for video calls, let's test your camer
 You can also install Slack app on your phone and sign in `lewagon-alumni`!
 
 
-## Windows settings
+## :two::four: Windows settings
 
-### Exchange files between Windows and Ubuntu
+### :arrow_right: Exchange files between Windows and Ubuntu
 
 We need an easy way to transfer files from Windows to Ubuntu and vice versa.
 
@@ -1077,7 +1077,7 @@ In order to do that, let's create shortcuts to Ubuntu directories in the Windows
 
 ![How to add a shortcut to Ubuntu file system on Windows](images/windows_ubuntu_file_system_shortcut.gif)
 
-### Open the Windows File Explorer from the Ubuntu terminal
+### :arrow_right: Open the Windows File Explorer from the Ubuntu terminal
 
 Another option to move files around is to open the Windows **File Explorer** from the Ubuntu terminal:
 - Open an Ubuntu terminal
@@ -1087,7 +1087,7 @@ Another option to move files around is to open the Windows **File Explorer** fro
 
 ![How to launch Windows Explorer from Ubuntu terminal](images/windows_explorer_from_terminal.png)
 
-### Find your way in the Ubuntu File System
+### :arrow_right: Find your way in the Ubuntu File System
 
 You might want to figure out the exact location of a Windows directory in the Ubuntu file system, or the other way around.
 
@@ -1099,7 +1099,7 @@ In order to convert a Windows path to and from an Ubuntu path:
 
 ![How to access a Windows path from Ubuntu terminal](images/windows_path_from_terminal.png)
 
-### Pin apps to your taskbar
+### :arrow_right: Pin apps to your taskbar
 
 You are going to use most of the apps you've installed today really often. Let's pin them to your taskbar so that they are just one click away!
 
@@ -1116,7 +1116,7 @@ You must pin:
 - Zoom
 
 
-## Setup completed!
+## :two::five: Setup completed!
 
 Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
