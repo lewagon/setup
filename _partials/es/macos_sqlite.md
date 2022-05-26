@@ -11,7 +11,7 @@ brew install sqlite
 A continuación, ejecuta el siguiente comando:
 
 ```bash
-sqlite3 -versión
+sqlite3 -version
 ```
 
 :heavy_check_mark: Si ves una versión, puedes continuar :+1:
