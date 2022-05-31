@@ -127,16 +127,16 @@ Haz clic en la pequeña flecha de la parte inferior de la barra de la izquierda:
 Eso es todo. ¡Ya puedes continuar!
 
 
-## Git
+## Herramientas de línea de comando
 
 ### Zsh & Git
 
 En lugar de usar el `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)) predeterminado, usaremos `zsh`.
 
-También utilizaremos [`git`](https://git-scm.com/), un programa de línea de comando par control de versiones.
+También utilizaremos [`git`](https://git-scm.com/), un programa de línea de comando para control de versiones.
 
 Vamos a instalarlos, junto con otros programas útiles:
-- Abre una terminal
+- Abre una **terminal de Ubuntu**
 - Copia y pega los siguientes comandos:
 
 ```bash
@@ -144,7 +144,7 @@ sudo apt update
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
-Estos comandos te pedirán tu contraseña: Agrégala.
+Estos comandos te pedirán tu contraseña: escríbela.
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
