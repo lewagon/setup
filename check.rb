@@ -14,7 +14,7 @@ REQUIRED_GEMS.each do |the_gem|
 
     # NOTE(ssaunier): Treating `rails` gem as a special case as we want to lock-in the version for the Curriculum
     puts "1️⃣ Please run `gem uninstall -qxaI #{REQUIRED_GEMS.join(" ")} rails`"
-    puts "2️⃣ Then run `gem install #{REQUIRED_GEMS.join(" ")} 'rails:~>6.1'`"
+    puts "2️⃣ Then run `gem install #{REQUIRED_GEMS.join(" ")} rails`"
     puts "3️⃣ Then retry this check!"
     exit 1
   end
