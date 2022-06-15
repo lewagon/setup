@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby -wU
 
 PLACEHOLDERS = {
-  'RUBY_SETUP_VERSION' => "3.0.3",
+  'RUBY_SETUP_VERSION' => "3.1.2",
   'NVM_VERSION' => "0.39.1",
   'NODE_VERSION' => "16.13.1",
   'GEMS' => "rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'"
