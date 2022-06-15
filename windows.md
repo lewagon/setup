@@ -512,6 +512,7 @@ Copy-paste the following commands in your terminal:
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension github.github-vscode-theme
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
@@ -556,7 +557,7 @@ Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_
 We will also use [`git`](https://git-scm.com/), a command line software used for version control.
 
 Let's install them, along with other useful tools:
-- Open a terminal
+- Open an **Ubuntu terminal**
 - Copy and paste the following commands:
 
 ```bash

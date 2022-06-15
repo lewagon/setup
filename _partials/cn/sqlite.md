@@ -1,19 +1,19 @@
 ## SQLite
 
-In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/index.html) is a database engine used to execute SQL queries on single-file databases. Let's install it:
+几周后，我们就会开始学习数据库和SQL. [SQLite](https://sqlite.org/index.html)是一个数据库引擎，它可以在单文件数据库上执行SQL查询。现在来安装它吧：
 
-In a terminal, execute the following commands:
+在终端，执行下面的命令：
 
 ```bash
 sudo apt-get install sqlite3 libsqlite3-dev
 ```
 
-Then run the following command:
+然后执行下面的命令：
 
 ```bash
 sqlite3 -version
 ```
 
-:heavy_check_mark: If you see a version, you're good :+1:
+:heavy_check_mark: 如果你看到了版本号，那你就可以继续下一步了 :+1:
 
-:x: If not, **ask for a teacher**
+:x: 如果没有，**问问老师吧**！
