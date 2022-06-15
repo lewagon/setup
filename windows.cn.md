@@ -827,7 +827,7 @@ gem sources -l
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install colored http pry-byebug rake rails rspec rubocop-performance
+gem install colored http pry-byebug rake rails rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:

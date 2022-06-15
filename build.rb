@@ -4,7 +4,7 @@ PLACEHOLDERS = {
   'RUBY_SETUP_VERSION' => "3.1.2",
   'NVM_VERSION' => "0.39.1",
   'NODE_VERSION' => "16.15.1",
-  'GEMS' => "colored http pry-byebug rake rails rspec rubocop-performance"
+  'GEMS' => "colored http pry-byebug rake rails rspec rubocop-performance sqlite3"
 }
 
 MACOS = %w[
