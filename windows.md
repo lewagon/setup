@@ -844,7 +844,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored http pry-byebug rake rails rspec rubocop-performance
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
