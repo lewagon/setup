@@ -423,7 +423,7 @@ Dans l’environnement ruby, les bibliothèques externes sont appelées des `gem
 Copie-colle la commande suivante dans ton terminal :
 
 ```bash
-gem install colored http pry-byebug rake rails rspec rubocop-performance sqlite3
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
