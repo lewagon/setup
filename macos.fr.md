@@ -665,10 +665,6 @@ Au fur et à mesure de ta formation de programmeur, tu comprendras que quitter l
 
 Va dans ` > Préférences système > Clavier`. Définis `Répétition de touches` sur la position la plus rapide (à droite) et `Pause avant répétition` sur la position la plus courte (à droite).
 
-#### Accès complet au clavier
-
-Va dans ` > Préférences système > Clavier`. Clique sur le troisième onglet `Raccourcis`. En bas de la fenêtre, clique sur le bouton radio `tous les contrôles`. De cette façon, lorsque tu verras apparaître une popup avec plusieurs options, tu pourras saisir `Enter` pour confirmer ou `SPACE` pour annuler. Si tu as plus de deux options, tu peux utiliser la touche de tabulation pour aller et venir entre elles.
-
 #### macOS pour les hackers
 
 [Lis ce script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) et sélectionne ce qui t’intéresse. Par exemple, tu peux saisir ce qui suit dans le terminal :
