@@ -273,6 +273,8 @@ wsl --set-default-version 2
   <summary>Habilita la feature de Windows Hyper-V</summary>
 
   Sigue los pasos [siguientes](https://winaero.com/enable-use-hyper-v-windows-10/) hasta que hayas habilitado el grupo <strong>Hyper-V</strong>
+
+  :information_source: Si tienes Windows 10 **Home edition**, la feature Hyper-V no está disponible para su sistema operativo. No es un bloqueo y puedes continuar con las siguientes instrucciones aquí abajo :ok_hand:
 </details>
 
 
