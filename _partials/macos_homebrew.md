@@ -14,11 +14,9 @@ This will ask for your confirmation (hit `Enter`) and your **macOS user account 
 
 :warning: If you see this warning :point_down:, run the two commands in the `Next steps` section to add Homebrew to your PATH
 
-
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
 
 If you already have Homebrew, it will tell you so, that's fine, go on.
-
-![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
 
 Then install some useful software:
 
