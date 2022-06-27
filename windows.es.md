@@ -273,6 +273,8 @@ wsl --set-default-version 2
   <summary>Habilita la feature de Windows Hyper-V</summary>
 
   Sigue los pasos [siguientes](https://winaero.com/enable-use-hyper-v-windows-10/) hasta que hayas habilitado el grupo <strong>Hyper-V</strong>
+
+  :information_source: Si tienes Windows 10 **Home edition**, la feature Hyper-V no está disponible para su sistema operativo. No es un bloqueo y puedes continuar con las siguientes instrucciones aquí abajo :ok_hand:
 </details>
 
 
@@ -788,13 +790,13 @@ Ahora estás listo para instalar la última versión de [ruby](https://www.ruby-
 Corre este comando, **tomará un tiempo (5-10 minutos)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.0.3 por defecto.
+Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.1.2 por defecto.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reinicia** tu terminal y chequea tu versión Ruby:
@@ -809,7 +811,7 @@ Luego ejecuta esto:
 ruby -v
 ```
 
-:heavy_check_mark: Si ves algo que comience por `ruby 3.0.3p`, entonces puedes continuar +1:
+:heavy_check_mark: Si ves algo que comience por `ruby 3.1.2p`, entonces puedes continuar +1:
 
 :x: Si no es el caso, **pídele ayuda a un profesor**.
 
@@ -838,7 +840,7 @@ En el universo de ruby, a las librerías externas se les llama `gems`: son pedaz
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http rails
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si obtienes `xx gems installed`, entonces todo está bien :+1:
@@ -883,7 +885,7 @@ Deberías ver una versión. Si no, pídele ayuda a tu profesor.
 Ahora instala node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 Cuando termine la instalación, corre lo siguiente:
@@ -892,7 +894,7 @@ Cuando termine la instalación, corre lo siguiente:
 node -v
 ```
 
-Si ves `v16.13.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
+Si ves `v16.15.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
 
 ```bash
 nvm cache clear

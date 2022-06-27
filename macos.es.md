@@ -105,6 +105,10 @@ Te pedirá que confirmes (presionando `Enter`) y también te pedirá la **contra
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
+:warning: Si ves esta advertencia :point_down:, ejecuta los dos comandos de la sección `Next steps` para añadir Homebrew a tu PATH
+
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
 Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
 
 Luego instala algunos programas útiles:
@@ -390,13 +394,13 @@ Ahora estás listo para instalar la última versión de [ruby](https://www.ruby-
 Corre este comando, **tomará un tiempo (5-10 minutos)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.0.3 por defecto.
+Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.1.2 por defecto.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reinicia** tu terminal y chequea tu versión Ruby:
@@ -411,7 +415,7 @@ Luego ejecuta esto:
 ruby -v
 ```
 
-:heavy_check_mark: Si ves algo que comience por `ruby 3.0.3p`, entonces puedes continuar +1:
+:heavy_check_mark: Si ves algo que comience por `ruby 3.1.2p`, entonces puedes continuar +1:
 
 :x: Si no es el caso, **pídele ayuda a un profesor**.
 
@@ -440,7 +444,7 @@ En el universo de ruby, a las librerías externas se les llama `gems`: son pedaz
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http rails
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si obtienes `xx gems installed`, entonces todo está bien :+1:
@@ -485,7 +489,7 @@ Deberías ver una versión. Si no, pídele ayuda a tu profesor.
 Ahora instala node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 Cuando termine la instalación, corre lo siguiente:
@@ -494,7 +498,7 @@ Cuando termine la instalación, corre lo siguiente:
 node -v
 ```
 
-Si ves `v16.13.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
+Si ves `v16.15.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
 
 ```bash
 nvm cache clear
@@ -664,10 +668,6 @@ A medida que te vayas convirtiendo en programador, entenderás que pierdes tiemp
 #### Velocidad del teclado
 
 Ve a ` > System Preferences > Keyboard`. Coloca a `Key Repeat` en la posición más rápida (a la derecha) y a `Delay Until Repeat` en la posición más corta (a la derecha).
-
-#### Acceso total al teclado
-
-Ve a ` > System Preferences > Keyboard`. Haz clic en la tercera pestaña `Shortcuts`. En la parte inferior del panel, haz clic en el botón del radio (también llamado de opción) `All controls`. De esta manera cuando veas un diálogo con muchas opciones, podrás escribir `Enter` para confirmar, o `SPACE` para escoger la opción cancelar. Si hay más de dos opciones, puedes usar la tecla de tabulación para navegar entre ellas.
 
 #### macOS para hackers
 

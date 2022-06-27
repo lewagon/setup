@@ -111,4 +111,6 @@ wsl --set-default-version 2
  <summary>Activer la fonction Hyper-V sous Windows</summary>
 
   Suis les étapes décrites [ici](https://winaero.com/enable-use-hyper-v-windows-10/) pour activer le groupe <strong>Hyper-V</strong>
+
+  :information_source: Si tu as Windows 10 **Home edition**, la fonction Hyper-V n'est pas disponible sur ton système d'exploitation. Ce n'est pas bloquant et tu peux continuer à suivre les instructions ci-dessous :ok_hand:
 </details>
