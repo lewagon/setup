@@ -3,7 +3,7 @@ require "json"
 
 REQUIRED_RUBY_VERSION = "3.1.2"
 REQUIRED_GIT_VERSION = "2.0"
-REQUIRED_GEMS = %w[rake rspec rubocop-performance pry-byebug colored http]
+REQUIRED_GEMS = %w[colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3]
 MINIMUM_AVATAR_SIZE = 2 * 1024
 
 REQUIRED_GEMS.each do |the_gem|
@@ -12,9 +12,8 @@ REQUIRED_GEMS.each do |the_gem|
   rescue LoadError
     puts "⚠️  The gem '#{the_gem}' is missing."
 
-    # NOTE(ssaunier): Treating `rails` gem as a special case as we want to lock-in the version for the Curriculum
-    puts "1️⃣ Please run `gem uninstall -qxaI #{REQUIRED_GEMS.join(" ")} rails`"
-    puts "2️⃣ Then run `gem install #{REQUIRED_GEMS.join(" ")} rails`"
+    puts "1️⃣ Please run `gem uninstall -qxaI #{REQUIRED_GEMS.join(" ")}`"
+    puts "2️⃣ Then run `gem install #{REQUIRED_GEMS.join(" ")}`"
     puts "3️⃣ Then retry this check!"
     exit 1
   end
