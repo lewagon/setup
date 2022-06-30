@@ -14,10 +14,6 @@ A medida que te vayas convirtiendo en programador, entenderás que pierdes tiemp
 
 Ve a ` > System Preferences > Keyboard`. Coloca a `Key Repeat` en la posición más rápida (a la derecha) y a `Delay Until Repeat` en la posición más corta (a la derecha).
 
-#### Acceso total al teclado
-
-Ve a ` > System Preferences > Keyboard`. Haz clic en la tercera pestaña `Shortcuts`. En la parte inferior del panel, haz clic en el botón del radio (también llamado de opción) `All controls`. De esta manera cuando veas un diálogo con muchas opciones, podrás escribir `Enter` para confirmar, o `SPACE` para escoger la opción cancelar. Si hay más de dos opciones, puedes usar la tecla de tabulación para navegar entre ellas.
-
 #### macOS para hackers
 
 [Lee este script](https://github.com/mathiasbynens/dotfiles/blob/master/.macos) y selecciona algunas cosas que creas que serán útiles para ti. Por ejemplo, puedes escribir lo siguiente en la terminal:

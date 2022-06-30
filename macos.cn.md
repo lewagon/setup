@@ -376,13 +376,13 @@ brew install rbenv
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用3.0.3这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用3.1.2这个版本作为默认版本。
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 然后**重置**你的终端，然后检查Ruby版本：
@@ -392,7 +392,7 @@ exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby 3.0.3p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby 3.1.2p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -419,7 +419,7 @@ gem sources -l
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
@@ -464,7 +464,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 当这个指令执行结束之后，运行：
@@ -473,7 +473,7 @@ nvm install 16.13.1
 node -v
 ```
 
-如果看到`v16.13.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
+如果看到`v16.15.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
 ```bash
 nvm cache clear
@@ -633,10 +633,6 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 #### 键盘速度
 
 前往  > 系统偏好设置 > 键盘。设置`Key Repeat`到最快的位置（最右边）并将`Delay Until Repeat`移到最短的位置（最右边）。
-
-#### 全部键盘权限
-
-前往  > 系统偏好设置 > 键盘。点击第三个标签页（Shortcuts）。在窗体的底部，点击`All controls`单选按钮。这样的话，当你遇见一个带有多个选项的对话窗的时候，你可以按`Enter`来确认，或者按`Space`来选择取消选项。如果你遇到超过两个选项的对话窗，你可以按tab键来切换选择。
 
 #### 黑客的macOS
 

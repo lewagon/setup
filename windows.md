@@ -263,7 +263,7 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue below :+1:
+:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue to follow the instructions below :+1:
 
 :x: If the message you get is about Virtualization, please **contact a teacher**
 
@@ -277,6 +277,8 @@ wsl --set-default-version 2
   <summary>Enable Hyper-V Windows feature</summary>
 
   Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
+
+  :information_source: If you are running Windows 10 **Home edition**, Hyper-V feature is not available for your operating system. It's non-blocking and you can still continue to follow the instructions below :ok_hand:
 </details>
 
 
@@ -793,14 +795,14 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 3.0.3 version by default.
+to use the 3.1.2 version by default.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reset** your terminal and check your Ruby version:
@@ -815,7 +817,7 @@ Then run:
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.1.2p` then you can proceed +1:
 
 :x: If not, **ask a teacher**
 
@@ -844,7 +846,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
@@ -889,7 +891,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 When the installation is finished, run:
@@ -898,7 +900,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v16.13.1`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v16.15.1`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear
