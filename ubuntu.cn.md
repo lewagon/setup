@@ -514,6 +514,10 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
+```bash
+sudo -u postgres psql --command "ALTER USER \"`whoami`\" WITH SUPERUSER;"
+```
+
 
 ## 最后检查
 

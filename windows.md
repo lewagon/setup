@@ -972,6 +972,10 @@ sudo /etc/init.d/postgresql start
 sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
 ```
 
+```bash
+sudo -u postgres psql --command "ALTER USER \"`whoami`\" WITH SUPERUSER;"
+```
+
 You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
 
 ```bash
