@@ -577,7 +577,7 @@ Once you've done that, let's check that it worked:
 psql -d postgres
 ```
 
-If you enter a new prompt like this one, you're good!
+If you see a new prompt like this one, you're good!
 
 ```bash
 psql (14.4)
