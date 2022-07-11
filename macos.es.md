@@ -572,7 +572,7 @@ psql -d postgres
 ¡Si no tienes ningún problema para agregar algo como esto de aquí abajo, todo está bien!
 
 ```bash
-psql (13.3)
+psql (14.4)
 Type "help" for help.
 
 postgres=#

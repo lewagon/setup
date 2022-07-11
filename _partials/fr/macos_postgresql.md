@@ -20,7 +20,7 @@ psql -d postgres
 Si tu vois apparaître un nouveau message comme celui-ci, c’est bon !
 
 ```bash
-psql (13.3)
+psql (14.4)
 Type "help" for help.
 
 postgres=#
