@@ -128,7 +128,7 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
+Proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
 brew upgrade git || brew install git
