@@ -569,7 +569,7 @@ Une fois que c’est fait, on va vérifier que tout a bien fonctionné :
 psql -d postgres
 ```
 
-Si tu vois apparaître un nouveau message comme celui-ci, c’est bon !
+Tu devrais voir apparaître un nouveau message comme celui-ci :point_down:
 
 ```bash
 psql (14.4)
@@ -578,7 +578,9 @@ Type "help" for help.
 postgres=#
 ```
 
-Pour quitter PostgreSQL, saisis `\q` puis `Enter`.
+:heavy_check_mark: Si c'est le cas, saisis `\q` puis `Enter` pour quitter ce programme. Tu peux poursuivre :+1:
+
+:x: Sinon, **demande au prof**
 
 
 ## Vérification

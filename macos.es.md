@@ -569,7 +569,7 @@ Cuando termines, verifica que funcione:
 psql -d postgres
 ```
 
-¡Si no tienes ningún problema para agregar algo como esto de aquí abajo, todo está bien!
+Deberías ver un nuevo mensaje como este :point_down:
 
 ```bash
 psql (14.4)
@@ -578,7 +578,9 @@ Type "help" for help.
 postgres=#
 ```
 
-Para cerrarla, escribe `\q` y luego presiona `Enter`.
+:heavy_check_mark: Si es asi, escribe `\q` y luego presiona `Enter` para cerrarla. Puede continuar :+1:
+
+:x: Si no es el caso, **pídele ayuda a un profesor**
 
 
 ## Chequeo
