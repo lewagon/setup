@@ -578,9 +578,9 @@ Type "help" for help.
 postgres=#
 ```
 
-:heavy_check_mark: Si es asi, escribe `\q` y luego presiona `Enter` para cerrarla. Puede continuar :+1:
+:heavy_check_mark: Si es asi, escribe `\q` y luego presiona `Enter` para cerrar el programa. Puede continuar :+1:
 
-:x: Si no es el caso, **pídele ayuda a un profesor**
+:x: Si no, **pídele ayuda a un profesor**
 
 
 ## Chequeo
