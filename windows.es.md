@@ -963,7 +963,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb superuser;"
 ```
 
 Puedes configurar PostgreSQL para que inicie automáticamente para no tener que ejecutar el comando `sudo /etc/init.d/postgresql start` cada vez que abras una nueva terminal:
@@ -1003,7 +1003,7 @@ Luego ejecuta lo siguiente:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: Si obtienes un mensaje verde diciendo `Awesome! Your computer is now ready!`, significa que tu computadora está lista y que todo está bien :+1:
+:heavy_check_mark: Si obtienes un mensaje verde diciendo `Awesome! Your computer is now ready!`, significa que tu computadora está lista y que todo está bien :+1:
 
 :x: De lo contrario, **habla con tu profesor**.
 

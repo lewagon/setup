@@ -947,7 +947,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 你可以把PostgreSQL配置成自动启动，这样每次你打开新的终端时，你就不需要执行`sudo /etc/init.d/postgresql start`：
@@ -982,7 +982,7 @@ exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-:check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
+:heavy_check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
 
 如果没有的话，问一下你的老师。
 
