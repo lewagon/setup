@@ -155,6 +155,7 @@ Instalemos la [CLI oficial de GitHub](https://cli.github.com) (Interfaz de Líne
 En tu terminal, copia y pega los siguientes comandos y escribe tu contraseña si te la piden:
 
 ```bash
+sudo apt remove -y gitsome
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update

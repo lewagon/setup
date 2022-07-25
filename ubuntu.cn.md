@@ -138,6 +138,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh
 在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
 
 ```bash
+sudo apt remove -y gitsome
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
