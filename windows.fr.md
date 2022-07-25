@@ -572,6 +572,7 @@ On va maintenant installer la [CLI officielle de GitHub](https://cli.github.com)
 Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe s’il t’est demandé :
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update

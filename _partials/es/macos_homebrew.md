@@ -12,9 +12,15 @@ Te pedirá que confirmes (presionando `Enter`) y también te pedirá la **contra
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
-:warning: Si ves esta advertencia :point_down:, ejecuta los dos comandos de la sección `Next steps` para añadir Homebrew a tu PATH
+:warning: Si ves esta advertencia :point_down:, ejecuta los dos comandos de la sección `Next steps` para añadir Homebrew a tu PATH:
 
 ![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
 

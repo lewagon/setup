@@ -105,7 +105,13 @@ sudo softwareupdate --clear-catalog
 
 :warning: 如果你看到了下面的警告:point_down:，运行`Next steps`下面的两个命令把Homebrew加到你的PATH里。
 
- ![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 如果你已经有了Homebrew,终端会告诉你的。那么一切正常，你可以继续接下来的步骤。
 
