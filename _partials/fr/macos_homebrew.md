@@ -16,6 +16,12 @@ On te demandera de confirmer (appuie sur `Enter`) et de saisir ton **mot de pass
 
 ![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
 
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 Si tu as déjà Homebrew, le système te l’indiquera. Continue.
 
 Installe ensuite quelques logiciels utiles :
