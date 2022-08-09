@@ -92,6 +92,7 @@ Copia y pega los siguientes comandos en tu terminal:
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension github.github-vscode-theme
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
