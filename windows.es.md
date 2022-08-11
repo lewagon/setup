@@ -560,6 +560,9 @@ Vamos a instalarlos, junto con otros programas útiles:
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 

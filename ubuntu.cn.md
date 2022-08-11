@@ -124,6 +124,9 @@ code --install-extension alexcvzz.vscode-sqlite
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
