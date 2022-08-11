@@ -12,7 +12,10 @@ Installons-les, avec d'autres outils utiles :
 
 ```bash
 sudo apt update
-sudo apt install -y zsh curl vim imagemagick jq unzip
+```
+
+```bash
+sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.

@@ -12,6 +12,9 @@ Let's install them, along with other useful tools:
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
