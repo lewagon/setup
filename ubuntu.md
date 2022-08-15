@@ -403,7 +403,7 @@ Then run:
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 3.1.2p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.1.2p` then you can proceed :+1:
 
 :x: If not, **ask a teacher**
 
