@@ -45,7 +45,7 @@ It should open the terminal settings:
 - Click on "Save"
 - Click on "Open JSON file"
 
-You may see an orange circle rather than a penguin as the logo for Ubuntu
+You may see an orange circle rather than a penguin as the logo for Ubuntu.
 
 We have circle in red the part you will change:
 
