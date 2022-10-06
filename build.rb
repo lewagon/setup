@@ -47,6 +47,7 @@ WINDOWS = %w[
   vscode_liveshare
   cli_tools
   oh_my_zsh
+  windows_browser
   gh_cli
   dotfiles
   ssh_agent
