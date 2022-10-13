@@ -15,7 +15,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 ```
 
 These commands will ask for your password: type it in.
