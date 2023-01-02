@@ -105,6 +105,16 @@ Te pedirá que confirmes (presionando `Enter`) y también te pedirá la **contra
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
+:warning: Si ves esta advertencia :point_down:, ejecuta los dos comandos de la sección `Next steps` para añadir Homebrew a tu PATH:
+
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
 
 Luego instala algunos programas útiles:
@@ -120,7 +130,7 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Ejecuta el siguiente código en tu terminal (puedes copiar y pegar todas las líneas de código al mismo tiempo) independientemente de si obtienes o no un error.
+Ejecuta el siguiente código en tu terminal (puedes copiar y pegar todas las líneas de código al mismo tiempo):
 
 ```bash
 brew upgrade git || brew install git
@@ -166,6 +176,7 @@ Copia y pega los siguientes comandos en tu terminal:
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension github.github-vscode-theme
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
@@ -206,6 +217,8 @@ Eso es todo. ¡Ya puedes continuar!
 Abre una terminal. Haz clic en `Terminal > Preferences` y coloca el tema llamado "Pro" como perfil predeterminado.
 
 ![Pon el tema Pro en la terminal de macOS](images/macos_terminal_pro.png)
+
+En la pestaña "Ventana", configura también tu **Tamaño de la ventana** a Columnas: 200, Filas: 50
 
 **Cierra y reinicia** tu terminal: ahora debería tener un fondo negro que no te cansa tanto la vista.
 
@@ -390,13 +403,13 @@ Ahora estás listo para instalar la última versión de [ruby](https://www.ruby-
 Corre este comando, **tomará un tiempo (5-10 minutos)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.0.3 por defecto.
+Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.1.2 por defecto.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reinicia** tu terminal y chequea tu versión Ruby:
@@ -411,7 +424,7 @@ Luego ejecuta esto:
 ruby -v
 ```
 
-:heavy_check_mark: Si ves algo que comience por `ruby 3.0.3p`, entonces puedes continuar +1:
+:heavy_check_mark: Si ves algo que comience por `ruby 3.1.2p`, entonces puedes continuar +1:
 
 :x: Si no es el caso, **pídele ayuda a un profesor**.
 
@@ -440,7 +453,7 @@ En el universo de ruby, a las librerías externas se les llama `gems`: son pedaz
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si obtienes `xx gems installed`, entonces todo está bien :+1:
@@ -485,7 +498,7 @@ Deberías ver una versión. Si no, pídele ayuda a tu profesor.
 Ahora instala node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 Cuando termine la instalación, corre lo siguiente:
@@ -494,7 +507,7 @@ Cuando termine la instalación, corre lo siguiente:
 node -v
 ```
 
-Si ves `v16.13.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
+Si ves `v16.15.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
 
 ```bash
 nvm cache clear
@@ -565,16 +578,18 @@ Cuando termines, verifica que funcione:
 psql -d postgres
 ```
 
-¡Si no tienes ningún problema para agregar algo como esto de aquí abajo, todo está bien!
+Deberías ver un nuevo mensaje como este :point_down:
 
 ```bash
-psql (13.3)
+psql (14.4)
 Type "help" for help.
 
 postgres=#
 ```
 
-Para cerrarla, escribe `\q` y luego presiona `Enter`.
+:heavy_check_mark: Si es asi, escribe `\q` y luego presiona `Enter` para cerrar el programa. Puede continuar :+1:
+
+:x: Si no, **pídele ayuda a un profesor**
 
 
 ## Chequeo
@@ -593,7 +608,7 @@ Luego ejecuta lo siguiente:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: Si obtienes un mensaje verde diciendo `Awesome! Your computer is now ready!`, significa que tu computadora está lista y que todo está bien :+1:
+:heavy_check_mark: Si obtienes un mensaje verde diciendo `Awesome! Your computer is now ready!`, significa que tu computadora está lista y que todo está bien :+1:
 
 :x: De lo contrario, **habla con tu profesor**.
 
@@ -664,10 +679,6 @@ A medida que te vayas convirtiendo en programador, entenderás que pierdes tiemp
 #### Velocidad del teclado
 
 Ve a ` > System Preferences > Keyboard`. Coloca a `Key Repeat` en la posición más rápida (a la derecha) y a `Delay Until Repeat` en la posición más corta (a la derecha).
-
-#### Acceso total al teclado
-
-Ve a ` > System Preferences > Keyboard`. Haz clic en la tercera pestaña `Shortcuts`. En la parte inferior del panel, haz clic en el botón del radio (también llamado de opción) `All controls`. De esta manera cuando veas un diálogo con muchas opciones, podrás escribir `Enter` para confirmar, o `SPACE` para escoger la opción cancelar. Si hay más de dos opciones, puedes usar la tecla de tabulación para navegar entre ellas.
 
 #### macOS para hackers
 

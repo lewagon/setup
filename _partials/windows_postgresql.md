@@ -15,7 +15,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
@@ -34,6 +34,6 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 Open a new terminal.
 
-:heavy_check_mark: If you see a `* Starting PostgreSQL 12 database server` message, you're good to go :+1:
+:heavy_check_mark: If you see a `* Starting PostgreSQL 14 database server` message, you're good to go :+1:
 
 :x: If not, **contact a teacher**.

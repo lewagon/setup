@@ -263,7 +263,7 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue below :+1:
+:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue to follow the instructions below :+1:
 
 :x: If the message you get is about Virtualization, please **contact a teacher**
 
@@ -277,6 +277,8 @@ wsl --set-default-version 2
   <summary>Enable Hyper-V Windows feature</summary>
 
   Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
+
+  :information_source: If you are running Windows 10 **Home edition**, Hyper-V feature is not available for your operating system. It's non-blocking and you can still continue to follow the instructions below :ok_hand:
 </details>
 
 
@@ -468,12 +470,14 @@ It should open the terminal settings:
 - Click on "Save"
 - Click on "Open JSON file"
 
+You may see an orange circle rather than a penguin as the logo for Ubuntu.
+
 We have circle in red the part you will change:
 
 ![Windows Terminal JSON settings file](images/windows_terminal_settings_json.png)
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
-- Locate the `"name": "Ubuntu",`
+- Locate the entry with both `"name": "Ubuntu",` and `"hidden": false,`
 - Add the following line after it:
 
 ```bash
@@ -562,7 +566,10 @@ Let's install them, along with other useful tools:
 
 ```bash
 sudo apt update
-sudo apt install -y curl git imagemagick jq unzip vim zsh
+```
+
+```bash
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 ```
 
 These commands will ask for your password: type it in.
@@ -576,6 +583,7 @@ Let's now install [GitHub official CLI](https://cli.github.com) (Command Line In
 In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
@@ -612,6 +620,87 @@ At the end your terminal should look like this:
 :heavy_check_mark: If it does, you can continue :+1:
 
 :x: Otherwise, please **ask for a teacher**
+
+
+## Linking your default browser to Ubuntu
+
+To be sure that you can interact with your browser installed on Windows from your Ubuntu terminal, we need to set it as your default browser there.
+
+:warning: You need to execute at least one of the following commands below:
+
+<details>
+  <summary>Google Chrome as your default browser</summary>
+
+  Run the command:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+  ```
+
+  If you get an error like `ls: cannot access...` Run the following command:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+  Else run:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>Mozilla Firefox as your default browser</summary>
+
+  Run the command:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
+  ```
+
+  If you get an error like `ls: cannot access...` Run the following command:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+
+  Else run:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>Microsoft Edge as your default browser</summary>
+
+  Run the command:
+
+  ```bash
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+Restart your terminal.
+
+Then please make sure that the following command returns "Browser defined 👌":
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+If it does not,
+
+:heavy_check_mark: If you got this message, you can continue :+1:
+
+:x: If not, choose a browser in the list above and execute the corresponding command. Then don't forget to reset your terminal:
+
+```bash
+exec zsh
+```
+
+Do not hesitate to **contact a teacher**.
 
 
 ## GitHub CLI
@@ -793,14 +882,14 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 3.0.3 version by default.
+to use the 3.1.2 version by default.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reset** your terminal and check your Ruby version:
@@ -815,7 +904,7 @@ Then run:
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.1.2p` then you can proceed :+1:
 
 :x: If not, **ask a teacher**
 
@@ -844,7 +933,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
@@ -889,7 +978,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 When the installation is finished, run:
@@ -898,7 +987,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v16.13.1`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v16.15.1`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear
@@ -967,7 +1056,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
@@ -986,7 +1075,7 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 Open a new terminal.
 
-:heavy_check_mark: If you see a `* Starting PostgreSQL 12 database server` message, you're good to go :+1:
+:heavy_check_mark: If you see a `* Starting PostgreSQL 14 database server` message, you're good to go :+1:
 
 :x: If not, **contact a teacher**.
 
@@ -1007,7 +1096,7 @@ Then run:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
+:heavy_check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
 
 :x: If not, **contact a teacher**.
 

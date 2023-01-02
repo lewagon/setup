@@ -20,7 +20,7 @@ psql -d postgres
 如果你进入到了一个像下方这个，一个新的输入框的话，那么说明你的PostgreSQL已经安装好啦！
 
 ```bash
-psql (13.3)
+psql (14.4)
 Type "help" for help.
 
 postgres=#

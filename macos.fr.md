@@ -104,6 +104,16 @@ On te demandera de confirmer (appuie sur `Enter`) et de saisir ton **mot de pass
 
 :warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
+:warning: Si tu vois cet avertissement :point_down:, exécute les deux commandes de la section `Next steps` pour ajouter Homebrew à ton PATH
+
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 Si tu as déjà Homebrew, le système te l’indiquera. Continue.
 
 Installe ensuite quelques logiciels utiles :
@@ -119,7 +129,7 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Message d’erreur ou pas, exécute la commande suivante dans le terminal (tu peux copier-coller toutes les lignes en une seule fois).
+Exécute les commandes suivantes dans le terminal (tu peux copier-coller toutes les lignes en une seule fois):
 
 ```bash
 brew upgrade git         || brew install git
@@ -389,14 +399,14 @@ Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lan
 Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
 Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
-d’utiliser la version 3.0.3 par défaut.
+d’utiliser la version 3.1.2 par défaut.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Réinitialise** ton ton terminal et vérifie ta version de Ruby :
@@ -411,7 +421,7 @@ Puis exécute :
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.0.3p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.1.2p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -440,7 +450,7 @@ Dans l’environnement ruby, les bibliothèques externes sont appelées des `gem
 Copie-colle la commande suivante dans ton terminal :
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
@@ -485,7 +495,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 Une fois l’installation terminée, exécute :
@@ -494,7 +504,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-Si tu vois apparaître `v16.13.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
+Si tu vois apparaître `v16.15.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
 
 ```bash
 nvm cache clear
@@ -565,16 +575,18 @@ Une fois que c’est fait, on va vérifier que tout a bien fonctionné :
 psql -d postgres
 ```
 
-Si tu vois apparaître un nouveau message comme celui-ci, c’est bon !
+Tu devrais voir apparaître un nouveau message comme celui-ci :point_down:
 
 ```bash
-psql (13.3)
+psql (14.4)
 Type "help" for help.
 
 postgres=#
 ```
 
-Pour quitter PostgreSQL, saisis `\q` puis `Enter`.
+:heavy_check_mark: Si c'est le cas, saisis `\q` puis `Enter` pour quitter ce programme. Tu peux poursuivre :+1:
+
+:x: Sinon, **demande au prof**
 
 
 ## Vérification
@@ -664,10 +676,6 @@ Au fur et à mesure de ta formation de programmeur, tu comprendras que quitter l
 #### Vitesse du clavier
 
 Va dans ` > Préférences système > Clavier`. Définis `Répétition de touches` sur la position la plus rapide (à droite) et `Pause avant répétition` sur la position la plus courte (à droite).
-
-#### Accès complet au clavier
-
-Va dans ` > Préférences système > Clavier`. Clique sur le troisième onglet `Raccourcis`. En bas de la fenêtre, clique sur le bouton radio `tous les contrôles`. De cette façon, lorsque tu verras apparaître une popup avec plusieurs options, tu pourras saisir `Enter` pour confirmer ou `SPACE` pour annuler. Si tu as plus de deux options, tu peux utiliser la touche de tabulation pour aller et venir entre elles.
 
 #### macOS pour les hackers
 

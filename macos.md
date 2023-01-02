@@ -109,6 +109,16 @@ This will ask for your confirmation (hit `Enter`) and your **macOS user account 
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
+:warning: If you see this warning :point_down:, run the two commands in the `Next steps` section to add Homebrew to your PATH:
+
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
 Then install some useful software:
@@ -124,7 +134,7 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
+Proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
 brew upgrade git || brew install git
@@ -397,14 +407,14 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 3.0.3 version by default.
+to use the 3.1.2 version by default.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reset** your terminal and check your Ruby version:
@@ -419,7 +429,7 @@ Then run:
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.1.2p` then you can proceed :+1:
 
 :x: If not, **ask a teacher**
 
@@ -448,7 +458,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
@@ -493,7 +503,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 When the installation is finished, run:
@@ -502,7 +512,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v16.13.1`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v16.15.1`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear
@@ -573,16 +583,19 @@ Once you've done that, let's check that it worked:
 psql -d postgres
 ```
 
-If you enter a new prompt like this one, you're good!
+You should you see a new prompt like this one :point_down:
 
 ```bash
-psql (13.3)
+psql (14.4)
 Type "help" for help.
 
 postgres=#
 ```
 
-To quit it, type `\q` then `Enter`.
+:heavy_check_mark: If this is the case, type `\q` then `Enter` to quit this prompt. You're good to go :+1:
+
+:x: If not, please **ask for a teacher**
+
 
 
 ## Check-up
@@ -601,7 +614,7 @@ Then run:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
+:heavy_check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
 
 :x: If not, **contact a teacher**.
 
@@ -628,7 +641,7 @@ Once the teacher has approved your profile, go to your email inbox. You should h
 
 ### Installation
 
-[Download the Slack app](https://itunes.apple.com/fr/app/slack/id803453959?mt=12) and install it.
+[Download the Slack app](https://itunes.apple.com/us/app/slack/id803453959?mt=12) and install it.
 
 :warning: If you are already using Slack in your browser, please download and install **the desktop app** which is fully featured.
 
@@ -672,10 +685,6 @@ As you become a programmer, you'll understand that leaving the keyboard takes a 
 #### Keyboard speed
 
 Go to ` > System Preferences > Keyboard`. Set `Key Repeat` to the fastest position (to the right) and `Delay Until Repeat` to the shortest position (to the right).
-
-#### Full Keyboard Access
-
-Go to ` > System Preferences > Keyboard`. Click on the third tab `Shortcuts`. At the bottom of the pane, click the radio button `All controls`. This way when you get a dialog with several options, you'll be able to type `Enter` to confirm, or `SPACE` to choose the cancel option. If you have more than two options, you can use tab to circle between them.
 
 #### macOS For hackers
 

@@ -12,6 +12,16 @@ On te demandera de confirmer (appuie sur `Enter`) et de saisir ton **mot de pass
 
 :warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer ton mot de passe et sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
 
+:warning: Si tu vois cet avertissement :point_down:, exécute les deux commandes de la section `Next steps` pour ajouter Homebrew à ton PATH
+
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 Si tu as déjà Homebrew, le système te l’indiquera. Continue.
 
 Installe ensuite quelques logiciels utiles :
@@ -27,7 +37,7 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Message d’erreur ou pas, exécute la commande suivante dans le terminal (tu peux copier-coller toutes les lignes en une seule fois).
+Exécute les commandes suivantes dans le terminal (tu peux copier-coller toutes les lignes en une seule fois):
 
 ```bash
 brew upgrade git         || brew install git

@@ -29,7 +29,7 @@ Then run:
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby <RUBY_SETUP_VERSION>p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby <RUBY_SETUP_VERSION>p` then you can proceed :+1:
 
 :x: If not, **ask a teacher**
 

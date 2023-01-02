@@ -273,6 +273,8 @@ wsl --set-default-version 2
   <summary>Habilita la feature de Windows Hyper-V</summary>
 
   Sigue los pasos [siguientes](https://winaero.com/enable-use-hyper-v-windows-10/) hasta que hayas habilitado el grupo <strong>Hyper-V</strong>
+
+  :information_source: Si tienes Windows 10 **Home edition**, la feature Hyper-V no está disponible para su sistema operativo. No es un bloqueo y puedes continuar con las siguientes instrucciones aquí abajo :ok_hand:
 </details>
 
 
@@ -508,6 +510,7 @@ Copia y pega los siguientes comandos en tu terminal:
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension github.github-vscode-theme
 code --install-extension MS-vsliveshare.vsliveshare
 code --install-extension rebornix.ruby
 code --install-extension dbaeumer.vscode-eslint
@@ -557,6 +560,9 @@ Vamos a instalarlos, junto con otros programas útiles:
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
@@ -571,6 +577,7 @@ Instalemos la [CLI oficial de GitHub](https://cli.github.com) (Interfaz de Líne
 En tu terminal, copia y pega los siguientes comandos y escribe tu contraseña si te la piden:
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
@@ -607,6 +614,87 @@ Cuando termines, tu terminal debería lucir así:
 :heavy_check_mark: Si es el caso, puedes continuar :+1:
 
 :x: Si no, por favor **pídele ayuda a un profesor**.
+
+
+## Conexión de tu navegador predeterminado con Ubuntu
+
+Para asegurarnos de que puedas interactuar desde la terminal de Ubuntu con el navegador que tienes instalado en Windows, debemos definirlo como tu navegador predeterminado aquí.
+
+:warning: Tienes que ejecutar al menos uno de los siguientes comandos:
+
+<details>
+  <summary>Google Chrome como tu navegador predeterminado</summary>
+
+  Ejecuta este comando:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+  ```
+
+  Si obtienes un error como este `ls: cannot access...` corre el siguiente comando:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+  Si no es el caso, ejecuta lo siguiente:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>Mozilla Firefox como tu navegador predeterminado</summary>
+
+  Ejecuta el siguiente comando:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
+  ```
+
+  Si obtienes un error como este `ls: cannot access...` corre el siguiente comando:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+
+  Si no es el caso, ejecuta lo siguiente:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>Microsoft Edge como tu navegador predeterminado</summary>
+
+  Ejecuta el siguiente comando:
+
+  ```bash
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+Reinicia tu terminal.
+
+Luego asegúrate de que el siguiente comando devuelva "Browser defined 👌":
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+Si no lo hace pero
+
+:heavy_check_mark: sí obtienes este mensaje, puedes continuar :+1:
+
+:x: De lo contrario, escoge un navegador de la lista de arriba y ejecuta el comando correspondiente. Luego no olvides reiniciar tu terminal:
+
+```bash
+exec zsh
+```
+
+No dudes en **pedirle ayuda a tu profesor**.
 
 
 ## GitHub CLI
@@ -788,13 +876,13 @@ Ahora estás listo para instalar la última versión de [ruby](https://www.ruby-
 Corre este comando, **tomará un tiempo (5-10 minutos)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.0.3 por defecto.
+Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.1.2 por defecto.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reinicia** tu terminal y chequea tu versión Ruby:
@@ -809,7 +897,7 @@ Luego ejecuta esto:
 ruby -v
 ```
 
-:heavy_check_mark: Si ves algo que comience por `ruby 3.0.3p`, entonces puedes continuar +1:
+:heavy_check_mark: Si ves algo que comience por `ruby 3.1.2p`, entonces puedes continuar +1:
 
 :x: Si no es el caso, **pídele ayuda a un profesor**.
 
@@ -838,7 +926,7 @@ En el universo de ruby, a las librerías externas se les llama `gems`: son pedaz
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si obtienes `xx gems installed`, entonces todo está bien :+1:
@@ -883,7 +971,7 @@ Deberías ver una versión. Si no, pídele ayuda a tu profesor.
 Ahora instala node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 Cuando termine la instalación, corre lo siguiente:
@@ -892,7 +980,7 @@ Cuando termine la instalación, corre lo siguiente:
 node -v
 ```
 
-Si ves `v16.13.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
+Si ves `v16.15.1`, the installation succeeded :heavy_check_mark: entonces ahora puedes ejecutar lo siguiente:
 
 ```bash
 nvm cache clear
@@ -961,7 +1049,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE `whoami` LOGIN createdb superuser;"
 ```
 
 Puedes configurar PostgreSQL para que inicie automáticamente para no tener que ejecutar el comando `sudo /etc/init.d/postgresql start` cada vez que abras una nueva terminal:
@@ -1001,7 +1089,7 @@ Luego ejecuta lo siguiente:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: Si obtienes un mensaje verde diciendo `Awesome! Your computer is now ready!`, significa que tu computadora está lista y que todo está bien :+1:
+:heavy_check_mark: Si obtienes un mensaje verde diciendo `Awesome! Your computer is now ready!`, significa que tu computadora está lista y que todo está bien :+1:
 
 :x: De lo contrario, **habla con tu profesor**.
 
