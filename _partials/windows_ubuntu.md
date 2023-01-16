@@ -97,3 +97,19 @@ wsl -l -v
 </details>
 
 You can now close this terminal window.
+
+### Check the locale
+
+The locale is a mechanism allowing to customize programs to your language and country.
+
+Let's verify that the default locale is set to english:
+
+```bash
+locale
+```
+
+If the output does not contain `LANG=en_US.UTF-8`, run the following command to install the english locale:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
