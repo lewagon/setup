@@ -8,6 +8,9 @@ Run the following commands:
 
 ```bash
 brew install postgresql
+```
+
+```bash
 brew services start postgresql
 ```
 

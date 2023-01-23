@@ -20,6 +20,9 @@ In the terminal, run:
 
 ```bash
 brew uninstall --force rbenv ruby-build
+```
+
+```bash
 exec zsh
 ```
 

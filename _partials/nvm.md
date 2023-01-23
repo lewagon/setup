@@ -6,6 +6,9 @@ In a terminal, execute the following commands:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
+```
+
+```bash
 exec zsh
 ```
 
