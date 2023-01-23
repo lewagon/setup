@@ -97,7 +97,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: 如果你看到“The operation completed successfully（成功完成设置）”，那你就可以关掉这个终端，然后继续下一步:+1:
+:heavy_check_mark: 如果你看到“The operation completed successfully（成功完成设置）”，那你就可以关掉这个终端，然后继续跟着下面的指示:+1:
 
 :x: 如果出现了关于虚拟化的信息，请**叫老师来帮忙**。
 
@@ -111,4 +111,6 @@ wsl --set-default-version 2
   <summary>激活Windows的Hyper-V功能</summary>
 
 完成[这些](https://winaero.com/enable-use-hyper-v-windows-10/)步骤，然后确保你激活了<strong>Hyper-V</strong>。
+
+:information_source: 如果你的电脑是Windows 10 **Home edition**，那你的操作系统上就没有Hyper-V的功能。这不会妨碍什么，你继续下面的步骤就好:ok_hand:
 </details>

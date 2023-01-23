@@ -15,6 +15,10 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 ```
 
 ```bash
+code --install-extension github.github-vscode-theme
+```
+
+```bash
 code --install-extension MS-vsliveshare.vsliveshare
 ```
 

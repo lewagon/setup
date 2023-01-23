@@ -274,6 +274,8 @@ wsl --set-default-version 2
  <summary>Activer la fonction Hyper-V sous Windows</summary>
 
   Suis les étapes décrites [ici](https://winaero.com/enable-use-hyper-v-windows-10/) pour activer le groupe <strong>Hyper-V</strong>
+
+  :information_source: Si tu as Windows 10 **Home edition**, la fonction Hyper-V n'est pas disponible sur ton système d'exploitation. Ce n'est pas bloquant et tu peux continuer à suivre les instructions ci-dessous :ok_hand:
 </details>
 
 
@@ -556,7 +558,10 @@ Installons-les, avec d'autres outils utiles :
 
 ```bash
 sudo apt update
-sudo apt install -y zsh curl vim imagemagick jq unzip
+```
+
+```bash
+sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
@@ -570,6 +575,7 @@ On va maintenant installer la [CLI officielle de GitHub](https://cli.github.com)
 Copie-colle les commandes suivantes dans ton terminal et saisis ton mot de passe s’il t’est demandé :
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
@@ -606,6 +612,87 @@ Si tu vois apparaître la question « Do you want to change your default shell 
 :heavy_check_mark: Si c’est le cas, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
+
+
+## Associer ton navigateur par défaut à Ubuntu
+
+Pour que tu puisses interagir avec le navigateur installé sous Windows depuis ton terminal Ubuntu, on doit le définir comme navigateur par défaut.
+
+:warning: Tu dois exécuter au moins une des commandes ci-dessous :
+
+<details>
+ <summary>Google Chrome est ton navigateur par défaut</summary>
+
+Exécute la commande :
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+  ```
+
+Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande suivante :
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+  Sinon, exécute :
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+ <summary>Mozilla Firefox est ton navigateur par défaut</summary>
+
+  Exécute la commande :
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
+  ```
+
+  Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande suivante :
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+
+  Sinon, exécute :
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+ <summary>Microsoft Edge est ton navigateur par défaut</summary>
+
+  Exécute la commande :
+
+  ```bash
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+Redémarre ton terminal.
+
+Puis vérifie que la commande suivante renvoie « Browser defined 👌 » :
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+Si ce n’est pas le cas,
+
+:heavy_check_mark: Si tu vois apparaître ce message, tu peux continuer :+1:
+
+:x: Sinon, choisis un navigateur dans la liste ci-dessus et exécute la commande correspondante. Puis n’oublie pas de réinitialiser ton terminal :
+
+```bash
+exec zsh
+```
+
+N’hésite pas à **demander au prof**.
 
 
 ## GitHub CLI
@@ -787,14 +874,14 @@ Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lan
 Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
 Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
-d’utiliser la version 3.0.3 par défaut.
+d’utiliser la version 3.1.2 par défaut.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Réinitialise** ton ton terminal et vérifie ta version de Ruby :
@@ -809,7 +896,7 @@ Puis exécute :
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.0.3p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.1.2p`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -838,7 +925,7 @@ Dans l’environnement ruby, les bibliothèques externes sont appelées des `gem
 Copie-colle la commande suivante dans ton terminal :
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:
@@ -883,7 +970,7 @@ Tu devrais voir apparaître une version. Sinon, demande au prof.
 On va maintenant installer node :
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 Une fois l’installation terminée, exécute :
@@ -892,7 +979,7 @@ Une fois l’installation terminée, exécute :
 node -v
 ```
 
-Si tu vois apparaître `v16.13.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
+Si tu vois apparaître `v16.15.1`, l'installation a réussi :heavy_check_mark: Tu peux alors exécuter :
 
 ```bash
 nvm cache clear
@@ -961,7 +1048,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 Tu peux configurer le démarrage automatique de PostgreSQL afin de ne pas avoir à exécuter `sudo /etc/init.d/postgresql start` chaque fois que tu ouvres un nouveau terminal :

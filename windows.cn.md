@@ -282,7 +282,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: 如果你看到“The operation completed successfully（成功完成设置）”，那你就可以关掉这个终端，然后继续下一步:+1:
+:heavy_check_mark: 如果你看到“The operation completed successfully（成功完成设置）”，那你就可以关掉这个终端，然后继续跟着下面的指示:+1:
 
 :x: 如果出现了关于虚拟化的信息，请**叫老师来帮忙**。
 
@@ -296,6 +296,8 @@ wsl --set-default-version 2
   <summary>激活Windows的Hyper-V功能</summary>
 
 完成[这些](https://winaero.com/enable-use-hyper-v-windows-10/)步骤，然后确保你激活了<strong>Hyper-V</strong>。
+
+:information_source: 如果你的电脑是Windows 10 **Home edition**，那你的操作系统上就没有Hyper-V的功能。这不会妨碍什么，你继续下面的步骤就好:ok_hand:
 </details>
 
 
@@ -554,6 +556,9 @@ code --install-extension alexcvzz.vscode-sqlite
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
@@ -568,6 +573,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh
 在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
@@ -604,6 +610,103 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 :heavy_check_mark: 如果你的终端成功显示了上面，你就可以继续下一步了:+1:
 
 :x: 如果安装失败的话，请询问**你的老师**
+
+
+## 把你的默认浏览器链接到Ubuntu
+
+为了保证你可以在Ubuntu终端和浏览器进行交互，你需要设置你的默认浏览器。
+
+⚠️ 你需要执行下面的至少一组命令：
+
+
+<details>
+  <summary>用Google Chrome作为默认浏览器</summary>
+
+  &nbsp;
+
+
+  运行下面的命令:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
+  ```
+
+  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+  如果没有错误信息，就运行下面这一行:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+  ```
+
+</details>
+
+
+<details>
+  <summary>用Mozilla Firefox作为默认浏览器</summary>
+
+  &nbsp;
+
+
+  运行下面的命令:
+
+  ```bash
+    ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
+  ```
+
+  如果你看到了错误信息，比如`ls: cannot access...` 那就运行下面的命令：
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+
+  如果没有错误信息，就运行下面这一行:
+
+  ```bash
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+<details>
+  <summary>用Microsoft Edge作为默认浏览器</summary>
+
+  &nbsp;
+
+
+  运行下面的命令:
+
+
+  ```bash
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+  ```
+</details>
+
+
+重启你的终端。
+
+然后请保证在终端运行下面这行命令后，会返回"Browser defined 👌"这句话：
+
+```bash
+[ -z "$BROWSER" ] && echo "ERROR: please define a BROWSER environment variable ⚠️" || echo "Browser defined 👌"
+```
+
+如果没有返回这句话，那在上面的列表中选一个浏览器，然后运行对应的命令。
+
+如果没有的话，
+
+:heavy_check_mark: 如果你看到那条信息，你就可以继续 :+1:
+
+:x: 如果没有，那在上面的列表中选一个浏览器，然后运行对应的命令。然后别忘记重置你的终端：
+
+```bash
+exec zsh
+```
+
+有问题的话，别犹豫**问老师**。
 
 
 ## GitHub CLI
@@ -784,13 +887,13 @@ exec zsh
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用3.0.3这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用3.1.2这个版本作为默认版本。
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 然后**重置**你的终端，然后检查Ruby版本：
@@ -800,7 +903,7 @@ exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby 3.0.3p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby 3.1.2p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -827,7 +930,7 @@ gem sources -l
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
@@ -872,7 +975,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 当这个指令执行结束之后，运行：
@@ -881,7 +984,7 @@ nvm install 16.13.1
 node -v
 ```
 
-如果看到`v16.13.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
+如果看到`v16.15.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
 ```bash
 nvm cache clear
@@ -945,7 +1048,7 @@ sudo /etc/init.d/postgresql start
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 你可以把PostgreSQL配置成自动启动，这样每次你打开新的终端时，你就不需要执行`sudo /etc/init.d/postgresql start`：
@@ -980,7 +1083,7 @@ exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-:check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
+:heavy_check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
 
 如果没有的话，问一下你的老师。
 

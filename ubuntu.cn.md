@@ -124,6 +124,9 @@ code --install-extension alexcvzz.vscode-sqlite
 
 ```bash
 sudo apt update
+```
+
+```bash
 sudo apt install -y curl git imagemagick jq unzip vim zsh
 ```
 
@@ -138,6 +141,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh
 在你的终端里，复制粘贴以下代码，并在需要的时候，输入你的密码:
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 sudo apt update
@@ -354,13 +358,13 @@ exec zsh
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用3.0.3这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用3.1.2这个版本作为默认版本。
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 然后**重置**你的终端，然后检查Ruby版本：
@@ -370,7 +374,7 @@ exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby 3.0.3p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby 3.1.2p`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -397,7 +401,7 @@ gem sources -l
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
@@ -442,7 +446,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 当这个指令执行结束之后，运行：
@@ -451,7 +455,7 @@ nvm install 16.13.1
 node -v
 ```
 
-如果看到`v16.13.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
+如果看到`v16.15.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
 ```bash
 nvm cache clear
@@ -511,7 +515,7 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 
@@ -526,7 +530,7 @@ exec zsh
 curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/setup/check.rb > _.rb && ruby _.rb || rm _.rb
 ```
 
-:check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
+:heavy_check_mark: 如果出现了一个绿色的`Awesome! Your computer is now ready!`，那么你的工作台已经设置好了 :+1:
 
 如果没有的话，问一下你的老师。
 

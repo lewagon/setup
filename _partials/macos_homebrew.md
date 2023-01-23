@@ -12,6 +12,16 @@ This will ask for your confirmation (hit `Enter`) and your **macOS user account 
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
+:warning: If you see this warning :point_down:, run the two commands in the `Next steps` section to add Homebrew to your PATH:
+
+![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+
+```bash
+# ⚠️ Only execute these commands if you saw this warning ☝
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 If you already have Homebrew, it will tell you so, that's fine, go on.
 
 Then install some useful software:
@@ -30,7 +40,7 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Error message or not, proceed running the following in the terminal (you can copy / paste all the lines at once).
+Proceed running the following in the terminal (you can copy / paste all the lines at once).
 
 ```bash
 brew upgrade git || brew install git

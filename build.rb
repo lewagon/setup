@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby -wU
 
 PLACEHOLDERS = {
-  'RUBY_SETUP_VERSION' => "3.0.3",
+  'RUBY_SETUP_VERSION' => "3.1.2",
   'NVM_VERSION' => "0.39.1",
-  'NODE_VERSION' => "16.13.1",
-  'GEMS' => "rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'"
+  'NODE_VERSION' => "16.15.1",
+  'GEMS' => "colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3"
 }
 
 MACOS = %w[
@@ -47,6 +47,7 @@ WINDOWS = %w[
   vscode_liveshare
   cli_tools
   oh_my_zsh
+  windows_browser
   gh_cli
   dotfiles
   ssh_agent

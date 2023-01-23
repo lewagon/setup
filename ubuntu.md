@@ -117,6 +117,10 @@ code --install-extension emmanuelbeziat.vscode-great-icons
 ```
 
 ```bash
+code --install-extension github.github-vscode-theme
+```
+
+```bash
 code --install-extension MS-vsliveshare.vsliveshare
 ```
 
@@ -173,7 +177,7 @@ Instead of using the default `bash` [shell](https://en.wikipedia.org/wiki/Shell_
 We will also use [`git`](https://git-scm.com/), a command line software used for version control.
 
 Let's install them, along with other useful tools:
-- Open a terminal
+- Open an **Ubuntu terminal**
 - Copy and paste the following commands:
 
 ```bash
@@ -181,7 +185,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 ```
 
 These commands will ask for your password: type it in.
@@ -195,6 +199,7 @@ Let's now install [GitHub official CLI](https://cli.github.com) (Command Line In
 In your terminal, copy-paste the following commands and type in your password if asked:
 
 ```bash
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 ```
 
@@ -386,12 +391,6 @@ Then:
 - Spot the line starting with `plugins=`
 - Add `ssh-agent` at the end of the plugins list
 
-The list should look like:
-
-```bash
-plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
-```
-
 :heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
 
 
@@ -436,14 +435,14 @@ Now, you are ready to install the latest [ruby](https://www.ruby-lang.org/en/) v
 Run this command, it will **take a while (5-10 minutes)**
 
 ```bash
-rbenv install 3.0.3
+rbenv install 3.1.2
 ```
 
 Once the ruby installation is done, run this command to tell the system
-to use the 3.0.3 version by default.
+to use the 3.1.2 version by default.
 
 ```bash
-rbenv global 3.0.3
+rbenv global 3.1.2
 ```
 
 **Reset** your terminal and check your Ruby version:
@@ -458,7 +457,7 @@ Then run:
 ruby -v
 ```
 
-:heavy_check_mark: If you see something starting with `ruby 3.0.3p` then you can proceed +1:
+:heavy_check_mark: If you see something starting with `ruby 3.1.2p` then you can proceed :+1:
 
 :x: If not, **ask a teacher**
 
@@ -487,7 +486,7 @@ In the ruby world, we call external libraries `gems`: they are pieces of ruby co
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install rake rspec rubocop-performance pry-byebug colored http 'rails:~>6.1'
+gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
@@ -535,7 +534,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 16.13.1
+nvm install 16.15.1
 ```
 
 When the installation is finished, run:
@@ -544,7 +543,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v16.13.1`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v16.15.1`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear
@@ -612,7 +611,7 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 ```
 
 ```bash
-sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb;"
+sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
 
@@ -632,7 +631,7 @@ Then run:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
+:heavy_check_mark: If you get a green `Awesome! Your computer is now ready!`, then you're good :+1:
 
 :x: If not, **contact a teacher**.
 

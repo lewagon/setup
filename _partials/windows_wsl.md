@@ -97,7 +97,7 @@ In the window which appears, type:
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue below :+1:
+:heavy_check_mark: If you see "The operation completed successfully", you can close this terminal and continue to follow the instructions below :+1:
 
 :x: If the message you get is about Virtualization, please **contact a teacher**
 
@@ -111,4 +111,6 @@ wsl --set-default-version 2
   <summary>Enable Hyper-V Windows feature</summary>
 
   Follow the steps described [here](https://winaero.com/enable-use-hyper-v-windows-10/) until you enable the group <strong>Hyper-V</strong>
+
+  :information_source: If you are running Windows 10 **Home edition**, Hyper-V feature is not available for your operating system. It's non-blocking and you can still continue to follow the instructions below :ok_hand:
 </details>
