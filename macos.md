@@ -690,7 +690,7 @@ If you are unsure about what to do, you can follow [this link](https://kitt.lewa
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
 
-Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
+Your teacher will then validate that you are indeed part of the batch. You can ask them to do it as soon as you completed the registration form.
 
 Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
 
