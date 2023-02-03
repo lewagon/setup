@@ -17,7 +17,7 @@ Si tienes Windows 10, instala la terminal de Windows por medio de la Microsoft S
 - Haz clic en `Microsoft Store` en la lista
 - Busca `Ubuntu` en la barra de búsqueda
 - **Selecciona la versión sin nombre, simplemente "Ubuntu"**
-- Haz clic en `Install`
+- Haz clic en `Get`
 
 :warning: ¡NO instales **Ubuntu 18.04 LTS** ni **Ubuntu 20.04**!
 
@@ -32,7 +32,7 @@ Si tienes Windows 10, instala la terminal de Windows por medio de la Microsoft S
   Busca el programa que desees desinstalar y haz clic en el botón de desinstalación.
 </details>
 
-Cuando termine la instalación, el botón `Install` se transformará en un botón `Launch`: Haz clic en él.
+Cuando termine la instalación, el botón `Get` se transformará en un botón `Open`: Haz clic en él.
 
 ### Primer uso
 
