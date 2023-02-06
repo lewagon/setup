@@ -301,7 +301,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
 - Click on `Microsoft Store` in the list
 - Search for `Ubuntu` in the search bar
 - **Select version without any number, just plain "Ubuntu"**
-- Click on `Install`
+- Click on `Get`
 
 :warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
 
@@ -316,7 +316,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
   Find the software to uninstall and click on the uninstall button.
 </details>
 
-Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
+Once the installation is finished, the `Get` button becomes a `Open` button: click on it.
 
 ### First launch
 
@@ -667,16 +667,18 @@ To be sure that you can interact with your browser installed on Windows from you
     ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following command:
+  If you get an error like `ls: cannot access...` Run the following commands:
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
   ```
 
   Else run:
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
   ```
 </details>
 
@@ -689,26 +691,29 @@ To be sure that you can interact with your browser installed on Windows from you
     ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following command:
+  If you get an error like `ls: cannot access...` Run the following commands:
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
   ```
 
   Else run:
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
   ```
 </details>
 
 <details>
   <summary>Microsoft Edge as your default browser</summary>
 
-  Run the command:
+  Run the commands:
 
   ```bash
-  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'\"" >> ~/.zshrc
   ```
 </details>
 

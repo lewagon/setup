@@ -623,7 +623,7 @@ Pour que tu puisses interagir avec le navigateur installé sous Windows depuis t
 <details>
  <summary>Google Chrome est ton navigateur par défaut</summary>
 
-Exécute la commande :
+Exécute la commandes :
 
   ```bash
     ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
@@ -632,20 +632,22 @@ Exécute la commande :
 Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande suivante :
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
   ```
 
   Sinon, exécute :
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
   ```
 </details>
 
 <details>
  <summary>Mozilla Firefox est ton navigateur par défaut</summary>
 
-  Exécute la commande :
+  Exécute la commandes :
 
   ```bash
     ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
@@ -654,23 +656,25 @@ Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande su
   Si tu obtiens une erreur du type `ls: cannot access...`, exécute la commande suivante :
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
   ```
 
   Sinon, exécute :
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
+    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
   ```
 </details>
 
 <details>
  <summary>Microsoft Edge est ton navigateur par défaut</summary>
 
-  Exécute la commande :
+  Exécute la commandes :
 
   ```bash
-  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
+    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'\""
   ```
 </details>
 

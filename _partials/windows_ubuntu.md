@@ -17,7 +17,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
 - Click on `Microsoft Store` in the list
 - Search for `Ubuntu` in the search bar
 - **Select version without any number, just plain "Ubuntu"**
-- Click on `Install`
+- Click on `Get`
 
 :warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
 
@@ -32,7 +32,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
   Find the software to uninstall and click on the uninstall button.
 </details>
 
-Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
+Once the installation is finished, the `Get` button becomes a `Open` button: click on it.
 
 ### First launch
 
