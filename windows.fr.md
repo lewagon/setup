@@ -377,6 +377,22 @@ wsl -l -v
   :x: Si la conversion ne fonctionne pas, **demande au prof**.
 </details>
 
+### Vérifier la locale
+
+Le concept e "locale" permert de personnaliser les programms en fonction de ta langue et ton pays.
+
+Vérifions que la locale est bien en **anglais** ans le terminal :
+
+```bash
+locale
+```
+
+Si la commande ne renvoie pas quelque chose qui contient `LANG=en_US.UTF-8`, lance ceci :
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
 Tu peux maintenant fermer cette fenêtre de terminal.
 
 
