@@ -96,4 +96,20 @@ wsl -l -v
   :x: Si la conversión aún no funciona, por favor **contacta a un profesor**.
 </details>
 
+### Compruebe la locale
+
+La "locale" es un mecanismo que permite adaptar los programas a su idioma y país.
+
+Comprobemos que la configuración regional por defecto es el inglés:
+
+```bash
+locale
+```
+
+Si la salida no contiene `LANG=en_US.UTF-8`, ejecute el siguiente comando para instalar la locale inglesa:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
 Ya puedes cerrar la ventana de la terminal.
