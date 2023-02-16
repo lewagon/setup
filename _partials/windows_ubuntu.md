@@ -96,8 +96,6 @@ wsl -l -v
   :x: If the conversion still does not work, please **contact a teacher**.
 </details>
 
-You can now close this terminal window.
-
 ### Check the locale
 
 The locale is a mechanism allowing to customize programs to your language and country.
@@ -113,3 +111,5 @@ If the output does not contain `LANG=en_US.UTF-8`, run the following command to 
 ```bash
 sudo locale-gen en_US.UTF-8
 ```
+
+You can now close this terminal window.
