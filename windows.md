@@ -1,6 +1,6 @@
 # Setup instructions
 
-You will find below the instructions to set up your computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time).
+You will find below the instructions to set up you computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time).
 
 Please **read them carefully and execute all commands in the following order**.
 
@@ -301,7 +301,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
 - Click on `Microsoft Store` in the list
 - Search for `Ubuntu` in the search bar
 - **Select version without any number, just plain "Ubuntu"**
-- Click on `Get`
+- Click on `Install`
 
 :warning: Don't install **Ubuntu 18.04 LTS** nor **Ubuntu 20.04**!
 
@@ -316,7 +316,7 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
   Find the software to uninstall and click on the uninstall button.
 </details>
 
-Once the installation is finished, the `Get` button becomes a `Open` button: click on it.
+Once the installation is finished, the `Install` button becomes a `Launch` button: click on it.
 
 ### First launch
 
@@ -380,6 +380,22 @@ wsl -l -v
   :x: If the conversion still does not work, please **contact a teacher**.
 </details>
 
+### Check the locale
+
+The locale is a mechanism allowing to customize programs to your language and country.
+
+Let's verify that the default locale is set to english:
+
+```bash
+locale
+```
+
+If the output does not contain `LANG=en_US.UTF-8`, run the following command to install the english locale:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
 You can now close this terminal window.
 
 
@@ -416,7 +432,7 @@ Then open VS Code from your terminal:
 code .
 ```
 
-:heavy_check_mark: If you see `WSL: Ubuntu` in the bottom left corner of the VS Code window, you're good to go :+1:
+:heavy_check_mark: If you see `WSL: Ubuntu` in a green box in the bottom left corner of the VS Code window, you're good to go :+1:
 
 ![WSL Ubuntu Remote](images/windows_remote_wsl.png)
 
@@ -515,33 +531,12 @@ Copy-paste the following commands in your terminal:
 
 ```bash
 code --install-extension ms-vscode.sublime-keybindings
-```
-
-```bash
 code --install-extension emmanuelbeziat.vscode-great-icons
-```
-
-```bash
 code --install-extension github.github-vscode-theme
-```
-
-```bash
 code --install-extension MS-vsliveshare.vsliveshare
-```
-
-```bash
 code --install-extension rebornix.ruby
-```
-
-```bash
 code --install-extension dbaeumer.vscode-eslint
-```
-
-```bash
 code --install-extension Rubymaniac.vscode-paste-and-indent
-```
-
-```bash
 code --install-extension alexcvzz.vscode-sqlite
 ```
 
@@ -606,17 +601,8 @@ In your terminal, copy-paste the following commands and type in your password if
 ```bash
 sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-```
-
-```bash
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-```
-
-```bash
 sudo apt update
-```
-
-```bash
 sudo apt install -y gh
 ```
 
@@ -667,18 +653,16 @@ To be sure that you can interact with your browser installed on Windows from you
     ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following commands:
+  If you get an error like `ls: cannot access...` Run the following command:
 
   ```bash
-    echo "export BROWSER=\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
-    echo "export GH_BROWSER=\"'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
+    echo "export BROWSER='\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
   ```
 
   Else run:
 
   ```bash
-    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
-    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"'" >> ~/.zshrc
   ```
 </details>
 
@@ -691,29 +675,26 @@ To be sure that you can interact with your browser installed on Windows from you
     ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following commands:
+  If you get an error like `ls: cannot access...` Run the following command:
 
   ```bash
-    echo "export BROWSER=\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
-    echo "export GH_BROWSER=\"'/mnt/c/Program Files/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
+    echo "export BROWSER='\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
   ```
 
   Else run:
 
   ```bash
-    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
-    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
+    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"'" >> ~/.zshrc
   ```
 </details>
 
 <details>
   <summary>Microsoft Edge as your default browser</summary>
 
-  Run the commands:
+  Run the command:
 
   ```bash
-    echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
-    echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'\"" >> ~/.zshrc
+  echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
   ```
 </details>
 
@@ -800,13 +781,10 @@ As your configuration is personal, you need your **own** repository storing it. 
 
 Forking means that you will create a new repo in your own GitHub account `$GITHUB_USERNAME/dotfiles`, identical to the original Le Wagon one that you will be able to modify at will.
 
-Open your terminal and set a variable for your GitHub username:
+Open your terminal and run the following commands:
 
 ```bash
 export GITHUB_USERNAME=`gh api user | jq -r '.login'`
-```
-
-```bash
 echo $GITHUB_USERNAME
 ```
 
@@ -814,16 +792,10 @@ echo $GITHUB_USERNAME
 
 :x: If not, **stop here** and ask for help. There may be a problem with the previous step (`gh auth`).
 
-:warning: Please note that this variable is only set for the time your terminal is open. If you close it before or during the next steps, you need to set it again with the two steps above!
-
-
 Time to fork the repo and clone it on your computer:
 
 ```bash
 mkdir -p ~/code/$GITHUB_USERNAME && cd $_
-```
-
-```bash
 gh repo fork lewagon/dotfiles --clone
 ```
 
@@ -833,9 +805,6 @@ Run the `dotfiles` installer:
 
 ```bash
 cd ~/code/$GITHUB_USERNAME/dotfiles
-```
-
-```bash
 zsh install.sh
 ```
 
@@ -882,6 +851,12 @@ Then:
 - Spot the line starting with `plugins=`
 - Add `ssh-agent` at the end of the plugins list
 
+The list should look like:
+
+```bash
+plugins=(gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search pyenv ssh-agent)
+```
+
 :heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
 
 
@@ -910,9 +885,6 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 ```bash
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-```
-
-```bash
 exec zsh
 ```
 
@@ -1008,9 +980,6 @@ In a terminal, execute the following commands:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | zsh
-```
-
-```bash
 exec zsh
 ```
 
@@ -1051,9 +1020,6 @@ In a terminal, run the following commands:
 
 ```bash
 npm install --global yarn
-```
-
-```bash
 exec zsh
 ```
 
@@ -1159,7 +1125,7 @@ If you are unsure about what to do, you can follow [this link](https://kitt.lewa
 
 Register as a Wagon alumni by going to [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Select your batch, sign in with GitHub and enter all your information.
 
-Your teacher will then validate that you are indeed part of the batch. You can ask them to do it as soon as you completed the registration form.
+Your teacher will then validate that you are indeed part of the batch. You can ask him to do it as soon as you completed the registration form.
 
 Once the teacher has approved your profile, go to your email inbox. You should have 2 emails:
 
