@@ -29,7 +29,7 @@ Then open VS Code from your terminal:
 code .
 ```
 
-:heavy_check_mark: Si tu vois `WSL: Ubuntu` dans une case verte dans le coin inférieur gauche de la fenêtre VS Code, c'est tout bon :+1:
+:heavy_check_mark: Si tu vois `WSL: Ubuntu` dans le coin inférieur gauche de la fenêtre VS Code, c'est tout bon :+1:
 
 ![WSL Ubuntu Remote](images/windows_remote_wsl.png)
 
