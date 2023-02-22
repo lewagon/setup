@@ -390,7 +390,7 @@ Let's verify that the default locale is set to english:
 locale
 ```
 
-If the output does not contain `LANG=en_US.UTF-8`, run the following command to install the english locale:
+If the output does not contain `LANG=en_US.UTF-8`, run the following command in a Ubuntu terminal to install the english locale:
 
 ```bash
 sudo locale-gen en_US.UTF-8

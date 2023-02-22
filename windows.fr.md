@@ -387,7 +387,7 @@ Vérifions que la locale est bien en **anglais** ans le terminal :
 locale
 ```
 
-Si la commande ne renvoie pas quelque chose qui contient `LANG=en_US.UTF-8`, lance ceci :
+Si la commande ne renvoie pas quelque chose qui contient `LANG=en_US.UTF-8`, lance ceci dans un terminal Ubuntu :
 
 ```bash
 sudo locale-gen en_US.UTF-8

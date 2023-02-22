@@ -386,7 +386,7 @@ Comprobemos que la configuración regional por defecto es el inglés:
 locale
 ```
 
-Si la salida no contiene `LANG=en_US.UTF-8`, ejecute el siguiente comando para instalar la locale inglesa:
+Si la salida no contiene `LANG=en_US.UTF-8`, ejecute el siguiente comando en un Ubuntu terminal para instalar la locale inglesa:
 
 ```bash
 sudo locale-gen en_US.UTF-8
