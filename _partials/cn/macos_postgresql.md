@@ -7,8 +7,8 @@
 运行下方指令：
 
 ```bash
-brew install postgresql
-brew services start postgresql
+brew install postgresql@14
+brew services start postgresql@14
 ```
 
 当你结束了上方的指令之后，让我们一起来核查一下它是否安装成功了：

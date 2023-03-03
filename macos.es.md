@@ -568,8 +568,8 @@ Vamos a instalarlo ahora.
 Ejecuta los siguientes comandos:
 
 ```bash
-brew install postgresql
-brew services start postgresql
+brew install postgresql@14
+brew services start postgresql@14
 ```
 
 Cuando termines, verifica que funcione:
@@ -718,5 +718,3 @@ Ancla lo siguiente:
 Tu computadora está lista para el [curso de Desarrollo Web de Le Wagon](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Disfrútalo, sabemos que te va a ir genial :rocket:
-
-

@@ -7,8 +7,8 @@ Vamos a instalarlo ahora.
 Ejecuta los siguientes comandos:
 
 ```bash
-brew install postgresql
-brew services start postgresql
+brew install postgresql@14
+brew services start postgresql@14
 ```
 
 Cuando termines, verifica que funcione:

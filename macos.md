@@ -633,11 +633,11 @@ Let's install it now.
 Run the following commands:
 
 ```bash
-brew install postgresql
+brew install postgresql@14
 ```
 
 ```bash
-brew services start postgresql
+brew services start postgresql@14
 ```
 
 Once you've done that, let's check that it worked:
@@ -787,5 +787,3 @@ You must pin:
 Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Enjoy the bootcamp, you will nail it :rocket:
-
-

@@ -144,7 +144,7 @@ brew upgrade openssl     || brew install openssl
 
 ### 安装
 
-让我们一起安装[Visual Studio Code](https://code.visualstudio.com)代码编辑器。 
+让我们一起安装[Visual Studio Code](https://code.visualstudio.com)代码编辑器。
 
 复制(`CMD` + `C`)下面的指令，并粘贴(`CMD` + `V`)到终端Terminal里:
 
@@ -535,8 +535,8 @@ sqlite3 -version
 运行下方指令：
 
 ```bash
-brew install postgresql
-brew services start postgresql
+brew install postgresql@14
+brew services start postgresql@14
 ```
 
 当你结束了上方的指令之后，让我们一起来核查一下它是否安装成功了：
@@ -678,5 +678,3 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 现在你的电脑已经完成[Le Wagon网页开发课程](https://www.lewagon.com/web-development-course/full-time)的设置啦 :muscle: :clap:
 
 享受你的编程之旅，你会掌握它的！ :rocket:
-
-

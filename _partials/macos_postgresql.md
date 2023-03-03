@@ -7,11 +7,11 @@ Let's install it now.
 Run the following commands:
 
 ```bash
-brew install postgresql
+brew install postgresql@14
 ```
 
 ```bash
-brew services start postgresql
+brew services start postgresql@14
 ```
 
 Once you've done that, let's check that it worked:
@@ -32,4 +32,3 @@ postgres=#
 :heavy_check_mark: If this is the case, type `\q` then `Enter` to quit this prompt. You're good to go :+1:
 
 :x: If not, please **ask for a teacher**
-
