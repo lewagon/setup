@@ -535,8 +535,12 @@ sqlite3 -version
 运行下方指令：
 
 ```bash
-brew install postgresql
-brew services start postgresql
+brew install postgresql@15 libpq
+brew link --force libpq
+```
+
+```bash
+brew services start postgresql@15
 ```
 
 当你结束了上方的指令之后，让我们一起来核查一下它是否安装成功了：
@@ -548,7 +552,7 @@ psql -d postgres
 如果你进入到了一个像下方这个，一个新的输入框的话，那么说明你的PostgreSQL已经安装好啦！
 
 ```bash
-psql (14.4)
+psql (15.2)
 Type "help" for help.
 
 postgres=#

@@ -633,11 +633,12 @@ Let's install it now.
 Run the following commands:
 
 ```bash
-brew install postgresql
+brew install postgresql@15 libpq
+brew link --force libpq
 ```
 
 ```bash
-brew services start postgresql
+brew services start postgresql@15
 ```
 
 Once you've done that, let's check that it worked:
@@ -649,7 +650,7 @@ psql -d postgres
 You should you see a new prompt like this one :point_down:
 
 ```bash
-psql (14.4)
+psql (15.2)
 Type "help" for help.
 
 postgres=#
