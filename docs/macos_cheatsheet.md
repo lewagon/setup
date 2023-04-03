@@ -17,3 +17,16 @@ This should help
 ```bash
 git -C $(brew --repository homebrew/core) checkout master
 ```
+
+## Error: Permission denied @ apply2files - /usr/local/lib/docker/cli-plugins
+
+If you get a Homebrew error `Permission denied @ apply2files` with "docker" in the path that follows,
+
+run
+```
+mkdir -p /Applications/Docker.app/Contents/Resources/cli-plugins
+```
+and then rerun `brew cleanup`.
+
+See ![this page](https://flaviocopes.com/homebrew-fix-permission-denied-apply2files/) for more info
+
