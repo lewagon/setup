@@ -513,28 +513,6 @@ nvm cache clear
 :x: Sinon, **demande au prof**
 
 
-## yarn
-
-[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d’installer des bibliothèques JavaScript. Installons-le :
-
-Exécute les commandes suivantes dans le terminal :
-
-```bash
-npm install --global yarn
-exec zsh
-```
-
-Puis exécute la commande suivante :
-
-```bash
-yarn -v
-```
-
-:heavy_check_mark: Si tu vois apparaître une version, c’est bon :+1:
-
-:x: Sinon, **demande au prof**
-
-
 ## SQLite
 
 Dans quelques semaines, on abordera les bases de données et le SQL. [SQLite](https://sqlite.org/index.html) est un système de gestion de base de données utilisé pour exécuter des requêtes SQL sur des bases de données d'un seul fichier. Installons-le :

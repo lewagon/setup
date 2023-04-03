@@ -488,23 +488,6 @@ nvm cache clear
 :x: 如果没有看到版本的话，**问一下你的老师**。
 
 
-## yarn
-
-让我们一起来安装[`yarn`](https://classic.yarnpkg.com/en/docs/install):
-
-```bash
-npm install --global yarn
-```
-
-重启终端并运行：
-
-```bash
-yarn -v
-```
-
-你应该会看到你yarn的版本。如果没有的话，问一下你的老师。
-
-
 ## SQLite
 
 几周后，我们就会开始学习数据库和SQL. [SQLite](https://sqlite.org/index.html)是一个数据库引擎，它可以在单文件数据库上执行SQL查询。现在来安装它吧：
