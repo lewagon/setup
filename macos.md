@@ -722,8 +722,11 @@ The idea is that you'll have Slack open all day, so that you can share useful li
 
 To ensure that everything is working fine for video calls, let's test your camera and microphone:
 - Open the Slack app
-- In any channel message bar type `/call --test` and press `Enter`
-- Click on the "Start test" green button
+- Click your profile picture in the top right.
+- Select `Preferences` from the menu.
+- Click `Audio & video` in the left-side column.
+- Below `Troubleshooting`, click `Run an audio, video and screensharing test`. The test will open in a new window.
+- Check that your preferred speaker, microphone and camera devices appear in the drop-down menus, then click `Start test`.
 
 ![Check microphone and webcam with Slack](images/slack_call_test.png)
 
