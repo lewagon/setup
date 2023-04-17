@@ -615,9 +615,12 @@ curl -Ls https://web-dev-challenge-lewagon-image.oss-cn-shanghai.aliyuncs.com/se
 之后你可以全天开着Slack，这样你可以在上面分享有用的链接/寻求帮助/决定去那儿吃饭/...
 
 为了确保视频电话可以正常工作，让我们一起测试摄像头和麦克风：
-- 打开Slack应用程序
-- 在任意群组的消息编辑框里输入`/call --test`并按下`Enter`
-- 按下"Start test"绿色按钮
+- 打开Slack应用程序。
+- 点击右上方的个人照片。
+- 从菜单中选择 `首选项(Preferences)`。
+- 点击左侧栏中的 `音频和视频(Audio & video)`。
+- 在 `故障排除(Troubleshooting)`下面，点击 `运行音频、视频和屏幕共享测试(Run an audio, video and screensharing test)`。该测试将在一个新窗口中打开。
+- 检查你使用的扬声器、麦克风和摄像机设备是否出现在选项中，然后点击 `开始测试(Start test)`。
 
 ![在Slack检查麦克风和摄像头](images/slack_call_test.png)
 
