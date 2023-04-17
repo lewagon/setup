@@ -100,7 +100,7 @@ wsl -l -v
 
 The locale is a mechanism allowing to customize programs to your language and country.
 
-Let's verify that the default locale is set to english:
+Let's verify that the default locale is set to english, please type this in the Ubuntu terminal:
 
 ```bash
 locale
