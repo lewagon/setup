@@ -569,7 +569,11 @@ Ejecuta los siguientes comandos:
 
 ```bash
 brew install postgresql@15 libpq
-brew services start postgresql
+brew link --force libpq
+```
+
+```bash
+brew services start postgresql@15
 ```
 
 Cuando termines, verifica que funcione:
