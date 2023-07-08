@@ -741,7 +741,7 @@ Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key
 
 `Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
 
-:warning: Lorsque tu saisiras ton mot de passe, rien ne s’affichera à l’écran ; **c’est normal**. Il s’agit d’une mesure de sécurité permettant de masquer non seulement les caractères de ton mot de passe, mais aussi sa longueur. Saisis simplement ton mot de passe, puis appuie sur `Enter`.
+`Title for your SSH key`. Tu peux laisser ce qui est proposé par défaut, à savoir "GitHub CLI", appuie sur `Enter`.
 
 Tu obtiendras le résultat suivant :
 

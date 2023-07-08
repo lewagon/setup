@@ -743,7 +743,7 @@ Si ya tienes claves SSH, verás en su lugar `Upload your SSH public key to your 
 
 `Enter a passphrase for your new SSH key (Optional)`. Pon algo que quieras y que recuerdes. Es una contraseña para proteger tu private key que está almacenada en tu disco duro. Luego presiona `Enter`.
 
-:warning: Cuando escribas tu passphrase, no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu passphrase como su longitud. Simplemente escribe tu passphrase y presiona `Enter` al terminar.
+`Title for your SSH key`. Puede dejarlo en la propuesta "GitHub CLI", presiona `Enter`.
 
 Obtendrás el siguiente resultado:
 
