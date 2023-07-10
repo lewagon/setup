@@ -683,19 +683,32 @@ To be sure that you can interact with your browser installed on Windows from you
     ls /mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following commands:
+  Did you get an error like `ls: cannot access...`?
+
+<details>
+  <summary>Yes, I had an error</summary>
+
+Run the following commands:
 
   ```bash
     echo "export BROWSER=\"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
     echo "export GH_BROWSER=\"'/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
   ```
+</details>
 
-  Else run:
+<details>
+  <summary>No, everything was fine</summary>
+
+  Run the following commands:
 
   ```bash
     echo "export BROWSER=\"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe\"" >> ~/.zshrc
     echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'\"" >> ~/.zshrc
   ```
+</details>
+
+---
+
 </details>
 
 <details>
@@ -707,19 +720,33 @@ To be sure that you can interact with your browser installed on Windows from you
     ls /mnt/c/Program\ Files\ \(x86\)/Mozilla\ Firefox/firefox.exe
   ```
 
-  If you get an error like `ls: cannot access...` Run the following commands:
+  Did you get an error like `ls: cannot access...`?
+
+<details>
+  <summary>Yes, I had an error</summary>
+
+  Run the following commands:
 
   ```bash
     echo "export BROWSER=\"/mnt/c/Program Files/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
     echo "export GH_BROWSER=\"'/mnt/c/Program Files/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
   ```
 
-  Else run:
+</details>
+
+<details>
+  <summary>No, everything was fine</summary>
+
+  Run the following commands:
 
   ```bash
     echo "export BROWSER=\"/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe\"" >> ~/.zshrc
     echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Mozilla Firefox/firefox.exe'\"" >> ~/.zshrc
   ```
+</details>
+
+---
+
 </details>
 
 <details>
@@ -731,6 +758,9 @@ To be sure that you can interact with your browser installed on Windows from you
     echo "export BROWSER='\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"'" >> ~/.zshrc
     echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'\"" >> ~/.zshrc
   ```
+
+---
+
 </details>
 
 Restart your terminal.
@@ -752,6 +782,7 @@ exec zsh
 ```
 
 Do not hesitate to **contact a teacher**.
+
 
 
 ## GitHub CLI
