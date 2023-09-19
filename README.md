@@ -4,7 +4,11 @@
 
 ## ¿En Español?
 
-Haga clic en <a href="README.es.md">este enlace</a> para acceder a la versión en español de la configuración.
+Clique <a href="README.es.md">neste link</a> para acessar a versão em português da configuração.
+
+## Em Português?
+
+Clique
 
 ## En Français ?
 
