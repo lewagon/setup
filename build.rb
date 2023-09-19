@@ -95,7 +95,7 @@ SETUPS = {
   "ubuntu.md" => UBUNTU
 }
 
-["", "cn", "es", "fr"].each do |locale|
+["", "cn", "es", "fr", "pt"].each do |locale|
   SETUPS.each do |filename, partials|
     filename = "#{filename.split(".md").first}.#{locale}.md" unless locale.empty?
     File.open(filename, "w:utf-8") do |f|
