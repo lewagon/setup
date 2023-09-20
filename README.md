@@ -6,6 +6,10 @@
 
 Haga clic en <a href="README.es.md">este enlace</a> para acceder a la versión en español de la configuración.
 
+## Em Português?
+
+Clique <a href="README.pt.md">neste link</a> para acessar a versão em português da configuração.
+
 ## En Français ?
 
 Clique sur <a href="README.fr.md">ce lien</a> pour accéder à la version française du setup.
