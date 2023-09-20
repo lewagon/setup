@@ -1,14 +1,15 @@
 # Instruções de configuração
 
-Você encontrará abaixo as instruções para configurar seu computador para o [curso de Desenvolvimento Web da Le Wagon](https://www.lewagon.com/web-development-course/full-time).
+Você encontrará abaixo as instruções para configurar seu computador para o [curso de desenvolvimento web Le Wagon](https://www.lewagon.com/web-development-course/full-time).
 
-Por favor, **leia com atenção e execute todos os comandos na seguinte ordem**.
+Por favor **leia-os com atenção e execute todos os comandos na seguinte ordem**.
 
 Se você tiver dúvidas, não hesite em pedir ajuda a um professor :raising_hand:
 
 Você também pode dar uma olhada em [nossas cheatsheets](https://github.com/lewagon/setup/tree/master/docs) para soluções e dicas de problemas comuns :heavy_check_mark:
 
 Vamos começar :rocket:
+
 
 ## Zoom
 
@@ -18,7 +19,7 @@ Para poder interagir quando não estivermos na mesma sala física, usaremos o [Z
 
 Acesse [zoom.us/download](https://zoom.us/download).
 
-Em **Zoom Client** clique no botão **Download**.
+Em **Cliente Zoom** clique no botão **Baixar**.
 
 Abra o arquivo que você acabou de baixar para instalar o aplicativo.
 
@@ -26,9 +27,9 @@ Abra o aplicativo Zoom.
 
 Se você já possui uma conta Zoom, faça login usando suas credenciais.
 
-Caso contrário, clique no link **Inscreva-se Gratuitamente**:
+Caso contrário, clique no link **Cadastre-se gratuitamente**:
 
-![Cadastre-se gratuitamente no Zoom](images/zoom_sign_up_free.png)
+![Cadastre-se gratuitamente para ampliar](images/zoom_sign_up_free.png)
 
 Você será redirecionado ao site do Zoom para preencher um formulário.
 
@@ -40,13 +41,15 @@ Você deverá então ver uma tela como esta:
 
 Agora você pode fechar o aplicativo Zoom.
 
-## Conta no GitHub
+
+## Conta GitHub
 
 Você se inscreveu no GitHub? Caso contrário, [faça isso imediatamente](https://github.com/join).
 
 :point_right: **[Carregue uma imagem](https://github.com/settings/profile)** e coloque seu nome corretamente em sua conta GitHub. Isso é importante porque usaremos um painel interno com seu avatar. Faça isso **agora**, antes de continuar com este guia.
 
 ![Imagem do GitHub](images/github_picture.png)
+
 
 ## Versão do Windows
 
@@ -66,11 +69,11 @@ Para verificar sua versão do Windows:
 :x: Caso contrário, você não poderá prosseguir com esta configuração. Você precisa atualizar para o Windows 10 primeiro: point_down:
 
 <details>
-  <summary>Atualizar para o Windows 10</summary>
+   <summary>Atualizar para o Windows 10</summary>
 
-  - Baixe o Windows 10 da [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
-  - Instale-o. Deve demorar cerca de uma hora, mas isso depende do seu computador.
-  - Quando a instalação terminar, execute os comandos acima :point_up: para verificar se você agora tem o **Windows 10**.
+   - Baixe o Windows 10 da [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
+   - Instale-o. Deve demorar cerca de uma hora, mas isso depende do seu computador.
+   - Quando a instalação terminar, execute os comandos acima :point_up: para verificar se você agora tem o **Windows 10**.
 </details>
 
 :information_source: [A atualização do Windows 11 está sendo lançada agora](https://www.microsoft.com/en-us/windows/get-windows-11), o que significa que ela pode ou não estar disponível para o seu computador ainda .
@@ -94,17 +97,17 @@ Abra a atualização do Windows:
 :x: Se você receber uma mensagem de erro sobre o Windows não conseguir aplicar atualizações, **entre em contato com um professor**.
 
 <details>
-  <summary>Ative o Windows Update Service para corrigir atualizações</summary>
+   <summary>Ative o Windows Update Service para corrigir atualizações</summary>
 
-  Alguns antivírus e softwares desativam o serviço de atualização de que precisamos, resultando no erro que você vê. Vamos consertar isso!
-  - Pressione `Windows` + `R`
-  - Digite `services.msc`
-  - Pressione `Enter`
-  - Clique duas vezes em `Serviço de atualização do Windows`
-  - Defina sua `Inicialização` para `Automático`
-  - Clique em `Iniciar`
-  - Clique em `Ok`
-  Então vamos tentar as atualizações novamente!
+   Alguns antivírus e softwares desativam o serviço de atualização de que precisamos, resultando no erro que você vê. Vamos consertar isso!
+   - Pressione `Windows` + `R`
+   - Digite `services.msc`
+   - Pressione `Enter`
+   - Clique duas vezes em `Serviço de atualização do Windows`
+   - Defina sua `Inicialização` para `Automático`
+   - Clique em `Iniciar`
+   - Clique em `Ok`
+   Então vamos tentar as atualizações novamente!
 </details>
 
 ### Versão mínima
@@ -120,6 +123,7 @@ Verifique o **Número da versão**:
 :heavy_check_mark: Se disser pelo menos `1903`, você está pronto :+1:
 
 :x: Se estiver abaixo de `1903`, por favor **entre em contato com um professor**.
+
 
 ## Virtualização
 
@@ -139,25 +143,26 @@ Para muitos computadores, este já é o caso. Vamos checar:
 :x: Se a linha estiver faltando ou se a virtualização estiver desabilitada, por favor **entre em contato com um professor antes de tentar ativar a Virtualização**
 
 <details>
-  <summary>Ativar virtualização</summary>
+   <summary>Ativar virtualização</summary>
 
-  Precisamos acessar o BIOS/UEFI do computador para ativá-lo.
-  - Pressione `Windows + R`
-  - Digite `shutdown.exe /r /o /t 1`
-  - Pressione `Enter`
-  - Aguarde o computador desligar
-  - Clique em `Solucionar problemas`
-  - Clique em `Opções avançadas`
-  - Clique em `Configurações de firmware UEFI`
-  - Clique em `Reiniciar`
+   Precisamos acessar o BIOS/UEFI do computador para ativá-lo.
+   - Pressione `Windows + R`
+   - Digite `shutdown.exe /r /o /t 1`
+   - Pressione `Enter`
+   - Aguarde o computador desligar
+   - Clique em `Solucionar problemas`
+   - Clique em `Opções avançadas`
+   - Clique em `Configurações de firmware UEFI`
+   - Clique em `Reiniciar`
 
-  Você precisa ativar a opção de virtualização para o seu processador aqui:
-  - Na maioria das vezes, nas configurações avançadas, nas configurações da CPU ou nas configurações do Northbridge
-  - A opção pode ter um nome diferente de acordo com o seu computador:
-      - Intel: `Intel VT-x`, `Tecnologia de virtualização Intel`, `Extensões de virtualização`, `Vanderpool`...
-      - AMD: `Modo SVM` ou `AMD-V`
-  - Salve as alterações após a ativação e reinicie o computador através da opção apropriada
+   Você precisa ativar a opção de virtualização para o seu processador aqui:
+   - Na maioria das vezes, nas configurações avançadas, nas configurações da CPU ou nas configurações do Northbridge
+   - A opção pode ter um nome diferente de acordo com o seu computador:
+       - Intel: `Intel VT-x`, `Tecnologia de virtualização Intel`, `Extensões de virtualização`, `Vanderpool`...
+       - AMD: `Modo SVM` ou `AMD-V`
+   - Salve as alterações após a ativação e reinicie o computador através da opção apropriada
 </details>
+
 
 ## Subsistema Windows para Linux (WSL)
 
@@ -182,7 +187,7 @@ Uma janela de terminal azul aparecerá:
 - Cole-o na janela do terminal (`Ctrl` + `V` ou clicando com o botão direito na janela)
 - Execute-o pressionando `Enter`
 
-```PowerShell
+```powershell
 wsl --install
 ```
 
@@ -243,7 +248,7 @@ Assim que o computador for reiniciado, precisamos baixar o instalador WSL2.
 
 :x: Se você encontrar o erro "Esta atualização se aplica apenas a máquinas com o subsistema Windows para Linux", **clique com o botão direito** no programa e selecione `uninstall`; você poderá instalá-lo normalmente desta vez.
 
-#### Torne o WSL 2 o Subsistema Windows para Linux padrão
+#### Torne o WSL 2 o subsistema Windows padrão para Linux
 
 Se você estiver executando o Windows 10, definiremos a versão padrão do WSL como 2.
 
@@ -263,18 +268,19 @@ wsl --set-default-version 2
 :x: Se a mensagem que você receber for sobre Virtualização, por favor **entre em contato com um professor**
 
 <details>
-  <summary>Ativar recurso Windows da Plataforma de Máquina Virtual</summary>
+   <summary>Ativar recurso Windows da Plataforma de Máquina Virtual</summary>
 
-  Siga as etapas descritas [aqui](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in- the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Garanta%20que%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL %202) até você ativar a <strong>Plataforma de Máquina Virtual</strong> e o <strong>Subsistema Windows para Linux</strong>
+   Siga as etapas descritas [aqui](https://www.configserverfirewall.com/windows-10/please-enable-the-virtual-machine-platform-windows-feature-and-ensure-virtualization-is-enabled-in- the-bios/#:~:text=To%20enable%20WSL%202,%20Open,Windows%20feature%20on%20or%20off.&text=Garanta%20que%20the%20Virtual%20Machine,Windows%20will%20enable%20WSL %202) até você ativar a <strong>Plataforma de Máquina Virtual</strong> e o <strong>Subsistema Windows para Linux</strong>
 </details>
 
 <details>
-  <summary>Ativar recurso Hyper-V do Windows</summary>
+   <summary>Ativar recurso Hyper-V do Windows</summary>
 
-  Siga as etapas descritas [aqui](https://winaero.com/enable-use-hyper-v-windows-10/) até ativar o grupo <strong>Hyper-V</strong>
+   Siga as etapas descritas [aqui](https://winaero.com/enable-use-hyper-v-windows-10/) até ativar o grupo <strong>Hyper-V</strong>
 
-  :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo: ok_hand:
+   :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo: ok_hand:
 </details>
+
 
 ## Ubuntu
 
@@ -284,7 +290,7 @@ wsl --set-default-version 2
 
 #### Windows 11
 
-Se você estiver executando o Windows 11, após reiniciar o computador, você deverá ver uma janela de terminal informando que o WSL está retomando o processo de instalação do Ubuntu. Quando terminar, o Ubuntu será iniciado.
+Se você estiver executando o Windows 11, após reiniciar o computador, você deverá ver uma janela de terminal informando que o WSL está retomando o processo de instalação do Ubuntu. Quando terminar, o Ubuntu será lançado.
 
 #### Windows 10
 
@@ -300,26 +306,26 @@ Se você estiver executando o Windows 10, vamos instalar o Ubuntu através da Mi
 :warning: Não instale **Ubuntu 18.04 LTS** nem **Ubuntu 20.04**!
 
 <details>
-  <summary>Desinstale versões erradas do Ubuntu</summary>
+   <summary>Desinstale versões erradas do Ubuntu</summary>
 
-  Para desinstalar uma versão errada do Ubuntu, basta ir até a Lista de Programas Instalados do Windows 10:
-  - Pressione `Windows` + `R`
-  - Digite `ms-settings:appsfeatures`
-  - Pressione `Enter`
+   Para desinstalar uma versão errada do Ubuntu, basta ir até a Lista de Programas Instalados do Windows 10:
+   - Pressione `Windows` + `R`
+   - Digite `ms-settings:appsfeatures`
+   - Pressione `Enter`
 
-  Encontre o software para desinstalar e clique no botão desinstalar.
+   Encontre o software para desinstalar e clique no botão desinstalar.
 </details>
 
 Assim que a instalação for concluída, o botão `Get` se torna um botão `Open`: clique nele.
 
-### Primeira vez
+### Executando pela primeira vez
 
-Na primeira vez que abrir o programa, serão solicitadas algumas informações:
+Na primeira execução, serão solicitadas algumas informações:
 - Escolha um nome de usuário**:
-    - uma palavra
-    - minúsculas
-    - sem caracteres especiais
-    - por exemplo: `lewagon` ou seu `nome`
+     - uma palavra
+     - minúsculas
+     - sem caracteres especiais
+     - por exemplo: `lewagon` ou seu `nome`
 - Escolha uma senha**
 - Confirme sua senha
 
@@ -344,34 +350,34 @@ wsl -l -v
 :x: Se a versão do Ubuntu WSL for 1, precisaremos convertê-lo para a versão 2.
 
 <details>
-  <summary>Converter Ubuntu WSL V1 em V2</summary>
+   <summary>Converter Ubuntu WSL V1 em V2</summary>
 
-  Na janela do prompt de comando, digite:
+   Na janela do prompt de comando, digite:
 
   ```bash
   wsl --set-version Ubuntu 2
   ```
 
-  :heavy_check_mark: Após alguns segundos, você deverá receber a seguinte mensagem: `A conversão foi concluída`.
+   :heavy_check_mark: Após alguns segundos, você deverá receber a seguinte mensagem: `A conversão foi concluída`.
 
-  :x: Se não funcionar, precisamos ter certeza de que os arquivos do Ubuntu não estão compactados.
-</detalhes>
+   :x: Se não funcionar, precisamos ter certeza de que os arquivos do Ubuntu não estão compactados.
+</details>
 
 <details>
-  <summary>Verificar arquivos descompactados</summary>
+   <summary>Verificar arquivos descompactados</summary>
 
-  - Pressione `Windows` + `R`
-  - Digite `%localappdata%\Packages`
-  - Pressione `Enter`
-  - Abra a pasta chamada `CanonicalGroupLimited.UbuntuonWindows...`
-  - Clique com o botão direito na pasta `LocalState`
-  - Clique em `Propriedades`
-  - Clique em `Avançado`
-  - Certifique-se de que a opção `Compactar conteúdo` **não** esteja marcada e clique em `Ok`.
+   - Pressione `Windows` + `R`
+   - Digite `%localappdata%\Packages`
+   - Pressione `Enter`
+   - Abra a pasta chamada `CanonicalGroupLimited.UbuntuonWindows...`
+   - Clique com o botão direito na pasta `LocalState`
+   - Clique em `Propriedades`
+   - Clique em `Avançado`
+   - Certifique-se de que a opção `Compactar conteúdo` **não** esteja marcada e clique em `Ok`.
 
-  Aplique as alterações apenas nesta pasta e tente converter a versão WSL do Ubuntu novamente.
+   Aplique as alterações apenas nesta pasta e tente converter a versão WSL do Ubuntu novamente.
 
-  :x: Se a conversão ainda não funcionar, por favor **entre em contato com um professor**.
+   :x: Se a conversão ainda não funcionar, por favor **entre em contato com um professor**.
 </details>
 
 ### Verifique a localidade
@@ -392,6 +398,7 @@ sudo locale-gen en_US.UTF-8
 
 Agora você pode fechar esta janela do terminal.
 
+
 ## Visual Studio Code
 
 ### Instalação
@@ -407,7 +414,7 @@ Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.
 
 Quando a instalação for concluída, inicie o VS Code.
 
-### Conectando o VS Code ao Ubuntu
+### Conectando o código VS ao Ubuntu
 
 Para fazer o VS Code interagir corretamente com o Ubuntu, vamos instalar a extensão [Remote - WSL](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) VS Code.
 
@@ -431,6 +438,7 @@ code .
 
 :x: Caso contrário, por favor **entre em contato com um professor**
 
+
 ## Terminal do Windows
 
 ### Instalação
@@ -451,15 +459,15 @@ Se você estiver executando o Windows 10, vamos instalar o Windows Terminal, um 
 :warning: NÃO instale o **Windows Terminal Preview**, apenas o **Windows Terminal**!
 
 <details>
-  <summary>Desinstale a versão errada do Terminal do Windows</summary>
+   <summary>Desinstale a versão errada do Terminal do Windows</summary>
 
-  Para desinstalar uma versão errada do Terminal Windows, basta ir até a Lista de Programas Instalados do Windows 10:
+   Para desinstalar uma versão errada do Terminal Windows, basta ir até a Lista de Programas Instalados do Windows 10:
 
-  - Pressione `Windows` + `R`
-  - Digite `ms-settings:appsfeatures`
-  - Pressione `Enter`
+   - Pressione `Windows` + `R`
+   - Digite `ms-settings:appsfeatures`
+   - Pressione `Enter`
 
-  Encontre o software para desinstalar e clique no botão desinstalar.
+   Encontre o software para desinstalar e clique no botão desinstalar.
 </details>
 
 Assim que a instalação for concluída, o botão `Instalar` se torna um botão `Iniciar`: clique nele.
@@ -512,6 +520,7 @@ Este terminal possui abas: você pode optar por abrir uma nova aba do terminal c
 
 **De agora em diante, toda vez que nos referirmos ao terminal ou ao console será este.** NÃO utilize mais nenhum outro terminal.
 
+
 ## Extensões do VS Code
 
 ### Instalação
@@ -542,6 +551,7 @@ Aqui está uma lista das extensões que você está instalando:
 - [Paste and Indent](https://marketplace.visualstudio.com/items?itemName=Rubymaniac.vscode-paste-and-indent)
 - [SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
 
+
 ### Configuração do Live Share
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) é uma extensão do VS Code que permite compartilhar o código em seu editor de texto para depuração e programação em pares: vamos configurá-lo acima!
@@ -559,9 +569,10 @@ Clique na pequena seta na parte inferior da barra esquerda: point_down:
 
 É isso, você está pronto para ir!
 
+
 ## Ferramentas de linha de comando
 
-### Zsh e Git
+###Zsh e Git
 
 Em vez de usar o `bash` [shell] padrão (https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
 
@@ -581,7 +592,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 
 Esses comandos solicitarão sua senha: digite-a.
 
-:warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
+:aviso: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
 
 ### Instalação da CLI do GitHub
 
@@ -590,7 +601,7 @@ Vamos agora instalar a [CLI oficial do GitHub](https://cli.github.com) (interfac
 Em seu terminal, copie e cole os seguintes comandos e digite sua senha, se solicitado:
 
 ```bash
-sudo apt remove -y gitsome # gh pode entrar em conflito com o gitsome se já estiver instalado
+sudo apt remove -y gitsome # gh command can conflict with gitsome if already installed
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
 ```
 
@@ -616,6 +627,7 @@ gh --version
 
 :x: Caso contrário, por favor **entre em contato com um professor**
 
+
 ## Oh-My-Zsh
 
 Vamos instalar o plugin `zsh` [Oh My Zsh](https://ohmyz.sh/).
@@ -626,7 +638,7 @@ Em um terminal execute o seguinte comando:
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Se for perguntado "Do you want to change your default shell to zsh?", pressione `Y`
+Se for perguntado "Deseja alterar seu shell padrão para zsh?", pressione `Y`
 
 No final seu terminal deverá ficar assim:
 
@@ -635,6 +647,7 @@ No final seu terminal deverá ficar assim:
 :heavy_check_mark: Se isso acontecer, você pode continuar :+1:
 
 :x: Caso contrário, por favor ** peça um professor **
+
 
 ## Vinculando seu navegador padrão ao Ubuntu
 
@@ -751,9 +764,10 @@ exec zsh
 
 Não hesite em **entrar em contato com um professor**.
 
+
 ## CLI do GitHub
 
-CLI é o acrônimo de [Command Line Interface](https://en.wikipedia.org/wiki/Command-line_interface).
+CLI é o acrônimo de [Interface de linha de comando](https://en.wikipedia.org/wiki/Command-line_interface).
 
 Nesta seção, usaremos [GitHub CLI](https://cli.github.com/) para interagir com o GitHub diretamente do terminal.
 
@@ -761,7 +775,7 @@ Ele já deve estar instalado no seu computador a partir dos comandos anteriores.
 
 Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
 
-:warning: **NÃO edite o `email`**
+:aviso: **NÃO edite o `email`**
 
 ```bash
 gh auth login -s 'user:email' -w
@@ -769,9 +783,9 @@ gh auth login -s 'user:email' -w
 
 gh fará algumas perguntas:
 
-`What is your preferred protocol for Git operations?` With the arrows, choose `SSH` and press `Enter`. SSH é um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
+`What is your preferred protocol for Git operations?` Com as setas, escolha `SSH` e pressione `Enter`. SSH é um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
 
-`Generate a new SSH key to add to your GitHub account?` Pressione `Enter` para pedir ao gh gerar as chaves SSH para você.
+`Generate a new SSH key to add to your GitHub account?` Pressione `Enter` para pedir ao gh para gerar as chaves SSH para você.
 
 Se você já possui chaves SSH, verá `Upload your SSH public key to your GitHub account?` Com as setas, selecione o caminho do arquivo de sua chave pública e pressione `Enter`.
 
@@ -798,9 +812,10 @@ Para verificar se você está conectado corretamente, digite:
 gh auth status
 ```
 
-:heavy_check_mark: Se você estiver `Logged in to github.com as <SEU NOME DE USUÁRIO> `, então tudo bem :+1:
+:heavy_check_mark: Se você estiver `Logado no github.com como <SEU NOME DE USUÁRIO> `, então tudo bem :+1:
 
 :x: Caso contrário, **entre em contato com um professor**.
+
 
 ## Dotfiles (configuração padrão)
 
@@ -808,7 +823,7 @@ Os hackers adoram refinar e aprimorar sua estrutura e ferramentas.
 
 Começaremos com uma ótima configuração padrão fornecida pelo Le Wagon: [`lewagon/dotfiles`](https://github.com/lewagon/dotfiles).
 
-Como sua configuração é pessoal, você precisa de seu próprio repositório para armazená-la. Então você irá fazer um **fork** do repositório Le Wagon.
+Como sua configuração é pessoal, você precisa de seu próprio repositório para armazená-la. Então você irá fazer o **fork** do repositório Le Wagon.
 
 Bifurcar significa que você criará um novo repositório em sua própria conta GitHub `$GITHUB_USERNAME/dotfiles`, idêntico ao original do Le Wagon que você poderá modificar à vontade.
 
@@ -826,7 +841,7 @@ echo $GITHUB_USERNAME
 
 :x: Se não, **pare aqui** e peça ajuda. Pode haver um problema com a etapa anterior (`gh auth`).
 
-:warning: Por favor, note que esta variável só é definida para o tempo em que seu terminal está aberto. Se você fechá-lo antes ou durante as próximas etapas, será necessário configurá-lo novamente com as duas etapas acima!
+:warning: Por favor note que esta variável só é definida para o tempo em que seu terminal está aberto. Se você fechá-lo antes ou durante as próximas etapas, será necessário configurá-lo novamente com as duas etapas acima!
 
 
 É hora de fazer um fork do repositório e cloná-lo em seu computador:
@@ -859,7 +874,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: Se você vir a lista de seus e-mails registrados, você pode prosseguir :+1:
 
-:x: Caso contrário, [reautentique-se no GitHub](https://github.com/lewagon/setup/blob/master/macos.md#github-cli) antes de executar este comando :point_up: novamente.
+:x: Caso contrário, [reautentique no GitHub](https://github.com/lewagon/setup/blob/master/windows.pt.md#github-cli) antes de executar este comando :point_up: novamente.
 
 ### instalador git
 
@@ -879,6 +894,7 @@ Agora **reinicie** seu terminal executando:
 exec zsh
 ```
 
+
 ## Desativar prompt de senha SSH
 
 Você não quer que sua senha seja solicitada sempre que se comunicar com um repositório distante. Então, você precisa adicionar o plugin `ssh-agent` ao `oh my zsh`:
@@ -895,6 +911,7 @@ Então:
 
 :heavy_check_mark: Salve o arquivo `.zshrc` com `Ctrl` + `S` e feche seu editor de texto.
 
+
 ## rbenv
 
 Vamos instalar o [`rbenv`](https://github.com/sstephenson/rbenv), um software para instalar e gerenciar ambientes `ruby`.
@@ -903,17 +920,12 @@ Primeiro, precisamos limpar qualquer instalação anterior do Ruby que você pos
 
 ```bash
 rvm implode && sudo rm -rf ~/.rvm
-# Se você obteve "zsh: command not found: rvm", continue. Isso significa que `rvm` não está
-# no seu computador, e é isso que queremos!
-
-sudo rm -rf $HOME/.rbenv /usr/local/rbenv /opt/rbenv /usr/local/opt/rbenv
+# Se você obteve "zsh: comando não encontrado: rvm", continue.
+# Significa que `rvm` não está no seu computador, é isso que queremos!
+rm -rf ~/.rbenv
 ```
 
-:warning: Este comando pode solicitar sua senha.
-
-:warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
-
-Então no Terminal, rode
+Então no terminal, execute:
 
 ```bash
 sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev
@@ -930,6 +942,7 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```bash
 exec zsh
 ```
+
 
 ## Ruby
 
@@ -956,7 +969,7 @@ rbenv global 3.1.2
 exec zsh
 ```
 
-Então rode:
+Então corra:
 
 ```bash
 ruby -v
@@ -969,15 +982,15 @@ ruby -v
 ### Instalando algumas gems
 
 <details>
-   <summary>Se você estiver na <bold>China</bold> 🇨🇳 clique aqui</summary>
+  <summary>Se você estiver na <bold>China</bold> 🇨🇳 clique aqui</summary>
 
-   :warning: Se você estiver na China, você deve atualizar a forma como instalaremos as gems com os seguintes comandos.
+  :warning: Se você estiver na China, você deve atualizar a forma como instalaremos o gem com os seguintes comandos.
 
 ```bash
 # Somente China!
-gem sources --remove https://rubygems.org/
-gem sources -a https://gems.ruby-china.com/
-gem sources -l
+fontes de gemas --remove https://rubygems.org/
+fontes de gemas -a https://gems.ruby-china.com/
+fontes de gemas -l
 #***FONTES ATUAIS***
 # https://gems.ruby-china.com/
 # Ruby-china.com deve estar na lista agora
@@ -1009,13 +1022,14 @@ Execute o seguinte comando:
 rm -rf ~/.gemrc
 ```
 
-Execute novamente o comando para instalar as gems.
+Execute novamente o comando para instalar as gemas.
 
 :warning: **NUNCA** instale uma gem com `sudo gem install`! Mesmo se você encontrar uma resposta do Stackoverflow (ou o terminal) solicitando que você faça isso.
 
+
 ## Node.js
 
-[Node.js](https://nodejs.org/en/) é um JavaScript runtime para executar código JavaScript no terminal. Vamos instalá-lo com [nvm](https://github.com/nvm-sh/nvm), um gerenciador de versões para Node.js.
+[Node.js](https://nodejs.org/en/) é um tempo de execução JavaScript para executar código JavaScript no terminal. Vamos instalá-lo com [nvm](https://github.com/nvm-sh/nvm), um gerenciador de versões para Node.js.
 
 Em um terminal, execute os seguintes comandos:
 
@@ -1035,7 +1049,7 @@ nvm -v
 
 Você deverá ver uma versão. Se não, pergunte a um professor.
 
-Agora vamos instalar o Node:
+Agora vamos instalar o nó:
 
 ```bash
 nvm install 16.15.1
@@ -1047,7 +1061,7 @@ Quando a instalação terminar, execute:
 node -v
 ```
 
-Se você vir `v16.15.1`, a instalação foi bem-sucedida: heavy_check_mark: Você pode então executar:
+Se você vir `v16.15.1`, a instalação foi bem-sucedida :heavy_check_mark: Você pode então executar:
 
 ```bash
 nvm cache clear
@@ -1055,7 +1069,8 @@ nvm cache clear
 
 :x: Caso contrário, **entre em contato com um professor**
 
-## Yarn
+
+## fio
 
 [`yarn`](https://yarnpkg.com/) é um gerenciador de pacotes para instalar bibliotecas JavaScript. Vamos instalá-lo:
 
@@ -1079,6 +1094,7 @@ yarn -v
 
 :x: Se não, **peça um professor**
 
+
 ## SQLite
 
 Em algumas semanas falaremos sobre bancos de dados e SQL. [SQLite](https://sqlite.org/index.html) é um mecanismo de banco de dados usado para executar consultas SQL em bancos de dados de arquivo único. Vamos instalá-lo:
@@ -1099,6 +1115,7 @@ sqlite3 -version
 
 :x: Se não, **peça um professor**
 
+
 ## PostgreSQL
 
 Às vezes, o SQLite não é suficiente e precisaremos de uma ferramenta mais avançada chamada [PostgreSQL](https://www.postgresql.org/), um sistema de banco de dados de código aberto, robusto e pronto para produção.
@@ -1112,8 +1129,33 @@ sudo apt install -y postgresql postgresql-contrib libpq-dev build-essential
 ```
 
 ```bash
+sudo /etc/init.d/postgresql start
+```
+
+```bash
 sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
+
+Você pode configurar o PostgreSQL para inicialização automática, para que não precise executar `sudo /etc/init.d/postgresql start` cada vez que abrir um novo terminal:
+
+```bash
+sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
+```
+
+```bash
+sudo chmod 440 /etc/sudoers.d/postgresql
+```
+
+```bash
+echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
+```
+
+Abra um novo terminal.
+
+:heavy_check_mark: Se você vir uma mensagem `* Iniciando o servidor de banco de dados PostgreSQL 14`, você está pronto para prosseguir :+1:
+
+:x: Caso contrário, **entre em contato com um professor**.
+
 
 ## Checagem
 
@@ -1125,15 +1167,16 @@ No seu terminal, execute o seguinte comando:
 exec zsh
 ```
 
-Então rode:
+Então corra:
 
 ```bash
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:heavy_check_mark: Se você receber uma mensagem verde `Incrível! Seu computador agora está pronto!`, então você está bem: +1:
+:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem: +1:
 
 :x: Caso contrário, **entre em contato com um professor**.
+
 
 ## Kitt
 
@@ -1141,14 +1184,15 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 
 Se não tiver certeza sobre o que fazer, siga [este link](https://kitt.lewagon.com/). Se você já estiver logado, pode pular esta seção com segurança. Se você não estiver logado, clique em `Enter Kitt as a Student`. Se você conseguir fazer login, poderá pular esta etapa com segurança. Caso contrário, pergunte a um professor se você deveria ter recebido um e-mail ou siga as instruções abaixo.
 
-Registre-se como alumni da Wagon acessando [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Selecione seu lote, faça login no GitHub e insira todas as suas informações.
+Registre-se como Alumni da Le Wagon acessando [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Selecione seu batch, faça login no GitHub e insira todas as suas informações.
 
-Seu professor irá então validar se você realmente faz parte do batch. Você pode pedir que eles façam isso assim que preencher o formulário de registro.
+Seu professor irá então validar que você realmente faz parte do batch. Você pode pedir que eles façam isso assim que preencher o formulário de registro.
 
 Assim que o professor aprovar seu perfil, acesse sua caixa de entrada de e-mail. Você deve ter 2 e-mails:
 
 - Um do Slack, convidando você para a comunidade Le Wagon Alumni do Slack (onde você conversará com seus amigos e todos os ex-alunos anteriores). Clique em **Inscreva-se** e preencha os dados.
 - Um do GitHub, convidando você para a equipe `lewagon`. **Aceite** caso contrário você não conseguirá acessar os slides da aula.
+
 
 ## Slack
 
@@ -1159,6 +1203,7 @@ Assim que o professor aprovar seu perfil, acesse sua caixa de entrada de e-mail.
 [Baixe o aplicativo Slack](https://slack.com/downloads/windows) e instale-o.
 
 :warning: Se você já usa o Slack em seu navegador, baixe e instale **o aplicativo para desktop** que vem com todos os recursos.
+
 
 ### Configurações
 
@@ -1185,6 +1230,7 @@ Para garantir que tudo está funcionando bem nas videochamadas, vamos testar sua
 :x: Caso contrário, **entre em contato com um professor**.
 
 Você também pode instalar o aplicativo Slack no seu telefone e entrar em `lewagon-alumni`!
+
 
 ## Configurações do Windows
 
@@ -1245,3 +1291,5 @@ Você deve fixar:
 Seu computador agora está pronto para o [curso de Desenvolvimento Web Le Wagon](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Aproveite o bootcamp, você vai acertar :rocket:
+
+
