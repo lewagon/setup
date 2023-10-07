@@ -66,7 +66,7 @@ Para verificar sua versão do Windows:
 
 :heavy_check_mark: Se as primeiras palavras desta janela forem **Windows 10 ou Windows 11** você está pronto para prosseguir :+1:
 
-:x: Caso contrário, você não poderá prosseguir com esta configuração. Você precisa atualizar para o Windows 10 primeiro: point_down:
+:x: Caso contrário, você não poderá prosseguir com esta configuração. Você precisa atualizar para o Windows 10 primeiro :point_down:
 
 <details>
    <summary>Atualizar para o Windows 10</summary>
@@ -138,7 +138,7 @@ Para muitos computadores, este já é o caso. Vamos checar:
 
 ![Gerenciador de tarefas do Windows](images/windows_task_manager.png)
 
-:heavy_check_mark: Se você vir "Virtualização: Ativada", está pronto: +1:
+:heavy_check_mark: Se você vir "Virtualização: Ativada", está pronto :+1:
 
 :x: Se a linha estiver faltando ou se a virtualização estiver desabilitada, por favor **entre em contato com um professor antes de tentar ativar a Virtualização**
 
@@ -191,7 +191,7 @@ Uma janela de terminal azul aparecerá:
 wsl --install
 ```
 
-:heavy_check_mark: Se o comando foi executado sem nenhum erro, reinicie o computador e continue abaixo:+1:
+:heavy_check_mark: Se o comando foi executado sem nenhum erro, reinicie o computador e continue abaixo :+1:
 
 :x: Se você encontrar uma mensagem de erro (ou se vir algum texto em vermelho na janela), por favor **entre em contato com um professor**
 
@@ -226,7 +226,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-:heavy_check_mark: Se todos os três comandos foram executados sem nenhum erro, reinicie o computador e continue abaixo:+1:
+:heavy_check_mark: Se todos os três comandos foram executados sem nenhum erro, reinicie o computador e continue abaixo :+1:
 
 :x: Se você encontrar uma mensagem de erro (ou se vir algum texto em vermelho na janela), por favor **entre em contato com um professor**
 
@@ -244,7 +244,7 @@ Assim que o computador for reiniciado, precisamos baixar o instalador WSL2.
 
 ![Atualize WSL da versão 1 para 2](images/windows_update_wsl.png)
 
-:heavy_check_mark: Se não encontrou nenhuma mensagem de erro, você está pronto: +1:
+:heavy_check_mark: Se não encontrou nenhuma mensagem de erro, você está pronto :+1:
 
 :x: Se você encontrar o erro "Esta atualização se aplica apenas a máquinas com o subsistema Windows para Linux", **clique com o botão direito** no programa e selecione `uninstall`; você poderá instalá-lo normalmente desta vez.
 
@@ -263,7 +263,7 @@ Na janela que aparece, digite:
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: Se você vir "A operação foi concluída com sucesso", você pode fechar este terminal e continuar seguindo as instruções abaixo:+1:
+:heavy_check_mark: Se você vir "A operação foi concluída com sucesso", você pode fechar este terminal e continuar seguindo as instruções abaixo :+1:
 
 :x: Se a mensagem que você receber for sobre Virtualização, por favor **entre em contato com um professor**
 
@@ -278,7 +278,7 @@ wsl --set-default-version 2
 
    Siga as etapas descritas [aqui](https://winaero.com/enable-use-hyper-v-windows-10/) até ativar o grupo <strong>Hyper-V</strong>
 
-   :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo: ok_hand:
+   :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo :ok_hand:
 </details>
 
 
@@ -321,12 +321,12 @@ Assim que a instalação for concluída, o botão `Get` se torna um botão `Open
 ### Executando pela primeira vez
 
 Na primeira execução, serão solicitadas algumas informações:
-- Escolha um nome de usuário**:
+- Escolha um nome de **usuário**:
      - uma palavra
      - minúsculas
      - sem caracteres especiais
      - por exemplo: `lewagon` ou seu `nome`
-- Escolha uma senha**
+- Escolha uma **senha**
 - Confirme sua senha
 
 :warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
@@ -345,7 +345,7 @@ Digite o seguinte comando:
 wsl -l -v
 ```
 
-:heavy_check_mark: Se a versão do Ubuntu WSL for 2, você está pronto: +1:
+:heavy_check_mark: Se a versão do Ubuntu WSL for 2, você está pronto :+1:
 
 :x: Se a versão do Ubuntu WSL for 1, precisaremos convertê-lo para a versão 2.
 
@@ -445,7 +445,7 @@ code .
 
 :information_source: As instruções a seguir dependem da sua versão do Windows.
 
-Se você estiver executando o Windows 11, o Terminal do Windows já está instalado e você pode prosseguir para a próxima seção: point_down:
+Se você estiver executando o Windows 11, o Terminal do Windows já está instalado e você pode prosseguir para a próxima seção :point_down:
 
 Se você estiver executando o Windows 10, vamos instalar o Windows Terminal, um terminal realmente moderno:
 
@@ -558,7 +558,7 @@ Aqui está uma lista das extensões que você está instalando:
 
 Inicie o VS Code em seu terminal digitando `code` e pressionando `Enter`.
 
-Clique na pequena seta na parte inferior da barra esquerda: point_down:
+Clique na pequena seta na parte inferior da barra esquerda :point_down:
 
 ![VS Code Live Share](images/vscode_live_share.png)
 
@@ -572,9 +572,9 @@ Clique na pequena seta na parte inferior da barra esquerda: point_down:
 
 ## Ferramentas de linha de comando
 
-###Zsh e Git
+### Zsh e Git
 
-Em vez de usar o `bash` [shell] padrão (https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
+Em vez de usar o `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
 
 Também usaremos [`git`](https://git-scm.com/), um software de linha de comando usado para controle de versão.
 
@@ -592,7 +592,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 
 Esses comandos solicitarão sua senha: digite-a.
 
-:aviso: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
+:warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
 
 ### Instalação da CLI do GitHub
 
@@ -646,8 +646,7 @@ No final seu terminal deverá ficar assim:
 
 :heavy_check_mark: Se isso acontecer, você pode continuar :+1:
 
-:x: Caso contrário, por favor ** peça um professor **
-
+:x: Caso contrário, por favor **entre em contato com um professor**
 
 ## Vinculando seu navegador padrão ao Ubuntu
 
@@ -775,13 +774,13 @@ Ele já deve estar instalado no seu computador a partir dos comandos anteriores.
 
 Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
 
-:aviso: **NÃO edite o `email`**
+:warning: **NÃO edite o `email`**
 
 ```bash
 gh auth login -s 'user:email' -w
 ```
 
-gh fará algumas perguntas:
+`gh` fará algumas perguntas:
 
 `What is your preferred protocol for Git operations?` Com as setas, escolha `SSH` e pressione `Enter`. SSH é um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
 
@@ -1070,7 +1069,7 @@ nvm cache clear
 :x: Caso contrário, **entre em contato com um professor**
 
 
-## fio
+## Yarn
 
 [`yarn`](https://yarnpkg.com/) é um gerenciador de pacotes para instalar bibliotecas JavaScript. Vamos instalá-lo:
 
@@ -1173,7 +1172,7 @@ Então corra:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem: +1:
+:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem :+1:
 
 :x: Caso contrário, **entre em contato com um professor**.
 
