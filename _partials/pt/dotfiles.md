@@ -57,7 +57,7 @@ gh api user/emails | jq -r '.[].email'
 
 :x: Caso contrário, [reautentique no GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli) antes de executar este comando :point_up: novamente.
 
-### instalador git
+### Instalador git
 
 Execute o instalador `git`:
 
