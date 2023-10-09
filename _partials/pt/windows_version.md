@@ -13,7 +13,7 @@ Para verificar sua versão do Windows:
 
 :heavy_check_mark: Se as primeiras palavras desta janela forem **Windows 10 ou Windows 11** você está pronto para prosseguir :+1:
 
-:x: Caso contrário, você não poderá prosseguir com esta configuração. Você precisa atualizar para o Windows 10 primeiro: point_down:
+:x: Caso contrário, você não poderá prosseguir com esta configuração. Você precisa atualizar para o Windows 10 primeiro :point_down:
 
 <details>
    <summary>Atualizar para o Windows 10</summary>

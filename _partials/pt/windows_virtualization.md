@@ -11,7 +11,7 @@ Para muitos computadores, este já é o caso. Vamos checar:
 
 ![Gerenciador de tarefas do Windows](images/windows_task_manager.png)
 
-:heavy_check_mark: Se você vir "Virtualização: Ativada", está pronto: +1:
+:heavy_check_mark: Se você vir "Virtualização: Ativada", está pronto :+1:
 
 :x: Se a linha estiver faltando ou se a virtualização estiver desabilitada, por favor **entre em contato com um professor antes de tentar ativar a Virtualização**
 

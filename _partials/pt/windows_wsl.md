@@ -25,7 +25,7 @@ Uma janela de terminal azul aparecerá:
 wsl --install
 ```
 
-:heavy_check_mark: Se o comando foi executado sem nenhum erro, reinicie o computador e continue abaixo:+1:
+:heavy_check_mark: Se o comando foi executado sem nenhum erro, reinicie o computador e continue abaixo :+1:
 
 :x: Se você encontrar uma mensagem de erro (ou se vir algum texto em vermelho na janela), por favor **entre em contato com um professor**
 
@@ -60,7 +60,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-:heavy_check_mark: Se todos os três comandos foram executados sem nenhum erro, reinicie o computador e continue abaixo:+1:
+:heavy_check_mark: Se todos os três comandos foram executados sem nenhum erro, reinicie o computador e continue abaixo :+1:
 
 :x: Se você encontrar uma mensagem de erro (ou se vir algum texto em vermelho na janela), por favor **entre em contato com um professor**
 
@@ -78,7 +78,7 @@ Assim que o computador for reiniciado, precisamos baixar o instalador WSL2.
 
 ![Atualize WSL da versão 1 para 2](images/windows_update_wsl.png)
 
-:heavy_check_mark: Se não encontrou nenhuma mensagem de erro, você está pronto: +1:
+:heavy_check_mark: Se não encontrou nenhuma mensagem de erro, você está pronto :+1:
 
 :x: Se você encontrar o erro "Esta atualização se aplica apenas a máquinas com o subsistema Windows para Linux", **clique com o botão direito** no programa e selecione `uninstall`; você poderá instalá-lo normalmente desta vez.
 
@@ -97,7 +97,7 @@ Na janela que aparece, digite:
 wsl --set-default-version 2
 ```
 
-:heavy_check_mark: Se você vir "A operação foi concluída com sucesso", você pode fechar este terminal e continuar seguindo as instruções abaixo:+1:
+:heavy_check_mark: Se você vir "A operação foi concluída com sucesso", você pode fechar este terminal e continuar seguindo as instruções abaixo :+1:
 
 :x: Se a mensagem que você receber for sobre Virtualização, por favor **entre em contato com um professor**
 
@@ -112,5 +112,5 @@ wsl --set-default-version 2
 
    Siga as etapas descritas [aqui](https://winaero.com/enable-use-hyper-v-windows-10/) até ativar o grupo <strong>Hyper-V</strong>
 
-   :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo: ok_hand:
+   :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo :ok_hand:
 </details>

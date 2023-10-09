@@ -4,7 +4,7 @@
 
 Inicie o VS Code em seu terminal digitando `code` e pressionando `Enter`.
 
-Clique na pequena seta na parte inferior da barra esquerda: point_down:
+Clique na pequena seta na parte inferior da barra esquerda :point_down:
 
 ![VS Code Live Share](images/vscode_live_share.png)
 

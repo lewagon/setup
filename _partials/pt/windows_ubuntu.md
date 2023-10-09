@@ -37,12 +37,12 @@ Assim que a instalação for concluída, o botão `Get` se torna um botão `Open
 ### Executando pela primeira vez
 
 Na primeira execução, serão solicitadas algumas informações:
-- Escolha um nome de usuário**:
+- Escolha um nome de **usuário**:
      - uma palavra
      - minúsculas
      - sem caracteres especiais
      - por exemplo: `lewagon` ou seu `nome`
-- Escolha uma senha**
+- Escolha uma **senha**
 - Confirme sua senha
 
 :warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
@@ -61,7 +61,7 @@ Digite o seguinte comando:
 wsl -l -v
 ```
 
-:heavy_check_mark: Se a versão do Ubuntu WSL for 2, você está pronto: +1:
+:heavy_check_mark: Se a versão do Ubuntu WSL for 2, você está pronto :+1:
 
 :x: Se a versão do Ubuntu WSL for 1, precisaremos convertê-lo para a versão 2.
 

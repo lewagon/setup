@@ -4,7 +4,7 @@
 
 :information_source: As instruções a seguir dependem da sua versão do Windows.
 
-Se você estiver executando o Windows 11, o Terminal do Windows já está instalado e você pode prosseguir para a próxima seção: point_down:
+Se você estiver executando o Windows 11, o Terminal do Windows já está instalado e você pode prosseguir para a próxima seção :point_down:
 
 Se você estiver executando o Windows 10, vamos instalar o Windows Terminal, um terminal realmente moderno:
 

@@ -1,8 +1,8 @@
 ## Ferramentas de linha de comando
 
-###Zsh e Git
+### Zsh e Git
 
-Em vez de usar o `bash` [shell] padrão (https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
+Em vez de usar o `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
 
 Também usaremos [`git`](https://git-scm.com/), um software de linha de comando usado para controle de versão.
 
@@ -20,7 +20,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 
 Esses comandos solicitarão sua senha: digite-a.
 
-:aviso: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
+:warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
 
 ### Instalação da CLI do GitHub
 

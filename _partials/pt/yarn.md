@@ -1,4 +1,4 @@
-## fio
+## Yarn
 
 [`yarn`](https://yarnpkg.com/) é um gerenciador de pacotes para instalar bibliotecas JavaScript. Vamos instalá-lo:
 

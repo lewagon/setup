@@ -16,4 +16,4 @@ No final seu terminal deverá ficar assim:
 
 :heavy_check_mark: Se isso acontecer, você pode continuar :+1:
 
-:x: Caso contrário, por favor ** peça um professor **
+:x: Caso contrário, por favor **entre em contato com um professor**
