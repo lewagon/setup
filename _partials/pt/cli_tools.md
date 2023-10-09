@@ -20,7 +20,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 
 Esses comandos solicitarão sua senha: digite-a.
 
-:aviso: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
+:warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
 
 ### Instalação da CLI do GitHub
 
