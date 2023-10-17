@@ -265,7 +265,7 @@ No final seu terminal deverá ficar assim:
 
 :heavy_check_mark: Se isso acontecer, você pode continuar :+1:
 
-:x: Caso contrário, por favor **peça um professor**
+:x: Caso contrário, por favor **entre em contato com um professor**
 
 
 ## CLI do GitHub
@@ -581,7 +581,7 @@ yarn -v
 
 :heavy_check_mark: Se você vir uma versão, você está bem :+1:
 
-:x: Se não, **peça um professor**
+:x: Se não, **entre em contato com um professor**
 
 
 ## SQLite
@@ -628,7 +628,7 @@ Depois de fazer isso, vamos verificar se funcionou:
 psql -d postgres
 ```
 
-Você deverá ver um novo prompt como este: point_down:
+Você deverá ver um novo prompt como este :point_down:
 
 ```bash
 psql (15.2)
@@ -637,9 +637,9 @@ Type "help" for help.
 postgres=#
 ```
 
-:heavy_check_mark: Se for esse o caso, digite `\q` e depois `Enter` para sair deste prompt. Você está pronto para ir: +1:
+:heavy_check_mark: Se for esse o caso, digite `\q` e depois `Enter` para sair deste prompt. Você está pronto para ir :+1:
 
-:x: Se não, por favor **peça um professor**
+:x: Se não, por favor **entre em contato com um professor**
 
 
 ## Checagem
@@ -658,7 +658,7 @@ Então corra:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem: +1:
+:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem :+1:
 
 :x: Caso contrário, **entre em contato com um professor**.
 
