@@ -13,4 +13,4 @@ Clique na pequena seta na parte inferior da barra esquerda :point_down:
 - Você é redirecionado para uma página do GitHub em seu navegador solicitando autorização do Visual Studio Code: clique em "Continuar" e depois em "Autorizar github".
 - O VS Code pode exibir pop-ups adicionais: feche-os clicando em "OK".
 
-É isso, você está pronto para ir!
+É isso, você está pronto para continuar!

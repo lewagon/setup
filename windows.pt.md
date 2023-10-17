@@ -567,7 +567,7 @@ Clique na pequena seta na parte inferior da barra esquerda :point_down:
 - Você é redirecionado para uma página do GitHub em seu navegador solicitando autorização do Visual Studio Code: clique em "Continuar" e depois em "Autorizar github".
 - O VS Code pode exibir pop-ups adicionais: feche-os clicando em "OK".
 
-É isso, você está pronto para ir!
+É isso, você está pronto para continuar!
 
 
 ## Ferramentas de linha de comando
@@ -647,6 +647,7 @@ No final seu terminal deverá ficar assim:
 :heavy_check_mark: Se isso acontecer, você pode continuar :+1:
 
 :x: Caso contrário, por favor **entre em contato com um professor**
+
 
 ## Vinculando seu navegador padrão ao Ubuntu
 
@@ -875,7 +876,7 @@ gh api user/emails | jq -r '.[].email'
 
 :x: Caso contrário, [reautentique no GitHub](https://github.com/lewagon/setup/blob/master/windows.pt.md#github-cli) antes de executar este comando :point_up: novamente.
 
-### instalador git
+### Instalador git
 
 Execute o instalador `git`:
 
@@ -1091,7 +1092,7 @@ yarn -v
 
 :heavy_check_mark: Se você vir uma versão, você está bem :+1:
 
-:x: Se não, **peça um professor**
+:x: Se não, **entre em contato com um professor**
 
 
 ## SQLite

@@ -137,7 +137,7 @@ Aqui está uma lista das extensões que você está instalando:
 
 Inicie o VS Code em seu terminal digitando `code` e pressionando `Enter`.
 
-Clique na pequena seta na parte inferior da barra esquerda: point_down:
+Clique na pequena seta na parte inferior da barra esquerda :point_down:
 
 ![VS Code Live Share](images/vscode_live_share.png)
 
@@ -146,7 +146,7 @@ Clique na pequena seta na parte inferior da barra esquerda: point_down:
 - Você é redirecionado para uma página do GitHub em seu navegador solicitando autorização do Visual Studio Code: clique em "Continuar" e depois em "Autorizar github".
 - O VS Code pode exibir pop-ups adicionais: feche-os clicando em "OK".
 
-É isso, você está pronto para ir!
+É isso, você está pronto para continuar!
 
 
 ## Ferramentas de linha de comando
@@ -171,7 +171,7 @@ sudo apt install -y curl git imagemagick jq unzip vim zsh tree
 
 Esses comandos solicitarão sua senha: digite-a.
 
-:aviso: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
+:warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
 
 ### Instalação da CLI do GitHub
 
@@ -225,7 +225,7 @@ No final seu terminal deverá ficar assim:
 
 :heavy_check_mark: Se isso acontecer, você pode continuar :+1:
 
-:x: Caso contrário, por favor ** peça um professor **
+:x: Caso contrário, por favor **entre em contato com um professor**
 
 
 ## CLI do GitHub
@@ -238,13 +238,13 @@ Ele já deve estar instalado no seu computador a partir dos comandos anteriores.
 
 Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
 
-:aviso: **NÃO edite o `email`**
+:warning: **NÃO edite o `email`**
 
 ```bash
 gh auth login -s 'user:email' -w
 ```
 
-gh fará algumas perguntas:
+`gh` fará algumas perguntas:
 
 `What is your preferred protocol for Git operations?` Com as setas, escolha `SSH` e pressione `Enter`. SSH é um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
 
@@ -339,7 +339,7 @@ gh api user/emails | jq -r '.[].email'
 
 :x: Caso contrário, [reautentique no GitHub](https://github.com/lewagon/setup/blob/master/ubuntu.pt.md#github-cli) antes de executar este comando :point_up: novamente.
 
-### instalador git
+### Instalador git
 
 Execute o instalador `git`:
 
@@ -533,7 +533,7 @@ nvm cache clear
 :x: Caso contrário, **entre em contato com um professor**
 
 
-## fio
+## Yarn
 
 [`yarn`](https://yarnpkg.com/) é um gerenciador de pacotes para instalar bibliotecas JavaScript. Vamos instalá-lo:
 
@@ -555,7 +555,7 @@ yarn -v
 
 :heavy_check_mark: Se você vir uma versão, você está bem :+1:
 
-:x: Se não, **peça um professor**
+:x: Se não, **entre em contato com um professor**
 
 
 ## SQLite
@@ -612,7 +612,7 @@ Então corra:
 curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb && ruby _.rb && rm _.rb || rm _.rb
 ```
 
-:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem: +1:
+:heavy_check_mark: Se você receber uma mensagem verde `Awesome! Your computer is now ready!`, então você está bem :+1:
 
 :x: Caso contrário, **entre em contato com um professor**.
 

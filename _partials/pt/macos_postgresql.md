@@ -21,7 +21,7 @@ Depois de fazer isso, vamos verificar se funcionou:
 psql -d postgres
 ```
 
-Você deverá ver um novo prompt como este: point_down:
+Você deverá ver um novo prompt como este :point_down:
 
 ```bash
 psql (15.2)
@@ -30,6 +30,6 @@ Type "help" for help.
 postgres=#
 ```
 
-:heavy_check_mark: Se for esse o caso, digite `\q` e depois `Enter` para sair deste prompt. Você está pronto para ir: +1:
+:heavy_check_mark: Se for esse o caso, digite `\q` e depois `Enter` para sair deste prompt. Você está pronto para ir :+1:
 
-:x: Se não, por favor ** peça um professor **
+:x: Se não, por favor **entre em contato com um professor**

@@ -16,6 +16,6 @@ Em seguida, inicie o VS Code executando o seguinte comando em seu terminal:
 code
 ```
 
-:heavy_check_mark: Se uma janela do VS Code acabou de abrir, você está pronto: +1:
+:heavy_check_mark: Se uma janela do VS Code acabou de abrir, você está pronto :+1:
 
 :x: Caso contrário, por favor **entre em contato com um professor**
