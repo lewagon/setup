@@ -8,13 +8,13 @@ Ele já deve estar instalado no seu computador a partir dos comandos anteriores.
 
 Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
 
-:aviso: **NÃO edite o `email`**
+:warning: **NÃO edite o `email`**
 
 ```bash
 gh auth login -s 'user:email' -w
 ```
 
-gh fará algumas perguntas:
+`gh` fará algumas perguntas:
 
 `What is your preferred protocol for Git operations?` Com as setas, escolha `SSH` e pressione `Enter`. SSH é um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
 
