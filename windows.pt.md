@@ -556,7 +556,7 @@ Aqui está uma lista das extensões que você está instalando:
 
 [Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) é uma extensão do VS Code que permite compartilhar o código em seu editor de texto para depuração e programação em pares: vamos configurá-lo acima!
 
-Inicie o VS Code em seu terminal digitando `code` e pressionando `Enter`.
+Inicie o VS Code em seu terminal digitando `code .` e pressionando `Enter`.
 
 Clique na pequena seta na parte inferior da barra esquerda :point_down:
 
