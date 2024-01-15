@@ -1,8 +1,8 @@
 ## Ferramentas de linha de comando
 
-###Zsh e Git
+### Zsh e Git
 
-Em vez de usar o `bash` [shell] padrão (https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
+Em vez de usar o `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.
 
 Também usaremos [`git`](https://git-scm.com/), um software de linha de comando usado para controle de versão.
 
