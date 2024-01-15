@@ -1049,7 +1049,7 @@ nvm -v
 
 Você deverá ver uma versão. Se não, pergunte a um professor.
 
-Agora vamos instalar o nó:
+Agora vamos instalar o Node.js:
 
 ```bash
 nvm install 16.15.1
