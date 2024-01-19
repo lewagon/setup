@@ -55,6 +55,13 @@ gem sources -l
 
 Dans l’environnement ruby, les bibliothèques externes sont appelées des `gems` : ce sont des bouts de code ruby, que tu peux télécharger et exécuter sur ton ordinateur. On va en installer quelques-unes.
 
+Tout d'abord, nous allons mettre à jour `bundler`, ce qui nous permet d'installer des gemmes :
+
+```bash
+gem update bundler
+bundle update --bundler
+```
+
 Copie-colle la commande suivante dans ton terminal :
 
 ```bash
