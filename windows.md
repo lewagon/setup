@@ -1002,6 +1002,13 @@ gem sources -l
 
 In the ruby world, we call external libraries `gems`: they are pieces of ruby code that you can download and execute on your computer. Let's install some!
 
+First, we'll update `bundler`, which is what lets us install gems:
+
+```bash
+gem update bundler
+bundle update --bundler
+```
+
 In your terminal, copy-paste the following command:
 
 ```bash

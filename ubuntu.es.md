@@ -425,6 +425,13 @@ gem sources -l
 
 En el universo de ruby, a las librerías externas se les llama `gems`: son pedazos de código ruby que puedes descargar y ejecutar en tu computadora. ¡Instalemos algunas!
 
+Primero, vamos a actualizar `bundler`, que es lo que nos permite instalar gemas:
+
+```bash
+gem update bundler
+bundle update --bundler
+```
+
 En tu terminal, copia y pega el siguiente comando:
 
 ```bash

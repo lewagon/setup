@@ -400,6 +400,13 @@ gem sources -l
 
 在ruby的世界里，我们将外部的库称之为`gems`：他们是一些你可以下载并在你的电脑上运行的ruby代码。让我们一起安装一些!
 
+首先，我们将更新`bundler`，它是用于安装 gem 的工具：
+
+```bash
+gem update bundler
+bundle update --bundler
+```
+
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
