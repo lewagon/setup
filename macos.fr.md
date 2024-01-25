@@ -452,6 +452,7 @@ Tout d'abord, nous allons mettre à jour `bundler`, ce qui nous permet d'install
 
 ```bash
 gem update bundler
+bundle update --bundler
 ```
 
 Copie-colle la commande suivante dans ton terminal :
