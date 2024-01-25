@@ -428,7 +428,6 @@ gem sources -l
 
 ```bash
 gem update bundler
-bundle update --bundler
 ```
 
 在你的终端里，复制粘贴下面的指令：
