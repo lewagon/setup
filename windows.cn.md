@@ -1080,7 +1080,7 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 打开一个新的终端。
 
-:heavy_check_mark: 如果你看到一行字说`* Starting PostgreSQL 12 database server`，那你就可以进行下一步了 :+1:
+:heavy_check_mark: 如果你看到一行字说`* Starting postgresql (via systemctl): postgresql.service`，那你就可以进行下一步了 :+1:
 
 :x: 如果没有的话， **请让老师来帮助你**。
 
