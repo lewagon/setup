@@ -59,7 +59,6 @@ First, we'll update `bundler`, which is what lets us install gems:
 
 ```bash
 gem update bundler
-bundle update --bundler
 ```
 
 In your terminal, copy-paste the following command:
