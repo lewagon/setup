@@ -429,7 +429,6 @@ Primero, vamos a actualizar `bundler`, que es lo que nos permite instalar gemas:
 
 ```bash
 gem update bundler
-bundle update --bundler
 ```
 
 En tu terminal, copia y pega el siguiente comando:
