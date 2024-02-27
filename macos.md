@@ -499,7 +499,7 @@ gem update bundler
 In your terminal, copy-paste the following command:
 
 ```bash
-gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
+gem install colorize faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
 ```
 
 :heavy_check_mark: If you get `xx gems installed`, then all good :+1:
