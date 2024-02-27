@@ -429,7 +429,7 @@ exec zsh
 Then run:
 
 ```bash
-brew install rbenv
+brew install rbenv libyaml
 ```
 
 
