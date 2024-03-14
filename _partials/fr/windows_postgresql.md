@@ -34,6 +34,6 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 Ouvre un nouveau terminal.
 
-:heavy_check_mark: Si tu vois apparaître le message `* Starting postgresql (via systemctl): postgresql.service`, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître le message `* Starting postgresql (via systemctl): postgresql.service` OU `* Starting PostgreSQL 14 database server`, c’est bon :+1:
 
 :x: Sinon, **demande au prof**.
