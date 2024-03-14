@@ -18,7 +18,7 @@ sudo /etc/init.d/postgresql start
 sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
-Você pode configurar o PostgreSQL para inicialização automática, para que não precise executar `sudo /etc/init.d/postgresql start` OU `* Starting PostgreSQL 14 database server` cada vez que abrir um novo terminal:
+Você pode configurar o PostgreSQL para inicialização automática, para que não precise executar `sudo /etc/init.d/postgresql start` cada vez que abrir um novo terminal:
 
 ```bash
 sudo echo "`whoami` ALL=NOPASSWD:/etc/init.d/postgresql start" | sudo tee /etc/sudoers.d/postgresql
@@ -34,6 +34,6 @@ echo "sudo /etc/init.d/postgresql start" >> ~/.zshrc
 
 Abra um novo terminal.
 
-:heavy_check_mark: Se você vir uma mensagem `* Starting postgresql (via systemctl): postgresql.service`, você está pronto para prosseguir :+1:
+:heavy_check_mark: Se você vir uma mensagem `* Starting postgresql (via systemctl): postgresql.service` OU `* Starting PostgreSQL 14 database server`, você está pronto para prosseguir :+1:
 
 :x: Caso contrário, **entre em contato com um professor**.
