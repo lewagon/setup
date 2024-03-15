@@ -396,6 +396,20 @@ Se a saída não contiver `LANG=en_US.UTF-8`, execute o seguinte comando em um t
 sudo locale-gen en_US.UTF-8
 ```
 
+Se, depois, receberes um aviso (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) no teu terminal, por favor faz o seguinte:
+
+<details>
+  <summary>Gerar localidade</summary>
+
+Por favor, executa estas linhas no teu terminal.
+
+```bash
+sudo update-locale LANG=en_US.UTF8
+sudo apt-get install language-pack-en language-pack-en-base manpages
+exec zsh
+```
+</details>
+
 Agora você pode fechar esta janela do terminal.
 
 
