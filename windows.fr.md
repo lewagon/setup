@@ -402,8 +402,8 @@ Veuillez exécuter ces lignes dans ton terminal.
 
 ```bash
 sudo update-locale LANG=en_US.UTF8
+sudo apt-get update
 sudo apt-get install language-pack-en language-pack-en-base manpages
-exec zsh
 ```
 </details>
 
