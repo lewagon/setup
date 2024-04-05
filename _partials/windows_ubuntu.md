@@ -120,9 +120,9 @@ If after, you receive a warning (`bash: warning: setlocale: LC_ALL: cannot chang
 Please, run this lines in your terminal.
 
 ```bash
+sudo apt-get update
 sudo update-locale LANG=en_US.UTF8
 sudo apt-get install language-pack-en language-pack-en-base manpages
-exec zsh
 ```
 </details>
 
