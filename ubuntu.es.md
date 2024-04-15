@@ -46,6 +46,8 @@ Ya puedes cerrar la aplicación Zoom.
 
 ![Foto GitHub](images/github_picture.png)
 
+:point_right: **[Habilita la Autenticación de Dos Factores (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub te enviará mensajes de texto con un código cuando intentes iniciar sesión. Esto es importante para la seguridad y también pronto será necesario para contribuir código en GitHub.
+
 
 ## Visual Studio Code
 
