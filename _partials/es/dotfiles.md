@@ -53,7 +53,7 @@ Ejecuta el instalador de `git`:
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: Esto te **pedirá** tu nombre (`FirstName LastName`) y tu email.
+:point_up: Esto te **pedirá** tu nombre (`FirstName LastName`) y tu email. Cualquier correo que elijas se mostrará **públicamente** en internet. GitHub genera automáticamente una dirección para ti como `123098213+USERNAME@users.noreply.github.com`, así que debes elegir este correo si no quieres que tu dirección de correo real sea pública.
 
 :warning: **Necesitas** poner uno de los emails que aparecen arriba gracias al comando anterior `gh api ...`. De lo contrario, Kitt no podrá hacerle seguimiento a tu progreso.
 

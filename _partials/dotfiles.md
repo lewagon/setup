@@ -67,7 +67,8 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :point_up: This will **prompt** you for your name (`FirstName LastName`) and your email.
 
-:warning: You **need** to put one of the email listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress.
+:warning: You **need** to put one of the emails listed above thanks to the previous `gh api ...` command. If you don't do that, Kitt won't be able to track your progress. Whichever email you pick will be shown **publicly** on the internet. GitHub automatically generates an address for you like `123098213+USERNAME@users.noreply.github.com`, so you should choose this email if you do not want your real email address to be public.
+
 
 Please now **reset** your terminal by running:
 
