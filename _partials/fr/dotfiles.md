@@ -55,7 +55,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :point_up: On te **demandera** de fournir ton nom (`FirstName LastName`) et ton adresse e-mail.
 
-:warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès. L'email que tu choisis sera affiché **publiquement** sur internet. GitHub génère automatiquement une adresse pour toi comme `123098213+USERNAME@users.noreply.github.com`, tu devrais choisir cet email si tu ne veux pas que ton adresse email réelle soit publique.
+:warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès. 💡 Sélectionnez l'adresse `@users.noreply.github.com` si vous ne souhaitez pas que votre adresse e-mail apparaisse dans les dépôts publics auxquels vous pourriez contribuer.
 
 **Réinitialise** ton terminal en exécutant :
 
