@@ -65,7 +65,7 @@ Execute o instalador `git`:
 cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 ```
 
-:point_up: Isso **solicitará** seu nome (`Nome Sobrenome`) e seu e-mail.
+:point_up: Isso **solicitará** seu nome (`Nome Sobrenome`) e seu e-mail. O email que você escolher será exibido **publicamente** na internet. 💡 Selecione o endereço `@users.noreply.github.com` se você não deseja que seu e-mail apareça em repositórios públicos aos quais você possa contribuir.
 
 :warning: Você **precisa** colocar um dos e-mails listados acima graças ao comando anterior `gh api ...`. Se você não fizer isso, Kitt não conseguirá acompanhar seu progresso.
 
