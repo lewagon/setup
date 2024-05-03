@@ -335,7 +335,7 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :point_up: 这会**提示**填写你的全名（`FirstName LastName`）和你的邮箱。
 
-:warning: 注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。
+:warning: 注意啦，你**需要**填`gh api ...`命令列出的其中一个电子邮箱。不然，Kitt就没办法跟进你的学习进程。 你选择的电子邮件将**公开**显示在互联网上。💡 如果您不希望您的电子邮件出现在您可能会贡献的公共存储库中，请选择 `@users.noreply.github.com` 地址。
 
 现在运行下面的命令来**重置**你的终端：
 
