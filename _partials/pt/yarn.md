@@ -5,12 +5,16 @@
 Em um terminal, execute os seguintes comandos:
 
 ```bash
-npm install --global yarn
+corepack enable
+yarn set version stable
+yarn install
 ```
 
 ```bash
 exec zsh
 ```
+
+⚠️ Se vires quaisquer mensagens de erro, tenta executar `npm install -g corepack` e, em seguida, volta a executar os comandos acima.
 
 Em seguida, execute o seguinte comando:
 
