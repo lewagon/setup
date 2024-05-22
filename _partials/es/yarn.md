@@ -7,7 +7,6 @@ En una terminal, ejecuta los siguientes comandos:
 ```bash
 corepack enable
 yarn set version stable
-yarn install
 ```
 
 ```bash

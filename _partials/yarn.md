@@ -7,7 +7,6 @@ In a terminal, run the following commands:
 ```bash
 corepack enable
 yarn set version stable
-yarn install
 ```
 
 ⚠️ If you see any error messages, try running `npm install -g corepack` and then run the commands above again.
