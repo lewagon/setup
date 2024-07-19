@@ -5,7 +5,7 @@ Em algumas semanas falaremos sobre bancos de dados e SQL. [SQLite](https://sqlit
 Em um terminal, execute os seguintes comandos:
 
 ```bash
-sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install sqlite3 libsqlite3-dev pkg-config
 ```
 
 Em seguida, execute o seguinte comando:
