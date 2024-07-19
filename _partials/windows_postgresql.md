@@ -18,12 +18,7 @@ sudo /etc/init.d/postgresql start
 sudo -u postgres psql --command "CREATE ROLE \"`whoami`\" LOGIN createdb superuser;"
 ```
 
-<details>
-
-If you get an error saying `could not change directory to "/home/your_name": Permission denied` that is fine.
-If on the first run it says `CREATE ROLE` in the end all worked fine.
-
-</details>
+_📝 If you get an error saying `could not change directory to "/home/your_name": Permission denied` that is totally fine, and there's no need to worry 💆 If, on the first run, it says `CREATE ROLE` in the end all worked fine._
 
 You can configure PostgreSQL to autostart, so you don't have to execute `sudo /etc/init.d/postgresql start` each time you open a new terminal:
 
