@@ -1061,7 +1061,7 @@ Dans quelques semaines, on abordera les bases de données et le SQL. [SQLite](ht
 Dans un terminal, exécute la commande suivante :
 
 ```bash
-sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install sqlite3 libsqlite3-dev pkg-config
 ```
 
 Puis exécute celle-ci :

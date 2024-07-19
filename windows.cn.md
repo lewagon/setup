@@ -1031,7 +1031,7 @@ yarn -v
 在终端，执行下面的命令：
 
 ```bash
-sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install sqlite3 libsqlite3-dev pkg-config
 ```
 
 然后执行下面的命令：

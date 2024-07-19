@@ -574,7 +574,7 @@ In a few weeks, we'll talk about databases and SQL. [SQLite](https://sqlite.org/
 In a terminal, execute the following commands:
 
 ```bash
-sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install sqlite3 libsqlite3-dev pkg-config
 ```
 
 Then run the following command:
