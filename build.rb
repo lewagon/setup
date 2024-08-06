@@ -23,7 +23,6 @@ MACOS = %w[
   macos_rbenv
   ruby
   nvm
-  yarn
   macos_sqlite
   macos_postgresql
   checkup
@@ -54,7 +53,6 @@ WINDOWS = %w[
   rbenv
   ruby
   nvm
-  yarn
   sqlite
   windows_postgresql
   checkup
@@ -79,7 +77,6 @@ UBUNTU = %w[
   rbenv
   ruby
   nvm
-  yarn
   sqlite
   ubuntu_postgresql
   checkup
