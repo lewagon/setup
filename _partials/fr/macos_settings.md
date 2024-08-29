@@ -2,9 +2,9 @@
 
 ### Sécurité
 
-Tu dois obligatoirement protéger ta session avec un mot de passe. Si ce n’est pas déjà le cas, va dans ` > Préférences système > Utilisateurs & groupes` et modifie le mot de passe de ton compte. Va aussi dans ` > Préférences système > Sécurité > Général` et configure la sécurité de façon à ce que ton mot de passe te soit demandé `5 secondes` après la mise en veille ou le démarrage de l’économiseur d’écran.
+Tu dois obligatoirement protéger ta session avec un mot de passe. Si ce n’est pas déjà le cas, va dans ` > Réglages Système > Utilisateurs & groupes` et modifie le mot de passe de ton compte. Va aussi dans ` > Réglages Système > Sécurité > Général` et configure la sécurité de façon à ce que ton mot de passe te soit demandé `5 secondes` après la mise en veille ou le démarrage de l’économiseur d’écran.
 
-Tu peux également aller dans ` > Préférences système > Mission Control` et cliquer sur le bouton `Hot Corners` en bas à gauche. Choisis le coin inférieur droit pour démarrer l’économiseur d’écran. De cette façon, lorsque tu quitteras ton bureau, tu pourras rapidement verrouiller ton écran en plaçant ta souris dans le coin inférieur droit. Cinq secondes plus tard, ton Mac sera verrouillé et tu devras fournir ton mot de passe pour accéder à ta session.
+Tu peux également aller dans ` > Réglages Système > Bureau et Dock` et cliquer sur le bouton `coins actifs (Hot Corners)` en bas à gauche. Choisis le coin inférieur droit pour démarrer l’économiseur d’écran. De cette façon, lorsque tu quitteras ton bureau, tu pourras rapidement verrouiller ton écran en plaçant ta souris dans le coin inférieur droit. Cinq secondes plus tard, ton Mac sera verrouillé et tu devras fournir ton mot de passe pour accéder à ta session.
 
 ### Clavier
 
@@ -12,7 +12,7 @@ Au fur et à mesure de ta formation de programmeur, tu comprendras que quitter l
 
 #### Vitesse du clavier
 
-Va dans ` > Préférences système > Clavier`. Définis `Répétition de touches` sur la position la plus rapide (à droite) et `Pause avant répétition` sur la position la plus courte (à droite).
+Va dans ` > Réglages Système > Clavier`. Définis `Vitesse de répétition des touches` sur la position la plus rapide (à droite) et `Pause avant répétition` sur la position la plus courte (à droite).
 
 #### macOS pour les hackers
 
