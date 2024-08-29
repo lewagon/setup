@@ -723,9 +723,9 @@ Você também pode instalar o aplicativo Slack no seu telefone e entrar em `lewa
 
 ### Segurança
 
-É obrigatório que você proteja sua sessão com uma senha. Se ainda não for o caso, vá para ` > Preferências do Sistema > Usuários e Grupos` e altere a senha da sua conta. Você também deve ir para ` > Preferências do Sistema > Segurança > Geral`. Você deve exigir uma senha `5 segundos` após o início da suspensão ou da proteção de tela.
+É obrigatório que você proteja sua sessão com uma senha. Se ainda não for o caso, vá para ` > Ajustes do Sistema > Usuários e Grupos` e altere a senha da sua conta. Você também deve ir para ` > Ajustes do Sistema > Segurança > Geral`. Você deve exigir uma senha `5 segundos` após o início da suspensão ou da proteção de tela.
 
-Você também pode ir para ` > Preferências do Sistema > Controle da Missão` e clicar no botão `Hot Corners` no canto inferior esquerdo. Escolha no canto inferior direito para iniciar o protetor de tela. Dessa forma, ao sair da mesa, você pode bloquear rapidamente a tela colocando o mouse no canto inferior direito. 5 segundos depois, seu Macbook estará bloqueado e solicitará uma senha para voltar à sessão.
+Você também pode ir para ` > Ajustes do Sistema > Controle daVelocidade de repetição de teclaVelocidade de repetição de Escritorio y Dock` e clicar no botão `cantos de acesso rápido (Hot Corners)` no canto inferior esquerdo. Escolha no canto inferior direito para iniciar o protetor de tela. Dessa forma, ao sair da mesa, você pode bloquear rapidamente a tela colocando o mouse no canto inferior direito. 5 segundos depois, seu MacBook estará bloqueado e solicitará uma senha para voltar à sessão.
 
 ### Teclado
 
@@ -733,7 +733,7 @@ Ao se tornar um programador, você entenderá que deixar o teclado leva muito te
 
 #### Velocidade do teclado
 
-Vá para ` > Preferências do Sistema > Teclado`. Defina `Key Repeat` para a posição mais rápida (à direita) e `Delay Until Repeat` para a posição mais curta (à direita).
+Vá para ` > Preferências do Sistema > Teclado`. Defina `Velocidade de repetição de tecla` para a posição mais rápida (à direita) e `Atraso da repetição` para a posição mais curta (à direita).
 
 #### macOS Para hackers
 
