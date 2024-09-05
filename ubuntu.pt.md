@@ -469,7 +469,7 @@ No mundo Ruby, chamamos bibliotecas externas de `gems`: são pedaços de código
 No seu terminal, copie e cole o seguinte comando:
 
 ```bash
-gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3:1.7.3 activerecord:7.1.3.2
+gem install colored faker http pry-byebug rake rails:7.1.3.4 rest-client rspec rubocop-performance sqlite3:1.7.3 activerecord:7.1.3.2
 ```
 
 :heavy_check_mark: Se você tiver `xx gems installed`, então tudo bem :+1:
