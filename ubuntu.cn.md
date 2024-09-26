@@ -479,8 +479,15 @@ nvm cache clear
 让我们一起来安装[`yarn`](https://classic.yarnpkg.com/en/docs/install):
 
 ```bash
-npm install --global yarn
+corepack enable
+yarn set version stable
 ```
+
+```bash
+exec zsh
+```
+
+⚠️ 如果你看到任何错误信息，请尝试运行 `npm install -g corepack` 然后再次运行上面的命令。
 
 重启终端并运行：
 

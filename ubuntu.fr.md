@@ -506,9 +506,15 @@ nvm cache clear
 Exécute les commandes suivantes dans le terminal :
 
 ```bash
-npm install --global yarn
+corepack enable
+yarn set version stable
+```
+
+```bash
 exec zsh
 ```
+
+⚠️ Si tu rencontres des messages d'erreur, essaye d'exécuter `npm install -g corepack` puis exécute à nouveau les commandes ci-dessus.
 
 Puis exécute la commande suivante :
 
