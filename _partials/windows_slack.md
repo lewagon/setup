@@ -1,6 +1,6 @@
 ## Slack
 
-[Slack](https://slack.com/) is a communcation platform pretty popular in the tech industry.
+[Slack](https://slack.com/) is a communication platform pretty popular in the tech industry.
 
 ### Installation
 
