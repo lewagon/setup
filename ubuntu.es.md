@@ -380,13 +380,13 @@ Ahora estás listo para instalar la última versión de [ruby](https://www.ruby-
 Corre este comando, **tomará un tiempo (5-10 minutos)**
 
 ```bash
-rbenv install 3.1.2
+rbenv install 3.3.5
 ```
 
-Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.1.2 por defecto.
+Cuando la instalación de ruby termine, corre este comando para decirle al sistema que use la versión 3.3.5 por defecto.
 
 ```bash
-rbenv global 3.1.2
+rbenv global 3.3.5
 ```
 
 **Reinicia** tu terminal y chequea tu versión Ruby:
@@ -401,7 +401,7 @@ Luego ejecuta esto:
 ruby -v
 ```
 
-:heavy_check_mark: Si ves algo que comience por `ruby 3.1.2p`, entonces puedes continuar +1:
+:heavy_check_mark: Si ves algo que comience por `ruby 3.3.5p`, entonces puedes continuar +1:
 
 :x: Si no es el caso, **pídele ayuda a un profesor**.
 
