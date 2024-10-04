@@ -524,7 +524,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install 16.15.1
+nvm install 20.17.0
 ```
 
 When the installation is finished, run:
@@ -533,7 +533,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v16.15.1`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v20.17.0`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear

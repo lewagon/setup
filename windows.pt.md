@@ -1068,7 +1068,7 @@ Você deverá ver uma versão. Se não, pergunte a um professor.
 Agora vamos instalar o Node.js:
 
 ```bash
-nvm install 16.15.1
+nvm install 20.17.0
 ```
 
 Quando a instalação terminar, execute:
@@ -1077,7 +1077,7 @@ Quando a instalação terminar, execute:
 node -v
 ```
 
-Se você vir `v16.15.1`, a instalação foi bem-sucedida :heavy_check_mark: Você pode então executar:
+Se você vir `v20.17.0`, a instalação foi bem-sucedida :heavy_check_mark: Você pode então executar:
 
 ```bash
 nvm cache clear

@@ -480,7 +480,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install 16.15.1
+nvm install 20.17.0
 ```
 
 当这个指令执行结束之后，运行：
@@ -489,7 +489,7 @@ nvm install 16.15.1
 node -v
 ```
 
-如果看到`v16.15.1`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
+如果看到`v20.17.0`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
 ```bash
 nvm cache clear
