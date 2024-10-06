@@ -1,7 +1,7 @@
 require "io/console"
 require "json"
 
-REQUIRED_RUBY_VERSION = "3.1.2"
+REQUIRED_RUBY_VERSION = "3.3.5"
 REQUIRED_GIT_VERSION = "2.0"
 REQUIRED_GEMS = %w[colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3]
 MINIMUM_AVATAR_SIZE = 2 * 1024
