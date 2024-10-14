@@ -911,7 +911,7 @@ exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby 3.3.5p`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby 3.3.5`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
