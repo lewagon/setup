@@ -934,7 +934,7 @@ Puis exécute :
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.3.5p`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby 3.3.5`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 

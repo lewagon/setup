@@ -466,7 +466,7 @@ Então corra:
 ruby -v
 ```
 
-:heavy_check_mark: Se você vir algo começando com `ruby 3.3.5p` então você pode prosseguir :+1:
+:heavy_check_mark: Se você vir algo começando com `ruby 3.3.5` então você pode prosseguir :+1:
 
 :x: Se não, **pergunte a um professor**
 
