@@ -6,8 +6,10 @@
 
 Si estás utilizando Windows 11, la terminal de Windows ya está instalada y puedes ir a la siguiente sección :point_down:
 
+Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal moderna.
 
-Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal moderna:
+<details>
+<summary>**Windows 10**: Instalar Windows Terminal</summary>
 
 - Haz clic en `Start`
 - Escribe `Microsoft Store`
@@ -31,6 +33,8 @@ Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal
 </details>
 
 Cuando termine la instalación, el botón `Install` se transformará en un botón `Launch`: haz clic en él.
+
+</details>
 
 ### Ubuntu como terminal predeterminada
 

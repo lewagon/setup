@@ -11,25 +11,16 @@ Pour connaître ta version de Windows :
 - Saisis `winver`
 - Appuie sur `Enter`
 
-:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10 ou Windows 11**, c’est bon :+1:
+:heavy_check_mark: Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 11**, c’est bon :+1:
 
-:x: Sinon, tu ne pourras pas utiliser cette configuration. Il faut que tu mettes à jour ton Windows à la version 10 :point_down:
+Si les premiers mots qui apparaissent dans cette fenêtre sont **Windows 10**, vérifie numéro de version:
+
+:heavy_check_mark: Si la version indique au moins `2004`, c’est bon :+1:
+
+:x: Sinon, il faut que tu mettes à jour ton Windows.
 
 <details>
-  <summary>Mise à niveau vers Windows 10</summary>
-
-  - Télécharge Windows 10 depuis [Microsoft](https://www.microsoft.com/fr-fr/software-download/windows10)
-  - Installe-le. L’installation devrait prendre une heure environ, mais cela dépend de ton ordinateur
-  - Une fois l’installation terminée, exécute les commandes ci-dessus pour vérifier que tu es sous **Windows 10**
-</details>
-
-:information_source: [La mise à jour Windows 11 est toujours en cours de déploiement](https://www.microsoft.com/en-us/windows/get-windows-11), ce qui signifie qu'elle peut être disponible, ou pas, pour ton ordinateur.
-
-:warning: **Si tu as Windows 10 installé, tu n'as pas besoin de faire la mise à jour Windows 11 pour continuer cette configuration**.
-
-### Dernières mises à jour
-
-Une fois que tu as vérifié que tu utilises Windows 10 ou 11, tu vas devoir installer les dernières mises à jour.
+  <summary> Dernières mises à jour</summary>
 
 Ouvre Windows Update :
 - Appuie sur `Windows` + `R`
@@ -57,16 +48,15 @@ Ouvre Windows Update :
   On va maintenant réessayer d’effectuer les mises à jour.
 </details>
 
-### Version minimum
-
-Certains des outils qu’on doit installer sont compatibles avec la version `1903` **ou une version ultérieure** de Windows 10 ; on doit donc vérifier que tu as bien cette version au minimum.
+Vérifie le numéro de version :
 
 - Appuie sur `Windows` + `R`
 - Saisis `winver`
 - Appuie sur `Enter`
 
-Vérifie le **numéro de version** :
 
 :heavy_check_mark: Si la version indique au moins `1903`, c’est bon :+1:
 
 :x: S’il s’agit d’une version antérieure, **demande au prof**.
+
+</details>
