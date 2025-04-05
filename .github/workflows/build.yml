@@ -1,6 +1,8 @@
 name: Build setup guides
 on:
   push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
