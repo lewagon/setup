@@ -1,13 +1,6 @@
 name: Build setup guides
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    types: [opened, synchronize]
-    branches:
-      - "master*"
-      - "main*"
 jobs:
   build:
     runs-on: ubuntu-latest
