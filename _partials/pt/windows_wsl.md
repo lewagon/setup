@@ -2,21 +2,17 @@
 
 WSL é o ambiente de desenvolvimento que usamos para executar o Ubuntu. Você pode aprender mais sobre WSL [aqui](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-:information_source: As instruções a seguir dependem da sua versão do Windows. Por favor, execute apenas as instruções correspondentes à sua versão :point_down:
+Instalaremos o WSL 2 e o Ubuntu em um comando através do Windows Command Prompt.
 
-### Windows 11
-
-Se você estiver executando o Windows 11, instalaremos o WSL 2 e o Ubuntu em um comando através do Terminal do Windows.
-
-:warning: Nas instruções a seguir, esteja ciente do pressionamento de tecla `Ctrl` + `Shift` + `Enter` para executar o **Terminal Windows** com privilégios de administrador em vez de apenas clicar em `Ok` ou pressionar `Enter` .
+:warning: Nas instruções a seguir, esteja ciente do pressionamento de tecla `Ctrl` + `Shift` + `Enter` para executar o **Windows Command Prompt** com privilégios de administrador em vez de apenas clicar em `Ok` ou pressionar `Enter` .
 
 - Pressione `Windows` + `R`
-- Digite `wt`
+- Digite `cmd`
 - Pressione **`Ctrl` + `Shift` + `Enter`**
 
 :warning: Você pode ter que aceitar a confirmação do UAC sobre a elevação de privilégio.
 
-Uma janela de terminal azul aparecerá:
+Uma janela de terminal aparecerá:
 - Copie o seguinte comando (`Ctrl` + `C`)
 - Cole-o na janela do terminal (`Ctrl` + `V` ou clicando com o botão direito na janela)
 - Execute-o pressionando `Enter`
@@ -29,11 +25,10 @@ wsl --install
 
 :x: Se você encontrar uma mensagem de erro (ou se vir algum texto em vermelho na janela), por favor **entre em contato com um professor**
 
-### Windows 10
+<details>
+<summary>Solução de problemas para Windows 10 (apenas se necessário, consulte um professor)</summary>
 
-#### Instale o WSL 1
-
-Se você estiver executando o Windows 10, primeiro instalaremos o WSL 1 por meio do Terminal PowerShell.
+#### Para Windows 10 < 2004: instale o WSL 1 primeiro
 
 :warning: Nas instruções a seguir, esteja ciente do pressionamento de tecla `Ctrl` + `Shift` + `Enter` para executar o **Windows PowerShell** com privilégios de administrador em vez de apenas clicar em `Ok` ou pressionar `Enter` .
 
@@ -64,7 +59,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 :x: Se você encontrar uma mensagem de erro (ou se vir algum texto em vermelho na janela), por favor **entre em contato com um professor**
 
-#### Atualizar para WSL 2
+#### Para Windows 10 com WSL 1: Atualizar para WSL 2
 
 Se você estiver executando o Windows 10, atualizaremos o WSL para a versão 2.
 
@@ -82,7 +77,7 @@ Assim que o computador for reiniciado, precisamos baixar o instalador WSL2.
 
 :x: Se você encontrar o erro "Esta atualização se aplica apenas a máquinas com o subsistema Windows para Linux", **clique com o botão direito** no programa e selecione `uninstall`; você poderá instalá-lo normalmente desta vez.
 
-#### Torne o WSL 2 o subsistema Windows padrão para Linux
+#### Para Windows 10 com WSL 1: Torne o WSL 2 o subsistema Windows padrão para Linux
 
 Se você estiver executando o Windows 10, definiremos a versão padrão do WSL como 2.
 
@@ -113,4 +108,6 @@ wsl --set-default-version 2
    Siga as etapas descritas [aqui](https://winaero.com/enable-use-hyper-v-windows-10/) até ativar o grupo <strong>Hyper-V</strong>
 
    :information_source: Se você estiver executando o Windows 10 **Home edition**, o recurso Hyper-V não estará disponível para o seu sistema operacional. Não bloqueia e você ainda pode continuar seguindo as instruções abaixo :ok_hand:
+</details>
+
 </details>

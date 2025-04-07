@@ -2,13 +2,13 @@
 
 ### Installation
 
-:information_source: The following instructions depend on your version of Windows. Please execute only the instructions corresponding to your version :point_down:
+After restarting you computer, you should see a terminal window saying WSL is resuming the Ubuntu installation process. When it's done, Ubuntu will be launched.
 
-#### Windows 11
+<details>
+<summary>Troubleshooting for Windows 10 (only if needed, check with a TA)
+</summary>
 
-If you are running Windows 11, after restarting you computer, you should see a terminal window saying WSL is resuming the Ubuntu installation process. When it's done, Ubuntu will be launched.
-
-#### Windows 10
+If the Ubuntu installation did not resume, first try it again: launch Powershell or the Command Prompt again and run `wsl --install` again.
 
 If you are running Windows 10, let's install Ubuntu throught the Microsoft Store:
 
@@ -34,6 +34,8 @@ If you are running Windows 10, let's install Ubuntu throught the Microsoft Store
 
 Once the installation is finished, the `Get` button becomes a `Open` button: click on it.
 
+</details>
+
 ### First launch
 
 At first launch, you will be asked some information:
@@ -47,7 +49,6 @@ At first launch, you will be asked some information:
 
 :warning: When you type your password, nothing will show up on the screen, **that's normal**. This is a security feature to mask not only your password as a whole but also its length. Just type your password and when you're done, press `Enter`.
 
-You can close the Ubuntu window now that it is installed on your computer.
 
 ### Check the WSL version of Ubuntu
 
@@ -77,7 +78,6 @@ wsl -l -v
   :heavy_check_mark: After a few seconds, you should get the following message: `The conversion is complete`.
 
   :x: If it does not work, we need to be sure that Ubuntu files are not compressed.
-</details>
 
 <details>
   <summary>Check for Uncompressed Files</summary>
@@ -95,6 +95,22 @@ wsl -l -v
 
   :x: If the conversion still does not work, please **contact a teacher**.
 </details>
+
+You can close this terminal now.
+
+</details>
+
+### Check your username
+
+Type this in the Ubuntu terminal:
+
+```bash
+whoami
+```
+
+It should return the username you chose before.
+
+:x: It if says `root`, **contact a TA** before continuing!
 
 ### Check the locale
 
@@ -125,5 +141,3 @@ sudo apt-get update
 sudo apt-get install language-pack-en language-pack-en-base manpages
 ```
 </details>
-
-You can now close this terminal window.

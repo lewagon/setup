@@ -6,7 +6,10 @@
 
 Se você estiver executando o Windows 11, o Terminal do Windows já está instalado e você pode prosseguir para a próxima seção :point_down:
 
-Se você estiver executando o Windows 10, vamos instalar o Windows Terminal, um terminal realmente moderno:
+Se você estiver executando o Windows 10, vamos instalar o Windows Terminal, um terminal realmente moderno.
+
+<details>
+<summary><strong>Windows 10</strong>: Instalar Windows Terminal</summary>
 
 - Clique em `Iniciar`
 - Digite `Microsoft Store`
@@ -30,6 +33,8 @@ Se você estiver executando o Windows 10, vamos instalar o Windows Terminal, um 
 </details>
 
 Assim que a instalação for concluída, o botão `Instalar` se torna um botão `Iniciar`: clique nele.
+
+</details>
 
 ### Ubuntu como terminal padrão
 

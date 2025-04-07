@@ -2,13 +2,12 @@
 
 ### Instalação
 
-:information_source: As instruções a seguir dependem da sua versão do Windows. Por favor, execute apenas as instruções correspondentes à sua versão :point_down:
+Após reiniciar o computador, você deverá ver uma janela de terminal informando que o WSL está retomando o processo de instalação do Ubuntu. Quando terminar, o Ubuntu será lançado.
 
-#### Windows 11
+<details>
+<summary>Solução de problemas para Windows 10 (apenas se necessário, consulte um TA)</summary>
 
-Se você estiver executando o Windows 11, após reiniciar o computador, você deverá ver uma janela de terminal informando que o WSL está retomando o processo de instalação do Ubuntu. Quando terminar, o Ubuntu será lançado.
-
-#### Windows 10
+Se a instalação do Ubuntu não foi retomada, tente novamente: abra o Powershell ou o Prompt de Comando e execute `wsl --install` novamente.
 
 Se você estiver executando o Windows 10, vamos instalar o Ubuntu através da Microsoft Store:
 
@@ -96,6 +95,23 @@ wsl -l -v
    :x: Se a conversão ainda não funcionar, por favor **entre em contato com um professor**.
 </details>
 
+Agora você pode fechar esta janela do terminal.
+
+</details>
+
+### Check your username
+
+Type this in the Ubuntu terminal:
+
+```bash
+whoami
+```
+
+It should return the username you chose before.
+
+:x: It if says `root`, **contact a TA** before continuing!
+
+
 ### Verifique a localidade
 
 A localidade é um mecanismo que permite personalizar programas de acordo com seu idioma e país.
@@ -125,5 +141,3 @@ sudo apt-get update
 sudo apt-get install language-pack-en language-pack-en-base manpages
 ```
 </details>
-
-Agora você pode fechar esta janela do terminal.

@@ -62,65 +62,54 @@ Para chequear la versión de tu Windows:
 - Escribe  `winver`
 - Presiona `Enter`
 
-:heavy_check_mark: Si las primeras palabras de esta ventana son **Windows 10 o Windows 11**, entonces todo está bien y puedes continuar trabajando en la configuración :+1:
+:heavy_check_mark: Si las primeras palabras de esta ventana son **Windows 11**, entonces todo está bien y puedes continuar trabajando en la configuración :+1:
 
-:x: Si no es el caso, no puedes continuar. Primero debes actualizar tu versión a Windows 10 :point_down:
+:heavy_check_mark: Si las primeras palabras de esta ventana son **Windows 10**, verifica el **número de la versión**:
 
-<details>
-  <summary>Actualizar a Windows 10</summary>
+- :heavy_check_mark: Si dice al menos `2004`, entonces todo está bien :+1:
 
-  - Descarga Windows 10 desde [Microsoft](https://www.microsoft.com/software-download/windows10ISO)
-  - Instálalo. Debería tomar como una hora pero realmente depende de tu computadora.
-  - Cuando termine la instalación, ejecuta los comandos de aquí arriba :point_up: para chequear que tengas **Windows 10**.
-</details>
+- :x: Si es inferior a `2004`, debes actualizar tu versión.
 
-:information_source: [La actualización de Windows 11 está en curso en este momento](https://www.microsoft.com/en-us/windows/get-windows-11). Esto significa que puede que esté o que aún no esté disponible para tu computadora.
+- <details>
+  <summary>Cómo instalar las últimas actualizaciones?</summary>
 
-:warning: **Si tienes Windows 10 instalado, no necesitas actualizarlo a Windows 11 para hacer esta configuración**.
-
-### Últimas actualizaciones
-
-Una vez que estés seguro de que estés usando Windows 10 o 11, instala las siguientes actualizaciones.
-
-Abre Windows Update:
-- Presiona `Windows` + `R`
-- Escribe `ms-settings:windowsupdate`
-- Presiona `Enter`
-- Haz clic en `Check updates`
-
-:heavy_check_mark: Si tienes una marca verde y el siguiente mensaje "You're up to date", entonces todo está bien :+1:
-
-:warning: Si obtienes una exclamación roja y el siguiente mensaje "Update available", por favor instala las actualizaciones y repite el proceso hasta que diga que todo está actualizado :loop:
-
-:x: Si obtienes un mensaje de error diciendo que Windows no puede aplicar las actualizaciones, por favor **contacta a un profesor**.
-
-<details>
-  <summary>Activa Windows Update Service para resolver las Actualizaciones</summary>
-
-  Algunos antivirus y programas deshabilitan las actualizaciones que necesitamos y luego se muestra un error. ¡Solucionemos esto!
+  Abre Windows Update:
   - Presiona `Windows` + `R`
-  - Escribe `services.msc`
+  - Escribe `ms-settings:windowsupdate`
   - Presiona `Enter`
-  - Haz doble clic en `Windows Update Service`
-  - Coloca su `Startup` en `Automatic`
-  - Haz clic en `Start`
-  - Haz clic en `Ok`
-  ¡Ahora intenta instalar las actualizaciones nuevamente!
-</details>
+  - Haz clic en `Check updates`
 
-### Requisito mínimo para la versión
+  :heavy_check_mark: Si tienes una marca verde y el siguiente mensaje "You're up to date", entonces todo está bien :+1:
 
-Algunas de las herramientas que necesitamos han salido con la versión `1903` **o superior** de Windows 10, así que necesitamos asegurarnos de que al menos tengamos esa.
+  :warning: Si obtienes una exclamación roja y el siguiente mensaje "Update available", por favor instala las actualizaciones y repite el proceso hasta que diga que todo está actualizado :loop:
 
-- Presiona `Windows` + `R`
-- Escribe  `winver`
-- Presiona `Enter`
+  :x: Si obtienes un mensaje de error diciendo que Windows no puede aplicar las actualizaciones, por favor **contacta a un profesor**.
 
-Verifica el **número de la versión**:
+  <details>
+    <summary>Activa Windows Update Service para resolver las Actualizaciones</summary>
 
-:heavy_check_mark: Si dice al menos `1903`, entonces todo está bien :+1:
+    Algunos antivirus y programas deshabilitan las actualizaciones que necesitamos y luego se muestra un error. ¡Solucionemos esto!
+    - Presiona `Windows` + `R`
+    - Escribe `services.msc`
+    - Presiona `Enter`
+    - Haz doble clic en `Windows Update Service`
+    - Coloca su `Startup` en `Automatic`
+    - Haz clic en `Start`
+    - Haz clic en `Ok`
+    ¡Ahora intenta instalar las actualizaciones nuevamente!
+  </details>
 
-:x: Si es inferior a `1903`, por favor **contacta a un profesor**.
+  Verifica el número de la versión:
+
+  - Presiona `Windows` + `R`
+  - Escribe  `winver`
+  - Presiona `Enter`
+
+  :heavy_check_mark: Si dice al menos `2004`, entonces todo está bien :+1:
+
+  :x: Si es inferior a `2004`, por favor **contacta a un profesor**.
+
+  </details>
 
 
 ## Virtualización
@@ -166,21 +155,17 @@ Normalmente ya es el caso en muchas computadoras. Verifiquemos:
 
 WSL es el ambiente de entorno que estamos usando para usar Ubuntu. Puedes aprender más sobre WSL [aquí](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
-:information_source: Las instrucciones que verás a continuación dependen de la versión de Windows que tengas. Por favor ejecuta solamente las instrucciones que correspondan a tu versión :point_down:
+Instalaremos WSL 2 y Ubuntu con un comando a través de la Windows Command Prompt.
 
-### Windows 11
-
-Si usas Windows 11, instalaremos WSL 2 y Ubuntu con un comando a través de la terminal de Windows.
-
-:warning: en esta instrucción, utiliza el atajo `Ctrl` + `Shift` + `Enter` para usar la **terminal de Windows** con privilegios de administrador en lugar de simplemente hacer clic en `Ok` o presionar `Enter`.
+:warning: en esta instrucción, utiliza el atajo `Ctrl` + `Shift` + `Enter` para usar la **Windows Command Prompt** con privilegios de administrador en lugar de simplemente hacer clic en `Ok` o presionar `Enter`.
 
 - Presiona `Windows` + `R`
-- Escribe `wt`
+- Escribe `cmd`
 - Presiona **`Ctrl` + `Shift` + `Enter`**
 
 :warning: tal vez tengas que aceptar la confirmación UAC sobre el cambio en los privilegios.
 
-Un ventana de terminal azul aparecerá:
+Un ventana de terminal aparecerá:
 - Copia el siguiente comando (`Ctrl` + `C`)
 - Pégalo en la ventana de la terminal (`Ctrl` + `V` o haciendo clic derecho en la ventana)
 - Ejecútalo presionado `Enter`
@@ -193,11 +178,10 @@ wsl --install
 
 :x: Si obtienes un mensaje de error (o si ves algún texto en rojo en la ventana), por favor **contacta a un profesor**
 
-### Windows 10
+<details>
+<summary>Solución de problemas para Windows 10 (solo si es necesario, consulta con un profesor)</summary>
 
-#### Instalación de WSL 1
-
-Si tienes Windows 10, primero instalaremos WSL 1 por medio de la Terminal de PowerShell.
+#### Para Windows 10 < 2004: instala primero WSL 1
 
 :warning: en esta instrucción, utiliza el atajo `Ctrl` + `Shift` + `Enter` para usar **Windows PowerShell** con privilegios de administrador en lugar de hacer clic en `Ok` o presionar `Enter`.
 
@@ -228,7 +212,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 :x: Si obtienes un mensaje de error (o si ves algún texto en rojo en la ventada), por favor **contacta a un profesor**
 
-#### Actualización a WSL 2
+#### Para Windows 10 con WSL 1: Actualización a WSL 2
 
 Si tienes Windows 10, actualizaremos WSL a la versión 2.
 
@@ -246,7 +230,7 @@ Cuando se reinicie tu computadora, descarga el instalador de WSL2.
 
 :x: Si obtienes el siguiente error "This update only applies to machines with the Windows Subsystem for Linux", **haz clic derecho** en el programa y selecciona `uninstall`; esta vez deberías poder instalarlo sin problemas.
 
-#### Coloca WSL 2 como el Subsistema Windows por defecto para Linux
+#### Para Windows 10 con WSL 1: Coloca WSL 2 como el Subsistema Windows por defecto para Linux
 
 Si tienes Windows 10, pondremos la versión predeterminada de WSL en 2.
 
@@ -279,18 +263,20 @@ wsl --set-default-version 2
   :information_source: Si tienes Windows 10 **Home edition**, la feature Hyper-V no está disponible para su sistema operativo. No es un bloqueo y puedes continuar con las siguientes instrucciones aquí abajo :ok_hand:
 </details>
 
+</details>
+
 
 ## Ubuntu
 
 ### Instalación
 
-:information_source: Las instrucciones que verás a continuación dependen de la versión de Windows que tengas. Por favor solo sigue las instrucciones que correspondan a tu versión de Windows :point_down:
+Después de reiniciar tu computadora, deberías ver una ventana de terminal diciendo WSL está retomando el proceso de instalación de Ubuntu. Cuando termine, iniciará Ubuntu.
 
-#### Windows 11
+<details>
+<summary>Solución de problemas para Windows 10 (solo si es necesario, consulta con un profesor)</summary>
 
-Si estás utilizando Windows 11, después de reiniciar tu computadora, deberías ver una ventana de terminal diciendo WSL está retomando el proceso de instalación de Ubuntu. Cuando termine, iniciará Ubuntu.
-
-#### Windows 10
+Si la instalación de Ubuntu no se reanudó, primero intenta nuevamente: abre Powershell o el Símbolo del sistema y ejecuta `wsl --install` otra vez.
+</details>
 
 Si tienes Windows 10, instala la terminal de Windows por medio de la Microsoft Store:
 
@@ -316,6 +302,8 @@ Si tienes Windows 10, instala la terminal de Windows por medio de la Microsoft S
 
 Cuando termine la instalación, el botón `Get` se transformará en un botón `Open`: Haz clic en él.
 
+</details>
+
 ### Primer uso
 
 La primera vez que lo abras, te pedirán que:
@@ -328,8 +316,6 @@ La primera vez que lo abras, te pedirán que:
 - Confírmalo
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
-
-Ahora puedes cerrar la ventana de Ubuntu ya que está instalado en tu computadora.
 
 ### Chequea la versión WSL de Ubuntu
 
@@ -359,7 +345,6 @@ wsl -l -v
   :heavy_check_mark: Deberías obtener el siguiente mensaje en algunos segundos: `The conversion is complete`. Esto significa que la conversión ha sido completada.
 
   :x: Si no funciona, tendremos que asegurarnos de que los archivos de Ubuntu no estén comprimidos.
-</details>
 
 <details>
   <summary>Chequea si los archivos no están comprimidos</summary>
@@ -378,7 +363,23 @@ wsl -l -v
   :x: Si la conversión aún no funciona, por favor **contacta a un profesor**.
 </details>
 
-### Compruebe la locale
+Ya puedes cerrar la ventana de la terminal.
+
+</details>
+
+### Comprueba tu nombre de usuario
+
+Escribe esto en la terminal de Ubuntu:
+
+```bash
+whoami
+```
+
+Debería devolver el nombre de usuario que elegiste anteriormente.
+
+:x: Si dice `root`, **contacta a un profesor** antes de continuar.
+
+### Comprueba la configuración regional (locale)
 
 La "locale" es un mecanismo que permite adaptar los programas a su idioma y país.
 
@@ -407,8 +408,6 @@ sudo apt-get update
 sudo apt-get install language-pack-en language-pack-en-base manpages
 ```
 </details>
-
-Ya puedes cerrar la ventana de la terminal.
 
 
 ## Visual Studio Code
@@ -459,8 +458,10 @@ code .
 
 Si estás utilizando Windows 11, la terminal de Windows ya está instalada y puedes ir a la siguiente sección :point_down:
 
+Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal moderna.
 
-Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal moderna:
+<details>
+<summary>**Windows 10**: Instalar Windows Terminal</summary>
 
 - Haz clic en `Start`
 - Escribe `Microsoft Store`
@@ -484,6 +485,8 @@ Si tienes Windows 10, instala la terminal de Windows. Verás que es una terminal
 </details>
 
 Cuando termine la instalación, el botón `Install` se transformará en un botón `Launch`: haz clic en él.
+
+</details>
 
 ### Ubuntu como terminal predeterminada
 
