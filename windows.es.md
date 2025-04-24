@@ -712,6 +712,7 @@ Para asegurarnos de que puedas interactuar desde la terminal de Ubuntu con el na
   Ejecuta el siguiente comandos:
 
   ```bash
+    echo "export BROWSER=\"/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe\"" >> ~/.zshrc
     echo "export GH_BROWSER=\"'/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'\"" >> ~/.zshrc
   ```
 </details>
