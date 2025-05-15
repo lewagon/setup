@@ -373,7 +373,7 @@ brew uninstall --force rbenv ruby-build
 
 ```bash
 exec zsh
-brew install rbenv
+brew install rbenv libyaml
 ```
 
 

@@ -393,7 +393,7 @@ exec zsh
 Luego ejecuta esto:
 
 ```bash
-brew install rbenv
+brew install rbenv libyaml
 ```
 
 
