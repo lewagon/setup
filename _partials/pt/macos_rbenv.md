@@ -29,5 +29,5 @@ exec zsh
 Então rode:
 
 ```bash
-brew install rbenv
+brew install rbenv libyaml
 ```
