@@ -6,7 +6,6 @@
 
 让我们开始吧 :rocket:
 
-
 ## GitHub账户
 
 你有注册好GitHub账户嘛？如果还没有，[现在注册](https://github.com/join)。
