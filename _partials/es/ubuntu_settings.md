@@ -48,4 +48,3 @@ Ancla lo siguiente:
 - VS Code
 - Tu navegador de Internet
 - Slack
-- Zoom
