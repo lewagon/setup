@@ -48,4 +48,3 @@ You must pin:
 - VS Code
 - Your Internet browser
 - Slack
-- Zoom

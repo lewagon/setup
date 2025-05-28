@@ -49,4 +49,3 @@ Tu dois épingler :
 - VS Code
 - ton navigateur Internet
 - Slack
-- Zoom

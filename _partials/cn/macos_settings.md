@@ -44,4 +44,3 @@ defaults write com.apple.screencapture location "${HOME}/Desktop"
 - VS Code
 - 你的浏览器
 - Slack
-- Zoom

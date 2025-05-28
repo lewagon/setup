@@ -9,7 +9,6 @@ PLACEHOLDERS = {
 
 MACOS = %w[
   intro
-  macos_zoom
   github
   macos_command_line_tools
   macos_homebrew
@@ -35,7 +34,6 @@ MACOS = %w[
 
 WINDOWS = %w[
   intro
-  zoom
   github
   windows_version
   windows_virtualization
@@ -66,7 +64,6 @@ WINDOWS = %w[
 
 UBUNTU = %w[
   intro
-  zoom
   github
   ubuntu_vscode
   vscode_extensions

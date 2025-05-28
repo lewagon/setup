@@ -44,4 +44,3 @@ Você deve fixar:
 - VS Code
 - Seu navegador de Internet
 - Slack
-- Zoom
