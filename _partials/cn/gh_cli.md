@@ -11,20 +11,18 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 :warning: **不要更改下面指令中的`email`**
 
 ```bash
-gh auth login -s 'user:email' -w
+gh auth login -s 'user:email' -w --git-protocol ssh
 ```
 
-gh会问你几个问题：
+`gh`会问你几个问题：
 
-`What is your preferred protocol for Git operations?（你要用什么协议来执行Git操作？）` 让箭头`>`停在`SSH`前面，然后敲击回车。SSH使用SSH密钥来登陆用户，而不是用用户名和密码。
+- `Generate a new SSH key to add to your GitHub account?（生成新的SSH密钥，然后添加到Github账号上？）` 敲击回车，让gh帮你生成。
 
-`Generate a new SSH key to add to your GitHub account?（生成新的SSH密钥，然后添加到Github账号上？）` 敲击回车，让gh帮你生成。
+  如果你以前生成过SSH密钥，那你就会看到这个问题`Upload your SSH public key to your GitHub account?（上传公共密钥到Github账户上上吗？）` 上下移动箭头`>`，让它停在你想选的SSH公钥前面，然后敲击回车。
 
-如果你以前生成过SSH密钥，那你就会看到这个问题`Upload your SSH public key to your GitHub account?（上传公共密钥到Github账户上上吗？）` 上下移动箭头`>`，让它停在你想选的SSH公钥前面，然后敲击回车。
+- `Enter a passphrase for your new SSH key (Optional)（输入新的SSH密钥的密码（非必填））`. 输入一个密码，然后写下来或者记住它。这是保护你本地私钥的密码。然后敲击回车。
 
-`Enter a passphrase for your new SSH key (Optional)（输入新的SSH密钥的密码（非必填））`. 输入一个密码，然后写下来或者记住它。这是保护你本地私钥的密码。然后敲击回车。
-
-`Title for your SSH key`。你可以把它留在建议的 "GitHub CLI"，按`Enter`。
+- `Title for your SSH key`。你可以把它留在建议的 "GitHub CLI"，按`Enter`。
 
 然后你会看到下面的文字输出：
 
