@@ -19,13 +19,13 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
 `gh` fará algumas perguntas:
 
-`Generate a new SSH key to add to your GitHub account?` Pressione `Enter` para pedir ao gh para gerar as chaves SSH para você.
+- `Generate a new SSH key to add to your GitHub account?` Pressione `Enter` para pedir ao gh para gerar as chaves SSH para você.
 
-Se você já possui chaves SSH, verá `Upload your SSH public key to your GitHub account?` Com as setas, selecione o caminho do arquivo de sua chave pública e pressione `Enter`.
+  Se você já possui chaves SSH, verá `Upload your SSH public key to your GitHub account?` Com as setas, selecione o caminho do arquivo de sua chave pública e pressione `Enter`.
 
-`Enter a passphrase for your new SSH key (Optional)`. Digite algo que você deseja e que você lembrará. É uma senha para proteger sua chave privada armazenada no disco rígido. Em seguida, pressione `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`. Digite algo que você deseja e que você lembrará. É uma senha para proteger sua chave privada armazenada no disco rígido. Em seguida, pressione `Enter`.
 
-`Title for your SSH key`. Você pode deixá-lo no "GitHub CLI" proposto, pressione `Enter`.
+- `Title for your SSH key`. Você pode deixá-lo no "GitHub CLI" proposto, pressione `Enter`.
 
 Você obterá então a seguinte saída:
 
