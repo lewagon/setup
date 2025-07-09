@@ -175,6 +175,8 @@ CLI est l’acronyme de [Command-line Interface](https://en.wikipedia.org/wiki/C
 
 Dans cette section, tu vas installer [GitHub CLI](https://cli.github.com/) pour interagir avec GitHub directement depuis le terminal.
 
+Nous allons utiliser GitHub CLI (`gh`) pour nous connecter à GitHub en utilisant *SSH*, un protocole pour s'authentifier en utilisant des clés SSH au lieu de la fameuse paire nom d'utilisateur et mot de passe.
+
 Elle doit déjà être installée sur ton ordinateur grâce aux commandes précédentes.
 
 Pour **te connecter**, commence par copier-coller la commande suivante dans ton terminal :
@@ -182,20 +184,18 @@ Pour **te connecter**, commence par copier-coller la commande suivante dans ton 
 :warning: **NE modifie PAS `email`**
 
 ```bash
-gh auth login -s 'user:email' -w
+gh auth login -s 'user:email' -w --git-protocol ssh
 ```
 
-gh va te poser quelques questions :
+`gh` va te poser quelques questions :
 
-`What is your preferred protocol for Git operations?` Avec les flèches, choisis `SSH` et appuie sur `Enter`. SSH est un protocole pour s'authentifier en utilisant des clés SSH au lieu de la fameuse paire nom d'utilisateur et mot de passe.
+- `Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
 
-`Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
+  Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
 
-Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
 
-`Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
-
-`Title for your SSH key`. Tu peux laisser ce qui est proposé par défaut, à savoir "GitHub CLI", appuie sur `Enter`.
+- `Title for your SSH key`. Tu peux laisser ce qui est proposé par défaut, à savoir "GitHub CLI", appuie sur `Enter`.
 
 Tu obtiendras le résultat suivant :
 
