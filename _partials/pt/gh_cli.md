@@ -4,6 +4,9 @@ CLI é o acrônimo de [Interface de linha de comando](https://en.wikipedia.org/w
 
 Nesta seção, usaremos [GitHub CLI](https://cli.github.com/) para interagir com o GitHub diretamente do terminal.
 
+Usaremos o GitHub CLI (`gh`) para conectar ao GitHub usando *SSH*, um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
+
+
 Ele já deve estar instalado no seu computador a partir dos comandos anteriores.
 
 Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
@@ -11,12 +14,10 @@ Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
 :warning: **NÃO edite o `email`**
 
 ```bash
-gh auth login -s 'user:email' -w
+gh auth login -s 'user:email' -w --git-protocol ssh
 ```
 
 `gh` fará algumas perguntas:
-
-`What is your preferred protocol for Git operations?` Com as setas, escolha `SSH` e pressione `Enter`. SSH é um protocolo para fazer login usando chaves SSH em vez do conhecido par nome de usuário/senha.
 
 `Generate a new SSH key to add to your GitHub account?` Pressione `Enter` para pedir ao gh para gerar as chaves SSH para você.
 

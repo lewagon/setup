@@ -11,12 +11,10 @@ CLI是[Command-line Interface（命令行界面）](https://baike.baidu.com/item
 :warning: **不要更改下面指令中的`email`**
 
 ```bash
-gh auth login -s 'user:email' -w
+gh auth login -s 'user:email' -w --git-protocol ssh
 ```
 
 gh会问你几个问题：
-
-`What is your preferred protocol for Git operations?（你要用什么协议来执行Git操作？）` 让箭头`>`停在`SSH`前面，然后敲击回车。SSH使用SSH密钥来登陆用户，而不是用用户名和密码。
 
 `Generate a new SSH key to add to your GitHub account?（生成新的SSH密钥，然后添加到Github账号上？）` 敲击回车，让gh帮你生成。
 
