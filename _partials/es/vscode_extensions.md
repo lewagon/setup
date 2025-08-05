@@ -16,6 +16,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension anteprimorac.html-end-tag-labels
+code --install-extension marcoroth.herb-lsp
 ```
 
 Aquí está la lista de las extensiones que estás instalando:
