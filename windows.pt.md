@@ -530,6 +530,7 @@ code --install-extension Rubymaniac.vscode-paste-and-indent
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension anteprimorac.html-end-tag-labels
 code --install-extension marcoroth.herb-lsp
+code --install-extension rayhanw.erb-helpers
 ```
 
 Aqui está uma lista das extensões que você está instalando:

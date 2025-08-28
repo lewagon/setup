@@ -530,6 +530,7 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension Rubymaniac.vscode-paste-and-indent
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension anteprimorac.html-end-tag-labels
+code --install-extension rayhanw.erb-helpers
 ```
 
 Here is a list of the extensions you are installing:
