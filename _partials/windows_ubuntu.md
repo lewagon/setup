@@ -111,33 +111,3 @@ whoami
 It should return the username you chose before.
 
 :x: It if says `root`, **contact a TA** before continuing!
-
-### Check the locale
-
-The locale is a mechanism allowing to customize programs to your language and country.
-
-Let's verify that the default locale is set to English, please type this in the Ubuntu terminal:
-
-```bash
-locale
-```
-
-If the output does not contain `LANG=en_US.UTF-8`, run the following command in a Ubuntu terminal to install the english locale:
-
-```bash
-sudo locale-gen en_US.UTF-8
-```
-
-If after, you receive a warning (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) in your terminal, please do the following:
-
-<details>
-  <summary>Generate locale</summary>
-
-Please, run this lines in your terminal.
-
-```bash
-sudo update-locale LANG=en_US.UTF8
-sudo apt-get update
-sudo apt-get install language-pack-en language-pack-en-base manpages
-```
-</details>
