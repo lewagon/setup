@@ -115,7 +115,7 @@ Cela devrait renvoyer le nom d'utilisateur que tu as choisi précédemment.
 
 ### Vérifier la locale
 
-Le concept e "locale" permert de personnaliser les programms en fonction de ta langue et ton pays.
+Le concept de "locale" permet de personnaliser les programms en fonction de ta langue et ton pays.
 
 Vérifions que la locale est bien en **anglais** dans le terminal :
 
