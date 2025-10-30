@@ -1,5 +1,35 @@
 ## Ferramentas de linha de comando
 
+### Verifique a localidade
+
+A localidade é um mecanismo que permite personalizar programas de acordo com seu idioma e país.
+
+Vamos verificar se a localidade padrão está definida como inglês, digite isto no terminal do Ubuntu:
+
+```bash
+locale
+```
+
+Se a saída não contiver `LANG=en_US.UTF-8`, execute o seguinte comando em um terminal Ubuntu para instalar a localidade em inglês:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
+Se, depois, receberes um aviso (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) no teu terminal, por favor faz o seguinte:
+
+<details>
+  <summary>Gerar localidade</summary>
+
+Por favor, executa estas linhas no teu terminal.
+
+```bash
+sudo update-locale LANG=en_US.UTF8
+sudo apt-get update
+sudo apt-get install language-pack-en language-pack-en-base manpages
+```
+</details>
+
 ### Zsh e Git
 
 Em vez de usar o `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)), usaremos `zsh`.

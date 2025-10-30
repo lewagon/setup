@@ -1,5 +1,35 @@
 ## Herramientas de línea de comando
 
+### Comprueba la configuración regional (locale)
+
+La "locale" es un mecanismo que permite adaptar los programas a su idioma y país.
+
+Comprobemos que la configuración regional por defecto es el inglés:
+
+```bash
+locale
+```
+
+Si la salida no contiene `LANG=en_US.UTF-8`, ejecute el siguiente comando en un Ubuntu terminal para instalar la locale inglesa:
+
+```bash
+sudo locale-gen en_US.UTF-8
+```
+
+Si después, recibes una advertencia (`bash: warning: setlocale: LC_ALL: cannot change locale (en_US.utf-8)`) en tu terminal, por favor haz lo siguiente:
+
+<details>
+  <summary>Generar la configuración regional<>/summary>
+
+Por favor, ejecuta estas líneas en tu terminal.
+
+```bash
+sudo update-locale LANG=en_US.UTF8
+sudo apt-get update
+sudo apt-get install language-pack-en language-pack-en-base manpages
+```
+</details>
+
 ### Zsh & Git
 
 En lugar de usar el `bash` [shell](https://en.wikipedia.org/wiki/Shell_(computing)) predeterminado, usaremos `zsh`.
