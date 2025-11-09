@@ -69,7 +69,7 @@ On va ensuite désactiver les avertissements pour les commandes de copier-coller
 - Ajoute la ligne suivante après :
 
 ```bash
-"warning.multiLinePaste": false
+"warning.multiLinePaste": false,
 ```
 
 :warning: N’oublie pas la virgule à la fin de la ligne !
