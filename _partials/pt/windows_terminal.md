@@ -71,7 +71,7 @@ Então, vamos desabilitar o aviso para comandos de copiar e colar entre o Window
 - Adicione a seguinte linha depois dela:
 
 ```bash
-"multiLinePasteWarning": false,
+"warning.multiLinePaste": false
 ```
 
 :warning: Não esqueça a vírgula no final da linha!
