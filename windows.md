@@ -468,7 +468,7 @@ Then, let's disable warnings for copy-pasting commands between Windows and Ubunt
 - Add the following line after it:
 
 ```bash
-"multiLinePasteWarning": false,
+"warning.multiLinePaste": false,
 ```
 
 :warning: Do not forget the comma at the end of the line!
