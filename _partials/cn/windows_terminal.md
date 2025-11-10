@@ -64,7 +64,7 @@
 - 在它后面加上这行：
 
 ```bash
-"multiLinePasteWarning": false,
+"warning.multiLinePaste": false,
 ```
 
 :warning: 别忘了这行最后有个逗号哟！

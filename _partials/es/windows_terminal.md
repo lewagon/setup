@@ -69,7 +69,7 @@ Luego deshabilita el warning para copiar y pegar comandos entre Windows y Ubuntu
 - Agrega la siguiente línea debajo de eso:
 
 ```bash
-"multiLinePasteWarning": false,
+"warning.multiLinePaste": false,
 ```
 
 :warning: ¡No olvides la coma al final de la línea!
