@@ -1,6 +1,6 @@
 ## En Français
 
-Guides de configuration pour la formation Développement Web du [Wagon](https://www.lewagon.com). Choisis ton système d’exploitation (OS):
+Guides de configuration pour la formation AI Software Development du [Wagon](https://www.lewagon.com). Choisis ton système d’exploitation (OS):
 
 <table>
   <tr>
