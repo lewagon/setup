@@ -1,6 +1,6 @@
 ## ¿En Español?
 
-Guías de configuración para el curso de desarrollo web [Wagon](https://www.lewagon.com). Elige tu sistema operativo (OS):
+Guías de configuración para el curso de AI Software Development de [Le Wagon](https://www.lewagon.com). Elige tu sistema operativo (OS):
 
 <table>
   <tr>

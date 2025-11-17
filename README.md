@@ -16,7 +16,7 @@ Clique sur <a href="README.fr.md">ce lien</a> pour accéder à la version franç
 
 ## In English
 
-Setup guides for [Le Wagon](https://www.lewagon.com) Web Development course. Please choose your operating system (OS):
+Setup guides for [Le Wagon](https://www.lewagon.com) AI Software Development course. Please choose your operating system (OS):
 
 <table>
   <tr>
