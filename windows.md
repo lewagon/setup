@@ -1,6 +1,6 @@
 # Setup instructions
 
-You will find below the instructions to set up your computer for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time).
+You will find below the instructions to set up your computer for [Le Wagon AI Software Development course](https://www.lewagon.com/web-development-course/full-time).
 
 Please **read them carefully and execute all commands in the following order**.
 
@@ -1285,7 +1285,7 @@ You must pin:
 
 ## Setup completed!
 
-Your computer is now all set for [Le Wagon Web Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
+Your computer is now all set for [Le Wagon AI Software Development course](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Enjoy the bootcamp, you will nail it :rocket:
 

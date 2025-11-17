@@ -1,6 +1,6 @@
 # Instrucciones de la configuración
 
-Aquí abajo encontrarás las instrucciones para la configuración que tu computadora necesita para el [curso de Desarrollo Web de Le Wagon](https://www.lewagon.com/web-development-course/full-time).
+Aquí abajo encontrarás las instrucciones para la configuración que tu computadora necesita para el [curso de AI Software Development de Le Wagon](https://www.lewagon.com/web-development-course/full-time).
 
 Por favor, **léelas cuidadosamente y ejecuta todos los comandos en el orden indicado**. Si tienes algún problema, no dudes en pedirle ayuda a tu profesor :raising_hand:
 
@@ -1228,7 +1228,7 @@ Ancla lo siguiente:
 
 ## ¡Fin de la configuración!
 
-Tu computadora está lista para el [curso de Desarrollo Web de Le Wagon](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
+Tu computadora está lista para el [curso de AI Software Development de Le Wagon](https://www.lewagon.com/web-development-course/full-time) :muscle: :clap:
 
 Disfrútalo, sabemos que te va a ir genial :rocket:
 
