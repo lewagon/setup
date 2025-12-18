@@ -24,6 +24,10 @@ Avant de commencer, on va vérifier que la version de Windows installée sur ton
 
 ### Windows 10 ou Windows 11
 
+> :warning: **Note sur Windows 10 et la sécurité**
+>
+> La configuration du bootcamp Le Wagon fonctionne sur Windows 10. Cela dit, on recommande fortement de passer à Windows 11. Depuis le 14 octobre 2025, Microsoft a mis fin au support de Windows 10 : il ne reçoit plus de mises à jour de sécurité, ce qui peut exposer ta machine. Pour plus de détails, consulte le [guide de Microsoft](https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281). Si ton ordinateur ne peut pas exécuter Windows 11, envisage de passer à Ubuntu.
+
 Pour pouvoir configurer ton ordinateur, **Windows 10 ou Windows 11** doit être installé dessus.
 
 Pour connaître ta version de Windows :
