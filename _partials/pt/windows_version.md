@@ -4,6 +4,10 @@ Antes de começarmos, precisamos verificar se a versão do Windows instalada no 
 
 ### Windows 10 ou Windows 11
 
+> :warning: **Nota sobre o Windows 10 e segurança**
+>
+> O setup do bootcamp Le Wagon funciona no Windows 10. Dito isso, recomendamos fortemente a atualização para o Windows 11. A partir de 14 de outubro de 2025, a Microsoft encerrou o suporte ao Windows 10, o que significa que ele não receberá mais atualizações de segurança, potencialmente deixando sua máquina em risco. Para mais detalhes, leia o guia da Microsoft: https://support.microsoft.com/en-us/windows/windows-10-support-has-ended-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281. Caso sua máquina não consiga executar o Windows 11, considere mudar para o Ubuntu.
+
 Para poder configurar seu computador, você precisa ter o **Windows 10 ou Windows 11** instalado.
 
 Para verificar sua versão do Windows:
