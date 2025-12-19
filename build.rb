@@ -14,6 +14,7 @@ MACOS = %w[
   macos_homebrew
   macos_vscode
   vscode_extensions
+  vscode_aifeatures
   vscode_liveshare
   macos_terminal
   oh_my_zsh
@@ -42,6 +43,7 @@ WINDOWS = %w[
   windows_vscode
   windows_terminal
   vscode_extensions
+  vscode_aifeatures
   vscode_liveshare
   cli_tools
   oh_my_zsh
@@ -67,6 +69,7 @@ UBUNTU = %w[
   github
   ubuntu_vscode
   vscode_extensions
+  vscode_aifeatures
   vscode_liveshare
   cli_tools
   oh_my_zsh
