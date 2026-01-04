@@ -10,8 +10,8 @@ Dans **VS Code** :
 
 1. Ouvrez la "Palette de commandes" de VS Code : tapez `Ctrl-Shift-P` (Windows / Linux) ou `Cmd-Shift-P` (macOS).
 1. La Palette de commandes s'ouvrira : une petite zone de texte en haut de l'écran. Commencez à taper `aifeatures` jusqu'à voir "Chat: Learn How to Hide AI features". Cliquez dessus.
-  ![La palette de commandes en haut de l'écran](../images/vscode_find_aifeatures.png)
+  ![La palette de commandes en haut de l'écran](images/vscode_find_aifeatures.png)
 1. Cela ouvrira les paramètres et affichera l'option "Disable and hide built-in AI features ...". Cochez la case devant cette option.
-  ![Cochez l'option de désactivation](../images/vscode_disable_aifeatures.png)
+  ![Cochez l'option de désactivation](images/vscode_disable_aifeatures.png)
 
 Plus tard, si vous souhaitez **réactiver** les fonctionnalités d'IA, vous pouvez suivre les mêmes instructions pour décocher la case.
