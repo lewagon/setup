@@ -57,7 +57,8 @@ We have circled in red the part you need to add:
 ![Windows Terminal JSON settings file](images/windows_terminal_settings_json.png)
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one.
-Place this line inside the { } block that contains "name": "Ubuntu" (like in the screenshot):
+
+- Place this line inside the { } block that contains "name": "Ubuntu" (like in the screenshot):
 
 ```bash
 "commandline": "wsl.exe ~",
