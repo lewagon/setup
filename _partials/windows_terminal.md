@@ -52,7 +52,7 @@ It should open the terminal settings:
 
 You may see an orange circle rather than a penguin as the logo for Ubuntu.
 
-We have circled in red the part you need to change:
+We have circled in red the part you need to add:
 
 ![Windows Terminal JSON settings file](images/windows_terminal_settings_json.png)
 
@@ -66,9 +66,9 @@ First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory inst
 
 :warning: Do not forget the comma at the end of the line!
 
-Then, let's disable warnings for copy-pasting commands between Windows and Ubuntu:
-- Locate the line `"defaultProfile": "{2c4de342-...}"`
-- Add the following line after it:
+Then, let's disable warnings for copy-pasting commands between Windows and Ubuntu.
+
+Place this line inside the { } block that contains "name": "Ubuntu" (like in the screenshot):
 
 ```bash
 "warning.multiLinePaste": false,
