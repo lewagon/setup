@@ -453,13 +453,13 @@ It should open the terminal settings:
 
 You may see an orange circle rather than a penguin as the logo for Ubuntu.
 
-We have circled in red the part you need to add:
+We have circled in red the part you need to change:
 
 ![Windows Terminal JSON settings file](images/windows_terminal_settings_json.png)
 
 First, let's ask Ubuntu to start directly inside your Ubuntu Home Directory instead of the Windows one:
-
-Place the following command line inside the { } block that contains "name": "Ubuntu" (like in the screenshot):
+- Locate the entry with both `"name": "Ubuntu",` and `"hidden": false,`
+- Add the following line after it:
 
 ```bash
 "commandline": "wsl.exe ~",
