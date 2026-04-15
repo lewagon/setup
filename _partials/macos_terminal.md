@@ -1,6 +1,6 @@
 ## macOS Terminal Theme
 
-Launch a terminal, click on `Terminal > Preferences` and set the "Pro" theme as default profile.
+Launch a terminal, click on `Terminal > Settings` and set the "Pro" theme as default profile.
 
 ![Set Pro Theme for macOS terminal](images/macos_terminal_pro.png)
 

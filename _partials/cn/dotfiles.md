@@ -62,3 +62,5 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 exec zsh
 ```
 
+_这将重新加载你的shell，使其能够读取新的配置。_
+

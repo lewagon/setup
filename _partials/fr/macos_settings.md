@@ -2,7 +2,7 @@
 
 ### Sécurité
 
-Tu dois obligatoirement protéger ta session avec un mot de passe. Si ce n’est pas déjà le cas, va dans ` > Réglages Système > Utilisateurs & groupes` et modifie le mot de passe de ton compte. Va aussi dans ` > Réglages Système > Sécurité > Général` et configure la sécurité de façon à ce que ton mot de passe te soit demandé `5 secondes` après la mise en veille ou le démarrage de l’économiseur d’écran.
+Tu dois obligatoirement protéger ta session avec un mot de passe. Si ce n’est pas déjà le cas, va dans ` > Réglages Système > Utilisateurs & groupes` et modifie le mot de passe de ton compte. Va aussi dans ` > Réglages Système > Écran de verrouillage` et configure la sécurité de façon à ce que ton mot de passe te soit demandé `5 secondes` après la mise en veille ou le démarrage de l’économiseur d’écran.
 
 Tu peux également aller dans ` > Réglages Système > Bureau et Dock` et cliquer sur le bouton `coins actifs (Hot Corners)` en bas à gauche. Choisis le coin inférieur droit pour démarrer l’économiseur d’écran. De cette façon, lorsque tu quitteras ton bureau, tu pourras rapidement verrouiller ton écran en plaçant ta souris dans le coin inférieur droit. Cinq secondes plus tard, ton Mac sera verrouillé et tu devras fournir ton mot de passe pour accéder à ta session.
 
