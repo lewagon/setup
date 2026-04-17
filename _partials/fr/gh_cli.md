@@ -10,7 +10,7 @@ Elle doit déjà être installée sur ton ordinateur grâce aux commandes préc�
 
 Pour **te connecter**, commence par copier-coller la commande suivante dans ton terminal :
 
-:warning: **NE modifie PAS `email`**
+:warning: **NE modifie PAS `email`** — Même si `user:email` ressemble à un emplacement réservé pour ta véritable adresse e-mail, ce n'est pas le cas — ne le remplace pas.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -20,9 +20,11 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
 - `Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
 
-  Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
+  Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemin de ta clé publique et appuie sur `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)` :
+  - **POUR LA PLUPART DES GENS :** Appuie simplement sur `Enter` pour passer. Tu n'as pas besoin d'une passphrase pour le bootcamp et cela te serait demandé à chaque utilisation de la clé. Il y a cependant un risque que si quelqu'un vole ton ordinateur, il puisse pousser du code sur GitHub.
+  - **SI LA SÉCURITÉ EST VRAIMENT IMPORTANTE POUR TOI :** Saisis une passphrase de ton choix et appuie sur `Enter`. Il est _vraiment_ important que si tu saisis une passphrase, tu la notes immédiatement quelque part et ne la perdes/oublies pas. Tu devras la saisir fréquemment.
 
 - `Title for your SSH key`. Tu peux laisser ce qui est proposé par défaut, à savoir "GitHub CLI", appuie sur `Enter`.
 

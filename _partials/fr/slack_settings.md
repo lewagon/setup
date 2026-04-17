@@ -12,9 +12,9 @@ On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta c
 - Ouvre l’application Slack
 - Clique sur ta photo de profil en haut à droite
 - Clique sur `Preferences` depuis le menu
-- Séléctionne `Audio & video` dans la colonne de gauche
+- Sélectionne `Audio & video` dans la colonne de gauche
 - En dessous de `Troubleshooting`, clique sur `Run an audio, video and screensharing test`. Le test va s’ouvrir dans une nouvelle fenêtre
-- Vérifie que ton microphone, caméra, et enceintes soient bien séléctionnés, puis clique sur `Start test`
+- Vérifie que ton microphone, caméra, et enceintes soient bien sélectionnés, puis clique sur `Start test`
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)
 

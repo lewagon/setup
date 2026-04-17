@@ -43,7 +43,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: Si ves una lista de tus emails registrados, puedes continuar :+1:
 
-:x: De lo contrario, por favor haz la [autenticación en GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli) nuevamente antes de ejecutar este comando :point_up: again.
+:x: De lo contrario, por favor haz la [autenticación en GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli) nuevamente antes de ejecutar este comando :point_up:.
 
 ### Instalación de git
 
@@ -62,3 +62,5 @@ Ahora **resetea** tu terminal ejecutando lo siguiente:
 ```bash
 exec zsh
 ```
+
+_Esto recarga tu shell para que tome la nueva configuración._

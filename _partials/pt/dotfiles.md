@@ -74,3 +74,5 @@ Agora **reinicie** seu terminal executando:
 ```bash
 exec zsh
 ```
+
+_Isso recarrega seu shell para que ele incorpore a nova configuração._

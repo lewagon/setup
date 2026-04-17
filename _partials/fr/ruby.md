@@ -17,7 +17,7 @@ d’utiliser la version <RUBY_SETUP_VERSION> par défaut.
 rbenv global <RUBY_SETUP_VERSION>
 ```
 
-**Réinitialise** ton ton terminal et vérifie ta version de Ruby :
+**Réinitialise** ton terminal et vérifie ta version de Ruby :
 
 ```bash
 exec zsh

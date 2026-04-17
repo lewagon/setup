@@ -40,28 +40,13 @@ sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
-Continue executando o seguinte no terminal (você pode copiar/colar todas as linhas de uma vez).
+Continue executando o seguinte no terminal (você pode copiar/colar todas as linhas de uma vez):
 
 ```bash
-brew upgrade git || brew install git
-```
-
-```bash
-brew upgrade gh || brew install gh
-```
-
-```bash
-brew upgrade wget || brew install wget
-```
-
-```bash
+brew upgrade git         || brew install git
+brew upgrade gh          || brew install gh
+brew upgrade wget        || brew install wget
 brew upgrade imagemagick || brew install imagemagick
-```
-
-```bash
-brew upgrade jq || brew install jq
-```
-
-```bash
-brew upgrade openssl || brew install openssl
+brew upgrade jq          || brew install jq
+brew upgrade openssl     || brew install openssl
 ```

@@ -75,3 +75,5 @@ Please now **reset** your terminal by running:
 ```bash
 exec zsh
 ```
+
+_This reloads your shell so it picks up the new configuration._

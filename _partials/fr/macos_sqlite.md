@@ -16,4 +16,4 @@ sqlite3 -version
 
 :heavy_check_mark: Si tu vois une version s'afficher, c'est tout bon :+1:
 
-:x: If not, **demande au prof**
+:x: Sinon, **demande au prof**
