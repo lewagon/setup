@@ -15,7 +15,7 @@ Est-ce que tu as déjà un compte GitHub ? Si ce n’est pas le cas, [inscris-t
 
 ![image de GitHub](images/github_picture.png)
 
-:point_right: **[Activez l'authentification à deux facteurs (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub vous enverra des messages texte avec un code lorsque vous essayez de vous connecter. C'est important pour la sécurité et cela sera bientôt obligatoire pour contribuer du code sur GitHub.
+:point_right: **[Active l'authentification à deux facteurs (2FA)](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages)**. GitHub t'enverra des messages texte avec un code lorsque tu essaies de te connecter. C'est important pour la sécurité et cela sera bientôt obligatoire pour contribuer du code sur GitHub.
 
 
 ## Version de Windows
@@ -512,21 +512,21 @@ Voici la liste des extensions que tu es en train d'installer :
 
 ### Fonctionnalités IA de VS Code
 
-VS Code inclut de nombreuses **fonctionnalités d'IA** puissantes, qui sont un excellent outil une fois que vous savez déjà coder.
+VS Code inclut de nombreuses **fonctionnalités d'IA** puissantes, qui sont un excellent outil une fois que tu sais déjà coder.
 
-Cela dit, s'appuyer sur l'IA trop tôt peut masquer des concepts importants et rendre le débogage plus difficile à comprendre. Une fois à l'aise avec les fondamentaux, vous saurez quand et comment utiliser l'IA efficacement — sans lui laisser faire la réflexion à votre place.
+Cela dit, s'appuyer sur l'IA trop tôt peut masquer des concepts importants et rendre le débogage plus difficile à comprendre. Une fois à l'aise avec les fondamentaux, tu sauras quand et comment utiliser l'IA efficacement — sans lui laisser faire la réflexion à ta place.
 
-Pour le début du bootcamp, nous allons désactiver ces fonctionnalités. Au bon moment du cours, nous les réactiverons afin que vous puissiez les utiliser à bon escient.
+Pour le début du bootcamp, on va désactiver ces fonctionnalités. Au bon moment du cours, on les réactivera afin que tu puisses les utiliser à bon escient.
 
 Dans **VS Code** :
 
-1. Ouvrez la "Palette de commandes" de VS Code : tapez `Ctrl-Shift-P` (Windows / Linux) ou `Cmd-Shift-P` (macOS).
-1. La Palette de commandes s'ouvrira : une petite zone de texte en haut de l'écran. Commencez à taper `aifeatures` jusqu'à voir "Chat: Learn How to Hide AI features". Cliquez dessus.
+1. Ouvre la "Palette de **c**ommandes" de VS Code : tape `Ctrl-Shift-P` (Windows / Linux) ou `Cmd-Shift-P` (macOS).
+1. La Palette de commandes s'ouvrira : une petite zone de texte en haut de l'écran. Commence à taper `aifeatures` jusqu'à voir "Chat: Learn How to Hide AI features". Clique dessus.
   ![La palette de commandes en haut de l'écran](images/vscode_find_aifeatures.png)
-1. Cela ouvrira les paramètres et affichera l'option "Disable and hide built-in AI features ...". Cochez la case devant cette option.
+1. Cela ouvrira les paramètres et affichera l'option "Disable and hide built-in AI features ...". Coche la case devant cette option.
   ![Cochez l'option de désactivation](images/vscode_disable_aifeatures.png)
 
-Plus tard, si vous souhaitez **réactiver** les fonctionnalités d'IA, vous pouvez suivre les mêmes instructions pour décocher la case.
+Plus tard, si tu souhaites **réactiver** les fonctionnalités d'IA, tu peux suivre les mêmes instructions pour décocher la case.
 
 
 ### Configuration de Live Share
@@ -745,7 +745,7 @@ Elle doit déjà être installée sur ton ordinateur grâce aux commandes préc�
 
 Pour **te connecter**, commence par copier-coller la commande suivante dans ton terminal :
 
-:warning: **NE modifie PAS `email`**
+:warning: **NE modifie PAS `email`** — Même si `user:email` ressemble à un emplacement réservé pour ta véritable adresse e-mail, ce n'est pas le cas — ne le remplace pas.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -755,9 +755,11 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
 - `Generate a new SSH key to add to your GitHub account?` Appuie sur `Enter` pour demander à gh de générer les clés SSH pour toi.
 
-  Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemain de ta clé publique et appuie sur `Enter`.
+  Si tu as déjà des clés SSH, tu verras à la place `Upload your SSH public key to your GitHub account?` Avec les flèches, sélectionne le chemin de ta clé publique et appuie sur `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Saisis un mot de passe dont tu te souviendras. Ce mot de passe sert à protéger ta clé privée enregistrée sur ton disque sur. Ensuite, appuie sur `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)` :
+  - **POUR LA PLUPART DES GENS :** Appuie simplement sur `Enter` pour passer. Tu n'as pas besoin d'une passphrase pour le bootcamp et cela te serait demandé à chaque utilisation de la clé. Il y a cependant un risque que si quelqu'un vole ton ordinateur, il puisse pousser du code sur GitHub.
+  - **SI LA SÉCURITÉ EST VRAIMENT IMPORTANTE POUR TOI :** Saisis une passphrase de ton choix et appuie sur `Enter`. Il est _vraiment_ important que si tu saisis une passphrase, tu la notes immédiatement quelque part et ne la perdes/oublies pas. Tu devras la saisir fréquemment.
 
 - `Title for your SSH key`. Tu peux laisser ce qui est proposé par défaut, à savoir "GitHub CLI", appuie sur `Enter`.
 
@@ -842,13 +844,15 @@ cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
 
 :point_up: On te **demandera** de fournir ton nom (`FirstName LastName`) et ton adresse e-mail.
 
-:warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès. 💡 Sélectionnez l'adresse `@users.noreply.github.com` si vous ne souhaitez pas que votre adresse e-mail apparaisse dans les dépôts publics auxquels vous pourriez contribuer.
+:warning: Tu **dois** saisir l’une des adresses e-mail indiquées ci-dessus avec la commande `gh api ...` précédente. Sinon, Kitt ne pourra pas suivre tes progrès. 💡 Sélectionne l'adresse `@users.noreply.github.com` si tu ne souhaites pas que ton adresse e-mail apparaisse dans les dépôts publics auxquels tu pourrais contribuer.
 
 **Réinitialise** ton terminal en exécutant :
 
 ```bash
 exec zsh
 ```
+
+_Cela recharge ton shell afin qu'il prenne en compte la nouvelle configuration._
 
 
 ## Désactiver l’invite de phrase secrète SSH
@@ -922,7 +926,7 @@ d’utiliser la version 3.3.5 par défaut.
 rbenv global 3.3.5
 ```
 
-**Réinitialise** ton ton terminal et vérifie ta version de Ruby :
+**Réinitialise** ton terminal et vérifie ta version de Ruby :
 
 ```bash
 exec zsh
@@ -1034,28 +1038,28 @@ nvm cache clear
 
 ## yarn
 
-[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d’installer des bibliothèques JavaScript. Installons-le :
+[`yarn`](https://yarnpkg.com/) est un gestionnaire de paquets, qui permet d'installer des bibliothèques JavaScript. Installons-le :
 
-Exécute les commandes suivantes dans le terminal :
+Exécute les commandes suivantes dans le terminal :
 
 ```bash
 corepack enable
 yarn set version stable
 ```
 
+⚠️ Si tu rencontres des messages d'erreur, essaye d'exécuter `npm install -g corepack` puis exécute à nouveau les commandes ci-dessus.
+
 ```bash
 exec zsh
 ```
 
-⚠️ Si tu rencontres des messages d'erreur, essaye d'exécuter `npm install -g corepack` puis exécute à nouveau les commandes ci-dessus.
-
-Puis exécute la commande suivante :
+Puis exécute la commande suivante :
 
 ```bash
 yarn -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître une version, c’est bon :+1:
+:heavy_check_mark: Si tu vois apparaître une version, c'est bon :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -1145,18 +1149,12 @@ curl -Ls https://raw.githubusercontent.com/lewagon/setup/master/check.rb > _.rb 
 
 ## Kitt
 
-:warning: Si tu as reçu un e-mail du Wagon t’invitant à t’inscrire sur Kitt (notre plateforme pédagogique), tu peux passer cette étape. Suis plutôt les instructions contenues dans l’e-mail que tu as reçu, si tu ne l’as pas déjà fait.
+Tu devrais avoir reçu un e-mail du Wagon t'invitant à t'inscrire sur [Kitt](https://kitt.lewagon.com) (notre plateforme pédagogique). En soumettant ton formulaire d'inscription sur Kitt, tu devrais avoir reçu deux invitations supplémentaires :
 
-Si tu n’es pas certain de ce que tu dois faire, suis [ce lien](https://kitt.lewagon.com/). Si tu es déjà connecté, tu peux passer cette section. Si tu n’es pas connecté, clique sur `Enter Kitt as a Student`. Si tu réussis à te connecter, tu peux passer cette étape. Sinon, demande au prof si tu aurais dû recevoir un e-mail ou si tu dois suivre les instructions ci-dessous.
+- Une de Slack, t'invitant à rejoindre la communauté Slack des anciens étudiants du Wagon (où tu pourras discuter avec tes amis et tous les anciens élèves). Clique sur **Rejoindre** et renseigne tes informations.
+- Une de GitHub, t'invitant à rejoindre l'équipe `lewagon`. **Accepte-la**, sinon tu ne pourras pas accéder aux slides des cours.
 
-Inscris-toi en tant qu’alumni du Wagon sur [kitt.lewagon.com/onboarding](http://kitt.lewagon.com/onboarding). Sélectionne ton batch, connecte-toi avec GitHub et renseigne toutes tes informations.
-
-Le prof vérifiera ensuite avec toi que tu fais bien partie de ce batch. Tu peux lui demander de vérifier dès que tu as fini de remplir le formulaire d’inscription.
-
-Une fois que le prof a vérifié ton profil, consulte ta messagerie. Tu devrais avoir reçu 2 e-mails :
-
-- un de Slack, t’invitant à rejoindre la communauté Slack des anciens étudiants du Wagon (où tu pourras discuter avec tes amis et tous les anciens élèves). Clique sur **Devenir membre** et renseigne toutes les informations ;
-- un de GitHub, t’invitant à rejoindre l’équipe `lewagon`. **Accepte** pour accéder aux cours.
+Si ce n'est pas le cas, contacte ton équipe pédagogique.
 
 
 ## Slack
@@ -1184,9 +1182,9 @@ On va vérifier que tout fonctionne correctement ; pour cela, on va tester ta c
 - Ouvre l’application Slack
 - Clique sur ta photo de profil en haut à droite
 - Clique sur `Preferences` depuis le menu
-- Séléctionne `Audio & video` dans la colonne de gauche
+- Sélectionne `Audio & video` dans la colonne de gauche
 - En dessous de `Troubleshooting`, clique sur `Run an audio, video and screensharing test`. Le test va s’ouvrir dans une nouvelle fenêtre
-- Vérifie que ton microphone, caméra, et enceintes soient bien séléctionnés, puis clique sur `Start test`
+- Vérifie que ton microphone, caméra, et enceintes soient bien sélectionnés, puis clique sur `Start test`
 
 ![Vérifier le fonctionnement du microphone et de la webcam avec Slack](images/slack_call_test.png)
 

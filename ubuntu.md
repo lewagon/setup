@@ -261,7 +261,7 @@ We will use the GitHub CLI (`gh`) to connect to GitHub using *SSH*, a protocol t
 
 First in order to **login**, copy-paste the following command in your terminal:
 
-:warning: **DO NOT edit the `email`**
+:warning: **DO NOT edit the `email`** — Even though `user:email` looks like a placeholder for your actual email address, it isn't — do not replace it.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -273,7 +273,9 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
   If you already have SSH keys, you will see instead `Upload your SSH public key to your GitHub account?` With the arrows, select your public key file path and press `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Type something you want and that you'll remember. It's a password to protect your private key stored on your hard drive. Then press `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`:
+  - **FOR MOST PEOPLE:** Just press `Enter` to skip. You don't need a passphrase for the bootcamp and it would prompt you every time you use the key. There is a risk, however, that if someone steals your laptop, they could then push to GitHub.
+  - **IF SECURITY IS REALLY IMPORTANT TO YOU:** Enter a passphrase of your choice and press `Enter`. It's _really_ important that if you enter a passphrase, you write it down somewhere immediately and do not lose/forget it. You will need to enter this frequently.
 
 - `Title for your SSH key`. You can leave it at the proposed "GitHub CLI", press `Enter`.
 
@@ -378,6 +380,8 @@ Please now **reset** your terminal by running:
 ```bash
 exec zsh
 ```
+
+_This reloads your shell so it picks up the new configuration._
 
 
 ## Disable SSH passphrase prompt

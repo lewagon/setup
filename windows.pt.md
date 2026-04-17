@@ -792,7 +792,7 @@ Ele já deve estar instalado no seu computador a partir dos comandos anteriores.
 
 Primeiro, para **fazer login**, copie e cole o seguinte comando em seu terminal:
 
-:warning: **NÃO edite o `email`**
+:warning: **NÃO edite o `email`** — Mesmo que `user:email` pareça um espaço reservado para seu endereço de e-mail real, não é — não o substitua.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -804,7 +804,9 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
   Se você já possui chaves SSH, verá `Upload your SSH public key to your GitHub account?` Com as setas, selecione o caminho do arquivo de sua chave pública e pressione `Enter`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Digite algo que você deseja e que você lembrará. É uma senha para proteger sua chave privada armazenada no disco rígido. Em seguida, pressione `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`:
+  - **PARA A MAIORIA DOS ALUNOS:** Apenas pressione `Enter` para pular. Você não precisa de uma senha para o bootcamp e ela seria solicitada toda vez que você usar a chave. Há, no entanto, um risco de que se alguém roubar seu laptop, ele possa enviar código para o GitHub.
+  - **SE A SEGURANÇA É MUITO IMPORTANTE PARA VOCÊ:** Digite uma senha de sua escolha e pressione `Enter`. É _muito_ importante que se você inserir uma senha, anote-a em algum lugar imediatamente e não a perca nem a esqueça. Você precisará digitá-la com frequência.
 
 - `Title for your SSH key`. Você pode deixá-lo no "GitHub CLI" proposto, pressione `Enter`.
 
@@ -908,6 +910,8 @@ Agora **reinicie** seu terminal executando:
 ```bash
 exec zsh
 ```
+
+_Isso recarrega seu shell para que ele incorpore a nova configuração._
 
 
 ## Desativar prompt de senha SSH

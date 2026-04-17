@@ -744,7 +744,7 @@ Ya debería haberse instalado en tu computadora con los comandos que ejecutaste 
 
 Lo primero que hay que hacer para **iniciar sesión** es copiar y pegar el comando siguiente en tu terminal:
 
-:warning: **NO edites el `email`**
+:warning: **NO edites el `email`** — Aunque `user:email` parezca un marcador de posición para tu dirección de correo real, no lo es — no lo reemplaces.
 
 ```bash
 gh auth login -s 'user:email' -w --git-protocol ssh
@@ -756,7 +756,9 @@ gh auth login -s 'user:email' -w --git-protocol ssh
 
   Si ya tienes claves SSH, verás en su lugar `Upload your SSH public key to your GitHub account?`Con las flechas, selecciona la ruta de tu archivo de clave pública y pulsa `Intro`.
 
-- `Enter a passphrase for your new SSH key (Optional)`. Pon algo que quieras y que recuerdes. Es una contraseña para proteger tu private key que está almacenada en tu disco duro. Luego presiona `Enter`.
+- `Enter a passphrase for your new SSH key (Optional)`:
+  - **PARA LA MAYORÍA DE LOS ESTUDIANTES:** Simplemente presiona `Enter` para omitir. No necesitas una contraseña para el bootcamp y te la pediría cada vez que uses la clave. Sin embargo, hay un riesgo de que si alguien roba tu computadora, pueda subir código a GitHub.
+  - **SI LA SEGURIDAD ES MUY IMPORTANTE PARA TI:** Escribe una contraseña de tu elección y presiona `Enter`. Es _muy_ importante que si introduces una contraseña, la anotes en algún lugar inmediatamente y no la pierdas ni la olvides. Tendrás que introducirla con frecuencia.
 
 - `Title for your SSH key`. Puede dejarlo en la propuesta "GitHub CLI", presiona `Enter`.
 
@@ -829,7 +831,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: Si ves una lista de tus emails registrados, puedes continuar :+1:
 
-:x: De lo contrario, por favor haz la [autenticación en GitHub](https://github.com/lewagon/setup/blob/master/windows.es.md#github-cli) nuevamente antes de ejecutar este comando :point_up: again.
+:x: De lo contrario, por favor haz la [autenticación en GitHub](https://github.com/lewagon/setup/blob/master/windows.es.md#github-cli) nuevamente antes de ejecutar este comando :point_up:.
 
 ### Instalación de git
 
@@ -848,6 +850,8 @@ Ahora **resetea** tu terminal ejecutando lo siguiente:
 ```bash
 exec zsh
 ```
+
+_Esto recarga tu shell para que tome la nueva configuración._
 
 
 ## Desahilitación de la solicitud de SSH passphrase
