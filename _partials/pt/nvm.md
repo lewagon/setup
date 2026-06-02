@@ -5,7 +5,7 @@
 Em um terminal, execute os seguintes comandos:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v{{ NVM_VERSION }}/install.sh | zsh
 ```
 
 ```bash
@@ -23,7 +23,7 @@ Você deverá ver uma versão. Se não, pergunte a um professor.
 Agora vamos instalar o Node.js:
 
 ```bash
-nvm install <NODE_VERSION>
+nvm install {{ NODE_VERSION }}
 ```
 
 Quando a instalação terminar, execute:
@@ -32,7 +32,7 @@ Quando a instalação terminar, execute:
 node -v
 ```
 
-Se você vir `v<NODE_VERSION>`, a instalação foi bem-sucedida :heavy_check_mark: Você pode então executar:
+Se você vir `v{{ NODE_VERSION }}`, a instalação foi bem-sucedida :heavy_check_mark: Você pode então executar:
 
 ```bash
 nvm cache clear

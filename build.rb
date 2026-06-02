@@ -1,117 +1,22 @@
-#!/usr/bin/env ruby -wU
+#!/usr/bin/env ruby
+# frozen_string_literal: true
 
-PLACEHOLDERS = {
-  'RUBY_SETUP_VERSION' => "3.3.5",
-  'NVM_VERSION' => "0.39.1",
-  'NODE_VERSION' => "20.17.0",
-  'GEMS' => "colored faker http pry-byebug rake rails:8.1.1 rest-client rspec rubocop-performance sqlite3:2.8.1 activerecord:8.1.1 ruby-lsp"
+require 'yaml'
+require_relative 'lib/builder'
+
+build_specs = Dir['builds/*.yml'].map { |filename|
+
+  data = YAML.load_file(filename)
+
+  BuildSpec.new(
+    name:     File.basename(filename, '.yml'),
+    os:       data['os'],
+    locales:  data['locales'],
+    partials: data['partials']
+  )
 }
 
-MACOS = %w[
-  intro
-  github
-  macos_command_line_tools
-  macos_homebrew
-  macos_vscode
-  vscode_extensions
-  vscode_aifeatures
-  vscode_liveshare
-  macos_terminal
-  oh_my_zsh
-  gh_cli
-  dotfiles
-  macos_rbenv
-  ruby
-  nvm
-  yarn
-  macos_sqlite
-  macos_postgresql
-  checkup
-  kitt
-  macos_slack
-  slack_settings
-  macos_settings
-  conclusion].freeze
+constants   = YAML.load_file('constants/constants.yml').freeze
+repos_cfg   = YAML.load_file('constants/repos.yml').freeze
 
-WINDOWS = %w[
-  intro
-  github
-  windows_version
-  windows_virtualization
-  windows_wsl
-  windows_ubuntu
-  windows_vscode
-  windows_terminal
-  vscode_extensions
-  vscode_aifeatures
-  vscode_liveshare
-  cli_tools
-  oh_my_zsh
-  windows_browser
-  gh_cli
-  dotfiles
-  ssh_agent
-  rbenv
-  ruby
-  nvm
-  yarn
-  sqlite
-  windows_postgresql
-  checkup
-  kitt
-  windows_slack
-  slack_settings
-  windows_settings
-  conclusion].freeze
-
-UBUNTU = %w[
-  intro
-  github
-  ubuntu_vscode
-  vscode_extensions
-  vscode_aifeatures
-  vscode_liveshare
-  cli_tools
-  oh_my_zsh
-  gh_cli
-  dotfiles
-  ssh_agent
-  rbenv
-  ruby
-  nvm
-  yarn
-  sqlite
-  ubuntu_postgresql
-  checkup
-  kitt
-  ubuntu_slack
-  slack_settings
-  ubuntu_settings
-  conclusion].freeze
-
-SETUPS = {
-  "macos.md" => MACOS,
-  "windows.md" => WINDOWS,
-  "ubuntu.md" => UBUNTU
-}
-
-["", "cn", "es", "fr", "pt"].each do |locale|
-  SETUPS.each do |filename, partials|
-    filename = "#{filename.split(".md").first}.#{locale}.md" unless locale.empty?
-    File.open(filename, "w:utf-8") do |f|
-      partials.each do |partial|
-        if !locale.empty? && File.exist?(File.join("_partials/#{locale}", "#{partial}.md"))
-          partial_content = File.read(File.join("_partials/#{locale}", "#{partial}.md"), encoding: "utf-8")
-        else
-          partial_content = File.read(File.join("_partials", "#{partial}.md"), encoding: "utf-8")
-        end
-        PLACEHOLDERS.each do |placeholder, value|
-          partial_content.gsub!("<#{placeholder}>", value)
-        end
-        partial_content.gsub!("<OS.md>", filename)
-        f << partial_content
-        f << "\n\n"
-      end
-    end
-  end
-end
+Builder.new(build_specs, constants, repos_cfg).run

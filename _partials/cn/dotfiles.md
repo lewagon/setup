@@ -42,7 +42,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: 如果你看到了你的注册邮箱列表，你就可以继续下一步啦:+1:
 
-:x: 如果没有的话，请在运行上面:point_up: 这个指令之前，[重新授权GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli)。
+:x: 如果没有的话，请在运行上面:point_up: 这个指令之前，[重新授权GitHub](https://github.com/lewagon/setup/blob/master/{{ build_md }}#github-cli)。
 
 ### git安装器
 
@@ -63,4 +63,3 @@ exec zsh
 ```
 
 _这将重新加载你的shell，使其能够读取新的配置。_
-

@@ -1,0 +1,32 @@
+os: windows
+locales: [en, cn, es, fr, pt]
+partials:
+  - intro
+  - github
+  - windows_version
+  - windows_virtualization
+  - windows_wsl
+  - windows_ubuntu
+  - windows_vscode
+  - windows_terminal
+  - vscode_extensions
+  - vscode_aifeatures
+  - vscode_liveshare
+  - cli_tools
+  - oh_my_zsh
+  - windows_browser
+  - gh_cli
+  - dotfiles
+  - ssh_agent
+  - rbenv
+  - ruby
+  - nvm
+  - yarn
+  - sqlite
+  - windows_postgresql
+  - checkup
+  - kitt
+  - windows_slack
+  - slack_settings
+  - windows_settings
+  - conclusion

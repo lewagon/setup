@@ -1,0 +1,6 @@
+
+  Layout/HashAlignment:
+    Enabled: false
+
+  Layout/LeadingEmptyLines:
+    Enabled: false

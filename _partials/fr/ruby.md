@@ -7,14 +7,14 @@ Tu peux maintenant installer la dernière version de [ruby](https://www.ruby-lan
 Exécute cette commande ; cela **peut prendre un moment (5-10 minutes)**
 
 ```bash
-rbenv install <RUBY_SETUP_VERSION>
+rbenv install {{ RUBY_SETUP_VERSION }}
 ```
 
 Une fois que l’installation de Ruby est terminée, exécute cette commande pour indiquer au système
-d’utiliser la version <RUBY_SETUP_VERSION> par défaut.
+d’utiliser la version {{ RUBY_SETUP_VERSION }} par défaut.
 
 ```bash
-rbenv global <RUBY_SETUP_VERSION>
+rbenv global {{ RUBY_SETUP_VERSION }}
 ```
 
 **Réinitialise** ton terminal et vérifie ta version de Ruby :
@@ -29,7 +29,7 @@ Puis exécute :
 ruby -v
 ```
 
-:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby <RUBY_SETUP_VERSION>`, tu peux continuer :+1:
+:heavy_check_mark: Si tu vois apparaître un message commençant par `ruby {{ RUBY_SETUP_VERSION }}`, tu peux continuer :+1:
 
 :x: Sinon, **demande au prof**
 
@@ -64,7 +64,7 @@ gem update bundler
 Copie-colle la commande suivante dans ton terminal :
 
 ```bash
-gem install <GEMS>
+gem install {{ GEMS }}
 ```
 
 :heavy_check_mark: Si tu vois apparaître `xx gems installed`, c’est bon :+1:

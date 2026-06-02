@@ -5,7 +5,7 @@
 在终端里，运行以下指令：
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v{{ NVM_VERSION }}/install.sh | zsh
 ```
 
 重启你的终端并执行下方指令：
@@ -19,7 +19,7 @@ nvm -v
 现在，让我们来安装node：
 
 ```bash
-nvm install <NODE_VERSION>
+nvm install {{ NODE_VERSION }}
 ```
 
 当这个指令执行结束之后，运行：
@@ -28,7 +28,7 @@ nvm install <NODE_VERSION>
 node -v
 ```
 
-如果看到`v<NODE_VERSION>`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
+如果看到`v{{ NODE_VERSION }}`，那么你安装成功了:heavy_check_mark: 然后，你就可以运行下面这个命令了：
 
 ```bash
 nvm cache clear

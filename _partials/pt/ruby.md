@@ -7,14 +7,14 @@ Agora, você está pronto para instalar a versão mais recente do [ruby](https:/
 Execute este comando, **demorará um pouco (5 a 10 minutos)**
 
 ```bash
-rbenv install <RUBY_SETUP_VERSION>
+rbenv install {{ RUBY_SETUP_VERSION }}
 ```
 
 Assim que a instalação do Ruby estiver concluída, execute este comando para informar ao sistema
-para usar a versão <RUBY_SETUP_VERSION> por padrão.
+para usar a versão {{ RUBY_SETUP_VERSION }} por padrão.
 
 ```bash
-rbenv global <RUBY_SETUP_VERSION>
+rbenv global {{ RUBY_SETUP_VERSION }}
 ```
 
 **Reinicialize** seu terminal e verifique sua versão do Ruby:
@@ -29,7 +29,7 @@ Então corra:
 ruby -v
 ```
 
-:heavy_check_mark: Se você vir algo começando com `ruby <RUBY_SETUP_VERSION>` então você pode prosseguir :+1:
+:heavy_check_mark: Se você vir algo começando com `ruby {{ RUBY_SETUP_VERSION }}` então você pode prosseguir :+1:
 
 :x: Se não, **pergunte a um professor**
 
@@ -58,7 +58,7 @@ No mundo Ruby, chamamos bibliotecas externas de `gems`: são pedaços de código
 No seu terminal, copie e cole o seguinte comando:
 
 ```bash
-gem install <GEMS>
+gem install {{ GEMS }}
 ```
 
 :heavy_check_mark: Se você tiver `xx gems installed`, então tudo bem :+1:
