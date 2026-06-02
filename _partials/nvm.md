@@ -5,7 +5,7 @@
 In a terminal, execute the following commands:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v<NVM_VERSION>/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v{{ NVM_VERSION }}/install.sh | zsh
 ```
 
 ```bash
@@ -23,7 +23,7 @@ You should see a version. If not, ask a teacher.
 Now let's install node:
 
 ```bash
-nvm install <NODE_VERSION>
+nvm install {{ NODE_VERSION }}
 ```
 
 When the installation is finished, run:
@@ -32,7 +32,7 @@ When the installation is finished, run:
 node -v
 ```
 
-If you see `v<NODE_VERSION>`, the installation succeeded :heavy_check_mark: You can then run:
+If you see `v{{ NODE_VERSION }}`, the installation succeeded :heavy_check_mark: You can then run:
 
 ```bash
 nvm cache clear

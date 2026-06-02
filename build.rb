@@ -1,117 +1,81 @@
 #!/usr/bin/env ruby -wU
 
-PLACEHOLDERS = {
-  'RUBY_SETUP_VERSION' => "3.3.5",
-  'NVM_VERSION' => "0.39.1",
-  'NODE_VERSION' => "20.17.0",
-  'GEMS' => "colored faker http pry-byebug rake rails:8.1.1 rest-client rspec rubocop-performance sqlite3:2.8.1 activerecord:8.1.1 ruby-lsp"
-}
+require 'open-uri'
+require 'liquid'
+require 'yaml'
 
-MACOS = %w[
-  intro
-  github
-  macos_command_line_tools
-  macos_homebrew
-  macos_vscode
-  vscode_extensions
-  vscode_aifeatures
-  vscode_liveshare
-  macos_terminal
-  oh_my_zsh
-  gh_cli
-  dotfiles
-  macos_rbenv
-  ruby
-  nvm
-  yarn
-  macos_sqlite
-  macos_postgresql
-  checkup
-  kitt
-  macos_slack
-  slack_settings
-  macos_settings
-  conclusion].freeze
+REPOS_CFG = YAML.load_file('constants/repos.yml').freeze
 
-WINDOWS = %w[
-  intro
-  github
-  windows_version
-  windows_virtualization
-  windows_wsl
-  windows_ubuntu
-  windows_vscode
-  windows_terminal
-  vscode_extensions
-  vscode_aifeatures
-  vscode_liveshare
-  cli_tools
-  oh_my_zsh
-  windows_browser
-  gh_cli
-  dotfiles
-  ssh_agent
-  rbenv
-  ruby
-  nvm
-  yarn
-  sqlite
-  windows_postgresql
-  checkup
-  kitt
-  windows_slack
-  slack_settings
-  windows_settings
-  conclusion].freeze
+def load_remote_partial(repo, name, locale)
+  repo   = REPOS_CFG.dig('aliases',  repo) || repo
+  branch = REPOS_CFG.dig('branches', repo) || 'main'
+  path = locale == 'en' ? name : "#{locale}/#{name}"
+  base_url = "https://github.com/lewagon/#{repo}/blob/#{branch}"
+  content = URI.open("https://raw.githubusercontent.com/lewagon/#{repo}/#{branch}/_partials/#{path}.md").read
+  content.scan(/\!\[.*\]\((.*)\)/).flatten
+         .reject { |ip| ip.start_with?("http") }
+         .each   { |ip| content.gsub!(ip, "#{base_url}/#{ip}") }
+  content.scan(/src="(images\/.*)"/).flatten
+         .each   { |ip| content.gsub!(ip, "#{base_url}/#{ip}") }
+  content
+end
 
-UBUNTU = %w[
-  intro
-  github
-  ubuntu_vscode
-  vscode_extensions
-  vscode_aifeatures
-  vscode_liveshare
-  cli_tools
-  oh_my_zsh
-  gh_cli
-  dotfiles
-  ssh_agent
-  rbenv
-  ruby
-  nvm
-  yarn
-  sqlite
-  ubuntu_postgresql
-  checkup
-  kitt
-  ubuntu_slack
-  slack_settings
-  ubuntu_settings
-  conclusion].freeze
+def load_local_partial(name, locale)
+  localized = "_partials/#{locale}/#{name}.md"
+  path = (locale != 'en' && File.exist?(localized)) ? localized : "_partials/#{name}.md"
+  File.read(path, encoding: "utf-8")
+end
 
-SETUPS = {
-  "macos.md" => MACOS,
-  "windows.md" => WINDOWS,
-  "ubuntu.md" => UBUNTU
-}
+def load_partial(partial, locale)
+  if (m = partial.match(%r{\A(?<repo>[a-z][a-z0-9_-]*)/(?<name>[a-z0-9_]+)\z}))
+    load_remote_partial(m[:repo], m[:name], locale)
+  else
+    load_local_partial(partial, locale)
+  end
+end
 
-["", "cn", "es", "fr", "pt"].each do |locale|
-  SETUPS.each do |filename, partials|
-    filename = "#{filename.split(".md").first}.#{locale}.md" unless locale.empty?
-    File.open(filename, "w:utf-8") do |f|
-      partials.each do |partial|
-        if !locale.empty? && File.exist?(File.join("_partials/#{locale}", "#{partial}.md"))
-          partial_content = File.read(File.join("_partials/#{locale}", "#{partial}.md"), encoding: "utf-8")
-        else
-          partial_content = File.read(File.join("_partials", "#{partial}.md"), encoding: "utf-8")
+def partial_name(entry) = entry.is_a?(Array) ? entry[0] : entry
+def partial_vars(entry) = entry.is_a?(Array) ? entry[1] : {}
+
+def collect_partials(builds)
+  builds.flat_map { |_filename, build|
+    build[:locales].flat_map { |locale|
+      build[:partials].map { |e| [partial_name(e), locale] }
+    }
+  }.uniq.map { |partial, locale|
+    ["#{partial}.#{locale}", load_partial(partial, locale)]
+  }.to_h
+end
+
+def render_content(content, os_name, variables)
+  Liquid::Template.parse(content).render(variables.merge('os' => os_name))
+end
+
+def generate_files(loaded, builds, constants)
+  builds.each do |filename, build|
+    build[:locales].each do |locale|
+      output = locale == 'en' ? "#{filename}.md" : "#{filename}.#{locale}.md"
+
+      File.open(output, "w:utf-8") do |f|
+        build[:partials].each do |entry|
+          content = loaded["#{partial_name(entry)}.#{locale}"].clone
+          variables = constants.merge(partial_vars(entry)).merge('OS_MD' => output)
+          f << render_content(content, build[:os], variables)
+          f << "\n\n"
         end
-        PLACEHOLDERS.each do |placeholder, value|
-          partial_content.gsub!("<#{placeholder}>", value)
-        end
-        partial_content.gsub!("<OS.md>", filename)
-        f << partial_content
-        f << "\n\n"
       end
     end
   end
 end
+
+builds = Dir['builds/*.yml'].map { |f|
+  name = File.basename(f, '.yml')
+  data = YAML.load_file(f)
+  [name, { os: data['os'], locales: data['locales'], partials: data['partials'] }]
+}.to_h.freeze
+
+loaded = collect_partials(builds)
+
+constants = YAML.load_file('constants/constants.yml').freeze
+
+generate_files(loaded, builds, constants)

@@ -43,7 +43,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: Si tu vois la liste de tes adresses e-mail enregistrées, tu peux continuer :+1:
 
-:x: Sinon, [reconnecte-toi à GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli) avant d'exécuter cette commande à nouveau :point_up:.
+:x: Sinon, [reconnecte-toi à GitHub](https://github.com/lewagon/setup/blob/master/{{ OS_MD }}#github-cli) avant d'exécuter cette commande à nouveau :point_up:.
 
 ### Programme d'installation git
 

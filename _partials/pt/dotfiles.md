@@ -55,7 +55,7 @@ gh api user/emails | jq -r '.[].email'
 
 :heavy_check_mark: Se você vir a lista de seus e-mails registrados, você pode prosseguir :+1:
 
-:x: Caso contrário, [reautentique no GitHub](https://github.com/lewagon/setup/blob/master/<OS.md>#github-cli) antes de executar este comando :point_up: novamente.
+:x: Caso contrário, [reautentique no GitHub](https://github.com/lewagon/setup/blob/master/{{ OS_MD }}#github-cli) antes de executar este comando :point_up: novamente.
 
 ### Instalador git
 

@@ -7,13 +7,13 @@
 运行下方这个指令，它会**花费一些时间（5-10分钟）**
 
 ```bash
-rbenv install <RUBY_SETUP_VERSION>
+rbenv install {{ RUBY_SETUP_VERSION }}
 ```
 
-当Ruby安装好后，运行下面这个指令来告诉系统使用<RUBY_SETUP_VERSION>这个版本作为默认版本。
+当Ruby安装好后，运行下面这个指令来告诉系统使用{{ RUBY_SETUP_VERSION }}这个版本作为默认版本。
 
 ```bash
-rbenv global <RUBY_SETUP_VERSION>
+rbenv global {{ RUBY_SETUP_VERSION }}
 ```
 
 然后**重置**你的终端，然后检查Ruby版本：
@@ -23,7 +23,7 @@ exec zsh
 ruby -v
 ```
 
-:heavy_check_mark: 如果你有看到`ruby <RUBY_SETUP_VERSION>`，那么你可以继续下一步+1:
+:heavy_check_mark: 如果你有看到`ruby {{ RUBY_SETUP_VERSION }}`，那么你可以继续下一步+1:
 
 :x: 如果没有的话，**询问一下老师**。
 
@@ -56,7 +56,7 @@ gem update bundler
 在你的终端里，复制粘贴下面的指令：
 
 ```bash
-gem install <GEMS>
+gem install {{ GEMS }}
 ```
 
 :heavy_check_mark: 如果你看到 `xx gems installed`，那么一切正常 :+1:
