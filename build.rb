@@ -59,7 +59,7 @@ def generate_files(loaded, builds, constants)
       File.open(output, "w:utf-8") do |f|
         build[:partials].each do |entry|
           content = loaded["#{partial_name(entry)}.#{locale}"].clone
-          variables = constants.merge(partial_vars(entry)).merge('OS_MD' => output)
+          variables = constants.merge(partial_vars(entry)).merge('build_md' => output)
           f << render_content(content, build[:os], variables)
           f << "\n\n"
         end

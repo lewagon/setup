@@ -335,7 +335,6 @@ exec zsh
 _这将重新加载你的shell，使其能够读取新的配置。_
 
 
-
 ## rbenv
 
 让我们来安装[rbenv](https://github.com/sstephenson/rbenv)，一个帮助我们安装并管理`ruby`环境的软件。
