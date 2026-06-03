@@ -8,6 +8,7 @@ class PartialCache
       .sort_by { |partial| partial.url }
       .map     { |partial| Thread.new { [partial.url, partial.content] } }
       .map     { |thread| thread.value }
+      .tap     { |results| results.each { |url, _| warn "fetched #{url}" } }
       .to_h
   end
 

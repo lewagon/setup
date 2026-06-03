@@ -23,7 +23,6 @@ module Partial
           .each   { |ip| text.gsub!(ip, "#{@base_url}/#{ip}") }
       text.scan(/src="(images\/.*)"/).flatten
           .each   { |ip| text.gsub!(ip, "#{@base_url}/#{ip}") }
-      warn "fetched #{@url}"
       text
     end
   end
