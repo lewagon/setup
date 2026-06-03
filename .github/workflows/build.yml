@@ -1,18 +1,16 @@
 name: Build setup guides
 on:
   push:
-    branches:
-      - master
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: Install dependencies
-        run: bundle install
       - name: Build
         run: |
           git config user.name github-actions
