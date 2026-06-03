@@ -31,6 +31,7 @@ GEM
       bigdecimal
       strscan (>= 3.1.1)
     method_source (1.0.0)
+    ostruct (0.6.0)
     parallel (1.19.2)
     parser (2.7.1.4)
       ast (~> 2.4.1)
@@ -86,6 +87,7 @@ DEPENDENCIES
   colored
   http
   liquid
+  ostruct
   pry
   pry-byebug
   rspec
