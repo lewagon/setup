@@ -11,7 +11,6 @@ You can also have a look at [our cheatsheets](https://github.com/lewagon/setup/t
 Let's start :rocket:
 
 
-
 ## GitHub account
 
 Have you signed up to GitHub? If not, [do it right away](https://github.com/join).
