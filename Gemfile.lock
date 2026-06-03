@@ -78,6 +78,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
+  ruby
 
 DEPENDENCIES
   base64
