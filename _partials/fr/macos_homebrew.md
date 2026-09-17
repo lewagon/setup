@@ -21,13 +21,13 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Installe ensuite quelques logiciels utiles :
+Assure-toi d’avoir la dernière version :
 
 ```bash
 brew update
 ```
 
-Exécute les commandes suivantes dans le terminal (tu peux copier-coller toutes les lignes en une seule fois):
+Installe ensuite quelques logiciels utiles (tu peux copier / coller toutes les lignes en une seule fois) :
 
 ```bash
 brew upgrade git         || brew install git
