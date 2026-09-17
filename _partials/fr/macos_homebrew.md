@@ -37,5 +37,4 @@ brew upgrade imagemagick || brew install imagemagick
 brew upgrade jq          || brew install jq
 brew upgrade openssl     || brew install openssl
 brew upgrade tree        || brew install tree
-brew upgrade tree        || brew install tree
 ```
