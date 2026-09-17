@@ -82,13 +82,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 
-接下来，让我们安装一些有用的软件：
+确保你使用的是最新版本：
 
 ```bash
 brew update
 ```
 
-无论是否有这行报错，继续执行下方的指令（你可以一次性直接复制/粘贴下方所有行）
+然后安装一些有用的软件（你可以一次性复制/粘贴下面的所有命令）：
 
 ```bash
 brew upgrade git         || brew install git

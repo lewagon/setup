@@ -85,13 +85,13 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Em seguida, instale algum software útil:
+Certifique-se de que está usando a versão mais recente:
 
 ```bash
 brew update
 ```
 
-Continue executando o seguinte no terminal (você pode copiar/colar todas as linhas de uma vez):
+Em seguida, instale alguns softwares úteis (você pode copiar/colar todas as linhas de uma vez):
 
 ```bash
 brew upgrade git         || brew install git
