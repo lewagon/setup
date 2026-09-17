@@ -12,28 +12,18 @@ Te pedirá que confirmes (presionando `Enter`) y también te pedirá la **contra
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
-:warning: Si ves esta advertencia :point_down:, ejecuta los dos comandos de la sección `Next steps` para añadir Homebrew a tu PATH:
+Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
 
-![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+Una vez que Homebrew haya terminado de instalarse, ejecuta estos dos comandos para agregarlo a tu `PATH`:
 
 ```bash
-# ⚠️ Only execute these commands if you saw this warning ☝
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
-
 Luego instala algunos programas útiles:
 
 ```bash
-brew update
-```
-
-Si obtienes un error como este: `/usr/local must be writable`, ejecuta el código que te mostramos a continuación:
-
-```bash
-sudo chown -R $USER:admin /usr/local
 brew update
 ```
 
