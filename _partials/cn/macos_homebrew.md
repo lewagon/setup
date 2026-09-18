@@ -12,32 +12,24 @@
 
 :warning: 当你输入你的密码的时候，屏幕上不会有任何的显示，**这是正常的**。这是一个安全保护的设置，来隐藏你整个密码，包括它的长度。你可以放心的输入你的密码，结束后按下`Enter`就可以了。
 
-:warning: 如果你看到了下面的警告:point_down:，运行`Next steps`下面的两个命令把Homebrew加到你的PATH里。
+如果你已经有了Homebrew,终端会告诉你的。那么一切正常，你可以继续接下来的步骤。
 
-![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+Homebrew安装完成后，运行以下两个命令，将其添加到你的`PATH`中：
+
 
 ```bash
-# ⚠️ Only execute these commands if you saw this warning ☝
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-如果你已经有了Homebrew,终端会告诉你的。那么一切正常，你可以继续接下来的步骤。
 
-接下来，让我们安装一些有用的软件：
+确保你使用的是最新版本：
 
 ```bash
 brew update
 ```
 
-如果你得到了`/usr/local must be writable`的报错，直接运行以下指令：
-
-```bash
-sudo chown -R $USER:admin /usr/local
-brew update
-```
-
-无论是否有这行报错，继续执行下方的指令（你可以一次性直接复制/粘贴下方所有行）
+然后安装一些有用的软件（你可以一次性复制/粘贴下面的所有命令）：
 
 ```bash
 brew upgrade git         || brew install git
@@ -46,4 +38,5 @@ brew upgrade wget        || brew install wget
 brew upgrade imagemagick || brew install imagemagick
 brew upgrade jq          || brew install jq
 brew upgrade openssl     || brew install openssl
+brew upgrade tree        || brew install tree
 ```
