@@ -72,40 +72,31 @@ Te pedirá que confirmes (presionando `Enter`) y también te pedirá la **contra
 
 :warning: Cuando escribas tu contraseña no verás nada en la pantalla. **Esto es normal**. Es una herramienta de seguridad para ocultar tanto el contenido de tu contraseña como su longitud. Simplemente escribe tu contraseña y presiona `Enter` al terminar.
 
-:warning: Si ves esta advertencia :point_down:, ejecuta los dos comandos de la sección `Next steps` para añadir Homebrew a tu PATH:
+Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
 
-![macOS Homebrew installation warning](images/macos_homebrew_warning.png)
+Una vez que Homebrew haya terminado de instalarse, ejecuta estos dos comandos para agregarlo a tu `PATH`:
 
 ```bash
-# ⚠️ Only execute these commands if you saw this warning ☝
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Si ya tienes Homebrew instalado, el sistema te lo dirá y puedes continuar.
-
-Luego instala algunos programas útiles:
+Asegúrate de tener la última versión:
 
 ```bash
 brew update
 ```
 
-Si obtienes un error como este: `/usr/local must be writable`, ejecuta el código que te mostramos a continuación:
+Luego, instala algunos programas útiles (puedes copiar y pegar todas las líneas de código al mismo tiempo):
 
 ```bash
-sudo chown -R $USER:admin /usr/local
-brew update
-```
-
-Ejecuta el siguiente código en tu terminal (puedes copiar y pegar todas las líneas de código al mismo tiempo):
-
-```bash
-brew upgrade git || brew install git
-brew upgrade gh || brew install gh
-brew upgrade wget || brew install wget
+brew upgrade git         || brew install git
+brew upgrade gh          || brew install gh
+brew upgrade wget        || brew install wget
 brew upgrade imagemagick || brew install imagemagick
-brew upgrade jq || brew install jq
-brew upgrade openssl || brew install openssl
+brew upgrade jq          || brew install jq
+brew upgrade openssl     || brew install openssl
+brew upgrade tree        || brew install tree
 ```
 
 
