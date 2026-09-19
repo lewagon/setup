@@ -17,7 +17,6 @@ partials:
   - windows_browser
   - gh_cli
   - dotfiles
-  - ssh_agent
   - rbenv
   - ruby
   - nvm

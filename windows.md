@@ -917,23 +917,6 @@ exec zsh
 _This reloads your shell so it picks up the new configuration._
 
 
-## Disable SSH passphrase prompt
-
-You don't want to be asked for your passphrase every time you communicate with a distant repository. So, you need to add the plugin `ssh-agent` to `oh my zsh`:
-
-First, open the `.zshrc` file:
-
-```bash
-code ~/.zshrc
-```
-
-Then:
-- Spot the line starting with `plugins=`
-- Add `ssh-agent` at the end of the plugins list
-
-:heavy_check_mark: Save the `.zshrc` file with `Ctrl` + `S` and close your text editor.
-
-
 ## rbenv
 
 Let's install [`rbenv`](https://github.com/sstephenson/rbenv), a software to install and manage `ruby` environments.
