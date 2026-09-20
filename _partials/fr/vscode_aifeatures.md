@@ -8,7 +8,7 @@ Pour le début du bootcamp, on va désactiver ces fonctionnalités. Au bon momen
 
 Dans **VS Code** :
 
-1. Ouvre la "Palette de **c**ommandes" de VS Code : tape `Ctrl-Shift-P` (Windows / Linux) ou `Cmd-Shift-P` (macOS).
+1. Ouvre la "Palette de **c**ommandes" de VS Code : tape {% if os == "macos" %}`Cmd-Shift-P`{% else %}`Ctrl-Shift-P`{% endif %}.
 1. La Palette de commandes s'ouvrira : une petite zone de texte en haut de l'écran. Commence à taper `aifeatures` jusqu'à voir "Chat: Learn How to Hide AI features". Clique dessus.
   ![La palette de commandes en haut de l'écran](images/vscode_find_aifeatures.png)
 1. Cela ouvrira les paramètres et affichera l'option "Disable and hide built-in AI features ...". Coche la case devant cette option.
