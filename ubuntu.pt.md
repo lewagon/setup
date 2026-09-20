@@ -114,7 +114,7 @@ Para o início do bootcamp, vamos desativar esses recursos. No momento certo do 
 
 Em **VS Code**:
 
-1. Vamos abrir a "Paleta de Comandos" do VS Code: digite `Ctrl-Shift-P` (Windows / Linux) ou `Cmd-Shift-P` (macOS).
+1. Vamos abrir a "Paleta de Comandos" do VS Code: digite `Ctrl-Shift-P`.
 1. Isso abrirá a Paleta de Comandos: uma pequena caixa de texto no topo da tela. Comece a digitar `aifeatures` até ver "Chat: Learn How to Hide AI features". Clique nela.
   ![A Paleta de Comandos no topo da tela](images/vscode_find_aifeatures.png)
 1. Isso abrirá as configurações e mostrará a opção "Disable and hide built-in AI features ...". Marque a caixa de seleção à frente dessa opção.
