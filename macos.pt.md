@@ -76,35 +76,22 @@ Isso solicitará sua confirmação (pressione `Enter`) e sua **senha da conta de
 
 :warning: Quando você digita sua senha, nada aparecerá na tela, **isso é normal**. Este é um recurso de segurança para mascarar não apenas sua senha como um todo, mas também seu comprimento. Basta digitar sua senha e quando terminar, pressione `Enter`.
 
-:warning: Se você vir este aviso :point_down:, execute os dois comandos na seção `Próximas etapas` para adicionar o Homebrew ao seu PATH:
+Se você já tem o Homebrew, ele lhe dirá, tudo bem, vá em frente.
 
-![Aviso de instalação do macOS Homebrew](images/macos_homebrew_warning.png)
+Quando a instalação do Homebrew terminar, execute estes dois comandos para adicioná-lo ao seu `PATH`:
 
 ```bash
-# ⚠️ Execute esses comandos apenas se você viu este aviso ☝
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-Se você já tem o Homebrew, ele lhe dirá, tudo bem, vá em frente.
-
-Em seguida, instale algum software útil:
+Certifique-se de que está usando a versão mais recente:
 
 ```bash
 brew update
 ```
 
-Se você receber um erro `/usr/local deve ser gravável`, basta executar isto:
-
-```bash
-sudo chown -R $USER:admin /usr/local
-```
-
-```bash
-brew update
-```
-
-Continue executando o seguinte no terminal (você pode copiar/colar todas as linhas de uma vez):
+Em seguida, instale alguns softwares úteis (você pode copiar/colar todas as linhas de uma vez):
 
 ```bash
 brew upgrade git         || brew install git
@@ -113,6 +100,7 @@ brew upgrade wget        || brew install wget
 brew upgrade imagemagick || brew install imagemagick
 brew upgrade jq          || brew install jq
 brew upgrade openssl     || brew install openssl
+brew upgrade tree        || brew install tree
 ```
 
 
