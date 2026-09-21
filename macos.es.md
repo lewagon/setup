@@ -90,13 +90,13 @@ brew update
 Luego, instala algunos programas útiles (puedes copiar y pegar todas las líneas de código al mismo tiempo):
 
 ```bash
-brew upgrade git         || brew install git
-brew upgrade gh          || brew install gh
-brew upgrade wget        || brew install wget
-brew upgrade imagemagick || brew install imagemagick
-brew upgrade jq          || brew install jq
-brew upgrade openssl     || brew install openssl
-brew upgrade tree        || brew install tree
+brew upgrade git         || brew install -y git
+brew upgrade gh          || brew install -y gh
+brew upgrade wget        || brew install -y wget
+brew upgrade imagemagick || brew install -y imagemagick
+brew upgrade jq          || brew install -y jq
+brew upgrade openssl     || brew install -y openssl
+brew upgrade tree        || brew install -y tree
 ```
 
 
