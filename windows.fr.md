@@ -594,7 +594,7 @@ sudo apt update
 ```
 
 ```bash
-sudo apt install -y curl git imagemagick jq unzip vim zsh
+sudo apt install -y curl git imagemagick jq unzip vim zsh tree direnv
 ```
 
 Ces commandes te demanderont ton mot de passe ; saisis-le.
