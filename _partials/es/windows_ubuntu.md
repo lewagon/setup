@@ -4,11 +4,14 @@
 
 Después de reiniciar tu computadora, deberías ver una ventana de terminal diciendo WSL está retomando el proceso de instalación de Ubuntu. Cuando termine, iniciará Ubuntu.
 
+Si la instalación de Ubuntu no se reanudó, primero intenta nuevamente:
+- Copia el siguiente comando (`Ctrl` + `C`)
+- Pégalo en la ventana de la terminal (`Ctrl` + `V` o haciendo clic derecho en la ventana)
+- Ejecútalo presionado `Enter`
+- Ejecuta `wsl --install`
+
 <details>
 <summary>Solución de problemas para Windows 10 (solo si es necesario, consulta con un profesor)</summary>
-
-Si la instalación de Ubuntu no se reanudó, primero intenta nuevamente: abre Powershell o el Símbolo del sistema y ejecuta `wsl --install` otra vez.
-</details>
 
 Si tienes Windows 10, instala la terminal de Windows por medio de la Microsoft Store:
 
@@ -20,6 +23,7 @@ Si tienes Windows 10, instala la terminal de Windows por medio de la Microsoft S
 - Haz clic en `Get`
 
 :warning: ¡NO instales **Ubuntu 18.04 LTS** ni **Ubuntu 20.04**!
+
 
 <details>
   <summary>Desinstala las versiones incorrectas de Ubuntu</summary>

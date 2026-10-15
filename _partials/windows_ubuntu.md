@@ -4,11 +4,17 @@
 
 After restarting you computer, you should see a terminal window saying WSL is resuming the Ubuntu installation process. When it's done, Ubuntu will be launched.
 
+If the Ubuntu installation did not resume, try it again: 
+- Press `Windows` + `R`
+- Type  `cmd`
+- Press **`Ctrl` + `Shift` + `Enter`**
+- Run `wsl --install`
+
+
 <details>
 <summary>Troubleshooting for Windows 10 (only if needed, check with a TA)
 </summary>
 
-If the Ubuntu installation did not resume, first try it again: launch Powershell or the Command Prompt again and run `wsl --install` again.
 
 If you are running Windows 10, let's install Ubuntu throught the Microsoft Store:
 

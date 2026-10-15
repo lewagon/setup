@@ -4,10 +4,15 @@
 
 Si tu as Windows 11, après avoir redémarré ton ordinateur, tu devrais voir une fenêtre de terminal indiquant que WSL poursuit le processus d'installation d'Ubuntu. Lorsque c'est terminé, Ubuntu va se lancer.
 
+Si l'installation d'Ubuntu ne reprend pas, essaye d'abord à nouveau
+- Appuie sur `Windows` + `R`
+- Saisis `cmd`
+- Appuie sur **`Ctrl` + `Shift` + `Enter`**
+- Exécute `wsl --install`
+
+
 <details>
 <summary>Résolution des problèmes pour Windows 10 (uniquement si nécessaire, vérifie avec un TA)</summary>
-
-Si l'installation d'Ubuntu ne reprend pas, essaye d'abord à nouveau : relance Powershell ou l'Invite de commandes et exécute la commande `wsl --install` une nouvelle fois.
 
 Si tu as Windows 10, installons Ubuntu via le Microsoft Store :
 
