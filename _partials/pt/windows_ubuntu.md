@@ -4,10 +4,14 @@
 
 Após reiniciar o computador, você deverá ver uma janela de terminal informando que o WSL está retomando o processo de instalação do Ubuntu. Quando terminar, o Ubuntu será lançado.
 
+Se a instalação do Ubuntu não foi retomada, tente novamente: 
+- Pressione `Windows` + `R`
+- Digite `cmd`
+- Pressione **`Ctrl` + `Shift` + `Enter`**
+- Execute `wsl --install` 
+
 <details>
 <summary>Solução de problemas para Windows 10 (apenas se necessário, consulte um TA)</summary>
-
-Se a instalação do Ubuntu não foi retomada, tente novamente: abra o Powershell ou o Prompt de Comando e execute `wsl --install` novamente.
 
 Se você estiver executando o Windows 10, vamos instalar o Ubuntu através da Microsoft Store:
 
