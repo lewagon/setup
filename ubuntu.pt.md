@@ -401,7 +401,7 @@ rm -rf ~/.rbenv
 Então no terminal, execute:
 
 ```bash
-sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2 libxml2-dev libxslt1-dev libreadline-dev libyaml-dev
+sudo apt install -y build-essential tklib zlib1g-dev libssl-dev libffi-dev libxml2-dev libxslt1-dev libreadline-dev libyaml-dev
 ```
 
 ```bash
