@@ -319,7 +319,7 @@ It should return the username you chose before.
 
 ### Installation
 
-Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
+Let's install the [Visual Studio Code](https://code.visualstudio.com) text editor with the instructions below.
 
 - Go to [Visual Studio Code download page](https://code.visualstudio.com/download).
 - Click on "Windows" button

@@ -365,7 +365,7 @@ It should return the username you chose before.
 
 ### Instalação
 
-Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.com).
+Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.com) seguindo as instruções abaixo.
 
 - Vá para a [página de download do Visual Studio Code](https://code.visualstudio.com/download).
 - Clique no botão "Windows"

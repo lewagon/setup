@@ -109,7 +109,7 @@ brew upgrade direnv      || brew install -y direnv
 
 ### Instalação
 
-Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.com).
+Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.com) seguindo as instruções abaixo.
 
 Copie (`Cmd` + `C`) o comando abaixo e cole-o em seu terminal (`Cmd` + `V`):
 

@@ -27,7 +27,7 @@ Have you signed up to GitHub? If not, [do it right away](https://github.com/join
 
 ### Installation
 
-Let's install [Visual Studio Code](https://code.visualstudio.com) text editor.
+Let's install the [Visual Studio Code](https://code.visualstudio.com) text editor with the instructions below.
 
 Copy (`Ctrl` + `C`) the commands below then paste them in your terminal (`Ctrl` + `Shift` + `v`):
 
