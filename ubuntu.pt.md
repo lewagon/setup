@@ -26,7 +26,7 @@ Você se inscreveu no GitHub? Caso contrário, [faça isso imediatamente](https:
 
 ### Instalação
 
-Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.com).
+Vamos instalar o editor de texto [Visual Studio Code](https://code.visualstudio.com) seguindo as instruções abaixo.
 
 Copie (`Ctrl` + `C`) os comandos abaixo e cole-os em seu terminal (`Ctrl` + `Shift` + `v`):
 

@@ -2,7 +2,7 @@
 
 ### Installation
 
-On va maintenant installer l’éditeur de texte [Visual Studio Code](https://code.visualstudio.com).
+On va maintenant installer l’éditeur de texte [Visual Studio Code](https://code.visualstudio.com) en suivant les instructions ci-dessous.
 
 Copie (`Ctrl` + `C`) les commandes ci-dessous, puis colle-les dans ton terminal (`Ctrl` + `Shift` + `v`) :
 
